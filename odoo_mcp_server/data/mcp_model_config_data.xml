@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="mcp_config_res_partner" model="mcp.model.config">
+            <field name="model_id" ref="base.model_res_partner"/>
+            <field name="description">Contacts: customers, suppliers, companies and people.</field>
+            <field name="allow_read" eval="True"/>
+            <field name="sequence">10</field>
+        </record>
+
+        <record id="mcp_config_res_users" model="mcp.model.config">
+            <field name="model_id" ref="base.model_res_users"/>
+            <field name="description">Odoo users (read only, limited fields).</field>
+            <field name="allow_read" eval="True"/>
+            <field name="field_names">id,name,login,active,company_id,share</field>
+            <field name="sequence">20</field>
+        </record>
+
+        <record id="mcp_config_res_company" model="mcp.model.config">
+            <field name="model_id" ref="base.model_res_company"/>
+            <field name="description">Companies of this database.</field>
+            <field name="allow_read" eval="True"/>
+            <field name="sequence">30</field>
+        </record>
+    </data>
+</odoo>

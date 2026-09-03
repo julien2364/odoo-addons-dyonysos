@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="studio_customization_view_list" model="ir.ui.view">
+        <field name="name">studio.customization.list</field>
+        <field name="model">studio.customization</field>
+        <field name="arch" type="xml">
+            <list string="Personnalisations" decoration-muted="not active">
+                <field name="name"/>
+                <field name="kind"/>
+                <field name="model_name"/>
+                <field name="technical_name"/>
+                <field name="create_uid" widget="many2one_avatar_user"/>
+                <field name="create_date"/>
+                <field name="active" widget="boolean_toggle"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="studio_customization_view_form" model="ir.ui.view">
+        <field name="name">studio.customization.form</field>
+        <field name="model">studio.customization</field>
+        <field name="arch" type="xml">
+            <form string="Personnalisation">
+                <header>
+                    <button name="action_toggle_active" type="object" string="Activer / Désactiver"
+                            class="btn-secondary"/>
+                    <button name="action_remove_customization" type="object"
+                            string="Supprimer cette personnalisation" class="btn-danger"
+                            confirm="Cette opération supprime définitivement le champ, la vue héritée ou l'automatisation créés. Confirmer ?"/>
+                </header>
+                <sheet>
+                    <widget name="web_ribbon" title="Désactivée" bg_color="text-bg-danger"
+                            invisible="active"/>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_customizations" type="object"
+                                class="oe_stat_button" icon="fa-code"
+                                invisible="view_customization_count == 0">
+                            <field name="view_customization_count" widget="statinfo" string="Vues"/>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <h1><field name="name" placeholder="Nom de la personnalisation"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="kind"/>
+                            <field name="model_id" options="{'no_create': True}"/>
+                            <field name="model_name" invisible="1"/>
+                            <field name="technical_name"/>
+                            <field name="active" invisible="1"/>
+                        </group>
+                        <group>
+                            <field name="field_id" invisible="kind != 'field'"/>
+                            <field name="automation_id" invisible="kind != 'automation'"/>
+                            <field name="server_action_id" invisible="kind != 'automation'"/>
+                            <field name="create_uid"/>
+                            <field name="create_date"/>
+                        </group>
+                    </group>
+                    <group string="Description">
+                        <field name="description" nolabel="1"/>
+                    </group>
+                    <notebook>
+                        <page string="Vues générées" name="views">
+                            <field name="view_customization_ids" readonly="1">
+                                <list>
+                                    <field name="name"/>
+                                    <field name="kind"/>
+                                    <field name="view_type"/>
+                                    <field name="field_name"/>
+                                    <field name="position"/>
+                                    <field name="view_id"/>
+                                    <field name="active" widget="boolean_toggle"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="studio_customization_view_search" model="ir.ui.view">
+        <field name="name">studio.customization.search</field>
+        <field name="model">studio.customization</field>
+        <field name="arch" type="xml">
+            <search string="Personnalisations">
+                <field name="name"/>
+                <field name="technical_name"/>
+                <field name="model_id"/>
+                <filter name="filter_active" string="Actives" domain="[('active', '=', True)]"/>
+                <filter name="filter_inactive" string="Désactivées" domain="[('active', '=', False)]"/>
+                <separator/>
+                <filter name="filter_field" string="Champs" domain="[('kind', '=', 'field')]"/>
+                <filter name="filter_view" string="Vues" domain="[('kind', '=', 'view')]"/>
+                <filter name="filter_automation" string="Automatisations" domain="[('kind', '=', 'automation')]"/>
+                <group>
+                    <filter name="group_kind" string="Type" context="{'group_by': 'kind'}"/>
+                    <filter name="group_model" string="Modèle" context="{'group_by': 'model_id'}"/>
+                    <filter name="group_create_uid" string="Auteur" context="{'group_by': 'create_uid'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="studio_customization_action" model="ir.actions.act_window">
+        <field name="name">Personnalisations</field>
+        <field name="res_model">studio.customization</field>
+        <field name="view_mode">list,form</field>
+        <field name="context">{'active_test': False}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Aucune personnalisation pour l'instant</p>
+            <p>Créez un champ ou une automatisation depuis les menus « Nouveau champ » et « Nouvelle automatisation ».
+               Tout ce que Studio Lite crée est listé ici, et reste supprimable en un clic.</p>
+        </field>
+    </record>
+</odoo>

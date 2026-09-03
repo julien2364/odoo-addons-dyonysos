@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="studio_view_customization_view_list" model="ir.ui.view">
+        <field name="name">studio.view.customization.list</field>
+        <field name="model">studio.view.customization</field>
+        <field name="arch" type="xml">
+            <list string="Personnalisations de vues" decoration-muted="not active">
+                <field name="name"/>
+                <field name="model_name"/>
+                <field name="view_type"/>
+                <field name="kind"/>
+                <field name="field_name"/>
+                <field name="position"/>
+                <field name="view_id"/>
+                <field name="active" widget="boolean_toggle"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="studio_view_customization_view_form" model="ir.ui.view">
+        <field name="name">studio.view.customization.form</field>
+        <field name="model">studio.view.customization</field>
+        <field name="arch" type="xml">
+            <form string="Personnalisation de vue">
+                <header>
+                    <button name="action_toggle_active" type="object"
+                            string="Activer / Désactiver" class="btn-secondary"/>
+                    <button name="action_open_view" type="object" string="Voir la vue héritée"
+                            class="btn-secondary" invisible="not view_id"/>
+                </header>
+                <sheet>
+                    <widget name="web_ribbon" title="Désactivée" bg_color="text-bg-danger"
+                            invisible="active"/>
+                    <div class="oe_title">
+                        <h1><field name="name" placeholder="Ex. : Masquer la référence client"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="kind"/>
+                            <field name="model_id" options="{'no_create': True}"/>
+                            <field name="model_name" invisible="1"/>
+                            <field name="view_type"/>
+                            <field name="active" invisible="1"/>
+                        </group>
+                        <group>
+                            <field name="field_name" placeholder="Ex. : ref"/>
+                            <field name="position"/>
+                            <field name="anchor_field" invisible="position not in ('after', 'before')"/>
+                            <field name="page_name" invisible="position != 'inside'"/>
+                            <field name="inherit_view_id" options="{'no_create': True}"/>
+                            <field name="view_id" readonly="1"/>
+                        </group>
+                    </group>
+                    <group string="XML généré">
+                        <field name="arch_preview" nolabel="1" readonly="1" widget="ace"
+                               options="{'mode': 'xml'}"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="studio_view_customization_view_search" model="ir.ui.view">
+        <field name="name">studio.view.customization.search</field>
+        <field name="model">studio.view.customization</field>
+        <field name="arch" type="xml">
+            <search string="Personnalisations de vues">
+                <field name="name"/>
+                <field name="field_name"/>
+                <field name="model_id"/>
+                <filter name="filter_active" string="Actives" domain="[('active', '=', True)]"/>
+                <filter name="filter_inactive" string="Désactivées" domain="[('active', '=', False)]"/>
+                <group>
+                    <filter name="group_model" string="Modèle" context="{'group_by': 'model_id'}"/>
+                    <filter name="group_kind" string="Type" context="{'group_by': 'kind'}"/>
+                    <filter name="group_view_type" string="Type de vue" context="{'group_by': 'view_type'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="studio_view_customization_action" model="ir.actions.act_window">
+        <field name="name">Vues personnalisées</field>
+        <field name="res_model">studio.view.customization</field>
+        <field name="view_mode">list,form</field>
+        <field name="context">{'active_test': False}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Aucune vue personnalisée</p>
+            <p>Créez ici une retouche de vue : masquer un champ existant, le rendre obligatoire
+               ou en lecture seule — Studio Lite génère la vue héritée à votre place.</p>
+        </field>
+    </record>
+</odoo>

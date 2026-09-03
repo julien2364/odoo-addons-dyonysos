@@ -1,0 +1,138 @@
+name: CI
+
+on:
+  push:
+    branches: [ "19.0" ]
+  pull_request:
+    branches: [ "19.0" ]
+  schedule:
+    # Nightly at 03:17 UTC: catches breakage coming from Odoo 19 itself,
+    # since the CI installs the current tip of the odoo/odoo 19.0 branch.
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    name: Static checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Manifests, Python syntax, XML, Apps Store assets
+        run: ./scripts/lint.sh
+
+  tests:
+    name: Odoo 19 tests
+    runs-on: ubuntu-latest
+    needs: lint
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: odoo
+          POSTGRES_PASSWORD: odoo
+          POSTGRES_DB: postgres
+        ports: [ "5432:5432" ]
+        options: >-
+          --health-cmd "pg_isready -U odoo"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: addons
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: System dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libpq-dev libldap2-dev libsasl2-dev libxml2-dev libxslt1-dev \
+                                     libjpeg-dev zlib1g-dev wkhtmltopdf
+
+      - name: Check out Odoo 19
+        run: git clone --depth 1 --branch 19.0 https://github.com/odoo/odoo.git odoo
+
+      - name: Python dependencies
+        run: |
+          python -m pip install --upgrade pip wheel
+          sed 's/^psycopg2==.*$/psycopg2-binary/;/python-ldap/d;/ofxparse/d' odoo/requirements.txt > /tmp/req.txt
+          pip install -r /tmp/req.txt
+          pip install psycopg2-binary lxml_html_clean phonenumbers python-stdnum requests
+
+      - name: Install the modules and run their tests
+        run: |
+          MODULES=$(for d in addons/*/; do
+            [ -f "${d}__manifest__.py" ] && basename "$d"
+          done | paste -sd, -)
+          TAGS=$(echo "$MODULES" | tr ',' '\n' | sed 's|^|/|' | paste -sd, -)
+          echo "Modules: $MODULES"
+          python odoo/odoo-bin \
+            --db_host=localhost --db_port=5432 --db_user=odoo --db_password=odoo \
+            --addons-path=odoo/addons,addons \
+            -d ci --without-demo=all \
+            -i "$MODULES" --test-enable --test-tags "$TAGS" \
+            --stop-after-init --log-level=info 2>&1 | tee /tmp/odoo.log
+          if grep -qE "(FAIL:|ERROR:)" /tmp/odoo.log; then
+            echo "::error::Odoo reported failing tests"
+            exit 1
+          fi
+          grep -E "tests.result" /tmp/odoo.log | tail -1 >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload the Odoo log on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: odoo-log
+          path: /tmp/odoo.log
+
+  build:
+    name: Build the Apps Store archives
+    runs-on: ubuntu-latest
+    needs: tests
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Build one zip per module
+        run: ./scripts/build.sh
+      - name: Publish the archives as build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: odoo-addons-dyonysos
+          path: dist/
+          retention-days: 30
+      - name: Summary
+        run: |
+          echo '### Archives' >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          cat dist/BUILD.txt >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+
+  release:
+    name: Attach the archives to the release
+    runs-on: ubuntu-latest
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v')
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: ./scripts/build.sh
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.zip
+          body_path: dist/BUILD.txt

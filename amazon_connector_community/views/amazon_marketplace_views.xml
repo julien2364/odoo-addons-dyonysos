@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_amazon_marketplace_list" model="ir.ui.view">
+        <field name="name">amazon.marketplace.community.list</field>
+        <field name="model">amazon.marketplace.community</field>
+        <field name="arch" type="xml">
+            <list string="Places de marché Amazon">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="country_code"/>
+                <field name="marketplace_id"/>
+                <field name="currency_id"/>
+                <field name="domain_name"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_amazon_marketplace_form" model="ir.ui.view">
+        <field name="name">amazon.marketplace.community.form</field>
+        <field name="model">amazon.marketplace.community</field>
+        <field name="arch" type="xml">
+            <form string="Place de marché Amazon">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="country_code"/>
+                            <field name="domain_name"/>
+                        </group>
+                        <group>
+                            <field name="marketplace_id"/>
+                            <field name="currency_id"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_amazon_marketplace" model="ir.actions.act_window">
+        <field name="name">Places de marché Amazon</field>
+        <field name="res_model">amazon.marketplace.community</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

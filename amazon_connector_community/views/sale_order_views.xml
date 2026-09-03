@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_order_form_amazon" model="ir.ui.view">
+        <field name="name">sale.order.form.amazon</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='client_order_ref']" position="after">
+                <field name="amazon_order_ref" invisible="not amazon_order_ref"/>
+                <field name="amazon_account_id" invisible="not amazon_order_ref"/>
+                <field name="amazon_marketplace_id" invisible="not amazon_order_ref"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_picking_form_amazon" model="ir.ui.view">
+        <field name="name">stock.picking.form.amazon</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='origin']" position="after">
+                <field name="amazon_tracking_sent" invisible="not amazon_tracking_sent"/>
+                <field name="amazon_tracking_date" invisible="not amazon_tracking_sent"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

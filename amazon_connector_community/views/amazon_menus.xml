@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_amazon_root" name="Amazon"
+              parent="sale.sale_menu_root" sequence="80"
+              groups="amazon_connector_community.group_amazon_user"/>
+
+    <menuitem id="menu_amazon_account" name="Comptes Amazon"
+              parent="menu_amazon_root" action="action_amazon_account" sequence="10"/>
+
+    <menuitem id="menu_amazon_sync_log" name="Journal de synchronisation"
+              parent="menu_amazon_root" action="action_amazon_sync_log" sequence="20"/>
+
+    <menuitem id="menu_amazon_marketplace" name="Places de marché"
+              parent="menu_amazon_root" action="action_amazon_marketplace" sequence="30"
+              groups="amazon_connector_community.group_amazon_manager"/>
+</odoo>

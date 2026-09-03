@@ -1,0 +1,915 @@
+# Translation of Odoo Server.
+# French translation — DYONYSOS <welcome@dyonysos.fr>
+# This file contains the translation of the following modules:
+# 	* amazon_connector_community
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-03 23:40+0000\n"
+"PO-Revision-Date: 2026-09-03 23:40+0000\n"
+"Last-Translator: DYONYSOS <welcome@dyonysos.fr>\n"
+"Language-Team: French <welcome@dyonysos.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_account.py:0
+msgid "%(ok)s commande(s) importée(s), %(ko)s en erreur."
+msgstr "%(ok)s commande(s) importée(s), %(ko)s en erreur."
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_account.py:0
+msgid "%s SKU mis à jour."
+msgstr "%s SKU mis à jour."
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_account.py:0
+msgid "%s expédition(s) confirmée(s)."
+msgstr "%s expédition(s) confirmée(s)."
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_account.py:0
+msgid "%s prix mis à jour."
+msgstr "%s prix mis à jour."
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_sp_api.py:0
+msgid ""
+"Accès refusé par Amazon sur %s. Vérifiez les rôles accordés à l'application "
+"et le vendeur sélectionné."
+msgstr "Accès refusé par Amazon sur %s. Vérifiez les rôles accordés à l'application et le vendeur sélectionné."
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__message_needaction
+msgid "Action Needed"
+msgstr "Action requise"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__active
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_marketplace_community__active
+msgid "Active"
+msgstr "Actif"
+
+#. module: amazon_connector_community
+#: model:ir.ui.menu,name:amazon_connector_community.menu_amazon_root
+msgid "Amazon"
+msgstr "Amazon"
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_account.py:0
+msgid "Amazon %s"
+msgstr "Amazon %s"
+
+#. module: amazon_connector_community
+#: model:res.groups,name:amazon_connector_community.group_amazon_manager
+msgid "Amazon : administration"
+msgstr "Amazon : administration"
+
+#. module: amazon_connector_community
+#: model:res.groups,name:amazon_connector_community.group_amazon_user
+msgid "Amazon : consultation"
+msgstr "Amazon : consultation"
+
+#. module: amazon_connector_community
+#: model:ir.module.category,name:amazon_connector_community.module_category_amazon_connector
+#: model:res.groups.privilege,name:amazon_connector_community.res_groups_privilege_amazon
+msgid "Amazon Connector"
+msgstr "Amazon Connector"
+
+#. module: amazon_connector_community
+#: model:ir.actions.server,name:amazon_connector_community.ir_cron_amazon_push_offers_ir_actions_server
+msgid "Amazon Connector : envoi du stock et des prix"
+msgstr "Amazon Connector : envoi du stock et des prix"
+
+#. module: amazon_connector_community
+#: model:ir.actions.server,name:amazon_connector_community.ir_cron_amazon_import_orders_ir_actions_server
+msgid "Amazon Connector : import des commandes"
+msgstr "Amazon Connector : import des commandes"
+
+#. module: amazon_connector_community
+#: model:ir.actions.server,name:amazon_connector_community.ir_cron_amazon_push_tracking_ir_actions_server
+msgid "Amazon Connector : remontée du suivi"
+msgstr "Amazon Connector : remontée du suivi"
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_sp_api.py:0
+msgid "Amazon a retourné une erreur HTTP %s."
+msgstr "Amazon a retourné une erreur HTTP %s."
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_sp_api.py:0
+msgid "Amazon n'a pas retourné de jeton d'accès."
+msgstr "Amazon n'a pas retourné de jeton d'accès."
+
+#. module: amazon_connector_community
+#: model:ir.model.fields.selection,name:amazon_connector_community.selection__amazon_account_community__region__na
+msgid "Amérique du Nord"
+msgstr "Amérique du Nord"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__import_days
+msgid "Antériorité (jours)"
+msgstr "Antériorité (jours)"
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_sp_api.py:0
+msgid "Appel Amazon échoué pour %s."
+msgstr "Appel Amazon échoué pour %s."
+
+#. module: amazon_connector_community
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_account_form
+msgid "Archivé"
+msgstr "Archivé"
+
+#. module: amazon_connector_community
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_account_search
+msgid "Archivés"
+msgstr "Archivés"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__shipping_product_id
+msgid "Article frais de port"
+msgstr "Article frais de port"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,help:amazon_connector_community.field_amazon_account_community__shipping_product_id
+msgid "Article utilisé pour la ligne de frais de port des commandes Amazon."
+msgstr "Article utilisé pour la ligne de frais de port des commandes Amazon."
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__message_attachment_count
+msgid "Attachment Count"
+msgstr "Nombre de pièces jointes"
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_account.py:0
+msgid ""
+"Aucun article Odoo ne correspond au SKU vendeur Amazon « %s ». Renseignez ce"
+" SKU sur la fiche article."
+msgstr "Aucun article Odoo ne correspond au SKU vendeur Amazon « %s ». Renseignez ce SKU sur la fiche article."
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_account.py:0
+msgid ""
+"Aucun article de frais de port n'est configuré sur le compte Amazon « %s »."
+msgstr "Aucun article de frais de port n'est configuré sur le compte Amazon « %s »."
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_account.py:0
+msgid "Aucune place de marché n'est configurée sur le compte."
+msgstr "Aucune place de marché n'est configurée sur le compte."
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_sp_api.py:0
+msgid ""
+"Authentification Amazon refusée. Vérifiez le refresh token et les "
+"identifiants de l'application LWA."
+msgstr "Authentification Amazon refusée. Vérifiez le refresh token et les identifiants de l'application LWA."
+
+#. module: amazon_connector_community
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_account_form
+msgid "Boutique Amazon Europe"
+msgstr "Boutique Amazon Europe"
+
+#. module: amazon_connector_community
+#: model:ir.model.constraint,message:amazon_connector_community.constraint_sale_order_amazon_order_ref_uniq
+msgid "Cette commande Amazon a déjà été importée."
+msgstr "Cette commande Amazon a déjà été importée."
+
+#. module: amazon_connector_community
+#: model:ir.model.constraint,message:amazon_connector_community.constraint_amazon_marketplace_community_amazon_marketplace_uniq
+msgid "Cette place de marché Amazon existe déjà."
+msgstr "Cette place de marché Amazon existe déjà."
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_account.py:0
+msgid "Client Amazon"
+msgstr "Client Amazon"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,help:amazon_connector_community.field_amazon_marketplace_community__country_code
+msgid "Code ISO du pays de la place de marché (FR, DE, ...)"
+msgstr "Code ISO du pays de la place de marché (FR, DE, ...)"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_marketplace_community__country_code
+msgid "Code pays"
+msgstr "Code pays"
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_account.py:0
+msgid "Commande %(ref)s ignorée : %(error)s"
+msgstr "Commande %(ref)s ignorée : %(error)s"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,help:amazon_connector_community.field_amazon_sync_log__reference
+msgid "Commande ou SKU concerné."
+msgstr "Commande ou SKU concerné."
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__order_count
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_account_form
+msgid "Commandes"
+msgstr "Commandes"
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_account.py:0
+msgid "Commandes Amazon"
+msgstr "Commandes Amazon"
+
+#. module: amazon_connector_community
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_sync_log_search
+msgid "Compte"
+msgstr "Compte"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_sync_log__account_id
+#: model:ir.model.fields,field_description:amazon_connector_community.field_sale_order__amazon_account_id
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_account_form
+msgid "Compte Amazon"
+msgstr "Compte Amazon"
+
+#. module: amazon_connector_community
+#: model:ir.model,name:amazon_connector_community.model_amazon_account_community
+msgid "Compte vendeur Amazon"
+msgstr "Compte vendeur Amazon"
+
+#. module: amazon_connector_community
+#: model:ir.actions.act_window,name:amazon_connector_community.action_amazon_account
+#: model:ir.ui.menu,name:amazon_connector_community.menu_amazon_account
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_account_list
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_account_search
+msgid "Comptes Amazon"
+msgstr "Comptes Amazon"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,help:amazon_connector_community.field_amazon_account_community__auto_confirm_orders
+msgid "Confirme la commande de vente juste après son import."
+msgstr "Confirme la commande de vente juste après son import."
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__auto_confirm_orders
+msgid "Confirmer automatiquement"
+msgstr "Confirmer automatiquement"
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_account.py:0
+msgid "Connexion Amazon"
+msgstr "Connexion Amazon"
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_account.py:0
+msgid "Connexion impossible : %s"
+msgstr "Connexion impossible : %s"
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_account.py:0
+msgid "Connexion établie : %s place(s) de marché accessible(s)."
+msgstr "Connexion établie : %s place(s) de marché accessible(s)."
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_account.py:0
+msgid "Connexion établie, %s place(s) de marché accessible(s)."
+msgstr "Connexion établie, %s place(s) de marché accessible(s)."
+
+#. module: amazon_connector_community
+#: model:ir.model,name:amazon_connector_community.model_res_partner
+msgid "Contact"
+msgstr "Contact"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__create_uid
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_marketplace_community__create_uid
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_sync_log__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__create_date
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_marketplace_community__create_date
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_sync_log__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: amazon_connector_community
+#: model_terms:ir.actions.act_window,help:amazon_connector_community.action_amazon_account
+msgid "Créez votre premier compte vendeur Amazon"
+msgstr "Créez votre premier compte vendeur Amazon"
+
+#. module: amazon_connector_community
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_sync_log_form
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_sync_log_list
+msgid "Date"
+msgstr "Date"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_stock_picking__amazon_tracking_date
+msgid "Date d'envoi du suivi"
+msgstr "Date d'envoi du suivi"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__last_price_sync
+msgid "Dernier envoi de prix"
+msgstr "Dernier envoi de prix"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__last_stock_sync
+msgid "Dernier envoi de stock"
+msgstr "Dernier envoi de stock"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__last_tracking_sync
+msgid "Dernier envoi de suivi"
+msgstr "Dernier envoi de suivi"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__last_order_sync
+msgid "Dernier import de commandes"
+msgstr "Dernier import de commandes"
+
+#. module: amazon_connector_community
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_account_form
+msgid "Dernières synchronisations"
+msgstr "Dernières synchronisations"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_marketplace_community__currency_id
+msgid "Devise"
+msgstr "Devise"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__display_name
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_marketplace_community__display_name
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_sync_log__display_name
+#: model:ir.model.fields,field_description:amazon_connector_community.field_product_product__display_name
+#: model:ir.model.fields,field_description:amazon_connector_community.field_product_template__display_name
+#: model:ir.model.fields,field_description:amazon_connector_community.field_res_partner__display_name
+#: model:ir.model.fields,field_description:amazon_connector_community.field_sale_order__display_name
+#: model:ir.model.fields,field_description:amazon_connector_community.field_sale_order_line__display_name
+#: model:ir.model.fields,field_description:amazon_connector_community.field_stock_picking__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_marketplace_community__domain_name
+msgid "Domaine"
+msgstr "Domaine"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_sync_log__duration
+msgid "Durée (s)"
+msgstr "Durée (s)"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_res_partner__amazon_buyer_email
+#: model:ir.model.fields,field_description:amazon_connector_community.field_res_users__amazon_buyer_email
+msgid "Email acheteur Amazon"
+msgstr "Email acheteur Amazon"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__endpoint_url
+msgid "Endpoint"
+msgstr "Endpoint"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__warehouse_id
+msgid "Entrepôt"
+msgstr "Entrepôt"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields.selection,name:amazon_connector_community.selection__amazon_sync_log__operation__push_price
+msgid "Envoi des prix"
+msgstr "Envoi des prix"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields.selection,name:amazon_connector_community.selection__amazon_sync_log__operation__push_stock
+msgid "Envoi du stock"
+msgstr "Envoi du stock"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields.selection,name:amazon_connector_community.selection__amazon_sync_log__operation__push_tracking
+msgid "Envoi du suivi"
+msgstr "Envoi du suivi"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,help:amazon_connector_community.field_product_product__amazon_sync
+#: model:ir.model.fields,help:amazon_connector_community.field_product_template__amazon_sync
+msgid "Envoie la quantité disponible et le prix de cet article vers Amazon."
+msgstr "Envoie la quantité disponible et le prix de cet article vers Amazon."
+
+#. module: amazon_connector_community
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_account_form
+msgid "Envoyer le suivi"
+msgstr "Envoyer le suivi"
+
+#. module: amazon_connector_community
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_account_form
+msgid "Envoyer stock et prix"
+msgstr "Envoyer stock et prix"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields.selection,name:amazon_connector_community.selection__amazon_sync_log__state__error
+msgid "Erreur"
+msgstr "Erreur"
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_sp_api.py:0
+msgid "Erreur réseau lors de l'appel à %(path)s : %(error)s"
+msgstr "Erreur réseau lors de l'appel à %(path)s : %(error)s"
+
+#. module: amazon_connector_community
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_sync_log_search
+msgid "Erreurs"
+msgstr "Erreurs"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields.selection,name:amazon_connector_community.selection__amazon_account_community__region__eu
+msgid "Europe"
+msgstr "Europe"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields.selection,name:amazon_connector_community.selection__amazon_account_community__region__fe
+msgid "Extrême-Orient"
+msgstr "Extrême-Orient"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,help:amazon_connector_community.field_amazon_account_community__import_days
+msgid "Fenêtre d'import utilisée lors de la toute première synchronisation."
+msgstr "Fenêtre d'import utilisée lors de la toute première synchronisation."
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__message_follower_ids
+msgid "Followers"
+msgstr "Abonnés"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Abonnés (partenaires)"
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_account.py:0
+#: model:ir.model.fields,field_description:amazon_connector_community.field_sale_order_line__is_amazon_shipping
+#: model:product.template,name:amazon_connector_community.product_amazon_shipping_product_template
+msgid "Frais de port Amazon"
+msgstr "Frais de port Amazon"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__has_message
+msgid "Has Message"
+msgstr "A un message"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__id
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_marketplace_community__id
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_sync_log__id
+#: model:ir.model.fields,field_description:amazon_connector_community.field_product_product__id
+#: model:ir.model.fields,field_description:amazon_connector_community.field_product_template__id
+#: model:ir.model.fields,field_description:amazon_connector_community.field_res_partner__id
+#: model:ir.model.fields,field_description:amazon_connector_community.field_sale_order__id
+#: model:ir.model.fields,field_description:amazon_connector_community.field_sale_order_line__id
+#: model:ir.model.fields,field_description:amazon_connector_community.field_stock_picking__id
+msgid "ID"
+msgstr "ID"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,help:amazon_connector_community.field_amazon_marketplace_community__marketplace_id
+msgid ""
+"Identifiant Amazon de la place de marché, par exemple A13V1IB3VIYZZH pour la"
+" France."
+msgstr "Identifiant Amazon de la place de marché, par exemple A13V1IB3VIYZZH pour la France."
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,help:amazon_connector_community.field_sale_order__amazon_order_ref
+msgid "Identifiant de la commande sur Amazon (AmazonOrderId)."
+msgstr "Identifiant de la commande sur Amazon (AmazonOrderId)."
+
+#. module: amazon_connector_community
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_account_form
+msgid "Identifiants SP-API"
+msgstr "Identifiants SP-API"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,help:amazon_connector_community.field_amazon_account_community__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si coché, de nouveaux messages requièrent votre attention."
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,help:amazon_connector_community.field_amazon_account_community__message_has_error
+#: model:ir.model.fields,help:amazon_connector_community.field_amazon_account_community__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si coché, certains messages ont une erreur de distribution."
+
+#. module: amazon_connector_community
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_account_form
+msgid "Import"
+msgstr "Import"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields.selection,name:amazon_connector_community.selection__amazon_sync_log__operation__import_orders
+msgid "Import des commandes"
+msgstr "Import des commandes"
+
+#. module: amazon_connector_community
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_account_form
+msgid "Importer les commandes"
+msgstr "Importer les commandes"
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_sp_api.py:0
+msgid "Impossible de contacter le service d'authentification Amazon : %s"
+msgstr "Impossible de contacter le service d'authentification Amazon : %s"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__message_is_follower
+msgid "Is Follower"
+msgstr "Est abonné"
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_account.py:0
+#: model:ir.actions.act_window,name:amazon_connector_community.action_amazon_sync_log
+#: model:ir.ui.menu,name:amazon_connector_community.menu_amazon_sync_log
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_sync_log_search
+msgid "Journal de synchronisation"
+msgstr "Journal de synchronisation"
+
+#. module: amazon_connector_community
+#: model:ir.model,name:amazon_connector_community.model_amazon_sync_log
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_sync_log_form
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_sync_log_list
+msgid "Journal de synchronisation Amazon"
+msgstr "Journal de synchronisation Amazon"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__journal_id
+msgid "Journal de vente"
+msgstr "Journal de vente"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__log_count
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_account_form
+msgid "Journaux"
+msgstr "Journaux"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__lwa_client_id
+msgid "LWA Client ID"
+msgstr "LWA Client ID"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__lwa_client_secret
+msgid "LWA Client Secret"
+msgstr "LWA Client Secret"
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_sp_api.py:0
+msgid "La bibliothèque Python « requests » n'est pas installée."
+msgstr "La bibliothèque Python « requests » n'est pas installée."
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_account.py:0
+msgid "La commande Amazon %s ne contient aucune ligne."
+msgstr "La commande Amazon %s ne contient aucune ligne."
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__write_uid
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_marketplace_community__write_uid
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_sync_log__write_uid
+msgid "Last Updated by"
+msgstr "Dernière modification par"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__write_date
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_marketplace_community__write_date
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_sync_log__write_date
+msgid "Last Updated on"
+msgstr "Dernière modification le"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__pricelist_id
+msgid "Liste de prix"
+msgstr "Liste de prix"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,help:amazon_connector_community.field_amazon_account_community__pricelist_id
+msgid "Liste de prix utilisée pour l'envoi des prix vers Amazon."
+msgstr "Liste de prix utilisée pour l'envoi des prix vers Amazon."
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_marketplace_community__marketplace_id
+msgid "Marketplace ID"
+msgstr "Marketplace ID"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_sync_log__message
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_sync_log_form
+msgid "Message"
+msgstr "Message"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__message_has_error
+msgid "Message Delivery error"
+msgstr "Erreur de distribution du message"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__message_ids
+msgid "Messages"
+msgstr "Messages"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__name
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_marketplace_community__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Nombre d'actions"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__message_has_error_counter
+msgid "Number of errors"
+msgstr "Nombre d'erreurs"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,help:amazon_connector_community.field_amazon_account_community__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Nombre de messages nécessitant une action"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,help:amazon_connector_community.field_amazon_account_community__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Nombre de messages en erreur de distribution"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_sync_log__operation
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_sync_log_search
+msgid "Opération"
+msgstr "Opération"
+
+#. module: amazon_connector_community
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_account_form
+msgid "Paramétrage Odoo"
+msgstr "Paramétrage Odoo"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_sync_log__marketplace_id
+msgid "Place de marché"
+msgstr "Place de marché"
+
+#. module: amazon_connector_community
+#: model:ir.model,name:amazon_connector_community.model_amazon_marketplace_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_res_partner__amazon_marketplace_id
+#: model:ir.model.fields,field_description:amazon_connector_community.field_res_users__amazon_marketplace_id
+#: model:ir.model.fields,field_description:amazon_connector_community.field_sale_order__amazon_marketplace_id
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_marketplace_form
+msgid "Place de marché Amazon"
+msgstr "Place de marché Amazon"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__marketplace_ids
+#: model:ir.ui.menu,name:amazon_connector_community.menu_amazon_marketplace
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_account_form
+msgid "Places de marché"
+msgstr "Places de marché"
+
+#. module: amazon_connector_community
+#: model:ir.actions.act_window,name:amazon_connector_community.action_amazon_marketplace
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_marketplace_list
+msgid "Places de marché Amazon"
+msgstr "Places de marché Amazon"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,help:amazon_connector_community.field_amazon_account_community__marketplace_ids
+msgid "Places de marché interrogées lors de l'import des commandes."
+msgstr "Places de marché interrogées lors de l'import des commandes."
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__fiscal_position_id
+msgid "Position fiscale"
+msgstr "Position fiscale"
+
+#. module: amazon_connector_community
+#: model:ir.model,name:amazon_connector_community.model_product_template
+msgid "Product"
+msgstr "Article"
+
+#. module: amazon_connector_community
+#: model:ir.model,name:amazon_connector_community.model_product_product
+msgid "Product Variant"
+msgstr "Variante d'article"
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_sp_api.py:0
+msgid "Quota d'appels Amazon dépassé pour %s."
+msgstr "Quota d'appels Amazon dépassé pour %s."
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__lwa_refresh_token
+msgid "Refresh Token LWA"
+msgstr "Refresh Token LWA"
+
+#. module: amazon_connector_community
+#: model_terms:ir.actions.act_window,help:amazon_connector_community.action_amazon_account
+msgid ""
+"Renseignez le Seller ID et les identifiants de votre application LWA (SP-API),\n"
+"               choisissez vos places de marché, puis testez la connexion."
+msgstr "Renseignez le Seller ID et les identifiants de votre application LWA (SP-API),\n               choisissez vos places de marché, puis testez la connexion."
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_sync_log__reference
+msgid "Référence"
+msgstr "Référence"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_sale_order__amazon_order_ref
+msgid "Référence Amazon"
+msgstr "Référence Amazon"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_sale_order_line__amazon_item_ref
+msgid "Référence ligne Amazon"
+msgstr "Référence ligne Amazon"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__region
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_account_search
+msgid "Région"
+msgstr "Région"
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_sp_api.py:0
+msgid "Réponse Amazon illisible pour %s."
+msgstr "Réponse Amazon illisible pour %s."
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_product_product__amazon_sku
+msgid "SKU Amazon"
+msgstr "SKU Amazon"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,help:amazon_connector_community.field_product_product__amazon_sku
+msgid ""
+"SKU vendeur utilisé sur Amazon. Vide, la référence interne est utilisée."
+msgstr "SKU vendeur utilisé sur Amazon. Vide, la référence interne est utilisée."
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Erreur de distribution du SMS"
+
+#. module: amazon_connector_community
+#: model:ir.model,name:amazon_connector_community.model_sale_order
+msgid "Sales Order"
+msgstr "Commande client"
+
+#. module: amazon_connector_community
+#: model:ir.model,name:amazon_connector_community.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Ligne de commande client"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__seller_id
+msgid "Seller ID"
+msgstr "Seller ID"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_marketplace_community__sequence
+msgid "Sequence"
+msgstr "Séquence"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__company_id
+msgid "Société"
+msgstr "Société"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_sync_log__state
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_sync_log_search
+msgid "Statut"
+msgstr "Statut"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_stock_picking__amazon_tracking_sent
+msgid "Suivi envoyé à Amazon"
+msgstr "Suivi envoyé à Amazon"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_product_product__amazon_sync
+#: model:ir.model.fields,field_description:amazon_connector_community.field_product_template__amazon_sync
+msgid "Synchroniser avec Amazon"
+msgstr "Synchroniser avec Amazon"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields.selection,name:amazon_connector_community.selection__amazon_sync_log__state__done
+msgid "Terminé"
+msgstr "Terminé"
+
+#. module: amazon_connector_community
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_sync_log_search
+msgid "Terminés"
+msgstr "Terminés"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields.selection,name:amazon_connector_community.selection__amazon_sync_log__operation__test
+msgid "Test de connexion"
+msgstr "Test de connexion"
+
+#. module: amazon_connector_community
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_account_form
+msgid "Tester la connexion"
+msgstr "Tester la connexion"
+
+#. module: amazon_connector_community
+#: model:ir.model,name:amazon_connector_community.model_stock_picking
+msgid "Transfer"
+msgstr "Transfert"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,help:amazon_connector_community.field_amazon_account_community__endpoint_url
+msgid ""
+"URL de base de l'API SP-API. Calculée depuis la région, modifiable pour le "
+"bac à sable."
+msgstr "URL de base de l'API SP-API. Calculée depuis la région, modifiable pour le bac à sable."
+
+#. module: amazon_connector_community
+#: model:ir.model.constraint,message:amazon_connector_community.constraint_amazon_account_community_amazon_account_seller_uniq
+msgid "Un compte Amazon existe déjà pour ce Seller ID dans cette société."
+msgstr "Un compte Amazon existe déjà pour ce Seller ID dans cette société."
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_account.py:0
+msgid "Une ligne de commande Amazon est sans SKU vendeur."
+msgstr "Une ligne de commande Amazon est sans SKU vendeur."
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__website_message_ids
+msgid "Website Messages"
+msgstr "Messages du site web"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,help:amazon_connector_community.field_amazon_account_community__website_message_ids
+msgid "Website communication history"
+msgstr "Historique de communication du site web"
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_account.py:0
+msgid "account_id"
+msgstr "account_id"
+
+#. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_account.py:0
+msgid "amazon_account_id"
+msgstr "amazon_account_id"
+
+#. module: amazon_connector_community
+#: model_terms:ir.ui.view,arch_db:amazon_connector_community.view_amazon_sync_log_list
+msgid "Éléments"
+msgstr "Éléments"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_sync_log__item_count
+msgid "Éléments traités"
+msgstr "Éléments traités"
+
+#. module: amazon_connector_community
+#: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__team_id
+msgid "Équipe commerciale"
+msgstr "Équipe commerciale"

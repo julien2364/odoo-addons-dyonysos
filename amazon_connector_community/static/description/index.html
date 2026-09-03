@@ -1,0 +1,95 @@
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span12">
+      <h2 class="oe_slogan" style="color:#7c3aed;">Amazon Connector for Odoo Community</h2>
+      <h3 class="oe_slogan">Vos commandes, votre stock et vos prix Amazon dans Odoo, sans édition Enterprise</h3>
+    </div>
+    <div class="oe_span12">
+      <img class="oe_picture oe_screenshot" src="banner.png" alt="Amazon Connector for Odoo Community"/>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container oe_dark">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span6">
+      <img class="oe_picture oe_screenshot" src="screen_orders.png" alt="Commandes Amazon importées"/>
+    </div>
+    <div class="oe_span6">
+      <h3>Le connecteur Amazon que Community n'a pas</h3>
+      <p>Le module <i>sale_amazon</i> livré par Odoo est réservé à l'édition Enterprise. Ce connecteur apporte la même liaison à une base Community, en s'appuyant directement sur l'API <b>SP-API</b> (Selling Partner API) d'Amazon.</p>
+      <p>Il va aussi plus loin : en plus de l'import des commandes et de la remontée du suivi, il publie sur vos annonces Amazon la <b>quantité disponible</b> et le <b>prix</b> issus d'Odoo.</p>
+      <p>Fonctionne également sur Odoo Enterprise, en parallèle ou à la place du module natif.</p>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span4">
+      <h4>Import des commandes</h4>
+      <p>Chaque commande Amazon devient une commande de vente Odoo : client créé ou rapproché depuis l'adresse de livraison, lignes rapprochées par SKU vendeur, frais de port sur une ligne distincte, taxes selon la position fiscale du compte. La confirmation automatique est optionnelle.</p>
+    </div>
+    <div class="oe_span4">
+      <h4>Envoi du stock et des prix</h4>
+      <p>Pour les articles marqués « Synchroniser avec Amazon », la quantité disponible de l'entrepôt choisi et le prix de la liste de prix du compte sont publiés sur l'annonce correspondante (<i>PATCH /listings</i>). Un SKU Amazon distinct de la référence interne est possible.</p>
+    </div>
+    <div class="oe_span4">
+      <h4>Remontée du suivi</h4>
+      <p>Dès qu'un bon de livraison rattaché à une commande Amazon est validé avec un numéro de suivi, l'expédition est confirmée côté Amazon : transporteur, numéro de colis, date d'expédition et lignes concernées.</p>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container oe_dark">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span6">
+      <h3>Import idempotent, erreurs isolées</h3>
+      <p>La référence de commande Amazon est unique et indexée : réimporter le même lot ne crée aucun doublon. Chaque commande est traitée dans son propre point de sauvegarde — un SKU introuvable ou une adresse incomplète met cette commande en erreur dans le journal, sans interrompre le reste du lot.</p>
+      <p>Un seul point d'entrée réseau dans le code, une seule couche d'appel SP-API : jeton LWA mis en cache, quota Amazon géré par nouvelles tentatives avec temporisation croissante, messages d'erreur lisibles. Aucun secret n'est écrit dans les journaux.</p>
+    </div>
+    <div class="oe_span6">
+      <img class="oe_picture oe_screenshot" src="screen_sync.png" alt="Journal de synchronisation Amazon"/>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span4">
+      <h4>Multi-comptes, multi-marketplaces</h4>
+      <p>Autant de comptes vendeurs que nécessaire, chacun avec sa région (Europe, Amérique du Nord, Extrême-Orient), son journal de vente, son équipe commerciale, son entrepôt et sa liste de prix. Les dix places de marché européennes sont pré-chargées : FR, DE, ES, IT, NL, BE, SE, PL, IE, UK.</p>
+    </div>
+    <div class="oe_span4">
+      <h4>Manuel ou planifié</h4>
+      <p>Quatre boutons sur le compte — tester la connexion, importer les commandes, envoyer stock et prix, envoyer le suivi. Trois actions planifiées (10, 15 et 30 minutes) sont fournies <b>désactivées par défaut</b> : vous les activez quand votre paramétrage est validé.</p>
+    </div>
+    <div class="oe_span4">
+      <h4>Traçable</h4>
+      <p>Menu <i>Ventes › Amazon › Journal de synchronisation</i> : opération, compte, place de marché, nombre d'éléments, durée, statut et message. Les identifiants SP-API ne sont visibles que par les administrateurs techniques.</p>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container oe_dark">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span12">
+      <h3>Ce dont vous avez besoin</h3>
+      <p>Un compte <b>Amazon Seller Central</b> et une application <b>SP-API</b> déclarée dans Amazon Developer Central (rôles Commandes, Stock et Prix, Expéditions). Vous renseignez sur le compte Odoo : le <i>Seller ID</i>, le <i>LWA Client ID</i>, le <i>LWA Client Secret</i> et le <i>Refresh Token</i>. La bibliothèque Python <code>requests</code> doit être installée sur le serveur.</p>
+      <p>Le module n'inclut pas la gestion Amazon FBA (les expéditions faites par Amazon), ni la facturation VCS, ni les retours et remboursements Amazon. Il couvre les commandes marchand (FBM), le stock, les prix et le suivi d'expédition.</p>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span12" style="text-align:center;">
+      <h3 style="color:#7c3aed;">DYONYSOS</h3>
+      <p>Édition et intégration de modules Odoo.</p>
+      <p>Une question, un besoin d'adaptation, une place de marché supplémentaire ?<br/>
+         <b><a href="mailto:welcome@dyonysos.fr">welcome@dyonysos.fr</a></b><br/>
+         <a href="https://dyonysos.fr">https://dyonysos.fr</a></p>
+      <p>Support inclus : installation, paramétrage SP-API, correction des anomalies.</p>
+    </div>
+  </div>
+</section>

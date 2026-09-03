@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="mcp_model_config_view_list" model="ir.ui.view">
+        <field name="name">mcp.model.config.list</field>
+        <field name="model">mcp.model.config</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="sequence" widget="handle"/>
+                <field name="model_id" options="{'no_create': True}"/>
+                <field name="model_name" optional="show"/>
+                <field name="description"/>
+                <field name="allow_read"/>
+                <field name="allow_create"/>
+                <field name="allow_write"/>
+                <field name="allow_unlink"/>
+                <field name="domain" optional="hide"/>
+                <field name="field_names" optional="hide"/>
+                <field name="method_names" optional="hide"/>
+                <field name="limit_default" optional="hide"/>
+                <field name="limit_max" optional="hide"/>
+                <field name="active" optional="hide" widget="boolean_toggle"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="mcp_model_config_view_form" model="ir.ui.view">
+        <field name="name">mcp.model.config.form</field>
+        <field name="model">mcp.model.config</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger" invisible="active"/>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_open_records" type="object" class="oe_stat_button" icon="fa-database">
+                            <div class="o_stat_info"><span class="o_stat_text">Open records</span></div>
+                        </button>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="model_id" options="{'no_create': True}"/>
+                            <field name="model_name" readonly="1"/>
+                            <field name="description" placeholder="What an AI assistant should know about this model"/>
+                            <field name="active" invisible="1"/>
+                        </group>
+                        <group string="Allowed operations">
+                            <field name="allow_read"/>
+                            <field name="allow_create"/>
+                            <field name="allow_write"/>
+                            <field name="allow_unlink"/>
+                        </group>
+                    </group>
+                    <group string="Restrictions">
+                        <field name="domain" placeholder="[('state', '!=', 'cancel')]"/>
+                        <field name="field_names" placeholder="id,name,email,phone — empty = all readable fields"/>
+                        <field name="method_names" placeholder="action_post,action_confirm"/>
+                        <field name="limit_default"/>
+                        <field name="limit_max"/>
+                    </group>
+                    <div class="alert alert-info" role="alert">
+                        Odoo access rights and record rules always apply on top of these settings: an MCP call
+                        runs as the user owning the API key, never as a superuser.
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="mcp_model_config_action" model="ir.actions.act_window">
+        <field name="name">Exposed models</field>
+        <field name="res_model">mcp.model.config</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Expose a first model to your AI assistants</p>
+            <p>Nothing is reachable through MCP until you add it here.</p>
+        </field>
+    </record>
+</odoo>

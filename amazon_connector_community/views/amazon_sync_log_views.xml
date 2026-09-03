@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_amazon_sync_log_list" model="ir.ui.view">
+        <field name="name">amazon.sync.log.list</field>
+        <field name="model">amazon.sync.log</field>
+        <field name="arch" type="xml">
+            <list string="Journal de synchronisation Amazon"
+                  decoration-danger="state == 'error'">
+                <field name="create_date" string="Date"/>
+                <field name="account_id"/>
+                <field name="marketplace_id" optional="show"/>
+                <field name="operation"/>
+                <field name="reference" optional="hide"/>
+                <field name="item_count" sum="Éléments"/>
+                <field name="duration" optional="show"/>
+                <field name="state" widget="badge"
+                       decoration-success="state == 'done'"
+                       decoration-danger="state == 'error'"/>
+                <field name="message" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_amazon_sync_log_form" model="ir.ui.view">
+        <field name="name">amazon.sync.log.form</field>
+        <field name="model">amazon.sync.log</field>
+        <field name="arch" type="xml">
+            <form string="Journal de synchronisation Amazon">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="account_id"/>
+                            <field name="marketplace_id"/>
+                            <field name="operation"/>
+                            <field name="reference"/>
+                        </group>
+                        <group>
+                            <field name="state"/>
+                            <field name="item_count"/>
+                            <field name="duration"/>
+                            <field name="create_date" string="Date"/>
+                        </group>
+                    </group>
+                    <group string="Message">
+                        <field name="message" nolabel="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_amazon_sync_log_search" model="ir.ui.view">
+        <field name="name">amazon.sync.log.search</field>
+        <field name="model">amazon.sync.log</field>
+        <field name="arch" type="xml">
+            <search string="Journal de synchronisation">
+                <field name="account_id"/>
+                <field name="reference"/>
+                <filter name="filter_error" string="Erreurs" domain="[('state', '=', 'error')]"/>
+                <filter name="filter_done" string="Terminés" domain="[('state', '=', 'done')]"/>
+                <group>
+                    <filter name="group_account" string="Compte" context="{'group_by': 'account_id'}"/>
+                    <filter name="group_operation" string="Opération" context="{'group_by': 'operation'}"/>
+                    <filter name="group_state" string="Statut" context="{'group_by': 'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_amazon_sync_log" model="ir.actions.act_window">
+        <field name="name">Journal de synchronisation</field>
+        <field name="res_model">amazon.sync.log</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

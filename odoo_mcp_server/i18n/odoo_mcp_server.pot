@@ -1,0 +1,492 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* odoo_mcp_server
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-03 23:28+0000\n"
+"PO-Revision-Date: 2026-09-03 23:28+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: odoo_mcp_server
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.mcp_model_config_view_form
+msgid "<span class=\"o_stat_text\">Open records</span>"
+msgstr ""
+
+#. module: odoo_mcp_server
+#. odoo-python
+#: code:addons/odoo_mcp_server/controllers/mcp_controller.py:0
+msgid "Access denied: %s"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.actions.act_window,name:odoo_mcp_server.mcp_access_log_action
+#: model:ir.ui.menu,name:odoo_mcp_server.menu_mcp_log
+msgid "Access log"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.module.category,description:odoo_mcp_server.module_category_mcp
+msgid "Access to the AI assistant connector configuration."
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_model_config__active
+msgid "Active"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_res_config_settings__mcp_allow_writes
+msgid "Allow write operations"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.mcp_model_config_view_form
+msgid "Allowed operations"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.view_users_form_mcp
+msgid ""
+"An MCP client (Claude Desktop, Claude Code, Cursor, ChatGPT…) connects to\n"
+"                        <b>&lt;your Odoo URL&gt;/mcp</b> with the header\n"
+"                        <code>Authorization: Bearer &lt;key&gt;</code>. Generate a key with the scope\n"
+"                        <code>odoo.mcp</code> from the Account Security tab, then paste it in your client.\n"
+"                        The key inherits this user's permissions: create a dedicated user with the minimum\n"
+"                        rights rather than sharing an administrator key."
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.mcp_model_config_view_form
+msgid "Archived"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_access_log__arguments
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.mcp_access_log_view_form
+msgid "Arguments"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_model_config__method_names
+msgid "Callable methods"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:res.groups,comment:odoo_mcp_server.group_mcp_user
+msgid "Can create MCP API keys for itself and read its own access log."
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,help:odoo_mcp_server.field_mcp_model_config__method_names
+msgid ""
+"Comma-separated methods allowed through odoo_call_method for this model, on "
+"top of the global safe list."
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,help:odoo_mcp_server.field_mcp_model_config__field_names
+msgid ""
+"Comma-separated whitelist of field names. Empty = all fields readable by the"
+" user."
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model,name:odoo_mcp_server.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.res_config_settings_view_form_mcp
+msgid "Configure exposed models"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:res.groups,comment:odoo_mcp_server.group_mcp_manager
+msgid ""
+"Configures which models are exposed to AI assistants and reads the whole "
+"audit log."
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_model_config__allow_create
+msgid "Create"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_access_log__create_uid
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_model_config__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_access_log__create_date
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_model_config__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_model_config__limit_default
+msgid "Default limit"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_model_config__allow_unlink
+msgid "Delete"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields.selection,name:odoo_mcp_server.selection__mcp_access_log__state__denied
+msgid "Denied"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_model_config__description
+msgid "Description"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_access_log__display_name
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_model_config__display_name
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_res_users__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields.selection,name:odoo_mcp_server.selection__mcp_access_log__state__done
+msgid "Done"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_access_log__duration
+msgid "Duration (ms)"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_res_config_settings__mcp_enabled
+msgid "Enable the MCP endpoint"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_access_log__error
+#: model:ir.model.fields.selection,name:odoo_mcp_server.selection__mcp_access_log__state__error
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.mcp_access_log_view_form
+msgid "Error"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.mcp_access_log_view_search
+msgid "Errors and denials"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model_terms:ir.actions.act_window,help:odoo_mcp_server.mcp_model_config_action
+msgid "Expose a first model to your AI assistants"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.res_config_settings_view_form_mcp
+msgid ""
+"Expose this database to AI assistants through the Model Context Protocol, at"
+" /mcp."
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_model_config__field_names
+msgid "Exposed fields"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.actions.act_window,name:odoo_mcp_server.mcp_model_config_action
+#: model:ir.ui.menu,name:odoo_mcp_server.menu_mcp_config
+msgid "Exposed models"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,help:odoo_mcp_server.field_mcp_model_config__domain
+msgid "Extra domain ANDed with every search, e.g. [('state','!=','cancel')]."
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,help:odoo_mcp_server.field_res_config_settings__mcp_allow_writes
+msgid ""
+"Global kill switch: when off, create/update/delete tools are hidden and "
+"refused, whatever each model's configuration says."
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_access_log__id
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_model_config__id
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_res_config_settings__id
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_res_users__id
+msgid "ID"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_access_log__ip
+msgid "IP address"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_access_log__write_uid
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_model_config__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_access_log__write_date
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_model_config__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: odoo_mcp_server
+#. odoo-python
+#: code:addons/odoo_mcp_server/models/mcp_model_config.py:0
+msgid "Limits must be strictly positive."
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_res_config_settings__mcp_log_arguments
+msgid "Log call arguments"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_res_config_settings__mcp_log_retention_days
+msgid "Log retention (days)"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:res.groups,name:odoo_mcp_server.group_mcp_manager
+msgid "MCP Administrator"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.module.category,name:odoo_mcp_server.module_category_mcp
+#: model:ir.ui.menu,name:odoo_mcp_server.menu_mcp_root
+#: model:res.groups.privilege,name:odoo_mcp_server.privilege_mcp
+msgid "MCP Server"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.res_config_settings_view_form_mcp
+msgid "MCP Server (AI assistants)"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.actions.server,name:odoo_mcp_server.ir_cron_mcp_log_gc_ir_actions_server
+msgid "MCP Server: purge old access logs"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:res.groups,name:odoo_mcp_server.group_mcp_user
+msgid "MCP User"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model,name:odoo_mcp_server.model_mcp_access_log
+msgid "MCP access log"
+msgstr ""
+
+#. module: odoo_mcp_server
+#. odoo-python
+#: code:addons/odoo_mcp_server/models/res_users.py:0
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_access_log__client_name
+msgid "MCP client"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model,name:odoo_mcp_server.model_mcp_model_config
+msgid "MCP exposed model"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.view_users_form_mcp
+msgid "MCP key(s)."
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_res_users__mcp_key_count
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.view_users_form_mcp
+msgid "MCP keys"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_res_config_settings__mcp_rate_limit
+msgid "Max calls per minute and per key"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_model_config__limit_max
+msgid "Maximum limit"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_access_log__method
+msgid "Method"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_access_log__model_name
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_model_config__model_id
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.mcp_access_log_view_search
+msgid "Model"
+msgstr ""
+
+#. module: odoo_mcp_server
+#. odoo-python
+#: code:addons/odoo_mcp_server/models/res_users.py:0
+msgid "New MCP API key"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model_terms:ir.actions.act_window,help:odoo_mcp_server.mcp_model_config_action
+msgid "Nothing is reachable through MCP until you add it here."
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.mcp_model_config_view_form
+msgid ""
+"Odoo access rights and record rules always apply on top of these settings: an MCP call\n"
+"                        runs as the user owning the API key, never as a superuser."
+msgstr ""
+
+#. module: odoo_mcp_server
+#. odoo-python
+#: code:addons/odoo_mcp_server/controllers/mcp_controller.py:0
+msgid "Odoo error: %s"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_model_config__allow_read
+msgid "Read"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_access_log__record_count
+msgid "Record Count"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_access_log__record_ids
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.mcp_access_log_view_list
+msgid "Records"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_model_config__domain
+msgid "Restriction domain"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.mcp_model_config_view_form
+msgid "Restrictions"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_model_config__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,help:odoo_mcp_server.field_mcp_model_config__description
+msgid "Shown to the AI client to explain what this model holds."
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_access_log__state
+msgid "State"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.mcp_access_log_view_search
+msgid "Status"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_model_config__model_name
+msgid "Technical name"
+msgstr ""
+
+#. module: odoo_mcp_server
+#. odoo-python
+#: code:addons/odoo_mcp_server/models/mcp_model_config.py:0
+msgid "The default limit cannot exceed the maximum limit."
+msgstr ""
+
+#. module: odoo_mcp_server
+#. odoo-python
+#: code:addons/odoo_mcp_server/models/mcp_model_config.py:0
+msgid "The restriction domain of %s is not a valid Odoo domain."
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.view_users_form_mcp
+msgid "This user currently owns"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.mcp_access_log_view_search
+msgid "Today"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_access_log__tool
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.mcp_access_log_view_search
+msgid "Tool"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.mcp_access_log_view_list
+msgid "Total ms"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_model_config__allow_write
+msgid "Update"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model,name:odoo_mcp_server.model_res_users
+#: model:ir.model.fields,field_description:odoo_mcp_server.field_mcp_access_log__user_id
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.mcp_access_log_view_search
+msgid "User"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.mcp_model_config_view_form
+msgid "What an AI assistant should know about this model"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.mcp_access_log_view_list
+msgid "When"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model:ir.model.fields,help:odoo_mcp_server.field_res_config_settings__mcp_enabled
+msgid ""
+"When disabled, /mcp answers 503 and no AI client can reach this database."
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.mcp_model_config_view_form
+msgid "[('state', '!=', 'cancel')]"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.mcp_model_config_view_form
+msgid "action_post,action_confirm"
+msgstr ""
+
+#. module: odoo_mcp_server
+#: model_terms:ir.ui.view,arch_db:odoo_mcp_server.mcp_model_config_view_form
+msgid "id,name,email,phone — empty = all readable fields"
+msgstr ""

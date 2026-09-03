@@ -1,0 +1,76 @@
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span12">
+      <h2 class="oe_slogan" style="color:#7c3aed;">MCP Server for Odoo</h2>
+      <h3 class="oe_slogan">Branchez Claude, ChatGPT ou Cursor sur votre ERP — servi par Odoo lui-même</h3>
+    </div>
+    <div class="oe_span12"><img class="oe_picture oe_screenshot" src="banner.png" alt="MCP Server for Odoo"/></div>
+  </div>
+</section>
+
+<section class="oe_container oe_dark">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span6">
+      <h3>Un point de terminaison, zéro middleware</h3>
+      <p>Le module ajoute la route <code>/mcp</code> à votre Odoo : un serveur <b>Model Context Protocol</b>
+      complet (JSON-RPC 2.0 sur HTTP streamable, protocole 2025-06-18). Aucun service Python à héberger,
+      aucun conteneur supplémentaire, aucune synchronisation de données : l'assistant interroge Odoo en direct.</p>
+      <p>Dans votre client MCP, une seule ligne de configuration : l'URL <code>https://votre-odoo/mcp</code>
+      et l'en-tête <code>Authorization: Bearer &lt;clé&gt;</code>.</p>
+    </div>
+    <div class="oe_span6"><img class="oe_picture oe_screenshot" src="screen_log.png" alt="Journal d'audit"/></div>
+  </div>
+</section>
+
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span4">
+      <h4>Sécurité par construction</h4>
+      <p>Authentification par <b>clé API Odoo native</b> (scope <code>odoo.mcp</code>), révocable et expirable.
+      Chaque appel s'exécute avec les droits de l'utilisateur porteur : groupes, règles d'accès, règles
+      d'enregistrement et multi-société s'appliquent. Jamais de superutilisateur.</p>
+    </div>
+    <div class="oe_span4">
+      <h4>Vous décidez du périmètre</h4>
+      <p>Liste blanche de modèles, opérations autorisées au cas par cas (lecture, création, écriture,
+      suppression), domaine de restriction, liste de champs exposés, méthodes appelables et limites de
+      pagination. Un interrupteur global coupe toute écriture.</p>
+    </div>
+    <div class="oe_span4">
+      <h4>Tout est tracé</h4>
+      <p>Journal d'audit de chaque appel : outil, modèle, enregistrements touchés, durée, adresse IP,
+      arguments et erreur éventuelle. Purge automatique après la durée de rétention choisie.</p>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container oe_dark">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span12">
+      <h3>Outils exposés à l'assistant</h3>
+      <p><code>odoo_list_models</code> · <code>odoo_model_fields</code> · <code>odoo_search</code> ·
+      <code>odoo_read</code> · <code>odoo_count</code> · <code>odoo_read_group</code> (agrégations de type
+      tableau croisé) et, si vous les activez, <code>odoo_create</code>, <code>odoo_write</code>,
+      <code>odoo_unlink</code> et <code>odoo_call_method</code> (liste blanche de méthodes métier comme
+      <code>action_post</code>). Les schémas des modèles autorisés sont aussi publiés comme
+      <b>ressources MCP</b>.</p>
+      <h3>Mise en route</h3>
+      <ol>
+        <li>Créez un utilisateur dédié avec le minimum de droits, cochez le groupe <b>MCP User</b>.</li>
+        <li>Onglet Sécurité du compte › Nouvelle clé API, scope <code>odoo.mcp</code>.</li>
+        <li>MCP Server › Modèles exposés : ajoutez les modèles que l'IA pourra lire ou écrire.</li>
+        <li>Collez l'URL et la clé dans votre client MCP.</li>
+      </ol>
+      <p><b>Compatibilité :</b> Odoo 19 Community et Enterprise. Aucune dépendance Python supplémentaire.</p>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span12 text-center">
+      <p>Développé par <b>DYONYSOS</b> — intégration Odoo, automatisation et IA pour PME.<br/>
+      Support : <a href="mailto:welcome@dyonysos.fr">welcome@dyonysos.fr</a> · <a href="https://dyonysos.fr">dyonysos.fr</a></p>
+    </div>
+  </div>
+</section>

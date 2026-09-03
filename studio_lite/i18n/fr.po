@@ -1,0 +1,1169 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* studio_lite
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-03 23:42+0000\n"
+"PO-Revision-Date: 2026-09-03 23:42+0000\n"
+"Last-Translator: \n"
+"Language-Team: DYONYSOS <welcome@dyonysos.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_automation_wizard__follower_partner_ids
+msgid "Abonnés à ajouter"
+msgstr "Abonnés à ajouter"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__active
+#: model:ir.model.fields,field_description:studio_lite.field_studio_view_customization__active
+msgid "Actif"
+msgstr "Actif"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_automation_wizard__action_kind
+msgid "Action"
+msgstr "Action"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__message_needaction
+msgid "Action Needed"
+msgstr "Action nécessaire"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__server_action_id
+msgid "Action serveur"
+msgstr "Action serveur"
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_customization_view_form
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_view_customization_view_form
+msgid "Activer / Désactiver"
+msgstr "Activer / Désactiver"
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_customization_view_search
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_view_customization_view_search
+msgid "Actives"
+msgstr "Actives"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_view_customization__kind__add
+msgid "Ajout d'un champ"
+msgstr "Ajout d'un champ"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_automation_wizard__action_kind__follower
+msgid "Ajouter un abonné"
+msgstr "Ajouter un abonné"
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_automation_wizard_view_form
+msgid "Alors"
+msgstr "Alors"
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_automation_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_field_wizard_view_form
+msgid "Annuler"
+msgstr "Annuler"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_wizard__anchor_field_id
+msgid "Après le champ"
+msgstr "Après le champ"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_field_wizard__placement__after
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_view_customization__position__after
+msgid "Après un champ existant"
+msgstr "Après un champ existant"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__message_attachment_count
+msgid "Attachment Count"
+msgstr "Nombre de pièces jointes"
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/models/studio_common.py:0
+msgid "Aucun modèle sélectionné."
+msgstr "Aucun modèle sélectionné."
+
+#. module: studio_lite
+#: model_terms:ir.actions.act_window,help:studio_lite.studio_customization_action
+msgid "Aucune personnalisation pour l'instant"
+msgstr "Aucune personnalisation pour l'instant"
+
+#. module: studio_lite
+#: model_terms:ir.actions.act_window,help:studio_lite.studio_view_customization_action
+msgid "Aucune vue personnalisée"
+msgstr "Aucune vue personnalisée"
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/models/studio_common.py:0
+msgid ""
+"Aucune vue « %(type)s » de base n'a été trouvée pour le modèle « %(model)s "
+"»."
+msgstr "Aucune vue « %(type)s » de base n'a été trouvée pour le modèle « %(model)s »."
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/wizards/studio_field_wizard.py:0
+msgid "Aucune vue « %(type)s » n'a été trouvée pour « %(model)s »."
+msgstr "Aucune vue « %(type)s » n'a été trouvée pour « %(model)s »."
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_customization_view_search
+msgid "Auteur"
+msgstr "Auteur"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_customization__kind__automation
+msgid "Automatisation"
+msgstr "Automatisation"
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_customization_view_search
+msgid "Automatisations"
+msgstr "Automatisations"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_view_customization__position__before
+msgid "Avant un champ existant"
+msgstr "Avant un champ existant"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_field_wizard__ttype__boolean
+msgid "Case à cocher"
+msgstr "Case à cocher"
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_automation_wizard_view_form
+msgid ""
+"Ce modèle n'a pas de chatter : seules les mises à jour de champ sont "
+"possibles."
+msgstr "Ce modèle n'a pas de chatter : seules les mises à jour de champ sont possibles."
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/wizards/studio_field_wizard.py:0
+msgid "Ce modèle ne supporte pas le suivi au chatter."
+msgstr "Ce modèle ne supporte pas le suivi au chatter."
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_customization_view_form
+msgid ""
+"Cette opération supprime définitivement le champ, la vue héritée ou "
+"l'automatisation créés. Confirmer ?"
+msgstr "Cette opération supprime définitivement le champ, la vue héritée ou l'automatisation créés. Confirmer ?"
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/models/studio_customization.py:0
+msgid "Cette personnalisation ne référence plus aucun objet."
+msgstr "Cette personnalisation ne référence plus aucun objet."
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/wizards/studio_field_wizard.py:0
+msgid "Champ %(type)s « %(label)s » ajouté sur %(model)s."
+msgstr "Champ %(type)s « %(label)s » ajouté sur %(model)s."
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_view_customization__field_name
+msgid "Champ concerné"
+msgstr "Champ concerné"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__field_id
+msgid "Champ créé"
+msgstr "Champ créé"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_view_customization__anchor_field
+msgid "Champ d'ancrage"
+msgstr "Champ d'ancrage"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_view_customization__kind__readonly
+msgid "Champ en lecture seule"
+msgstr "Champ en lecture seule"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_wizard__relation_field_name
+msgid "Champ inverse"
+msgstr "Champ inverse"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_view_customization__kind__hide
+msgid "Champ masqué"
+msgstr "Champ masqué"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_view_customization__kind__required
+msgid "Champ obligatoire"
+msgstr "Champ obligatoire"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_customization__kind__field
+msgid "Champ personnalisé"
+msgstr "Champ personnalisé"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_automation_wizard__trigger_field_id
+msgid "Champ surveillé"
+msgstr "Champ surveillé"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_automation_wizard__update_field_id
+msgid "Champ à mettre à jour"
+msgstr "Champ à mettre à jour"
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_customization_view_search
+msgid "Champs"
+msgstr "Champs"
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/wizards/studio_automation_wizard.py:0
+msgid "Choisissez au moins un abonné à ajouter."
+msgstr "Choisissez au moins un abonné à ajouter."
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/wizards/studio_field_wizard.py:0
+msgid "Choisissez l'onglet dans lequel placer le nouveau champ."
+msgstr "Choisissez l'onglet dans lequel placer le nouveau champ."
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/wizards/studio_field_wizard.py:0
+msgid "Choisissez le champ après lequel placer le nouveau champ."
+msgstr "Choisissez le champ après lequel placer le nouveau champ."
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/wizards/studio_automation_wizard.py:0
+msgid "Choisissez le champ à mettre à jour."
+msgstr "Choisissez le champ à mettre à jour."
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/wizards/studio_automation_wizard.py:0
+msgid "Choisissez le champ à surveiller."
+msgstr "Choisissez le champ à surveiller."
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/wizards/studio_automation_wizard.py:0
+msgid "Choisissez le modèle de courriel à envoyer."
+msgstr "Choisissez le modèle de courriel à envoyer."
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/wizards/studio_automation_wizard.py:0
+msgid "Choisissez le responsable de l'activité."
+msgstr "Choisissez le responsable de l'activité."
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/wizards/studio_automation_wizard.py:0
+msgid "Choisissez le type d'activité à créer."
+msgstr "Choisissez le type d'activité à créer."
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_automation_wizard__filter_domain
+msgid "Condition"
+msgstr "Condition"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_wizard__copied
+msgid "Copié lors d'une duplication"
+msgstr "Copié lors d'une duplication"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_automation_wizard__create_uid
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__create_uid
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_selection_line__create_uid
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_wizard__create_uid
+#: model:ir.model.fields,field_description:studio_lite.field_studio_view_customization__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_automation_wizard__create_date
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__create_date
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_selection_line__create_date
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_wizard__create_date
+#: model:ir.model.fields,field_description:studio_lite.field_studio_view_customization__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: studio_lite
+#: model:ir.ui.menu,name:studio_lite.menu_studio_lite_create
+msgid "Créer"
+msgstr "Créer"
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_automation_wizard_view_form
+msgid "Créer l'automatisation"
+msgstr "Créer l'automatisation"
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_field_wizard_view_form
+msgid "Créer le champ"
+msgstr "Créer le champ"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_automation_wizard__action_kind__activity
+msgid "Créer une activité"
+msgstr "Créer une activité"
+
+#. module: studio_lite
+#: model_terms:ir.actions.act_window,help:studio_lite.studio_view_customization_action
+msgid ""
+"Créez ici une retouche de vue : masquer un champ existant, le rendre obligatoire\n"
+"               ou en lecture seule — Studio Lite génère la vue héritée à votre place."
+msgstr "Créez ici une retouche de vue : masquer un champ existant, le rendre obligatoire\n               ou en lecture seule — Studio Lite génère la vue héritée à votre place."
+
+#. module: studio_lite
+#: model_terms:ir.actions.act_window,help:studio_lite.studio_customization_action
+msgid ""
+"Créez un champ ou une automatisation depuis les menus « Nouveau champ » et « Nouvelle automatisation ».\n"
+"               Tout ce que Studio Lite crée est listé ici, et reste supprimable en un clic."
+msgstr "Créez un champ ou une automatisation depuis les menus « Nouveau champ » et « Nouvelle automatisation ».\n               Tout ce que Studio Lite crée est listé ici, et reste supprimable en un clic."
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_field_wizard__placement__inside
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_view_customization__position__inside
+msgid "Dans un onglet"
+msgstr "Dans un onglet"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_field_wizard__ttype__date
+msgid "Date"
+msgstr "Date"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_field_wizard__ttype__datetime
+msgid "Date et heure"
+msgstr "Date et heure"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__description
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_customization_view_form
+msgid "Description"
+msgstr "Description"
+
+#. module: studio_lite
+#: model:res.groups,name:studio_lite.group_studio_designer
+msgid "Designer"
+msgstr "Designer"
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/wizards/studio_field_wizard.py:0
+msgid "Deux valeurs de sélection sont identiques."
+msgstr "Deux valeurs de sélection sont identiques."
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_automation_wizard__display_name
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__display_name
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_selection_line__display_name
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_wizard__display_name
+#: model:ir.model.fields,field_description:studio_lite.field_studio_mixin__display_name
+#: model:ir.model.fields,field_description:studio_lite.field_studio_view_customization__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_automation_wizard__trigger_kind
+msgid "Déclencheur"
+msgstr "Déclencheur"
+
+#. module: studio_lite
+#: model:ir.model.fields,help:studio_lite.field_studio_field_wizard__field_name
+msgid "Déduit du libellé. Doit commencer par « x_ »."
+msgstr "Déduit du libellé. Doit commencer par « x_ »."
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_customization_view_form
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_view_customization_view_form
+msgid "Désactivée"
+msgstr "Désactivée"
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_customization_view_search
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_view_customization_view_search
+msgid "Désactivées"
+msgstr "Désactivées"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_wizard__placement
+msgid "Emplacement"
+msgstr "Emplacement"
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_field_wizard_view_form
+msgid "Emplacement dans la vue"
+msgstr "Emplacement dans la vue"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_field_wizard__placement__end
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_view_customization__position__end
+msgid "En fin de formulaire"
+msgstr "En fin de formulaire"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_automation_wizard__action_kind__email
+msgid "Envoyer un email (modèle de courriel)"
+msgstr "Envoyer un email (modèle de courriel)"
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_view_customization_view_form
+msgid "Ex. : Masquer la référence client"
+msgstr "Ex. : Masquer la référence client"
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_field_wizard_view_form
+msgid "Ex. : Numéro de dossier"
+msgstr "Ex. : Numéro de dossier"
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_automation_wizard_view_form
+msgid "Ex. : Prévenir le commercial à la création"
+msgstr "Ex. : Prévenir le commercial à la création"
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_view_customization_view_form
+msgid "Ex. : ref"
+msgstr "Ex. : ref"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_field_wizard__ttype__binary
+msgid "Fichier"
+msgstr "Fichier"
+
+#. module: studio_lite
+#: model:ir.model.fields,help:studio_lite.field_studio_automation_wizard__filter_domain
+msgid ""
+"Filtre Odoo appliqué à l'enregistrement, par exemple [('state','=','done')]."
+msgstr "Filtre Odoo appliqué à l'enregistrement, par exemple [('state','=','done')]."
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__message_follower_ids
+msgid "Followers"
+msgstr "Abonnés"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Abonnés (partenaires)"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_field_wizard__view_type__form
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_view_customization__view_type__form
+msgid "Formulaire"
+msgstr "Formulaire"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_field_wizard__ttype__html
+msgid "HTML"
+msgstr "HTML"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_automation_wizard__model_is_mail_thread
+msgid "Has Mail Thread"
+msgstr "Dispose d'un fil de discussion"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__has_message
+msgid "Has Message"
+msgstr "A un message"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_automation_wizard__id
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__id
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_selection_line__id
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_wizard__id
+#: model:ir.model.fields,field_description:studio_lite.field_studio_mixin__id
+#: model:ir.model.fields,field_description:studio_lite.field_studio_view_customization__id
+msgid "ID"
+msgstr "ID"
+
+#. module: studio_lite
+#: model:ir.model.fields,help:studio_lite.field_studio_customization__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si coché, de nouveaux messages demandent votre attention."
+
+#. module: studio_lite
+#: model:ir.model.fields,help:studio_lite.field_studio_customization__message_has_error
+#: model:ir.model.fields,help:studio_lite.field_studio_customization__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si coché, certains messages sont en erreur d'envoi."
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_wizard__help_text
+msgid "Info-bulle"
+msgstr "Info-bulle"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__message_is_follower
+msgid "Is Follower"
+msgstr "Est abonné"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_view_customization__view_type__kanban
+msgid "Kanban"
+msgstr "Kanban"
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/models/studio_view_customization.py:0
+msgid ""
+"L'onglet « %(page)s » n'existe pas dans la vue. Onglets disponibles : "
+"%(pages)s"
+msgstr "L'onglet « %(page)s » n'existe pas dans la vue. Onglets disponibles : %(pages)s"
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/models/studio_view_customization.py:0
+msgid "La vue de base « %(view)s » ne concerne pas le modèle « %(model)s »."
+msgstr "La vue de base « %(view)s » ne concerne pas le modèle « %(model)s »."
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_automation_wizard__write_uid
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__write_uid
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_selection_line__write_uid
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_wizard__write_uid
+#: model:ir.model.fields,field_description:studio_lite.field_studio_view_customization__write_uid
+msgid "Last Updated by"
+msgstr "Dernière modification par"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_automation_wizard__write_date
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__write_date
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_selection_line__write_date
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_wizard__write_date
+#: model:ir.model.fields,field_description:studio_lite.field_studio_view_customization__write_date
+msgid "Last Updated on"
+msgstr "Dernière modification le"
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/models/studio_common.py:0
+msgid ""
+"Le champ d'ancrage « %(field)s » n'est pas affiché dans la vue « %(view)s » "
+": impossible d'y accrocher la personnalisation."
+msgstr "Le champ d'ancrage « %(field)s » n'est pas affiché dans la vue « %(view)s » : impossible d'y accrocher la personnalisation."
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/models/studio_common.py:0
+msgid "Le champ « %(field)s » est déjà déclaré sur « %(model)s »."
+msgstr "Le champ « %(field)s » est déjà déclaré sur « %(model)s »."
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/models/studio_common.py:0
+msgid ""
+"Le champ « %(field)s » existe déjà sur le modèle « %(model)s ». Choisissez "
+"un autre nom."
+msgstr "Le champ « %(field)s » existe déjà sur le modèle « %(model)s ». Choisissez un autre nom."
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/models/studio_common.py:0
+msgid "Le champ « %(field)s » n'existe pas sur le modèle « %(model)s »."
+msgstr "Le champ « %(field)s » n'existe pas sur le modèle « %(model)s »."
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/wizards/studio_field_wizard.py:0
+msgid "Le champ « %s » n'a pas pu être enregistré dans le registre Odoo."
+msgstr "Le champ « %s » n'a pas pu être enregistré dans le registre Odoo."
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/models/studio_common.py:0
+msgid ""
+"Le champ « %s » n'a pas été créé par Studio Lite : sa suppression est "
+"refusée."
+msgstr "Le champ « %s » n'a pas été créé par Studio Lite : sa suppression est refusée."
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/models/studio_common.py:0
+msgid "Le modèle « %s » est abstrait : il ne peut pas être personnalisé."
+msgstr "Le modèle « %s » est abstrait : il ne peut pas être personnalisé."
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/models/studio_common.py:0
+msgid ""
+"Le modèle « %s » est un modèle technique d'Odoo : Studio Lite refuse de le "
+"modifier pour ne pas compromettre le fonctionnement de la base."
+msgstr "Le modèle « %s » est un modèle technique d'Odoo : Studio Lite refuse de le modifier pour ne pas compromettre le fonctionnement de la base."
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/models/studio_common.py:0
+msgid ""
+"Le modèle « %s » est un modèle temporaire (assistant) : il ne peut pas "
+"recevoir de personnalisation durable."
+msgstr "Le modèle « %s » est un modèle temporaire (assistant) : il ne peut pas recevoir de personnalisation durable."
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/wizards/studio_field_wizard.py:0
+msgid ""
+"Le modèle « %s » n'a pas de champ « currency_id » : un champ monétaire ne "
+"peut pas y être ajouté."
+msgstr "Le modèle « %s » n'a pas de champ « currency_id » : un champ monétaire ne peut pas y être ajouté."
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/wizards/studio_field_wizard.py:0
+msgid "Le modèle « %s » n'a pas de chatter : le suivi est impossible."
+msgstr "Le modèle « %s » n'a pas de chatter : le suivi est impossible."
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/wizards/studio_automation_wizard.py:0
+msgid ""
+"Le modèle « %s » n'a pas de chatter : les actions d'email, d'activité et "
+"d'abonnés ne s'y appliquent pas."
+msgstr "Le modèle « %s » n'a pas de chatter : les actions d'email, d'activité et d'abonnés ne s'y appliquent pas."
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/models/studio_common.py:0
+msgid "Le modèle « %s » n'existe pas."
+msgstr "Le modèle « %s » n'existe pas."
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/models/studio_common.py:0
+msgid ""
+"Le nom technique « %s » est invalide. Il doit commencer par « x_ » et ne "
+"contenir que des minuscules, des chiffres et des « _ » (exemple : "
+"x_numero_dossier)."
+msgstr "Le nom technique « %s » est invalide. Il doit commencer par « x_ » et ne contenir que des minuscules, des chiffres et des « _ » (exemple : x_numero_dossier)."
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_selection_line__label
+msgid "Libellé"
+msgstr "Libellé"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_wizard__field_label
+msgid "Libellé du champ"
+msgstr "Libellé du champ"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_field_wizard__ttype__many2one
+msgid "Lien vers un enregistrement"
+msgstr "Lien vers un enregistrement"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_field_wizard__ttype__many2many
+msgid "Liens multiples"
+msgstr "Liens multiples"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_field_wizard__view_type__list
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_view_customization__view_type__list
+msgid "Liste"
+msgstr "Liste"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_field_wizard__ttype__one2many
+msgid "Liste liée"
+msgstr "Liste liée"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__message_has_error
+msgid "Message Delivery error"
+msgstr "Erreur d'envoi du message"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__message_ids
+msgid "Messages"
+msgstr "Messages"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_automation_wizard__action_kind__update
+msgid "Mettre à jour un champ"
+msgstr "Mettre à jour un champ"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_view_customization__position__attributes
+msgid "Modification d'attributs"
+msgstr "Modification d'attributs"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_automation_wizard__model_id
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__model_id
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_wizard__model_id
+#: model:ir.model.fields,field_description:studio_lite.field_studio_view_customization__model_id
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_customization_view_search
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_view_customization_view_search
+msgid "Modèle"
+msgstr "Modèle"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_automation_wizard__mail_template_id
+msgid "Modèle de courriel"
+msgstr "Modèle de courriel"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_wizard__relation_model_id
+msgid "Modèle lié"
+msgstr "Modèle lié"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_automation_wizard__model_name
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__model_name
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_wizard__model_name
+#: model:ir.model.fields,field_description:studio_lite.field_studio_view_customization__model_name
+msgid "Modèle technique"
+msgstr "Modèle technique"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_field_wizard__ttype__monetary
+msgid "Montant"
+msgstr "Montant"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__name
+#: model:ir.model.fields,field_description:studio_lite.field_studio_view_customization__name
+msgid "Nom"
+msgstr "Nom"
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_customization_view_form
+msgid "Nom de la personnalisation"
+msgstr "Nom de la personnalisation"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_automation_wizard__name
+msgid "Nom de la règle"
+msgstr "Nom de la règle"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__technical_name
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_wizard__field_name
+msgid "Nom technique"
+msgstr "Nom technique"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_field_wizard__ttype__float
+msgid "Nombre décimal"
+msgstr "Nombre décimal"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_field_wizard__ttype__integer
+msgid "Nombre entier"
+msgstr "Nombre entier"
+
+#. module: studio_lite
+#: model:ir.actions.act_window,name:studio_lite.studio_field_wizard_action
+#: model:ir.ui.menu,name:studio_lite.menu_studio_lite_field_wizard
+msgid "Nouveau champ"
+msgstr "Nouveau champ"
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_field_wizard_view_form
+msgid "Nouveau champ personnalisé"
+msgstr "Nouveau champ personnalisé"
+
+#. module: studio_lite
+#: model:ir.actions.act_window,name:studio_lite.studio_automation_wizard_action
+#: model:ir.ui.menu,name:studio_lite.menu_studio_lite_automation_wizard
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_automation_wizard_view_form
+msgid "Nouvelle automatisation"
+msgstr "Nouvelle automatisation"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_automation_wizard__update_value
+msgid "Nouvelle valeur"
+msgstr "Nouvelle valeur"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Nombre d'actions"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__message_has_error_counter
+msgid "Number of errors"
+msgstr "Nombre d'erreurs"
+
+#. module: studio_lite
+#: model:ir.model.fields,help:studio_lite.field_studio_customization__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Nombre de messages demandant une action"
+
+#. module: studio_lite
+#: model:ir.model.fields,help:studio_lite.field_studio_customization__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Nombre de messages en erreur d'envoi"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_wizard__required
+msgid "Obligatoire"
+msgstr "Obligatoire"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_wizard__page_name
+#: model:ir.model.fields,field_description:studio_lite.field_studio_view_customization__page_name
+msgid "Onglet"
+msgstr "Onglet"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_wizard__available_pages
+msgid "Onglets disponibles"
+msgstr "Onglets disponibles"
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_field_wizard_view_form
+msgid "Options du champ"
+msgstr "Options du champ"
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_field_wizard_view_form
+msgid "Où ?"
+msgstr "Où ?"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_view_customization__customization_id
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_customization_view_form
+msgid "Personnalisation"
+msgstr "Personnalisation"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_customization__kind__view
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_view_customization_view_form
+msgid "Personnalisation de vue"
+msgstr "Personnalisation de vue"
+
+#. module: studio_lite
+#: model:ir.actions.act_window,name:studio_lite.studio_customization_action
+#: model:ir.ui.menu,name:studio_lite.menu_studio_lite_customization
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_customization_view_list
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_customization_view_search
+msgid "Personnalisations"
+msgstr "Personnalisations"
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_view_customization_view_list
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_view_customization_view_search
+msgid "Personnalisations de vues"
+msgstr "Personnalisations de vues"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_view_customization__position
+msgid "Position"
+msgstr "Position"
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/models/studio_view_customization.py:0
+msgid "Position « %s » incompatible avec un ajout de champ."
+msgstr "Position « %s » incompatible avec un ajout de champ."
+
+#. module: studio_lite
+#: model:ir.model.fields,help:studio_lite.field_studio_field_wizard__relation_field_name
+msgid "Pour une liste liée (one2many) : nom du many2one sur le modèle lié."
+msgstr "Pour une liste liée (one2many) : nom du many2one sur le modèle lié."
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_automation_wizard_view_form
+msgid "Quand"
+msgstr "Quand"
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/wizards/studio_automation_wizard.py:0
+msgid "Quand : %(trigger)s sur %(model)s — Alors : %(action)s."
+msgstr "Quand : %(trigger)s sur %(model)s — Alors : %(action)s."
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_field_wizard_view_form
+msgid "Quoi ?"
+msgstr "Quoi ?"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_view_customization__view_type__search
+msgid "Recherche"
+msgstr "Recherche"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_automation_wizard__activity_user_id
+msgid "Responsable de l'activité"
+msgstr "Responsable de l'activité"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__automation_id
+msgid "Règle d'automatisation"
+msgstr "Règle d'automatisation"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Erreur d'envoi du SMS"
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/wizards/studio_automation_wizard.py:0
+msgid "Saisissez la condition à surveiller."
+msgstr "Saisissez la condition à surveiller."
+
+#. module: studio_lite
+#: model:ir.ui.menu,name:studio_lite.menu_studio_lite_root
+#: model:res.groups.privilege,name:studio_lite.res_groups_privilege_studio_lite
+msgid "Studio Lite"
+msgstr "Studio Lite"
+
+#. module: studio_lite
+#: model:ir.model,name:studio_lite.model_studio_mixin
+msgid "Studio Lite - contrôles communs"
+msgstr "Studio Lite - contrôles communs"
+
+#. module: studio_lite
+#: model:ir.model,name:studio_lite.model_studio_field_wizard
+msgid "Studio Lite - nouveau champ"
+msgstr "Studio Lite - nouveau champ"
+
+#. module: studio_lite
+#: model:ir.model,name:studio_lite.model_studio_automation_wizard
+msgid "Studio Lite - nouvelle automatisation"
+msgstr "Studio Lite - nouvelle automatisation"
+
+#. module: studio_lite
+#: model:ir.model,name:studio_lite.model_studio_customization
+msgid "Studio Lite - personnalisation"
+msgstr "Studio Lite - personnalisation"
+
+#. module: studio_lite
+#: model:ir.model,name:studio_lite.model_studio_view_customization
+msgid "Studio Lite - personnalisation de vue"
+msgstr "Studio Lite - personnalisation de vue"
+
+#. module: studio_lite
+#: model:ir.model,name:studio_lite.model_studio_field_selection_line
+msgid "Studio Lite - valeur de sélection"
+msgstr "Studio Lite - valeur de sélection"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_wizard__tracked
+msgid "Suivi au chatter"
+msgstr "Suivi au chatter"
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_customization_view_form
+msgid "Supprimer cette personnalisation"
+msgstr "Supprimer cette personnalisation"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_field_wizard__ttype__selection
+msgid "Sélection"
+msgstr "Sélection"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_selection_line__sequence
+msgid "Séquence"
+msgstr "Séquence"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_field_wizard__ttype__char
+msgid "Texte court"
+msgstr "Texte court"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_field_wizard__ttype__text
+msgid "Texte long"
+msgstr "Texte long"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_automation_wizard__activity_summary
+msgid "Titre de l'activité"
+msgstr "Titre de l'activité"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__kind
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_wizard__ttype
+#: model:ir.model.fields,field_description:studio_lite.field_studio_view_customization__kind
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_customization_view_search
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_view_customization_view_search
+msgid "Type"
+msgstr "Type"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_automation_wizard__activity_type_id
+msgid "Type d'activité"
+msgstr "Type d'activité"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_wizard__view_type
+#: model:ir.model.fields,field_description:studio_lite.field_studio_view_customization__view_type
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_view_customization_view_search
+msgid "Type de vue"
+msgstr "Type de vue"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_automation_wizard__trigger_kind__field_change
+msgid "Un champ change de valeur"
+msgstr "Un champ change de valeur"
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/models/studio_view_customization.py:0
+msgid "Un champ d'ancrage est obligatoire pour cette position."
+msgstr "Un champ d'ancrage est obligatoire pour cette position."
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/wizards/studio_field_wizard.py:0
+msgid "Un champ de type sélection exige au moins une valeur."
+msgstr "Un champ de type sélection exige au moins une valeur."
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/wizards/studio_field_wizard.py:0
+msgid "Un champ de type « %s » exige un modèle lié."
+msgstr "Un champ de type « %s » exige un modèle lié."
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_automation_wizard__trigger_kind__create
+msgid "Un enregistrement est créé"
+msgstr "Un enregistrement est créé"
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_automation_wizard__trigger_kind__write
+msgid "Un enregistrement est modifié"
+msgstr "Un enregistrement est modifié"
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/models/studio_view_customization.py:0
+msgid "Un onglet doit être choisi pour cette position."
+msgstr "Un onglet doit être choisi pour cette position."
+
+#. module: studio_lite
+#: model:ir.model.fields.selection,name:studio_lite.selection__studio_automation_wizard__trigger_kind__condition
+msgid "Une condition devient vraie"
+msgstr "Une condition devient vraie"
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/wizards/studio_field_wizard.py:0
+msgid ""
+"Une liste liée (one2many) exige le nom du champ inverse sur le modèle lié."
+msgstr "Une liste liée (one2many) exige le nom du champ inverse sur le modèle lié."
+
+#. module: studio_lite
+#: model:ir.model.constraint,message:studio_lite.constraint_studio_customization_name_model_kind_uniq
+msgid "Une personnalisation portant ce nom existe déjà pour ce modèle."
+msgstr "Une personnalisation portant ce nom existe déjà pour ce modèle."
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_selection_line__value
+msgid "Valeur technique"
+msgstr "Valeur technique"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_wizard__selection_line_ids
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_field_wizard_view_form
+msgid "Valeurs de sélection"
+msgstr "Valeurs de sélection"
+
+#. module: studio_lite
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_view_customization_view_form
+msgid "Voir la vue héritée"
+msgstr "Voir la vue héritée"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_wizard__view_id
+msgid "Vue cible"
+msgstr "Vue cible"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_view_customization__inherit_view_id
+msgid "Vue de base"
+msgstr "Vue de base"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_view_customization__view_id
+msgid "Vue héritée"
+msgstr "Vue héritée"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__view_customization_count
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_customization_view_form
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_customization_view_search
+msgid "Vues"
+msgstr "Vues"
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/models/studio_customization.py:0
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__view_customization_ids
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_customization_view_form
+msgid "Vues générées"
+msgstr "Vues générées"
+
+#. module: studio_lite
+#: model:ir.actions.act_window,name:studio_lite.studio_view_customization_action
+#: model:ir.ui.menu,name:studio_lite.menu_studio_lite_views
+msgid "Vues personnalisées"
+msgstr "Vues personnalisées"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_customization__website_message_ids
+msgid "Website Messages"
+msgstr "Messages du site web"
+
+#. module: studio_lite
+#: model:ir.model.fields,help:studio_lite.field_studio_customization__website_message_ids
+msgid "Website communication history"
+msgstr "Historique des communications du site web"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_field_selection_line__wizard_id
+msgid "Wizard"
+msgstr "Assistant"
+
+#. module: studio_lite
+#: model:ir.model.fields,field_description:studio_lite.field_studio_view_customization__arch_preview
+#: model_terms:ir.ui.view,arch_db:studio_lite.studio_view_customization_view_form
+msgid "XML généré"
+msgstr "XML généré"
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/models/studio_view_customization.py:0
+msgid "aucun"
+msgstr "aucun"
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/wizards/studio_field_wizard.py:0
+msgid "aucun onglet"
+msgstr "aucun onglet"
+
+#. module: studio_lite
+#. odoo-python
+#: code:addons/studio_lite/models/studio_customization.py:0
+msgid "customization_id"
+msgstr "customization_id"

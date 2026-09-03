@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="marketplace_fr" model="amazon.marketplace.community">
+            <field name="name">Amazon France</field>
+            <field name="country_code">FR</field>
+            <field name="marketplace_id">A13V1IB3VIYZZH</field>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="domain_name">amazon.fr</field>
+            <field name="sequence">10</field>
+        </record>
+
+        <record id="marketplace_de" model="amazon.marketplace.community">
+            <field name="name">Amazon Allemagne</field>
+            <field name="country_code">DE</field>
+            <field name="marketplace_id">A1PA6795UKMFR9</field>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="domain_name">amazon.de</field>
+            <field name="sequence">20</field>
+        </record>
+
+        <record id="marketplace_es" model="amazon.marketplace.community">
+            <field name="name">Amazon Espagne</field>
+            <field name="country_code">ES</field>
+            <field name="marketplace_id">A1RKKUPIHCS9HS</field>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="domain_name">amazon.es</field>
+            <field name="sequence">30</field>
+        </record>
+
+        <record id="marketplace_it" model="amazon.marketplace.community">
+            <field name="name">Amazon Italie</field>
+            <field name="country_code">IT</field>
+            <field name="marketplace_id">APJ6JRA9NG5V4</field>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="domain_name">amazon.it</field>
+            <field name="sequence">40</field>
+        </record>
+
+        <record id="marketplace_nl" model="amazon.marketplace.community">
+            <field name="name">Amazon Pays-Bas</field>
+            <field name="country_code">NL</field>
+            <field name="marketplace_id">A1805IZSGTT6HS</field>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="domain_name">amazon.nl</field>
+            <field name="sequence">50</field>
+        </record>
+
+        <record id="marketplace_be" model="amazon.marketplace.community">
+            <field name="name">Amazon Belgique</field>
+            <field name="country_code">BE</field>
+            <field name="marketplace_id">AMEN7PMS3EDWL</field>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="domain_name">amazon.com.be</field>
+            <field name="sequence">60</field>
+        </record>
+
+        <record id="marketplace_se" model="amazon.marketplace.community">
+            <field name="name">Amazon Suède</field>
+            <field name="country_code">SE</field>
+            <field name="marketplace_id">A2NODRKZP88ZB9</field>
+            <field name="currency_id" ref="base.SEK"/>
+            <field name="domain_name">amazon.se</field>
+            <field name="sequence">70</field>
+        </record>
+
+        <record id="marketplace_pl" model="amazon.marketplace.community">
+            <field name="name">Amazon Pologne</field>
+            <field name="country_code">PL</field>
+            <field name="marketplace_id">A1C3SOZRARQ6R3</field>
+            <field name="currency_id" ref="base.PLN"/>
+            <field name="domain_name">amazon.pl</field>
+            <field name="sequence">80</field>
+        </record>
+
+        <record id="marketplace_ie" model="amazon.marketplace.community">
+            <field name="name">Amazon Irlande</field>
+            <field name="country_code">IE</field>
+            <field name="marketplace_id">A28R8C7NBKEWEA</field>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="domain_name">amazon.ie</field>
+            <field name="sequence">90</field>
+        </record>
+
+        <record id="marketplace_uk" model="amazon.marketplace.community">
+            <field name="name">Amazon Royaume-Uni</field>
+            <field name="country_code">GB</field>
+            <field name="marketplace_id">A1F83G8C2ARO7P</field>
+            <field name="currency_id" ref="base.GBP"/>
+            <field name="domain_name">amazon.co.uk</field>
+            <field name="sequence">100</field>
+        </record>
+
+        <record id="product_amazon_shipping" model="product.product">
+            <field name="name">Frais de port Amazon</field>
+            <field name="type">service</field>
+            <field name="default_code">AMZ-SHIPPING</field>
+            <field name="list_price">0.0</field>
+            <field name="invoice_policy">order</field>
+            <field name="purchase_ok" eval="False"/>
+        </record>
+    </data>
+</odoo>

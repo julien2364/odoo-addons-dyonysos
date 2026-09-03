@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="studio_automation_wizard_view_form" model="ir.ui.view">
+        <field name="name">studio.automation.wizard.form</field>
+        <field name="model">studio.automation.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Nouvelle automatisation">
+                <group>
+                    <field name="name" placeholder="Ex. : Prévenir le commercial à la création"/>
+                    <field name="model_id" options="{'no_create': True}"/>
+                    <field name="model_name" invisible="1"/>
+                    <field name="model_is_mail_thread" invisible="1"/>
+                </group>
+                <group string="Quand">
+                    <field name="trigger_kind"/>
+                    <field name="trigger_field_id" options="{'no_create': True}"
+                           required="trigger_kind == 'field_change'"
+                           invisible="trigger_kind != 'field_change'"/>
+                    <field name="filter_domain" widget="domain" options="{'model': 'model_name'}"
+                           invisible="trigger_kind != 'condition'"/>
+                </group>
+                <group string="Alors">
+                    <field name="action_kind"/>
+                    <field name="mail_template_id" options="{'no_create': True}"
+                           required="action_kind == 'email'" invisible="action_kind != 'email'"/>
+                    <field name="update_field_id" options="{'no_create': True}"
+                           required="action_kind == 'update'" invisible="action_kind != 'update'"/>
+                    <field name="update_value" invisible="action_kind != 'update'"/>
+                    <field name="activity_type_id" options="{'no_create': True}"
+                           required="action_kind == 'activity'" invisible="action_kind != 'activity'"/>
+                    <field name="activity_summary" invisible="action_kind != 'activity'"/>
+                    <field name="activity_user_id" options="{'no_create': True}"
+                           required="action_kind == 'activity'" invisible="action_kind != 'activity'"/>
+                    <field name="follower_partner_ids" widget="many2many_tags"
+                           required="action_kind == 'follower'" invisible="action_kind != 'follower'"/>
+                </group>
+                <div class="alert alert-warning" role="alert"
+                     invisible="model_is_mail_thread or action_kind == 'update'">
+                    Ce modèle n'a pas de chatter : seules les mises à jour de champ sont possibles.
+                </div>
+                <footer>
+                    <button name="action_create_automation" type="object"
+                            string="Créer l'automatisation" class="btn-primary"/>
+                    <button string="Annuler" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="studio_automation_wizard_action" model="ir.actions.act_window">
+        <field name="name">Nouvelle automatisation</field>
+        <field name="res_model">studio.automation.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="studio_field_wizard_view_form" model="ir.ui.view">
+        <field name="name">studio.field.wizard.form</field>
+        <field name="model">studio.field.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Nouveau champ personnalisé">
+                <group>
+                    <group string="Où ?">
+                        <field name="model_id" options="{'no_create': True}"/>
+                        <field name="model_name" invisible="1"/>
+                        <field name="view_type"/>
+                        <field name="view_id" options="{'no_create': True}"/>
+                    </group>
+                    <group string="Quoi ?">
+                        <field name="field_label" placeholder="Ex. : Numéro de dossier"/>
+                        <field name="field_name"/>
+                        <field name="ttype"/>
+                    </group>
+                </group>
+                <group string="Options du champ">
+                    <group>
+                        <field name="relation_model_id" options="{'no_create': True}"
+                               required="ttype in ('many2one', 'one2many', 'many2many')"
+                               invisible="ttype not in ('many2one', 'one2many', 'many2many')"/>
+                        <field name="relation_field_name" required="ttype == 'one2many'"
+                               invisible="ttype != 'one2many'"/>
+                        <field name="help_text"/>
+                    </group>
+                    <group>
+                        <field name="required"/>
+                        <field name="copied"/>
+                        <field name="tracked"/>
+                    </group>
+                </group>
+                <group string="Valeurs de sélection" invisible="ttype != 'selection'">
+                    <field name="selection_line_ids" nolabel="1">
+                        <list editable="bottom">
+                            <field name="sequence" widget="handle"/>
+                            <field name="label"/>
+                            <field name="value"/>
+                        </list>
+                    </field>
+                </group>
+                <group string="Emplacement dans la vue">
+                    <field name="placement"/>
+                    <field name="anchor_field_id" options="{'no_create': True}"
+                           required="placement == 'after'" invisible="placement != 'after'"/>
+                    <field name="page_name" required="placement == 'inside'"
+                           invisible="placement != 'inside'"/>
+                    <field name="available_pages" invisible="placement != 'inside'"/>
+                </group>
+                <footer>
+                    <button name="action_create_field" type="object" string="Créer le champ"
+                            class="btn-primary"/>
+                    <button string="Annuler" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="studio_field_wizard_action" model="ir.actions.act_window">
+        <field name="name">Nouveau champ</field>
+        <field name="res_model">studio.field.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

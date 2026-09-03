@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="module_category_amazon_connector" model="ir.module.category">
+            <field name="name">Amazon Connector</field>
+            <field name="sequence">20</field>
+        </record>
+
+        <record id="res_groups_privilege_amazon" model="res.groups.privilege">
+            <field name="name">Amazon Connector</field>
+            <field name="category_id" ref="module_category_amazon_connector"/>
+        </record>
+
+        <record id="group_amazon_user" model="res.groups">
+            <field name="name">Amazon : consultation</field>
+            <field name="privilege_id" ref="res_groups_privilege_amazon"/>
+            <field name="implied_ids" eval="[(4, ref('sales_team.group_sale_salesman'))]"/>
+        </record>
+
+        <record id="group_amazon_manager" model="res.groups">
+            <field name="name">Amazon : administration</field>
+            <field name="privilege_id" ref="res_groups_privilege_amazon"/>
+            <field name="implied_ids" eval="[(4, ref('amazon_connector_community.group_amazon_user'))]"/>
+            <field name="user_ids" eval="[(4, ref('base.user_admin'))]"/>
+        </record>
+    </data>
+</odoo>

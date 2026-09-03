@@ -1,0 +1,180 @@
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h2 class="oe_slogan" style="margin-bottom:8px;">Studio Lite — personnaliser Odoo sans code</h2>
+            <h3 class="oe_slogan" style="color:#7C3AED; font-weight:normal;">
+                Champs personnalisés, placement dans les vues, retouches et automatisations,
+                depuis une interface — en Odoo 19 Community comme Enterprise.
+            </h3>
+            <p class="oe_mt32" style="text-align:center;">
+                <img src="banner.png" style="max-width:100%; border-radius:12px;"/>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan">Le problème</h3>
+            <p class="oe_mt16" style="font-size:16px;">
+                Odoo Studio est réservé à l'édition Enterprise. Pourtant, Odoo Community sait déjà
+                tout faire : les champs personnalisés existent (<code>ir.model.fields</code>), les vues
+                héritées existent (<code>ir.ui.view</code>), les automatisations existent
+                (<code>base.automation</code>). Ce qui manque, c'est l'interface. Aujourd'hui, ajouter un
+                champ « Numéro de dossier » sur un contact et l'afficher au bon endroit demande d'activer
+                le mode développeur, de créer le champ à la main, puis d'écrire soi-même une vue héritée
+                en XML — et de se souvenir de ce qu'on a fait le jour où il faut le défaire.
+            </p>
+            <p style="font-size:16px;">
+                Studio Lite apporte cette interface, et surtout le filet de sécurité qui va avec :
+                <strong>tout ce que le module crée est tracé, désactivable et supprimable proprement.</strong>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span4">
+            <h4 class="oe_slogan" style="margin-bottom:6px;">1 · Champs personnalisés</h4>
+            <p>
+                Un assistant : modèle, libellé, type (14 types, du texte court au many2many), options
+                selon le type, puis l'emplacement. À la validation, le champ <code>x_...</code>
+                <em>et</em> la vue héritée qui l'affiche sont créés en une seule opération.
+                Le nom technique est déduit du libellé et validé.
+            </p>
+        </div>
+        <div class="oe_span4">
+            <h4 class="oe_slogan" style="margin-bottom:6px;">2 · Placement et retouches</h4>
+            <p>
+                Placez le champ après un champ existant, dans un onglet précis, ou en fin de
+                formulaire. Sur les champs déjà présents : masquer, rendre obligatoire ou passer
+                en lecture seule — Studio Lite écrit la vue héritée
+                (<code>position="attributes"</code>) à votre place.
+            </p>
+        </div>
+        <div class="oe_span4">
+            <h4 class="oe_slogan" style="margin-bottom:6px;">3 · Automatisations</h4>
+            <p>
+                « Quand un enregistrement est créé / modifié, quand un champ change, quand une
+                condition devient vraie — alors envoyer un email, mettre à jour un champ, créer une
+                activité ou ajouter un abonné. » La règle <code>base.automation</code> et son action
+                serveur sont générées et référencées.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan">4 · Le tableau de bord des personnalisations</h3>
+            <p style="font-size:16px;">
+                C'est ce qui distingue Studio Lite d'un bricolage en mode développeur : chaque champ,
+                chaque vue héritée et chaque automatisation créés apparaissent dans un journal
+                unique — type, modèle, nom technique, description, date, auteur, état actif.
+                On y désactive une personnalisation d'un clic (sans rien détruire), ou on la
+                supprime : le module défait alors les objets <strong>dans l'ordre inverse de leur
+                création</strong> — la vue héritée d'abord, le champ ensuite — pour ne jamais laisser
+                de vue orpheline ni de colonne fantôme.
+            </p>
+            <p class="oe_mt32" style="text-align:center;">
+                <img src="screen_customizations.png" style="max-width:100%; border-radius:12px;"/>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan">L'assistant de création de champ</h3>
+            <p class="oe_mt32" style="text-align:center;">
+                <img src="screen_field_wizard.png" style="max-width:100%; border-radius:12px;"/>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span6">
+            <h3 class="oe_slogan" style="margin-bottom:6px;">Ce que Studio Lite fait</h3>
+            <ul style="font-size:15px;">
+                <li>Créer un champ personnalisé (char, text, integer, float, monetary, boolean,
+                    date, datetime, selection, many2one, one2many, many2many, html, binary).</li>
+                <li>Saisir les valeurs d'une liste de sélection ligne à ligne.</li>
+                <li>Afficher le champ dans une vue formulaire ou liste, à l'emplacement choisi.</li>
+                <li>Masquer un champ, le rendre obligatoire ou en lecture seule.</li>
+                <li>Désactiver / réactiver une personnalisation sans la supprimer.</li>
+                <li>Créer une automatisation « quand … alors … » sans écrire de code Python.</li>
+                <li>Tout supprimer proprement, avec confirmation.</li>
+            </ul>
+        </div>
+        <div class="oe_span6">
+            <h3 class="oe_slogan" style="margin-bottom:6px;">Ce que Studio Lite ne fait pas</h3>
+            <p style="font-size:15px;">
+                Soyons clairs : <strong>ce module n'est pas Odoo Studio.</strong> Il ne propose pas
+                d'édition visuelle par glisser-déposer, ne crée pas de nouveaux modèles ni de nouvelles
+                applications, ne construit pas de rapports PDF, de vues kanban sur mesure ou de
+                tableaux de bord, et ne gère pas les approbations. Il couvre l'essentiel des demandes
+                de personnalisation quotidiennes — ajouter un champ, le placer, en masquer un autre,
+                déclencher un email — soit, d'expérience, la large majorité des besoins réels d'une
+                PME sur Community.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan">Sécurité et garde-fous</h3>
+            <ul style="font-size:15px;">
+                <li>Un groupe dédié <strong>Studio Lite / Designer</strong> est requis pour toute opération.</li>
+                <li>Les modèles techniques (<code>ir.*</code>, <code>base.*</code>, <code>res.users</code>,
+                    <code>res.groups</code>, modèles temporaires et abstraits) sont refusés avec un message explicite.</li>
+                <li>Le nom technique doit respecter <code>^x_[a-z0-9_]+$</code> ; un champ déjà existant est refusé.</li>
+                <li>Le champ d'ancrage (ou l'onglet) est vérifié dans la vue cible <em>avant</em> de générer l'héritage :
+                    si l'ancrage est introuvable, rien n'est créé et le champ éventuellement créé est retiré.</li>
+                <li>La suppression refuse tout champ qui ne commence pas par <code>x_</code> ou qui n'est pas
+                    un champ manuel : les champs standard d'Odoo sont intouchables.</li>
+                <li>Le module est livré avec <strong>20 tests automatisés</strong> couvrant la création, le placement,
+                    les refus attendus et la réversibilité complète.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan">Installation</h3>
+            <p style="font-size:15px;">
+                Odoo 19 (Community ou Enterprise). Dépendances : <code>base</code>, <code>web</code>,
+                <code>mail</code> et <code>base_automation</code> (module standard d'Odoo, installé
+                automatiquement). Après installation, donnez le groupe
+                <em>Studio Lite / Designer</em> aux personnes concernées : le menu <strong>Studio Lite</strong>
+                apparaît alors dans la barre d'applications.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12" style="text-align:center;">
+            <h3 class="oe_slogan">DYONYSOS</h3>
+            <p style="font-size:16px;">
+                Édité et maintenu par <strong>DYONYSOS</strong> — modules Odoo pour PME françaises.<br/>
+                Support, question avant achat ou demande d'évolution :
+                <a href="mailto:welcome@dyonysos.fr">welcome@dyonysos.fr</a><br/>
+                <a href="https://dyonysos.fr">https://dyonysos.fr</a>
+            </p>
+            <p style="color:#64748B; font-size:14px;">
+                Licence OPL-1. Réponse sous 2 jours ouvrés.
+            </p>
+        </div>
+    </div>
+</section>

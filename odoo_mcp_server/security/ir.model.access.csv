@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_mcp_model_config_user,mcp.model.config user,model_mcp_model_config,group_mcp_user,1,0,0,0
+access_mcp_model_config_manager,mcp.model.config manager,model_mcp_model_config,group_mcp_manager,1,1,1,1
+access_mcp_access_log_user,mcp.access.log user,model_mcp_access_log,group_mcp_user,1,0,0,0
+access_mcp_access_log_manager,mcp.access.log manager,model_mcp_access_log,group_mcp_manager,1,1,1,1

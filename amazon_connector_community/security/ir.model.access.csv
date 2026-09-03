@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_amazon_marketplace_user,amazon.marketplace.community user,model_amazon_marketplace_community,group_amazon_user,1,0,0,0
+access_amazon_marketplace_manager,amazon.marketplace.community manager,model_amazon_marketplace_community,group_amazon_manager,1,1,1,1
+access_amazon_account_user,amazon.account.community user,model_amazon_account_community,group_amazon_user,1,0,0,0
+access_amazon_account_manager,amazon.account.community manager,model_amazon_account_community,group_amazon_manager,1,1,1,1
+access_amazon_sync_log_user,amazon.sync.log user,model_amazon_sync_log,group_amazon_user,1,0,0,0
+access_amazon_sync_log_manager,amazon.sync.log manager,model_amazon_sync_log,group_amazon_manager,1,1,1,1
