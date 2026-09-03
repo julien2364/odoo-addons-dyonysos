@@ -1,0 +1,65 @@
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span12">
+      <h2 class="oe_slogan" style="color:#7c3aed;">Dougs Bridge — Accounting Export</h2>
+      <h3 class="oe_slogan">Vos pièces comptables partent d'Odoo vers votre cabinet, toutes seules</h3>
+    </div>
+    <div class="oe_span12">
+      <img class="oe_picture oe_screenshot" src="banner.png" alt="Dougs Bridge"/>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container oe_dark">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span6">
+      <img class="oe_picture oe_screenshot" src="screen_batch.png" alt="Lot d'export"/>
+    </div>
+    <div class="oe_span6">
+      <h3>Un seul point de saisie</h3>
+      <p>Vous facturez, enregistrez vos achats et vos notes de frais dans Odoo. Dougs Bridge sélectionne les pièces validées (factures et avoirs clients, factures et avoirs fournisseurs, notes de frais approuvées), construit un lot — PDF de chaque pièce, XML Factur-X pour les ventes, <i>journal.csv</i> récapitulatif — et le transmet à votre cabinet.</p>
+      <p>Chaque pièce porte son état (à envoyer, envoyée, erreur) ; les erreurs se rejouent en un clic ; un compte-rendu vous est envoyé par email après chaque lot.</p>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span4">
+      <h4>5 canaux d'envoi</h4>
+      <p><b>API First (Dougs)</b> ou toute API REST du cabinet, <b>email</b> vers l'adresse de collecte, <b>SFTP</b>, <b>dossier partagé</b> (Google Drive / Nextcloud synchronisé sur le serveur) ou simple <b>ZIP</b> à déposer soi-même.</p>
+    </div>
+    <div class="oe_span4">
+      <h4>Automatisé</h4>
+      <p>Une action planifiée crée et envoie un lot chaque jour ou chaque semaine, avec un délai de grâce configurable pour laisser le temps de corriger une facture fraîchement validée.</p>
+    </div>
+    <div class="oe_span4">
+      <h4>Traçable</h4>
+      <p>Menu <i>Comptabilité › Envois au cabinet</i> : tous les lots, leurs pièces, le journal d'envoi et le ZIP archivé. Sur chaque facture, l'état « Envoyé au cabinet » et sa date.</p>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container oe_dark">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span12">
+      <h3>Configuration</h3>
+      <ol>
+        <li>Comptabilité › Configuration › Paramètres › <b>Dougs Bridge</b> : choisissez le canal et renseignez ses paramètres (adresse de collecte, clé API, SFTP…).</li>
+        <li>Cochez ce que vous envoyez : ventes, achats, notes de frais, Factur-X.</li>
+        <li>Activez l'action planifiée « Dougs Bridge : export des pièces comptables », ou envoyez à la main depuis une facture (bouton « Envoyer au cabinet ») ou une liste (action groupée).</li>
+      </ol>
+      <p><b>Bonus Community :</b> corrige l'export Factur-X d'Odoo 19 Community qui échoue sans les champs de charges constatées d'avance Enterprise.</p>
+      <p><b>Compatibilité :</b> Odoo 19 Community et Enterprise. Dépend de <i>account</i>, <i>hr_expense</i>, <i>account_edi_ubl_cii</i>. Python : <i>requests</i> (et <i>paramiko</i> pour SFTP).</p>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span12 text-center">
+      <p>Développé par <b>DYONYSOS</b> — intégration Odoo, automatisation et IA pour PME.<br/>
+      Support : <a href="mailto:welcome@dyonysos.fr">welcome@dyonysos.fr</a> · <a href="https://dyonysos.fr">dyonysos.fr</a></p>
+    </div>
+  </div>
+</section>

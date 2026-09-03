@@ -1,0 +1,65 @@
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span12">
+      <h2 class="oe_slogan" style="color:#7c3aed;">AI Invoice &amp; Expense Digitization</h2>
+      <h3 class="oe_slogan">L'OCR d'Odoo Enterprise, sur Community, sans crédits IAP</h3>
+    </div>
+    <div class="oe_span12">
+      <img class="oe_picture oe_screenshot" src="banner.png" alt="AI Invoice & Expense Digitization"/>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container oe_dark">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span6">
+      <h3>Comment ça marche</h3>
+      <p>Chaque PDF ou image qui arrive sur un journal d'achats — par l'alias mail, par glisser-déposer sur le tableau de bord, ou en pièce jointe d'une note de frais — est lu par un modèle de vision (Claude, OpenAI, Mistral, Grok…). Le module crée la facture fournisseur ou la note de frais <b>en brouillon</b> : fournisseur retrouvé par TVA, email ou nom (ou créé), numéro, dates, devise, lignes avec quantité, prix et taux de TVA rapproché des taxes de votre société.</p>
+      <p>Le total calculé est comparé au total lu sur le document ; tout écart est signalé dans le chatter. Vous validez, Odoo comptabilise.</p>
+    </div>
+    <div class="oe_span6">
+      <img class="oe_picture oe_screenshot" src="screen_bills.png" alt="Factures fournisseurs extraites"/>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span4">
+      <h4>Factures fournisseurs</h4>
+      <p>S'intègre au framework d'import d'Odoo : les XML Factur-X/UBL restent prioritaires, l'IA prend le relais pour les PDF simples, les scans et les photos. Bouton « Extraire par IA » pour relancer à la demande.</p>
+    </div>
+    <div class="oe_span4">
+      <h4>Notes de frais</h4>
+      <p>Photo d'un ticket → libellé, date, montant TTC, TVA incluse, fournisseur. Compatible avec le bouton « Scanner » de l'application Notes de frais et l'alias mail.</p>
+    </div>
+    <div class="oe_span4">
+      <h4>Coût maîtrisé</h4>
+      <p>Vous utilisez votre propre clé API : quelques centimes par document, aucun abonnement. Un journal des extractions garde durée, jetons consommés, confiance et données brutes.</p>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container oe_dark">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span12">
+      <h3>Configuration en 2 minutes</h3>
+      <ol>
+        <li>Comptabilité › Configuration › Paramètres › <b>Numérisation IA</b> : choisissez le fournisseur (Anthropic recommandé, il lit les PDF nativement) et collez votre clé API.</li>
+        <li>Laissez la numérisation automatique activée, ou désactivez-la pour ne travailler qu'au bouton.</li>
+        <li>Envoyez une facture à l'alias mail de votre journal d'achats — la facture en brouillon apparaît avec la mention « Numérisation IA terminée ».</li>
+      </ol>
+      <p><b>Fournisseurs pris en charge :</b> Anthropic (Claude), OpenAI, xAI Grok, Mistral, Ollama et toute API compatible OpenAI (les PDF sans couche texte nécessitent Anthropic ou une image).</p>
+      <p><b>Compatibilité :</b> Odoo 19 Community et Enterprise. Dépend de <i>account</i> et <i>hr_expense</i>. Python : <i>requests</i>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span12 text-center">
+      <p>Développé par <b>DYONYSOS</b> — intégration Odoo, automatisation et IA pour PME.<br/>
+      Support : <a href="mailto:welcome@dyonysos.fr">welcome@dyonysos.fr</a> · <a href="https://dyonysos.fr">dyonysos.fr</a></p>
+    </div>
+  </div>
+</section>

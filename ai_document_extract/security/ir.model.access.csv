@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ai_extract_log_invoice,ai.extract.log invoicing,model_ai_extract_log,account.group_account_invoice,1,0,0,0
+access_ai_extract_log_expense,ai.extract.log expense user,model_ai_extract_log,hr_expense.group_hr_expense_team_approver,1,0,0,0
+access_ai_extract_log_manager,ai.extract.log manager,model_ai_extract_log,account.group_account_manager,1,1,1,1

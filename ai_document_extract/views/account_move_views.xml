@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_move_form_ai_extract" model="ir.ui.view">
+        <field name="name">account.move.form.inherit.ai.document.extract</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="action_ai_extract" type="object" string="AI Extract" class="btn-secondary"
+                        invisible="state != 'draft' or move_type not in ('in_invoice', 'in_refund', 'in_receipt')"
+                        help="Read the attached PDF/image with the AI and fill in supplier, dates and lines (existing lines are replaced)."/>
+            </xpath>
+            <xpath expr="//field[@name='ref']" position="after">
+                <field name="ai_extract_state" invisible="ai_extract_state == 'none'"/>
+                <field name="ai_extract_confidence" widget="percentage" invisible="ai_extract_state != 'done'"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

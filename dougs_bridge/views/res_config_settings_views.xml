@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_dougs" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.dougs.bridge</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@id='account_vendor_bills']" position="after">
+                <block title="Dougs Bridge — Accountant export" id="dougs_bridge_block" help="Send posted invoices, bills and approved expenses to your accountant.">
+                    <setting id="dougs_transport_setting" string="Transport" help="How the documents reach the accountant.">
+                        <div class="content-group">
+                            <div class="row mt8"><label for="dougs_transport" class="col-lg-4 o_light_label"/><field name="dougs_transport"/></div>
+                            <div class="row" invisible="dougs_transport != 'email'"><label for="dougs_email_to" class="col-lg-4 o_light_label"/><field name="dougs_email_to"/></div>
+                            <div class="row" invisible="dougs_transport != 'folder'"><label for="dougs_folder_path" class="col-lg-4 o_light_label"/><field name="dougs_folder_path"/></div>
+                            <div invisible="dougs_transport != 'sftp'">
+                                <div class="row"><label for="dougs_sftp_host" class="col-lg-4 o_light_label"/><field name="dougs_sftp_host"/></div>
+                                <div class="row"><label for="dougs_sftp_port" class="col-lg-4 o_light_label"/><field name="dougs_sftp_port"/></div>
+                                <div class="row"><label for="dougs_sftp_user" class="col-lg-4 o_light_label"/><field name="dougs_sftp_user"/></div>
+                                <div class="row"><label for="dougs_sftp_password" class="col-lg-4 o_light_label"/><field name="dougs_sftp_password" password="True"/></div>
+                                <div class="row"><label for="dougs_sftp_path" class="col-lg-4 o_light_label"/><field name="dougs_sftp_path"/></div>
+                            </div>
+                            <div invisible="dougs_transport != 'apifirst'">
+                                <div class="row"><label for="dougs_apifirst_base_url" class="col-lg-4 o_light_label"/><field name="dougs_apifirst_base_url"/></div>
+                                <div class="row"><label for="dougs_apifirst_api_key" class="col-lg-4 o_light_label"/><field name="dougs_apifirst_api_key" password="True"/></div>
+                                <div class="row"><label for="dougs_apifirst_path_sale" class="col-lg-4 o_light_label"/><field name="dougs_apifirst_path_sale"/></div>
+                                <div class="row"><label for="dougs_apifirst_path_purchase" class="col-lg-4 o_light_label"/><field name="dougs_apifirst_path_purchase"/></div>
+                                <div class="row"><label for="dougs_apifirst_path_expense" class="col-lg-4 o_light_label"/><field name="dougs_apifirst_path_expense"/></div>
+                                <div class="row"><label for="dougs_apifirst_file_field" class="col-lg-4 o_light_label"/><field name="dougs_apifirst_file_field"/></div>
+                            </div>
+                            <div class="row"><label for="dougs_report_email" class="col-lg-4 o_light_label"/><field name="dougs_report_email"/></div>
+                        </div>
+                    </setting>
+                    <setting id="dougs_scope_setting" string="What to send" help="Activate the scheduled action 'Dougs Bridge: export accounting documents' to automate it.">
+                        <div class="content-group">
+                            <div class="row mt8"><field name="dougs_include_sales" class="col-lg-1"/><label for="dougs_include_sales" class="col-lg-10"/></div>
+                            <div class="row"><field name="dougs_include_purchases" class="col-lg-1"/><label for="dougs_include_purchases" class="col-lg-10"/></div>
+                            <div class="row"><field name="dougs_include_expenses" class="col-lg-1"/><label for="dougs_include_expenses" class="col-lg-10"/></div>
+                            <div class="row"><field name="dougs_facturx" class="col-lg-1"/><label for="dougs_facturx" class="col-lg-10"/></div>
+                            <div class="row"><label for="dougs_cron_delay_days" class="col-lg-4 o_light_label"/><field name="dougs_cron_delay_days"/></div>
+                        </div>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

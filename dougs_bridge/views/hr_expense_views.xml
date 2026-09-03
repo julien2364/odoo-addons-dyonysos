@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_expense_view_form_dougs" model="ir.ui.view">
+        <field name="name">hr.expense.form.inherit.dougs.bridge</field>
+        <field name="model">hr.expense</field>
+        <field name="inherit_id" ref="hr_expense.hr_expense_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="action_send_to_dougs" type="object" string="Send to accountant" class="btn-secondary"
+                        invisible="state not in ('approved', 'posted', 'done', 'paid') or dougs_state == 'sent'"/>
+            </xpath>
+            <xpath expr="//field[@name='date']" position="after">
+                <field name="dougs_state" invisible="dougs_state == 'none'"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="action_send_expense_to_dougs_server" model="ir.actions.server">
+        <field name="name">Send to accountant (Dougs Bridge)</field>
+        <field name="model_id" ref="hr_expense.model_hr_expense"/>
+        <field name="binding_model_id" ref="hr_expense.model_hr_expense"/>
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">action = records.action_send_to_dougs()</field>
+    </record>
+</odoo>

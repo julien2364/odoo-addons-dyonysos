@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="dougs_export_batch_view_list" model="ir.ui.view">
+        <field name="name">dougs.export.batch.list</field>
+        <field name="model">dougs.export.batch</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="create_date"/>
+                <field name="transport"/>
+                <field name="count_out"/>
+                <field name="count_in"/>
+                <field name="count_expense"/>
+                <field name="count_error"/>
+                <field name="state" widget="badge" decoration-success="state == 'sent'" decoration-warning="state == 'partial'" decoration-danger="state == 'error'"/>
+                <field name="sent_date"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="dougs_export_batch_view_form" model="ir.ui.view">
+        <field name="name">dougs.export.batch.form</field>
+        <field name="model">dougs.export.batch</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_collect" type="object" string="Collect documents" class="btn-secondary" invisible="state not in ('draft', 'error')"/>
+                    <button name="action_send" type="object" string="Send to accountant" class="btn-primary" invisible="state == 'sent'"/>
+                    <button name="action_retry_errors" type="object" string="Retry errors" invisible="count_error == 0"/>
+                    <button name="action_download_zip" type="object" string="Download ZIP" invisible="line_count == 0"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,sent"/>
+                </header>
+                <sheet>
+                    <div class="oe_title"><h1><field name="name"/></h1></div>
+                    <group>
+                        <group>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                            <field name="transport"/>
+                            <field name="date_from"/>
+                            <field name="date_to"/>
+                            <field name="report_email"/>
+                        </group>
+                        <group>
+                            <field name="count_out"/>
+                            <field name="count_in"/>
+                            <field name="count_expense"/>
+                            <field name="count_error"/>
+                            <field name="sent_date"/>
+                            <field name="zip_attachment_id" widget="many2one_binary" invisible="not zip_attachment_id"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Documents" name="lines">
+                            <field name="line_ids">
+                                <list editable="bottom" create="false">
+                                    <field name="doc_type"/>
+                                    <field name="date"/>
+                                    <field name="name"/>
+                                    <field name="reference" optional="show"/>
+                                    <field name="partner_id"/>
+                                    <field name="amount_untaxed" sum="Total"/>
+                                    <field name="amount_tax" sum="Total"/>
+                                    <field name="amount_total" sum="Total"/>
+                                    <field name="currency_id" optional="hide"/>
+                                    <field name="filename" optional="hide"/>
+                                    <field name="state" widget="badge" decoration-success="state == 'sent'" decoration-danger="state == 'error'"/>
+                                    <field name="remote_id" optional="hide"/>
+                                    <field name="error" optional="show"/>
+                                    <button name="action_open_record" type="object" icon="fa-external-link" title="Open document"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Log" name="log">
+                            <field name="log"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="dougs_export_batch_action" model="ir.actions.act_window">
+        <field name="name">Accountant exports (Dougs Bridge)</field>
+        <field name="res_model">dougs.export.batch</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create a batch, collect the posted documents and send them to your accountant.</p>
+        </field>
+    </record>
+
+    <menuitem id="dougs_export_batch_menu" name="Accountant exports" parent="account.menu_finance_entries"
+              action="dougs_export_batch_action" sequence="90"/>
+</odoo>

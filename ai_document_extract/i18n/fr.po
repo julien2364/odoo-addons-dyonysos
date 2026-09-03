@@ -1,0 +1,450 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ai_document_extract
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-03 22:19+0000\n"
+"PO-Revision-Date: 2026-09-03 22:19+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_res_config_settings__ai_extract_api_key
+msgid "AI API Key"
+msgstr "Clé API IA"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_account_bank_statement_line__ai_extract_confidence
+#: model:ir.model.fields,field_description:ai_document_extract.field_account_move__ai_extract_confidence
+#: model:ir.model.fields,field_description:ai_document_extract.field_hr_expense__ai_extract_confidence
+msgid "AI Confidence"
+msgstr "Confiance IA"
+
+#. module: ai_document_extract
+#: model_terms:ir.ui.view,arch_db:ai_document_extract.res_config_settings_view_form_ai_extract
+msgid "AI Digitization"
+msgstr "Numérisation IA"
+
+#. module: ai_document_extract
+#: model_terms:ir.ui.view,arch_db:ai_document_extract.hr_expense_view_form_ai_extract
+#: model_terms:ir.ui.view,arch_db:ai_document_extract.view_move_form_ai_extract
+msgid "AI Extract"
+msgstr "Extraire par IA"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_account_bank_statement_line__ai_extract_state
+#: model:ir.model.fields,field_description:ai_document_extract.field_account_move__ai_extract_state
+#: model:ir.model.fields,field_description:ai_document_extract.field_hr_expense__ai_extract_state
+msgid "AI Extraction"
+msgstr "Extraction IA"
+
+#. module: ai_document_extract
+#: model:ir.actions.act_window,name:ai_document_extract.ai_extract_log_action
+#: model:ir.model,name:ai_document_extract.model_ai_extract_log
+#: model:ir.ui.menu,name:ai_document_extract.ai_extract_log_menu
+msgid "AI Extraction Log"
+msgstr "Journal des extractions IA"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_ai_extract_log__model
+#: model:ir.model.fields,field_description:ai_document_extract.field_res_config_settings__ai_extract_model
+msgid "AI Model"
+msgstr "Modèle IA"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_res_config_settings__ai_extract_provider
+msgid "AI Provider"
+msgstr "Fournisseur IA"
+
+#. module: ai_document_extract
+#. odoo-python
+#: code:addons/ai_document_extract/models/account_move.py:0
+#: code:addons/ai_document_extract/models/hr_expense.py:0
+msgid "AI digitization done"
+msgstr "Numérisation IA terminée"
+
+#. module: ai_document_extract
+#. odoo-python
+#: code:addons/ai_document_extract/models/hr_expense.py:0
+msgid "AI digitization failed: %s"
+msgstr "Échec de la numérisation IA : %s"
+
+#. module: ai_document_extract
+#. odoo-python
+#: code:addons/ai_document_extract/models/hr_expense.py:0
+msgid "AI digitization skipped: %s"
+msgstr "Numérisation IA ignorée : %s"
+
+#. module: ai_document_extract
+#: model_terms:ir.ui.view,arch_db:ai_document_extract.res_config_settings_view_form_ai_extract
+msgid "AI provider"
+msgstr "Fournisseur IA"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_res_config_settings__ai_extract_base_url
+msgid "API Base URL"
+msgstr "URL de base de l’API"
+
+#. module: ai_document_extract
+#: model:ir.model.fields.selection,name:ai_document_extract.selection__res_config_settings__ai_extract_provider__anthropic
+msgid "Anthropic (Claude) — reads PDF natively"
+msgstr "Anthropic (Claude) — lit les PDF nativement"
+
+#. module: ai_document_extract
+#: model_terms:ir.ui.view,arch_db:ai_document_extract.res_config_settings_view_form_ai_extract
+msgid ""
+"Anthropic reads PDF files natively. OpenAI-compatible endpoints receive "
+"images, or the text layer of PDFs."
+msgstr ""
+
+#. module: ai_document_extract
+#. odoo-python
+#: code:addons/ai_document_extract/models/account_move.py:0
+msgid "Attach a PDF or an image first."
+msgstr "Joignez d’abord un PDF ou une image."
+
+#. module: ai_document_extract
+#. odoo-python
+#: code:addons/ai_document_extract/models/hr_expense.py:0
+msgid "Attach a receipt (PDF or image) first."
+msgstr "Joignez d’abord un justificatif (PDF ou image)."
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_ai_extract_log__attachment_id
+msgid "Attachment"
+msgstr "Pièce jointe"
+
+#. module: ai_document_extract
+#: model_terms:ir.ui.view,arch_db:ai_document_extract.res_config_settings_view_form_ai_extract
+msgid "Automatic digitization"
+msgstr "Numérisation automatique"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_ai_extract_log__company_id
+msgid "Company"
+msgstr "Société"
+
+#. module: ai_document_extract
+#. odoo-python
+#: code:addons/ai_document_extract/models/account_move.py:0
+msgid ""
+"Computed total %(computed).2f differs from the document total "
+"%(expected).2f: please check taxes and lines."
+msgstr ""
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_ai_extract_log__confidence
+msgid "Confidence"
+msgstr "Confiance"
+
+#. module: ai_document_extract
+#: model:ir.model,name:ai_document_extract.model_res_config_settings
+msgid "Config Settings"
+msgstr "Paramètres de configuration"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_res_config_settings__ai_extract_create_partner
+msgid "Create unknown suppliers"
+msgstr "Créer les fournisseurs inconnus"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_ai_extract_log__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_ai_extract_log__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: ai_document_extract
+#. odoo-python
+#: code:addons/ai_document_extract/models/account_move.py:0
+msgid "Currency %s is not active in this database."
+msgstr "La devise %s n’est pas active dans cette base."
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_res_config_settings__ai_extract_auto_expenses
+msgid "Digitize expense receipts automatically"
+msgstr "Numériser automatiquement les justificatifs de frais"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_res_config_settings__ai_extract_auto_invoices
+msgid "Digitize vendor bills automatically"
+msgstr "Numériser automatiquement les factures fournisseurs"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_account_move__display_name
+#: model:ir.model.fields,field_description:ai_document_extract.field_ai_extract_log__display_name
+#: model:ir.model.fields,field_description:ai_document_extract.field_hr_expense__display_name
+#: model:ir.model.fields,field_description:ai_document_extract.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_ai_extract_log__doc_type
+msgid "Document Type"
+msgstr "Type de document"
+
+#. module: ai_document_extract
+#: model:ir.model.fields.selection,name:ai_document_extract.selection__ai_extract_log__state__done
+msgid "Done"
+msgstr "Terminé"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_ai_extract_log__duration
+msgid "Duration (s)"
+msgstr "Durée (s)"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_ai_extract_log__error
+#: model:ir.model.fields.selection,name:ai_document_extract.selection__account_move__ai_extract_state__error
+#: model:ir.model.fields.selection,name:ai_document_extract.selection__ai_extract_log__state__error
+#: model:ir.model.fields.selection,name:ai_document_extract.selection__hr_expense__ai_extract_state__error
+#: model_terms:ir.ui.view,arch_db:ai_document_extract.ai_extract_log_view_form
+msgid "Error"
+msgstr "Erreur"
+
+#. module: ai_document_extract
+#: model:ir.model,name:ai_document_extract.model_hr_expense
+#: model:ir.model.fields.selection,name:ai_document_extract.selection__ai_extract_log__doc_type__expense
+msgid "Expense"
+msgstr "Note de frais"
+
+#. module: ai_document_extract
+#: model:ir.model.fields.selection,name:ai_document_extract.selection__account_move__ai_extract_state__done
+#: model:ir.model.fields.selection,name:ai_document_extract.selection__hr_expense__ai_extract_state__done
+msgid "Extracted"
+msgstr "Extrait"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_ai_extract_log__result_json
+msgid "Extracted Data (JSON)"
+msgstr "Données extraites (JSON)"
+
+#. module: ai_document_extract
+#: model_terms:ir.ui.view,arch_db:ai_document_extract.ai_extract_log_view_form
+msgid "Extracted data"
+msgstr "Données extraites"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_ai_extract_log__attachment_name
+msgid "File"
+msgstr "Fichier"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_account_move__id
+#: model:ir.model.fields,field_description:ai_document_extract.field_ai_extract_log__id
+#: model:ir.model.fields,field_description:ai_document_extract.field_hr_expense__id
+#: model:ir.model.fields,field_description:ai_document_extract.field_res_config_settings__id
+msgid "ID"
+msgstr "ID"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_ai_extract_log__input_tokens
+msgid "Input Tokens"
+msgstr "Jetons en entrée"
+
+#. module: ai_document_extract
+#. odoo-python
+#: code:addons/ai_document_extract/models/account_move.py:0
+msgid "Invoice %s"
+msgstr "Facture %s"
+
+#. module: ai_document_extract
+#: model:ir.model,name:ai_document_extract.model_account_move
+msgid "Journal Entry"
+msgstr "Pièce comptable"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_ai_extract_log__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_ai_extract_log__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,help:ai_document_extract.field_res_config_settings__ai_extract_base_url
+msgid ""
+"Leave empty for the provider default. For xAI Grok: https://api.x.ai/v1 ; "
+"for Mistral: https://api.mistral.ai/v1 ; for a local Ollama: "
+"http://localhost:11434/v1"
+msgstr ""
+
+#. module: ai_document_extract
+#: model:ir.model.fields,help:ai_document_extract.field_res_config_settings__ai_extract_model
+msgid ""
+"Leave empty to use the provider default (claude-sonnet-4-5 / gpt-4.1-mini)."
+msgstr ""
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_ai_extract_log__res_model
+msgid "Model"
+msgstr "Modèle"
+
+#. module: ai_document_extract
+#. odoo-python
+#: code:addons/ai_document_extract/models/hr_expense.py:0
+msgid "No purchase tax at %s%% found; tax left unchanged."
+msgstr "Aucune taxe d’achat à %s %% trouvée ; taxe inchangée."
+
+#. module: ai_document_extract
+#. odoo-python
+#: code:addons/ai_document_extract/models/account_move.py:0
+msgid "No supplier identified on the document."
+msgstr "Aucun fournisseur identifié sur le document."
+
+#. module: ai_document_extract
+#: model:ir.model.fields.selection,name:ai_document_extract.selection__account_move__ai_extract_state__none
+#: model:ir.model.fields.selection,name:ai_document_extract.selection__hr_expense__ai_extract_state__none
+msgid "Not extracted"
+msgstr "Non extrait"
+
+#. module: ai_document_extract
+#. odoo-python
+#: code:addons/ai_document_extract/models/account_move.py:0
+msgid "Only draft bills can be digitized."
+msgstr "Seules les factures en brouillon peuvent être numérisées."
+
+#. module: ai_document_extract
+#. odoo-python
+#: code:addons/ai_document_extract/models/hr_expense.py:0
+msgid "Only expenses not yet approved can be digitized."
+msgstr "Seules les notes de frais non encore approuvées peuvent être numérisées."
+
+#. module: ai_document_extract
+#: model_terms:ir.ui.view,arch_db:ai_document_extract.ai_extract_log_view_form
+msgid "Open document"
+msgstr "Ouvrir le document"
+
+#. module: ai_document_extract
+#: model:ir.model.fields.selection,name:ai_document_extract.selection__res_config_settings__ai_extract_provider__openai
+msgid "OpenAI-compatible API (OpenAI, xAI Grok, Mistral, Ollama…)"
+msgstr "API compatible OpenAI (OpenAI, xAI Grok, Mistral, Ollama…)"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_ai_extract_log__output_tokens
+msgid "Output Tokens"
+msgstr "Jetons en sortie"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_ai_extract_log__provider
+msgid "Provider"
+msgstr "Fournisseur"
+
+#. module: ai_document_extract
+#: model_terms:ir.ui.view,arch_db:ai_document_extract.view_move_form_ai_extract
+msgid ""
+"Read the attached PDF/image with the AI and fill in supplier, dates and "
+"lines (existing lines are replaced)."
+msgstr ""
+
+#. module: ai_document_extract
+#: model_terms:ir.ui.view,arch_db:ai_document_extract.hr_expense_view_form_ai_extract
+msgid ""
+"Read the attached receipt with the AI and fill in label, date, amount, tax "
+"and vendor."
+msgstr ""
+
+#. module: ai_document_extract
+#. odoo-python
+#: code:addons/ai_document_extract/models/hr_expense.py:0
+msgid "Receipt/invoice no. %s"
+msgstr "Ticket/facture n° %s"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_ai_extract_log__res_name
+msgid "Record"
+msgstr "Enregistrement"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_ai_extract_log__res_id
+msgid "Record ID"
+msgstr "ID enregistrement"
+
+#. module: ai_document_extract
+#: model:ir.model.fields,help:ai_document_extract.field_res_config_settings__ai_extract_auto_invoices
+msgid ""
+"Run the AI on every PDF/image received on a purchase journal (mail alias, "
+"upload, drag & drop)."
+msgstr ""
+
+#. module: ai_document_extract
+#: model:ir.model.fields,field_description:ai_document_extract.field_ai_extract_log__state
+msgid "State"
+msgstr "État"
+
+#. module: ai_document_extract
+#. odoo-python
+#: code:addons/ai_document_extract/models/account_move.py:0
+msgid "Supplier '%s' not found; please select it manually."
+msgstr "Fournisseur « %s » introuvable ; sélectionnez-le manuellement."
+
+#. module: ai_document_extract
+#. odoo-python
+#: code:addons/ai_document_extract/models/account_move.py:0
+msgid "Supplier '%s' was created from the document."
+msgstr "Le fournisseur « %s » a été créé depuis le document."
+
+#. module: ai_document_extract
+#: model_terms:ir.ui.view,arch_db:ai_document_extract.ai_extract_log_view_list
+msgid "Total"
+msgstr "Total"
+
+#. module: ai_document_extract
+#: model_terms:ir.ui.view,arch_db:ai_document_extract.res_config_settings_view_form_ai_extract
+msgid ""
+"Turn PDF and image receipts into draft vendor bills and expenses with an AI "
+"vision model."
+msgstr ""
+
+#. module: ai_document_extract
+#: model_terms:ir.ui.view,arch_db:ai_document_extract.res_config_settings_view_form_ai_extract
+msgid "Uncheck to only digitize when clicking the 'AI Extract' button."
+msgstr "Décochez pour ne numériser qu’au clic sur « Extraire par IA »."
+
+#. module: ai_document_extract
+#. odoo-python
+#: code:addons/ai_document_extract/models/account_move.py:0
+msgid "VAT read on the invoice (not validated): %s"
+msgstr "TVA lue sur la facture (non validée) : %s"
+
+#. module: ai_document_extract
+#: model:ir.model.fields.selection,name:ai_document_extract.selection__ai_extract_log__doc_type__invoice
+msgid "Vendor Bill"
+msgstr "Facture fournisseur"
+
+#. module: ai_document_extract
+#. odoo-python
+#: code:addons/ai_document_extract/models/account_move.py:0
+#: code:addons/ai_document_extract/models/hr_expense.py:0
+msgid "confidence %(conf)d%%"
+msgstr "confiance %(conf)d %%"
+
+#. module: ai_document_extract
+#: model_terms:ir.ui.view,arch_db:ai_document_extract.res_config_settings_view_form_ai_extract
+msgid "provider default"
+msgstr "valeur par défaut du fournisseur"
+
+#. module: ai_document_extract
+#. odoo-python
+#: code:addons/ai_document_extract/models/account_move.py:0
+msgid ""
+"the bill already has lines; use the 'AI Extract' button to overwrite them."
+msgstr ""
+
+#. module: ai_document_extract
+#. odoo-python
+#: code:addons/ai_document_extract/models/account_move.py:0
+msgid "the document is not in draft state."
+msgstr "le document n’est pas en brouillon."

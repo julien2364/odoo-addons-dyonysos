@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_expense_view_form_ai_extract" model="ir.ui.view">
+        <field name="name">hr.expense.form.inherit.ai.document.extract</field>
+        <field name="model">hr.expense</field>
+        <field name="inherit_id" ref="hr_expense.hr_expense_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="action_ai_extract" type="object" string="AI Extract" class="btn-secondary"
+                        invisible="state not in ('draft', 'reported', 'submitted')"
+                        help="Read the attached receipt with the AI and fill in label, date, amount, tax and vendor."/>
+            </xpath>
+            <xpath expr="//field[@name='date']" position="after">
+                <field name="ai_extract_state" invisible="ai_extract_state == 'none'"/>
+                <field name="ai_extract_confidence" widget="percentage" invisible="ai_extract_state != 'done'"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

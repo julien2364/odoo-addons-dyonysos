@@ -1,0 +1,748 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* dougs_bridge
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-03 22:19+0000\n"
+"PO-Revision-Date: 2026-09-03 22:19+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: dougs_bridge
+#: model:mail.template,body_html:dougs_bridge.mail_template_dougs_send
+msgid ""
+"<div style=\"font-family: Arial, sans-serif; font-size: 13px;\">\n"
+"    <p>Bonjour,</p>\n"
+"    <p>Veuillez trouver ci-joint le lot <b t-out=\"object.name\"/> de pièces comptables de <t t-out=\"object.company_id.name\"/> :\n"
+"       <t t-out=\"object.count_out\"/> facture(s) client, <t t-out=\"object.count_in\"/> facture(s) fournisseur,\n"
+"       <t t-out=\"object.count_expense\"/> note(s) de frais. Le fichier <i>journal.csv</i> récapitule chaque pièce.</p>\n"
+"    <p>Cordialement,<br/><t t-out=\"object.company_id.name\"/></p>\n"
+"</div>\n"
+"        "
+msgstr ""
+
+#. module: dougs_bridge
+#: model:mail.template,body_html:dougs_bridge.mail_template_dougs_batch
+msgid ""
+"<div style=\"font-family: Arial, sans-serif; font-size: 13px;\">\n"
+"    <p>Lot <b t-out=\"object.name\"/> — canal <b t-out=\"object.transport\"/> — état <b t-out=\"object.state\"/>.</p>\n"
+"    <p>\n"
+"        Factures clients : <t t-out=\"object.count_out\"/> ·\n"
+"        Factures fournisseurs : <t t-out=\"object.count_in\"/> ·\n"
+"        Notes de frais : <t t-out=\"object.count_expense\"/> ·\n"
+"        Erreurs : <t t-out=\"object.count_error\"/>\n"
+"    </p>\n"
+"    <t t-if=\"object.log\">\n"
+"        <pre style=\"background:#f5f5f5;padding:8px;white-space:pre-wrap;\" t-out=\"object.log\"/>\n"
+"    </t>\n"
+"    <p style=\"color:#888;\">Généré automatiquement par Dougs Bridge (DYONYSOS).</p>\n"
+"</div>\n"
+"        "
+msgstr ""
+
+#. module: dougs_bridge
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__dougs_export_batch__transport__apifirst
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__res_config_settings__dougs_transport__apifirst
+msgid "API First (Dougs) / REST API"
+msgstr "API First (Dougs) / API REST"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_res_config_settings__dougs_apifirst_base_url
+msgid "API base URL"
+msgstr "URL de base de l’API"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_res_config_settings__dougs_apifirst_api_key
+msgid "API key"
+msgstr "Clé API"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_account_bank_statement_line__dougs_state
+#: model:ir.model.fields,field_description:dougs_bridge.field_account_move__dougs_state
+#: model:ir.model.fields,field_description:dougs_bridge.field_hr_expense__dougs_state
+msgid "Accountant"
+msgstr "Cabinet comptable"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_res_config_settings__dougs_email_to
+msgid "Accountant email"
+msgstr "Email du cabinet"
+
+#. module: dougs_bridge
+#: model:ir.ui.menu,name:dougs_bridge.dougs_export_batch_menu
+msgid "Accountant exports"
+msgstr "Envois au cabinet"
+
+#. module: dougs_bridge
+#: model:ir.actions.act_window,name:dougs_bridge.dougs_export_batch_action
+msgid "Accountant exports (Dougs Bridge)"
+msgstr "Envois au cabinet (Dougs Bridge)"
+
+#. module: dougs_bridge
+#: model:ir.model,name:dougs_bridge.model_dougs_export_batch
+msgid "Accounting export batch (Dougs Bridge)"
+msgstr "Lot d’export comptable (Dougs Bridge)"
+
+#. module: dougs_bridge
+#: model:ir.model,name:dougs_bridge.model_dougs_export_line
+msgid "Accounting export line (Dougs Bridge)"
+msgstr "Ligne d’export comptable (Dougs Bridge)"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: dougs_bridge
+#: model_terms:ir.ui.view,arch_db:dougs_bridge.res_config_settings_view_form_dougs
+msgid ""
+"Activate the scheduled action 'Dougs Bridge: export accounting documents' to"
+" automate it."
+msgstr ""
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_res_config_settings__dougs_facturx
+msgid "Add Factur-X XML for customer invoices"
+msgstr "Ajouter le XML Factur-X aux factures clients"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__amount_tax
+msgid "Amount Tax"
+msgstr "Montant TVA"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__amount_total
+msgid "Amount Total"
+msgstr "Montant TTC"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__amount_untaxed
+msgid "Amount Untaxed"
+msgstr "Montant HT"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_res_config_settings__dougs_include_expenses
+msgid "Approved expenses"
+msgstr "Notes de frais approuvées"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__batch_id
+msgid "Batch"
+msgstr "Lot"
+
+#. module: dougs_bridge
+#: model_terms:ir.ui.view,arch_db:dougs_bridge.dougs_export_batch_view_form
+msgid "Collect documents"
+msgstr "Collecter les pièces"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,help:dougs_bridge.field_res_config_settings__dougs_email_to
+msgid "Collection address given by your accountant (Dougs or other)."
+msgstr "Adresse de collecte fournie par votre cabinet (Dougs ou autre)."
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__company_id
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__company_id
+msgid "Company"
+msgstr "Société"
+
+#. module: dougs_bridge
+#: model:ir.model,name:dougs_bridge.model_res_config_settings
+msgid "Config Settings"
+msgstr "Paramètres de configuration"
+
+#. module: dougs_bridge
+#: model_terms:ir.actions.act_window,help:dougs_bridge.dougs_export_batch_action
+msgid ""
+"Create a batch, collect the posted documents and send them to your "
+"accountant."
+msgstr ""
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__create_uid
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__create_date
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__currency_id
+msgid "Currency"
+msgstr "Devise"
+
+#. module: dougs_bridge
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__dougs_export_line__doc_type__out_refund
+msgid "Customer Credit Note"
+msgstr "Avoir client"
+
+#. module: dougs_bridge
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__dougs_export_line__doc_type__out_invoice
+msgid "Customer Invoice"
+msgstr "Facture client"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__count_out
+msgid "Customer invoices"
+msgstr "Factures clients"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_res_config_settings__dougs_include_sales
+msgid "Customer invoices & credit notes"
+msgstr "Factures et avoirs clients"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__date
+msgid "Date"
+msgstr "Date"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__date_due
+msgid "Date Due"
+msgstr "Échéance"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__date_from
+msgid "Date From"
+msgstr "Du"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__date_to
+msgid "Date To"
+msgstr "Au"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_res_config_settings__dougs_cron_delay_days
+msgid "Days before a document is exported"
+msgstr "Délai (jours) avant l’export d’une pièce"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,help:dougs_bridge.field_res_config_settings__dougs_folder_path
+msgid "Directory on the Odoo server, e.g. a synced Drive/Nextcloud folder."
+msgstr "Répertoire sur le serveur Odoo, par ex. un dossier Drive/Nextcloud synchronisé."
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_account_edi_xml_cii__display_name
+#: model:ir.model.fields,field_description:dougs_bridge.field_account_move__display_name
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__display_name
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__display_name
+#: model:ir.model.fields,field_description:dougs_bridge.field_hr_expense__display_name
+#: model:ir.model.fields,field_description:dougs_bridge.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__doc_type
+msgid "Doc Type"
+msgstr "Type de pièce"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__line_ids
+#: model_terms:ir.ui.view,arch_db:dougs_bridge.dougs_export_batch_view_form
+msgid "Documents"
+msgstr "Pièces"
+
+#. module: dougs_bridge
+#: model_terms:ir.ui.view,arch_db:dougs_bridge.res_config_settings_view_form_dougs
+msgid "Dougs Bridge — Accountant export"
+msgstr "Dougs Bridge — Export vers le cabinet"
+
+#. module: dougs_bridge
+#: model:mail.template,name:dougs_bridge.mail_template_dougs_batch
+msgid "Dougs Bridge: batch report"
+msgstr "Dougs Bridge : compte-rendu de lot"
+
+#. module: dougs_bridge
+#: model:ir.actions.server,name:dougs_bridge.ir_cron_dougs_export_ir_actions_server
+msgid "Dougs Bridge: export accounting documents"
+msgstr "Dougs Bridge : export des pièces comptables"
+
+#. module: dougs_bridge
+#: model:mail.template,name:dougs_bridge.mail_template_dougs_send
+msgid "Dougs Bridge: send batch to accountant"
+msgstr "Dougs Bridge : envoi du lot au cabinet"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_account_bank_statement_line__dougs_sent_date
+#: model:ir.model.fields,field_description:dougs_bridge.field_account_move__dougs_sent_date
+msgid "Dougs Sent Date"
+msgstr "Date d’envoi au cabinet"
+
+#. module: dougs_bridge
+#: model_terms:ir.ui.view,arch_db:dougs_bridge.dougs_export_batch_view_form
+msgid "Download ZIP"
+msgstr "Télécharger le ZIP"
+
+#. module: dougs_bridge
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__dougs_export_batch__transport__download
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__res_config_settings__dougs_transport__download
+msgid "Download ZIP (manual upload)"
+msgstr "Téléchargement ZIP (dépôt manuel)"
+
+#. module: dougs_bridge
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__dougs_export_batch__state__draft
+msgid "Draft"
+msgstr "Brouillon"
+
+#. module: dougs_bridge
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__dougs_export_batch__transport__email
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__res_config_settings__dougs_transport__email
+msgid "Email to the accountant"
+msgstr "Email au cabinet"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__error
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__account_move__dougs_state__error
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__dougs_export_batch__state__error
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__dougs_export_line__state__error
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__hr_expense__dougs_state__error
+msgid "Error"
+msgstr "Erreur"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__count_error
+msgid "Errors"
+msgstr "Erreurs"
+
+#. module: dougs_bridge
+#: model:ir.model,name:dougs_bridge.model_hr_expense
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__dougs_export_line__doc_type__expense
+msgid "Expense"
+msgstr "Note de frais"
+
+#. module: dougs_bridge
+#. odoo-python
+#: code:addons/dougs_bridge/models/dougs_export.py:0
+msgid "Expense %s has no receipt attached."
+msgstr "La note de frais %s n’a aucun justificatif joint."
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__count_expense
+msgid "Expenses"
+msgstr "Notes de frais"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_res_config_settings__dougs_folder_path
+msgid "Export folder"
+msgstr "Dossier d’export"
+
+#. module: dougs_bridge
+#: model:ir.model,name:dougs_bridge.model_account_edi_xml_cii
+msgid "Factur-x/ZUGFeRD CII 2.2.0"
+msgstr ""
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_res_config_settings__dougs_apifirst_file_field
+msgid "File field name"
+msgstr "Nom du champ fichier"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__filename
+msgid "Filename"
+msgstr "Nom de fichier"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: dougs_bridge
+#: model:ir.model.fields,help:dougs_bridge.field_res_config_settings__dougs_cron_delay_days
+msgid ""
+"Grace period so that a just-posted invoice can still be corrected before it "
+"leaves Odoo."
+msgstr ""
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: dougs_bridge
+#: model_terms:ir.ui.view,arch_db:dougs_bridge.res_config_settings_view_form_dougs
+msgid "How the documents reach the accountant."
+msgstr "Comment les pièces parviennent au cabinet."
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_account_edi_xml_cii__id
+#: model:ir.model.fields,field_description:dougs_bridge.field_account_move__id
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__id
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__id
+#: model:ir.model.fields,field_description:dougs_bridge.field_hr_expense__id
+#: model:ir.model.fields,field_description:dougs_bridge.field_res_config_settings__id
+msgid "ID"
+msgstr "ID"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,help:dougs_bridge.field_dougs_export_batch__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: dougs_bridge
+#: model:ir.model.fields,help:dougs_bridge.field_dougs_export_batch__message_has_error
+#: model:ir.model.fields,help:dougs_bridge.field_dougs_export_batch__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: dougs_bridge
+#: model:ir.model,name:dougs_bridge.model_account_move
+msgid "Journal Entry"
+msgstr "Pièce comptable"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__write_uid
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__write_date
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__line_count
+msgid "Line Count"
+msgstr "Nombre de lignes"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__log
+#: model_terms:ir.ui.view,arch_db:dougs_bridge.dougs_export_batch_view_form
+msgid "Log"
+msgstr "Journal"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: dougs_bridge
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__account_move__dougs_state__none
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__hr_expense__dougs_state__none
+msgid "Not sent"
+msgstr "Non envoyé"
+
+#. module: dougs_bridge
+#. odoo-python
+#: code:addons/dougs_bridge/models/dougs_export.py:0
+msgid "Nothing to send."
+msgstr "Rien à envoyer."
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__name
+msgid "Number"
+msgstr "Numéro"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__message_has_error_counter
+msgid "Number of errors"
+msgstr "Nombre d’erreurs"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,help:dougs_bridge.field_dougs_export_batch__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: dougs_bridge
+#: model:ir.model.fields,help:dougs_bridge.field_dougs_export_batch__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: dougs_bridge
+#. odoo-python
+#: code:addons/dougs_bridge/models/hr_expense.py:0
+msgid "Only approved expenses can be sent to the accountant."
+msgstr "Seules les notes de frais approuvées peuvent être envoyées au cabinet."
+
+#. module: dougs_bridge
+#. odoo-python
+#: code:addons/dougs_bridge/models/dougs_export.py:0
+msgid "Only draft batches can be (re)filled."
+msgstr "Seuls les lots en brouillon peuvent être (re)remplis."
+
+#. module: dougs_bridge
+#. odoo-python
+#: code:addons/dougs_bridge/models/account_move.py:0
+msgid "Only posted invoices and bills can be sent to the accountant."
+msgstr "Seules les factures comptabilisées peuvent être envoyées au cabinet."
+
+#. module: dougs_bridge
+#: model_terms:ir.ui.view,arch_db:dougs_bridge.dougs_export_batch_view_form
+msgid "Open document"
+msgstr "Ouvrir le document"
+
+#. module: dougs_bridge
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__dougs_export_batch__state__partial
+msgid "Partially sent"
+msgstr "Partiellement envoyé"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__partner_id
+msgid "Partner"
+msgstr "Partenaire"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__partner_vat
+msgid "Partner Vat"
+msgstr "TVA partenaire"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_res_config_settings__dougs_apifirst_path_sale
+msgid "Path: customer invoices"
+msgstr "Chemin : factures clients"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_res_config_settings__dougs_apifirst_path_expense
+msgid "Path: receipts"
+msgstr "Chemin : justificatifs"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_res_config_settings__dougs_apifirst_path_purchase
+msgid "Path: vendor bills"
+msgstr "Chemin : factures fournisseurs"
+
+#. module: dougs_bridge
+#: model:mail.template,subject:dougs_bridge.mail_template_dougs_send
+msgid "Pièces comptables {{ object.company_id.name }} — lot {{ object.name }}"
+msgstr ""
+
+#. module: dougs_bridge
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__dougs_export_line__state__ready
+msgid "Ready"
+msgstr "Prêt"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,help:dougs_bridge.field_res_config_settings__dougs_report_email
+msgid "Receives a summary after each batch (e.g. your own address)."
+msgstr "Reçoit un compte-rendu après chaque lot (par ex. votre propre adresse)."
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__reference
+msgid "Reference"
+msgstr "Référence"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__remote_id
+msgid "Remote ID"
+msgstr "ID distant"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__report_email
+msgid "Report Email"
+msgstr "Email de compte-rendu"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_res_config_settings__dougs_report_email
+msgid "Report email"
+msgstr "Email de compte-rendu"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__res_id
+msgid "Res"
+msgstr ""
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__res_model
+msgid "Res Model"
+msgstr "Modèle source"
+
+#. module: dougs_bridge
+#: model_terms:ir.ui.view,arch_db:dougs_bridge.dougs_export_batch_view_form
+msgid "Retry errors"
+msgstr "Rejouer les erreurs"
+
+#. module: dougs_bridge
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__dougs_export_batch__transport__sftp
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__res_config_settings__dougs_transport__sftp
+msgid "SFTP"
+msgstr ""
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_res_config_settings__dougs_sftp_host
+msgid "SFTP host"
+msgstr "Hôte SFTP"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_res_config_settings__dougs_sftp_password
+msgid "SFTP password"
+msgstr "Mot de passe SFTP"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_res_config_settings__dougs_sftp_path
+msgid "SFTP path"
+msgstr "Chemin SFTP"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_res_config_settings__dougs_sftp_port
+msgid "SFTP port"
+msgstr "Port SFTP"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_res_config_settings__dougs_sftp_user
+msgid "SFTP user"
+msgstr "Utilisateur SFTP"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: dougs_bridge
+#: model_terms:ir.ui.view,arch_db:dougs_bridge.res_config_settings_view_form_dougs
+msgid "Send posted invoices, bills and approved expenses to your accountant."
+msgstr "Envoyez les factures comptabilisées et les notes de frais approuvées à votre cabinet."
+
+#. module: dougs_bridge
+#: model_terms:ir.ui.view,arch_db:dougs_bridge.dougs_export_batch_view_form
+#: model_terms:ir.ui.view,arch_db:dougs_bridge.hr_expense_view_form_dougs
+#: model_terms:ir.ui.view,arch_db:dougs_bridge.view_move_form_dougs
+msgid "Send to accountant"
+msgstr "Envoyer au cabinet"
+
+#. module: dougs_bridge
+#: model:ir.actions.server,name:dougs_bridge.action_send_expense_to_dougs_server
+#: model:ir.actions.server,name:dougs_bridge.action_send_to_dougs_server
+msgid "Send to accountant (Dougs Bridge)"
+msgstr "Envoyer au cabinet (Dougs Bridge)"
+
+#. module: dougs_bridge
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__dougs_export_batch__state__sent
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__dougs_export_line__state__sent
+msgid "Sent"
+msgstr "Envoyé"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__sent_date
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__sent_date
+msgid "Sent Date"
+msgstr "Date d’envoi"
+
+#. module: dougs_bridge
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__account_move__dougs_state__sent
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__hr_expense__dougs_state__sent
+msgid "Sent to accountant"
+msgstr "Envoyé au cabinet"
+
+#. module: dougs_bridge
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__dougs_export_batch__transport__folder
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__res_config_settings__dougs_transport__folder
+msgid "Shared folder on the server (Drive/Nextcloud sync)"
+msgstr "Dossier partagé sur le serveur (synchro Drive/Nextcloud)"
+
+#. module: dougs_bridge
+#. odoo-python
+#: code:addons/dougs_bridge/models/dougs_export.py:0
+msgid "Source document no longer exists."
+msgstr "Le document source n’existe plus."
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__state
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_line__state
+msgid "State"
+msgstr "État"
+
+#. module: dougs_bridge
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__dougs_export_line__state__draft
+msgid "To send"
+msgstr "À envoyer"
+
+#. module: dougs_bridge
+#: model_terms:ir.ui.view,arch_db:dougs_bridge.dougs_export_batch_view_form
+msgid "Total"
+msgstr "Total"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__transport
+#: model:ir.model.fields,field_description:dougs_bridge.field_res_config_settings__dougs_transport
+#: model_terms:ir.ui.view,arch_db:dougs_bridge.res_config_settings_view_form_dougs
+msgid "Transport"
+msgstr "Canal d’envoi"
+
+#. module: dougs_bridge
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__dougs_export_line__doc_type__in_invoice
+msgid "Vendor Bill"
+msgstr "Facture fournisseur"
+
+#. module: dougs_bridge
+#: model:ir.model.fields.selection,name:dougs_bridge.selection__dougs_export_line__doc_type__in_refund
+msgid "Vendor Credit Note"
+msgstr "Avoir fournisseur"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__count_in
+msgid "Vendor bills"
+msgstr "Factures fournisseurs"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_res_config_settings__dougs_include_purchases
+msgid "Vendor bills & credit notes"
+msgstr "Factures et avoirs fournisseurs"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: dougs_bridge
+#: model:ir.model.fields,help:dougs_bridge.field_dougs_export_batch__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: dougs_bridge
+#: model_terms:ir.ui.view,arch_db:dougs_bridge.res_config_settings_view_form_dougs
+msgid "What to send"
+msgstr "Quoi envoyer"
+
+#. module: dougs_bridge
+#: model:ir.model.fields,field_description:dougs_bridge.field_dougs_export_batch__zip_attachment_id
+msgid "ZIP"
+msgstr "ZIP"
+
+#. module: dougs_bridge
+#: model:mail.template,subject:dougs_bridge.mail_template_dougs_batch
+msgid ""
+"[Odoo → Dougs] Lot {{ object.name }} — {{ object.line_count }} pièce(s), {{ "
+"object.state }}"
+msgstr ""

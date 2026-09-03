@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="mail_template_dougs_batch" model="mail.template">
+        <field name="name">Dougs Bridge: batch report</field>
+        <field name="model_id" ref="model_dougs_export_batch"/>
+        <field name="subject">[Odoo → Dougs] Lot {{ object.name }} — {{ object.line_count }} pièce(s), {{ object.state }}</field>
+        <field name="email_from">{{ (object.company_id.email or user.email_formatted) }}</field>
+        <field name="email_to">{{ object.report_email or '' }}</field>
+        <field name="auto_delete" eval="False"/>
+        <field name="body_html" type="html">
+<div style="font-family: Arial, sans-serif; font-size: 13px;">
+    <p>Lot <b t-out="object.name"/> — canal <b t-out="object.transport"/> — état <b t-out="object.state"/>.</p>
+    <p>
+        Factures clients : <t t-out="object.count_out"/> ·
+        Factures fournisseurs : <t t-out="object.count_in"/> ·
+        Notes de frais : <t t-out="object.count_expense"/> ·
+        Erreurs : <t t-out="object.count_error"/>
+    </p>
+    <t t-if="object.log">
+        <pre style="background:#f5f5f5;padding:8px;white-space:pre-wrap;" t-out="object.log"/>
+    </t>
+    <p style="color:#888;">Généré automatiquement par Dougs Bridge (DYONYSOS).</p>
+</div>
+        </field>
+    </record>
+
+    <record id="mail_template_dougs_send" model="mail.template">
+        <field name="name">Dougs Bridge: send batch to accountant</field>
+        <field name="model_id" ref="model_dougs_export_batch"/>
+        <field name="subject">Pièces comptables {{ object.company_id.name }} — lot {{ object.name }}</field>
+        <field name="email_from">{{ (object.company_id.email or user.email_formatted) }}</field>
+        <field name="auto_delete" eval="False"/>
+        <field name="body_html" type="html">
+<div style="font-family: Arial, sans-serif; font-size: 13px;">
+    <p>Bonjour,</p>
+    <p>Veuillez trouver ci-joint le lot <b t-out="object.name"/> de pièces comptables de <t t-out="object.company_id.name"/> :
+       <t t-out="object.count_out"/> facture(s) client, <t t-out="object.count_in"/> facture(s) fournisseur,
+       <t t-out="object.count_expense"/> note(s) de frais. Le fichier <i>journal.csv</i> récapitule chaque pièce.</p>
+    <p>Cordialement,<br/><t t-out="object.company_id.name"/></p>
+</div>
+        </field>
+    </record>
+</odoo>

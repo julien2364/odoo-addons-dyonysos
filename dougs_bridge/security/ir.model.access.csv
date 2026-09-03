@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_dougs_export_batch_invoice,dougs.export.batch invoicing,model_dougs_export_batch,account.group_account_invoice,1,1,1,0
+access_dougs_export_batch_manager,dougs.export.batch manager,model_dougs_export_batch,account.group_account_manager,1,1,1,1
+access_dougs_export_line_invoice,dougs.export.line invoicing,model_dougs_export_line,account.group_account_invoice,1,1,1,0
+access_dougs_export_line_manager,dougs.export.line manager,model_dougs_export_line,account.group_account_manager,1,1,1,1

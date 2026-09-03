@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="ai_extract_log_view_list" model="ir.ui.view">
+        <field name="name">ai.extract.log.list</field>
+        <field name="model">ai.extract.log</field>
+        <field name="arch" type="xml">
+            <list default_order="create_date desc" create="false">
+                <field name="create_date"/>
+                <field name="doc_type"/>
+                <field name="res_name"/>
+                <field name="attachment_name"/>
+                <field name="state" decoration-success="state == 'done'" decoration-danger="state == 'error'" widget="badge"/>
+                <field name="confidence" widget="percentage"/>
+                <field name="duration" sum="Total"/>
+                <field name="input_tokens" sum="Total"/>
+                <field name="output_tokens" sum="Total"/>
+                <field name="provider" optional="hide"/>
+                <field name="model" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="ai_extract_log_view_form" model="ir.ui.view">
+        <field name="name">ai.extract.log.form</field>
+        <field name="model">ai.extract.log</field>
+        <field name="arch" type="xml">
+            <form create="false">
+                <header>
+                    <button name="action_open_record" type="object" string="Open document" class="btn-primary"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="create_date"/>
+                            <field name="doc_type"/>
+                            <field name="res_model"/>
+                            <field name="res_id"/>
+                            <field name="attachment_id"/>
+                        </group>
+                        <group>
+                            <field name="state"/>
+                            <field name="provider"/>
+                            <field name="model"/>
+                            <field name="duration"/>
+                            <field name="input_tokens"/>
+                            <field name="output_tokens"/>
+                            <field name="confidence" widget="percentage"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Extracted data" name="result">
+                            <field name="result_json" widget="ace" options="{'mode': 'json'}"/>
+                        </page>
+                        <page string="Error" name="error" invisible="state != 'error'">
+                            <field name="error"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="ai_extract_log_action" model="ir.actions.act_window">
+        <field name="name">AI Extraction Log</field>
+        <field name="res_model">ai.extract.log</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="ai_extract_log_menu" name="AI Extraction Log" parent="account.account_audit_menu"
+              action="ai_extract_log_action" sequence="60"/>
+</odoo>
