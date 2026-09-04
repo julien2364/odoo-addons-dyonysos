@@ -6,12 +6,12 @@ Community n'a pas et pour être vendus sur l'Odoo Apps Store (licence OPL-1, 250
 | Module | Ce qu'il fait | Tests |
 |---|---|---|
 | `ai_document_extract` | Numérisation IA des factures fournisseurs et notes de frais (Claude, OpenAI, Mistral, Grok) — équivalent de l'OCR Enterprise, sans crédits IAP | 7 |
-| `dougs_bridge` | Envoi des pièces comptables au cabinet (API First / email / SFTP / dossier partagé / ZIP), avec Factur-X et journal CSV | 8 |
-| `odoo_mcp_server` | Serveur **MCP** natif : branche Claude, ChatGPT ou Cursor sur Odoo, avec clés API natives, liste blanche de modèles et journal d'audit | 15 |
-| `amazon_connector_community` | Connecteur Amazon **SP-API** pour Community : commandes, suivi, stock, prix, 10 marketplaces UE | 15 |
+| `dougs_bridge` | Envoi des pièces comptables au cabinet (API First / email / SFTP / dossier partagé / ZIP), avec Factur-X et journal CSV | 10 |
+| `odoo_mcp_server` | Serveur **MCP** natif : branche Claude, ChatGPT ou Cursor sur Odoo, avec clés API natives, liste blanche de modèles et journal d'audit | 20 |
+| `amazon_connector_community` | Connecteur Amazon **SP-API** pour Community : commandes, suivi, stock, prix, 10 marketplaces UE | 19 |
 | `studio_lite` | Équivalent léger de Studio : champs personnalisés, placement dans les vues, automatisations sans code, tout réversible | 20 |
 
-**65 tests, tous verts** sur Odoo 19 (branche 19.0).
+**76 tests, tous verts** sur Odoo 19 (branche 19.0).
 
 ## Installation sur un serveur
 

@@ -16,7 +16,11 @@
                         The key inherits this user's permissions: create a dedicated user with the minimum
                         rights rather than sharing an administrator key.
                     </div>
-                    <p>This user currently owns <field name="mcp_key_count" readonly="1" class="oe_inline"/> MCP key(s).</p>
+                    <p>
+                        This user currently owns <field name="mcp_key_count" readonly="1" class="oe_inline"/> MCP key(s).
+                    </p>
+                    <button name="action_mcp_new_key" type="object" string="New MCP API key"
+                            class="btn-primary" icon="fa-key"/>
                 </page>
             </xpath>
         </field>

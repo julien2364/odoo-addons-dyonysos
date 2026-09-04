@@ -74,6 +74,8 @@ ITEMS_2 = {
 
 ORDERS_PAYLOAD = {"payload": {"Orders": [ORDER_1, ORDER_2]}}
 
+MODULE = "odoo.addons.amazon_connector_community.models.amazon_account"
+
 
 @tagged("post_install", "-at_install")
 class TestAmazonConnector(TransactionCase):
@@ -82,6 +84,17 @@ class TestAmazonConnector(TransactionCase):
     def setUpClass(cls):
         super().setUpClass()
         cls.marketplace_fr = cls.env.ref("amazon_connector_community.marketplace_fr")
+        cls.marketplace_uk = cls.env.ref("amazon_connector_community.marketplace_uk")
+        # devise de la place de marché britannique, avec un taux déterministe
+        cls.gbp = cls.env.ref("base.GBP")
+        cls.gbp.active = True
+        cls.env["res.currency.rate"].search([("currency_id", "=", cls.gbp.id)]).unlink()
+        cls.env["res.currency.rate"].create({
+            "currency_id": cls.gbp.id,
+            "company_id": cls.env.company.id,
+            "name": "2020-01-01",
+            "rate": 0.8,
+        })
         cls.shipping_product = cls.env.ref("amazon_connector_community.product_amazon_shipping")
         cls.warehouse = cls.env["stock.warehouse"].search(
             [("company_id", "=", cls.env.company.id)], limit=1)
@@ -463,4 +476,123 @@ class TestAmazonConnector(TransactionCase):
         self.assertFalse(fake.calls)
         logs = self.env["amazon.sync.log"].search([
             ("account_id", "=", self.account.id), ("state", "=", "error")])
+        self.assertEqual(len(logs), 2)
+
+    # ------------------------------------------------------------------
+    # 16 — pagination NextToken : toutes les pages sont importées
+    # ------------------------------------------------------------------
+    def test_16_pagination_next_token(self):
+        page1 = {"payload": {"Orders": [ORDER_1], "NextToken": "TOKEN-PAGE-2"}}
+        page2 = {"payload": {"Orders": [ORDER_2]}}
+        items = {
+            ORDER_1["AmazonOrderId"]: ITEMS_1,
+            ORDER_2["AmazonOrderId"]: ITEMS_2,
+        }
+        seen_tokens = []
+
+        def _paged(self, method, path, params=None, body=None):
+            if path == "/orders/v0/orders":
+                token = (params or {}).get("NextToken")
+                seen_tokens.append(token)
+                return page2 if token == "TOKEN-PAGE-2" else page1
+            if path.endswith("/orderItems"):
+                return items[path.split("/")[-2]]
+            return {}
+
+        with patch(MODULE + ".PAGE_DELAY_SECONDS", 0):
+            with patch.object(AmazonSpApi, "_request", _paged):
+                self.account._import_orders()
+        # deux appels getOrders : la première page, puis la page pointée par le jeton
+        self.assertEqual(seen_tokens, [None, "TOKEN-PAGE-2"])
+        orders = self.env["sale.order"].search([("amazon_account_id", "=", self.account.id)])
+        self.assertEqual(len(orders), 2)
+        self.assertEqual(
+            set(orders.mapped("amazon_order_ref")),
+            {ORDER_1["AmazonOrderId"], ORDER_2["AmazonOrderId"]})
+        log = self.env["amazon.sync.log"].search([
+            ("account_id", "=", self.account.id), ("operation", "=", "import_orders"),
+            ("reference", "=", False)], limit=1)
+        self.assertEqual(log.state, "done")
+        self.assertEqual(log.item_count, 2)
+        self.assertIn("2 page(s)", log.message)
+
+        # rejouer les deux pages ne crée aucun doublon
+        with patch(MODULE + ".PAGE_DELAY_SECONDS", 0):
+            with patch.object(AmazonSpApi, "_request", _paged):
+                self.account._import_orders()
+        self.assertEqual(self.env["sale.order"].search_count(
+            [("amazon_account_id", "=", self.account.id)]), 2)
+
+    # ------------------------------------------------------------------
+    # 17 — garde-fou : la limite de pages est journalisée
+    # ------------------------------------------------------------------
+    def test_17_pagination_page_limit_is_logged(self):
+        def _endless(self, method, path, params=None, body=None):
+            if path == "/orders/v0/orders":
+                return {"payload": {"Orders": [], "NextToken": "ENCORE"}}
+            return {}
+
+        with patch(MODULE + ".PAGE_DELAY_SECONDS", 0), \
+             patch(MODULE + ".MAX_ORDER_PAGES", 3):
+            with patch.object(AmazonSpApi, "_request", _endless):
+                self.account._import_orders()
+        log = self.env["amazon.sync.log"].search([
+            ("account_id", "=", self.account.id), ("operation", "=", "import_orders")], limit=1)
+        self.assertEqual(log.state, "error")
+        self.assertIn("Limite de 3 pages atteinte", log.message)
+        self.assertIn("3 page(s)", log.message)
+        # la date de synchro n'est pas avancée : le reste sera repris au prochain import
+        self.assertFalse(self.account.last_order_sync)
+
+    # ------------------------------------------------------------------
+    # 18 — push du stock sur toutes les places de marché du compte
+    # ------------------------------------------------------------------
+    def test_18_push_stock_all_marketplaces(self):
+        self.account.marketplace_ids = [(6, 0, (self.marketplace_fr | self.marketplace_uk).ids)]
+        self.env["stock.quant"]._update_available_quantity(
+            self.product_a, self.warehouse.lot_stock_id, 4)
+        fake = self._router()
+        with patch.object(AmazonSpApi, "_request", fake):
+            self.account._push_stock()
+        calls_a = [c for c in fake.calls if c["path"].endswith("AMZ-SKU-A")]
+        self.assertEqual(len(calls_a), 2)
+        self.assertEqual(
+            {c["params"]["marketplaceIds"] for c in calls_a},
+            {self.marketplace_fr.marketplace_id, self.marketplace_uk.marketplace_id})
+        for call in calls_a:
+            self.assertEqual(call["body"]["patches"][0]["value"][0]["quantity"], 4)
+        # une ligne de journal par place de marché
+        logs = self.env["amazon.sync.log"].search([
+            ("account_id", "=", self.account.id), ("operation", "=", "push_stock")])
+        self.assertEqual(len(logs), 2)
+        self.assertEqual(
+            set(logs.mapped("marketplace_id")),
+            set(self.marketplace_fr | self.marketplace_uk))
+
+    # ------------------------------------------------------------------
+    # 19 — push des prix : chaque place de marché reçoit sa devise
+    # ------------------------------------------------------------------
+    def test_19_push_price_converts_per_marketplace(self):
+        self.account.marketplace_ids = [(6, 0, (self.marketplace_fr | self.marketplace_uk).ids)]
+        fake = self._router()
+        with patch.object(AmazonSpApi, "_request", fake):
+            self.account._push_price()
+        calls_a = [c for c in fake.calls if c["path"].endswith("AMZ-SKU-A")]
+        self.assertEqual(len(calls_a), 2)
+        offers = {}
+        for call in calls_a:
+            offer = call["body"]["patches"][0]["value"][0]
+            offers[call["params"]["marketplaceIds"]] = offer
+        eur = offers[self.marketplace_fr.marketplace_id]
+        gbp = offers[self.marketplace_uk.marketplace_id]
+        self.assertEqual(eur["currency"], "EUR")
+        self.assertAlmostEqual(
+            eur["our_price"][0]["schedule"][0]["value_with_tax"], 17.90, places=2)
+        self.assertEqual(gbp["currency"], "GBP")
+        # taux GBP = 0,8 => 17,90 € devient 14,32 £
+        self.assertAlmostEqual(
+            gbp["our_price"][0]["schedule"][0]["value_with_tax"], 14.32, places=2)
+        self.assertEqual(gbp["marketplace_id"], self.marketplace_uk.marketplace_id)
+        logs = self.env["amazon.sync.log"].search([
+            ("account_id", "=", self.account.id), ("operation", "=", "push_price")])
         self.assertEqual(len(logs), 2)

@@ -32,7 +32,7 @@
     </div>
     <div class="oe_span4">
       <h4>Envoi du stock et des prix</h4>
-      <p>Pour les articles marqués « Synchroniser avec Amazon », la quantité disponible de l'entrepôt choisi et le prix de la liste de prix du compte sont publiés sur l'annonce correspondante (<i>PATCH /listings</i>). Un SKU Amazon distinct de la référence interne est possible.</p>
+      <p>Pour les articles marqués « Synchroniser avec Amazon », la quantité disponible de l'entrepôt choisi et le prix de la liste de prix du compte sont publiés sur l'annonce correspondante (<i>PATCH /listings</i>), <b>sur chacune des places de marché du compte</b>. Le prix est converti dans la devise de chaque place de marché au taux Odoo du jour. Un SKU Amazon distinct de la référence interne est possible.</p>
     </div>
     <div class="oe_span4">
       <h4>Remontée du suivi</h4>
@@ -46,6 +46,7 @@
     <div class="oe_span6">
       <h3>Import idempotent, erreurs isolées</h3>
       <p>La référence de commande Amazon est unique et indexée : réimporter le même lot ne crée aucun doublon. Chaque commande est traitée dans son propre point de sauvegarde — un SKU introuvable ou une adresse incomplète met cette commande en erreur dans le journal, sans interrompre le reste du lot.</p>
+      <p>L'import suit la pagination d'Amazon page après page, aucune commande n'est perdue au-delà des cent premières. Si un très gros arriéré dépasse le plafond de sécurité, le journal le signale et la reprise se fait au prochain import.</p>
       <p>Un seul point d'entrée réseau dans le code, une seule couche d'appel SP-API : jeton LWA mis en cache, quota Amazon géré par nouvelles tentatives avec temporisation croissante, messages d'erreur lisibles. Aucun secret n'est écrit dans les journaux.</p>
     </div>
     <div class="oe_span6">
@@ -76,7 +77,7 @@
     <div class="oe_span12">
       <h3>Ce dont vous avez besoin</h3>
       <p>Un compte <b>Amazon Seller Central</b> et une application <b>SP-API</b> déclarée dans Amazon Developer Central (rôles Commandes, Stock et Prix, Expéditions). Vous renseignez sur le compte Odoo : le <i>Seller ID</i>, le <i>LWA Client ID</i>, le <i>LWA Client Secret</i> et le <i>Refresh Token</i>. La bibliothèque Python <code>requests</code> doit être installée sur le serveur.</p>
-      <p>Le module n'inclut pas la gestion Amazon FBA (les expéditions faites par Amazon), ni la facturation VCS, ni les retours et remboursements Amazon. Il couvre les commandes marchand (FBM), le stock, les prix et le suivi d'expédition.</p>
+      <p>Le module n'inclut pas la gestion Amazon FBA (les expéditions faites par Amazon), ni la facturation VCS, ni les retours et remboursements Amazon. Il couvre les commandes marchand (FBM), le stock, les prix et le suivi d'expédition. La TVA appliquée découle de la position fiscale choisie sur le compte, sans mapping OSS par pays.</p>
     </div>
   </div>
 </section>

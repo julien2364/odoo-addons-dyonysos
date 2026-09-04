@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-03 23:40+0000\n"
-"PO-Revision-Date: 2026-09-03 23:40+0000\n"
+"POT-Creation-Date: 2026-09-04 00:31+0000\n"
+"PO-Revision-Date: 2026-09-04 00:31+0000\n"
 "Last-Translator: DYONYSOS <welcome@dyonysos.fr>\n"
 "Language-Team: French <welcome@dyonysos.fr>\n"
 "MIME-Version: 1.0\n"
@@ -20,8 +20,9 @@ msgstr ""
 #. module: amazon_connector_community
 #. odoo-python
 #: code:addons/amazon_connector_community/models/amazon_account.py:0
-msgid "%(ok)s commande(s) importée(s), %(ko)s en erreur."
-msgstr "%(ok)s commande(s) importée(s), %(ko)s en erreur."
+msgid ""
+"%(ok)s commande(s) importée(s), %(ko)s en erreur, %(pages)s page(s) lue(s)."
+msgstr "%(ok)s commande(s) importée(s), %(ko)s en erreur, %(pages)s page(s) lue(s)."
 
 #. module: amazon_connector_community
 #. odoo-python
@@ -617,6 +618,14 @@ msgid "Last Updated on"
 msgstr "Dernière modification le"
 
 #. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_account.py:0
+msgid ""
+"Limite de %s pages atteinte : des commandes restent à importer, relancez "
+"l'import."
+msgstr "Limite de %s pages atteinte : des commandes restent à importer, relancez l'import."
+
+#. module: amazon_connector_community
 #: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__pricelist_id
 msgid "Liste de prix"
 msgstr "Liste de prix"
@@ -863,8 +872,9 @@ msgstr "Transfert"
 #: model:ir.model.fields,help:amazon_connector_community.field_amazon_account_community__endpoint_url
 msgid ""
 "URL de base de l'API SP-API. Calculée depuis la région, modifiable pour le "
-"bac à sable."
-msgstr "URL de base de l'API SP-API. Calculée depuis la région, modifiable pour le bac à sable."
+"bac à sable. Réservée aux administrateurs système : une URL détournée "
+"exfiltrerait le jeton d'accès Amazon."
+msgstr "URL de base de l'API SP-API. Calculée depuis la région, modifiable pour le bac à sable. Réservée aux administrateurs système : une URL détournée exfiltrerait le jeton d'accès Amazon."
 
 #. module: amazon_connector_community
 #: model:ir.model.constraint,message:amazon_connector_community.constraint_amazon_account_community_amazon_account_seller_uniq

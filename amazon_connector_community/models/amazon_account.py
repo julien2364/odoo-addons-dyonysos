@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import logging
+import time
 from datetime import timedelta
 
 from odoo import _, api, fields, models
@@ -10,6 +11,10 @@ from .amazon_sp_api import REGION_ENDPOINTS, AmazonApiError, AmazonSpApi
 _logger = logging.getLogger(__name__)
 
 SHIPPING_KEYS = ("ShippingPrice", "ShippingDiscount")
+
+# Garde-fous de la pagination getOrders (100 commandes par page côté Amazon).
+MAX_ORDER_PAGES = 50
+PAGE_DELAY_SECONDS = 0.5
 
 
 class AmazonAccountCommunity(models.Model):
@@ -180,7 +185,12 @@ class AmazonAccountCommunity(models.Model):
         return True
 
     def _import_orders(self):
-        """Importe les commandes Amazon en commandes de vente Odoo."""
+        """Importe les commandes Amazon en commandes de vente Odoo.
+
+        Amazon pagine ``getOrders`` (100 commandes par page) : on suit le
+        ``NextToken`` jusqu'à épuisement, avec un garde-fou de
+        :data:`MAX_ORDER_PAGES` pages pour ne jamais boucler indéfiniment.
+        """
         self.ensure_one()
         start = fields.Datetime.now()
         marketplace_ids = self._marketplace_ids_list()
@@ -191,38 +201,61 @@ class AmazonAccountCommunity(models.Model):
         since = self.last_order_sync or (
             fields.Datetime.now() - timedelta(days=max(self.import_days or 1, 1)))
         api = self._get_api()
-        try:
-            payload = api.get_orders(since, marketplace_ids)
-        except AmazonApiError as exc:
-            self._log("import_orders", state="error", message=str(exc),
-                      duration=(fields.Datetime.now() - start).total_seconds())
-            return self.env["sale.order"]
 
-        amazon_orders = (payload.get("payload") or payload).get("Orders") or []
         created = self.env["sale.order"]
         errors = 0
-        for amazon_order in amazon_orders:
-            order_ref = amazon_order.get("AmazonOrderId")
-            if not order_ref:
-                continue
+        pages = 0
+        next_token = None
+        truncated = False
+        while True:
             try:
-                with self.env.cr.savepoint():
-                    order = self._process_order(api, amazon_order)
-                    if order:
-                        created |= order
-            except Exception as exc:  # une commande en échec n'arrête pas le lot
-                errors += 1
-                _logger.warning("Amazon: commande %s ignorée (%s)", order_ref, exc)
-                self._log("import_orders", state="error", reference=order_ref,
-                          message=_("Commande %(ref)s ignorée : %(error)s",
-                                    ref=order_ref, error=exc))
-        self.sudo().write({"last_order_sync": fields.Datetime.now()})
+                payload = api.get_orders(since, marketplace_ids, next_token=next_token)
+            except AmazonApiError as exc:
+                self._log("import_orders", state="error", message=str(exc),
+                          item_count=len(created),
+                          duration=(fields.Datetime.now() - start).total_seconds())
+                return created
+            pages += 1
+            body = payload.get("payload") or payload
+            for amazon_order in body.get("Orders") or []:
+                order_ref = amazon_order.get("AmazonOrderId")
+                if not order_ref:
+                    continue
+                try:
+                    with self.env.cr.savepoint():
+                        order = self._process_order(api, amazon_order)
+                        if order:
+                            created |= order
+                except Exception as exc:  # une commande en échec n'arrête pas le lot
+                    errors += 1
+                    _logger.warning("Amazon: commande %s ignorée (%s)", order_ref, exc)
+                    self._log("import_orders", state="error", reference=order_ref,
+                              message=_("Commande %(ref)s ignorée : %(error)s",
+                                        ref=order_ref, error=exc))
+            next_token = body.get("NextToken")
+            if not next_token:
+                break
+            if pages >= MAX_ORDER_PAGES:
+                truncated = True
+                break
+            # getOrders est fortement limité en débit : on espace les pages.
+            time.sleep(PAGE_DELAY_SECONDS)
+
+        if not truncated:
+            self.sudo().write({"last_order_sync": fields.Datetime.now()})
+        message = _("%(ok)s commande(s) importée(s), %(ko)s en erreur, %(pages)s page(s) lue(s).",
+                    ok=len(created), ko=errors, pages=pages)
+        if truncated:
+            # La date de synchro n'est volontairement pas avancée : la prochaine
+            # exécution reprend le même intervalle et l'import est idempotent.
+            message += "\n" + _(
+                "Limite de %s pages atteinte : des commandes restent à importer, "
+                "relancez l'import.", MAX_ORDER_PAGES)
         self._log(
             "import_orders",
-            state="error" if errors and not created else "done",
+            state="error" if truncated or (errors and not created) else "done",
             item_count=len(created),
-            message=_("%(ok)s commande(s) importée(s), %(ko)s en erreur.",
-                      ok=len(created), ko=errors),
+            message=message,
             duration=(fields.Datetime.now() - start).total_seconds(),
         )
         return created
@@ -381,68 +414,85 @@ class AmazonAccountCommunity(models.Model):
         ])
 
     def _push_stock(self):
+        """Envoie la quantité disponible sur chacune des places de marché du compte."""
         self.ensure_one()
-        start = fields.Datetime.now()
-        marketplace = self.marketplace_ids[:1]
-        if not marketplace:
+        if not self.marketplace_ids:
             self._log("push_stock", state="error",
                       message=_("Aucune place de marché n'est configurée sur le compte."))
             return 0
         api = self._get_api()
         products = self._amazon_products()
-        sent, errors = 0, []
-        # Warm the stock cache in one query instead of one per product.
-        products.with_context(warehouse_id=self.warehouse_id.id or None).mapped("qty_available")
+        quantities = {}
         for product in products:
             sku = product._amazon_effective_sku()
-            if not sku:
-                continue
-            quantity = max(int(product.with_context(
-                warehouse_id=self.warehouse_id.id or None).qty_available), 0)
-            try:
-                api.patch_listing_quantity(sku, quantity, marketplace.marketplace_id)
-                sent += 1
-            except AmazonApiError as exc:
-                errors.append("%s: %s" % (sku, exc))
+            if sku:
+                quantities[sku] = max(int(product.with_context(
+                    warehouse_id=self.warehouse_id.id or None).qty_available), 0)
+        total = 0
+        for marketplace in self.marketplace_ids:
+            start = fields.Datetime.now()
+            sent, errors = 0, []
+            for sku, quantity in quantities.items():
+                try:
+                    api.patch_listing_quantity(sku, quantity, marketplace.marketplace_id)
+                    sent += 1
+                except AmazonApiError as exc:
+                    errors.append("%s: %s" % (sku, exc))
+            total += sent
+            self._log("push_stock", state="error" if errors and not sent else "done",
+                      item_count=sent, marketplace=marketplace,
+                      message="\n".join(errors) if errors else _("%s SKU mis à jour.", sent),
+                      duration=(fields.Datetime.now() - start).total_seconds())
         self.sudo().write({"last_stock_sync": fields.Datetime.now()})
-        self._log("push_stock", state="error" if errors and not sent else "done",
-                  item_count=sent, marketplace=marketplace,
-                  message="\n".join(errors) if errors else _("%s SKU mis à jour.", sent),
-                  duration=(fields.Datetime.now() - start).total_seconds())
-        return sent
+        return total
 
     def _push_price(self):
+        """Envoie les prix sur chaque place de marché, dans sa propre devise."""
         self.ensure_one()
-        start = fields.Datetime.now()
-        marketplace = self.marketplace_ids[:1]
-        if not marketplace:
+        if not self.marketplace_ids:
             self._log("push_price", state="error",
                       message=_("Aucune place de marché n'est configurée sur le compte."))
             return 0
         api = self._get_api()
         pricelist = self.pricelist_id
-        currency = (marketplace.currency_id or pricelist.currency_id
-                    or self.company_id.currency_id)
+        source_currency = (pricelist.currency_id or self.company_id.currency_id)
         products = self._amazon_products()
-        sent, errors = 0, []
+        base_prices = {}
         for product in products:
             sku = product._amazon_effective_sku()
             if not sku:
                 continue
-            price = product.list_price
-            if pricelist:
-                price = pricelist._get_product_price(product, 1.0)
-            try:
-                api.patch_listing_price(sku, price, currency.name, marketplace.marketplace_id)
-                sent += 1
-            except AmazonApiError as exc:
-                errors.append("%s: %s" % (sku, exc))
+            base_prices[sku] = (
+                pricelist._get_product_price(product, 1.0) if pricelist else product.list_price
+            )
+        total = 0
+        for marketplace in self.marketplace_ids:
+            start = fields.Datetime.now()
+            target_currency = marketplace.currency_id or source_currency
+            sent, errors = 0, []
+            for sku, base_price in base_prices.items():
+                price = self._convert_price(base_price, source_currency, target_currency)
+                try:
+                    api.patch_listing_price(
+                        sku, price, target_currency.name, marketplace.marketplace_id)
+                    sent += 1
+                except AmazonApiError as exc:
+                    errors.append("%s: %s" % (sku, exc))
+            total += sent
+            self._log("push_price", state="error" if errors and not sent else "done",
+                      item_count=sent, marketplace=marketplace,
+                      message="\n".join(errors) if errors else _("%s prix mis à jour.", sent),
+                      duration=(fields.Datetime.now() - start).total_seconds())
         self.sudo().write({"last_price_sync": fields.Datetime.now()})
-        self._log("push_price", state="error" if errors and not sent else "done",
-                  item_count=sent, marketplace=marketplace,
-                  message="\n".join(errors) if errors else _("%s prix mis à jour.", sent),
-                  duration=(fields.Datetime.now() - start).total_seconds())
-        return sent
+        return total
+
+    def _convert_price(self, price, source_currency, target_currency):
+        """Convertit un prix dans la devise de la place de marché."""
+        self.ensure_one()
+        if not source_currency or not target_currency or source_currency == target_currency:
+            return price
+        return source_currency._convert(
+            price, target_currency, self.company_id, fields.Date.context_today(self))
 
     # ------------------------------------------------------------------
     # Remontée du suivi

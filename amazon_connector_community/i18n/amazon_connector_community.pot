@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-03 23:40+0000\n"
-"PO-Revision-Date: 2026-09-03 23:40+0000\n"
+"POT-Creation-Date: 2026-09-04 00:31+0000\n"
+"PO-Revision-Date: 2026-09-04 00:31+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,8 @@ msgstr ""
 #. module: amazon_connector_community
 #. odoo-python
 #: code:addons/amazon_connector_community/models/amazon_account.py:0
-msgid "%(ok)s commande(s) importée(s), %(ko)s en erreur."
+msgid ""
+"%(ok)s commande(s) importée(s), %(ko)s en erreur, %(pages)s page(s) lue(s)."
 msgstr ""
 
 #. module: amazon_connector_community
@@ -615,6 +616,14 @@ msgid "Last Updated on"
 msgstr ""
 
 #. module: amazon_connector_community
+#. odoo-python
+#: code:addons/amazon_connector_community/models/amazon_account.py:0
+msgid ""
+"Limite de %s pages atteinte : des commandes restent à importer, relancez "
+"l'import."
+msgstr ""
+
+#. module: amazon_connector_community
 #: model:ir.model.fields,field_description:amazon_connector_community.field_amazon_account_community__pricelist_id
 msgid "Liste de prix"
 msgstr ""
@@ -861,7 +870,8 @@ msgstr ""
 #: model:ir.model.fields,help:amazon_connector_community.field_amazon_account_community__endpoint_url
 msgid ""
 "URL de base de l'API SP-API. Calculée depuis la région, modifiable pour le "
-"bac à sable."
+"bac à sable. Réservée aux administrateurs système : une URL détournée "
+"exfiltrerait le jeton d'accès Amazon."
 msgstr ""
 
 #. module: amazon_connector_community
