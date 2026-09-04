@@ -2,7 +2,7 @@
 {
     'name': 'Thème Animalerie — Boutique en ligne (pro)',
     'summary': "Sélecteur par animal, comparateur, avis notés, guide de tailles, "
-               "abonnement, blocs conseils, promotions, panier et tunnel stylés, mode sombre.",
+               "abonnement, blocs conseils, promotions, panier et tunnel stylés, mode sombre, trois dispositions d'en-tête et deux de pied de page.",
     'description': """
 Thème Animalerie — version pro
 ==============================
@@ -34,6 +34,8 @@ La marque « Trèfle &amp; Museau » des données de démonstration est fictive.
         'views/snippets/s_anim_promotions.xml',
         'views/snippets/s_anim_mode_sombre.xml',
         'views/snippets/snippets.xml',
+        'views/layout/headers.xml',
+        'views/layout/footers.xml',
         'data/pages.xml',
         'data/menus.xml',
     ],
@@ -51,6 +53,10 @@ La marque « Trèfle &amp; Museau » des données de démonstration est fictive.
             'theme_animalerie/static/src/scss/dark_mode.scss',
             'theme_animalerie/static/src/js/anim_compare.js',
             'theme_animalerie/static/src/js/anim_dark_mode.js',
+        ],
+        'website.website_builder_assets': [
+            'theme_animalerie/static/src/builder/anim_layout_options.xml',
+            'theme_animalerie/static/src/builder/anim_footer_option_plugin.js',
         ],
     },
     'images': ['images/main_screenshot.png'],

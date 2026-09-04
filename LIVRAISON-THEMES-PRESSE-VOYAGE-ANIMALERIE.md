@@ -229,6 +229,22 @@ Bases de test supprimées, `__pycache__` supprimés (6 dossiers).
   Limite : le mode sombre assombrit les images de démonstration par un filtre CSS
   (`brightness(.88)`), il ne fournit pas de visuels alternatifs.
 
+- **Variantes de mise en page sur les trois thèmes pro** — trois dispositions
+  d'en-tête (centrée, avec bandeau d'information, minimale) et deux de pied de
+  page (étendue à quatre colonnes, compacte). Elles s'ajoutent aux listes
+  natives des panneaux « En-tête » et « Pied de page » de l'éditeur, avec un
+  aperçu par variante, via `website.website_builder_assets` — même mécanique que
+  `theme_dyonysos` (`BuilderSelectItem` pour l'en-tête, plugin
+  `footer_templates_providers` pour le pied).
+
+  Point technique à connaître : ces variantes remplacent `//header//nav` de
+  `website.layout`, exactement comme `website.template_header_default`. **Elles
+  sont donc mutuellement exclusives avec lui** — activer une variante sans
+  désactiver le modèle natif produit une erreur `Element '<xpath
+  expr="//header//nav">' cannot be located in parent view`. L'éditeur s'en charge
+  automatiquement (`websiteConfig`) ; il faut y penser si l'on active une vue à
+  la main ou par script de déploiement.
+
 ## 6. Propriété intellectuelle
 
 - Aucun thème existant n'a été copié, adapté ni « légèrement modifié ». Les

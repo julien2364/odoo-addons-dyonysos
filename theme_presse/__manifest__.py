@@ -3,7 +3,7 @@
     'name': 'Thème Presse — Magazine et presse en ligne (pro)',
     'summary': "Blocs éditoriaux avancés pour un vrai média : une multi-niveaux, "
                "fil d'actualité, grille par rubrique avec filtres, dossier, "
-               "encadré auteur, chronologie, newsletter, sommaire, mode lecture et mode sombre.",
+               "encadré auteur, chronologie, newsletter, sommaire, mode lecture, mode sombre, trois dispositions d'en-tête et deux de pied de page.",
     'description': """
 Thème Presse — version pro
 ==========================
@@ -35,6 +35,8 @@ automatique des intertitres, le mode lecture et un mode sombre mémorisé.
         'views/snippets/s_presse_mode_sombre.xml',
         'views/snippets/snippets.xml',
         'views/blog_templates.xml',
+        'views/layout/headers.xml',
+        'views/layout/footers.xml',
         'data/pages.xml',
         'data/menus.xml',
     ],
@@ -53,6 +55,10 @@ automatique des intertitres, le mode lecture et un mode sombre mémorisé.
             'theme_presse/static/src/scss/dark_mode.scss',
             'theme_presse/static/src/js/presse_reader.js',
             'theme_presse/static/src/js/presse_dark_mode.js',
+        ],
+        'website.website_builder_assets': [
+            'theme_presse/static/src/builder/presse_layout_options.xml',
+            'theme_presse/static/src/builder/presse_footer_option_plugin.js',
         ],
     },
     'images': ['images/main_screenshot.png'],

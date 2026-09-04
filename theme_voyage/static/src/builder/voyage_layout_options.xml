@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <!-- Ajoute les trois dispositions d'en-tête du thème à la liste native du
+         panneau « En-tête » de l'éditeur de site. -->
+    <t t-name="theme_voyage.HeaderTemplateOption"
+       t-inherit="website.HeaderTemplateOption" t-inherit-mode="extension">
+        <xpath expr="//BuilderSelect" position="inside">
+            <BuilderSelectItem
+                id="'voyage_header_centered_opt'"
+                title.translate="Voyage — Centré"
+                actionParam="[
+                    {
+                        action: 'websiteConfig',
+                        actionParam: {
+                            views: ['theme_voyage.template_header_voyage_centered'],
+                            vars: { 'header-template': 'voyage_centered' },
+                            checkVars: false,
+                        }
+                    }
+                ]">
+                <Img attrs="{ style: 'width: calc(100% - 0.5rem);' }"
+                     src="'/theme_voyage/static/src/img/options/header_voyage_centered.png'"/>
+            </BuilderSelectItem>
+            <BuilderSelectItem
+                id="'voyage_header_topbar_opt'"
+                title.translate="Voyage — Bandeau d'information"
+                actionParam="[
+                    {
+                        action: 'websiteConfig',
+                        actionParam: {
+                            views: ['theme_voyage.template_header_voyage_topbar'],
+                            vars: { 'header-template': 'voyage_topbar' },
+                            checkVars: false,
+                        }
+                    }
+                ]">
+                <Img attrs="{ style: 'width: calc(100% - 0.5rem);' }"
+                     src="'/theme_voyage/static/src/img/options/header_voyage_topbar.png'"/>
+            </BuilderSelectItem>
+            <BuilderSelectItem
+                id="'voyage_header_minimal_opt'"
+                title.translate="Voyage — Minimal"
+                actionParam="[
+                    {
+                        action: 'websiteConfig',
+                        actionParam: {
+                            views: ['theme_voyage.template_header_voyage_minimal'],
+                            vars: { 'header-template': 'voyage_minimal' },
+                            checkVars: false,
+                        }
+                    }
+                ]">
+                <Img attrs="{ style: 'width: calc(100% - 0.5rem);' }"
+                     src="'/theme_voyage/static/src/img/options/header_voyage_minimal.png'"/>
+            </BuilderSelectItem>
+        </xpath>
+    </t>
+
+</templates>

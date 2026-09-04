@@ -270,3 +270,72 @@ body.o_presse_reading {
         display: none !important;
     }
 }
+
+// ------------------------------------------------ variantes d'en-tête et de pied
+// Ces règles n'agissent que si la disposition correspondante est choisie dans
+// le panneau « En-tête » ou « Pied de page » de l'éditeur de site.
+.o_presse_topbar {
+    font-size: .82rem;
+
+    .o_presse_topbar_links a {
+        margin-left: 1.1rem;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .o_presse_topbar_links a:hover {
+        text-decoration: underline;
+    }
+}
+
+.o_presse_header_centered {
+    .navbar-brand {
+        margin-right: 0;
+    }
+
+    .nav-link {
+        padding-inline: .7rem;
+    }
+}
+
+.o_presse_header_minimal {
+    .nav-link {
+        font-size: .82rem;
+    }
+}
+
+.o_presse_footer_expanded {
+    h5, h6 {
+        text-transform: uppercase;
+        letter-spacing: .11em;
+        font-size: .74rem;
+        font-weight: 700;
+        opacity: .78;
+    }
+
+    ul li + li {
+        margin-top: .3rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.o_presse_footer_compact {
+    .list-inline-item + .list-inline-item {
+        margin-left: 1.1rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}

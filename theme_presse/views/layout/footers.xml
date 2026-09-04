@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- =====================================================================
+     Deux dispositions de pied de page, proposées dans le panneau
+     « Pied de page » de l'éditeur de site.
+     ===================================================================== -->
+
+<!-- Variante 1 — Pied de page étendu -->
+<template id="template_footer_presse_expanded" inherit_id="website.layout"
+          name="Presse — Pied de page étendu" active="False">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure oe_structure_solo text-break o_presse_footer_expanded"
+             t-ignore="true" t-if="not no_footer">
+            <section class="s_text_block pt64 pb32" data-snippet="s_text_block" data-name="Container">
+                <div class="container">
+                    <div class="row g-5">
+                        <div class="col-lg-4">
+                            <h5 class="mb-3">La rédaction</h5>
+                            <p class="mb-3">Un média local indépendant : enquêtes longues, économie, culture et territoires.</p>
+                            <p class="mb-0"><a href="/contactus">Nous écrire</a></p>
+                        </div>
+                        <div class="col-6 col-lg-2">
+                            <h6>Rubriques</h6>
+                            <ul class="list-unstyled mb-0">
+                                    <li><a href="/blog">Économie</a></li>
+                                    <li><a href="/blog">Culture</a></li>
+                                    <li><a href="/blog">Territoires</a></li>
+                                    <li><a href="/magazine">À la une</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-lg-2">
+                            <h6>Le journal</h6>
+                            <ul class="list-unstyled mb-0">
+                                    <li><a href="/auteur-camille-ferrand">L'équipe</a></li>
+                                    <li><a href="/contactus">Nous contacter</a></li>
+                                    <li><a href="/blog">Archives</a></li>
+                                    <li><a href="/magazine">Magazine</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <h6>La lettre du matin</h6>
+                            <p class="mb-3">Trois articles, un chiffre, un rendez-vous, chaque jour à 7 heures.</p>
+                            <p class="mb-0"><a href="/contactus" class="btn btn-primary">S'abonner à la lettre</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </xpath>
+</template>
+
+<!-- Variante 2 — Pied de page compact -->
+<template id="template_footer_presse_compact" inherit_id="website.layout"
+          name="Presse — Pied de page compact" active="False">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure oe_structure_solo text-break o_presse_footer_compact"
+             t-ignore="true" t-if="not no_footer">
+            <section class="s_text_block pt32 pb32" data-snippet="s_text_block" data-name="Container">
+                <div class="container">
+                    <div class="row align-items-center g-3">
+                        <div class="col-lg-5">
+                            <p class="mb-0">Un média local indépendant : enquêtes longues, économie, culture et territoires.</p>
+                        </div>
+                        <div class="col-lg-7 text-lg-end">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item"><a href="/magazine">À la une</a></li>
+                                <li class="list-inline-item"><a href="/blog">Rubriques</a></li>
+                                <li class="list-inline-item"><a href="/auteur-camille-ferrand">L'équipe</a></li>
+                                <li class="list-inline-item"><a href="/contactus">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </xpath>
+</template>
+
+</odoo>

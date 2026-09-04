@@ -318,3 +318,70 @@ $o-anim-shadow: 0 .6rem 1.6rem rgba(34, 48, 31, .10);
         margin-top: 1rem;
     }
 }
+
+// ------------------------------------------------ variantes d'en-tête et de pied
+// Ces règles n'agissent que si la disposition correspondante est choisie dans
+// le panneau « En-tête » ou « Pied de page » de l'éditeur de site.
+.o_anim_topbar {
+    font-size: .82rem;
+
+    .o_anim_topbar_links a {
+        margin-left: 1.1rem;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .o_anim_topbar_links a:hover {
+        text-decoration: underline;
+    }
+}
+
+.o_anim_header_centered {
+    .navbar-brand {
+        margin-right: 0;
+    }
+
+    .nav-link {
+        padding-inline: .85rem;
+    }
+}
+
+.o_anim_header_minimal {
+    .nav-link {
+        font-size: .82rem;
+    }
+}
+
+.o_anim_footer_expanded {
+    h5, h6 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        letter-spacing: .04em;
+    }
+
+    ul li + li {
+        margin-top: .3rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.o_anim_footer_compact {
+    .list-inline-item + .list-inline-item {
+        margin-left: 1.1rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}

@@ -2,7 +2,7 @@
 {
     'name': 'Thème Voyage — Carnet de voyage et tourisme (pro)',
     'summary': "Carte d'itinéraire par étapes, galerie mosaïque avec lightbox, fiche "
-               "destination, témoignages, calendrier de départs, demande de devis, carnet de bord et mode sombre.",
+               "destination, témoignages, calendrier de départs, demande de devis, carnet de bord, mode sombre, trois dispositions d'en-tête et deux de pied de page.",
     'description': """
 Thème Voyage — version pro
 ==========================
@@ -33,6 +33,8 @@ bord chronologique, un mode sombre mémorisé, plus deux pages prêtes à l'empl
         'views/snippets/s_voyage_carnet.xml',
         'views/snippets/s_voyage_mode_sombre.xml',
         'views/snippets/snippets.xml',
+        'views/layout/headers.xml',
+        'views/layout/footers.xml',
         'data/pages.xml',
         'data/menus.xml',
     ],
@@ -50,6 +52,10 @@ bord chronologique, un mode sombre mémorisé, plus deux pages prêtes à l'empl
             'theme_voyage/static/src/scss/dark_mode.scss',
             'theme_voyage/static/src/js/voyage_lightbox.js',
             'theme_voyage/static/src/js/voyage_dark_mode.js',
+        ],
+        'website.website_builder_assets': [
+            'theme_voyage/static/src/builder/voyage_layout_options.xml',
+            'theme_voyage/static/src/builder/voyage_footer_option_plugin.js',
         ],
     },
     'images': ['images/main_screenshot.png'],

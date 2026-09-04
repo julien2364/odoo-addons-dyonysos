@@ -324,3 +324,70 @@ $o-voyage-shadow: 0 .75rem 2rem rgba(18, 58, 94, .12);
         margin-top: .75rem;
     }
 }
+
+// ------------------------------------------------ variantes d'en-tête et de pied
+// Ces règles n'agissent que si la disposition correspondante est choisie dans
+// le panneau « En-tête » ou « Pied de page » de l'éditeur de site.
+.o_voyage_topbar {
+    font-size: .82rem;
+
+    .o_voyage_topbar_links a {
+        margin-left: 1.1rem;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .o_voyage_topbar_links a:hover {
+        text-decoration: underline;
+    }
+}
+
+.o_voyage_header_centered {
+    .navbar-brand {
+        margin-right: 0;
+    }
+
+    .nav-link {
+        padding-inline: .85rem;
+    }
+}
+
+.o_voyage_header_minimal {
+    .nav-link {
+        font-size: .82rem;
+    }
+}
+
+.o_voyage_footer_expanded {
+    h5, h6 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        letter-spacing: .04em;
+    }
+
+    ul li + li {
+        margin-top: .3rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.o_voyage_footer_compact {
+    .list-inline-item + .list-inline-item {
+        margin-left: 1.1rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
