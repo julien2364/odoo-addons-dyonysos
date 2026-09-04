@@ -32,6 +32,7 @@ bord chronologique, plus deux pages prêtes à l'emploi (destination et itinéra
         'views/snippets/s_voyage_carnet.xml',
         'views/snippets/snippets.xml',
         'data/pages.xml',
+        'data/menus.xml',
     ],
     'assets': {
         # PIÈGE ODOO 19 — Odoo n'assemble que les assets du thème appliqué.

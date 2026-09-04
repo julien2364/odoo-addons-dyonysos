@@ -27,6 +27,7 @@ appel à l'action.
         'views/snippets/s_voyage_appel.xml',
         'views/snippets/snippets.xml',
         'data/pages.xml',
+        'data/menus.xml',
     ],
     'assets': {
         # Le fichier de variables est AJOUTÉ APRÈS celui de website : il consomme

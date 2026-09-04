@@ -31,6 +31,7 @@ que l'habillage des vues du blog Odoo.
         'views/blog_templates.xml',
         'data/blog_demo.xml',
         'data/pages.xml',
+        'data/menus.xml',
     ],
     'assets': {
         # Le fichier de variables doit être AJOUTÉ APRÈS celui de website :

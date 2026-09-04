@@ -34,6 +34,7 @@ fictive : elle n'existe pas et sert uniquement d'exemple.
         'views/shop_templates.xml',
         'data/products.xml',
         'data/pages.xml',
+        'data/menus.xml',
     ],
     'assets': {
         # Ajouté APRÈS le fichier de website : il consomme $o-theme-font-configs

@@ -34,6 +34,7 @@ La marque « Trèfle &amp; Museau » des données de démonstration est fictive.
         'views/snippets/s_anim_promotions.xml',
         'views/snippets/snippets.xml',
         'data/pages.xml',
+        'data/menus.xml',
     ],
     'assets': {
         # PIÈGE ODOO 19 — Odoo n'assemble que les assets du thème appliqué.

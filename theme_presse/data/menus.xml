@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="0">
+
+    <!-- Entrées de menu du thème. Comme les pages, ce sont des objets de
+         thème : elles ne sont créées dans le site qu'à l'application. -->
+
+    <record id="presse_menu_rubrique" model="theme.website.menu">
+        <field name="name">Économie</field>
+        <field name="url">/rubrique-economie</field>
+        <field name="page_id" ref="page_rubrique_website_page"/>
+        <field name="sequence">22</field>
+        <field name="use_main_menu_as_parent" eval="True"/>
+    </record>
+
+    <record id="presse_menu_auteur" model="theme.website.menu">
+        <field name="name">La rédaction</field>
+        <field name="url">/auteur-camille-ferrand</field>
+        <field name="page_id" ref="page_auteur_website_page"/>
+        <field name="sequence">24</field>
+        <field name="use_main_menu_as_parent" eval="True"/>
+    </record>
+
+</data>
+</odoo>

@@ -35,6 +35,7 @@ automatique des intertitres et le mode lecture.
         'views/snippets/snippets.xml',
         'views/blog_templates.xml',
         'data/pages.xml',
+        'data/menus.xml',
     ],
     'assets': {
         # PIÈGE ODOO 19 — Odoo n'assemble que les assets du thème appliqué.
