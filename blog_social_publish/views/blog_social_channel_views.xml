@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="blog_social_channel_view_list" model="ir.ui.view">
+        <field name="name">blog.social.channel.list</field>
+        <field name="model">blog.social.channel</field>
+        <field name="arch" type="xml">
+            <list string="Canaux">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="network"/>
+                <field name="transport"/>
+                <field name="blog_ids" widget="many2many_tags" optional="show"/>
+                <field name="max_length" optional="hide"/>
+                <field name="post_count" string="Publications" optional="show"/>
+                <field name="company_id" groups="base.group_multi_company" optional="hide"/>
+                <field name="active" column_invisible="True"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="blog_social_channel_view_form" model="ir.ui.view">
+        <field name="name">blog.social.channel.form</field>
+        <field name="model">blog.social.channel</field>
+        <field name="arch" type="xml">
+            <form string="Canal de publication">
+                <header>
+                    <button name="action_test_channel" type="object" string="Tester le canal"
+                            class="btn-primary"
+                            help="Envoie un message de test, sans toucher aux articles."/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_posts" type="object" class="oe_stat_button"
+                                icon="fa-paper-plane">
+                            <field name="post_count" widget="statinfo" string="Publications"/>
+                        </button>
+                    </div>
+                    <widget name="web_ribbon" title="Archivé" bg_color="text-bg-danger"
+                            invisible="active"/>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1><field name="name" placeholder="LinkedIn — blog produit"/></h1>
+                    </div>
+                    <group>
+                        <group string="Destination">
+                            <field name="active" invisible="1"/>
+                            <field name="network"/>
+                            <field name="transport" widget="radio"/>
+                            <field name="blog_ids" widget="many2many_tags"
+                                   placeholder="Tous les blogs si vide"/>
+                            <field name="website_id" groups="website.group_multi_website"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                        <group string="Mise en forme">
+                            <field name="max_length"/>
+                            <field name="hashtags" placeholder="odoo erp opensource"/>
+                            <field name="include_image"/>
+                            <field name="utm_source"/>
+                            <field name="utm_medium"/>
+                            <field name="utm_campaign"/>
+                        </group>
+                    </group>
+                    <group string="Postiz" invisible="transport != 'postiz'">
+                        <field name="postiz_base_url" placeholder="https://postiz.mondomaine.fr"
+                               required="transport == 'postiz'"/>
+                        <field name="postiz_api_key" password="True"
+                               groups="base.group_system"/>
+                        <field name="postiz_integration_id"/>
+                    </group>
+                    <group string="Webhook" invisible="transport != 'webhook'">
+                        <field name="webhook_url" groups="base.group_system"
+                               placeholder="https://n8n.mondomaine.fr/webhook/blog-social"/>
+                        <field name="webhook_method"/>
+                        <field name="webhook_auth_header" password="True"
+                               groups="base.group_system"/>
+                        <field name="webhook_headers" placeholder='{"X-Source": "odoo"}'/>
+                    </group>
+                    <notebook>
+                        <page string="Gabarit du message" name="template">
+                            <field name="message_template" widget="text"
+                                   placeholder="{title}&#10;&#10;{teaser}&#10;&#10;{url}&#10;{hashtags}"/>
+                            <div class="text-muted mt-2">
+                                Variables : <code>{title}</code>, <code>{subtitle}</code>,
+                                <code>{url}</code>, <code>{blog}</code>, <code>{author}</code>,
+                                <code>{teaser}</code>, <code>{hashtags}</code>.
+                                Le message est tronqué proprement à la longueur maximale,
+                                sans couper un mot et sans jamais amputer le lien.
+                            </div>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="blog_social_channel_view_search" model="ir.ui.view">
+        <field name="name">blog.social.channel.search</field>
+        <field name="model">blog.social.channel</field>
+        <field name="arch" type="xml">
+            <search string="Canaux">
+                <field name="name"/>
+                <field name="network"/>
+                <field name="blog_ids"/>
+                <filter string="Postiz" name="filter_postiz" domain="[('transport', '=', 'postiz')]"/>
+                <filter string="Webhook" name="filter_webhook" domain="[('transport', '=', 'webhook')]"/>
+                <separator/>
+                <filter string="Archivés" name="filter_inactive" domain="[('active', '=', False)]"/>
+                <group>
+                    <filter string="Réseau" name="group_network" context="{'group_by': 'network'}"/>
+                    <filter string="Transport" name="group_transport" context="{'group_by': 'transport'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="blog_social_channel_action" model="ir.actions.act_window">
+        <field name="name">Canaux</field>
+        <field name="res_model">blog.social.channel</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="blog_social_channel_view_search"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Créez votre premier canal de publication</p>
+            <p>
+                Un canal décrit où et comment publier : le réseau, le transport
+                (votre instance Postiz ou un webhook vers n8n, Make, Activepieces,
+                Zapier), le gabarit du message et les hashtags.
+            </p>
+        </field>
+    </record>
+</odoo>

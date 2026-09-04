@@ -1,0 +1,184 @@
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h2 class="oe_slogan" style="margin-bottom:8px;">Blog to Social — vos articles de blog sur les réseaux sociaux</h2>
+            <h3 class="oe_slogan" style="color:#7C3AED; font-weight:normal;">
+                L'équivalent Community de ce qu'Odoo réserve à Social Marketing (Enterprise) :
+                dès qu'un article est publié, il part sur vos réseaux.
+            </h3>
+            <p class="oe_mt32" style="text-align:center;">
+                <img src="banner.png" style="max-width:100%; border-radius:12px;"/>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan">Le problème</h3>
+            <p class="oe_mt16" style="font-size:16px;">
+                Odoo Social Marketing est une application <strong>Enterprise</strong>. Un site Odoo
+                <strong>Community</strong> qui tient un blog n'a donc aucun moyen natif de pousser
+                ses articles vers Facebook, Instagram, LinkedIn, X, TikTok, YouTube ou Mastodon.
+                Concrètement : on publie l'article, puis on rouvre chaque réseau, on recopie le
+                titre, on colle le lien, on retape l'accroche et les hashtags — et on oublie un
+                réseau une fois sur trois.
+            </p>
+            <p style="font-size:16px;">
+                Blog to Social branche le blog Odoo sur les réseaux, sans quitter Odoo, sans licence
+                Enterprise et sans service SaaS intermédiaire obligatoire.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span4">
+            <h4 class="oe_slogan" style="margin-bottom:6px;">1 · Des canaux, pas des comptes</h4>
+            <p>
+                Un canal = un réseau, un transport, un gabarit. On choisit les blogs concernés
+                (vide = tous), la longueur maximale (280 pour X, 3 000 pour LinkedIn, 2 200 pour
+                Instagram — pré-remplies), les hashtags, l'image de couverture et les paramètres
+                UTM ajoutés au lien. Un bouton <strong>« Tester le canal »</strong> envoie un
+                message de test sans jamais toucher à vos articles.
+            </p>
+        </div>
+        <div class="oe_span4">
+            <h4 class="oe_slogan" style="margin-bottom:6px;">2 · Deux transports</h4>
+            <p>
+                <strong>Postiz</strong> : appel direct à votre instance auto-hébergée
+                (<code>POST /api/public/v1/posts</code>, en-tête <code>Authorization</code>) — le
+                chemin est un paramètre système, donc ajustable si votre version de Postiz diffère.<br/>
+                <strong>Webhook JSON</strong> : le transport universel. Un POST vers
+                <em>n8n, Make, Activepieces ou Zapier</em> avec la charge utile complète — titre,
+                texte, lien, image, réseau, blog, identifiant d'article.
+            </p>
+        </div>
+        <div class="oe_span4">
+            <h4 class="oe_slogan" style="margin-bottom:6px;">3 · Un message propre</h4>
+            <p>
+                Le gabarit accepte <code>{title}</code>, <code>{subtitle}</code>, <code>{url}</code>,
+                <code>{blog}</code>, <code>{author}</code>, <code>{teaser}</code> et
+                <code>{hashtags}</code>. Le texte est tronqué à la longueur du réseau
+                <strong>sans couper un mot</strong>, avec des points de suspension, et
+                <strong>le lien reste toujours entier en fin de message</strong> — c'est lui qui
+                ramène le trafic.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan">Le garde-fou : jamais de publication rétroactive</h3>
+            <p style="font-size:16px;">
+                C'est le point le plus important du module, et la raison pour laquelle il est
+                installable sereinement sur un site existant. Une instance Odoo qui tient un blog
+                depuis des années peut compter <strong>plusieurs milliers d'articles publiés</strong>.
+                Un module naïf, à l'installation, les considérerait tous comme « à publier » et
+                inonderait vos comptes — au mieux un spam, au pire une suspension de compte.
+            </p>
+            <p style="font-size:16px;">
+                Blog to Social <strong>fige la date d'installation</strong> dans un paramètre système
+                (<code>blog_social_publish.activation_date</code>) et ignore définitivement tout
+                article publié avant cette date. Cette date est affichée en lecture seule dans les
+                réglages. Deuxième filet : la <strong>publication automatique est désactivée par
+                défaut</strong> — tant que la case n'est pas cochée, rien ne part tout seul et seul
+                le bouton manuel « Publier sur les réseaux » agit. Ces deux protections sont
+                couvertes par des tests automatisés livrés avec le module.
+            </p>
+            <p class="oe_mt32" style="text-align:center;">
+                <img src="screen_channel.png" style="max-width:100%; border-radius:12px;"/>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan">La file d'attente</h3>
+            <p style="font-size:16px;">
+                Chaque publication est un enregistrement : article × canal, message final
+                (modifiable tant qu'il n'est pas parti), lien tracé, image, date de programmation,
+                date d'envoi, identifiant distant et erreur éventuelle. Une tâche planifiée
+                — <em>« Blog to Social: process the publication queue »</em>, toutes les 15 minutes,
+                <strong>inactive par défaut</strong> — traite la file, respecte les dates de
+                programmation, rejoue les erreurs et <strong>s'arrête définitivement après
+                5 tentatives</strong> plutôt que de marteler une API en panne.
+            </p>
+            <p class="oe_mt32" style="text-align:center;">
+                <img src="screen_queue.png" style="max-width:100%; border-radius:12px;"/>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span4">
+            <h4 class="oe_slogan" style="margin-bottom:6px;">Sécurité</h4>
+            <p>
+                Groupe dédié <em>Blog Social / Manager</em>, ACL complètes et règles de
+                cloisonnement multi-société sur les deux modèles. Les <strong>clés d'API et l'URL
+                du webhook sont réservées à l'administrateur système</strong> au niveau du champ :
+                une URL de webhook détournée exfiltrerait la clé d'authentification qui l'accompagne.
+            </p>
+        </div>
+        <div class="oe_span4">
+            <h4 class="oe_slogan" style="margin-bottom:6px;">Robustesse</h4>
+            <p>
+                Tous les appels réseau ont un délai d'attente explicite. Une erreur HTTP, un DNS
+                cassé ou un serveur injoignable <strong>ne remonte jamais en exception à
+                l'utilisateur</strong> : la publication passe en « Erreur », le message est
+                journalisé sur l'enregistrement, l'article reste intact.
+            </p>
+        </div>
+        <div class="oe_span4">
+            <h4 class="oe_slogan" style="margin-bottom:6px;">Intégration</h4>
+            <p>
+                Menu <em>Blog to Social</em> (Canaux, Publications), bouton « Publier sur les
+                réseaux » dans l'en-tête de l'article, colonne d'état optionnelle dans la liste des
+                articles, et un bloc de réglages dans <em>Site Web › Configuration › Paramètres</em>.
+                Module traduit en français.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan">Ce que le module ne fait pas</h3>
+            <p style="font-size:16px;">
+                Blog to Social n'est pas un client social complet : il <strong>publie</strong>, il ne
+                lit pas. Pas de boîte de réception, pas de commentaires, pas de statistiques
+                d'engagement, pas de calendrier éditorial visuel. Il ne parle pas directement aux
+                API de Meta, LinkedIn ou X — il passe par Postiz ou par votre outil d'automatisation,
+                qui portent l'authentification OAuth de chaque réseau. Le module ne publie que des
+                articles de blog Odoo : ni produits, ni événements, ni contenus libres.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12" style="text-align:center;">
+            <h3 class="oe_slogan">DYONYSOS</h3>
+            <p style="font-size:16px;">
+                Édition et intégration de modules Odoo 19. Support, installation et adaptations
+                sur devis.
+            </p>
+            <p style="font-size:18px;">
+                <strong><a href="mailto:welcome@dyonysos.fr">welcome@dyonysos.fr</a></strong>
+                &nbsp;·&nbsp;
+                <strong><a href="https://dyonysos.fr">https://dyonysos.fr</a></strong>
+            </p>
+            <p style="color:#64748b;">Odoo 19 — Community &amp; Enterprise — licence OPL-1.</p>
+        </div>
+    </div>
+</section>

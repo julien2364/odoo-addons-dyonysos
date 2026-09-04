@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Publication automatique désactivée par défaut : rien ne part tout
+             seul tant que l'administrateur ne l'a pas explicitement voulu. -->
+        <record id="param_auto_publish" model="ir.config_parameter">
+            <field name="key">blog_social_publish.auto_publish</field>
+            <field name="value">False</field>
+        </record>
+        <record id="param_timeout" model="ir.config_parameter">
+            <field name="key">blog_social_publish.timeout</field>
+            <field name="value">20</field>
+        </record>
+        <!-- Chemin de l'API publique Postiz : Postiz est auto-hébergé chez le
+             client, la route peut donc varier d'une version à l'autre. -->
+        <record id="param_postiz_path" model="ir.config_parameter">
+            <field name="key">blog_social_publish.postiz_post_path</field>
+            <field name="value">/api/public/v1/posts</field>
+        </record>
+    </data>
+
+    <record id="ir_cron_blog_social_queue" model="ir.cron">
+        <field name="name">Blog to Social: process the publication queue</field>
+        <field name="model_id" ref="model_blog_social_post"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_process_queue()</field>
+        <field name="interval_number">15</field>
+        <field name="interval_type">minutes</field>
+        <field name="active" eval="False"/>
+    </record>
+</odoo>

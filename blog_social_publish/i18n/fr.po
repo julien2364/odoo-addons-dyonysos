@@ -1,0 +1,874 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* blog_social_publish
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-04 05:18+0000\n"
+"PO-Revision-Date: 2026-09-04 05:18+0000\n"
+"Last-Translator: \n"
+"Language-Team: DYONYSOS <welcome@dyonysos.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: blog_social_publish
+#. odoo-python
+#: code:addons/blog_social_publish/models/blog_social_channel.py:0
+msgid " Identifiant distant : %s."
+msgstr " Identifiant distant : %s."
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__active
+msgid "Actif"
+msgstr "Actif"
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_post_view_form
+msgid "Annuler"
+msgstr "Annuler"
+
+#. module: blog_social_publish
+#: model:ir.model.fields.selection,name:blog_social_publish.selection__blog_social_post__state__cancelled
+msgid "Annulé"
+msgstr "Annulé"
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_form
+msgid "Archivé"
+msgstr "Archivé"
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_search
+msgid "Archivés"
+msgstr "Archivés"
+
+#. module: blog_social_publish
+#. odoo-python
+#: code:addons/blog_social_publish/models/blog_social_post.py:0
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_post__post_id
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_post_view_form
+msgid "Article"
+msgstr "Article"
+
+#. module: blog_social_publish
+#. odoo-python
+#: code:addons/blog_social_publish/models/blog_post.py:0
+msgid ""
+"Aucun canal de publication ne correspond à ce blog. Créez-en un depuis Blog "
+"to Social › Canaux."
+msgstr ""
+"Aucun canal de publication ne correspond à ce blog. Créez-en un depuis Blog "
+"to Social › Canaux."
+
+#. module: blog_social_publish
+#: model:ir.model.fields.selection,name:blog_social_publish.selection__blog_post__social_state__none
+msgid "Aucune"
+msgstr "Aucune"
+
+#. module: blog_social_publish
+#: model_terms:ir.actions.act_window,help:blog_social_publish.blog_social_post_action
+msgid "Aucune publication pour l'instant"
+msgstr "Aucune publication pour l'instant"
+
+#. module: blog_social_publish
+#: model:ir.model.fields.selection,name:blog_social_publish.selection__blog_social_channel__network__other
+msgid "Autre"
+msgstr "Autre"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_post__blog_id
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_post_view_search
+msgid "Blog"
+msgstr "Blog"
+
+#. module: blog_social_publish
+#: model:ir.model,name:blog_social_publish.model_blog_post
+msgid "Blog Post"
+msgstr "Article de blog"
+
+#. module: blog_social_publish
+#: model:res.groups.privilege,name:blog_social_publish.res_groups_privilege_blog_social
+msgid "Blog Social"
+msgstr "Blog Social"
+
+#. module: blog_social_publish
+#: model:ir.ui.menu,name:blog_social_publish.menu_blog_social_root
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.res_config_settings_view_form_blog_social
+msgid "Blog to Social"
+msgstr "Blog to Social"
+
+#. module: blog_social_publish
+#: model:ir.actions.server,name:blog_social_publish.ir_cron_blog_social_queue_ir_actions_server
+msgid "Blog to Social: process the publication queue"
+msgstr "Blog to Social : traiter la file de publication"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__blog_ids
+msgid "Blogs"
+msgstr "Blogs"
+
+#. module: blog_social_publish
+#: model:ir.model.fields.selection,name:blog_social_publish.selection__blog_social_post__state__draft
+msgid "Brouillon"
+msgstr "Brouillon"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_post__channel_id
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_post_view_search
+msgid "Canal"
+msgstr "Canal"
+
+#. module: blog_social_publish
+#. odoo-python
+#: code:addons/blog_social_publish/models/blog_social_post.py:0
+msgid "Canal Postiz incomplet : URL ou clé d'API manquante."
+msgstr "Canal Postiz incomplet : URL ou clé d'API manquante."
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_form
+msgid "Canal de publication"
+msgstr "Canal de publication"
+
+#. module: blog_social_publish
+#: model:ir.model,name:blog_social_publish.model_blog_social_channel
+msgid "Canal de publication sociale"
+msgstr "Canal de publication sociale"
+
+#. module: blog_social_publish
+#. odoo-python
+#: code:addons/blog_social_publish/models/blog_social_post.py:0
+msgid "Canal webhook incomplet : URL manquante."
+msgstr "Canal webhook incomplet : URL manquante."
+
+#. module: blog_social_publish
+#. odoo-python
+#: code:addons/blog_social_publish/models/blog_social_channel.py:0
+msgid "Canal « %(name)s » : envoi réussi.%(remote)s"
+msgstr "Canal « %(name)s » : envoi réussi.%(remote)s"
+
+#. module: blog_social_publish
+#. odoo-python
+#: code:addons/blog_social_publish/models/blog_social_channel.py:0
+msgid "Canal « %(name)s » : échec. %(error)s"
+msgstr "Canal « %(name)s » : échec. %(error)s"
+
+#. module: blog_social_publish
+#: model:ir.actions.act_window,name:blog_social_publish.blog_social_channel_action
+#: model:ir.ui.menu,name:blog_social_publish.menu_blog_social_channel
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_list
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_search
+msgid "Canaux"
+msgstr "Canaux"
+
+#. module: blog_social_publish
+#. odoo-python
+#: code:addons/blog_social_publish/models/res_config_settings.py:0
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.res_config_settings_view_form_blog_social
+msgid "Canaux de publication"
+msgstr "Canaux de publication"
+
+#. module: blog_social_publish
+#: model:ir.model.constraint,message:blog_social_publish.constraint_blog_social_post_post_channel_uniq
+msgid "Cet article a déjà une publication sur ce canal."
+msgstr "Cet article a déjà une publication sur ce canal."
+
+#. module: blog_social_publish
+#. odoo-python
+#: code:addons/blog_social_publish/models/blog_social_post.py:0
+msgid "Cette publication est annulée : remettez-la en file."
+msgstr "Cette publication est annulée : remettez-la en file."
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__postiz_api_key
+msgid "Clé d'API Postiz"
+msgstr "Clé d'API Postiz"
+
+#. module: blog_social_publish
+#: model:ir.model,name:blog_social_publish.model_res_config_settings
+msgid "Config Settings"
+msgstr "Paramètres de configuration"
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.res_config_settings_view_form_blog_social
+msgid "Configurer les canaux"
+msgstr "Configurer les canaux"
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_post_view_form
+msgid "Contenu"
+msgstr "Contenu"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__create_uid
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_post__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__create_date
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_post__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: blog_social_publish
+#: model_terms:ir.actions.act_window,help:blog_social_publish.blog_social_channel_action
+msgid "Créez votre premier canal de publication"
+msgstr "Créez votre premier canal de publication"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_res_config_settings__blog_social_activation_date
+msgid "Date d'activation"
+msgstr "Date d'activation"
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_form
+msgid "Destination"
+msgstr "Destination"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_post__display_name
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__display_name
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_post__display_name
+#: model:ir.model.fields,field_description:blog_social_publish.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.res_config_settings_view_form_blog_social
+msgid ""
+"Décoché, aucun article ne part tout seul : seul le bouton « Publier sur les "
+"réseaux » agit."
+msgstr ""
+"Décoché, aucun article ne part tout seul : seul le bouton « Publier sur les "
+"réseaux » agit."
+
+#. module: blog_social_publish
+#: model:ir.model.fields,help:blog_social_publish.field_res_config_settings__blog_social_auto_publish
+msgid ""
+"Décoché, rien ne part tout seul : seul le bouton « Publier sur les réseaux »"
+" de l'article agit."
+msgstr ""
+"Décoché, rien ne part tout seul : seul le bouton « Publier sur les réseaux »"
+" de l'article agit."
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_res_config_settings__blog_social_timeout
+msgid "Délai réseau (s)"
+msgstr "Délai réseau (s)"
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_post_view_search
+msgid "En erreur"
+msgstr "En erreur"
+
+#. module: blog_social_publish
+#: model:ir.model.fields.selection,name:blog_social_publish.selection__blog_post__social_state__queued
+#: model:ir.model.fields.selection,name:blog_social_publish.selection__blog_social_post__state__queued
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_post_view_search
+msgid "En file"
+msgstr "En file"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__webhook_auth_header
+msgid "En-tête d'authentification"
+msgstr "En-tête d'authentification"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__webhook_headers
+msgid "En-têtes supplémentaires (JSON)"
+msgstr "En-têtes supplémentaires (JSON)"
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_form
+msgid "Envoie un message de test, sans toucher aux articles."
+msgstr "Envoie un message de test, sans toucher aux articles."
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_post_view_form
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_post_view_list
+msgid "Envoyer maintenant"
+msgstr "Envoyer maintenant"
+
+#. module: blog_social_publish
+#: model:ir.model.fields.selection,name:blog_social_publish.selection__blog_post__social_state__sent
+#: model:ir.model.fields.selection,name:blog_social_publish.selection__blog_social_post__state__sent
+msgid "Envoyé"
+msgstr "Envoyé"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_post__sent_date
+msgid "Envoyé le"
+msgstr "Envoyé le"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,help:blog_social_publish.field_blog_social_channel__postiz_api_key
+msgid "Envoyée dans l'en-tête Authorization. Réservée aux administrateurs."
+msgstr "Envoyée dans l'en-tête Authorization. Réservée aux administrateurs."
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_post_view_search
+msgid "Envoyées"
+msgstr "Envoyées"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_post__error
+#: model:ir.model.fields.selection,name:blog_social_publish.selection__blog_post__social_state__error
+#: model:ir.model.fields.selection,name:blog_social_publish.selection__blog_social_post__state__error
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_post_view_form
+msgid "Erreur"
+msgstr "Erreur"
+
+#. module: blog_social_publish
+#. odoo-python
+#: code:addons/blog_social_publish/models/blog_social_post.py:0
+msgid "Erreur inconnue."
+msgstr "Erreur inconnue."
+
+#. module: blog_social_publish
+#: model:ir.model.fields.selection,name:blog_social_publish.selection__blog_social_channel__network__facebook
+msgid "Facebook"
+msgstr "Facebook"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,help:blog_social_publish.field_res_config_settings__blog_social_activation_date
+msgid ""
+"Figée à l'installation. Aucun article publié avant cette date n'est jamais "
+"poussé automatiquement."
+msgstr ""
+"Figée à l'installation. Aucun article publié avant cette date n'est jamais "
+"poussé automatiquement."
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__message_template
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_form
+msgid "Gabarit du message"
+msgstr "Gabarit du message"
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.res_config_settings_view_form_blog_social
+msgid ""
+"Garde-fou : aucun article publié avant cette date n'est jamais\n"
+"                                poussé rétroactivement vers les réseaux sociaux."
+msgstr ""
+"Garde-fou : aucun article publié avant cette date n'est jamais\n"
+"                                poussé rétroactivement vers les réseaux sociaux."
+
+#. module: blog_social_publish
+#. odoo-python
+#: code:addons/blog_social_publish/models/blog_social_post.py:0
+msgid "HTTP %(status)s — %(text)s"
+msgstr "HTTP %(status)s — %(text)s"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__hashtags
+msgid "Hashtags"
+msgstr "Hashtags"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_post__id
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__id
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_post__id
+#: model:ir.model.fields,field_description:blog_social_publish.field_res_config_settings__id
+msgid "ID"
+msgstr "ID"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__postiz_integration_id
+msgid "Identifiant d'intégration Postiz"
+msgstr "Identifiant d'intégration Postiz"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_post__remote_id
+msgid "Identifiant distant"
+msgstr "Identifiant distant"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,help:blog_social_publish.field_blog_social_channel__postiz_integration_id
+msgid "Identifiant du compte social dans Postiz (« integration »)."
+msgstr "Identifiant du compte social dans Postiz (« integration »)."
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_post__image_url
+msgid "Image"
+msgstr "Image"
+
+#. module: blog_social_publish
+#: model:ir.model.fields.selection,name:blog_social_publish.selection__blog_social_channel__network__instagram
+msgid "Instagram"
+msgstr "Instagram"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__include_image
+msgid "Joindre l'image de couverture"
+msgstr "Joindre l'image de couverture"
+
+#. module: blog_social_publish
+#. odoo-python
+#: code:addons/blog_social_publish/models/blog_social_post.py:0
+msgid ""
+"La bibliothèque python « requests » n'est pas installée sur ce serveur."
+msgstr ""
+"La bibliothèque python « requests » n'est pas installée sur ce serveur."
+
+#. module: blog_social_publish
+#: model:ir.model.fields,help:blog_social_publish.field_blog_social_channel__blog_ids
+msgid "Laisser vide pour publier les articles de tous les blogs."
+msgstr "Laisser vide pour publier les articles de tous les blogs."
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__write_uid
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_post__write_uid
+msgid "Last Updated by"
+msgstr "Dernière modification par"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__write_date
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_post__write_date
+msgid "Last Updated on"
+msgstr "Dernière modification le"
+
+#. module: blog_social_publish
+#. odoo-python
+#: code:addons/blog_social_publish/models/blog_social_channel.py:0
+msgid "Le canal « %s » n'a pas d'URL de webhook."
+msgstr "Le canal « %s » n'a pas d'URL de webhook."
+
+#. module: blog_social_publish
+#. odoo-python
+#: code:addons/blog_social_publish/models/blog_social_channel.py:0
+msgid "Le canal « %s » n'a pas d'URL ou de clé d'API Postiz."
+msgstr "Le canal « %s » n'a pas d'URL ou de clé d'API Postiz."
+
+#. module: blog_social_publish
+#: model_terms:ir.actions.act_window,help:blog_social_publish.blog_social_post_action
+msgid ""
+"Les publications apparaissent ici dès qu'un article de blog est publié\n"
+"                sur le site — ou lorsque vous cliquez sur « Publier sur les réseaux »\n"
+"                depuis un article."
+msgstr ""
+"Les publications apparaissent ici dès qu'un article de blog est publié\n"
+"                sur le site — ou lorsque vous cliquez sur « Publier sur les réseaux »\n"
+"                depuis un article."
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_post__link
+msgid "Lien"
+msgstr "Lien"
+
+#. module: blog_social_publish
+#: model:ir.model.fields.selection,name:blog_social_publish.selection__blog_social_channel__network__linkedin
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_form
+msgid "LinkedIn — blog produit"
+msgstr "LinkedIn — blog produit"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__max_length
+msgid "Longueur maximale"
+msgstr "Longueur maximale"
+
+#. module: blog_social_publish
+#: model:res.groups,name:blog_social_publish.group_blog_social_manager
+msgid "Manager"
+msgstr "Responsable"
+
+#. module: blog_social_publish
+#: model:ir.model.fields.selection,name:blog_social_publish.selection__blog_social_channel__network__mastodon
+msgid "Mastodon"
+msgstr "Mastodon"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_post__message
+msgid "Message"
+msgstr "Message"
+
+#. module: blog_social_publish
+#. odoo-python
+#: code:addons/blog_social_publish/models/blog_social_channel.py:0
+msgid "Message de test envoyé depuis Odoo par le canal « %s »."
+msgstr "Message de test envoyé depuis Odoo par le canal « %s »."
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_form
+msgid "Mise en forme"
+msgstr "Mise en forme"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__webhook_method
+msgid "Méthode"
+msgstr "Méthode"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__name
+msgid "Nom"
+msgstr "Nom"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,help:blog_social_publish.field_blog_social_channel__webhook_headers
+msgid "Objet JSON, par exemple {\"X-Source\": \"odoo\"}."
+msgstr "Objet JSON, par exemple {\"X-Source\": \"odoo\"}."
+
+#. module: blog_social_publish
+#: model:ir.model.fields.selection,name:blog_social_publish.selection__blog_social_channel__webhook_method__post
+msgid "POST"
+msgstr "POST"
+
+#. module: blog_social_publish
+#: model:ir.model.fields.selection,name:blog_social_publish.selection__blog_social_channel__webhook_method__put
+msgid "PUT"
+msgstr "PUT"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,help:blog_social_publish.field_blog_social_channel__postiz_base_url
+msgid "Par exemple https://postiz.mondomaine.fr (sans barre oblique finale)."
+msgstr "Par exemple https://postiz.mondomaine.fr (sans barre oblique finale)."
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_form
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_search
+msgid "Postiz"
+msgstr "Postiz"
+
+#. module: blog_social_publish
+#: model:ir.model.fields.selection,name:blog_social_publish.selection__blog_social_channel__transport__postiz
+msgid "Postiz (auto-hébergé)"
+msgstr "Postiz (auto-hébergé)"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,help:blog_social_publish.field_blog_social_channel__transport
+msgid ""
+"Postiz : appel direct à votre instance Postiz.\n"
+"Webhook : POST JSON vers n8n, Make, Activepieces, Zapier ou tout service capable de recevoir un webhook."
+msgstr ""
+"Postiz : appel direct à votre instance Postiz.\n"
+"Webhook : POST JSON vers n8n, Make, Activepieces, Zapier ou tout service capable de recevoir un webhook."
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_post__scheduled_date
+msgid "Programmé le"
+msgstr "Programmé le"
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_post_view_search
+msgid "Programmées"
+msgstr "Programmées"
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.res_config_settings_view_form_blog_social
+msgid "Publication automatique"
+msgstr "Publication automatique"
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_post_view_form
+msgid "Publication sociale"
+msgstr "Publication sociale"
+
+#. module: blog_social_publish
+#: model:ir.model,name:blog_social_publish.model_blog_social_post
+msgid "Publication sociale d'un article de blog"
+msgstr "Publication sociale d'un article de blog"
+
+#. module: blog_social_publish
+#. odoo-python
+#: code:addons/blog_social_publish/models/blog_social_channel.py:0
+#: model:ir.actions.act_window,name:blog_social_publish.blog_social_post_action
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__post_count
+#: model:ir.ui.menu,name:blog_social_publish.menu_blog_social_post
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_form
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_list
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_post_view_list
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_post_view_search
+msgid "Publications"
+msgstr "Publications"
+
+#. module: blog_social_publish
+#. odoo-python
+#: code:addons/blog_social_publish/models/blog_post.py:0
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_post__social_post_count
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_post__social_post_ids
+msgid "Publications sociales"
+msgstr "Publications sociales"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_res_config_settings__blog_social_auto_publish
+msgid "Publier automatiquement les nouveaux articles"
+msgstr "Publier automatiquement les nouveaux articles"
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.view_blog_post_form_social
+msgid "Publier sur les réseaux"
+msgstr "Publier sur les réseaux"
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.res_config_settings_view_form_blog_social
+msgid ""
+"Publiez automatiquement les articles de blog sur les réseaux sociaux, via "
+"Postiz ou un webhook."
+msgstr ""
+"Publiez automatiquement les articles de blog sur les réseaux sociaux, via "
+"Postiz ou un webhook."
+
+#. module: blog_social_publish
+#. odoo-python
+#: code:addons/blog_social_publish/models/blog_post.py:0
+msgid "Publiez d'abord l'article sur le site web."
+msgstr "Publiez d'abord l'article sur le site web."
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_post_view_form
+msgid "Remettre en file"
+msgstr "Remettre en file"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__network
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_post__network
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_search
+msgid "Réseau"
+msgstr "Réseau"
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.view_blog_post_form_social
+msgid "Réseaux"
+msgstr "Réseaux"
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.view_blog_post_list_social
+msgid "Réseaux sociaux"
+msgstr "Réseaux sociaux"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,help:blog_social_publish.field_blog_social_channel__webhook_url
+msgid ""
+"Réservée aux administrateurs : une URL détournée exfiltrerait vos contenus."
+msgstr ""
+"Réservée aux administrateurs : une URL détournée exfiltrerait vos contenus."
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__website_id
+msgid "Site web"
+msgstr "Site web"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__company_id
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_post__company_id
+msgid "Société"
+msgstr "Société"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,help:blog_social_publish.field_blog_post__social_state
+msgid "Synthèse de l'état des publications sociales de cet article."
+msgstr "Synthèse de l'état des publications sociales de cet article."
+
+#. module: blog_social_publish
+#: model:ir.model.fields,help:blog_social_publish.field_blog_social_channel__hashtags
+msgid "Séparés par des espaces ou des virgules. Le # est ajouté si absent."
+msgstr "Séparés par des espaces ou des virgules. Le # est ajouté si absent."
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__sequence
+msgid "Séquence"
+msgstr "Séquence"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_post__retry_count
+msgid "Tentatives"
+msgstr "Tentatives"
+
+#. module: blog_social_publish
+#. odoo-python
+#: code:addons/blog_social_publish/models/blog_social_channel.py:0
+msgid "Test Blog to Social"
+msgstr "Test Blog to Social"
+
+#. module: blog_social_publish
+#. odoo-python
+#: code:addons/blog_social_publish/models/blog_social_channel.py:0
+msgid "Test du canal"
+msgstr "Test du canal"
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_form
+msgid "Tester le canal"
+msgstr "Tester le canal"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,help:blog_social_publish.field_blog_social_post__message
+msgid "Texte final envoyé au réseau."
+msgstr "Texte final envoyé au réseau."
+
+#. module: blog_social_publish
+#: model:ir.model.fields.selection,name:blog_social_publish.selection__blog_social_channel__network__tiktok
+msgid "TikTok"
+msgstr "TikTok"
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_form
+msgid "Tous les blogs si vide"
+msgstr "Tous les blogs si vide"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__transport
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_search
+msgid "Transport"
+msgstr "Transport"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__postiz_base_url
+msgid "URL de l'instance Postiz"
+msgstr "URL de l'instance Postiz"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__webhook_url
+msgid "URL du webhook"
+msgstr "URL du webhook"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__utm_campaign
+msgid "UTM campaign"
+msgstr "UTM campaign"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__utm_medium
+msgid "UTM medium"
+msgstr "UTM medium"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_channel__utm_source
+msgid "UTM source"
+msgstr "UTM source"
+
+#. module: blog_social_publish
+#: model_terms:ir.actions.act_window,help:blog_social_publish.blog_social_channel_action
+msgid ""
+"Un canal décrit où et comment publier : le réseau, le transport\n"
+"                (votre instance Postiz ou un webhook vers n8n, Make, Activepieces,\n"
+"                Zapier), le gabarit du message et les hashtags."
+msgstr ""
+"Un canal décrit où et comment publier : le réseau, le transport\n"
+"                (votre instance Postiz ou un webhook vers n8n, Make, Activepieces,\n"
+"                Zapier), le gabarit du message et les hashtags."
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.res_config_settings_view_form_blog_social
+msgid "Un canal par réseau : transport, gabarit du message, hashtags, UTM."
+msgstr "Un canal par réseau : transport, gabarit du message, hashtags, UTM."
+
+#. module: blog_social_publish
+#: model:ir.model.fields,help:blog_social_publish.field_blog_social_channel__webhook_auth_header
+msgid ""
+"Valeur envoyée dans l'en-tête Authorization, par exemple « Bearer xxx »."
+msgstr ""
+"Valeur envoyée dans l'en-tête Authorization, par exemple « Bearer xxx »."
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_form
+msgid ""
+"Variables : <code>{title}</code>, <code>{subtitle}</code>,\n"
+"                                <code>{url}</code>, <code>{blog}</code>, <code>{author}</code>,\n"
+"                                <code>{teaser}</code>, <code>{hashtags}</code>.\n"
+"                                Le message est tronqué proprement à la longueur maximale,\n"
+"                                sans couper un mot et sans jamais amputer le lien."
+msgstr ""
+"Variables : <code>{title}</code>, <code>{subtitle}</code>,\n"
+"                                <code>{url}</code>, <code>{blog}</code>, <code>{author}</code>,\n"
+"                                <code>{teaser}</code>, <code>{hashtags}</code>.\n"
+"                                Le message est tronqué proprement à la longueur maximale,\n"
+"                                sans couper un mot et sans jamais amputer le lien."
+
+#. module: blog_social_publish
+#: model:ir.model.fields,help:blog_social_publish.field_blog_social_channel__message_template
+msgid ""
+"Variables disponibles : {title}, {subtitle}, {url}, {blog}, {author}, "
+"{teaser}, {hashtags}."
+msgstr ""
+"Variables disponibles : {title}, {subtitle}, {url}, {blog}, {author}, "
+"{teaser}, {hashtags}."
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_form
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_search
+msgid "Webhook"
+msgstr "Webhook"
+
+#. module: blog_social_publish
+#: model:ir.model.fields.selection,name:blog_social_publish.selection__blog_social_channel__transport__webhook
+msgid "Webhook JSON générique"
+msgstr "Webhook JSON générique"
+
+#. module: blog_social_publish
+#: model:ir.model.fields.selection,name:blog_social_publish.selection__blog_social_channel__network__x
+msgid "X (Twitter)"
+msgstr "X (Twitter)"
+
+#. module: blog_social_publish
+#: model:ir.model.fields.selection,name:blog_social_publish.selection__blog_social_channel__network__youtube
+msgid "YouTube"
+msgstr "YouTube"
+
+#. module: blog_social_publish
+#. odoo-python
+#: code:addons/blog_social_publish/models/blog_social_channel.py:0
+msgid "channel_id"
+msgstr "channel_id"
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_form
+msgid "https://n8n.mondomaine.fr/webhook/blog-social"
+msgstr "https://n8n.mondomaine.fr/webhook/blog-social"
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_form
+msgid "https://postiz.mondomaine.fr"
+msgstr "https://postiz.mondomaine.fr"
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_form
+msgid "odoo erp opensource"
+msgstr "odoo erp opensource"
+
+#. module: blog_social_publish
+#. odoo-python
+#: code:addons/blog_social_publish/models/blog_post.py:0
+msgid "post_id"
+msgstr "post_id"
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_form
+msgid "{\"X-Source\": \"odoo\"}"
+msgstr "{\"X-Source\": \"odoo\"}"
+
+#. module: blog_social_publish
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_channel_view_form
+msgid ""
+"{title}\n"
+"\n"
+"{teaser}\n"
+"\n"
+"{url}\n"
+"{hashtags}"
+msgstr ""
+"{title}\n"
+"\n"
+"{teaser}\n"
+"\n"
+"{url}\n"
+"{hashtags}"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_social_post__state
+#: model_terms:ir.ui.view,arch_db:blog_social_publish.blog_social_post_view_search
+msgid "État"
+msgstr "État"
+
+#. module: blog_social_publish
+#: model:ir.model.fields,field_description:blog_social_publish.field_blog_post__social_state
+msgid "État social"
+msgstr "État social"

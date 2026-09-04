@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_blog_social_channel_manager,blog.social.channel manager,model_blog_social_channel,blog_social_publish.group_blog_social_manager,1,1,1,1
+access_blog_social_post_manager,blog.social.post manager,model_blog_social_post,blog_social_publish.group_blog_social_manager,1,1,1,1
+access_blog_social_channel_editor,blog.social.channel editor,model_blog_social_channel,website.group_website_restricted_editor,1,0,0,0
+access_blog_social_post_editor,blog.social.post editor,model_blog_social_post,website.group_website_restricted_editor,1,1,1,0

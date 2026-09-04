@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_blog_social_root" name="Blog to Social"
+              web_icon="blog_social_publish,static/description/icon.png"
+              sequence="95"
+              groups="blog_social_publish.group_blog_social_manager"/>
+    <menuitem id="menu_blog_social_post" name="Publications"
+              parent="menu_blog_social_root" action="blog_social_post_action" sequence="10"/>
+    <menuitem id="menu_blog_social_channel" name="Canaux"
+              parent="menu_blog_social_root" action="blog_social_channel_action" sequence="20"/>
+</odoo>

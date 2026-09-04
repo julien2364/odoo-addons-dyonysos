@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_blog_post_form_social" model="ir.ui.view">
+        <field name="name">blog.post.form.social</field>
+        <field name="model">blog.post</field>
+        <field name="inherit_id" ref="website_blog.view_blog_post_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="before">
+                <header>
+                    <button name="action_blog_social_publish" type="object"
+                            string="Publier sur les réseaux" class="btn-primary"
+                            invisible="not is_published"
+                            groups="blog_social_publish.group_blog_social_manager"/>
+                </header>
+            </xpath>
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_view_social_posts" type="object" class="oe_stat_button"
+                        icon="fa-share-alt" invisible="social_post_count == 0"
+                        groups="blog_social_publish.group_blog_social_manager">
+                    <field name="social_post_count" widget="statinfo" string="Réseaux"/>
+                </button>
+            </xpath>
+            <xpath expr="//group[@name='publishing_details']" position="inside">
+                <field name="social_state" groups="blog_social_publish.group_blog_social_manager"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_blog_post_list_social" model="ir.ui.view">
+        <field name="name">blog.post.list.social</field>
+        <field name="model">blog.post</field>
+        <field name="inherit_id" ref="website_blog.view_blog_post_list"/>
+        <field name="arch" type="xml">
+            <field name="is_published" position="after">
+                <field name="social_state" string="Réseaux sociaux" optional="hide"
+                       groups="blog_social_publish.group_blog_social_manager"/>
+            </field>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_blog_social" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.blog.social</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="website.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@id='website_settings']" position="after">
+                <block title="Blog to Social" id="blog_social_publish_block"
+                       help="Publiez automatiquement les articles de blog sur les réseaux sociaux, via Postiz ou un webhook.">
+                    <setting id="blog_social_auto_setting" string="Publication automatique"
+                             help="Décoché, aucun article ne part tout seul : seul le bouton « Publier sur les réseaux » agit.">
+                        <field name="blog_social_auto_publish"/>
+                        <div class="content-group mt8">
+                            <div class="row">
+                                <label for="blog_social_activation_date" class="col-lg-5 o_light_label"/>
+                                <field name="blog_social_activation_date" readonly="1"/>
+                            </div>
+                            <div class="text-muted">
+                                Garde-fou : aucun article publié avant cette date n'est jamais
+                                poussé rétroactivement vers les réseaux sociaux.
+                            </div>
+                            <div class="row mt8">
+                                <label for="blog_social_timeout" class="col-lg-5 o_light_label"/>
+                                <field name="blog_social_timeout"/>
+                            </div>
+                        </div>
+                    </setting>
+                    <setting id="blog_social_channels_setting" string="Canaux de publication"
+                             help="Un canal par réseau : transport, gabarit du message, hashtags, UTM.">
+                        <button type="object" name="action_blog_social_open_channels"
+                                string="Configurer les canaux" class="btn-link" icon="fa-arrow-right"/>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

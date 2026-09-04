@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="blog_social_post_view_list" model="ir.ui.view">
+        <field name="name">blog.social.post.list</field>
+        <field name="model">blog.social.post</field>
+        <field name="arch" type="xml">
+            <list string="Publications" decoration-danger="state == 'error'"
+                  decoration-success="state == 'sent'" decoration-muted="state == 'cancelled'">
+                <field name="post_id"/>
+                <field name="blog_id" optional="show"/>
+                <field name="channel_id"/>
+                <field name="network" optional="hide"/>
+                <field name="scheduled_date" optional="show"/>
+                <field name="sent_date" optional="hide"/>
+                <field name="retry_count" optional="hide"/>
+                <field name="remote_id" optional="hide"/>
+                <field name="company_id" groups="base.group_multi_company" optional="hide"/>
+                <field name="state" widget="badge"
+                       decoration-success="state == 'sent'"
+                       decoration-danger="state == 'error'"
+                       decoration-info="state == 'queued'"/>
+                <button name="action_send_now" type="object" icon="fa-paper-plane"
+                        title="Envoyer maintenant" invisible="state in ('sent', 'cancelled')"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="blog_social_post_view_form" model="ir.ui.view">
+        <field name="name">blog.social.post.form</field>
+        <field name="model">blog.social.post</field>
+        <field name="arch" type="xml">
+            <form string="Publication sociale">
+                <header>
+                    <button name="action_send_now" type="object" string="Envoyer maintenant"
+                            class="btn-primary" invisible="state in ('sent', 'cancelled')"/>
+                    <button name="action_requeue" type="object" string="Remettre en file"
+                            invisible="state == 'queued'"/>
+                    <button name="action_cancel" type="object" string="Annuler"
+                            invisible="state in ('sent', 'cancelled')"/>
+                    <field name="state" widget="statusbar"
+                           statusbar_visible="draft,queued,sent"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_post" type="object" class="oe_stat_button"
+                                icon="fa-file-text-o" string="Article"/>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="post_id" readonly="state == 'sent'"/>
+                            <field name="channel_id" readonly="state == 'sent'"/>
+                            <field name="network"/>
+                            <field name="blog_id"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                        <group>
+                            <field name="scheduled_date" readonly="state == 'sent'"/>
+                            <field name="sent_date"/>
+                            <field name="remote_id"/>
+                            <field name="retry_count"/>
+                        </group>
+                    </group>
+                    <group string="Contenu">
+                        <field name="message" readonly="state == 'sent'" nolabel="1"
+                               colspan="2" widget="text"/>
+                        <field name="link" widget="url"/>
+                        <field name="image_url" widget="url"/>
+                    </group>
+                    <group string="Erreur" invisible="not error">
+                        <field name="error" nolabel="1" colspan="2" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="blog_social_post_view_search" model="ir.ui.view">
+        <field name="name">blog.social.post.search</field>
+        <field name="model">blog.social.post</field>
+        <field name="arch" type="xml">
+            <search string="Publications">
+                <field name="post_id"/>
+                <field name="channel_id"/>
+                <field name="blog_id"/>
+                <filter string="En file" name="filter_queued" domain="[('state', '=', 'queued')]"/>
+                <filter string="Envoyées" name="filter_sent" domain="[('state', '=', 'sent')]"/>
+                <filter string="En erreur" name="filter_error" domain="[('state', '=', 'error')]"/>
+                <separator/>
+                <filter string="Programmées" name="filter_scheduled"
+                        domain="[('scheduled_date', '!=', False)]"/>
+                <group>
+                    <filter string="État" name="group_state" context="{'group_by': 'state'}"/>
+                    <filter string="Canal" name="group_channel" context="{'group_by': 'channel_id'}"/>
+                    <filter string="Blog" name="group_blog" context="{'group_by': 'blog_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="blog_social_post_action" model="ir.actions.act_window">
+        <field name="name">Publications</field>
+        <field name="res_model">blog.social.post</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="blog_social_post_view_search"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Aucune publication pour l'instant</p>
+            <p>
+                Les publications apparaissent ici dès qu'un article de blog est publié
+                sur le site — ou lorsque vous cliquez sur « Publier sur les réseaux »
+                depuis un article.
+            </p>
+        </field>
+    </record>
+</odoo>
