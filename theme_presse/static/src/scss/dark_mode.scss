@@ -1,0 +1,167 @@
+//==============================================================================
+// Thème Presse pro — mode sombre optionnel
+//
+// Il s'active de deux façons :
+//   * manuellement, via un élément portant la classe `.o_presse_dark_toggle`
+//     (le choix est mémorisé dans le navigateur du visiteur) ;
+//   * automatiquement, en ajoutant la classe `o_presse_dark_auto` sur la balise
+//     <html> : le thème suit alors la préférence système du visiteur.
+//
+// Contrastes vérifiés (WCAG AA) : texte 15.94:1 sur le fond,
+// texte secondaire 8.78:1, accent 5.59:1.
+// (c) DYONYSOS — https://dyonysos.fr
+//==============================================================================
+
+$p: "presse";
+
+@mixin o-presse-dark-tokens {
+    --#{$p}-bg: #14171C;
+    --#{$p}-surface: #1B1E24;
+    --#{$p}-surface-2: #232830;
+    --#{$p}-border: #333944;
+    --#{$p}-text: #F4F1EC;
+    --#{$p}-muted: #AEB6C1;
+    --#{$p}-accent: #E8675E;
+}
+
+@mixin o-presse-dark-rules {
+    background-color: var(--#{$p}-bg);
+    color: var(--#{$p}-text);
+
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6 {
+        color: var(--#{$p}-text);
+    }
+
+    p, li, td, th, .lead, .small {
+        color: var(--#{$p}-muted);
+    }
+
+    // Les combinaisons de couleurs claires d'Odoo deviennent des surfaces sombres.
+    .o_cc1, .o_cc2, .o_cc3 {
+        background-color: var(--#{$p}-bg) !important;
+        color: var(--#{$p}-text);
+    }
+
+    .o_cc2 {
+        background-color: var(--#{$p}-surface) !important;
+    }
+
+    .o_cc3 {
+        background-color: var(--#{$p}-surface-2) !important;
+    }
+
+    a:not(.btn) {
+        color: var(--#{$p}-accent);
+    }
+
+    .btn-primary {
+        background-color: var(--#{$p}-accent);
+        border-color: var(--#{$p}-accent);
+        color: var(--#{$p}-bg);
+    }
+
+    .btn-outline-primary,
+    .btn-outline-light {
+        border-color: var(--#{$p}-accent);
+        color: var(--#{$p}-accent);
+    }
+
+    .form-control,
+    .form-select {
+        background-color: var(--#{$p}-surface);
+        border-color: var(--#{$p}-border);
+        color: var(--#{$p}-text);
+
+        &::placeholder {
+            color: var(--#{$p}-muted);
+        }
+    }
+
+    header, footer {
+        background-color: var(--#{$p}-surface) !important;
+        border-color: var(--#{$p}-border) !important;
+    }
+
+    .o_presse_kicker,
+    .o_presse_fil_hour,
+    .o_presse_step_meta,
+    .o_presse_timeline_date {
+        color: var(--#{$p}-accent);
+    }
+
+    .o_presse_rule,
+    .o_presse_section_title::after,
+    .o_presse_card,
+    .o_presse_side_item + .o_presse_side_item,
+    .o_presse_secondary,
+    .o_presse_dossier_item,
+    .o_presse_timeline_item,
+    .o_presse_fil_list,
+    .o_presse_toc,
+    .o_presse_related {
+        border-color: var(--#{$p}-border) !important;
+    }
+
+    .o_presse_meta,
+    .o_presse_caption,
+    figcaption {
+        color: var(--#{$p}-muted);
+    }
+
+    blockquote,
+    .o_presse_quote,
+    .o_presse_newsletter_box,
+    .o_presse_author_box {
+        border-color: var(--#{$p}-accent);
+    }
+
+    .o_presse_filter {
+        border-color: var(--#{$p}-border);
+
+        &.active {
+            background: var(--#{$p}-accent);
+            border-color: var(--#{$p}-accent);
+            color: var(--#{$p}-bg);
+        }
+    }
+
+    // Les visuels de démonstration sont des dégradés : on les assombrit
+    // légèrement plutôt que de les remplacer.
+    img {
+        filter: brightness(.88) saturate(.92);
+    }
+}
+
+// Bouton de bascule, utilisable n'importe où dans la page.
+.o_presse_dark_toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    border: 1px solid currentColor;
+    background: transparent;
+    color: inherit;
+    border-radius: 2px;
+    padding: .3rem .85rem;
+    font-size: .8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+html.o_presse_dark {
+    @include o-presse-dark-tokens;
+
+    body, #wrapwrap {
+        @include o-presse-dark-rules;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html.o_presse_dark_auto:not(.o_presse_light) {
+        @include o-presse-dark-tokens;
+
+        body, #wrapwrap {
+            @include o-presse-dark-rules;
+        }
+    }
+}

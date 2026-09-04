@@ -33,6 +33,10 @@
            t-thumbnail="/theme_presse/static/src/img/snippets_thumbs/s_presse_newsletter.png">
             <keywords>newsletter, lettre, abonnement, email, inscription</keywords>
         </t>
+        <t t-snippet="theme_presse.s_presse_mode_sombre" string="Bascule mode sombre" group="presse"
+           t-thumbnail="/theme_presse/static/src/img/snippets_thumbs/s_presse_mode_sombre.png">
+            <keywords>mode sombre, dark mode, contraste, theme, bascule, nuit</keywords>
+        </t>
     </xpath>
 </template>
 

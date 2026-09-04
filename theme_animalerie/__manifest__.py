@@ -2,7 +2,7 @@
 {
     'name': 'Thème Animalerie — Boutique en ligne (pro)',
     'summary': "Sélecteur par animal, comparateur, avis notés, guide de tailles, "
-               "abonnement, blocs conseils, promotions, panier et tunnel stylés.",
+               "abonnement, blocs conseils, promotions, panier et tunnel stylés, mode sombre.",
     'description': """
 Thème Animalerie — version pro
 ==============================
@@ -10,8 +10,8 @@ Thème Animalerie — version pro
 Ajoute à la version gratuite les blocs qui font vendre une animalerie en ligne :
 sélecteur par type d'animal, comparateur de produits, avis clients avec notes,
 guide de tailles, offre d'abonnement et de livraison récurrente, blocs conseils,
-mise en avant des promotions, page catégorie enrichie, plus l'habillage complet
-du panier et du tunnel de commande.
+mise en avant des promotions, page catégorie enrichie, un mode sombre mémorisé, plus l'habillage
+complet du panier et du tunnel de commande.
 
 La marque « Trèfle &amp; Museau » des données de démonstration est fictive.
 """,
@@ -32,6 +32,7 @@ La marque « Trèfle &amp; Museau » des données de démonstration est fictive.
         'views/snippets/s_anim_abonnement.xml',
         'views/snippets/s_anim_conseils.xml',
         'views/snippets/s_anim_promotions.xml',
+        'views/snippets/s_anim_mode_sombre.xml',
         'views/snippets/snippets.xml',
         'data/pages.xml',
         'data/menus.xml',
@@ -47,7 +48,9 @@ La marque « Trèfle &amp; Museau » des données de démonstration est fictive.
         'web.assets_frontend': [
             'theme_animalerie_lite/static/src/scss/theme.scss',
             'theme_animalerie/static/src/scss/theme.scss',
+            'theme_animalerie/static/src/scss/dark_mode.scss',
             'theme_animalerie/static/src/js/anim_compare.js',
+            'theme_animalerie/static/src/js/anim_dark_mode.js',
         ],
     },
     'images': ['images/main_screenshot.png'],

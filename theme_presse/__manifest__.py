@@ -3,7 +3,7 @@
     'name': 'Thème Presse — Magazine et presse en ligne (pro)',
     'summary': "Blocs éditoriaux avancés pour un vrai média : une multi-niveaux, "
                "fil d'actualité, grille par rubrique avec filtres, dossier, "
-               "encadré auteur, chronologie, newsletter, sommaire et mode lecture.",
+               "encadré auteur, chronologie, newsletter, sommaire, mode lecture et mode sombre.",
     'description': """
 Thème Presse — version pro
 ==========================
@@ -13,7 +13,7 @@ plusieurs articles par jour : bloc « une » multi-niveaux (1 article principal 
 4 secondaires), fil d'actualité en colonne, grille par rubrique avec filtres,
 dossier ou série d'articles, encadré auteur, chronologie d'événement et bandeau
 newsletter, plus deux pages prêtes à l'emploi (rubrique et auteur), le sommaire
-automatique des intertitres et le mode lecture.
+automatique des intertitres, le mode lecture et un mode sombre mémorisé.
 """,
     'category': 'Theme/Creative',
     'version': '19.0.1.0.0',
@@ -32,6 +32,7 @@ automatique des intertitres et le mode lecture.
         'views/snippets/s_presse_auteur.xml',
         'views/snippets/s_presse_chronologie.xml',
         'views/snippets/s_presse_newsletter.xml',
+        'views/snippets/s_presse_mode_sombre.xml',
         'views/snippets/snippets.xml',
         'views/blog_templates.xml',
         'data/pages.xml',
@@ -49,7 +50,9 @@ automatique des intertitres et le mode lecture.
         'web.assets_frontend': [
             'theme_presse_lite/static/src/scss/theme.scss',
             'theme_presse/static/src/scss/theme.scss',
+            'theme_presse/static/src/scss/dark_mode.scss',
             'theme_presse/static/src/js/presse_reader.js',
+            'theme_presse/static/src/js/presse_dark_mode.js',
         ],
     },
     'images': ['images/main_screenshot.png'],

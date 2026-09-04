@@ -209,6 +209,26 @@ Bases de test supprimées, `__pycache__` supprimés (6 dossiers).
 
 ---
 
+
+### Ajouts postérieurs à la première livraison
+
+- **Entrées de menu de site** — chaque thème déclare ses pages de démonstration
+  dans le menu principal via `theme.website.menu`, comme `theme_dyonysos`.
+- **Mode sombre sur les trois thèmes pro** — inversion complète des couleurs,
+  activable par le bloc « Bascule mode sombre » à poser dans la page, ou
+  automatiquement via la classe `o_<prefixe>_dark_auto` sur `<html>` (préférence
+  système). Le choix est mémorisé dans le navigateur, sans appel réseau, et le
+  script reste inerte dans l'éditeur. Contrastes du thème sombre vérifiés :
+
+  | Thème | Texte | Texte secondaire | Accent |
+  | --- | --- | --- | --- |
+  | Presse | 15,94:1 | 8,78:1 | 5,59:1 |
+  | Voyage | 15,59:1 | 8,72:1 | 6,35:1 |
+  | Animalerie | 13,69:1 | 8,21:1 | 8,01:1 |
+
+  Limite : le mode sombre assombrit les images de démonstration par un filtre CSS
+  (`brightness(.88)`), il ne fournit pas de visuels alternatifs.
+
 ## 6. Propriété intellectuelle
 
 - Aucun thème existant n'a été copié, adapté ni « légèrement modifié ». Les

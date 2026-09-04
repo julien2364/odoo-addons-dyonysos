@@ -1,0 +1,181 @@
+//==============================================================================
+// Thème Animalerie pro — mode sombre optionnel
+//
+// Il s'active de deux façons :
+//   * manuellement, via un élément portant la classe `.o_anim_dark_toggle`
+//     (le choix est mémorisé dans le navigateur du visiteur) ;
+//   * automatiquement, en ajoutant la classe `o_anim_dark_auto` sur la balise
+//     <html> : le thème suit alors la préférence système du visiteur.
+//
+// Contrastes vérifiés (WCAG AA) : texte 13.69:1 sur le fond,
+// texte secondaire 8.21:1, accent 8.01:1.
+// (c) DYONYSOS — https://dyonysos.fr
+//==============================================================================
+
+$p: "anim";
+
+@mixin o-anim-dark-tokens {
+    --#{$p}-bg: #101B13;
+    --#{$p}-surface: #17251A;
+    --#{$p}-surface-2: #1E3022;
+    --#{$p}-border: #2C4030;
+    --#{$p}-text: #D9E6D8;
+    --#{$p}-muted: #A2B6A3;
+    --#{$p}-accent: #E0A34F;
+}
+
+@mixin o-anim-dark-rules {
+    background-color: var(--#{$p}-bg);
+    color: var(--#{$p}-text);
+
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6 {
+        color: var(--#{$p}-text);
+    }
+
+    p, li, td, th, .lead, .small {
+        color: var(--#{$p}-muted);
+    }
+
+    // Les combinaisons de couleurs claires d'Odoo deviennent des surfaces sombres.
+    .o_cc1, .o_cc2, .o_cc3 {
+        background-color: var(--#{$p}-bg) !important;
+        color: var(--#{$p}-text);
+    }
+
+    .o_cc2 {
+        background-color: var(--#{$p}-surface) !important;
+    }
+
+    .o_cc3 {
+        background-color: var(--#{$p}-surface-2) !important;
+    }
+
+    a:not(.btn) {
+        color: var(--#{$p}-accent);
+    }
+
+    .btn-primary {
+        background-color: var(--#{$p}-accent);
+        border-color: var(--#{$p}-accent);
+        color: var(--#{$p}-bg);
+    }
+
+    .btn-outline-primary,
+    .btn-outline-light {
+        border-color: var(--#{$p}-accent);
+        color: var(--#{$p}-accent);
+    }
+
+    .form-control,
+    .form-select {
+        background-color: var(--#{$p}-surface);
+        border-color: var(--#{$p}-border);
+        color: var(--#{$p}-text);
+
+        &::placeholder {
+            color: var(--#{$p}-muted);
+        }
+    }
+
+    header, footer {
+        background-color: var(--#{$p}-surface) !important;
+        border-color: var(--#{$p}-border) !important;
+    }
+
+    .o_anim_eyebrow,
+    .o_anim_check,
+    .o_anim_log_day {
+        color: var(--#{$p}-accent);
+    }
+
+    .o_anim_product_card,
+    .o_anim_review,
+    .o_anim_plan,
+    .o_anim_advice,
+    .o_anim_promo_box,
+    .o_anim_compare_table,
+    .o_anim_size_table,
+    .o_anim_hero_box {
+        background: var(--#{$p}-surface) !important;
+        color: var(--#{$p}-text);
+    }
+
+    .o_anim_compare_table thead th,
+    .o_anim_size_table thead th,
+    .o_anim_fact,
+    .o_anim_product_promise,
+    .o_anim_category_head {
+        background: var(--#{$p}-surface-2) !important;
+        color: var(--#{$p}-text);
+    }
+
+    .o_anim_compare_table th,
+    .o_anim_compare_table td,
+    .o_anim_size_table th,
+    .o_anim_size_table td {
+        border-color: var(--#{$p}-border) !important;
+    }
+
+    .o_anim_pill {
+        background: rgba(224, 163, 79, .18);
+        color: var(--#{$p}-accent);
+    }
+
+    .o_anim_species {
+        background: var(--#{$p}-surface);
+        border-color: var(--#{$p}-border);
+
+        &.active {
+            border-color: var(--#{$p}-accent);
+            background: var(--#{$p}-surface-2);
+        }
+    }
+
+    .o_anim_bar_track {
+        background: var(--#{$p}-border);
+    }
+
+    .o_anim_bar_fill {
+        background: var(--#{$p}-accent);
+    }
+
+    // Les visuels de démonstration sont des dégradés : on les assombrit
+    // légèrement plutôt que de les remplacer.
+    img {
+        filter: brightness(.88) saturate(.92);
+    }
+}
+
+// Bouton de bascule, utilisable n'importe où dans la page.
+.o_anim_dark_toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    border: 1px solid currentColor;
+    background: transparent;
+    color: inherit;
+    border-radius: 2rem;
+    padding: .3rem .85rem;
+    font-size: .8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+html.o_anim_dark {
+    @include o-anim-dark-tokens;
+
+    body, #wrapwrap {
+        @include o-anim-dark-rules;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html.o_anim_dark_auto:not(.o_anim_light) {
+        @include o-anim-dark-tokens;
+
+        body, #wrapwrap {
+            @include o-anim-dark-rules;
+        }
+    }
+}

@@ -31,6 +31,10 @@
            t-thumbnail="/theme_animalerie/static/src/img/snippets_thumbs/s_anim_promotions.png">
             <keywords>promotions, remise, soldes, offre, prix barre</keywords>
         </t>
+        <t t-snippet="theme_animalerie.s_anim_mode_sombre" string="Bascule mode sombre" group="animalerie"
+           t-thumbnail="/theme_animalerie/static/src/img/snippets_thumbs/s_anim_mode_sombre.png">
+            <keywords>mode sombre, dark mode, contraste, theme, bascule, nuit</keywords>
+        </t>
     </xpath>
 </template>
 

@@ -2,7 +2,7 @@
 {
     'name': 'Thème Voyage — Carnet de voyage et tourisme (pro)',
     'summary': "Carte d'itinéraire par étapes, galerie mosaïque avec lightbox, fiche "
-               "destination, témoignages, calendrier de départs, demande de devis et carnet de bord.",
+               "destination, témoignages, calendrier de départs, demande de devis, carnet de bord et mode sombre.",
     'description': """
 Thème Voyage — version pro
 ==========================
@@ -11,7 +11,8 @@ Ajoute à la version gratuite tout ce qu'il faut pour vendre un séjour plutôt 
 le décrire : carte d'itinéraire par étapes, galerie photo en mosaïque avec
 lightbox, fiche destination (durée, budget, saison, difficulté), témoignages de
 voyageurs, calendrier de départs, formulaire de demande de devis et carnet de
-bord chronologique, plus deux pages prêtes à l'emploi (destination et itinéraire).
+bord chronologique, un mode sombre mémorisé, plus deux pages prêtes à l'emploi
+(destination et itinéraire).
 """,
     'category': 'Theme/Creative',
     'version': '19.0.1.0.0',
@@ -30,6 +31,7 @@ bord chronologique, plus deux pages prêtes à l'emploi (destination et itinéra
         'views/snippets/s_voyage_departs.xml',
         'views/snippets/s_voyage_devis.xml',
         'views/snippets/s_voyage_carnet.xml',
+        'views/snippets/s_voyage_mode_sombre.xml',
         'views/snippets/snippets.xml',
         'data/pages.xml',
         'data/menus.xml',
@@ -45,7 +47,9 @@ bord chronologique, plus deux pages prêtes à l'emploi (destination et itinéra
         'web.assets_frontend': [
             'theme_voyage_lite/static/src/scss/theme.scss',
             'theme_voyage/static/src/scss/theme.scss',
+            'theme_voyage/static/src/scss/dark_mode.scss',
             'theme_voyage/static/src/js/voyage_lightbox.js',
+            'theme_voyage/static/src/js/voyage_dark_mode.js',
         ],
     },
     'images': ['images/main_screenshot.png'],
