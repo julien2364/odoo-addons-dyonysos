@@ -1,0 +1,539 @@
+# Translation of Odoo Server.
+# French translation — DYONYSOS <welcome@dyonysos.fr>
+# This file contains the translation of the following modules:
+# 	* dyo_packlink_connector
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-04 07:49+0000\n"
+"PO-Revision-Date: 2026-09-04 07:49+0000\n"
+"Last-Translator: DYONYSOS <welcome@dyonysos.fr>\n"
+"Language-Team: French <welcome@dyonysos.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: dyo_packlink_connector
+#. odoo-python
+#: code:addons/dyo_packlink_connector/models/delivery_carrier.py:0
+msgid "%s service(s) proposé(s)"
+msgstr "%s service(s) proposé(s)"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_account__active
+msgid "Active"
+msgstr "Actif"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_account__warehouse_partner_id
+msgid "Adresse d'expédition"
+msgstr "Adresse d'expédition"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,help:dyo_packlink_connector.field_packlink_account__warehouse_partner_id
+msgid ""
+"Adresse de collecte transmise à Packlink. Par défaut, l'adresse de "
+"l'entrepôt du transfert, sinon celle de la société."
+msgstr ""
+"Adresse de collecte transmise à Packlink. Par défaut, l'adresse de "
+"l'entrepôt du transfert, sinon celle de la société."
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields.selection,name:dyo_packlink_connector.selection__packlink_log__operation__cancel
+msgid "Annulation"
+msgstr "Annulation"
+
+#. module: dyo_packlink_connector
+#. odoo-python
+#: code:addons/dyo_packlink_connector/models/delivery_carrier.py:0
+msgid "Annulation Packlink refusée : %s"
+msgstr "Annulation Packlink refusée : %s"
+
+#. module: dyo_packlink_connector
+#: model_terms:ir.ui.view,arch_db:dyo_packlink_connector.packlink_account_view_form
+msgid "Archivé"
+msgstr "Archivé"
+
+#. module: dyo_packlink_connector
+#. odoo-python
+#: code:addons/dyo_packlink_connector/models/delivery_carrier.py:0
+msgid "Aucun compte Packlink n'est configuré pour ce mode de livraison."
+msgstr "Aucun compte Packlink n'est configuré pour ce mode de livraison."
+
+#. module: dyo_packlink_connector
+#. odoo-python
+#: code:addons/dyo_packlink_connector/models/delivery_carrier.py:0
+msgid "Aucun service Packlink disponible pour cette expédition."
+msgstr "Aucun service Packlink disponible pour cette expédition."
+
+#. module: dyo_packlink_connector
+#. odoo-python
+#: code:addons/dyo_packlink_connector/models/stock_picking.py:0
+msgid "Aucune étiquette disponible pour le moment."
+msgstr "Aucune étiquette disponible pour le moment."
+
+#. module: dyo_packlink_connector
+#: model_terms:ir.ui.view,arch_db:dyo_packlink_connector.packlink_account_view_form
+msgid "Avancé"
+msgstr "Avancé"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_account__api_key
+msgid "Clé API"
+msgstr "Clé API"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,help:dyo_packlink_connector.field_packlink_account__api_key
+msgid "Clé API fournie par Packlink PRO (Paramètres → Intégrations)."
+msgstr "Clé API fournie par Packlink PRO (Paramètres → Intégrations)."
+
+#. module: dyo_packlink_connector
+#: model_terms:ir.ui.view,arch_db:dyo_packlink_connector.delivery_carrier_view_form_packlink
+msgid "Colis par défaut"
+msgstr "Colis par défaut"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_log__account_id
+#: model_terms:ir.ui.view,arch_db:dyo_packlink_connector.delivery_carrier_view_form_packlink
+msgid "Compte"
+msgstr "Compte"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_delivery_carrier__packlink_account_id
+#: model_terms:ir.ui.view,arch_db:dyo_packlink_connector.packlink_account_view_form
+msgid "Compte Packlink"
+msgstr "Compte Packlink"
+
+#. module: dyo_packlink_connector
+#: model:ir.model,name:dyo_packlink_connector.model_packlink_account
+msgid "Compte Packlink PRO"
+msgstr "Compte Packlink PRO"
+
+#. module: dyo_packlink_connector
+#: model:ir.actions.act_window,name:dyo_packlink_connector.packlink_account_action
+#: model:ir.ui.menu,name:dyo_packlink_connector.menu_packlink_account
+#: model_terms:ir.ui.view,arch_db:dyo_packlink_connector.packlink_account_view_list
+msgid "Comptes Packlink"
+msgstr "Comptes Packlink"
+
+#. module: dyo_packlink_connector
+#. odoo-python
+#: code:addons/dyo_packlink_connector/models/packlink_account.py:0
+msgid "Connexion Packlink refusée : %s"
+msgstr "Connexion Packlink refusée : %s"
+
+#. module: dyo_packlink_connector
+#. odoo-python
+#: code:addons/dyo_packlink_connector/models/packlink_account.py:0
+msgid "Connexion Packlink établie."
+msgstr "Connexion Packlink établie."
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_account__create_uid
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_log__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_account__create_date
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_log__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields.selection,name:dyo_packlink_connector.selection__packlink_log__operation__ship
+msgid "Création d'expédition"
+msgstr "Création d'expédition"
+
+#. module: dyo_packlink_connector
+#: model_terms:ir.actions.act_window,help:dyo_packlink_connector.packlink_account_action
+msgid ""
+"Créez ensuite un mode de livraison de type « Packlink PRO » pour proposer\n"
+"               ses tarifs sur vos devis."
+msgstr ""
+"Créez ensuite un mode de livraison de type « Packlink PRO » pour proposer\n"
+"               ses tarifs sur vos devis."
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_delivery_carrier__display_name
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_account__display_name
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_log__display_name
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_sale_order__display_name
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_stock_picking__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_log__duration
+msgid "Durée (s)"
+msgstr "Durée (s)"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_account__timeout
+msgid "Délai d'attente (s)"
+msgstr "Délai d'attente (s)"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_account__auth_header
+msgid "En-tête d'authentification"
+msgstr "En-tête d'authentification"
+
+#. module: dyo_packlink_connector
+#: model_terms:ir.actions.act_window,help:dyo_packlink_connector.packlink_account_action
+msgid "Enregistrez votre clé API Packlink PRO"
+msgstr "Enregistrez votre clé API Packlink PRO"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields.selection,name:dyo_packlink_connector.selection__packlink_log__state__error
+msgid "Erreur"
+msgstr "Erreur"
+
+#. module: dyo_packlink_connector
+#: model_terms:ir.ui.view,arch_db:dyo_packlink_connector.packlink_log_view_search
+msgid "Erreurs"
+msgstr "Erreurs"
+
+#. module: dyo_packlink_connector
+#: model_terms:ir.ui.view,arch_db:dyo_packlink_connector.packlink_account_view_form
+msgid "Expédition"
+msgstr "Expédition"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_log__shipment_ref
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_sale_order__packlink_shipment_ref
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_stock_picking__packlink_shipment_ref
+msgid "Expédition Packlink"
+msgstr "Expédition Packlink"
+
+#. module: dyo_packlink_connector
+#. odoo-python
+#: code:addons/dyo_packlink_connector/models/delivery_carrier.py:0
+msgid "Expédition Packlink %(ref)s créée (%(carrier)s), suivi %(tracking)s."
+msgstr "Expédition Packlink %(ref)s créée (%(carrier)s), suivi %(tracking)s."
+
+#. module: dyo_packlink_connector
+#. odoo-python
+#: code:addons/dyo_packlink_connector/models/delivery_carrier.py:0
+msgid "Expédition Packlink %s annulée."
+msgstr "Expédition Packlink %s annulée."
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_delivery_carrier__packlink_label_format
+msgid "Format d'étiquette"
+msgstr "Format d'étiquette"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_delivery_carrier__packlink_height
+msgid "Hauteur (cm)"
+msgstr "Hauteur (cm)"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_delivery_carrier__id
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_account__id
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_log__id
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_sale_order__id
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_stock_picking__id
+msgid "ID"
+msgstr "ID"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,help:dyo_packlink_connector.field_delivery_carrier__packlink_service_id
+msgid ""
+"Identifiant de service Packlink à utiliser systématiquement. Laisser vide "
+"pour laisser le module choisir selon le compte (le moins cher ou le plus "
+"rapide)."
+msgstr ""
+"Identifiant de service Packlink à utiliser systématiquement. Laisser vide "
+"pour laisser le module choisir selon le compte (le moins cher ou le plus "
+"rapide)."
+
+#. module: dyo_packlink_connector
+#: model_terms:ir.ui.view,arch_db:dyo_packlink_connector.packlink_account_view_form
+msgid "Identification"
+msgstr "Identification"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_account__log_ids
+#: model:ir.ui.menu,name:dyo_packlink_connector.menu_packlink_log
+#: model_terms:ir.ui.view,arch_db:dyo_packlink_connector.packlink_account_view_form
+msgid "Journal"
+msgstr "Journal"
+
+#. module: dyo_packlink_connector
+#: model:ir.actions.act_window,name:dyo_packlink_connector.packlink_log_action
+#: model_terms:ir.ui.view,arch_db:dyo_packlink_connector.packlink_log_view_list
+#: model_terms:ir.ui.view,arch_db:dyo_packlink_connector.packlink_log_view_search
+msgid "Journal Packlink"
+msgstr "Journal Packlink"
+
+#. module: dyo_packlink_connector
+#: model:ir.model,name:dyo_packlink_connector.model_packlink_log
+msgid "Journal des appels Packlink"
+msgstr "Journal des appels Packlink"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,help:dyo_packlink_connector.field_packlink_account__auth_scheme
+msgid "Laisser vide pour envoyer la clé telle quelle, ou saisir « Bearer »."
+msgstr "Laisser vide pour envoyer la clé telle quelle, ou saisir « Bearer »."
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_delivery_carrier__packlink_width
+msgid "Largeur (cm)"
+msgstr "Largeur (cm)"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_account__write_uid
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_log__write_uid
+msgid "Last Updated by"
+msgstr "Dernière modification par"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_account__write_date
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_log__write_date
+msgid "Last Updated on"
+msgstr "Dernière modification le"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields.selection,name:dyo_packlink_connector.selection__packlink_account__postage_type__cheapest
+msgid "Le service le moins cher"
+msgstr "Le service le moins cher"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields.selection,name:dyo_packlink_connector.selection__packlink_account__postage_type__fastest
+msgid "Le service le plus rapide"
+msgstr "Le service le plus rapide"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_stock_picking__packlink_tracking_url
+msgid "Lien de suivi"
+msgstr "Lien de suivi"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_delivery_carrier__packlink_length
+msgid "Longueur (cm)"
+msgstr "Longueur (cm)"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_log__message
+msgid "Message"
+msgstr "Message"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_account__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_log__operation
+#: model_terms:ir.ui.view,arch_db:dyo_packlink_connector.packlink_log_view_search
+msgid "Opération"
+msgstr "Opération"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields.selection,name:dyo_packlink_connector.selection__delivery_carrier__packlink_label_format__pdf
+msgid "PDF"
+msgstr "PDF"
+
+#. module: dyo_packlink_connector
+#: model:ir.ui.menu,name:dyo_packlink_connector.menu_packlink_root
+msgid "Packlink"
+msgstr "Packlink"
+
+#. module: dyo_packlink_connector
+#. odoo-python
+#: code:addons/dyo_packlink_connector/models/delivery_carrier.py:0
+msgid "Packlink : %s"
+msgstr "Packlink : %s"
+
+#. module: dyo_packlink_connector
+#: model:ir.actions.server,name:dyo_packlink_connector.ir_cron_packlink_log_purge_ir_actions_server
+msgid "Packlink : purge du journal"
+msgstr "Packlink : purge du journal"
+
+#. module: dyo_packlink_connector
+#: model:ir.actions.server,name:dyo_packlink_connector.ir_cron_packlink_tracking_ir_actions_server
+msgid "Packlink : rafraîchir le suivi des expéditions"
+msgstr "Packlink : rafraîchir le suivi des expéditions"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields.selection,name:dyo_packlink_connector.selection__delivery_carrier__delivery_type__packlink
+#: model_terms:ir.ui.view,arch_db:dyo_packlink_connector.delivery_carrier_view_form_packlink
+#: model_terms:ir.ui.view,arch_db:dyo_packlink_connector.packlink_account_view_form
+msgid "Packlink PRO"
+msgstr "Packlink PRO"
+
+#. module: dyo_packlink_connector
+#. odoo-python
+#: code:addons/dyo_packlink_connector/models/delivery_carrier.py:0
+msgid "Packlink n'a pas retourné de référence d'expédition."
+msgstr "Packlink n'a pas retourné de référence d'expédition."
+
+#. module: dyo_packlink_connector
+#. odoo-python
+#: code:addons/dyo_packlink_connector/models/delivery_carrier.py:0
+msgid "Packlink ne propose aucun service pour cette destination."
+msgstr "Packlink ne propose aucun service pour cette destination."
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_delivery_carrier__packlink_default_weight
+msgid "Poids par défaut (kg)"
+msgstr "Poids par défaut (kg)"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_delivery_carrier__delivery_type
+msgid "Provider"
+msgstr "Fournisseur"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_account__auth_scheme
+msgid "Préfixe d'authentification"
+msgstr "Préfixe d'authentification"
+
+#. module: dyo_packlink_connector
+#: model_terms:ir.ui.view,arch_db:dyo_packlink_connector.stock_picking_view_form_packlink
+msgid "Rafraîchir le suivi"
+msgstr "Rafraîchir le suivi"
+
+#. module: dyo_packlink_connector
+#. odoo-python
+#: code:addons/dyo_packlink_connector/models/delivery_carrier.py:0
+msgid "Réponse sans référence d'expédition"
+msgstr "Réponse sans référence d'expédition"
+
+#. module: dyo_packlink_connector
+#: model:ir.model,name:dyo_packlink_connector.model_sale_order
+msgid "Sales Order"
+msgstr "Commande client"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_stock_picking__packlink_service_name
+msgid "Service Packlink"
+msgstr "Service Packlink"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_delivery_carrier__packlink_service_id
+msgid "Service imposé"
+msgstr "Service imposé"
+
+#. module: dyo_packlink_connector
+#: model:ir.model,name:dyo_packlink_connector.model_delivery_carrier
+msgid "Shipping Methods"
+msgstr "Modes de livraison"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_account__company_id
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_log__company_id
+msgid "Société"
+msgstr "Société"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_log__state
+msgid "State"
+msgstr "État"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields.selection,name:dyo_packlink_connector.selection__packlink_log__state__ok
+msgid "Succès"
+msgstr "Succès"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields.selection,name:dyo_packlink_connector.selection__packlink_log__operation__track
+msgid "Suivi"
+msgstr "Suivi"
+
+#. module: dyo_packlink_connector
+#. odoo-python
+#: code:addons/dyo_packlink_connector/models/stock_picking.py:0
+msgid "Suivi Packlink : %(status)s — %(date)s"
+msgstr "Suivi Packlink : %(status)s — %(date)s"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_account__postage_type
+msgid "Sélection du service"
+msgstr "Sélection du service"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields.selection,name:dyo_packlink_connector.selection__packlink_log__operation__rate
+msgid "Tarif"
+msgstr "Tarif"
+
+#. module: dyo_packlink_connector
+#: model_terms:ir.ui.view,arch_db:dyo_packlink_connector.packlink_account_view_form
+msgid "Tester la connexion"
+msgstr "Tester la connexion"
+
+#. module: dyo_packlink_connector
+#: model_terms:ir.ui.view,arch_db:dyo_packlink_connector.packlink_log_view_list
+msgid "Total"
+msgstr "Total"
+
+#. module: dyo_packlink_connector
+#: model:ir.model,name:dyo_packlink_connector.model_stock_picking
+msgid "Transfer"
+msgstr "Transfert"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_log__picking_id
+msgid "Transfert"
+msgstr "Transfert"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_stock_picking__packlink_carrier_name
+msgid "Transporteur Packlink"
+msgstr "Transporteur Packlink"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_packlink_account__base_url
+msgid "URL de l'API"
+msgstr "URL de l'API"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.constraint,message:dyo_packlink_connector.constraint_packlink_account_name_uniq
+msgid "Un compte Packlink porte un nom unique par société."
+msgstr "Un compte Packlink porte un nom unique par société."
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,help:dyo_packlink_connector.field_delivery_carrier__packlink_default_weight
+msgid "Utilisé quand aucun produit de l'envoi ne porte de poids."
+msgstr "Utilisé quand aucun produit de l'envoi ne porte de poids."
+
+#. module: dyo_packlink_connector
+#: model_terms:ir.ui.view,arch_db:dyo_packlink_connector.packlink_account_view_form
+msgid "vide, ou Bearer"
+msgstr "vide, ou Bearer"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,help:dyo_packlink_connector.field_packlink_account__base_url
+msgid "À ne changer que si Packlink vous communique une autre URL."
+msgstr "À ne changer que si Packlink vous communique une autre URL."
+
+#. module: dyo_packlink_connector
+#: model_terms:ir.ui.view,arch_db:dyo_packlink_connector.packlink_log_view_search
+msgid "État"
+msgstr "État"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_stock_picking__packlink_state
+msgid "État Packlink"
+msgstr "État Packlink"
+
+#. module: dyo_packlink_connector
+#: model:ir.model.fields,field_description:dyo_packlink_connector.field_stock_picking__packlink_label_id
+#: model:ir.model.fields.selection,name:dyo_packlink_connector.selection__packlink_log__operation__label
+msgid "Étiquette"
+msgstr "Étiquette"
+
+#. module: dyo_packlink_connector
+#: model_terms:ir.ui.view,arch_db:dyo_packlink_connector.stock_picking_view_form_packlink
+msgid "Étiquette Packlink"
+msgstr "Étiquette Packlink"
+
+#. module: dyo_packlink_connector
+#. odoo-python
+#: code:addons/dyo_packlink_connector/models/stock_picking.py:0
+msgid "Étiquette Packlink non récupérée : %s"
+msgstr "Étiquette Packlink non récupérée : %s"
