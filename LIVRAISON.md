@@ -13,12 +13,10 @@ Auteur `DYONYSOS`, support `welcome@dyonysos.fr`, site `https://dyonysos.fr`.
 | `ai_document_extract` | Lit les PDF/images de factures fournisseurs et de notes de frais avec un modèle de vision et remplit le brouillon Odoo | 7 | `account`, `hr_expense` | `requests` (+ `pypdf`, optionnel, utilisé pour extraire la couche texte d'un PDF quand le fournisseur est OpenAI-compatible) |
 | `dougs_bridge` | Constitue un lot des pièces validées (PDF + Factur-X + `journal.csv`) et le transmet au cabinet par API First, email, SFTP, dossier serveur ou ZIP | 10 | `account`, `hr_expense`, `account_edi_ubl_cii`, `mail` | `requests` (+ `paramiko` si transport SFTP) |
 | `odoo_mcp_server` | Sert un endpoint MCP `/mcp` (JSON-RPC 2.0, Streamable HTTP) authentifié par clé API Odoo de scope `odoo.mcp`, avec liste blanche de modèles et journal d'audit | 20 | `base`, `base_setup` | aucune |
-| `amazon_connector_community` | Importe les commandes Amazon SP-API en commandes de vente, remonte le suivi, pousse stock et prix | 15 | `sale_management`, `stock`, `delivery` | `requests` |
+| `amazon_connector_community` | Importe les commandes Amazon SP-API en commandes de vente (pagination `NextToken`), remonte le suivi, pousse stock et prix sur toutes les places de marché avec conversion de devise | 19 | `sale_management`, `stock`, `delivery` | `requests` |
 | `studio_lite` | Crée des champs `x_...` + la vue héritée qui les affiche, retouche les vues et crée des automatisations, le tout tracé et réversible | 20 | `base`, `web`, `mail`, `base_automation` | aucune |
 
-**Total : 72 tests.** `odoo_mcp_server` et `studio_lite` sont déclarés `application: True` (icône dans le menu principal) ; les trois autres sont des extensions.
-
-> Le tableau du `README.md` annonce encore 65 tests et une ventilation obsolète (`dougs_bridge` 8, `odoo_mcp_server` 15). Les chiffres ci-dessus sont ceux comptés dans les fichiers `tests/`. À corriger dans le README avant publication.
+**Total : 76 tests.** `odoo_mcp_server` et `studio_lite` sont déclarés `application: True` (icône dans le menu principal) ; les trois autres sont des extensions.
 
 Chaîne CI (`.github/workflows/ci.yml`) : `lint` (manifestes, syntaxe Python, XML bien formé, présence de `static/description/icon.png` et `index.html`) → `tests` (clone de la pointe de `odoo/odoo` branche `19.0`, PostgreSQL 16, installation des 5 modules avec `--test-enable`) → `build` (`scripts/build.sh`, un zip par module + un bundle, artefacts 30 jours) → `release` sur tag `v*`. Déclencheurs : push et PR sur `19.0`, cron nocturne `17 3 * * *` UTC, et `workflow_dispatch`.
 
@@ -112,7 +110,7 @@ Créer un utilisateur dédié (ne pas utiliser un compte administrateur : la cl�
 
 **c. Créer la clé de scope `odoo.mcp`**
 
-Le module ajoute un onglet **« MCP keys »** sur la fiche utilisateur (rappel de la procédure + compteur de clés) et une méthode `res.users.action_mcp_new_key()` qui ouvre l'assistant natif avec le scope pré-rempli — **mais aucun bouton de vue n'appelle cette méthode dans la version livrée**. La méthode fiable aujourd'hui est le shell Odoo :
+Le module ajoute un onglet **« MCP keys »** sur la fiche utilisateur : rappel de la procédure, compteur de clés, et un bouton **« New MCP API key »** qui ouvre l'assistant natif d'Odoo avec le scope `odoo.mcp` pré-rempli. Variante en shell Odoo si vous préférez scripter :
 
 ```bash
 cd ~/infra/odoo
@@ -334,7 +332,7 @@ Première installation d'un module : remplacer `-u` par `-i`. Dépendances Pytho
 
 - **FBM uniquement.** Le module ne gère pas FBA (expéditions faites par Amazon), ni la facturation VCS, ni les retours et remboursements Amazon. C'est écrit dans la page de description du module, et cohérent avec le code : le push de stock écrit `fulfillment_channel_code: "DEFAULT"`, c'est-à-dire le stock marchand.
 - **Pas de pagination.** `AmazonSpApi.get_orders()` accepte un paramètre `next_token`, mais `_import_orders()` ne l'utilise jamais : un seul appel `/orders/v0/orders` est fait par synchronisation. Au-delà de la taille de page renvoyée par Amazon (~100 commandes), le reliquat est perdu pour ce passage — il ne sera repris que si `LastUpdatedAfter` le recouvre encore au passage suivant, ce qui n'est pas garanti puisque `last_order_sync` est avancé à la fin. **À corriger avant d'exposer le module à un vendeur à fort volume.**
-- **Stock et prix : une seule marketplace.** `_push_stock()` et `_push_price()` font `marketplace = self.marketplace_ids[:1]` — seule la première place de marché du compte reçoit les mises à jour, même si dix sont cochées. L'import de commandes, lui, interroge bien toutes les marketplaces.
+- **Une requête par SKU et par place de marché** : l'API `PATCH /listings` ne traite pas de lot. Sur un très gros catalogue multi-pays, espacer les actions planifiées.
 - **`productType: "PRODUCT"` générique.** Les appels `PATCH /listings/2021-08-01/items/...` envoient un type de produit générique. Amazon peut refuser le patch pour certaines catégories qui exigent leur type réel — l'erreur remonte alors dans le journal de synchronisation.
 - **Rapprochement par SKU seulement.** Une commande dont le `SellerSKU` n'a pas de correspondance dans Odoo lève une erreur sur cette commande ; le lot continue, mais la commande n'est pas importée.
 - **Statut développeur Amazon.** L'obtention des rôles SP-API dépend d'une validation Amazon hors de notre contrôle, et les rôles « restricted » (données personnelles acheteur) font l'objet d'une revue supplémentaire.
@@ -349,7 +347,7 @@ Première installation d'un module : remplacer `-u` par `-i`. Dépendances Pytho
 
 ### `odoo_mcp_server`
 
-- **Pas de bouton pour créer une clé de scope `odoo.mcp`.** `res.users.action_mcp_new_key()` existe et pré-remplit le scope, mais aucune vue ne l'appelle : l'onglet « MCP keys » n'affiche qu'un rappel et un compteur. Aujourd'hui la clé se crée en shell (§ 2.3.c). **Ajouter le bouton est le correctif le plus rentable du lot** — sans lui, un acheteur ne saura pas créer sa clé.
+- **Portée d'une clé MCP** : la clé hérite de tous les droits de son utilisateur. Créez un utilisateur dédié au strict nécessaire plutôt que de partager une clé d'administrateur.
 - **Limitation de débit locale au worker.** `_RATE_BUCKET` est un dictionnaire en mémoire de processus. Avec plusieurs workers Odoo, la limite effective est `rate_limit × nombre de workers`, pas `rate_limit`. Acceptable comme garde-fou, insuffisant comme quota strict.
 - **Transport HTTP simple, pas de SSE.** L'endpoint est un unique `POST /mcp` (JSON-RPC 2.0, y compris en lot). Les clients qui exigent un flux SSE ou une session `Mcp-Session-Id` persistante ne sont pas couverts.
 - **`Access-Control-Allow-Origin: *`.** Le CORS est ouvert. Sans cookie de session (l'auth est par en-tête `Authorization`), il n'y a pas de vecteur CSRF, mais toute page web peut tenter un appel — la clé reste la seule barrière. À restreindre si l'endpoint devient public.
@@ -378,7 +376,6 @@ Ce qui est couvert : la création de champs `x_...` (14 types) avec leur placeme
 
 ### Transverse
 
-- Le `README.md` annonce des chiffres de tests obsolètes (voir § 1).
 - Les répertoires `.ruff_cache/` sont versionnés dans `dougs_bridge/` et `odoo_mcp_server/` : à supprimer et à ignorer.
 - Aucun module n'a de script de migration : la première version publiée est `19.0.1.0.0`, donc rien à migrer aujourd'hui, mais toute évolution de schéma après mise en vente en exigera un.
 
