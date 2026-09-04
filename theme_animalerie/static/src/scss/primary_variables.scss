@@ -1,0 +1,20 @@
+// =============================================================================
+// Thème Animalerie pro — variables complémentaires
+// Le socle vient de theme_animalerie_lite/static/src/scss/primary_variables.scss,
+// redéclaré dans le manifeste de ce module (voir son commentaire).
+// =============================================================================
+
+$o-color-palettes: map-merge($o-color-palettes, (
+    'animalerie-foret': (
+        'o-color-1': #E0A34F,
+        'o-color-2': #D7E4D6,
+        'o-color-3': #17251A,
+        'o-color-4': #101B13,
+        'o-color-5': #0A120C,
+
+        'menu': 4,
+        'footer': 5,
+        'copyright': 5,
+    ),
+));
+$o-selected-color-palettes-names: join(('animalerie-foret',), $o-selected-color-palettes-names, comma);

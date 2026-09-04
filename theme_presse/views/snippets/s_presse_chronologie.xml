@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_presse_chronologie" name="Chronologie">
+    <section class="s_presse_chronologie pt40 pb40 o_cc o_cc1">
+        <div class="container">
+            <div class="o_presse_measure">
+                <div class="o_presse_section_title"><span>Chronologie</span></div>
+                <ul class="o_presse_timeline">
+                    <li class="o_presse_timeline_item">
+                        <span class="o_presse_timeline_date">Mars 2024</span>
+                        <div>
+                            <h4 class="mb-1">Première réunion publique</h4>
+                            <p class="mb-0">Quarante habitants et trois élus se retrouvent dans la halle
+                                encore vide. L'idée d'un atelier partagé est votée à main levée.</p>
+                        </div>
+                    </li>
+                    <li class="o_presse_timeline_item">
+                        <span class="o_presse_timeline_date">Septembre 2024</span>
+                        <div>
+                            <h4 class="mb-1">Signature du bail</h4>
+                            <p class="mb-0">Un bail de quatre ans est signé avec la communauté de communes,
+                                assorti d'une clause de révision annuelle.</p>
+                        </div>
+                    </li>
+                    <li class="o_presse_timeline_item">
+                        <span class="o_presse_timeline_date">Février 2025</span>
+                        <div>
+                            <h4 class="mb-1">Ouverture au public</h4>
+                            <p class="mb-0">Six zones de travail, onze bénévoles référents, deux salariés
+                                à mi-temps financés par la subvention intercommunale.</p>
+                        </div>
+                    </li>
+                    <li class="o_presse_timeline_item">
+                        <span class="o_presse_timeline_date">Janvier 2026</span>
+                        <div>
+                            <h4 class="mb-1">Trois tonnes détournées de la déchetterie</h4>
+                            <p class="mb-0">Le bilan de la première année est présenté en conseil.
+                                La revente de pièces détachées devient la troisième recette.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

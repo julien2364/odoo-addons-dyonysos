@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Deux pages prêtes à l'emploi. Comme dans la version gratuite, le markup est
+     dupliqué depuis views/snippets/ : c'est ce qui rend les sections éditables
+     dans l'oe_structure de la page. -->
+<template id="page_rubrique" name="Rubrique">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="pt40 pb16 o_cc o_cc1">
+                <div class="container">
+                    <span class="o_presse_kicker">Rubrique</span>
+                    <h1 class="mb-2">Économie</h1>
+                    <p class="lead o_presse_measure ms-0">Entreprises, emploi, filières : les chiffres
+                        et ce qu'ils cachent. Une rubrique tenue par deux journalistes.</p>
+                    <hr class="o_presse_rule o_presse_rule_strong mt-4"/>
+                </div>
+            </section>
+            <section class="s_presse_rubriques pt24 pb40 o_cc o_cc1">
+                <div class="container">
+                    <div class="o_presse_filters" role="group" aria-label="Filtrer par rubrique">
+                        <button type="button" class="o_presse_filter active" data-presse-filter="*" aria-pressed="true">Tout</button>
+                        <button type="button" class="o_presse_filter" data-presse-filter="economie" aria-pressed="false">Économie</button>
+                        <button type="button" class="o_presse_filter" data-presse-filter="culture" aria-pressed="false">Culture</button>
+                        <button type="button" class="o_presse_filter" data-presse-filter="territoires" aria-pressed="false">Territoires</button>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6 o_presse_item" data-presse-category="economie">
+                            <article class="o_presse_card">
+                                <span class="o_presse_kicker">Économie</span>
+                                <h3 class="o_presse_card_title">La filière textile relocalise un atelier de tissage</h3>
+                                <p class="mb-0">Trente emplois annoncés d'ici l'automne.</p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 o_presse_item" data-presse-category="economie">
+                            <article class="o_presse_card">
+                                <span class="o_presse_kicker">Économie</span>
+                                <h3 class="o_presse_card_title">Où part vraiment le verre trié dans l'agglomération</h3>
+                                <p class="mb-0">Nous avons suivi trois bennes pendant une semaine.</p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 o_presse_item" data-presse-category="culture">
+                            <article class="o_presse_card">
+                                <span class="o_presse_kicker">Culture</span>
+                                <h3 class="o_presse_card_title">Trois librairies indépendantes ouvrent la même semaine</h3>
+                                <p class="mb-0">Un mouvement inattendu dans une ville qui en comptait deux.</p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 o_presse_item" data-presse-category="territoires">
+                            <article class="o_presse_card">
+                                <span class="o_presse_kicker">Territoires</span>
+                                <h3 class="o_presse_card_title">Le budget participatif retenu par quatorze quartiers</h3>
+                                <p class="mb-0">Les projets lauréats seront mis en œuvre avant la fin de l'année.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="s_presse_newsletter pt32 pb40 o_cc o_cc2">
+                <div class="container">
+                    <div class="o_presse_newsletter_box">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-lg-7">
+                                <span class="o_presse_kicker">La lettre du matin</span>
+                                <h3 class="mb-1">L'essentiel de la rédaction, chaque jour à 7 heures</h3>
+                                <p class="mb-0">Trois articles, un chiffre, un rendez-vous.</p>
+                            </div>
+                            <div class="col-lg-5">
+                                <form action="#" method="post" class="d-flex flex-column flex-sm-row gap-2">
+                                    <label for="presse_rubrique_email" class="visually-hidden">Adresse e-mail</label>
+                                    <input type="email" id="presse_rubrique_email" name="email"
+                                           class="form-control" placeholder="vous@exemple.fr" required="required"/>
+                                    <button type="submit" class="btn btn-primary flex-shrink-0">S'abonner</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </t>
+</template>
+
+<template id="page_auteur" name="Auteur">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="s_presse_auteur pt40 pb24 o_cc o_cc1">
+                <div class="container">
+                    <div class="o_presse_measure">
+                        <div class="o_presse_author_box">
+                            <img src="/theme_presse/static/src/img/presse_auteur.png" alt=""
+                                 class="o_presse_author_avatar"/>
+                            <div>
+                                <span class="o_presse_kicker">L'auteure</span>
+                                <h1 class="mb-1">Camille Ferrand</h1>
+                                <p class="mb-2">Suit l'économie locale et les questions de ressources
+                                    depuis six ans. Écrit surtout des enquêtes longues.</p>
+                                <p class="o_presse_meta mb-0"><span>34 articles</span><span>Depuis 2020</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="s_presse_dossier pt24 pb40 o_cc o_cc1">
+                <div class="container">
+                    <div class="o_presse_measure">
+                        <div class="o_presse_section_title"><span>Ses derniers articles</span></div>
+                        <ol class="o_presse_dossier_list">
+                            <li class="o_presse_dossier_item">
+                                <div>
+                                    <h4 class="mb-1"><a href="#">Ce que l'atelier partagé a changé dans le quartier des Forges</a></h4>
+                                    <p class="o_presse_meta mb-0"><span>12 mars</span><span>8 min</span></p>
+                                </div>
+                            </li>
+                            <li class="o_presse_dossier_item">
+                                <div>
+                                    <h4 class="mb-1"><a href="#">La filière textile relocalise un atelier de tissage</a></h4>
+                                    <p class="o_presse_meta mb-0"><span>28 février</span><span>5 min</span></p>
+                                </div>
+                            </li>
+                            <li class="o_presse_dossier_item">
+                                <div>
+                                    <h4 class="mb-1"><a href="#">Où part vraiment le verre trié dans l'agglomération</a></h4>
+                                    <p class="o_presse_meta mb-0"><span>9 février</span><span>7 min</span></p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </t>
+</template>
+
+<record id="page_rubrique_website_page" model="theme.website.page">
+    <field name="url">/rubrique-economie</field>
+    <field name="view_id" ref="page_rubrique"/>
+    <field name="is_published" eval="True"/>
+</record>
+
+<record id="page_auteur_website_page" model="theme.website.page">
+    <field name="url">/auteur-camille-ferrand</field>
+    <field name="view_id" ref="page_auteur"/>
+    <field name="is_published" eval="True"/>
+</record>
+
+</odoo>

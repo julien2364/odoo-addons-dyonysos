@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_anim_comparateur" name="Comparateur de produits">
+    <section class="s_anim_comparateur pt48 pb48 o_cc o_cc2">
+        <div class="container">
+            <div class="mb-4">
+                <span class="o_anim_eyebrow">Comparer</span>
+                <h2 class="mb-0">Trois paniers, trois usages</h2>
+            </div>
+            <div class="o_anim_compare_pick">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="anim_cmp_a" data-anim-compare="a" checked="checked"/>
+                    <label class="form-check-label" for="anim_cmp_a">Panier matelassé</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="anim_cmp_b" data-anim-compare="b" checked="checked"/>
+                    <label class="form-check-label" for="anim_cmp_b">Corbeille en osier</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="anim_cmp_c" data-anim-compare="c" checked="checked"/>
+                    <label class="form-check-label" for="anim_cmp_c">Tapis rafraîchissant</label>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="o_anim_compare_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Caractéristique</th>
+                            <th scope="col" data-anim-column="a">Panier matelassé</th>
+                            <th scope="col" data-anim-column="b">Corbeille en osier</th>
+                            <th scope="col" data-anim-column="c">Tapis rafraîchissant</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Prix</th>
+                            <td data-anim-column="a">59,00 €</td>
+                            <td data-anim-column="b">44,00 €</td>
+                            <td data-anim-column="c">29,90 €</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Lavage</th>
+                            <td data-anim-column="a">Housse à 40°</td>
+                            <td data-anim-column="b">Éponge humide</td>
+                            <td data-anim-column="c">Éponge humide</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Tailles</th>
+                            <td data-anim-column="a">S, M, L</td>
+                            <td data-anim-column="b">M, L</td>
+                            <td data-anim-column="c">M</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Saison</th>
+                            <td data-anim-column="a">Toute l'année</td>
+                            <td data-anim-column="b">Toute l'année</td>
+                            <td data-anim-column="c">Été</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Résiste au grattage</th>
+                            <td data-anim-column="a">Oui</td>
+                            <td data-anim-column="b">Partiellement</td>
+                            <td data-anim-column="c">Non</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="small mt-3 mb-0">Décochez un produit pour le retirer du tableau.</p>
+        </div>
+    </section>
+</template>
+
+</odoo>

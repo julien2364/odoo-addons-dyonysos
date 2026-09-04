@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_presse_une_multi" name="Une multi-niveaux">
+    <section class="s_presse_une_multi pt40 pb40 o_cc o_cc1">
+        <div class="container">
+            <div class="o_presse_section_title"><span>À la une</span></div>
+            <div class="row g-4 o_presse_lead">
+                <div class="col-lg-7">
+                    <img src="/theme_presse/static/src/img/presse_lead.png" alt="" class="w-100 rounded-1"/>
+                </div>
+                <div class="col-lg-5 d-flex flex-column justify-content-center">
+                    <span class="o_presse_kicker">Enquête</span>
+                    <h2 class="o_presse_lead_title">Ce que l'atelier partagé a changé dans le quartier des Forges</h2>
+                    <p class="lead mb-2">Dix-huit mois après son ouverture, la halle accueille deux cents
+                        visiteurs par semaine. Nous y avons passé trois journées.</p>
+                    <p class="o_presse_meta mb-0"><span>Par Camille Ferrand</span><span>12 mars</span><span>8 min</span></p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <article class="o_presse_secondary">
+                        <img src="/theme_presse/static/src/img/presse_sec_1.png" alt=""/>
+                        <span class="o_presse_kicker">Économie</span>
+                        <h4>La filière textile relocalise un atelier de tissage</h4>
+                        <p class="o_presse_meta mb-0"><span>Camille Ferrand</span><span>5 min</span></p>
+                    </article>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <article class="o_presse_secondary">
+                        <img src="/theme_presse/static/src/img/presse_sec_2.png" alt=""/>
+                        <span class="o_presse_kicker">Culture</span>
+                        <h4>Trois librairies indépendantes ouvrent la même semaine</h4>
+                        <p class="o_presse_meta mb-0"><span>Noé Vasseur</span><span>4 min</span></p>
+                    </article>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <article class="o_presse_secondary">
+                        <img src="/theme_presse/static/src/img/presse_sec_3.png" alt=""/>
+                        <span class="o_presse_kicker">Territoires</span>
+                        <h4>Ligne 7 : le tracé définitif enfin arrêté</h4>
+                        <p class="o_presse_meta mb-0"><span>Salomé Perrin</span><span>3 min</span></p>
+                    </article>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <article class="o_presse_secondary">
+                        <img src="/theme_presse/static/src/img/presse_sec_4.png" alt=""/>
+                        <span class="o_presse_kicker">Sciences</span>
+                        <h4>Un capteur pour surveiller la nappe phréatique</h4>
+                        <p class="o_presse_meta mb-0"><span>Hugo Delattre</span><span>5 min</span></p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

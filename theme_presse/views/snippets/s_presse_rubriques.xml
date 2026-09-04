@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_presse_rubriques" name="Grille par rubrique">
+    <section class="s_presse_rubriques pt40 pb40 o_cc o_cc1">
+        <div class="container">
+            <div class="o_presse_section_title"><span>Toutes les rubriques</span></div>
+            <div class="o_presse_filters" role="group" aria-label="Filtrer par rubrique">
+                <button type="button" class="o_presse_filter active" data-presse-filter="*" aria-pressed="true">Tout</button>
+                <button type="button" class="o_presse_filter" data-presse-filter="economie" aria-pressed="false">Économie</button>
+                <button type="button" class="o_presse_filter" data-presse-filter="culture" aria-pressed="false">Culture</button>
+                <button type="button" class="o_presse_filter" data-presse-filter="territoires" aria-pressed="false">Territoires</button>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 o_presse_item" data-presse-category="economie">
+                    <article class="o_presse_card">
+                        <span class="o_presse_kicker">Économie</span>
+                        <h3 class="o_presse_card_title">La filière textile relocalise un atelier de tissage</h3>
+                        <p class="mb-0">Trente emplois annoncés d'ici l'automne.</p>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 o_presse_item" data-presse-category="economie">
+                    <article class="o_presse_card">
+                        <span class="o_presse_kicker">Économie</span>
+                        <h3 class="o_presse_card_title">Où part vraiment le verre trié dans l'agglomération</h3>
+                        <p class="mb-0">Nous avons suivi trois bennes pendant une semaine.</p>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 o_presse_item" data-presse-category="culture">
+                    <article class="o_presse_card">
+                        <span class="o_presse_kicker">Culture</span>
+                        <h3 class="o_presse_card_title">Trois librairies indépendantes ouvrent la même semaine</h3>
+                        <p class="mb-0">Un mouvement inattendu dans une ville qui en comptait deux.</p>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 o_presse_item" data-presse-category="culture">
+                    <article class="o_presse_card">
+                        <span class="o_presse_kicker">Culture</span>
+                        <h3 class="o_presse_card_title">Une exposition consacrée aux affiches de quartier</h3>
+                        <p class="mb-0">Deux cents pièces collectées auprès des habitants.</p>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 o_presse_item" data-presse-category="territoires">
+                    <article class="o_presse_card">
+                        <span class="o_presse_kicker">Territoires</span>
+                        <h3 class="o_presse_card_title">Le budget participatif retenu par quatorze quartiers</h3>
+                        <p class="mb-0">Les projets lauréats seront mis en œuvre avant la fin de l'année.</p>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 o_presse_item" data-presse-category="territoires">
+                    <article class="o_presse_card">
+                        <span class="o_presse_kicker">Territoires</span>
+                        <h3 class="o_presse_card_title">Ce que change la nouvelle carte scolaire</h3>
+                        <p class="mb-0">Trois secteurs redécoupés, deux cent quarante élèves concernés.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

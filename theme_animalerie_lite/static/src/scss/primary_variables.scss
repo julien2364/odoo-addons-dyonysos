@@ -1,0 +1,80 @@
+// =============================================================================
+// Thème Animalerie — palette et typographie
+// =============================================================================
+
+$o-theme-font-configs: map-merge($o-theme-font-configs, (
+    'Poppins': (
+        'family': ('Poppins', 'Trebuchet MS', sans-serif),
+        'url': 'Poppins:300,400,500,600,700',
+    ),
+    'Nunito': (
+        'family': ('Nunito', 'Trebuchet MS', sans-serif),
+        'url': 'Nunito:300,400,500,600,700,800',
+    ),
+));
+
+// Contrastes vérifiés :
+//   #2F6B3C (vert) → 6,38:1 sur blanc, 5,98:1 sur ivoire
+//   #A9502F (terracotta) → 5,42:1 sur blanc
+//   #22301F (encre) → 13,9:1 sur blanc
+$o-color-palettes: map-merge($o-color-palettes, (
+    'animalerie-nature': (
+        'o-color-1': #2F6B3C,   // vert naturel (accent principal, boutons)
+        'o-color-2': #A9502F,   // terracotta (accent secondaire, promotions)
+        'o-color-3': #FBF7F0,   // ivoire (fonds alternés)
+        'o-color-4': #FFFFFF,
+        'o-color-5': #22301F,   // encre (pied de page)
+
+        'menu': 4,
+        'footer': 5,
+        'copyright': 5,
+    ),
+    'animalerie-terre': (
+        'o-color-1': #A9502F,
+        'o-color-2': #2F6B3C,
+        'o-color-3': #F5EDE1,
+        'o-color-4': #FFFDF9,
+        'o-color-5': #2A2119,
+
+        'menu': 4,
+        'footer': 5,
+        'copyright': 5,
+    ),
+));
+$o-selected-color-palettes-names: join(
+    ('animalerie-nature', 'animalerie-terre'), $o-selected-color-palettes-names, comma);
+
+$o-website-values-palettes: (
+    (
+        'color-palettes-name': 'animalerie-nature',
+
+        'font': 'Nunito',
+        'headings-font': 'Poppins',
+        'navbar-font': 'Poppins',
+        'buttons-font': 'Poppins',
+
+        'body-line-height': 1.7,
+        'headings-line-height': 1.2,
+        'paragraph-margin-bottom': 18px,
+
+        'btn-border-radius': 2rem,
+        'btn-border-radius-sm': 2rem,
+        'btn-border-radius-lg': 2rem,
+        'btn-padding-y': 0.7rem,
+        'btn-padding-x': 1.7rem,
+
+        'input-border-radius': 1rem,
+
+        'link-underline': 'hover',
+        'header-template': 'default',
+        'header-links-style': 'default',
+        'footer-template': 'default',
+        'layout': 'full',
+    ),
+);
+$o-website-values-palette-number: 1;
+
+$o-theme-h1-font-size-multiplier: 2.9;
+$o-theme-h2-font-size-multiplier: 2.1;
+$o-theme-h3-font-size-multiplier: 1.55;
+$o-theme-h4-font-size-multiplier: 1.25;

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="animalerie_snippets" inherit_id="website.snippets" name="Blocs Animalerie">
+    <xpath expr="//t[@id='installed_snippets_hook']" position="before">
+        <t snippet-group="animalerie" t-snippet="website.s_snippet_group" string="Animalerie"
+           t-thumbnail="/theme_animalerie_lite/static/src/img/snippets_thumbs/anim_group.png"/>
+    </xpath>
+    <xpath expr="//snippets[@id='snippet_structure']" position="inside">
+        <t t-snippet="theme_animalerie_lite.s_anim_accueil" string="Accueil boutique" group="animalerie"
+           t-thumbnail="/theme_animalerie_lite/static/src/img/snippets_thumbs/s_anim_accueil.png">
+            <keywords>accueil, boutique, hero, categories, animalerie, vitrine</keywords>
+        </t>
+        <t t-snippet="theme_animalerie_lite.s_anim_produits" string="Grille de produits" group="animalerie"
+           t-thumbnail="/theme_animalerie_lite/static/src/img/snippets_thumbs/s_anim_produits.png">
+            <keywords>produits, grille, cartes, selection, prix, boutique</keywords>
+        </t>
+        <t t-snippet="theme_animalerie_lite.s_anim_reassurance" string="Bandeau de réassurance" group="animalerie"
+           t-thumbnail="/theme_animalerie_lite/static/src/img/snippets_thumbs/s_anim_reassurance.png">
+            <keywords>reassurance, livraison, retours, paiement, confiance, garanties</keywords>
+        </t>
+    </xpath>
+</template>
+
+</odoo>

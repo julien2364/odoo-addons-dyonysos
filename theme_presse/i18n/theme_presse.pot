@@ -1,0 +1,598 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* theme_presse
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-04 08:39+0000\n"
+"PO-Revision-Date: 2026-09-04 08:39+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_fil
+msgid "<span class=\"o_presse_fil_hour\">10 h 05</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_fil
+msgid "<span class=\"o_presse_fil_hour\">11 h 42</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_fil
+msgid "<span class=\"o_presse_fil_hour\">8 h 15</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_fil
+msgid "<span class=\"o_presse_fil_hour\">9 h 20</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_rubrique
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_rubriques
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_une_multi
+msgid "<span class=\"o_presse_kicker\">Culture</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_dossier
+msgid "<span class=\"o_presse_kicker\">Dossier</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_une_multi
+msgid "<span class=\"o_presse_kicker\">Enquête</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_auteur
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_auteur
+msgid "<span class=\"o_presse_kicker\">L'auteure</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_rubrique
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_newsletter
+msgid "<span class=\"o_presse_kicker\">La lettre du matin</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_rubrique
+msgid "<span class=\"o_presse_kicker\">Rubrique</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_une_multi
+msgid "<span class=\"o_presse_kicker\">Sciences</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_rubrique
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_rubriques
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_une_multi
+msgid "<span class=\"o_presse_kicker\">Territoires</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_rubrique
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_rubriques
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_une_multi
+msgid "<span class=\"o_presse_kicker\">Économie</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_chronologie
+msgid "<span class=\"o_presse_timeline_date\">Février 2025</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_chronologie
+msgid "<span class=\"o_presse_timeline_date\">Janvier 2026</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_chronologie
+msgid "<span class=\"o_presse_timeline_date\">Mars 2024</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_chronologie
+msgid "<span class=\"o_presse_timeline_date\">Septembre 2024</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_auteur
+msgid "<span>12 mars</span><span>8 min</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_auteur
+msgid "<span>28 février</span><span>5 min</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_auteur
+msgid "<span>34 articles</span><span>Depuis 2020</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_auteur
+msgid "<span>9 février</span><span>7 min</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_une_multi
+msgid "<span>Camille Ferrand</span><span>5 min</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_dossier
+msgid "<span>Camille Ferrand</span><span>6 min</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_dossier
+msgid "<span>Camille Ferrand</span><span>8 min</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_chronologie
+msgid "<span>Chronologie</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_une_multi
+msgid "<span>Hugo Delattre</span><span>5 min</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_dossier
+msgid "<span>Hugo Delattre</span><span>7 min</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_fil
+msgid "<span>Le contexte</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_fil
+msgid "<span>Le fil</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_une_multi
+msgid "<span>Noé Vasseur</span><span>4 min</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_une_multi
+msgid "<span>Par Camille Ferrand</span><span>12 mars</span><span>8 min</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_une_multi
+msgid "<span>Salomé Perrin</span><span>3 min</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_dossier
+msgid "<span>Salomé Perrin</span><span>5 min</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_auteur
+msgid "<span>Ses derniers articles</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_rubriques
+msgid "<span>Toutes les rubriques</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_une_multi
+msgid "<span>À la une</span>"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_rubrique
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_newsletter
+msgid "Adresse e-mail"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.presse_pro_snippets
+msgid "Bandeau newsletter"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_auteur
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_auteur
+msgid "Camille Ferrand"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_rubriques
+msgid "Ce que change la nouvelle carte scolaire"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_auteur
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_une_multi
+msgid "Ce que l'atelier partagé a changé dans le quartier des Forges"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.presse_pro_snippets
+msgid "Chronologie"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_fil
+msgid "Coupure d'eau annoncée rue des Fontaines jusqu'à 18 heures"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_rubrique
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_rubriques
+msgid "Culture"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_rubriques
+msgid "Deux cents pièces collectées auprès des habitants."
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_une_multi
+msgid ""
+"Dix-huit mois après son ouverture, la halle accueille deux cents\n"
+"                        visiteurs par semaine. Nous y avons passé trois journées."
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.presse_pro_snippets
+msgid "Dossier"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.presse_pro_snippets
+msgid "Encadré auteur"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_rubrique
+msgid ""
+"Entreprises, emploi, filières : les chiffres\n"
+"                        et ce qu'ils cachent. Une rubrique tenue par deux journalistes."
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_dossier
+msgid "Et après ? Ce que dit le bail qui expire en 2028"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.presse_pro_snippets
+msgid "Fil d'actualité"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_rubrique
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_rubriques
+msgid "Filtrer par rubrique"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.presse_pro_snippets
+msgid "Grille par rubrique"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_rubrique
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_newsletter
+msgid "L'essentiel de la rédaction, chaque jour à 7 heures"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_auteur
+msgid "La contacter"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_auteur
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_rubrique
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_rubriques
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_une_multi
+msgid "La filière textile relocalise un atelier de tissage"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_dossier
+msgid "La halle des Forges, mode d'emploi"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_chronologie
+msgid ""
+"Le bilan de la première année est présenté en conseil.\n"
+"                                La revente de pièces détachées devient la troisième recette."
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_newsletter
+msgid ""
+"Le bloc est un gabarit : reliez-le à votre\n"
+"                            outil d'envoi ou au module Newsletter d'Odoo."
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_fil
+msgid ""
+"Le bloc s'utilise en colonne latérale d'une page d'accueil ou en\n"
+"                        pleine largeur sur une page dédiée au direct."
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_rubrique
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_rubriques
+msgid "Le budget participatif retenu par quatorze quartiers"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_fil
+msgid "Le conseil communautaire vote le plan vélo à main levée"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_fil
+msgid ""
+"Le fil regroupe les informations brèves de la journée. Chaque entrée peut\n"
+"                        renvoyer vers un article complet du blog ou rester autonome."
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_fil
+msgid "Le tribunal administratif rejette le recours sur la halle"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_dossier
+msgid "Les pièces détachées, nerf de la guerre"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_rubrique
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_rubriques
+msgid "Les projets lauréats seront mis en œuvre avant la fin de l'année."
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_une_multi
+msgid "Ligne 7 : le tracé définitif enfin arrêté"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.presse_blog_post_tools
+msgid "Mode lecture"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_rubrique
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_rubriques
+msgid "Nous avons suivi trois bennes pendant une semaine."
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_chronologie
+msgid "Ouverture au public"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_auteur
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_rubrique
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_rubriques
+msgid "Où part vraiment le verre trié dans l'agglomération"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_chronologie
+msgid "Première réunion publique"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_chronologie
+msgid ""
+"Quarante habitants et trois élus se retrouvent dans la halle\n"
+"                                encore vide. L'idée d'un atelier partagé est votée à main levée."
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_dossier
+msgid "Qui paie ? Le budget d'un atelier partagé, ligne à ligne"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_fil
+msgid "Rentrée : deux classes supplémentaires ouvertes aux Forges"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_dossier
+msgid "Réparer plutôt que remplacer"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_rubrique
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_newsletter
+msgid "S'abonner"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_chronologie
+msgid "Signature du bail"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_dossier
+msgid ""
+"Six mois d'enquête dans les ateliers partagés de l'agglomération,\n"
+"                    en quatre épisodes."
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_chronologie
+msgid ""
+"Six zones de travail, onze bénévoles référents, deux salariés\n"
+"                                à mi-temps financés par la subvention intercommunale."
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_auteur
+msgid ""
+"Suit l'économie locale et les questions de ressources\n"
+"                                    depuis six ans. Écrit surtout des enquêtes longues."
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_auteur
+msgid ""
+"Suit l'économie locale et les questions de ressources depuis\n"
+"                            six ans. Écrit surtout des enquêtes longues."
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_rubrique
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_rubriques
+msgid "Territoires"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_auteur
+msgid "Tous ses articles"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_rubrique
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_rubriques
+msgid "Tout"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_rubrique
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_rubriques
+msgid "Trente emplois annoncés d'ici l'automne."
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_rubrique
+msgid "Trois articles, un chiffre, un rendez-vous."
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_rubrique
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_rubriques
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_une_multi
+msgid "Trois librairies indépendantes ouvrent la même semaine"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_rubriques
+msgid "Trois secteurs redécoupés, deux cent quarante élèves concernés."
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_chronologie
+msgid "Trois tonnes détournées de la déchetterie"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_chronologie
+msgid ""
+"Un bail de quatre ans est signé avec la communauté de communes,\n"
+"                                assorti d'une clause de révision annuelle."
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_une_multi
+msgid "Un capteur pour surveiller la nappe phréatique"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_rubrique
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_rubriques
+msgid "Un mouvement inattendu dans une ville qui en comptait deux."
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_rubriques
+msgid "Une exposition consacrée aux affiches de quartier"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.presse_pro_snippets
+msgid "Une multi-niveaux"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_newsletter
+msgid ""
+"Une sélection courte : trois articles, un chiffre, un rendez-vous.\n"
+"                            Désinscription en un clic."
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.presse_pro_snippets
+msgid "auteur, signature, redaction, biographie, journaliste"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.presse_pro_snippets
+msgid "chronologie, timeline, dates, evenement, historique"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.presse_pro_snippets
+msgid "dossier, serie, episodes, enquete, feuilleton"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.presse_pro_snippets
+msgid "fil, direct, breves, live, actualite, heure"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.presse_pro_snippets
+msgid "newsletter, lettre, abonnement, email, inscription"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.presse_pro_snippets
+msgid "rubrique, filtre, categorie, grille, tri"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.presse_pro_snippets
+msgid "une, manchette, hierarchie, principal, secondaire, magazine"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_rubrique
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_newsletter
+msgid "vous@exemple.fr"
+msgstr ""
+
+#. module: theme_presse
+#: model_terms:theme.ir.ui.view,arch:theme_presse.page_rubrique
+#: model_terms:theme.ir.ui.view,arch:theme_presse.s_presse_rubriques
+msgid "Économie"
+msgstr ""

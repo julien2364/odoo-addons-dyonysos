@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_presse_grille" name="Grille d'articles">
+    <section class="s_presse_grille pt40 pb40 o_cc o_cc1">
+        <div class="container">
+            <div class="o_presse_section_title">
+                <span>Derniers articles</span>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <article class="o_presse_card">
+                        <img src="/theme_presse_lite/static/src/img/presse_card_1.png"
+                             alt="" class="o_presse_card_media"/>
+                        <span class="o_presse_kicker">Économie</span>
+                        <h3 class="o_presse_card_title">La filière textile relocalise un atelier de tissage</h3>
+                        <p class="mb-2">Trente emplois annoncés d'ici l'automne, dans un bâtiment
+                            laissé vacant depuis huit ans.</p>
+                        <p class="o_presse_meta mb-0 mt-auto"><span>Camille Ferrand</span><span>5 min</span></p>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <article class="o_presse_card">
+                        <img src="/theme_presse_lite/static/src/img/presse_card_2.png"
+                             alt="" class="o_presse_card_media"/>
+                        <span class="o_presse_kicker">Culture</span>
+                        <h3 class="o_presse_card_title">Trois librairies indépendantes ouvrent la même semaine</h3>
+                        <p class="mb-2">Un mouvement inattendu dans une ville qui en comptait deux
+                            il y a encore cinq ans.</p>
+                        <p class="o_presse_meta mb-0 mt-auto"><span>Noé Vasseur</span><span>4 min</span></p>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <article class="o_presse_card">
+                        <img src="/theme_presse_lite/static/src/img/presse_card_3.png"
+                             alt="" class="o_presse_card_media"/>
+                        <span class="o_presse_kicker">Territoires</span>
+                        <h3 class="o_presse_card_title">Le budget participatif retenu par quatorze quartiers</h3>
+                        <p class="mb-2">Les projets lauréats seront mis en œuvre avant la fin
+                            de l'année.</p>
+                        <p class="o_presse_meta mb-0 mt-auto"><span>Salomé Perrin</span><span>6 min</span></p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

@@ -1,0 +1,22 @@
+// =============================================================================
+// Thème Presse pro — variables complémentaires
+// Le socle (palettes, polices, échelle typographique) vient de
+// theme_presse_lite/static/src/scss/primary_variables.scss, redéclaré dans le
+// manifeste de ce module : voir le commentaire du manifeste.
+// =============================================================================
+
+// Palette supplémentaire, réservée à la version pro : fond crème dominant.
+$o-color-palettes: map-merge($o-color-palettes, (
+    'presse-creme': (
+        'o-color-1': #9E2B1F,   // 6,3:1 sur crème
+        'o-color-2': #2B2622,
+        'o-color-3': #F3EDE3,
+        'o-color-4': #FBF8F3,
+        'o-color-5': #17140F,
+
+        'menu': 4,
+        'footer': 5,
+        'copyright': 5,
+    ),
+));
+$o-selected-color-palettes-names: join(('presse-creme',), $o-selected-color-palettes-names, comma);

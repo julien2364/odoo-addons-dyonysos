@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Pages de démonstration. Dans un module theme_*, <template> devient
+     une theme.ir.ui.view et la page une theme.website.page : elles ne
+     sont créées dans le site qu'à l'application du thème. Le markup est
+     volontairement dupliqué depuis views/snippets/ pour que les sections
+     soient éditables dans l'oe_structure de la page. -->
+
+<template id="page_boutique" name="Boutique">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="s_anim_accueil pt48 pb48 o_cc o_cc1">
+                    <div class="container">
+                        <div class="o_anim_hero_box o_cc o_cc3">
+                            <div class="row g-0 align-items-stretch">
+                                <div class="col-lg-6 p-4 p-lg-5 d-flex flex-column justify-content-center">
+                                    <span class="o_anim_eyebrow">Trèfle &amp; Museau</span>
+                                    <h1 class="mb-3">De quoi bien nourrir, bien coucher et bien occuper vos animaux</h1>
+                                    <p class="lead mb-4">Une sélection courte et assumée : quatre-vingts références,
+                                        toutes testées, aucune n'est là pour remplir le rayon.</p>
+                                    <div class="d-flex flex-wrap gap-3">
+                                        <a href="/shop" class="btn btn-primary btn-lg">Voir la boutique</a>
+                                        <a href="#" class="btn btn-outline-primary btn-lg">Nos conseils</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <img src="/theme_animalerie_lite/static/src/img/anim_hero.png" alt=""
+                                         class="o_anim_hero_media"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4 mt-1">
+                            <div class="col-md-4">
+                                <a href="/shop" class="o_anim_product_card text-decoration-none text-reset">
+                                    <img src="/theme_animalerie_lite/static/src/img/anim_cat_chiens.png" alt=""/>
+                                    <div class="o_anim_product_body">
+                                        <h3 class="h5 mb-1">Chiens</h3>
+                                        <p class="mb-0">Alimentation, couchage, promenade.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="/shop" class="o_anim_product_card text-decoration-none text-reset">
+                                    <img src="/theme_animalerie_lite/static/src/img/anim_cat_chats.png" alt=""/>
+                                    <div class="o_anim_product_body">
+                                        <h3 class="h5 mb-1">Chats</h3>
+                                        <p class="mb-0">Griffoirs, fontaines, pâtées sans additifs.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="/shop" class="o_anim_product_card text-decoration-none text-reset">
+                                    <img src="/theme_animalerie_lite/static/src/img/anim_cat_petits.png" alt=""/>
+                                    <div class="o_anim_product_body">
+                                        <h3 class="h5 mb-1">Petits animaux</h3>
+                                        <p class="mb-0">Habitats, foin, accessoires silencieux.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <section class="s_anim_reassurance pt32 pb32 o_cc o_cc1">
+                    <div class="container">
+                        <div class="row g-4">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="o_anim_trust">
+                                    <span class="o_anim_trust_icon" aria-hidden="true">
+                                        <i class="fa fa-truck"/>
+                                    </span>
+                                    <div>
+                                        <p class="o_anim_trust_title mb-1">Livraison en 48 h</p>
+                                        <p class="small mb-0">Offerte dès 49 € d'achat, suivi par SMS.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="o_anim_trust">
+                                    <span class="o_anim_trust_icon" aria-hidden="true">
+                                        <i class="fa fa-undo"/>
+                                    </span>
+                                    <div>
+                                        <p class="o_anim_trust_title mb-1">Retours sous 30 jours</p>
+                                        <p class="small mb-0">Emballage ouvert accepté, sauf alimentation entamée.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="o_anim_trust">
+                                    <span class="o_anim_trust_icon" aria-hidden="true">
+                                        <i class="fa fa-lock"/>
+                                    </span>
+                                    <div>
+                                        <p class="o_anim_trust_title mb-1">Paiement sécurisé</p>
+                                        <p class="small mb-0">Carte, virement et paiement en trois fois.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="o_anim_trust">
+                                    <span class="o_anim_trust_icon" aria-hidden="true">
+                                        <i class="fa fa-comments-o"/>
+                                    </span>
+                                    <div>
+                                        <p class="o_anim_trust_title mb-1">Un conseil, une réponse</p>
+                                        <p class="small mb-0">Du lundi au samedi, par téléphone ou par e-mail.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <section class="s_anim_produits pt48 pb48 o_cc o_cc2">
+                    <div class="container">
+                        <div class="d-flex flex-wrap align-items-end justify-content-between gap-3 mb-4">
+                            <div>
+                                <span class="o_anim_eyebrow">Sélection</span>
+                                <h2 class="mb-0">Ce qui part le plus vite</h2>
+                            </div>
+                            <a href="/shop" class="btn btn-outline-primary">Toute la boutique</a>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-lg-3 col-md-6">
+                                <article class="o_anim_product_card">
+                                    <img src="/theme_animalerie_lite/static/src/img/products/prod_01.png" alt=""/>
+                                    <div class="o_anim_product_body">
+                                        <span class="o_anim_pill">Chiens</span>
+                                        <h3 class="h6 mt-2 mb-1">Gamelle inclinée en grès</h3>
+                                        <p class="small mb-2">Grès émaillé, 900 ml, passe au lave-vaisselle.</p>
+                                        <p class="o_anim_product_price mb-0">24,90 €</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <article class="o_anim_product_card">
+                                    <img src="/theme_animalerie_lite/static/src/img/products/prod_05.png" alt=""/>
+                                    <div class="o_anim_product_body">
+                                        <span class="o_anim_pill">Chats</span>
+                                        <h3 class="h6 mt-2 mb-1">Griffoir vertical en sisal</h3>
+                                        <p class="small mb-2">Sisal naturel sur socle lesté, 62 cm.</p>
+                                        <p class="o_anim_product_price mb-0">36,00 €</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <article class="o_anim_product_card">
+                                    <img src="/theme_animalerie_lite/static/src/img/products/prod_09.png" alt=""/>
+                                    <div class="o_anim_product_body">
+                                        <span class="o_anim_pill">Petits animaux</span>
+                                        <h3 class="h6 mt-2 mb-1">Cage à barreaux pour rongeur</h3>
+                                        <p class="small mb-2">80 × 45 × 50 cm, bac profond de 18 cm.</p>
+                                        <p class="o_anim_product_price mb-0">74,00 €</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <article class="o_anim_product_card">
+                                    <img src="/theme_animalerie_lite/static/src/img/products/prod_04.png" alt=""/>
+                                    <div class="o_anim_product_body">
+                                        <span class="o_anim_pill o_anim_pill_promo">-10 %</span>
+                                        <h3 class="h6 mt-2 mb-1">Croquettes sans céréales, poulet</h3>
+                                        <p class="small mb-2">Sac de 8 kg, 68 % de viande fraîche.</p>
+                                        <p class="o_anim_product_price mb-0">42,00 €</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        </div>
+    </t>
+</template>
+
+<record id="page_boutique_website_page" model="theme.website.page">
+    <field name="url">/notre-boutique</field>
+    <field name="view_id" ref="page_boutique"/>
+    <field name="is_published" eval="True"/>
+</record>
+
+</odoo>

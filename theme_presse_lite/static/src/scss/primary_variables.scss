@@ -1,0 +1,92 @@
+// =============================================================================
+// Thème Presse — palette et typographie
+// Ce fichier alimente le bundle web._assets_primary_variables : il ne contient
+// que des variables SCSS, jamais de règles CSS.
+// =============================================================================
+
+// -- Polices ------------------------------------------------------------------
+// Playfair Display n'est pas fournie par Odoo : on l'ajoute à la carte des
+// polices du thème. Inter est déjà déclarée par le module website.
+$o-theme-font-configs: map-merge($o-theme-font-configs, (
+    'Playfair Display': (
+        'family': ('Playfair Display', Georgia, 'Times New Roman', serif),
+        'url': 'Playfair+Display:400,400i,500,600,700,700i,800,900',
+    ),
+    'Source Serif 4': (
+        'family': ('Source Serif 4', Georgia, serif),
+        'url': 'Source+Serif+4:300,400,400i,600,700',
+    ),
+));
+
+// -- Palettes -----------------------------------------------------------------
+// Contrastes vérifiés sur fond blanc et sur fond crème :
+//   #B3121D → 6,95:1 (blanc) et 6,56:1 (crème)
+//   #1F2933 → 14,76:1 (blanc) et 13,93:1 (crème)
+$o-color-palettes: map-merge($o-color-palettes, (
+    'presse-editorial': (
+        'o-color-1': #B3121D,   // rouge éditorial (accent, liens, rubriques)
+        'o-color-2': #1F2933,   // anthracite (texte, en-tête)
+        'o-color-3': #FBF8F3,   // crème (fonds alternés)
+        'o-color-4': #FFFFFF,   // blanc
+        'o-color-5': #111417,   // noir (pied de page)
+
+        'menu': 4,
+        'footer': 5,
+        'copyright': 5,
+    ),
+    'presse-nuit': (
+        'o-color-1': #E2564F,
+        'o-color-2': #F4F1EC,
+        'o-color-3': #1B1E24,
+        'o-color-4': #14171C,
+        'o-color-5': #0B0D10,
+
+        'menu': 4,
+        'footer': 5,
+        'copyright': 5,
+    ),
+));
+$o-selected-color-palettes-names: join(
+    ('presse-editorial', 'presse-nuit'), $o-selected-color-palettes-names, comma);
+
+// -- Valeurs du site ----------------------------------------------------------
+$o-website-values-palettes: (
+    (
+        'color-palettes-name': 'presse-editorial',
+
+        'font': 'Inter',
+        'headings-font': 'Playfair Display',
+        'navbar-font': 'Inter',
+        'buttons-font': 'Inter',
+
+        'body-line-height': 1.65,
+        'headings-line-height': 1.12,
+        'paragraph-margin-bottom': 20px,
+        'headings-margin-bottom': 0.6rem,
+        'small-font-size': 0.8125rem,
+
+        'btn-border-radius': 0.125rem,
+        'btn-border-radius-sm': 0.125rem,
+        'btn-border-radius-lg': 0.125rem,
+        'btn-padding-y': 0.6rem,
+        'btn-padding-x': 1.4rem,
+        'btn-font-size': 0.9375rem,
+
+        'input-border-radius': 0.125rem,
+
+        'link-underline': 'hover',
+        'header-template': 'default',
+        'header-links-style': 'default',
+        'footer-template': 'default',
+        'layout': 'full',
+    ),
+);
+$o-website-values-palette-number: 1;
+
+// Échelle typographique éditoriale : écart marqué entre les niveaux.
+$o-theme-h1-font-size-multiplier: 3.4;
+$o-theme-h2-font-size-multiplier: 2.4;
+$o-theme-h3-font-size-multiplier: 1.75;
+$o-theme-h4-font-size-multiplier: 1.35;
+$o-theme-h5-font-size-multiplier: 1.15;
+$o-theme-h6-font-size-multiplier: 1;

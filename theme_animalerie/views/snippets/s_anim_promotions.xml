@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_anim_promotions" name="Mise en avant de promotions">
+    <section class="s_anim_promotions pt40 pb48 o_cc o_cc1">
+        <div class="container">
+            <div class="o_anim_promo_box o_cc o_cc3">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6">
+                        <span class="o_anim_promo_badge">-15 % jusqu'à dimanche</span>
+                        <h2 class="mt-3 mb-2">Semaine du couchage</h2>
+                        <p class="mb-4">Tous les paniers, coussins et housses de rechange, dans les
+                            quatre tailles. Remise appliquée directement au panier.</p>
+                        <a href="/shop" class="btn btn-primary btn-lg">Voir les couchages</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <article class="o_anim_product_card">
+                                    <img src="/theme_animalerie_lite/static/src/img/products/prod_02.png" alt=""/>
+                                    <div class="o_anim_product_body">
+                                        <h3 class="h6 mb-1">Panier matelassé</h3>
+                                        <p class="o_anim_product_price mb-0">
+                                            <span class="o_anim_price_old">59,00 €</span>50,15 €</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-6">
+                                <article class="o_anim_product_card">
+                                    <img src="/theme_animalerie_lite/static/src/img/products/prod_07.png" alt=""/>
+                                    <div class="o_anim_product_body">
+                                        <h3 class="h6 mb-1">Arbre à chat compact</h3>
+                                        <p class="o_anim_product_price mb-0">
+                                            <span class="o_anim_price_old">89,00 €</span>75,65 €</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

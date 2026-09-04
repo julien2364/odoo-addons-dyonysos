@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_anim_reassurance" name="Bandeau de réassurance">
+    <section class="s_anim_reassurance pt32 pb32 o_cc o_cc1">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="o_anim_trust">
+                        <span class="o_anim_trust_icon" aria-hidden="true">
+                            <i class="fa fa-truck"/>
+                        </span>
+                        <div>
+                            <p class="o_anim_trust_title mb-1">Livraison en 48 h</p>
+                            <p class="small mb-0">Offerte dès 49 € d'achat, suivi par SMS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="o_anim_trust">
+                        <span class="o_anim_trust_icon" aria-hidden="true">
+                            <i class="fa fa-undo"/>
+                        </span>
+                        <div>
+                            <p class="o_anim_trust_title mb-1">Retours sous 30 jours</p>
+                            <p class="small mb-0">Emballage ouvert accepté, sauf alimentation entamée.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="o_anim_trust">
+                        <span class="o_anim_trust_icon" aria-hidden="true">
+                            <i class="fa fa-lock"/>
+                        </span>
+                        <div>
+                            <p class="o_anim_trust_title mb-1">Paiement sécurisé</p>
+                            <p class="small mb-0">Carte, virement et paiement en trois fois.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="o_anim_trust">
+                        <span class="o_anim_trust_icon" aria-hidden="true">
+                            <i class="fa fa-comments-o"/>
+                        </span>
+                        <div>
+                            <p class="o_anim_trust_title mb-1">Un conseil, une réponse</p>
+                            <p class="small mb-0">Du lundi au samedi, par téléphone ou par e-mail.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

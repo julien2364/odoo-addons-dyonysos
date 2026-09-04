@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_voyage_departs" name="Calendrier de départs">
+    <section class="s_voyage_departs pt40 pb48 o_cc o_cc1">
+        <div class="container">
+            <div class="mb-4">
+                <span class="o_voyage_eyebrow">Départs</span>
+                <h2 class="mb-0">Prochaines dates garanties</h2>
+            </div>
+            <div class="table-responsive">
+                <table class="o_voyage_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Dates</th>
+                            <th scope="col">Itinéraire</th>
+                            <th scope="col">Places</th>
+                            <th scope="col">Prix</th>
+                            <th scope="col"><span class="visually-hidden">Réserver</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>18 – 24 mai</td>
+                            <td>Les crêtes de Vantour</td>
+                            <td><span class="o_voyage_status is-open">7 places</span></td>
+                            <td>890 €</td>
+                            <td><a href="#" class="btn btn-primary btn-sm">Réserver</a></td>
+                        </tr>
+                        <tr>
+                            <td>8 – 12 juin</td>
+                            <td>La boucle des marais</td>
+                            <td><span class="o_voyage_status is-few">2 places</span></td>
+                            <td>640 €</td>
+                            <td><a href="#" class="btn btn-primary btn-sm">Réserver</a></td>
+                        </tr>
+                        <tr>
+                            <td>6 – 21 juillet</td>
+                            <td>Traversée des hauts plateaux</td>
+                            <td><span class="o_voyage_status is-full">Complet</span></td>
+                            <td>1 480 €</td>
+                            <td><a href="#" class="btn btn-outline-primary btn-sm">Liste d'attente</a></td>
+                        </tr>
+                        <tr>
+                            <td>14 – 19 septembre</td>
+                            <td>Vignes et villages hauts</td>
+                            <td><span class="o_voyage_status is-open">9 places</span></td>
+                            <td>760 €</td>
+                            <td><a href="#" class="btn btn-primary btn-sm">Réserver</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

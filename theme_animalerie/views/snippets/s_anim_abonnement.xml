@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_anim_abonnement" name="Abonnement et livraison récurrente">
+    <section class="s_anim_abonnement pt48 pb48 o_cc o_cc1">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="o_anim_eyebrow">Abonnement</span>
+                <h2 class="mb-2">La litière et les croquettes arrivent toutes seules</h2>
+                <p class="mb-0">Modifiable ou suspendable à tout moment, sans durée d'engagement.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="o_anim_plan">
+                        <h3 class="h5 mb-0">Tous les deux mois</h3>
+                        <p class="o_anim_plan_price">-5 %</p>
+                        <ul>
+                            <li><span class="o_anim_check" aria-hidden="true">✓</span><span>Livraison offerte dès 39 €</span></li>
+                            <li><span class="o_anim_check" aria-hidden="true">✓</span><span>Rappel cinq jours avant l'envoi</span></li>
+                            <li><span class="o_anim_check" aria-hidden="true">✓</span><span>Modification en un clic</span></li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary">Choisir</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="o_anim_plan o_anim_plan_featured">
+                        <span class="o_anim_pill">Le plus choisi</span>
+                        <h3 class="h5 mb-0 mt-2">Tous les mois</h3>
+                        <p class="o_anim_plan_price">-10 %</p>
+                        <ul>
+                            <li><span class="o_anim_check" aria-hidden="true">✓</span><span>Livraison toujours offerte</span></li>
+                            <li><span class="o_anim_check" aria-hidden="true">✓</span><span>Changement de recette libre</span></li>
+                            <li><span class="o_anim_check" aria-hidden="true">✓</span><span>Suspension jusqu'à trois mois</span></li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Choisir</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="o_anim_plan">
+                        <h3 class="h5 mb-0">Toutes les deux semaines</h3>
+                        <p class="o_anim_plan_price">-12 %</p>
+                        <ul>
+                            <li><span class="o_anim_check" aria-hidden="true">✓</span><span>Pour les foyers à plusieurs animaux</span></li>
+                            <li><span class="o_anim_check" aria-hidden="true">✓</span><span>Livraison offerte</span></li>
+                            <li><span class="o_anim_check" aria-hidden="true">✓</span><span>Un interlocuteur dédié</span></li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary">Choisir</a>
+                    </div>
+                </div>
+            </div>
+            <p class="small text-center mt-4 mb-0">Bloc de présentation : la récurrence réelle se gère
+                avec le module Abonnements d'Odoo ou votre outil de facturation.</p>
+        </div>
+    </section>
+</template>
+
+</odoo>

@@ -1,0 +1,326 @@
+// =============================================================================
+// Thème Voyage pro — blocs supplémentaires
+// =============================================================================
+$o-voyage-radius: 1.25rem;
+$o-voyage-shadow: 0 .75rem 2rem rgba(18, 58, 94, .12);
+
+// -------------------------------------------------- carte d'itinéraire
+.s_voyage_itineraire {
+    .o_voyage_steps {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 1.1rem;
+            top: .8rem;
+            bottom: .8rem;
+            width: 2px;
+            background: rgba(18, 58, 94, .18);
+        }
+    }
+
+    .o_voyage_step {
+        position: relative;
+        padding: 0 0 1.6rem 3rem;
+
+        &::before {
+            content: counter(voyage-step);
+            counter-increment: voyage-step;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2.2rem;
+            height: 2.2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: .9rem;
+            color: #FFFFFF;
+            background: o-color('o-color-1');
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+    .o_voyage_steps {
+        counter-reset: voyage-step;
+    }
+
+    .o_voyage_step_meta {
+        font-size: .82rem;
+        font-weight: 600;
+        letter-spacing: .04em;
+        text-transform: uppercase;
+        color: o-color('o-color-1');
+    }
+}
+
+// ------------------------------------------------------ galerie mosaïque
+.s_voyage_galerie {
+    .o_voyage_mosaic {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 10rem;
+        gap: .75rem;
+
+        @include media-breakpoint-down(md) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 8rem;
+        }
+    }
+
+    .o_voyage_tile {
+        display: block;
+        border: 0;
+        padding: 0;
+        border-radius: $o-voyage-radius;
+        overflow: hidden;
+        cursor: zoom-in;
+        background: none;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .35s ease;
+        }
+
+        &:hover img,
+        &:focus-visible img {
+            transform: scale(1.04);
+        }
+
+        &.o_voyage_tile_wide {
+            grid-column: span 2;
+        }
+
+        &.o_voyage_tile_tall {
+            grid-row: span 2;
+        }
+    }
+}
+
+.o_voyage_lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: rgba(8, 17, 26, .92);
+
+    img {
+        // libsass évalue min() comme sa propre fonction : on protège la valeur CSS.
+        max-width: #{"min(92vw, 1200px)"};
+        max-height: 86vh;
+        border-radius: $o-voyage-radius;
+    }
+
+    .o_voyage_lightbox_close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        border: 0;
+        border-radius: 50%;
+        width: 2.75rem;
+        height: 2.75rem;
+        font-size: 1.4rem;
+        line-height: 1;
+        color: #0E1922;
+        background: #FFFFFF;
+        cursor: pointer;
+    }
+}
+
+// ---------------------------------------------------- fiche destination
+.s_voyage_fiche {
+    .o_voyage_facts {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+
+        @include media-breakpoint-down(md) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .o_voyage_fact {
+        border-radius: $o-voyage-radius;
+        padding: 1.1rem 1.25rem;
+        background: o-color('o-color-3');
+
+        dt {
+            font-size: .74rem;
+            font-weight: 600;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            opacity: .7;
+            margin-bottom: .3rem;
+        }
+
+        dd {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1.15rem;
+        }
+    }
+
+    .o_voyage_level {
+        display: flex;
+        gap: .25rem;
+        margin-top: .35rem;
+
+        span {
+            width: 1.5rem;
+            height: .35rem;
+            border-radius: 1rem;
+            background: rgba(18, 58, 94, .2);
+
+            &.is-on {
+                background: o-color('o-color-1');
+            }
+        }
+    }
+}
+
+// ---------------------------------------------------------- témoignages
+.s_voyage_temoignages {
+    .o_voyage_quote {
+        border-radius: $o-voyage-radius;
+        padding: 1.5rem;
+        background: o-color('o-color-4');
+        box-shadow: $o-voyage-shadow;
+        height: 100%;
+
+        blockquote {
+            margin: 0 0 1rem;
+            font-size: 1.06rem;
+            line-height: 1.55;
+        }
+    }
+
+    .o_voyage_quote_author {
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+        font-size: .9rem;
+
+        img {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+}
+
+// ------------------------------------------------------ calendrier départs
+.s_voyage_departs {
+    .o_voyage_table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0 .5rem;
+
+        th {
+            font-size: .74rem;
+            font-weight: 600;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            opacity: .7;
+            padding: 0 1rem .35rem;
+            text-align: left;
+        }
+
+        td {
+            background: o-color('o-color-4');
+            padding: .9rem 1rem;
+            vertical-align: middle;
+
+            &:first-child {
+                border-radius: $o-voyage-radius 0 0 $o-voyage-radius;
+            }
+
+            &:last-child {
+                border-radius: 0 $o-voyage-radius $o-voyage-radius 0;
+                text-align: right;
+            }
+        }
+    }
+
+    .o_voyage_status {
+        display: inline-block;
+        border-radius: 2rem;
+        padding: .15rem .7rem;
+        font-size: .78rem;
+        font-weight: 600;
+
+        &.is-open {
+            background: rgba(47, 107, 60, .14);
+            color: #24552F;
+        }
+
+        &.is-few {
+            background: rgba(168, 69, 42, .14);
+            color: #8C3822;
+        }
+
+        &.is-full {
+            background: rgba(18, 58, 94, .12);
+            color: #123A5E;
+        }
+    }
+}
+
+// ------------------------------------------------------------ devis
+.s_voyage_devis {
+    .o_voyage_form_box {
+        border-radius: $o-voyage-radius;
+        padding: clamp(1.5rem, calc(1rem + 1.6vw), 2.5rem);
+        box-shadow: $o-voyage-shadow;
+    }
+}
+
+// ------------------------------------------------------- carnet de bord
+.s_voyage_carnet {
+    .o_voyage_log {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .o_voyage_log_item {
+        display: grid;
+        grid-template-columns: 8rem 1fr;
+        gap: 1.5rem;
+        padding: 1.35rem 0;
+        border-top: 1px solid rgba(18, 58, 94, .14);
+
+        @include media-breakpoint-down(md) {
+            grid-template-columns: 1fr;
+            gap: .35rem;
+        }
+    }
+
+    .o_voyage_log_day {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        color: o-color('o-color-1');
+    }
+
+    .o_voyage_log_media {
+        border-radius: $o-voyage-radius;
+        width: 100%;
+        margin-top: .75rem;
+    }
+}

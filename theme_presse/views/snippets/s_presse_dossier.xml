@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_presse_dossier" name="Dossier">
+    <section class="s_presse_dossier pt40 pb40 o_cc o_cc2">
+        <div class="container">
+            <div class="o_presse_dossier_head">
+                <span class="o_presse_kicker">Dossier</span>
+                <h2 class="mb-1">Réparer plutôt que remplacer</h2>
+                <p class="mb-0">Six mois d'enquête dans les ateliers partagés de l'agglomération,
+                    en quatre épisodes.</p>
+            </div>
+            <ol class="o_presse_dossier_list">
+                <li class="o_presse_dossier_item">
+                    <div>
+                        <h4 class="mb-1"><a href="#">La halle des Forges, mode d'emploi</a></h4>
+                        <p class="o_presse_meta mb-0"><span>Camille Ferrand</span><span>8 min</span></p>
+                    </div>
+                </li>
+                <li class="o_presse_dossier_item">
+                    <div>
+                        <h4 class="mb-1"><a href="#">Qui paie ? Le budget d'un atelier partagé, ligne à ligne</a></h4>
+                        <p class="o_presse_meta mb-0"><span>Camille Ferrand</span><span>6 min</span></p>
+                    </div>
+                </li>
+                <li class="o_presse_dossier_item">
+                    <div>
+                        <h4 class="mb-1"><a href="#">Les pièces détachées, nerf de la guerre</a></h4>
+                        <p class="o_presse_meta mb-0"><span>Hugo Delattre</span><span>7 min</span></p>
+                    </div>
+                </li>
+                <li class="o_presse_dossier_item">
+                    <div>
+                        <h4 class="mb-1"><a href="#">Et après ? Ce que dit le bail qui expire en 2028</a></h4>
+                        <p class="o_presse_meta mb-0"><span>Salomé Perrin</span><span>5 min</span></p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+</template>
+
+</odoo>

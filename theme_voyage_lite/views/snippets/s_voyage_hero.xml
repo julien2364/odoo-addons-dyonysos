@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_voyage_hero" name="Bandeau d'accueil">
+    <section class="s_voyage_hero"
+             style="background-image: url('/theme_voyage_lite/static/src/img/voyage_hero.png');">
+        <div class="container py-5">
+            <span class="o_voyage_eyebrow">Itinéraires accompagnés</span>
+            <h1 class="mb-3">Prenez le temps long, du col de Vantour aux rives de la Sèvre</h1>
+            <p class="lead mb-4">Douze itinéraires conçus à pied, en train et à vélo, entre quatre et
+                seize jours, avec des hébergements choisis un par un.</p>
+            <div class="d-flex flex-wrap gap-3">
+                <a href="#" class="btn btn-primary btn-lg">Voir les itinéraires</a>
+                <a href="#" class="btn btn-outline-light btn-lg">Demander un devis</a>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

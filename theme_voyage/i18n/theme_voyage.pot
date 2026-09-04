@@ -1,0 +1,818 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* theme_voyage
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-04 08:39+0000\n"
+"PO-Revision-Date: 2026-09-04 08:39+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_departs
+msgid "14 – 19 septembre"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_departs
+msgid "18 – 24 mai"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_departs
+msgid "6 – 21 juillet"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_fiche
+msgid "7 jours"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_departs
+msgid "8 – 12 juin"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_fiche
+msgid "890 € / personne"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_carnet
+msgid "<span class=\"o_voyage_eyebrow\">Carnet de bord</span>"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_departs
+msgid "<span class=\"o_voyage_eyebrow\">Départs</span>"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_fiche
+msgid "<span class=\"o_voyage_eyebrow\">En bref</span>"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_galerie
+msgid "<span class=\"o_voyage_eyebrow\">Galerie</span>"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_temoignages
+msgid "<span class=\"o_voyage_eyebrow\">Ils y sont allés</span>"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_itineraire
+msgid "<span class=\"o_voyage_eyebrow\">Itinéraire</span>"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_devis
+msgid "<span class=\"o_voyage_eyebrow\">Sur mesure</span>"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_carnet
+msgid "<span class=\"o_voyage_log_day\">Jour 1</span>"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_carnet
+msgid "<span class=\"o_voyage_log_day\">Jour 2</span>"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_carnet
+msgid "<span class=\"o_voyage_log_day\">Jour 3</span>"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_carnet
+msgid "<span class=\"o_voyage_log_day\">Jour 4</span>"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_departs
+msgid "<span class=\"o_voyage_status is-few\">2 places</span>"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_departs
+msgid "<span class=\"o_voyage_status is-full\">Complet</span>"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_departs
+msgid "<span class=\"o_voyage_status is-open\">7 places</span>"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_departs
+msgid "<span class=\"o_voyage_status is-open\">9 places</span>"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_departs
+msgid "<span class=\"visually-hidden\">Réserver</span>"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_temoignages
+msgid ""
+"<strong>Anne-Laure P.</strong><br/><span class=\"opacity-75\">Boucle des "
+"marais, septembre</span>"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_temoignages
+msgid ""
+"<strong>Karim B.</strong><br/><span class=\"opacity-75\">Hauts plateaux, "
+"août</span>"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_temoignages
+msgid ""
+"<strong>Élise M.</strong><br/><span class=\"opacity-75\">Crêtes de Vantour, "
+"juin</span>"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_galerie
+msgid "Agrandir la photo 1"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_galerie
+msgid "Agrandir la photo 2"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_galerie
+msgid "Agrandir la photo 3"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_galerie
+msgid "Agrandir la photo 4"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_galerie
+msgid "Agrandir la photo 5"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+msgid ""
+"Aller-retour possible vers le lac, ou rien du tout.\n"
+"                                            La journée est volontairement vide."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_itineraire
+msgid ""
+"Aller-retour possible vers le lac, ou rien du tout.\n"
+"                                La journée est volontairement vide."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_fiche
+msgid "Budget indicatif"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.voyage_pro_snippets
+msgid "Calendrier de départs"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.voyage_pro_snippets
+msgid "Carnet de bord"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.voyage_pro_snippets
+msgid "Carte d'itinéraire"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_carnet
+msgid "Ce qu'on a noté le soir"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+msgid ""
+"Changement d'ambiance : hêtraie, sources et un col\n"
+"                                            à franchir avant la descente."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_itineraire
+msgid ""
+"Changement d'ambiance : hêtraie, sources et un col\n"
+"                                à franchir avant la descente."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+msgid ""
+"Corniche prise tôt, vent nul. Passage délicat sur cinquante\n"
+"                                        mètres, câble en bon état. Descente ensuite sans difficulté."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_carnet
+msgid ""
+"Corniche prise tôt, vent nul. Passage délicat sur cinquante\n"
+"                            mètres, câble en bon état. Descente ensuite sans difficulté."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_departs
+msgid "Dates"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_itineraire
+msgid "De la gare au hameau des Granges"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.voyage_pro_snippets
+msgid "Demande de devis"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+msgid ""
+"Dernier col au petit matin, puis quinze kilomètres\n"
+"                                            de descente jusqu'au village."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_itineraire
+msgid ""
+"Dernier col au petit matin, puis quinze kilomètres\n"
+"                                de descente jusqu'au village."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_galerie
+msgid "Descente vers la vallée"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_fiche
+msgid "Difficulté"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_fiche
+msgid "Difficulté : 3 sur 4"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_devis
+msgid "Dites-nous ce que vous cherchez"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_fiche
+msgid "Durée"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+msgid ""
+"Départ à 9 h 10, pluie fine jusqu'au premier replat. Le sentier\n"
+"                                        est mieux balisé que l'an dernier. Arrivée aux Granges à 15 h 40, séchage\n"
+"                                        général autour du poêle."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_carnet
+msgid ""
+"Départ à 9 h 10, pluie fine jusqu'au premier replat. Le sentier\n"
+"                            est mieux balisé que l'an dernier. Arrivée aux Granges à 15 h 40, séchage\n"
+"                            général autour du poêle."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_devis
+msgid "E-mail"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_devis
+msgid "Envoyer la demande"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.voyage_pro_snippets
+msgid "Fiche destination"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_devis
+msgid "Fin mai, deux semaines"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+msgid ""
+"Gabarit de formulaire : reliez-le au\n"
+"                                                module Formulaires d'Odoo ou à votre outil de gestion des demandes."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_devis
+msgid ""
+"Gabarit de formulaire : reliez-le au\n"
+"                                    module Formulaires d'Odoo ou à votre outil de gestion des demandes."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.voyage_pro_snippets
+msgid "Galerie mosaïque"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_departs
+msgid "Itinéraire"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_itineraire
+msgid "Jour 1 · 11 km · +540 m"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_itineraire
+msgid "Jour 2 · 17 km · +820 m"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_itineraire
+msgid "Jour 3 · repos"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_itineraire
+msgid "Jour 4 · 14 km · +610 m"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_itineraire
+msgid "Jour 5 · 19 km · +780 m"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_itineraire
+msgid "Jour 6 · 21 km · +450 m"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_itineraire
+msgid "Jour 7 · 14 km"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_itineraire
+msgid "Journée libre au refuge du Col"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+msgid ""
+"Journée libre. Quatre d'entre nous montent au lac, les autres\n"
+"                                        ne bougent pas. C'est exactement pour ça qu'elle existe."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_carnet
+msgid ""
+"Journée libre. Quatre d'entre nous montent au lac, les autres\n"
+"                            ne bougent pas. C'est exactement pour ça qu'elle existe."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_departs
+msgid "La boucle des marais"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_itineraire
+msgid "La longue descente"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+msgid ""
+"La plus longue étape, sans point d'eau entre midi et le\n"
+"                                            refuge. Départ tôt conseillé."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_itineraire
+msgid ""
+"La plus longue étape, sans point d'eau entre midi et le\n"
+"                                refuge. Départ tôt conseillé."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_itineraire
+msgid "La traversée du plateau"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+msgid ""
+"Le budget comprend les six nuits en demi-pension, le portage des bagages\n"
+"                            entre les étapes 2 et 6 et l'accompagnement. Il ne comprend pas le train jusqu'à la\n"
+"                            gare de départ ni les repas de midi."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_fiche
+msgid ""
+"Le budget comprend les six nuits en demi-pension, le portage des bagages\n"
+"                entre les étapes 2 et 6 et l'accompagnement. Il ne comprend pas le train jusqu'à la\n"
+"                gare de départ ni les repas de midi."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_galerie
+msgid "Le lac du col"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_galerie
+msgid "Le refuge au petit matin"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_itineraire
+msgid "Les balcons de la vallée"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_departs
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_fiche
+msgid "Les crêtes de Vantour"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_itineraire
+msgid "Les crêtes de Vantour, jour après jour"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_departs
+msgid "Liste d'attente"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_fiche
+msgid "Mai à octobre"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+msgid ""
+"Montée douce en forêt, première nuit en gîte d'étape.\n"
+"                                            Repas partagé avec les gardiens."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_itineraire
+msgid ""
+"Montée douce en forêt, première nuit en gîte d'étape.\n"
+"                                Repas partagé avec les gardiens."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_devis
+msgid "Nom"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_devis
+msgid "Nombre de personnes"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_departs
+msgid "Places"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+msgid ""
+"Plateau intégralement dans le brouillard jusqu'à midi, puis\n"
+"                                        dégagement net. Deux heures sans croiser personne. Le refuge a changé de\n"
+"                                        gardiens : accueil impeccable."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_carnet
+msgid ""
+"Plateau intégralement dans le brouillard jusqu'à midi, puis\n"
+"                            dégagement net. Deux heures sans croiser personne. Le refuge a changé de\n"
+"                            gardiens : accueil impeccable."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_departs
+msgid "Prix"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_departs
+msgid "Prochaines dates garanties"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_devis
+msgid "Période souhaitée"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_itineraire
+msgid "Retour à la gare"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+msgid ""
+"Réponse sous deux jours ouvrés, avec une proposition chiffrée\n"
+"                                        et deux variantes. Aucun acompte demandé à ce stade."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_devis
+msgid ""
+"Réponse sous deux jours ouvrés, avec une proposition chiffrée\n"
+"                            et deux variantes. Aucun acompte demandé à ce stade."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_departs
+msgid "Réserver"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_fiche
+msgid "Saison"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+msgid ""
+"Sentier en corniche, exposé sur trois kilomètres.\n"
+"                                            Déconseillé par vent fort."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_itineraire
+msgid ""
+"Sentier en corniche, exposé sur trois kilomètres.\n"
+"                                Déconseillé par vent fort."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_galerie
+msgid "Sentier en sous-bois"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_galerie
+msgid "Sept jours en images"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+msgid ""
+"Sept étapes, 96 kilomètres et 3 400 mètres de dénivelé positif. Les transferts\n"
+"                                    de début et de fin se font en train depuis la gare de la vallée."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_itineraire
+msgid ""
+"Sept étapes, 96 kilomètres et 3 400 mètres de dénivelé positif. Les transferts\n"
+"                        de début et de fin se font en train depuis la gare de la vallée."
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_fiche
+msgid "Soutenue"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_departs
+msgid "Traversée des hauts plateaux"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_temoignages
+msgid "Trois retours, sans retouche"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.voyage_pro_snippets
+msgid "Témoignages"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_itineraire
+msgid "Vers le versant nord"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_departs
+msgid "Vignes et villages hauts"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_devis
+msgid "Votre projet en trois lignes"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_galerie
+msgid "Vue depuis la crête"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.voyage_pro_snippets
+msgid "carnet, journal, chronologie, recit, jours"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.voyage_pro_snippets
+msgid "departs, dates, calendrier, disponibilites, places, tarifs"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.voyage_pro_snippets
+msgid "devis, formulaire, contact, demande, sur mesure"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.voyage_pro_snippets
+msgid "fiche, duree, budget, saison, difficulte, resume"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.voyage_pro_snippets
+msgid "galerie, photos, mosaique, lightbox, images, album"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.voyage_pro_snippets
+msgid "itineraire, etapes, jours, parcours, programme, roadbook"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.voyage_pro_snippets
+msgid "temoignages, avis, clients, citations, retours"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+msgid ""
+"« La journée sans marche au milieu du séjour, c'est ce qui a tout\n"
+"                                        changé. On est repartis le lendemain avec des jambes neuves. »"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_temoignages
+msgid ""
+"« La journée sans marche au milieu du séjour, c'est ce qui a tout\n"
+"                            changé. On est repartis le lendemain avec des jambes neuves. »"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+msgid ""
+"« Le niveau annoncé est le vrai niveau. C'est rare, et ça évite\n"
+"                                        de se retrouver à traîner un groupe. »"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_temoignages
+msgid ""
+"« Le niveau annoncé est le vrai niveau. C'est rare, et ça évite\n"
+"                            de se retrouver à traîner un groupe. »"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_destination
+msgid ""
+"« Nous étions six, dont deux qui n'avaient jamais dormi en refuge.\n"
+"                                        Personne n'a regretté. »"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_temoignages
+msgid ""
+"« Nous étions six, dont deux qui n'avaient jamais dormi en refuge.\n"
+"                            Personne n'a regretté. »"
+msgstr ""
+
+#. module: theme_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.page_itineraire
+#: model_terms:theme.ir.ui.view,arch:theme_voyage.s_voyage_itineraire
+msgid "Étape plate le long de la rivière, train de 16 h 40."
+msgstr ""

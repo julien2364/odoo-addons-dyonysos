@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Enregistrement des blocs du thème dans le panneau de l'éditeur.
+     En Odoo 19 les blocs se déclarent avec <t t-snippet="..."> à l'intérieur
+     de <snippets id="snippet_structure">, et les catégories via le point
+     d'accroche installed_snippets_hook. -->
+<template id="presse_snippets" inherit_id="website.snippets" name="Blocs Presse">
+    <xpath expr="//t[@id='installed_snippets_hook']" position="before">
+        <t snippet-group="presse" t-snippet="website.s_snippet_group" string="Presse"
+           t-thumbnail="/theme_presse_lite/static/src/img/snippets_thumbs/presse_group.png"/>
+    </xpath>
+    <xpath expr="//snippets[@id='snippet_structure']" position="inside">
+        <t t-snippet="theme_presse_lite.s_presse_une" string="Une" group="presse"
+           t-thumbnail="/theme_presse_lite/static/src/img/snippets_thumbs/s_presse_une.png">
+            <keywords>une, manchette, editorial, headline, magazine, journal, actualite</keywords>
+        </t>
+        <t t-snippet="theme_presse_lite.s_presse_grille" string="Grille d'articles" group="presse"
+           t-thumbnail="/theme_presse_lite/static/src/img/snippets_thumbs/s_presse_grille.png">
+            <keywords>grille, articles, liste, magazine, rubrique, cartes</keywords>
+        </t>
+        <t t-snippet="theme_presse_lite.s_presse_a_lire_aussi" string="À lire aussi" group="presse"
+           t-thumbnail="/theme_presse_lite/static/src/img/snippets_thumbs/s_presse_a_lire_aussi.png">
+            <keywords>a lire aussi, liens, connexes, rebond, suggestions</keywords>
+        </t>
+        <t t-snippet="theme_presse_lite.s_presse_article" string="Gabarit d'article" group="presse"
+           t-thumbnail="/theme_presse_lite/static/src/img/snippets_thumbs/s_presse_article.png">
+            <keywords>article, chapo, intertitre, citation, legende, lecture</keywords>
+        </t>
+    </xpath>
+</template>
+
+</odoo>

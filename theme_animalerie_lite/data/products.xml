@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Catalogue de démonstration entièrement fictif. « Trèfle &amp; Museau »
+         est une marque inventée pour la démonstration : elle ne correspond à
+         aucune entreprise réelle. Les visuels sont générés par programme.
+         Ces enregistrements sont supprimables sans effet sur le thème. -->
+    <data noupdate="1">
+
+        <record id="categ_chiens" model="product.public.category">
+            <field name="name">Chiens</field>
+            <field name="sequence">10</field>
+        </record>
+
+        <record id="categ_chats" model="product.public.category">
+            <field name="name">Chats</field>
+            <field name="sequence">20</field>
+        </record>
+
+        <record id="categ_petits" model="product.public.category">
+            <field name="name">Petits animaux</field>
+            <field name="sequence">30</field>
+        </record>
+
+        <record id="anim_product_01" model="product.template">
+            <field name="name">Gamelle inclinée en grès</field>
+            <field name="is_published" eval="True"/>
+            <field name="type">consu</field>
+            <field name="list_price">24.9</field>
+            <field name="description_sale">Grès émaillé, 900 ml, inclinaison à 15° pour limiter les régurgitations. Passe au lave-vaisselle.</field>
+            <field name="public_categ_ids" eval="[(6, 0, [ref('categ_chiens')])]"/>
+            <field name="image_1920" type="base64" file="theme_animalerie_lite/static/src/img/products/prod_01.png"/>
+        </record>
+
+        <record id="anim_product_02" model="product.template">
+            <field name="name">Panier matelassé lavable</field>
+            <field name="is_published" eval="True"/>
+            <field name="type">consu</field>
+            <field name="list_price">59.0</field>
+            <field name="description_sale">Coussin déhoussable en coton recyclé, lavable à 40°, fond antidérapant. Trois tailles.</field>
+            <field name="public_categ_ids" eval="[(6, 0, [ref('categ_chiens')])]"/>
+            <field name="image_1920" type="base64" file="theme_animalerie_lite/static/src/img/products/prod_02.png"/>
+        </record>
+
+        <record id="anim_product_03" model="product.template">
+            <field name="name">Laisse en corde tressée</field>
+            <field name="is_published" eval="True"/>
+            <field name="type">consu</field>
+            <field name="list_price">21.5</field>
+            <field name="description_sale">Corde de 12 mm, mousqueton acier inoxydable, longueur 1,80 m. Deux points d'attache.</field>
+            <field name="public_categ_ids" eval="[(6, 0, [ref('categ_chiens')])]"/>
+            <field name="image_1920" type="base64" file="theme_animalerie_lite/static/src/img/products/prod_03.png"/>
+        </record>
+
+        <record id="anim_product_04" model="product.template">
+            <field name="name">Croquettes sans céréales, poulet</field>
+            <field name="is_published" eval="True"/>
+            <field name="type">consu</field>
+            <field name="list_price">42.0</field>
+            <field name="description_sale">Sac de 8 kg, 68 % de viande fraîche, sans blé ni maïs. Adulte toutes tailles.</field>
+            <field name="public_categ_ids" eval="[(6, 0, [ref('categ_chiens')])]"/>
+            <field name="image_1920" type="base64" file="theme_animalerie_lite/static/src/img/products/prod_04.png"/>
+        </record>
+
+        <record id="anim_product_05" model="product.template">
+            <field name="name">Griffoir vertical en sisal</field>
+            <field name="is_published" eval="True"/>
+            <field name="type">consu</field>
+            <field name="list_price">36.0</field>
+            <field name="description_sale">Sisal naturel sur socle lesté, 62 cm. Se fixe aussi au mur avec les deux vis fournies.</field>
+            <field name="public_categ_ids" eval="[(6, 0, [ref('categ_chats')])]"/>
+            <field name="image_1920" type="base64" file="theme_animalerie_lite/static/src/img/products/prod_05.png"/>
+        </record>
+
+        <record id="anim_product_06" model="product.template">
+            <field name="name">Fontaine à eau silencieuse</field>
+            <field name="is_published" eval="True"/>
+            <field name="type">consu</field>
+            <field name="list_price">34.9</field>
+            <field name="description_sale">2,2 litres, pompe à 22 dB, filtre charbon inclus. Réservoir transparent gradué.</field>
+            <field name="public_categ_ids" eval="[(6, 0, [ref('categ_chats')])]"/>
+            <field name="image_1920" type="base64" file="theme_animalerie_lite/static/src/img/products/prod_06.png"/>
+        </record>
+
+        <record id="anim_product_07" model="product.template">
+            <field name="name">Arbre à chat compact</field>
+            <field name="is_published" eval="True"/>
+            <field name="type">consu</field>
+            <field name="list_price">89.0</field>
+            <field name="description_sale">Deux plateformes, un hamac et une niche, 118 cm de haut. Empreinte au sol de 50 × 50 cm.</field>
+            <field name="public_categ_ids" eval="[(6, 0, [ref('categ_chats')])]"/>
+            <field name="image_1920" type="base64" file="theme_animalerie_lite/static/src/img/products/prod_07.png"/>
+        </record>
+
+        <record id="anim_product_08" model="product.template">
+            <field name="name">Pâtée sans additifs, lot de 12</field>
+            <field name="is_published" eval="True"/>
+            <field name="type">consu</field>
+            <field name="list_price">19.8</field>
+            <field name="description_sale">Douze barquettes de 85 g, quatre recettes, sans colorant ni exhausteur de goût.</field>
+            <field name="public_categ_ids" eval="[(6, 0, [ref('categ_chats')])]"/>
+            <field name="image_1920" type="base64" file="theme_animalerie_lite/static/src/img/products/prod_08.png"/>
+        </record>
+
+        <record id="anim_product_09" model="product.template">
+            <field name="name">Cage à barreaux pour rongeur</field>
+            <field name="is_published" eval="True"/>
+            <field name="type">consu</field>
+            <field name="list_price">74.0</field>
+            <field name="description_sale">80 × 45 × 50 cm, deux étages amovibles, bac profond de 18 cm pour limiter les projections.</field>
+            <field name="public_categ_ids" eval="[(6, 0, [ref('categ_petits')])]"/>
+            <field name="image_1920" type="base64" file="theme_animalerie_lite/static/src/img/products/prod_09.png"/>
+        </record>
+
+        <record id="anim_product_10" model="product.template">
+            <field name="name">Foin de montagne première coupe</field>
+            <field name="is_published" eval="True"/>
+            <field name="type">consu</field>
+            <field name="list_price">12.4</field>
+            <field name="description_sale">Sac compressé de 2 kg, récolte de l'année, tamisé pour retirer la poussière.</field>
+            <field name="public_categ_ids" eval="[(6, 0, [ref('categ_petits')])]"/>
+            <field name="image_1920" type="base64" file="theme_animalerie_lite/static/src/img/products/prod_10.png"/>
+        </record>
+
+        <record id="anim_product_11" model="product.template">
+            <field name="name">Roue silencieuse 30 cm</field>
+            <field name="is_published" eval="True"/>
+            <field name="type">consu</field>
+            <field name="list_price">27.5</field>
+            <field name="description_sale">Surface pleine sans barreaux, roulement à billes, fixation sur barreaux ou sur pied.</field>
+            <field name="public_categ_ids" eval="[(6, 0, [ref('categ_petits')])]"/>
+            <field name="image_1920" type="base64" file="theme_animalerie_lite/static/src/img/products/prod_11.png"/>
+        </record>
+
+        <record id="anim_product_12" model="product.template">
+            <field name="name">Brosse démêlante double face</field>
+            <field name="is_published" eval="True"/>
+            <field name="type">consu</field>
+            <field name="list_price">16.9</field>
+            <field name="description_sale">Picots arrondis d'un côté, poils souples de l'autre. Manche caoutchouté antidérapant.</field>
+            <field name="public_categ_ids" eval="[(6, 0, [ref('categ_chats')])]"/>
+            <field name="image_1920" type="base64" file="theme_animalerie_lite/static/src/img/products/prod_12.png"/>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,20 @@
+// =============================================================================
+// Thème Voyage pro — variables complémentaires
+// Le socle vient de theme_voyage_lite/static/src/scss/primary_variables.scss,
+// redéclaré dans le manifeste de ce module (voir son commentaire).
+// =============================================================================
+
+$o-color-palettes: map-merge($o-color-palettes, (
+    'voyage-nuit': (
+        'o-color-1': #E08256,
+        'o-color-2': #EAF1F6,
+        'o-color-3': #14212E,
+        'o-color-4': #0E1922,
+        'o-color-5': #08111A,
+
+        'menu': 4,
+        'footer': 5,
+        'copyright': 5,
+    ),
+));
+$o-selected-color-palettes-names: join(('voyage-nuit',), $o-selected-color-palettes-names, comma);

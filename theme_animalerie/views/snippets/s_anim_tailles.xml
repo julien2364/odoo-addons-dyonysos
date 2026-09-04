@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_anim_tailles" name="Guide de tailles">
+    <section class="s_anim_tailles pt40 pb48 o_cc o_cc2">
+        <div class="container">
+            <div class="mb-4">
+                <span class="o_anim_eyebrow">Guide de tailles</span>
+                <h2 class="mb-0">Mesurer avant de commander</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="table-responsive">
+                        <table class="o_anim_size_table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Taille</th>
+                                    <th scope="col">Longueur du couchage</th>
+                                    <th scope="col">Poids de l'animal</th>
+                                    <th scope="col">Exemples de gabarit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>S</td><td>50 cm</td><td>jusqu'à 8 kg</td><td>Chat adulte, petit chien</td></tr>
+                                <tr><td>M</td><td>70 cm</td><td>8 à 20 kg</td><td>Chien de taille moyenne</td></tr>
+                                <tr><td>L</td><td>90 cm</td><td>20 à 35 kg</td><td>Grand chien</td></tr>
+                                <tr><td>XL</td><td>110 cm</td><td>plus de 35 kg</td><td>Très grand chien</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="o_anim_size_note">
+                        <p class="mb-2"><strong>Comment mesurer</strong></p>
+                        <p class="mb-2">Mesurez l'animal couché sur le flanc, du bout du museau à la base
+                            de la queue, puis ajoutez dix centimètres.</p>
+                        <p class="mb-0">En cas d'hésitation entre deux tailles, prenez la plus grande :
+                            un couchage trop juste n'est jamais utilisé.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

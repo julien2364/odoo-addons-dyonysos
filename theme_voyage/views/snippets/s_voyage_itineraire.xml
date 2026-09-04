@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_voyage_itineraire" name="Carte d'itinéraire">
+    <section class="s_voyage_itineraire pt48 pb48 o_cc o_cc1">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <span class="o_voyage_eyebrow">Itinéraire</span>
+                    <h2 class="mb-3">Les crêtes de Vantour, jour après jour</h2>
+                    <p>Sept étapes, 96 kilomètres et 3 400 mètres de dénivelé positif. Les transferts
+                        de début et de fin se font en train depuis la gare de la vallée.</p>
+                    <img src="/theme_voyage/static/src/img/voyage_carte.png" alt=""
+                         class="o_voyage_recit_media mt-3"/>
+                </div>
+                <div class="col-lg-7">
+                    <ol class="o_voyage_steps">
+                        <li class="o_voyage_step">
+                            <p class="o_voyage_step_meta mb-1">Jour 1 · 11 km · +540 m</p>
+                            <h4 class="h5 mb-1">De la gare au hameau des Granges</h4>
+                            <p class="mb-0">Montée douce en forêt, première nuit en gîte d'étape.
+                                Repas partagé avec les gardiens.</p>
+                        </li>
+                        <li class="o_voyage_step">
+                            <p class="o_voyage_step_meta mb-1">Jour 2 · 17 km · +820 m</p>
+                            <h4 class="h5 mb-1">La traversée du plateau</h4>
+                            <p class="mb-0">La plus longue étape, sans point d'eau entre midi et le
+                                refuge. Départ tôt conseillé.</p>
+                        </li>
+                        <li class="o_voyage_step">
+                            <p class="o_voyage_step_meta mb-1">Jour 3 · repos</p>
+                            <h4 class="h5 mb-1">Journée libre au refuge du Col</h4>
+                            <p class="mb-0">Aller-retour possible vers le lac, ou rien du tout.
+                                La journée est volontairement vide.</p>
+                        </li>
+                        <li class="o_voyage_step">
+                            <p class="o_voyage_step_meta mb-1">Jour 4 · 14 km · +610 m</p>
+                            <h4 class="h5 mb-1">Les balcons de la vallée</h4>
+                            <p class="mb-0">Sentier en corniche, exposé sur trois kilomètres.
+                                Déconseillé par vent fort.</p>
+                        </li>
+                        <li class="o_voyage_step">
+                            <p class="o_voyage_step_meta mb-1">Jour 5 · 19 km · +780 m</p>
+                            <h4 class="h5 mb-1">Vers le versant nord</h4>
+                            <p class="mb-0">Changement d'ambiance : hêtraie, sources et un col
+                                à franchir avant la descente.</p>
+                        </li>
+                        <li class="o_voyage_step">
+                            <p class="o_voyage_step_meta mb-1">Jour 6 · 21 km · +450 m</p>
+                            <h4 class="h5 mb-1">La longue descente</h4>
+                            <p class="mb-0">Dernier col au petit matin, puis quinze kilomètres
+                                de descente jusqu'au village.</p>
+                        </li>
+                        <li class="o_voyage_step">
+                            <p class="o_voyage_step_meta mb-1">Jour 7 · 14 km</p>
+                            <h4 class="h5 mb-1">Retour à la gare</h4>
+                            <p class="mb-0">Étape plate le long de la rivière, train de 16 h 40.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

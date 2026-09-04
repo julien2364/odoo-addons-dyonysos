@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_voyage_recit" name="Récit deux colonnes">
+    <section class="s_voyage_recit pt48 pb48 o_cc o_cc1">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <img src="/theme_voyage_lite/static/src/img/voyage_recit.png" alt=""
+                         class="o_voyage_recit_media"/>
+                </div>
+                <div class="col-lg-6">
+                    <div class="o_voyage_recit_text">
+                        <span class="o_voyage_eyebrow">Carnet de route</span>
+                        <h2 class="mb-3">Le quatrième jour, on cesse de compter les kilomètres</h2>
+                        <p>C'est toujours le même moment. Les trois premiers jours, on regarde la carte
+                            et la montre. Le quatrième, on regarde le ciel et on demande l'heure à
+                            quelqu'un.</p>
+                        <p>Nos itinéraires sont construits autour de cette bascule : des étapes courtes
+                            au départ, une journée sans marche au milieu, et un dernier tiers plus
+                            engagé quand le corps a compris.</p>
+                        <a href="#" class="btn btn-primary mt-2">Lire le carnet complet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

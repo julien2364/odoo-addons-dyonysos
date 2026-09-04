@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_anim_selecteur" name="Sélecteur par animal">
+    <section class="s_anim_selecteur pt48 pb48 o_cc o_cc1">
+        <div class="container">
+            <div class="mb-4">
+                <span class="o_anim_eyebrow">Pour qui ?</span>
+                <h2 class="mb-0">Commencez par choisir votre animal</h2>
+            </div>
+            <div class="o_anim_species_bar" role="tablist" aria-label="Choisir un animal">
+                <button type="button" class="o_anim_species active" role="tab" aria-selected="true"
+                        data-anim-species="chien">
+                    <img src="/theme_animalerie/static/src/img/anim_sp_chien.png" alt=""/>
+                    <span>Chien</span>
+                </button>
+                <button type="button" class="o_anim_species" role="tab" aria-selected="false"
+                        data-anim-species="chat">
+                    <img src="/theme_animalerie/static/src/img/anim_sp_chat.png" alt=""/>
+                    <span>Chat</span>
+                </button>
+                <button type="button" class="o_anim_species" role="tab" aria-selected="false"
+                        data-anim-species="rongeur">
+                    <img src="/theme_animalerie/static/src/img/anim_sp_rongeur.png" alt=""/>
+                    <span>Petits animaux</span>
+                </button>
+            </div>
+            <div class="o_anim_species_pane" data-anim-species="chien">
+                <div class="row g-4">
+                    <div class="col-md-4"><a href="/shop" class="o_anim_product_card text-decoration-none text-reset">
+                        <img src="/theme_animalerie_lite/static/src/img/products/prod_04.png" alt=""/>
+                        <div class="o_anim_product_body"><h3 class="h6 mb-1">Alimentation</h3>
+                        <p class="small mb-0">Croquettes, pâtées et friandises.</p></div></a></div>
+                    <div class="col-md-4"><a href="/shop" class="o_anim_product_card text-decoration-none text-reset">
+                        <img src="/theme_animalerie_lite/static/src/img/products/prod_02.png" alt=""/>
+                        <div class="o_anim_product_body"><h3 class="h6 mb-1">Couchage</h3>
+                        <p class="small mb-0">Paniers, coussins et housses lavables.</p></div></a></div>
+                    <div class="col-md-4"><a href="/shop" class="o_anim_product_card text-decoration-none text-reset">
+                        <img src="/theme_animalerie_lite/static/src/img/products/prod_03.png" alt=""/>
+                        <div class="o_anim_product_body"><h3 class="h6 mb-1">Promenade</h3>
+                        <p class="small mb-0">Laisses, harnais et gamelles de voyage.</p></div></a></div>
+                </div>
+            </div>
+            <div class="o_anim_species_pane" data-anim-species="chat" hidden="hidden">
+                <div class="row g-4">
+                    <div class="col-md-4"><a href="/shop" class="o_anim_product_card text-decoration-none text-reset">
+                        <img src="/theme_animalerie_lite/static/src/img/products/prod_08.png" alt=""/>
+                        <div class="o_anim_product_body"><h3 class="h6 mb-1">Alimentation</h3>
+                        <p class="small mb-0">Pâtées sans additifs et croquettes.</p></div></a></div>
+                    <div class="col-md-4"><a href="/shop" class="o_anim_product_card text-decoration-none text-reset">
+                        <img src="/theme_animalerie_lite/static/src/img/products/prod_05.png" alt=""/>
+                        <div class="o_anim_product_body"><h3 class="h6 mb-1">Griffoirs</h3>
+                        <p class="small mb-0">Sisal, carton et arbres à chat.</p></div></a></div>
+                    <div class="col-md-4"><a href="/shop" class="o_anim_product_card text-decoration-none text-reset">
+                        <img src="/theme_animalerie_lite/static/src/img/products/prod_06.png" alt=""/>
+                        <div class="o_anim_product_body"><h3 class="h6 mb-1">Hydratation</h3>
+                        <p class="small mb-0">Fontaines silencieuses et filtres.</p></div></a></div>
+                </div>
+            </div>
+            <div class="o_anim_species_pane" data-anim-species="rongeur" hidden="hidden">
+                <div class="row g-4">
+                    <div class="col-md-4"><a href="/shop" class="o_anim_product_card text-decoration-none text-reset">
+                        <img src="/theme_animalerie_lite/static/src/img/products/prod_09.png" alt=""/>
+                        <div class="o_anim_product_body"><h3 class="h6 mb-1">Habitats</h3>
+                        <p class="small mb-0">Cages, enclos et accessoires de fixation.</p></div></a></div>
+                    <div class="col-md-4"><a href="/shop" class="o_anim_product_card text-decoration-none text-reset">
+                        <img src="/theme_animalerie_lite/static/src/img/products/prod_10.png" alt=""/>
+                        <div class="o_anim_product_body"><h3 class="h6 mb-1">Foin et litière</h3>
+                        <p class="small mb-0">Première coupe, tamisée et compressée.</p></div></a></div>
+                    <div class="col-md-4"><a href="/shop" class="o_anim_product_card text-decoration-none text-reset">
+                        <img src="/theme_animalerie_lite/static/src/img/products/prod_11.png" alt=""/>
+                        <div class="o_anim_product_body"><h3 class="h6 mb-1">Activité</h3>
+                        <p class="small mb-0">Roues silencieuses, tunnels et cachettes.</p></div></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

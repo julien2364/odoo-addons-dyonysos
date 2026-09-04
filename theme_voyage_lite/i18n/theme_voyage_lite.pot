@@ -1,0 +1,382 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* theme_voyage_lite
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-04 08:39+0000\n"
+"PO-Revision-Date: 2026-09-04 08:39+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_recit
+msgid "<span class=\"o_voyage_eyebrow\">Carnet de route</span>"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid "<span class=\"o_voyage_eyebrow\">Destinations</span>"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_hero
+msgid "<span class=\"o_voyage_eyebrow\">Itinéraires accompagnés</span>"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_appel
+msgid "<span class=\"o_voyage_eyebrow\">Parlons-en</span>"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid "<span class=\"o_voyage_pill\">16 jours</span>"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid "<span class=\"o_voyage_pill\">4 jours</span>"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid "<span class=\"o_voyage_pill\">5 jours</span>"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid "<span class=\"o_voyage_pill\">6 jours</span>"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid "<span class=\"o_voyage_pill\">7 jours</span>"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid "<span class=\"o_voyage_pill\">9 jours</span>"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.voyage_snippets
+msgid "Appel à l'action"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.voyage_snippets
+msgid "Bandeau d'accueil"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+msgid ""
+"C'est toujours le même moment. Les trois premiers jours, on regarde la carte\n"
+"                                        et la montre. Le quatrième, on regarde le ciel et on demande l'heure à\n"
+"                                        quelqu'un."
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_recit
+msgid ""
+"C'est toujours le même moment. Les trois premiers jours, on regarde la carte\n"
+"                            et la montre. Le quatrième, on regarde le ciel et on demande l'heure à\n"
+"                            quelqu'un."
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+msgid ""
+"Cent trente kilomètres à vélo sur des chemins de halage,\n"
+"                                            sans dénivelé et sans voiture."
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid ""
+"Cent trente kilomètres à vélo sur des chemins de halage,\n"
+"                                sans dénivelé et sans voiture."
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid "D'une gare à l'autre, en train lent"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_appel
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_hero
+msgid "Demander un devis"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+msgid ""
+"Douze itinéraires conçus à pied, en train et à vélo, entre quatre et\n"
+"                            seize jours, avec des hébergements choisis un par un."
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_hero
+msgid ""
+"Douze itinéraires conçus à pied, en train et à vélo, entre quatre et\n"
+"                seize jours, avec des hébergements choisis un par un."
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+msgid ""
+"Décrivez-nous en trois lignes ce que\n"
+"                                vous cherchez. Nous répondons sous deux jours ouvrés, avec une proposition chiffrée\n"
+"                                et deux variantes."
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_appel
+msgid ""
+"Décrivez-nous en trois lignes ce que\n"
+"                    vous cherchez. Nous répondons sous deux jours ouvrés, avec une proposition chiffrée\n"
+"                    et deux variantes."
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.voyage_snippets
+msgid "Grille de destinations"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid "La boucle des marais"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+msgid ""
+"Le grand format : bivouacs, sources froides et un ravitaillement\n"
+"                                            unique à mi-parcours."
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid ""
+"Le grand format : bivouacs, sources froides et un ravitaillement\n"
+"                                unique à mi-parcours."
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid "Le littoral des cabanes"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_recit
+msgid "Le quatrième jour, on cesse de compter les kilomètres"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid "Les crêtes de Vantour"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_recit
+msgid "Lire le carnet complet"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+msgid ""
+"Marche côtière d'anse en anse, marées à surveiller et\n"
+"                                            bateau de pêche au retour."
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid ""
+"Marche côtière d'anse en anse, marées à surveiller et\n"
+"                                bateau de pêche au retour."
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+msgid ""
+"Nos itinéraires sont construits autour de cette bascule : des étapes courtes\n"
+"                                        au départ, une journée sans marche au milieu, et un dernier tiers plus\n"
+"                                        engagé quand le corps a compris."
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_recit
+msgid ""
+"Nos itinéraires sont construits autour de cette bascule : des étapes courtes\n"
+"                            au départ, une journée sans marche au milieu, et un dernier tiers plus\n"
+"                            engagé quand le corps a compris."
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+msgid ""
+"Onze trains régionaux, six villes moyennes et beaucoup de\n"
+"                                            temps devant la fenêtre."
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid ""
+"Onze trains régionaux, six villes moyennes et beaucoup de\n"
+"                                temps devant la fenêtre."
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_hero
+msgid "Prenez le temps long, du col de Vantour aux rives de la Sèvre"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid "Randonnée · Automne"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid "Randonnée · Printemps et automne"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid "Randonnée · Été"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.voyage_snippets
+msgid "Récit deux colonnes"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid "Six régions, six manières de ralentir"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid "Toutes accessibles en train depuis une gare principale."
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid "Train · Toute l'année"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid "Traversée des hauts plateaux"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_appel
+msgid "Un projet, une date, un niveau : on construit le reste"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+msgid ""
+"Une traversée en balcon au-dessus de la vallée, avec deux\n"
+"                                            nuits en refuge et un jour de repos au village."
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid ""
+"Une traversée en balcon au-dessus de la vallée, avec deux\n"
+"                                nuits en refuge et un jour de repos au village."
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid "Vignes et villages hauts"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_hero
+msgid "Voir les itinéraires"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.voyage_snippets
+msgid "Voyage"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid "Vélo · Toute l'année"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.voyage_snippets
+msgid "appel, action, cta, devis, contact, conversion"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.voyage_snippets
+msgid "bandeau, hero, accueil, couverture, plein ecran, voyage"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.voyage_snippets
+msgid "destinations, cartes, grille, sejours, catalogue"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.voyage_snippets
+msgid "recit, carnet, texte image, deux colonnes, histoire"
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.page_voyage
+msgid ""
+"Étapes courtes, tables d'hôtes et deux journées entières\n"
+"                                            sans transfert."
+msgstr ""
+
+#. module: theme_voyage_lite
+#: model_terms:theme.ir.ui.view,arch:theme_voyage_lite.s_voyage_destinations
+msgid ""
+"Étapes courtes, tables d'hôtes et deux journées entières\n"
+"                                sans transfert."
+msgstr ""

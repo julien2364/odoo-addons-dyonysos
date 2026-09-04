@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_voyage_temoignages" name="Témoignages">
+    <section class="s_voyage_temoignages pt48 pb48 o_cc o_cc2">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="o_voyage_eyebrow">Ils y sont allés</span>
+                <h2 class="mb-0">Trois retours, sans retouche</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="o_voyage_quote">
+                        <blockquote>« La journée sans marche au milieu du séjour, c'est ce qui a tout
+                            changé. On est repartis le lendemain avec des jambes neuves. »</blockquote>
+                        <div class="o_voyage_quote_author">
+                            <img src="/theme_voyage/static/src/img/voyage_av_1.png" alt=""/>
+                            <div><strong>Élise M.</strong><br/><span class="opacity-75">Crêtes de Vantour, juin</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="o_voyage_quote">
+                        <blockquote>« Le niveau annoncé est le vrai niveau. C'est rare, et ça évite
+                            de se retrouver à traîner un groupe. »</blockquote>
+                        <div class="o_voyage_quote_author">
+                            <img src="/theme_voyage/static/src/img/voyage_av_2.png" alt=""/>
+                            <div><strong>Karim B.</strong><br/><span class="opacity-75">Hauts plateaux, août</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="o_voyage_quote">
+                        <blockquote>« Nous étions six, dont deux qui n'avaient jamais dormi en refuge.
+                            Personne n'a regretté. »</blockquote>
+                        <div class="o_voyage_quote_author">
+                            <img src="/theme_voyage/static/src/img/voyage_av_3.png" alt=""/>
+                            <div><strong>Anne-Laure P.</strong><br/><span class="opacity-75">Boucle des marais, septembre</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

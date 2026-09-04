@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_anim_conseils" name="Blocs conseils">
+    <section class="s_anim_conseils pt48 pb48 o_cc o_cc2">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-end justify-content-between gap-3 mb-4">
+                <div>
+                    <span class="o_anim_eyebrow">Conseils</span>
+                    <h2 class="mb-0">Trois choses qu'on nous demande souvent</h2>
+                </div>
+                <a href="#" class="btn btn-outline-primary">Tous les conseils</a>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <article class="o_anim_advice">
+                        <img src="/theme_animalerie/static/src/img/anim_conseil_1.png" alt=""/>
+                        <div class="o_anim_advice_body">
+                            <span class="o_anim_pill">Alimentation</span>
+                            <h3 class="h5 mt-2 mb-2">Changer de croquettes sans troubles digestifs</h3>
+                            <p class="mb-0">Comptez sept jours de transition, en augmentant la nouvelle
+                                ration d'un septième par jour. Au-delà de dix jours, c'est inutile.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <article class="o_anim_advice">
+                        <img src="/theme_animalerie/static/src/img/anim_conseil_2.png" alt=""/>
+                        <div class="o_anim_advice_body">
+                            <span class="o_anim_pill">Habitat</span>
+                            <h3 class="h5 mt-2 mb-2">Où installer un griffoir pour qu'il serve</h3>
+                            <p class="mb-0">À l'endroit où le chat gratte déjà, pas dans un coin
+                                inutilisé. Deux griffoirs valent mieux qu'un grand mal placé.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <article class="o_anim_advice">
+                        <img src="/theme_animalerie/static/src/img/anim_conseil_3.png" alt=""/>
+                        <div class="o_anim_advice_body">
+                            <span class="o_anim_pill">Entretien</span>
+                            <h3 class="h5 mt-2 mb-2">Le bon rythme de nettoyage d'une cage</h3>
+                            <p class="mb-0">Un retrait quotidien des zones souillées, un nettoyage
+                                complet hebdomadaire. Un nettoyage complet trop fréquent stresse l'animal.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

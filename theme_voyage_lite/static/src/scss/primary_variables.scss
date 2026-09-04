@@ -1,0 +1,78 @@
+// =============================================================================
+// Thème Voyage — palette et typographie
+// =============================================================================
+
+// -- Polices ------------------------------------------------------------------
+$o-theme-font-configs: map-merge($o-theme-font-configs, (
+    'Poppins': (
+        'family': ('Poppins', 'Trebuchet MS', sans-serif),
+        'url': 'Poppins:300,400,500,600,700',
+    ),
+));
+
+// -- Palettes -----------------------------------------------------------------
+// Contrastes vérifiés :
+//   #A8452A (terracotta) → 5,92:1 sur blanc, 5,37:1 sur sable
+//   #123A5E (bleu profond) → 11,72:1 sur blanc, 10,63:1 sur sable
+$o-color-palettes: map-merge($o-color-palettes, (
+    'voyage-sable': (
+        'o-color-1': #A8452A,   // terracotta (accent, boutons)
+        'o-color-2': #123A5E,   // bleu profond (titres, en-tête)
+        'o-color-3': #FAF3E8,   // sable (fonds alternés)
+        'o-color-4': #FFFFFF,
+        'o-color-5': #0E2439,
+
+        'menu': 4,
+        'footer': 5,
+        'copyright': 5,
+    ),
+    'voyage-large': (
+        'o-color-1': #C2603A,
+        'o-color-2': #14506B,
+        'o-color-3': #F2E7D5,
+        'o-color-4': #FFFDF9,
+        'o-color-5': #10303F,
+
+        'menu': 4,
+        'footer': 2,
+        'copyright': 2,
+    ),
+));
+$o-selected-color-palettes-names: join(
+    ('voyage-sable', 'voyage-large'), $o-selected-color-palettes-names, comma);
+
+// -- Valeurs du site ----------------------------------------------------------
+$o-website-values-palettes: (
+    (
+        'color-palettes-name': 'voyage-sable',
+
+        'font': 'Inter',
+        'headings-font': 'Poppins',
+        'navbar-font': 'Poppins',
+        'buttons-font': 'Poppins',
+
+        'body-line-height': 1.7,
+        'headings-line-height': 1.18,
+        'paragraph-margin-bottom': 18px,
+
+        'btn-border-radius': 2rem,
+        'btn-border-radius-sm': 2rem,
+        'btn-border-radius-lg': 2rem,
+        'btn-padding-y': 0.7rem,
+        'btn-padding-x': 1.75rem,
+
+        'input-border-radius': 0.75rem,
+
+        'link-underline': 'hover',
+        'header-template': 'default',
+        'header-links-style': 'default',
+        'footer-template': 'default',
+        'layout': 'full',
+    ),
+);
+$o-website-values-palette-number: 1;
+
+$o-theme-h1-font-size-multiplier: 3;
+$o-theme-h2-font-size-multiplier: 2.2;
+$o-theme-h3-font-size-multiplier: 1.6;
+$o-theme-h4-font-size-multiplier: 1.3;
