@@ -1,7 +1,8 @@
 # Odoo 19 addons — DYONYSOS
 
-Cinq modules Odoo 19, compatibles **Community et Enterprise**, développés pour combler ce que
-Community n'a pas et pour être vendus sur l'Odoo Apps Store (licence OPL-1, 250 € pièce).
+Sept modules et deux thèmes Odoo 19, compatibles **Community et Enterprise**, développés pour
+combler ce que Community n'a pas et vendus sur l'Odoo Apps Store (licence OPL-1, 250 € par
+module ; thèmes à leur propre tarif, avec une variante allégée gratuite en LGPL-3).
 
 | Module | Ce qu'il fait | Tests |
 |---|---|---|
@@ -10,8 +11,10 @@ Community n'a pas et pour être vendus sur l'Odoo Apps Store (licence OPL-1, 250
 | `dyo_mcp_server` | Serveur **MCP** natif : branche Claude, ChatGPT ou Cursor sur Odoo, avec clés API natives, liste blanche de modèles et journal d'audit | 20 |
 | `amazon_connector_community` | Connecteur Amazon **SP-API** pour Community : commandes, suivi, stock, prix, 10 marketplaces UE | 19 |
 | `dyo_studio_lite` | Équivalent léger de Studio : champs personnalisés, placement dans les vues, automatisations sans code, tout réversible | 20 |
+| `blog_social_publish` | Publication automatique des articles du blog Odoo vers les réseaux sociaux (Postiz ou webhook), avec date d'activation figée à l'installation | 15 |
+| `dyo_packlink_connector` | Transporteur **Packlink PRO** : tarifs comparés sur le devis, étiquette PDF à la validation, suivi automatique, pont avec le connecteur Amazon | 23 |
 
-**76 tests, tous verts** sur Odoo 19 (branche 19.0).
+**114 tests, tous verts** sur Odoo 19 (branche 19.0).
 
 ## Installation sur un serveur
 
@@ -41,8 +44,8 @@ Tests, sur une base Odoo 19 de travail :
 
 ```bash
 odoo -c odoo.conf -d testdb --addons-path=<odoo>/addons,. \
-     -i ai_document_extract,dougs_bridge,dyo_mcp_server,amazon_connector_community,dyo_studio_lite \
-     --test-enable --test-tags /ai_document_extract,/dougs_bridge,/dyo_mcp_server,/amazon_connector_community,/dyo_studio_lite \
+     -i ai_document_extract,dougs_bridge,dyo_mcp_server,amazon_connector_community,dyo_studio_lite,blog_social_publish,dyo_packlink_connector \
+     --test-enable --test-tags /ai_document_extract,/dougs_bridge,/dyo_mcp_server,/amazon_connector_community,/dyo_studio_lite,/blog_social_publish,/dyo_packlink_connector \
      --stop-after-init
 ```
 
@@ -63,6 +66,8 @@ GitHub.
 | `dougs_bridge` | Export des pièces comptables vers le cabinet | inactive |
 | `dyo_mcp_server` | Purge des journaux d'audit au-delà de la rétention | **active**, hebdomadaire |
 | `amazon_connector_community` | Import des commandes (10 min), push stock et prix (15 min), remontée du suivi (30 min) | inactives |
+| `dyo_packlink_connector` | Rafraîchissement du suivi des expéditions (6 h) | inactive |
+| `dyo_packlink_connector` | Purge du journal des appels (1 semaine) | active |
 
 Les actions inactives ne s'activent qu'une fois les clés d'API saisies et un premier essai manuel
 concluant : Réglages › Technique › Automatisation › Actions planifiées.

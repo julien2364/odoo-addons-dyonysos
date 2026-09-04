@@ -15,8 +15,10 @@ Auteur `DYONYSOS`, support `welcome@dyonysos.fr`, site `https://dyonysos.fr`.
 | `dyo_mcp_server` | Sert un endpoint MCP `/mcp` (JSON-RPC 2.0, Streamable HTTP) authentifié par clé API Odoo de scope `odoo.mcp`, avec liste blanche de modèles et journal d'audit | 20 | `base`, `base_setup` | aucune |
 | `amazon_connector_community` | Importe les commandes Amazon SP-API en commandes de vente (pagination `NextToken`), remonte le suivi, pousse stock et prix sur toutes les places de marché avec conversion de devise | 19 | `sale_management`, `stock`, `delivery` | `requests` |
 | `dyo_studio_lite` | Crée des champs `x_...` + la vue héritée qui les affiche, retouche les vues et crée des automatisations, le tout tracé et réversible | 20 | `base`, `web`, `mail`, `base_automation` | aucune |
+| `blog_social_publish` | Publie les articles du blog Odoo vers les réseaux sociaux (Postiz ou webhook), en ignorant tout ce qui est antérieur à l'installation | 15 | `website_blog`, `mail` | `requests` |
+| `dyo_packlink_connector` | Ajoute le transporteur Packlink PRO : tarif comparé sur le devis, expédition et étiquette PDF à la validation, suivi rafraîchi, annulation, pont avec le connecteur Amazon | 23 | `stock_delivery`, `sale_management` | `requests` |
 
-**Total : 76 tests.** `dyo_mcp_server` et `dyo_studio_lite` sont déclarés `application: True` (icône dans le menu principal) ; les trois autres sont des extensions.
+**Total : 114 tests.** `dyo_mcp_server` et `dyo_studio_lite` sont déclarés `application: True` (icône dans le menu principal) ; les trois autres sont des extensions.
 
 Chaîne CI (`.github/workflows/ci.yml`) : `lint` (manifestes, syntaxe Python, XML bien formé, présence de `static/description/icon.png` et `index.html`) → `tests` (clone de la pointe de `odoo/odoo` branche `19.0`, PostgreSQL 16, installation des 5 modules avec `--test-enable`) → `build` (`scripts/build.sh`, un zip par module + un bundle, artefacts 30 jours) → `release` sur tag `v*`. Déclencheurs : push et PR sur `19.0`, cron nocturne `17 3 * * *` UTC, et `workflow_dispatch`.
 
@@ -213,6 +215,26 @@ Garde-fous vérifiés dans le code : le nom technique doit respecter `^x_[a-z0-9
 
 ---
 
+### 2.6 `dyo_packlink_connector`
+
+**À obtenir de l'extérieur** : la clé API Packlink PRO (espace Packlink PRO › Paramètres › Intégrations).
+
+**Écrans**
+
+1. Inventaire › Configuration › **Packlink** › **Comptes Packlink** › Nouveau : `Clé API`, `Adresse d'expédition` (laisser vide pour utiliser l'adresse de l'entrepôt du transfert, sinon celle de la société), `Sélection du service` (le moins cher, ou le plus rapide).
+2. Groupe **Avancé** (visible du seul `base.group_system`) : `URL de l'API` (`https://api.packlink.com/v1`), `En-tête d'authentification` (`Authorization`), `Préfixe` (vide, ou `Bearer`), `Délai d'attente`. Ces quatre champs existent pour suivre une évolution de l'API sans mise à jour du module — **ne les changer que sur indication de Packlink**.
+3. Bouton **`Tester la connexion`** : il demande un tarif à blanc Paris → Lyon. C'est le contrôle de la clé.
+4. Inventaire › Configuration › **Modes de livraison** › Nouveau : `Fournisseur` = **Packlink PRO**, choisir le compte, éventuellement un `Service imposé` (identifiant de service Packlink) et les dimensions du colis par défaut. La `Marge` et la `Marge fixe` Odoo s'appliquent au tarif renvoyé.
+
+**Premier test**
+
+- Sur un devis, choisir le mode de livraison Packlink puis **`Obtenir le tarif`** : le tarif du service retenu s'ajoute en ligne de livraison. Le journal (Inventaire › Configuration › Packlink › **Journal**) enregistre l'appel et le nombre de services proposés.
+- Confirmer, puis valider le bon de livraison : l'expédition est créée chez Packlink, l'`Expédition Packlink`, le `Transporteur` et le `Suivi` sont renseignés sur le transfert et l'étiquette PDF y est jointe. Si l'étiquette n'est pas encore disponible chez le transporteur, le bouton **`Étiquette Packlink`** la récupère plus tard — la validation n'échoue pas pour autant.
+- Bouton **`Rafraîchir le suivi`** : l'état Packlink est mis à jour et l'étape est notée dans le fil de discussion.
+- **Pont Amazon** : quand `amazon_connector_community` est installé, la confirmation d'expédition envoyée à Amazon reprend le nom réel du transporteur Packlink normalisé (Chronopost, Colissimo, DHL, DPD, GLS, UPS, Mondial Relay, SEUR, BRT, Evri…) au lieu du `Other` générique. Aucune dépendance déclarée entre les deux modules : le pont s'active tout seul quand les deux sont présents.
+
+---
+
 ## 3. Actions planifiées
 
 Emplacement : Réglages › Technique › Automatisation › **Actions planifiées**.
@@ -224,6 +246,8 @@ Emplacement : Réglages › Technique › Automatisation › **Actions planifié
 | `amazon_connector_community` | `Amazon Connector : remontée du suivi` | toutes les 30 min | **inactive** | Après un `Envoyer le suivi` manuel réussi sur un bon de livraison réel |
 | `dougs_bridge` | `Dougs Bridge: export accounting documents` | 1 jour | **inactive** | Après un lot manuel `sent` sans erreur sur le transport retenu. Régler `Days before a document is exported` avant d'activer |
 | `dyo_mcp_server` | `MCP Server: purge old access logs` | 1 semaine | **active** | Déjà active. Elle purge le journal d'audit au-delà de `dyo_mcp_server.log_retention_days` (90 jours) — la désactiver si le journal doit être conservé plus longtemps |
+| `dyo_packlink_connector` | `Packlink : rafraîchir le suivi des expéditions` | 6 h | **inactive** | Après une première expédition réelle dont le suivi a été rafraîchi manuellement sans erreur |
+| `dyo_packlink_connector` | `Packlink : purge du journal` | 1 semaine | **active** | Déjà active. Elle supprime les appels de plus de 90 jours |
 
 `ai_document_extract` et `dyo_studio_lite` ne livrent aucune action planifiée.
 
@@ -361,6 +385,13 @@ Première installation d'un module : remplacer `-u` par `-i`. Dépendances Pytho
 - **Coût à la charge de l'utilisateur.** Pas de crédits IAP, donc pas de garde-fou de budget : le journal d'extraction donne les jetons consommés a posteriori, mais rien ne plafonne le nombre d'appels. Une facture jointe deux fois est extraite deux fois.
 - **Pas d'action planifiée de reprise.** Une extraction en erreur reste en erreur jusqu'à un clic manuel sur `AI Extract`.
 - **Modèles par défaut figés dans le code** (`claude-sonnet-4-5`, `gpt-4.1-mini`) : ils vieilliront, d'où le champ `AI Model` laissé libre.
+
+### `dyo_packlink_connector`
+
+- Envois **sortants** uniquement : ni retours clients, ni sélecteur de point relais dans le tunnel de commande du site web.
+- Un seul colis par bon de livraison : le poids de l'envoi part sur un colis unique, aux dimensions du mode de livraison. Un envoi multi-colis doit être découpé en plusieurs transferts.
+- Les endpoints Packlink (`/services`, `/shipments`, `/shipments/{ref}/labels`, `/shipments/{ref}/track`) suivent la structure publiée par les SDK communautaires : **à confronter à la documentation reçue avec la clé** lors de la première mise en production. Les quatre champs du groupe « Avancé » sont là pour ça.
+- Le tarif est demandé une seconde fois à la création de l'expédition, pour repartir du service réellement disponible au moment de l'envoi : le prix facturé au client reste celui du devis.
 
 ### `dyo_studio_lite`
 
