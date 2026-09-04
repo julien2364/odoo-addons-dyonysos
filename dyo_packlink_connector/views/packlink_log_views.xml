@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="packlink_log_view_list" model="ir.ui.view">
+        <field name="name">packlink.log.list</field>
+        <field name="model">packlink.log</field>
+        <field name="arch" type="xml">
+            <list string="Journal Packlink" create="false">
+                <field name="create_date"/>
+                <field name="account_id"/>
+                <field name="operation"/>
+                <field name="picking_id"/>
+                <field name="shipment_ref"/>
+                <field name="duration" sum="Total"/>
+                <field name="state" widget="badge" decoration-success="state == 'ok'" decoration-danger="state == 'error'"/>
+                <field name="message" optional="show"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="packlink_log_view_search" model="ir.ui.view">
+        <field name="name">packlink.log.search</field>
+        <field name="model">packlink.log</field>
+        <field name="arch" type="xml">
+            <search string="Journal Packlink">
+                <field name="shipment_ref"/>
+                <field name="picking_id"/>
+                <filter name="errors" string="Erreurs" domain="[('state','=','error')]"/>
+                <group>
+                    <filter name="group_operation" string="Opération" context="{'group_by': 'operation'}"/>
+                    <filter name="group_state" string="État" context="{'group_by': 'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="packlink_log_action" model="ir.actions.act_window">
+        <field name="name">Journal Packlink</field>
+        <field name="res_model">packlink.log</field>
+        <field name="view_mode">list</field>
+    </record>
+</odoo>

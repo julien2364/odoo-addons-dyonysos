@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="delivery_carrier_view_form_packlink" model="ir.ui.view">
+        <field name="name">delivery.carrier.form.packlink</field>
+        <field name="model">delivery.carrier</field>
+        <field name="inherit_id" ref="delivery.view_delivery_carrier_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Packlink PRO" name="packlink" invisible="delivery_type != 'packlink'">
+                    <group>
+                        <group string="Compte">
+                            <field name="packlink_account_id" required="delivery_type == 'packlink'"/>
+                            <field name="packlink_service_id"/>
+                            <field name="packlink_label_format"/>
+                        </group>
+                        <group string="Colis par défaut">
+                            <field name="packlink_default_weight"/>
+                            <field name="packlink_length"/>
+                            <field name="packlink_width"/>
+                            <field name="packlink_height"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

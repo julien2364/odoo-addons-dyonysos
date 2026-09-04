@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="stock_picking_view_form_packlink" model="ir.ui.view">
+        <field name="name">stock.picking.form.packlink</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='carrier_tracking_ref']" position="after">
+                <field name="packlink_shipment_ref" invisible="not packlink_shipment_ref"/>
+                <field name="packlink_carrier_name" invisible="not packlink_shipment_ref"/>
+                <field name="packlink_service_name" invisible="not packlink_shipment_ref"/>
+                <field name="packlink_state" invisible="not packlink_state"/>
+                <field name="packlink_label_id" invisible="not packlink_label_id"/>
+            </xpath>
+            <xpath expr="//header" position="inside">
+                <button name="action_packlink_get_label" type="object" string="Étiquette Packlink"
+                        invisible="not packlink_shipment_ref or packlink_label_id"/>
+                <button name="action_packlink_refresh_tracking" type="object" string="Rafraîchir le suivi"
+                        invisible="not packlink_shipment_ref"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

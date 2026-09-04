@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="packlink_account_view_form" model="ir.ui.view">
+        <field name="name">packlink.account.form</field>
+        <field name="model">packlink.account</field>
+        <field name="arch" type="xml">
+            <form string="Compte Packlink">
+                <header>
+                    <button name="action_test_connection" type="object" string="Tester la connexion" class="btn-primary"/>
+                </header>
+                <sheet>
+                    <widget name="web_ribbon" title="Archivé" bg_color="text-bg-danger" invisible="active"/>
+                    <div class="oe_title">
+                        <h1><field name="name" placeholder="Packlink PRO"/></h1>
+                    </div>
+                    <group>
+                        <group string="Identification">
+                            <field name="api_key" password="True"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                            <field name="active" invisible="1"/>
+                        </group>
+                        <group string="Expédition">
+                            <field name="warehouse_partner_id"/>
+                            <field name="postage_type"/>
+                        </group>
+                    </group>
+                    <group string="Avancé" groups="base.group_system">
+                        <group>
+                            <field name="base_url"/>
+                            <field name="timeout"/>
+                        </group>
+                        <group>
+                            <field name="auth_header"/>
+                            <field name="auth_scheme" placeholder="vide, ou Bearer"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Journal" name="logs">
+                            <field name="log_ids" readonly="1">
+                                <list>
+                                    <field name="create_date"/>
+                                    <field name="operation"/>
+                                    <field name="picking_id"/>
+                                    <field name="shipment_ref"/>
+                                    <field name="duration"/>
+                                    <field name="state" widget="badge" decoration-success="state == 'ok'" decoration-danger="state == 'error'"/>
+                                    <field name="message"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="packlink_account_view_list" model="ir.ui.view">
+        <field name="name">packlink.account.list</field>
+        <field name="model">packlink.account</field>
+        <field name="arch" type="xml">
+            <list string="Comptes Packlink">
+                <field name="name"/>
+                <field name="postage_type"/>
+                <field name="warehouse_partner_id"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="packlink_account_action" model="ir.actions.act_window">
+        <field name="name">Comptes Packlink</field>
+        <field name="res_model">packlink.account</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Enregistrez votre clé API Packlink PRO</p>
+            <p>Créez ensuite un mode de livraison de type « Packlink PRO » pour proposer
+               ses tarifs sur vos devis.</p>
+        </field>
+    </record>
+</odoo>

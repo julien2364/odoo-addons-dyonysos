@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_packlink_root" name="Packlink"
+              parent="stock.menu_stock_config_settings" sequence="90"
+              groups="stock.group_stock_manager"/>
+    <menuitem id="menu_packlink_account" name="Comptes Packlink"
+              parent="menu_packlink_root" action="packlink_account_action" sequence="10"/>
+    <menuitem id="menu_packlink_log" name="Journal"
+              parent="menu_packlink_root" action="packlink_log_action" sequence="20"/>
+</odoo>
