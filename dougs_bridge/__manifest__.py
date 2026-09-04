@@ -36,6 +36,7 @@ accepte des pièces par email, SFTP ou dossier partagé — pas seulement Dougs.
     "external_dependencies": {"python": ["requests"]},
     "data": [
         "security/ir.model.access.csv",
+        "security/dougs_security.xml",
         "data/mail_template_data.xml",
         "data/ir_cron_data.xml",
         "views/dougs_export_views.xml",

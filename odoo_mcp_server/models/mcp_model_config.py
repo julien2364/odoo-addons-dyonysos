@@ -17,8 +17,11 @@ _logger = logging.getLogger(__name__)
 
 # Methods an MCP client may call through odoo_call_method, per model or globally.
 # Anything not listed here is refused, whatever the user's rights.
+# Methods that create records: only reachable when the model also allows creation.
+CREATING_METHODS = {"name_create", "copy"}
+
 DEFAULT_SAFE_METHODS = [
-    "name_search", "name_create", "default_get", "fields_get",
+    "name_search", "default_get", "fields_get",
     "action_post", "action_confirm", "action_done", "action_cancel",
     "button_confirm", "button_validate", "message_post",
 ]
@@ -52,7 +55,7 @@ class McpModelConfig(models.Model):
     limit_default = fields.Integer(string="Default limit", default=50)
     limit_max = fields.Integer(string="Maximum limit", default=500)
 
-    _sql_constraints = [("model_uniq", "unique(model_id)", "This model is already exposed to MCP.")]
+    _model_uniq = models.Constraint("unique(model_id)", "This model is already exposed to MCP.")
 
     @api.constrains("domain")
     def _check_domain(self):

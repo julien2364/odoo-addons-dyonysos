@@ -191,3 +191,64 @@ class TestMcpServer(HttpCase):
         finally:
             self.icp.set_param("odoo_mcp_server.allow_writes", "False")
             config.allow_write = False
+
+    # ------------------------------------------------------------------
+    # Security regressions (audit of 2026-09-04)
+    # ------------------------------------------------------------------
+    def test_16_oversized_body_is_refused_before_authentication(self):
+        payload = json.dumps({"jsonrpc": "2.0", "id": 1, "method": "ping",
+                              "params": {"padding": "x" * (3 * 1024 * 1024)}})
+        response = self.url_open("/mcp", data=payload, headers={"Content-Type": "application/json"})
+        self.assertEqual(response.status_code, 413)
+
+    def test_17_name_create_cannot_bypass_the_create_flag(self):
+        self.icp.set_param("odoo_mcp_server.allow_writes", "True")
+        config = self.env["mcp.model.config"]._get_config("res.partner")
+        config.write({"allow_write": True, "allow_create": False, "method_names": "name_create"})
+        before = self.env["res.partner"].search_count([])
+        try:
+            result, _payload = self._call_tool("odoo_call_method", {
+                "model": "res.partner", "method": "name_create", "args": ["Ghost supplier"]})
+            self.assertTrue(result["isError"])
+            self.assertIn("creates records", result["content"][0]["text"])
+            self.assertEqual(self.env["res.partner"].search_count([]), before)
+        finally:
+            self.icp.set_param("odoo_mcp_server.allow_writes", "False")
+            config.write({"allow_write": False, "method_names": False})
+
+    def test_18_call_method_respects_the_restriction_domain(self):
+        self.icp.set_param("odoo_mcp_server.allow_writes", "True")
+        config = self.env["mcp.model.config"]._get_config("res.partner")
+        config.write({"allow_write": True, "domain": "[('is_company', '=', True)]",
+                      "method_names": "message_post"})
+        try:
+            self.assertFalse(self.partner.is_company)
+            result, _payload = self._call_tool("odoo_call_method", {
+                "model": "res.partner", "ids": [self.partner.id], "method": "message_post",
+                "kwargs": {"body": "out of scope"}})
+            self.assertTrue(result["isError"])
+            self.assertIn("outside the scope", result["content"][0]["text"])
+        finally:
+            self.icp.set_param("odoo_mcp_server.allow_writes", "False")
+            config.write({"allow_write": False, "domain": "[]", "method_names": False})
+
+    def test_19_secrets_are_redacted_from_the_audit_log(self):
+        self.icp.set_param("odoo_mcp_server.allow_writes", "True")
+        config = self.env["mcp.model.config"]._get_config("res.partner")
+        config.allow_write = True
+        try:
+            self._call_tool("odoo_write", {
+                "model": "res.partner", "ids": [self.partner.id],
+                "values": {"comment": "ok", "api_key": "sk-do-not-store-me"}})
+            log = self.env["mcp.access.log"].search([("tool", "=", "odoo_write")], order="id desc", limit=1)
+            self.assertNotIn("sk-do-not-store-me", log.arguments or "")
+            self.assertIn("***", log.arguments or "")
+        finally:
+            self.icp.set_param("odoo_mcp_server.allow_writes", "False")
+            config.allow_write = False
+
+    def test_20_too_many_ids_is_refused(self):
+        result, _payload = self._call_tool("odoo_read", {
+            "model": "res.partner", "ids": list(range(1, 1502))})
+        self.assertTrue(result["isError"])
+        self.assertIn("Too many ids", result["content"][0]["text"])

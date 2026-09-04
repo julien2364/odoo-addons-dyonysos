@@ -11,7 +11,7 @@ class HrExpense(models.Model):
         string="Accountant", compute="_compute_dougs_state")
 
     def _compute_dougs_state(self):
-        lines = self.env["dougs.export.line"].search(
+        lines = self.env["dougs.export.line"].sudo().search(
             [("res_model", "=", "hr.expense"), ("res_id", "in", self.ids)], order="id desc")
         by_id = {}
         for line in lines:

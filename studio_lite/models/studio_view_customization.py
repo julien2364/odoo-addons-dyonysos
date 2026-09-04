@@ -3,6 +3,8 @@
 
 from lxml import etree
 
+import re
+
 from odoo import _, api, fields, models
 from odoo.exceptions import ValidationError
 
@@ -20,6 +22,21 @@ VIEW_POSITIONS = [
     ("end", "En fin de formulaire"),
     ("attributes", "Modification d'attributs"),
 ]
+
+
+XPATH_TOKEN = re.compile(r"^[A-Za-z_][A-Za-z0-9_.]*$")
+
+
+def _check_xpath_token(value, label):
+    """Refuse anything that is not a plain identifier before it reaches an XPath expression.
+
+    Field and page names come from user input; a value carrying a quote could otherwise
+    escape the predicate and target unrelated elements of the same view.
+    """
+    if not value or not XPATH_TOKEN.match(value):
+        raise ValidationError(_("Invalid %(label)s: %(value)r is not a valid technical name.",
+                                label=label, value=value))
+    return value
 
 
 class StudioViewCustomization(models.Model):
@@ -83,7 +100,7 @@ class StudioViewCustomization(models.Model):
                     raise ValidationError(_("Un champ d'ancrage est obligatoire pour cette position."))
                 xpath = etree.SubElement(
                     root, "xpath",
-                    expr="//field[@name='%s']" % self.anchor_field,
+                    expr="//field[@name='%s']" % _check_xpath_token(self.anchor_field, "anchor field"),
                     position=self.position,
                 )
                 xpath.append(self._studio_field_element())
@@ -92,7 +109,7 @@ class StudioViewCustomization(models.Model):
                     raise ValidationError(_("Un onglet doit être choisi pour cette position."))
                 xpath = etree.SubElement(
                     root, "xpath",
-                    expr="//page[@name='%s']" % self.page_name,
+                    expr="//page[@name='%s']" % _check_xpath_token(self.page_name, "page name"),
                     position="inside",
                 )
                 group = etree.SubElement(xpath, "group")
@@ -112,7 +129,7 @@ class StudioViewCustomization(models.Model):
             attribute = {"hide": "invisible", "required": "required", "readonly": "readonly"}[self.kind]
             xpath = etree.SubElement(
                 root, "xpath",
-                expr="//field[@name='%s']" % self.field_name,
+                expr="//field[@name='%s']" % _check_xpath_token(self.field_name, "field name"),
                 position="attributes",
             )
             attr = etree.SubElement(xpath, "attribute", name=attribute)

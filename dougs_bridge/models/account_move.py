@@ -12,7 +12,7 @@ class AccountMove(models.Model):
     dougs_sent_date = fields.Datetime(compute="_compute_dougs_state")
 
     def _compute_dougs_state(self):
-        lines = self.env["dougs.export.line"].search(
+        lines = self.env["dougs.export.line"].sudo().search(
             [("res_model", "=", "account.move"), ("res_id", "in", self.ids)], order="id desc")
         by_move = {}
         for line in lines:
@@ -28,7 +28,7 @@ class AccountMove(models.Model):
                 move.dougs_state, move.dougs_sent_date = "none", False
 
     def _search_dougs_state(self, operator, value):
-        sent_ids = self.env["dougs.export.line"].search(
+        sent_ids = self.env["dougs.export.line"].sudo().search(
             [("res_model", "=", "account.move"), ("state", "=", "sent")]).mapped("res_id")
         if (operator, value) in (("=", "sent"), ("!=", "none")):
             return [("id", "in", sent_ids)]

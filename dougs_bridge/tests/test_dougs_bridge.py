@@ -139,3 +139,31 @@ class TestDougsBridge(TransactionCase):
             self.env["dougs.export.batch"]._cron_run()
         after = self.env["dougs.export.batch"].search_count([])
         self.assertEqual(after, before + 1)
+
+    def test_09_plain_employee_can_open_an_invoice(self):
+        """Regression: dougs_state must not raise for a user without accounting rights."""
+        employee = self.env["res.users"].create({
+            "name": "Employe Lambda", "login": "employe-lambda",
+            "group_ids": [Command.set([self.env.ref("base.group_user").id])],
+        })
+        invoice = self.out_invoice.with_user(employee)
+        self.assertIn(invoice.dougs_state, ("none", "sent", "error"))
+        expense = self.env["hr.expense"].sudo().create({
+            "name": "Peage", "product_id": self.env["product.product"].sudo().create(
+                {"name": "Frais", "can_be_expensed": True}).id,
+            "employee_id": self.env["hr.employee"].sudo().create(
+                {"name": "Employe Lambda", "user_id": employee.id}).id,
+            "total_amount_currency": 12.0,
+        })
+        self.assertIn(expense.with_user(employee).dougs_state, ("none", "sent", "error"))
+
+    def test_10_batch_name_cannot_escape_the_export_folder(self):
+        """Regression: batch.name is writable over RPC, it must not drive a path traversal."""
+        tmp = tempfile.mkdtemp()
+        self.icp.set_param("dougs_bridge.folder_path", tmp)
+        batch = self.env["dougs.export.batch"].create({"transport": "folder"})
+        batch.sudo().write({"name": "../../escaped"})
+        with self._patch_pdf():
+            batch.action_send()
+        self.assertFalse(os.path.exists(os.path.join(os.path.dirname(tmp), "escaped")))
+        self.assertTrue(os.path.isdir(os.path.join(tmp, ".._.._escaped")))

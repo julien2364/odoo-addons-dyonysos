@@ -27,13 +27,19 @@ class AiExtractLog(models.Model):
 
     @api.depends("res_model", "res_id")
     def _compute_res_name(self):
+        # Group by model so display_name is computed once per model, not once per log line.
+        by_model = {}
         for log in self:
-            name = ""
+            log.res_name = ""
             if log.res_model and log.res_id and log.res_model in self.env:
-                record = self.env[log.res_model].browse(log.res_id).exists()
-                if record:
-                    name = record.display_name
-            log.res_name = name
+                by_model.setdefault(log.res_model, set()).add(log.res_id)
+        names = {}
+        for model_name, ids in by_model.items():
+            records = self.env[model_name].browse(sorted(ids)).exists()
+            for record in records:
+                names[(model_name, record.id)] = record.display_name
+        for log in self:
+            log.res_name = names.get((log.res_model, log.res_id), "")
 
     @api.depends("attachment_name", "state")
     def _compute_display_name(self):

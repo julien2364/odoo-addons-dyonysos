@@ -217,13 +217,15 @@ class AccountMove(models.Model):
             partner = Partner.create(vals)
             if vat:
                 partner.message_post(body=self.env._("VAT read on the invoice (not validated): %s", vat))
+        # Deliberately NOT creating a res.partner.bank here: a bank account read from an
+        # incoming document is the classic invoice-fraud vector. The IBAN is reported in the
+        # chatter so a human decides whether to record it.
+        note = self.env._("Supplier '%s' was created from the document.", name)
         if supplier.get("iban"):
-            try:
-                with self.env.cr.savepoint():
-                    self.env["res.partner.bank"].create({"acc_number": supplier["iban"], "partner_id": partner.id})
-            except Exception:  # noqa: BLE001
-                _logger.info("AI extract: could not create bank account %s", supplier["iban"])
-        return partner, self.env._("Supplier '%s' was created from the document.", name)
+            note += " " + self.env._(
+                "An IBAN was read on the document (%s): check it against a trusted source before "
+                "recording it as a bank account.", supplier["iban"])
+        return partner, note
 
     def _ai_match_tax(self, rate):
         """Find the purchase tax of the company matching a percentage."""

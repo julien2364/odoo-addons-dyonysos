@@ -15,6 +15,8 @@ from odoo import _, http
 from odoo.exceptions import AccessDenied, AccessError, UserError, ValidationError
 from odoo.http import request
 
+from odoo.addons.odoo_mcp_server.models.mcp_model_config import CREATING_METHODS
+
 _logger = logging.getLogger(__name__)
 
 MCP_SCOPE = "odoo.mcp"
@@ -28,7 +30,22 @@ METHOD_NOT_FOUND = -32601
 INVALID_PARAMS = -32602
 INTERNAL_ERROR = -32603
 
+MAX_BODY_BYTES = 2 * 1024 * 1024   # a JSON-RPC call never legitimately reaches this
+MAX_IDS = 1000                     # cap on odoo_read / odoo_write / odoo_unlink
+SECRET_HINTS = ("password", "passwd", "secret", "token", "api_key", "apikey",
+                "private", "credential", "iban", "authorization")
+
 _RATE_BUCKET = {}
+
+
+def _redact(value):
+    """Blank out anything that looks like a credential before it reaches the audit log."""
+    if isinstance(value, dict):
+        return {k: ("***" if any(h in str(k).lower() for h in SECRET_HINTS) else _redact(v))
+                for k, v in value.items()}
+    if isinstance(value, list):
+        return [_redact(v) for v in value]
+    return value
 
 
 class McpError(Exception):
@@ -56,8 +73,19 @@ class OdooMcpController(http.Controller):
             return self._json({"jsonrpc": "2.0", "id": None,
                                "error": {"code": INTERNAL_ERROR, "message": "MCP endpoint disabled"}}, status=503)
 
+        content_length = request.httprequest.content_length or 0
+        if content_length > MAX_BODY_BYTES:
+            return self._json({"jsonrpc": "2.0", "id": None,
+                               "error": {"code": INVALID_REQUEST, "message": "Request body too large"}},
+                              status=413)
+        raw_body = request.httprequest.get_data(cache=False, parse_form_data=False)
+        if len(raw_body) > MAX_BODY_BYTES:
+            return self._json({"jsonrpc": "2.0", "id": None,
+                               "error": {"code": INVALID_REQUEST, "message": "Request body too large"}},
+                              status=413)
+
         try:
-            body = json.loads(request.httprequest.get_data() or b"{}")
+            body = json.loads(raw_body or b"{}")
         except ValueError:
             return self._json({"jsonrpc": "2.0", "id": None,
                                "error": {"code": PARSE_ERROR, "message": "Parse error"}}, status=400)
@@ -344,7 +372,7 @@ class OdooMcpController(http.Controller):
         }
         icp = request.env["ir.config_parameter"].sudo()
         if icp.get_param("odoo_mcp_server.log_arguments", "True") == "True":
-            log_vals["arguments"] = json.dumps(args, ensure_ascii=False, default=str)[:8000]
+            log_vals["arguments"] = json.dumps(_redact(args), ensure_ascii=False, default=str)[:8000]
 
         handler = getattr(self, "_tool_" + (name or ""), None)
         if handler is None or not name or not name.startswith("odoo_"):
@@ -405,6 +433,13 @@ class OdooMcpController(http.Controller):
         if model_name not in request.env:
             raise McpError("Unknown model %s." % model_name, INVALID_PARAMS)
         return config
+
+    @staticmethod
+    def _clean_ids(args):
+        ids = [int(i) for i in (args.get("ids") or [])]
+        if len(ids) > MAX_IDS:
+            raise McpError("Too many ids in one call (%d, maximum %d)." % (len(ids), MAX_IDS), INVALID_PARAMS)
+        return ids
 
     @staticmethod
     def _clean_fields(config, fields_arg, model):
@@ -494,7 +529,7 @@ class OdooMcpController(http.Controller):
     def _tool_odoo_read(self, args):
         config = self._config(args.get("model"))
         model = args["model"]
-        ids = [int(i) for i in (args.get("ids") or [])]
+        ids = self._clean_ids(args)
         if not ids:
             raise McpError("The 'ids' argument is required.", INVALID_PARAMS)
         field_names = self._clean_fields(config, args.get("fields"), model)
@@ -539,7 +574,7 @@ class OdooMcpController(http.Controller):
 
     def _tool_odoo_write(self, args):
         config = self._config(args.get("model"), "write")
-        ids = [int(i) for i in (args.get("ids") or [])]
+        ids = self._clean_ids(args)
         values = args.get("values")
         if not ids or not isinstance(values, dict) or not values:
             raise McpError("Both 'ids' and a non-empty 'values' object are required.", INVALID_PARAMS)
@@ -571,7 +606,15 @@ class OdooMcpController(http.Controller):
         if method not in config._get_methods():
             raise McpError("Method '%s' is not allowed on %s. Allowed: %s"
                            % (method, args["model"], ", ".join(sorted(config._get_methods()))), INVALID_PARAMS)
-        records = request.env[args["model"]].browse([int(i) for i in (args.get("ids") or [])]).exists()
+        if method in CREATING_METHODS and not config.allow_create:
+            raise McpError("Method '%s' creates records, which is not allowed on %s."
+                           % (method, args["model"]), INVALID_PARAMS)
+        records = request.env[args["model"]].browse(self._clean_ids(args)).exists()
+        if config._get_domain():
+            allowed = records.filtered_domain(config._get_domain())
+            if allowed != records:
+                raise McpError("Some records are outside the scope allowed for %s." % args["model"], INVALID_PARAMS)
+            records = allowed
         target = getattr(records, method, None)
         if not callable(target):
             raise McpError("Model %s has no method %s." % (args["model"], method), INVALID_PARAMS)

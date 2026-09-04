@@ -34,7 +34,9 @@ class AmazonAccountCommunity(models.Model):
         string="Région", default="eu", required=True)
     endpoint_url = fields.Char(
         string="Endpoint", compute="_compute_endpoint_url", store=True, readonly=False,
-        help="URL de base de l'API SP-API. Calculée depuis la région, modifiable pour le bac à sable.")
+        groups="base.group_system",
+        help="URL de base de l'API SP-API. Calculée depuis la région, modifiable pour le bac à sable. "
+             "Réservée aux administrateurs système : une URL détournée exfiltrerait le jeton d'accès Amazon.")
 
     marketplace_ids = fields.Many2many(
         "amazon.marketplace.community", string="Places de marché",
@@ -389,6 +391,8 @@ class AmazonAccountCommunity(models.Model):
         api = self._get_api()
         products = self._amazon_products()
         sent, errors = 0, []
+        # Warm the stock cache in one query instead of one per product.
+        products.with_context(warehouse_id=self.warehouse_id.id or None).mapped("qty_available")
         for product in products:
             sku = product._amazon_effective_sku()
             if not sku:

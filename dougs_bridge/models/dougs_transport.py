@@ -77,7 +77,11 @@ class DougsTransport:
         root = self.param("folder_path")
         if not root:
             raise DougsTransportError("No export folder configured.")
-        target = os.path.join(root, batch.name)
+        root = os.path.realpath(root)
+        target = os.path.realpath(os.path.join(root, safe_filename(batch.name)))
+        # Defence in depth: batch.name is readonly in the UI but writable over RPC.
+        if target != root and not target.startswith(root + os.sep):
+            raise DougsTransportError("Refusing to write outside the configured export folder.")
         try:
             os.makedirs(target, exist_ok=True)
             for filename, content, _line in files:
@@ -98,8 +102,10 @@ class DougsTransport:
         port = int(self.param("sftp_port", "22") or 22)
         user = self.param("sftp_user")
         password = self.param("sftp_password")
-        root = self.param("sftp_path", "/") or "/"
-        target = posixpath.join(root, batch.name)
+        root = posixpath.normpath(self.param("sftp_path", "/") or "/")
+        target = posixpath.normpath(posixpath.join(root, safe_filename(batch.name)))
+        if target != root and not target.startswith(root.rstrip("/") + "/"):
+            raise DougsTransportError("Refusing to write outside the configured SFTP path.")
         try:
             transport = paramiko.Transport((host, port))
             transport.connect(username=user, password=password)
