@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_packlink_account_user,packlink.account user,model_packlink_account,stock.group_stock_user,1,0,0,0
+access_packlink_account_manager,packlink.account manager,model_packlink_account,stock.group_stock_manager,1,1,1,1
+access_packlink_log_user,packlink.log user,model_packlink_log,stock.group_stock_user,1,0,0,0
+access_packlink_log_manager,packlink.log manager,model_packlink_log,stock.group_stock_manager,1,1,1,1
