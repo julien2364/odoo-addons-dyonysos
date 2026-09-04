@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_anim_avis" name="Avis clients">
+    <section class="s_anim_avis pt48 pb48 o_cc o_cc1">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <span class="o_anim_eyebrow">Avis</span>
+                    <h2 class="mb-3">Ce qu'en disent les clients</h2>
+                    <div class="o_anim_score mb-2">
+                        <span class="o_anim_score_value">4,6</span>
+                        <span class="o_anim_stars" aria-hidden="true">★★★★★</span>
+                        <span class="visually-hidden">4,6 sur 5</span>
+                    </div>
+                    <p class="mb-4">Sur 218 avis vérifiés après achat.</p>
+                    <div class="o_anim_bar mb-2"><span>5★</span>
+                        <span class="o_anim_bar_track"><span class="o_anim_bar_fill" style="width: 71%;"/></span>
+                        <span>71 %</span></div>
+                    <div class="o_anim_bar mb-2"><span>4★</span>
+                        <span class="o_anim_bar_track"><span class="o_anim_bar_fill" style="width: 19%;"/></span>
+                        <span>19 %</span></div>
+                    <div class="o_anim_bar mb-2"><span>3★</span>
+                        <span class="o_anim_bar_track"><span class="o_anim_bar_fill" style="width: 6%;"/></span>
+                        <span>6 %</span></div>
+                    <div class="o_anim_bar mb-2"><span>2★</span>
+                        <span class="o_anim_bar_track"><span class="o_anim_bar_fill" style="width: 3%;"/></span>
+                        <span>3 %</span></div>
+                    <div class="o_anim_bar"><span>1★</span>
+                        <span class="o_anim_bar_track"><span class="o_anim_bar_fill" style="width: 1%;"/></span>
+                        <span>1 %</span></div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="o_anim_review">
+                                <p class="o_anim_stars mb-2" aria-hidden="true">★★★★★</p>
+                                <p class="mb-2">La housse passe vraiment en machine sans se déformer.
+                                    Troisième lavage, elle est comme au premier jour.</p>
+                                <p class="small mb-0 opacity-75">Marion D. — Panier matelassé</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="o_anim_review">
+                                <p class="o_anim_stars mb-2" aria-hidden="true">★★★★☆</p>
+                                <p class="mb-2">Fontaine silencieuse comme promis. Le filtre est un peu
+                                    court à changer tous les mois, mais l'eau reste claire.</p>
+                                <p class="small mb-0 opacity-75">Samuel R. — Fontaine à eau</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="o_anim_review">
+                                <p class="o_anim_stars mb-2" aria-hidden="true">★★★★★</p>
+                                <p class="mb-2">Le griffoir tient sans bouger, y compris avec un chat
+                                    de six kilos qui s'y jette dessus.</p>
+                                <p class="small mb-0 opacity-75">Inès K. — Griffoir vertical</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="o_anim_review">
+                                <p class="o_anim_stars mb-2" aria-hidden="true">★★★★☆</p>
+                                <p class="mb-2">Foin très propre, aucune poussière. Le sac de 2 kg part
+                                    vite avec deux lapins.</p>
+                                <p class="small mb-0 opacity-75">Théo L. — Foin de montagne</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

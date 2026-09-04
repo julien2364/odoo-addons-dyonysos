@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_presse_mode_sombre" name="Bascule mode sombre">
+    <section class="s_presse_mode_sombre pt16 pb16 o_cc o_cc1">
+        <div class="container d-flex justify-content-end">
+            <button type="button" class="o_presse_dark_toggle" aria-pressed="false">
+                <span aria-hidden="true">◐</span>
+                <span data-presse-dark-label="1">Mode sombre</span>
+            </button>
+        </div>
+    </section>
+</template>
+
+</odoo>

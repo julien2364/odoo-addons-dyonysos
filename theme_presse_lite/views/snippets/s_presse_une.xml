@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_presse_une" name="Une">
+    <section class="s_presse_une pt40 pb40 o_cc o_cc1">
+        <div class="container">
+            <div class="o_presse_section_title">
+                <span>À la une</span>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <article>
+                        <img src="/theme_presse_lite/static/src/img/presse_une.png"
+                             alt="" class="o_presse_lead_media mb-3"/>
+                        <span class="o_presse_kicker">Économie</span>
+                        <h2 class="o_presse_lead_title">Les ateliers de la vallée misent sur la réparation</h2>
+                        <p class="lead mb-2">Quatre communes s'associent pour ouvrir un atelier partagé où
+                            l'on répare électroménager, vélos et outillage plutôt que de les remplacer.</p>
+                        <p class="o_presse_meta mb-0">
+                            <span>Par Camille Ferrand</span>
+                            <span>12 mars</span>
+                            <span class="o_presse_reading_time">6 min de lecture</span>
+                        </p>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <div class="o_presse_side_item">
+                        <span class="o_presse_kicker">Culture</span>
+                        <h4 class="mb-1">Le festival des Rives ouvre sa billetterie</h4>
+                        <p class="o_presse_meta mb-0"><span>Par Noé Vasseur</span><span>4 min</span></p>
+                    </div>
+                    <div class="o_presse_side_item">
+                        <span class="o_presse_kicker">Territoires</span>
+                        <h4 class="mb-1">Ligne 7 : le tracé définitif enfin arrêté</h4>
+                        <p class="o_presse_meta mb-0"><span>Par Salomé Perrin</span><span>3 min</span></p>
+                    </div>
+                    <div class="o_presse_side_item">
+                        <span class="o_presse_kicker">Sciences</span>
+                        <h4 class="mb-1">Un capteur pour surveiller la nappe phréatique</h4>
+                        <p class="o_presse_meta mb-0"><span>Par Hugo Delattre</span><span>5 min</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

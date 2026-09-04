@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- =====================================================================
+     Deux dispositions de pied de page, proposées dans le panneau
+     « Pied de page » de l'éditeur de site.
+     ===================================================================== -->
+
+<!-- Variante 1 — Pied de page étendu -->
+<template id="template_footer_anim_expanded" inherit_id="website.layout"
+          name="Animalerie — Pied de page étendu" active="False">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure oe_structure_solo text-break o_anim_footer_expanded"
+             t-ignore="true" t-if="not no_footer">
+            <section class="s_text_block pt64 pb32" data-snippet="s_text_block" data-name="Container">
+                <div class="container">
+                    <div class="row g-5">
+                        <div class="col-lg-4">
+                            <h5 class="mb-3">La boutique</h5>
+                            <p class="mb-3">Une sélection courte et assumée : quatre-vingts références, toutes testées.</p>
+                            <p class="mb-0"><a href="/contactus">Nous écrire</a></p>
+                        </div>
+                        <div class="col-6 col-lg-2">
+                            <h6>Boutique</h6>
+                            <ul class="list-unstyled mb-0">
+                                    <li><a href="/shop">Tous les produits</a></li>
+                                    <li><a href="/categorie-chiens">Chiens</a></li>
+                                    <li><a href="/shop">Chats</a></li>
+                                    <li><a href="/shop">Petits animaux</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-lg-2">
+                            <h6>Aide</h6>
+                            <ul class="list-unstyled mb-0">
+                                    <li><a href="/contactus">Nous contacter</a></li>
+                                    <li><a href="/categorie-chiens">Guide de tailles</a></li>
+                                    <li><a href="/shop">Livraison</a></li>
+                                    <li><a href="/shop">Retours</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <h6>Abonnement</h6>
+                            <p class="mb-3">Croquettes et litière livrées automatiquement, jusqu'à 12 % de remise.</p>
+                            <p class="mb-0"><a href="/contactus" class="btn btn-primary">Découvrir l'abonnement</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </xpath>
+</template>
+
+<!-- Variante 2 — Pied de page compact -->
+<template id="template_footer_anim_compact" inherit_id="website.layout"
+          name="Animalerie — Pied de page compact" active="False">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure oe_structure_solo text-break o_anim_footer_compact"
+             t-ignore="true" t-if="not no_footer">
+            <section class="s_text_block pt32 pb32" data-snippet="s_text_block" data-name="Container">
+                <div class="container">
+                    <div class="row align-items-center g-3">
+                        <div class="col-lg-5">
+                            <p class="mb-0">Une sélection courte et assumée : quatre-vingts références, toutes testées.</p>
+                        </div>
+                        <div class="col-lg-7 text-lg-end">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item"><a href="/shop">Boutique</a></li>
+                                <li class="list-inline-item"><a href="/categorie-chiens">Conseils</a></li>
+                                <li class="list-inline-item"><a href="/notre-boutique">L'enseigne</a></li>
+                                <li class="list-inline-item"><a href="/contactus">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </xpath>
+</template>
+
+</odoo>

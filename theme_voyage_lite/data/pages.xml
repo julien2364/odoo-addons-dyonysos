@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Pages de démonstration. Dans un module theme_*, <template> devient
+     une theme.ir.ui.view et la page une theme.website.page : elles ne
+     sont créées dans le site qu'à l'application du thème. Le markup est
+     volontairement dupliqué depuis views/snippets/ pour que les sections
+     soient éditables dans l'oe_structure de la page. -->
+
+<template id="page_voyage" name="Voyage">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="s_voyage_hero"
+                         style="background-image: url('/theme_voyage_lite/static/src/img/voyage_hero.png');">
+                    <div class="container py-5">
+                        <span class="o_voyage_eyebrow">Itinéraires accompagnés</span>
+                        <h1 class="mb-3">Prenez le temps long, du col de Vantour aux rives de la Sèvre</h1>
+                        <p class="lead mb-4">Douze itinéraires conçus à pied, en train et à vélo, entre quatre et
+                            seize jours, avec des hébergements choisis un par un.</p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#" class="btn btn-primary btn-lg">Voir les itinéraires</a>
+                            <a href="#" class="btn btn-outline-light btn-lg">Demander un devis</a>
+                        </div>
+                    </div>
+                </section>
+            <section class="s_voyage_destinations pt48 pb48 o_cc o_cc2">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <span class="o_voyage_eyebrow">Destinations</span>
+                            <h2 class="mb-2">Six régions, six manières de ralentir</h2>
+                            <p class="mb-0">Toutes accessibles en train depuis une gare principale.</p>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6">
+                                <article class="o_voyage_card">
+                                    <img src="/theme_voyage_lite/static/src/img/voyage_dest_1.png" alt=""/>
+                                    <div class="o_voyage_card_body">
+                                        <span class="o_voyage_pill">7 jours</span>
+                                        <h3 class="h4 mt-2 mb-2">Les crêtes de Vantour</h3>
+                                        <p class="mb-3">Une traversée en balcon au-dessus de la vallée, avec deux
+                                            nuits en refuge et un jour de repos au village.</p>
+                                        <p class="o_voyage_meta mb-0">Randonnée · Printemps et automne</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <article class="o_voyage_card">
+                                    <img src="/theme_voyage_lite/static/src/img/voyage_dest_2.png" alt=""/>
+                                    <div class="o_voyage_card_body">
+                                        <span class="o_voyage_pill">5 jours</span>
+                                        <h3 class="h4 mt-2 mb-2">La boucle des marais</h3>
+                                        <p class="mb-3">Cent trente kilomètres à vélo sur des chemins de halage,
+                                            sans dénivelé et sans voiture.</p>
+                                        <p class="o_voyage_meta mb-0">Vélo · Toute l'année</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <article class="o_voyage_card">
+                                    <img src="/theme_voyage_lite/static/src/img/voyage_dest_3.png" alt=""/>
+                                    <div class="o_voyage_card_body">
+                                        <span class="o_voyage_pill">4 jours</span>
+                                        <h3 class="h4 mt-2 mb-2">Le littoral des cabanes</h3>
+                                        <p class="mb-3">Marche côtière d'anse en anse, marées à surveiller et
+                                            bateau de pêche au retour.</p>
+                                        <p class="o_voyage_meta mb-0">Randonnée · Été</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <article class="o_voyage_card">
+                                    <img src="/theme_voyage_lite/static/src/img/voyage_dest_4.png" alt=""/>
+                                    <div class="o_voyage_card_body">
+                                        <span class="o_voyage_pill">9 jours</span>
+                                        <h3 class="h4 mt-2 mb-2">Traversée des hauts plateaux</h3>
+                                        <p class="mb-3">Le grand format : bivouacs, sources froides et un ravitaillement
+                                            unique à mi-parcours.</p>
+                                        <p class="o_voyage_meta mb-0">Randonnée · Été</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <article class="o_voyage_card">
+                                    <img src="/theme_voyage_lite/static/src/img/voyage_dest_5.png" alt=""/>
+                                    <div class="o_voyage_card_body">
+                                        <span class="o_voyage_pill">6 jours</span>
+                                        <h3 class="h4 mt-2 mb-2">Vignes et villages hauts</h3>
+                                        <p class="mb-3">Étapes courtes, tables d'hôtes et deux journées entières
+                                            sans transfert.</p>
+                                        <p class="o_voyage_meta mb-0">Randonnée · Automne</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <article class="o_voyage_card">
+                                    <img src="/theme_voyage_lite/static/src/img/voyage_dest_6.png" alt=""/>
+                                    <div class="o_voyage_card_body">
+                                        <span class="o_voyage_pill">16 jours</span>
+                                        <h3 class="h4 mt-2 mb-2">D'une gare à l'autre, en train lent</h3>
+                                        <p class="mb-3">Onze trains régionaux, six villes moyennes et beaucoup de
+                                            temps devant la fenêtre.</p>
+                                        <p class="o_voyage_meta mb-0">Train · Toute l'année</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <section class="s_voyage_recit pt48 pb48 o_cc o_cc1">
+                    <div class="container">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-6">
+                                <img src="/theme_voyage_lite/static/src/img/voyage_recit.png" alt=""
+                                     class="o_voyage_recit_media"/>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="o_voyage_recit_text">
+                                    <span class="o_voyage_eyebrow">Carnet de route</span>
+                                    <h2 class="mb-3">Le quatrième jour, on cesse de compter les kilomètres</h2>
+                                    <p>C'est toujours le même moment. Les trois premiers jours, on regarde la carte
+                                        et la montre. Le quatrième, on regarde le ciel et on demande l'heure à
+                                        quelqu'un.</p>
+                                    <p>Nos itinéraires sont construits autour de cette bascule : des étapes courtes
+                                        au départ, une journée sans marche au milieu, et un dernier tiers plus
+                                        engagé quand le corps a compris.</p>
+                                    <a href="#" class="btn btn-primary mt-2">Lire le carnet complet</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <section class="s_voyage_appel pt40 pb48 o_cc o_cc1">
+                    <div class="container">
+                        <div class="o_voyage_appel_box o_cc o_cc3 text-center">
+                            <span class="o_voyage_eyebrow">Parlons-en</span>
+                            <h2 class="mb-3">Un projet, une date, un niveau : on construit le reste</h2>
+                            <p class="mb-4 mx-auto" style="max-width: 40rem;">Décrivez-nous en trois lignes ce que
+                                vous cherchez. Nous répondons sous deux jours ouvrés, avec une proposition chiffrée
+                                et deux variantes.</p>
+                            <a href="/contactus" class="btn btn-primary btn-lg">Demander un devis</a>
+                        </div>
+                    </div>
+                </section>
+        </div>
+    </t>
+</template>
+
+<record id="page_voyage_website_page" model="theme.website.page">
+    <field name="url">/nos-voyages</field>
+    <field name="view_id" ref="page_voyage"/>
+    <field name="is_published" eval="True"/>
+</record>
+
+</odoo>

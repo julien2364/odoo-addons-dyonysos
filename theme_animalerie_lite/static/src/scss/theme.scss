@@ -1,0 +1,224 @@
+// =============================================================================
+// Thème Animalerie — habillage (bundle web.assets_frontend)
+// =============================================================================
+$o-anim-radius: 1.5rem;
+$o-anim-radius-sm: 1rem;
+$o-anim-shadow: 0 .6rem 1.6rem rgba(34, 48, 31, .10);
+$o-anim-shadow-hover: 0 1rem 2.4rem rgba(34, 48, 31, .16);
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    letter-spacing: -.01em;
+    text-wrap: balance;
+}
+
+.o_anim_eyebrow {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: .78rem;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: o-color('o-color-1');
+    margin-bottom: .5rem;
+}
+
+.o_anim_pill {
+    display: inline-flex;
+    align-items: center;
+    gap: .3rem;
+    border-radius: 2rem;
+    padding: .2rem .8rem;
+    font-size: .78rem;
+    font-weight: 600;
+    background: rgba(47, 107, 60, .12);
+    color: #24552F;
+
+    &.o_anim_pill_promo {
+        background: rgba(169, 80, 47, .14);
+        color: #8B3F24;
+    }
+}
+
+// -------------------------------------------------------- accueil boutique
+.s_anim_accueil {
+    .o_anim_hero_box {
+        border-radius: $o-anim-radius;
+        overflow: hidden;
+        box-shadow: $o-anim-shadow;
+    }
+
+    .o_anim_hero_media {
+        width: 100%;
+        height: 100%;
+        min-height: 18rem;
+        object-fit: cover;
+    }
+
+    h1 {
+        font-size: clamp(2rem, calc(1.2rem + 2.8vw), 3.4rem);
+    }
+}
+
+// ------------------------------------------------------- grille de produits
+.o_anim_product_card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: $o-anim-radius;
+    overflow: hidden;
+    background: o-color('o-color-4');
+    box-shadow: $o-anim-shadow;
+    transition: box-shadow .25s ease, transform .25s ease;
+
+    &:hover,
+    &:focus-within {
+        box-shadow: $o-anim-shadow-hover;
+        transform: translateY(-2px);
+    }
+
+    img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        background: o-color('o-color-3');
+    }
+
+    .o_anim_product_body {
+        padding: 1rem 1.15rem 1.25rem;
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+    }
+
+    .o_anim_product_price {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 1.15rem;
+        margin-top: auto;
+    }
+}
+
+// ------------------------------------------------------------ réassurance
+.s_anim_reassurance {
+    .o_anim_trust {
+        display: flex;
+        align-items: flex-start;
+        gap: .9rem;
+    }
+
+    .o_anim_trust_icon {
+        flex: 0 0 auto;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(47, 107, 60, .12);
+        color: #24552F;
+        font-size: 1.25rem;
+    }
+
+    .o_anim_trust_title {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        margin-bottom: .15rem;
+    }
+}
+
+// ------------------------------------- habillage des vues de website_sale
+// On style les vues existantes de la boutique, on ne les remplace pas.
+#products_grid {
+    .o_wsale_product_grid_wrapper .card,
+    .oe_product .oe_product_image,
+    .o_wsale_products_grid_table_wrapper .card {
+        border-radius: $o-anim-radius;
+        overflow: hidden;
+        border: 0;
+        box-shadow: $o-anim-shadow;
+    }
+
+    .oe_product_image_img,
+    .oe_product_image_img_wrapper img {
+        border-radius: $o-anim-radius-sm;
+    }
+}
+
+#wrap.o_wsale_products_page,
+.o_wsale_products_main_row {
+    .form-control,
+    .btn {
+        border-radius: 2rem;
+    }
+}
+
+// Fiche produit
+#product_detail,
+.o_wsale_product_page {
+    #o-carousel-product,
+    .o_wsale_product_images {
+        border-radius: $o-anim-radius;
+        overflow: hidden;
+    }
+
+    #product_details {
+        .h3, h1 {
+            letter-spacing: -.015em;
+        }
+
+        .css_quantity input,
+        .css_quantity .btn {
+            border-radius: 2rem;
+        }
+    }
+
+    .o_anim_product_promise {
+        border-radius: $o-anim-radius;
+        padding: 1rem 1.15rem;
+        background: o-color('o-color-3');
+        margin-top: 1.25rem;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-size: .92rem;
+        }
+
+        li {
+            display: flex;
+            gap: .55rem;
+            align-items: flex-start;
+        }
+
+        li + li {
+            margin-top: .4rem;
+        }
+
+        .o_anim_check {
+            color: o-color('o-color-1');
+            font-weight: 700;
+        }
+    }
+}
+
+// Panier et tunnel
+.o_wsale_cart,
+#wrapwrap .oe_cart {
+    .card,
+    #cart_products {
+        border-radius: $o-anim-radius;
+    }
+}
+
+#wrapwrap footer {
+    .o_anim_footer_title {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        letter-spacing: .07em;
+        text-transform: uppercase;
+        font-size: .78rem;
+        opacity: .8;
+    }
+}

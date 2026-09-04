@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Contenu de démonstration entièrement fictif : aucune entreprise,
+         marque ou personne réelle n'y est citée. Ces enregistrements sont
+         supprimables sans effet sur le thème. -->
+    <data noupdate="1">
+
+        <record id="blog_territoires" model="blog.blog">
+            <field name="name">Territoires</field>
+            <field name="subtitle">Ce qui bouge dans les communes, les quartiers et les vallées.</field>
+        </record>
+
+        <record id="blog_economie" model="blog.blog">
+            <field name="name">Économie</field>
+            <field name="subtitle">Entreprises, emploi, filières : les chiffres et ce qu'ils cachent.</field>
+        </record>
+
+        <record id="blog_culture" model="blog.blog">
+            <field name="name">Culture</field>
+            <field name="subtitle">Scènes, livres, expositions et ateliers, sans complaisance.</field>
+        </record>
+
+        <record id="post_presse_01" model="blog.post">
+            <field name="name">Le budget participatif retenu par quatorze quartiers</field>
+            <field name="subtitle">Les projets lauréats seront mis en œuvre avant la fin de l'année.</field>
+            <field name="blog_id" ref="blog_territoires"/>
+            <field name="is_published" eval="True"/>
+            <field name="content" type="html"><p class="o_presse_chapo">Sur les cent-six dossiers déposés au printemps, quarante-deux ont franchi l'étape de recevabilité et dix-neuf ont été soumis au vote. Quatorze quartiers ont finalement désigné un projet, souvent le même type : un aménagement de proximité, peu coûteux, visible en quelques mois.</p><p>La mécanique du vote a été simplifiée cette année. Il n'est plus nécessaire de se déplacer en mairie annexe : un bulletin déposé dans l'une des vingt-deux urnes réparties dans les équipements publics suffit. La participation a doublé.</p><p>Reste la question du suivi. L'édition précédente avait vu trois projets sur onze prendre plus d'un an de retard, sans que les habitants en soient informés. Un tableau de bord public est annoncé pour l'automne.</p></field>
+        </record>
+
+        <record id="post_presse_02" model="blog.post">
+            <field name="name">Ligne 7 : le tracé définitif enfin arrêté</field>
+            <field name="subtitle">Après deux ans de concertation, le variante par la rive gauche l'emporte.</field>
+            <field name="blog_id" ref="blog_territoires"/>
+            <field name="is_published" eval="True"/>
+            <field name="content" type="html"><p class="o_presse_chapo">Le comité de pilotage a tranché mardi soir pour la variante dite « rive gauche », plus longue de huit cents mètres mais desservant deux groupes scolaires et le centre de santé.</p><p>Les riverains de la rue des Fontaines, qui redoutaient une emprise sur les trottoirs, obtiennent une voie partagée plutôt qu'un site propre. Le gain de temps théorique passe de neuf à six minutes.</p><p>Les premiers travaux préparatoires sont annoncés pour le printemps prochain, sous réserve de la levée des deux recours déposés en juin.</p></field>
+        </record>
+
+        <record id="post_presse_03" model="blog.post">
+            <field name="name">Ce que change la nouvelle carte scolaire pour les familles</field>
+            <field name="subtitle">Trois secteurs redécoupés, deux cent quarante élèves concernés.</field>
+            <field name="blog_id" ref="blog_territoires"/>
+            <field name="is_published" eval="True"/>
+            <field name="content" type="html"><p class="o_presse_chapo">Le redécoupage adopté en conseil municipal concerne trois secteurs du nord de la commune. Deux cent quarante élèves changeront d'établissement de rattachement à la rentrée, avec un maintien possible pour les fratries.</p><p>Les familles ont jusqu'au 15 avril pour déposer une demande de dérogation. Le taux d'acceptation était de soixante et un pour cent lors du précédent redécoupage.</p><p>L'objectif affiché est de rééquilibrer les effectifs entre deux écoles dont l'écart atteignait cent dix élèves, sans fermeture de classe.</p></field>
+        </record>
+
+        <record id="post_presse_04" model="blog.post">
+            <field name="name">La vétérinaire qui soigne les rapaces de la falaise</field>
+            <field name="subtitle">Portrait d'une praticienne qui consacre un jour par semaine aux oiseaux blessés.</field>
+            <field name="blog_id" ref="blog_territoires"/>
+            <field name="is_published" eval="True"/>
+            <field name="content" type="html"><p class="o_presse_chapo">Le cabinet est ordinaire : deux salles, une salle d'attente, un chat de compagnie qui dort sur le comptoir. Le vendredi, il devient autre chose. Ce jour-là, les cages accueillent des buses, des faucons et, deux fois cette année, un hibou grand-duc.</p><p>Les oiseaux arrivent par le centre de sauvegarde installé à quinze kilomètres, qui ne dispose pas de bloc opératoire. Les fractures d'aile représentent l'essentiel des interventions ; le taux de relâcher tourne autour de six sur dix.</p><p>« On ne soigne pas un rapace comme un chien : il ne coopère jamais, et le stress tue plus souvent que la blessure », résume-t-elle en préparant une contention.</p></field>
+        </record>
+
+        <record id="post_presse_05" model="blog.post">
+            <field name="name">La filière textile relocalise un atelier de tissage</field>
+            <field name="subtitle">Trente emplois annoncés d'ici l'automne dans un bâtiment vacant depuis huit ans.</field>
+            <field name="blog_id" ref="blog_economie"/>
+            <field name="is_published" eval="True"/>
+            <field name="content" type="html"><p class="o_presse_chapo">L'atelier occupera quatre mille mètres carrés d'un ancien site de conditionnement, à l'arrêt depuis huit ans. Douze métiers à tisser y seront installés, dont quatre reconditionnés sur place.</p><p>Le montage financier repose pour un tiers sur des fonds régionaux, pour un tiers sur un prêt participatif et pour le reste sur les fonds propres de la société. Le point mort est annoncé à la troisième année.</p><p>Le pari porte sur des séries courtes pour des marques qui cherchent à raccourcir leurs délais. Deux clients seulement sont signés à ce stade, ce que la direction assume comme un risque.</p></field>
+        </record>
+
+        <record id="post_presse_06" model="blog.post">
+            <field name="name">Les ateliers de la vallée misent sur la réparation</field>
+            <field name="subtitle">Quatre communes ouvrent un atelier partagé plutôt qu'une déchetterie supplémentaire.</field>
+            <field name="blog_id" ref="blog_economie"/>
+            <field name="is_published" eval="True"/>
+            <field name="content" type="html"><p class="o_presse_chapo">Le principe est simple : on ne répare pas à la place des gens, on répare avec eux. Les adhérents apportent l'objet, décrivent la panne et repartent le plus souvent avec une méthode plutôt qu'avec une facture.</p><p>Le budget annuel repose sur trois piliers — adhésions, subvention intercommunale, revente de pièces récupérées. Le troisième, longtemps marginal, représente désormais un cinquième des recettes.</p><p>Reste la question du local : le bail arrive à échéance dans deux ans et l'équipe cherche déjà une solution de repli.</p></field>
+        </record>
+
+        <record id="post_presse_07" model="blog.post">
+            <field name="name">Enquête : où part vraiment le verre trié dans l'agglomération</field>
+            <field name="subtitle">Nous avons suivi trois bennes pendant une semaine.</field>
+            <field name="blog_id" ref="blog_economie"/>
+            <field name="is_published" eval="True"/>
+            <field name="content" type="html"><p class="o_presse_chapo">Le verre collecté dans les cent quatre-vingts colonnes de l'agglomération part vers un centre de massification situé à soixante-dix kilomètres, puis vers une verrerie. Sur le papier, la chaîne est courte.</p><p>Dans les faits, un tiers des tonnages transite par un second site, faute de capacité de stockage. Ce détour ajoute quarante kilomètres et un transbordement.</p><p>Le taux de refus, c'est-à-dire la part de matière écartée à cause d'erreurs de tri, s'établit à sept pour cent. La moyenne nationale citée par la collectivité est de cinq.</p></field>
+        </record>
+
+        <record id="post_presse_08" model="blog.post">
+            <field name="name">Un capteur pour surveiller la nappe phréatique</field>
+            <field name="subtitle">Quinze sondes installées cet hiver livrent leurs premières séries de données.</field>
+            <field name="blog_id" ref="blog_economie"/>
+            <field name="is_published" eval="True"/>
+            <field name="content" type="html"><p class="o_presse_chapo">Les sondes mesurent le niveau et la conductivité toutes les six heures. Les données sont publiées en accès libre, avec un décalage de vingt-quatre heures lié à la validation manuelle.</p><p>Le premier enseignement porte sur la vitesse de recharge après épisode pluvieux : quarante-huit heures en moyenne dans le secteur alluvial, contre onze jours en amont.</p><p>Le dispositif doit être étendu à vingt-cinq points l'an prochain, sous réserve du renouvellement de la convention avec le syndicat des eaux.</p></field>
+        </record>
+
+        <record id="post_presse_09" model="blog.post">
+            <field name="name">Le festival des Rives ouvre sa billetterie</field>
+            <field name="subtitle">Quarante-deux dates, dont onze gratuites, du 3 au 19 juillet.</field>
+            <field name="blog_id" ref="blog_culture"/>
+            <field name="is_published" eval="True"/>
+            <field name="content" type="html"><p class="o_presse_chapo">La programmation est annoncée plus resserrée que l'an dernier : quarante-deux dates contre cinquante-huit, sur trois lieux au lieu de cinq. La direction évoque un choix assumé plutôt qu'une contrainte budgétaire.</p><p>Onze concerts restent gratuits, tous sur la scène du quai. Le tarif plein des soirées payantes augmente de deux euros.</p><p>Une navette fluviale relie le centre-ville au site principal toutes les vingt minutes en soirée, expérimentation reconduite après un premier essai concluant.</p></field>
+        </record>
+
+        <record id="post_presse_10" model="blog.post">
+            <field name="name">Trois librairies indépendantes ouvrent la même semaine</field>
+            <field name="subtitle">Un mouvement inattendu dans une ville qui en comptait deux il y a cinq ans.</field>
+            <field name="blog_id" ref="blog_culture"/>
+            <field name="is_published" eval="True"/>
+            <field name="content" type="html"><p class="o_presse_chapo">Les trois projets n'ont rien de commun sur le papier : l'une est spécialisée en bande dessinée, l'autre en sciences humaines, la troisième est généraliste avec un salon de thé.</p><p>Elles partagent en revanche le même modèle immobilier : des baux courts négociés dans des locaux vacants, avec une clause de sortie à dix-huit mois.</p><p>Les libraires installés observent l'arrivée sans inquiétude affichée. « Le marché ne se partage pas, il se construit », résume l'une d'elles.</p></field>
+        </record>
+
+        <record id="post_presse_11" model="blog.post">
+            <field name="name">Une exposition consacrée aux affiches de quartier</field>
+            <field name="subtitle">Deux cents pièces collectées auprès des habitants, sans aucune commande publique.</field>
+            <field name="blog_id" ref="blog_culture"/>
+            <field name="is_published" eval="True"/>
+            <field name="content" type="html"><p class="o_presse_chapo">Le fonds a été constitué en dix-huit mois par appel aux dons. Les pièces vont du tract de fête des voisins à l'affiche de manifestation, toutes produites entre les années soixante-dix et aujourd'hui.</p><p>Le parti pris muséographique surprend : pas de vitrines, des pinces à linge et des fils tendus, comme dans les ateliers d'où viennent la plupart de ces documents.</p><p>L'exposition est gratuite et itinérante ; elle rejoindra trois centres sociaux après sa présentation initiale.</p></field>
+        </record>
+
+        <record id="post_presse_12" model="blog.post">
+            <field name="name">Les ateliers d'écriture font salle comble en médiathèque</field>
+            <field name="subtitle">Cent quatre-vingts inscrits pour soixante places : le réseau double les créneaux.</field>
+            <field name="blog_id" ref="blog_culture"/>
+            <field name="is_published" eval="True"/>
+            <field name="content" type="html"><p class="o_presse_chapo">La demande a surpris le réseau des médiathèques : cent quatre-vingts inscriptions pour soixante places à l'automne. Trois créneaux supplémentaires ont été ouverts en janvier.</p><p>Le public est plus âgé qu'attendu — la moitié des inscrits a plus de cinquante-cinq ans — et majoritairement composé de personnes qui n'écrivaient plus depuis l'école.</p><p>Les textes produits feront l'objet d'un recueil imprimé à trois cents exemplaires, distribué gratuitement dans les six équipements du réseau.</p></field>
+        </record>
+
+    </data>
+</odoo>

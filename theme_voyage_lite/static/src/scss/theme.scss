@@ -1,0 +1,152 @@
+// =============================================================================
+// Thème Voyage — habillage (bundle web.assets_frontend)
+// =============================================================================
+$o-voyage-radius: 1.25rem;
+$o-voyage-shadow: 0 .75rem 2rem rgba(18, 58, 94, .12);
+$o-voyage-shadow-hover: 0 1.15rem 2.6rem rgba(18, 58, 94, .18);
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    letter-spacing: -.015em;
+    text-wrap: balance;
+}
+
+#wrapwrap header {
+    .navbar-nav .nav-link {
+        font-weight: 500;
+        letter-spacing: .01em;
+    }
+}
+
+// --------------------------------------------------------------- briques
+.o_voyage_eyebrow {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: .78rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: o-color('o-color-1');
+    margin-bottom: .5rem;
+}
+
+.o_voyage_card {
+    border-radius: $o-voyage-radius;
+    overflow: hidden;
+    background: o-color('o-color-4');
+    box-shadow: $o-voyage-shadow;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow .25s ease, transform .25s ease;
+
+    &:hover,
+    &:focus-within {
+        box-shadow: $o-voyage-shadow-hover;
+        transform: translateY(-2px);
+    }
+
+    img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+
+    .o_voyage_card_body {
+        padding: 1.15rem 1.25rem 1.35rem;
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+    }
+}
+
+.o_voyage_pill {
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    border-radius: 2rem;
+    padding: .2rem .75rem;
+    font-size: .78rem;
+    font-weight: 600;
+    background: rgba(168, 69, 42, .12);
+    color: #8C3822;
+}
+
+// --------------------------------------------------------- bandeau d'accueil
+.s_voyage_hero {
+    position: relative;
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(14, 36, 57, .35) 0%, rgba(14, 36, 57, .72) 100%);
+    }
+
+    > .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    h1 {
+        font-size: clamp(2.2rem, calc(1.2rem + 3.6vw), 4rem);
+    }
+
+    .o_voyage_eyebrow {
+        color: #F3C6B4;
+    }
+
+    .lead {
+        max-width: 44rem;
+    }
+}
+
+// ------------------------------------------------------ grille destinations
+.s_voyage_destinations {
+    .o_voyage_meta {
+        font-size: .85rem;
+        opacity: .8;
+        margin-top: auto;
+    }
+}
+
+// ------------------------------------------------------------------- récit
+.s_voyage_recit {
+    .o_voyage_recit_media {
+        width: 100%;
+        border-radius: $o-voyage-radius;
+        box-shadow: $o-voyage-shadow;
+        object-fit: cover;
+    }
+
+    .o_voyage_recit_text {
+        max-width: 34rem;
+    }
+}
+
+// ----------------------------------------------------------- appel à l'action
+.s_voyage_appel {
+    .o_voyage_appel_box {
+        border-radius: $o-voyage-radius;
+        padding: clamp(1.75rem, calc(1rem + 2vw), 3.25rem);
+        box-shadow: $o-voyage-shadow;
+    }
+}
+
+// ------------------------------------------------------------------- pied
+#wrapwrap footer {
+    .o_voyage_footer_title {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        letter-spacing: .06em;
+        text-transform: uppercase;
+        font-size: .78rem;
+        opacity: .8;
+    }
+}

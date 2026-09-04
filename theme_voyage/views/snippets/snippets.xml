@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="voyage_pro_snippets" inherit_id="website.snippets" name="Blocs Voyage pro">
+    <xpath expr="//snippets[@id='snippet_structure']" position="inside">
+        <t t-snippet="theme_voyage.s_voyage_itineraire" string="Carte d'itinéraire" group="voyage"
+           t-thumbnail="/theme_voyage/static/src/img/snippets_thumbs/s_voyage_itineraire.png">
+            <keywords>itineraire, etapes, jours, parcours, programme, roadbook</keywords>
+        </t>
+        <t t-snippet="theme_voyage.s_voyage_galerie" string="Galerie mosaïque" group="voyage"
+           t-thumbnail="/theme_voyage/static/src/img/snippets_thumbs/s_voyage_galerie.png">
+            <keywords>galerie, photos, mosaique, lightbox, images, album</keywords>
+        </t>
+        <t t-snippet="theme_voyage.s_voyage_fiche" string="Fiche destination" group="voyage"
+           t-thumbnail="/theme_voyage/static/src/img/snippets_thumbs/s_voyage_fiche.png">
+            <keywords>fiche, duree, budget, saison, difficulte, resume</keywords>
+        </t>
+        <t t-snippet="theme_voyage.s_voyage_temoignages" string="Témoignages" group="voyage"
+           t-thumbnail="/theme_voyage/static/src/img/snippets_thumbs/s_voyage_temoignages.png">
+            <keywords>temoignages, avis, clients, citations, retours</keywords>
+        </t>
+        <t t-snippet="theme_voyage.s_voyage_departs" string="Calendrier de départs" group="voyage"
+           t-thumbnail="/theme_voyage/static/src/img/snippets_thumbs/s_voyage_departs.png">
+            <keywords>departs, dates, calendrier, disponibilites, places, tarifs</keywords>
+        </t>
+        <t t-snippet="theme_voyage.s_voyage_devis" string="Demande de devis" group="voyage"
+           t-thumbnail="/theme_voyage/static/src/img/snippets_thumbs/s_voyage_devis.png">
+            <keywords>devis, formulaire, contact, demande, sur mesure</keywords>
+        </t>
+        <t t-snippet="theme_voyage.s_voyage_carnet" string="Carnet de bord" group="voyage"
+           t-thumbnail="/theme_voyage/static/src/img/snippets_thumbs/s_voyage_carnet.png">
+            <keywords>carnet, journal, chronologie, recit, jours</keywords>
+        </t>
+        <t t-snippet="theme_voyage.s_voyage_mode_sombre" string="Bascule mode sombre" group="voyage"
+           t-thumbnail="/theme_voyage/static/src/img/snippets_thumbs/s_voyage_mode_sombre.png">
+            <keywords>mode sombre, dark mode, contraste, theme, bascule, nuit</keywords>
+        </t>
+    </xpath>
+</template>
+
+</odoo>

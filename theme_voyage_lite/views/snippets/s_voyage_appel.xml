@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_voyage_appel" name="Appel à l'action">
+    <section class="s_voyage_appel pt40 pb48 o_cc o_cc1">
+        <div class="container">
+            <div class="o_voyage_appel_box o_cc o_cc3 text-center">
+                <span class="o_voyage_eyebrow">Parlons-en</span>
+                <h2 class="mb-3">Un projet, une date, un niveau : on construit le reste</h2>
+                <p class="mb-4 mx-auto" style="max-width: 40rem;">Décrivez-nous en trois lignes ce que
+                    vous cherchez. Nous répondons sous deux jours ouvrés, avec une proposition chiffrée
+                    et deux variantes.</p>
+                <a href="/contactus" class="btn btn-primary btn-lg">Demander un devis</a>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

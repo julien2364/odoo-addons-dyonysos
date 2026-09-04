@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_presse_a_lire_aussi" name="À lire aussi">
+    <section class="s_presse_a_lire_aussi pt24 pb24 o_cc o_cc2">
+        <div class="container">
+            <div class="o_presse_measure o_presse_related">
+                <span class="o_presse_kicker">À lire aussi</span>
+                <ol>
+                    <li><a href="#">Ce que change la nouvelle carte scolaire pour les familles</a></li>
+                    <li><a href="#">Enquête : où part vraiment le verre trié dans l'agglomération</a></li>
+                    <li><a href="#">Portrait : la vétérinaire qui soigne les rapaces de la falaise</a></li>
+                </ol>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

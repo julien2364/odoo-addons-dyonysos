@@ -1,0 +1,341 @@
+// =============================================================================
+// Thème Presse pro — styles des blocs supplémentaires
+// =============================================================================
+$o-presse-rule: rgba(31, 41, 51, .16);
+$o-presse-rule-strong: rgba(31, 41, 51, .32);
+
+// ------------------------------------------------- une multi-niveaux (1 + 4)
+.s_presse_une_multi {
+    .o_presse_lead {
+        border-bottom: 2px solid $o-presse-rule-strong;
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .o_presse_lead_title {
+        font-size: clamp(2.1rem, calc(1.2rem + 3.4vw), 3.9rem);
+        line-height: 1.04;
+    }
+
+    .o_presse_secondary {
+        border-top: 1px solid $o-presse-rule;
+        padding-top: .9rem;
+
+        h4 {
+            font-size: 1.15rem;
+            line-height: 1.22;
+        }
+
+        img {
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            object-fit: cover;
+            border-radius: 2px;
+            margin-bottom: .6rem;
+        }
+    }
+}
+
+// ------------------------------------------------------- fil d'actualité
+.s_presse_fil {
+    .o_presse_fil_list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border-left: 2px solid $o-presse-rule;
+    }
+
+    .o_presse_fil_item {
+        position: relative;
+        padding: 0 0 1.35rem 1.15rem;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -6px;
+            top: .45rem;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: o-color('o-color-1');
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+    .o_presse_fil_hour {
+        display: block;
+        font-size: .75rem;
+        font-weight: 700;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+        color: o-color('o-color-1');
+        margin-bottom: .15rem;
+    }
+}
+
+// ------------------------------------------- grille par rubrique + filtres
+.s_presse_rubriques {
+    .o_presse_filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+        border-bottom: 1px solid $o-presse-rule;
+        padding-bottom: .9rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .o_presse_filter {
+        border: 1px solid $o-presse-rule;
+        background: transparent;
+        border-radius: 2px;
+        padding: .3rem .85rem;
+        font-size: .8rem;
+        font-weight: 600;
+        letter-spacing: .04em;
+        text-transform: uppercase;
+        color: inherit;
+        cursor: pointer;
+
+        &:hover {
+            border-color: $o-presse-rule-strong;
+        }
+
+        &.active {
+            background: o-color('o-color-1');
+            border-color: o-color('o-color-1');
+            color: #FFFFFF;
+        }
+    }
+
+    .o_presse_item[hidden] {
+        display: none !important;
+    }
+}
+
+// ----------------------------------------------------- dossier / série
+.s_presse_dossier {
+    .o_presse_dossier_head {
+        border-left: 4px solid o-color('o-color-1');
+        padding-left: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .o_presse_dossier_list {
+        counter-reset: dossier;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .o_presse_dossier_item {
+        counter-increment: dossier;
+        display: flex;
+        gap: 1rem;
+        padding: 1rem 0;
+        border-top: 1px solid $o-presse-rule;
+
+        &::before {
+            content: counter(dossier, decimal-leading-zero);
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.6rem;
+            line-height: 1;
+            color: o-color('o-color-1');
+            flex: 0 0 auto;
+        }
+    }
+}
+
+// -------------------------------------------------------- encadré auteur
+.s_presse_auteur {
+    .o_presse_author_box {
+        display: flex;
+        gap: 1.15rem;
+        align-items: flex-start;
+        border-top: 2px solid $o-presse-rule-strong;
+        border-bottom: 1px solid $o-presse-rule;
+        padding: 1.35rem 0;
+    }
+
+    .o_presse_author_avatar {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        object-fit: cover;
+        flex: 0 0 auto;
+    }
+}
+
+// ------------------------------------------------------------ chronologie
+.s_presse_chronologie {
+    .o_presse_timeline {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .o_presse_timeline_item {
+        display: grid;
+        grid-template-columns: 7.5rem 1fr;
+        gap: 1.25rem;
+        padding: 1.1rem 0;
+        border-top: 1px solid $o-presse-rule;
+
+        @include media-breakpoint-down(md) {
+            grid-template-columns: 1fr;
+            gap: .25rem;
+        }
+    }
+
+    .o_presse_timeline_date {
+        font-weight: 700;
+        font-size: .82rem;
+        letter-spacing: .07em;
+        text-transform: uppercase;
+        color: o-color('o-color-1');
+        padding-top: .2rem;
+    }
+}
+
+// -------------------------------------------------------- bandeau newsletter
+.s_presse_newsletter {
+    .o_presse_newsletter_box {
+        border: 2px solid $o-presse-rule-strong;
+        padding: 1.75rem;
+    }
+}
+
+// ---------------------------------------------- sommaire des intertitres
+.o_presse_toc {
+    border-left: 2px solid $o-presse-rule;
+    padding-left: 1rem;
+    margin: 1.5rem 0 2rem;
+
+    .o_presse_toc_title {
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-size: .72rem;
+        font-weight: 700;
+        opacity: .72;
+        margin-bottom: .5rem;
+    }
+
+    ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: .92rem;
+
+        li + li {
+            margin-top: .3rem;
+        }
+
+        .o_presse_toc_h3 {
+            padding-left: 1rem;
+        }
+    }
+}
+
+// -------------------------------------------------------------- mode lecture
+.o_presse_reader_toggle {
+    border: 1px solid $o-presse-rule;
+    background: transparent;
+    color: inherit;
+    border-radius: 2px;
+    padding: .28rem .8rem;
+    font-size: .78rem;
+    font-weight: 600;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+body.o_presse_reading {
+    #wrapwrap {
+        background: o-color('o-color-4');
+    }
+
+    .o_presse_article,
+    .o_wblog_post_content,
+    .o_wblog_post_content_field {
+        max-width: 62ch;
+        font-size: 1.15rem;
+        line-height: 1.78;
+    }
+
+    #o_wblog_post_sidebar_col,
+    .o_presse_hide_in_reading {
+        display: none !important;
+    }
+}
+
+// ------------------------------------------------ variantes d'en-tête et de pied
+// Ces règles n'agissent que si la disposition correspondante est choisie dans
+// le panneau « En-tête » ou « Pied de page » de l'éditeur de site.
+.o_presse_topbar {
+    font-size: .82rem;
+
+    .o_presse_topbar_links a {
+        margin-left: 1.1rem;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .o_presse_topbar_links a:hover {
+        text-decoration: underline;
+    }
+}
+
+.o_presse_header_centered {
+    .navbar-brand {
+        margin-right: 0;
+    }
+
+    .nav-link {
+        padding-inline: .7rem;
+    }
+}
+
+.o_presse_header_minimal {
+    .nav-link {
+        font-size: .82rem;
+    }
+}
+
+.o_presse_footer_expanded {
+    h5, h6 {
+        text-transform: uppercase;
+        letter-spacing: .11em;
+        font-size: .74rem;
+        font-weight: 700;
+        opacity: .78;
+    }
+
+    ul li + li {
+        margin-top: .3rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.o_presse_footer_compact {
+    .list-inline-item + .list-inline-item {
+        margin-left: 1.1rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}

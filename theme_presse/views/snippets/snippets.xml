@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Les blocs pro rejoignent la catégorie « Presse » créée par la version
+     gratuite. La catégorie existe déjà : on n'ajoute ici que les blocs. -->
+<template id="presse_pro_snippets" inherit_id="website.snippets" name="Blocs Presse pro">
+    <xpath expr="//snippets[@id='snippet_structure']" position="inside">
+        <t t-snippet="theme_presse.s_presse_une_multi" string="Une multi-niveaux" group="presse"
+           t-thumbnail="/theme_presse/static/src/img/snippets_thumbs/s_presse_une_multi.png">
+            <keywords>une, manchette, hierarchie, principal, secondaire, magazine</keywords>
+        </t>
+        <t t-snippet="theme_presse.s_presse_fil" string="Fil d'actualité" group="presse"
+           t-thumbnail="/theme_presse/static/src/img/snippets_thumbs/s_presse_fil.png">
+            <keywords>fil, direct, breves, live, actualite, heure</keywords>
+        </t>
+        <t t-snippet="theme_presse.s_presse_rubriques" string="Grille par rubrique" group="presse"
+           t-thumbnail="/theme_presse/static/src/img/snippets_thumbs/s_presse_rubriques.png">
+            <keywords>rubrique, filtre, categorie, grille, tri</keywords>
+        </t>
+        <t t-snippet="theme_presse.s_presse_dossier" string="Dossier" group="presse"
+           t-thumbnail="/theme_presse/static/src/img/snippets_thumbs/s_presse_dossier.png">
+            <keywords>dossier, serie, episodes, enquete, feuilleton</keywords>
+        </t>
+        <t t-snippet="theme_presse.s_presse_auteur" string="Encadré auteur" group="presse"
+           t-thumbnail="/theme_presse/static/src/img/snippets_thumbs/s_presse_auteur.png">
+            <keywords>auteur, signature, redaction, biographie, journaliste</keywords>
+        </t>
+        <t t-snippet="theme_presse.s_presse_chronologie" string="Chronologie" group="presse"
+           t-thumbnail="/theme_presse/static/src/img/snippets_thumbs/s_presse_chronologie.png">
+            <keywords>chronologie, timeline, dates, evenement, historique</keywords>
+        </t>
+        <t t-snippet="theme_presse.s_presse_newsletter" string="Bandeau newsletter" group="presse"
+           t-thumbnail="/theme_presse/static/src/img/snippets_thumbs/s_presse_newsletter.png">
+            <keywords>newsletter, lettre, abonnement, email, inscription</keywords>
+        </t>
+        <t t-snippet="theme_presse.s_presse_mode_sombre" string="Bascule mode sombre" group="presse"
+           t-thumbnail="/theme_presse/static/src/img/snippets_thumbs/s_presse_mode_sombre.png">
+            <keywords>mode sombre, dark mode, contraste, theme, bascule, nuit</keywords>
+        </t>
+    </xpath>
+</template>
+
+</odoo>

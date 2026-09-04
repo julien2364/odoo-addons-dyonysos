@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_presse_auteur" name="Encadré auteur">
+    <section class="s_presse_auteur pt24 pb24 o_cc o_cc1">
+        <div class="container">
+            <div class="o_presse_measure">
+                <div class="o_presse_author_box">
+                    <img src="/theme_presse/static/src/img/presse_auteur.png" alt=""
+                         class="o_presse_author_avatar"/>
+                    <div>
+                        <span class="o_presse_kicker">L'auteure</span>
+                        <h4 class="mb-1">Camille Ferrand</h4>
+                        <p class="mb-2">Suit l'économie locale et les questions de ressources depuis
+                            six ans. Écrit surtout des enquêtes longues.</p>
+                        <p class="o_presse_meta mb-0">
+                            <span><a href="#">Tous ses articles</a></span>
+                            <span><a href="#">La contacter</a></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

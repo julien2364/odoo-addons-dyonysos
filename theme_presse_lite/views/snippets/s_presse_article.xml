@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_presse_article" name="Gabarit d'article">
+    <section class="s_presse_article_block pt40 pb40 o_cc o_cc1">
+        <div class="container">
+            <article class="o_presse_article">
+                <span class="o_presse_kicker">Enquête</span>
+                <h1>Ce que l'atelier partagé a changé dans le quartier des Forges</h1>
+                <p class="o_presse_meta mb-4">
+                    <span>Par Camille Ferrand</span>
+                    <span>12 mars</span>
+                    <span class="o_presse_reading_time">8 min de lecture</span>
+                </p>
+                <hr class="o_presse_rule o_presse_rule_strong"/>
+                <p class="o_presse_chapo">Ouvert il y a dix-huit mois dans une ancienne halle, l'atelier
+                    accueille aujourd'hui près de deux cents visiteurs par semaine. Nous y avons passé
+                    trois journées.</p>
+                <p>Le bâtiment n'a pas changé de silhouette : mêmes fermes métalliques, même verrière
+                    au nord. À l'intérieur, en revanche, la halle a été découpée en six zones, de la
+                    petite électronique à la menuiserie. Chacune a son responsable bénévole et son
+                    cahier de rendez-vous.</p>
+                <h2>Une économie de la réparation</h2>
+                <p>La règle est simple : on ne répare pas à la place des gens, on répare avec eux.
+                    Les adhérents apportent l'objet, décrivent la panne, et repartent le plus souvent
+                    avec une méthode plutôt qu'avec une facture.</p>
+                <figure>
+                    <img src="/theme_presse_lite/static/src/img/presse_article.png" alt=""
+                         class="img-fluid w-100"/>
+                    <figcaption class="o_presse_caption">La zone menuiserie occupe l'ancienne réserve
+                        de la halle. Photo d'illustration générée pour la démonstration.</figcaption>
+                </figure>
+                <blockquote class="o_presse_quote">« En un an, nous avons évité que trois tonnes de
+                    matériel partent en déchetterie. Ce n'est pas un slogan, c'est le poids qu'on pèse
+                    à l'entrée. »</blockquote>
+                <h3>Le modèle tient-il économiquement ?</h3>
+                <p>Le budget annuel repose sur trois piliers : les adhésions, une subvention
+                    intercommunale et la revente de pièces détachées récupérées. Le troisième pilier,
+                    longtemps marginal, représente désormais un cinquième des recettes.</p>
+                <p>Reste la question du local. Le bail arrive à échéance dans deux ans et l'équipe
+                    cherche déjà une solution de repli, faute de garantie sur le renouvellement.</p>
+            </article>
+        </div>
+    </section>
+</template>
+
+</odoo>

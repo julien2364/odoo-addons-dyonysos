@@ -1,0 +1,776 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* theme_presse_lite
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-04 08:39+0000\n"
+"PO-Revision-Date: 2026-09-04 08:39+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.page_magazine
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_grille
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_une
+msgid "<span class=\"o_presse_kicker\">Culture</span>"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_article
+msgid "<span class=\"o_presse_kicker\">Enquête</span>"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.page_magazine
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_une
+msgid "<span class=\"o_presse_kicker\">Sciences</span>"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.page_magazine
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_grille
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_une
+msgid "<span class=\"o_presse_kicker\">Territoires</span>"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_a_lire_aussi
+msgid "<span class=\"o_presse_kicker\">À lire aussi</span>"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.page_magazine
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_grille
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_une
+msgid "<span class=\"o_presse_kicker\">Économie</span>"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.page_magazine
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_grille
+msgid "<span>Camille Ferrand</span><span>5 min</span>"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.page_magazine
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_grille
+msgid "<span>Derniers articles</span>"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.page_magazine
+msgid "<span>Hugo Delattre</span><span>5 min</span>"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.page_magazine
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_grille
+msgid "<span>Noé Vasseur</span><span>4 min</span>"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_une
+msgid ""
+"<span>Par Camille Ferrand</span>\n"
+"                            <span>12 mars</span>\n"
+"                            <span class=\"o_presse_reading_time\">6 min de lecture</span>"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_article
+msgid ""
+"<span>Par Camille Ferrand</span>\n"
+"                    <span>12 mars</span>\n"
+"                    <span class=\"o_presse_reading_time\">8 min de lecture</span>"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.page_magazine
+msgid ""
+"<span>Par Camille Ferrand</span><span>12 mars</span>\n"
+"                                    <span class=\"o_presse_reading_time\">6 min de lecture</span>"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_une
+msgid "<span>Par Hugo Delattre</span><span>5 min</span>"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_une
+msgid "<span>Par Noé Vasseur</span><span>4 min</span>"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_une
+msgid "<span>Par Salomé Perrin</span><span>3 min</span>"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.page_magazine
+msgid "<span>Salomé Perrin</span><span>3 min</span>"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.page_magazine
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_grille
+msgid "<span>Salomé Perrin</span><span>6 min</span>"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.page_magazine
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_une
+msgid "<span>À la une</span>"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.post,subtitle:theme_presse_lite.post_presse_02
+msgid ""
+"Après deux ans de concertation, le variante par la rive gauche l'emporte."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.post,name:theme_presse_lite.post_presse_03
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_a_lire_aussi
+msgid "Ce que change la nouvelle carte scolaire pour les familles"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_article
+msgid "Ce que l'atelier partagé a changé dans le quartier des Forges"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.blog,subtitle:theme_presse_lite.blog_territoires
+msgid "Ce qui bouge dans les communes, les quartiers et les vallées."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.post,subtitle:theme_presse_lite.post_presse_12
+msgid ""
+"Cent quatre-vingts inscrits pour soixante places : le réseau double les "
+"créneaux."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.blog,name:theme_presse_lite.blog_culture
+msgid "Culture"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_07
+msgid ""
+"Dans les faits, un tiers des tonnages transite par un second site, faute de "
+"capacité de stockage. Ce détour ajoute quarante kilomètres et un "
+"transbordement."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.post,subtitle:theme_presse_lite.post_presse_11
+msgid ""
+"Deux cents pièces collectées auprès des habitants, sans aucune commande "
+"publique."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_10
+msgid ""
+"Elles partagent en revanche le même modèle immobilier : des baux courts "
+"négociés dans des locaux vacants, avec une clause de sortie à dix-huit mois."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.post,name:theme_presse_lite.post_presse_07
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_a_lire_aussi
+msgid "Enquête : où part vraiment le verre trié dans l'agglomération"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.blog,subtitle:theme_presse_lite.blog_economie
+msgid "Entreprises, emploi, filières : les chiffres et ce qu'ils cachent."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.presse_snippets
+msgid "Gabarit d'article"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.presse_snippets
+msgid "Grille d'articles"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_05
+msgid ""
+"L'atelier occupera quatre mille mètres carrés d'un ancien site de "
+"conditionnement, à l'arrêt depuis huit ans. Douze métiers à tisser y seront "
+"installés, dont quatre reconditionnés sur place."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_11
+msgid ""
+"L'exposition est gratuite et itinérante ; elle rejoindra trois centres "
+"sociaux après sa présentation initiale."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_03
+msgid ""
+"L'objectif affiché est de rééquilibrer les effectifs entre deux écoles dont "
+"l'écart atteignait cent dix élèves, sans fermeture de classe."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_12
+msgid ""
+"La demande a surpris le réseau des médiathèques : cent quatre-vingts "
+"inscriptions pour soixante places à l'automne. Trois créneaux "
+"supplémentaires ont été ouverts en janvier."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.post,name:theme_presse_lite.post_presse_05
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.page_magazine
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_grille
+msgid "La filière textile relocalise un atelier de tissage"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_01
+msgid ""
+"La mécanique du vote a été simplifiée cette année. Il n'est plus nécessaire "
+"de se déplacer en mairie annexe : un bulletin déposé dans l'une des vingt-"
+"deux urnes réparties dans les équipements publics suffit. La participation a"
+" doublé."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_09
+msgid ""
+"La programmation est annoncée plus resserrée que l'an dernier : quarante-"
+"deux dates contre cinquante-huit, sur trois lieux au lieu de cinq. La "
+"direction évoque un choix assumé plutôt qu'une contrainte budgétaire."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_article
+msgid ""
+"La règle est simple : on ne répare pas à la place des gens, on répare avec eux.\n"
+"                    Les adhérents apportent l'objet, décrivent la panne, et repartent le plus souvent\n"
+"                    avec une méthode plutôt qu'avec une facture."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.post,name:theme_presse_lite.post_presse_04
+msgid "La vétérinaire qui soigne les rapaces de la falaise"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_article
+msgid ""
+"La zone menuiserie occupe l'ancienne réserve\n"
+"                        de la halle. Photo d'illustration générée pour la démonstration."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_article
+msgid ""
+"Le budget annuel repose sur trois piliers : les adhésions, une subvention\n"
+"                    intercommunale et la revente de pièces détachées récupérées. Le troisième pilier,\n"
+"                    longtemps marginal, représente désormais un cinquième des recettes."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_06
+msgid ""
+"Le budget annuel repose sur trois piliers — adhésions, subvention "
+"intercommunale, revente de pièces récupérées. Le troisième, longtemps "
+"marginal, représente désormais un cinquième des recettes."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.post,name:theme_presse_lite.post_presse_01
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.page_magazine
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_grille
+msgid "Le budget participatif retenu par quatorze quartiers"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_article
+msgid ""
+"Le bâtiment n'a pas changé de silhouette : mêmes fermes métalliques, même verrière\n"
+"                    au nord. À l'intérieur, en revanche, la halle a été découpée en six zones, de la\n"
+"                    petite électronique à la menuiserie. Chacune a son responsable bénévole et son\n"
+"                    cahier de rendez-vous."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_04
+msgid ""
+"Le cabinet est ordinaire : deux salles, une salle d'attente, un chat de "
+"compagnie qui dort sur le comptoir. Le vendredi, il devient autre chose. Ce "
+"jour-là, les cages accueillent des buses, des faucons et, deux fois cette "
+"année, un hibou grand-duc."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_02
+msgid ""
+"Le comité de pilotage a tranché mardi soir pour la variante dite « rive "
+"gauche », plus longue de huit cents mètres mais desservant deux groupes "
+"scolaires et le centre de santé."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_08
+msgid ""
+"Le dispositif doit être étendu à vingt-cinq points l'an prochain, sous "
+"réserve du renouvellement de la convention avec le syndicat des eaux."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.post,name:theme_presse_lite.post_presse_09
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.page_magazine
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_une
+msgid "Le festival des Rives ouvre sa billetterie"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_11
+msgid ""
+"Le fonds a été constitué en dix-huit mois par appel aux dons. Les pièces "
+"vont du tract de fête des voisins à l'affiche de manifestation, toutes "
+"produites entre les années soixante-dix et aujourd'hui."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_article
+msgid "Le modèle tient-il économiquement ?"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_05
+msgid ""
+"Le montage financier repose pour un tiers sur des fonds régionaux, pour un "
+"tiers sur un prêt participatif et pour le reste sur les fonds propres de la "
+"société. Le point mort est annoncé à la troisième année."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_05
+msgid ""
+"Le pari porte sur des séries courtes pour des marques qui cherchent à "
+"raccourcir leurs délais. Deux clients seulement sont signés à ce stade, ce "
+"que la direction assume comme un risque."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_11
+msgid ""
+"Le parti pris muséographique surprend : pas de vitrines, des pinces à linge "
+"et des fils tendus, comme dans les ateliers d'où viennent la plupart de ces "
+"documents."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_08
+msgid ""
+"Le premier enseignement porte sur la vitesse de recharge après épisode "
+"pluvieux : quarante-huit heures en moyenne dans le secteur alluvial, contre "
+"onze jours en amont."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_06
+msgid ""
+"Le principe est simple : on ne répare pas à la place des gens, on répare "
+"avec eux. Les adhérents apportent l'objet, décrivent la panne et repartent "
+"le plus souvent avec une méthode plutôt qu'avec une facture."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_12
+msgid ""
+"Le public est plus âgé qu'attendu — la moitié des inscrits a plus de "
+"cinquante-cinq ans — et majoritairement composé de personnes qui "
+"n'écrivaient plus depuis l'école."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_03
+msgid ""
+"Le redécoupage adopté en conseil municipal concerne trois secteurs du nord "
+"de la commune. Deux cent quarante élèves changeront d'établissement de "
+"rattachement à la rentrée, avec un maintien possible pour les fratries."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_07
+msgid ""
+"Le taux de refus, c'est-à-dire la part de matière écartée à cause d'erreurs "
+"de tri, s'établit à sept pour cent. La moyenne nationale citée par la "
+"collectivité est de cinq."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_07
+msgid ""
+"Le verre collecté dans les cent quatre-vingts colonnes de l'agglomération "
+"part vers un centre de massification situé à soixante-dix kilomètres, puis "
+"vers une verrerie. Sur le papier, la chaîne est courte."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.post,name:theme_presse_lite.post_presse_12
+msgid "Les ateliers d'écriture font salle comble en médiathèque"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.post,name:theme_presse_lite.post_presse_06
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.page_magazine
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_une
+msgid "Les ateliers de la vallée misent sur la réparation"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_03
+msgid ""
+"Les familles ont jusqu'au 15 avril pour déposer une demande de dérogation. "
+"Le taux d'acceptation était de soixante et un pour cent lors du précédent "
+"redécoupage."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_10
+msgid ""
+"Les libraires installés observent l'arrivée sans inquiétude affichée. « Le "
+"marché ne se partage pas, il se construit », résume l'une d'elles."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_04
+msgid ""
+"Les oiseaux arrivent par le centre de sauvegarde installé à quinze "
+"kilomètres, qui ne dispose pas de bloc opératoire. Les fractures d'aile "
+"représentent l'essentiel des interventions ; le taux de relâcher tourne "
+"autour de six sur dix."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_02
+msgid ""
+"Les premiers travaux préparatoires sont annoncés pour le printemps prochain,"
+" sous réserve de la levée des deux recours déposés en juin."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.page_magazine
+msgid ""
+"Les projets lauréats seront mis en œuvre avant la fin\n"
+"                                    de l'année."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_grille
+msgid ""
+"Les projets lauréats seront mis en œuvre avant la fin\n"
+"                            de l'année."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.post,subtitle:theme_presse_lite.post_presse_01
+msgid "Les projets lauréats seront mis en œuvre avant la fin de l'année."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_02
+msgid ""
+"Les riverains de la rue des Fontaines, qui redoutaient une emprise sur les "
+"trottoirs, obtiennent une voie partagée plutôt qu'un site propre. Le gain de"
+" temps théorique passe de neuf à six minutes."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_08
+msgid ""
+"Les sondes mesurent le niveau et la conductivité toutes les six heures. Les "
+"données sont publiées en accès libre, avec un décalage de vingt-quatre "
+"heures lié à la validation manuelle."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_12
+msgid ""
+"Les textes produits feront l'objet d'un recueil imprimé à trois cents "
+"exemplaires, distribué gratuitement dans les six équipements du réseau."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_10
+msgid ""
+"Les trois projets n'ont rien de commun sur le papier : l'une est spécialisée"
+" en bande dessinée, l'autre en sciences humaines, la troisième est "
+"généraliste avec un salon de thé."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.post,name:theme_presse_lite.post_presse_02
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.page_magazine
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_une
+msgid "Ligne 7 : le tracé définitif enfin arrêté"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.post,subtitle:theme_presse_lite.post_presse_07
+msgid "Nous avons suivi trois bennes pendant une semaine."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_09
+msgid ""
+"Onze concerts restent gratuits, tous sur la scène du quai. Le tarif plein "
+"des soirées payantes augmente de deux euros."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_article
+msgid ""
+"Ouvert il y a dix-huit mois dans une ancienne halle, l'atelier\n"
+"                    accueille aujourd'hui près de deux cents visiteurs par semaine. Nous y avons passé\n"
+"                    trois journées."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_a_lire_aussi
+msgid "Portrait : la vétérinaire qui soigne les rapaces de la falaise"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.post,subtitle:theme_presse_lite.post_presse_04
+msgid ""
+"Portrait d'une praticienne qui consacre un jour par semaine aux oiseaux "
+"blessés."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.presse_snippets
+msgid "Presse"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.post,subtitle:theme_presse_lite.post_presse_09
+msgid "Quarante-deux dates, dont onze gratuites, du 3 au 19 juillet."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.post,subtitle:theme_presse_lite.post_presse_06
+msgid ""
+"Quatre communes ouvrent un atelier partagé plutôt qu'une déchetterie "
+"supplémentaire."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.page_magazine
+msgid ""
+"Quatre communes s'associent pour ouvrir un atelier\n"
+"                                    partagé où l'on répare électroménager, vélos et outillage plutôt que\n"
+"                                    de les remplacer."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_une
+msgid ""
+"Quatre communes s'associent pour ouvrir un atelier partagé où\n"
+"                            l'on répare électroménager, vélos et outillage plutôt que de les remplacer."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.post,subtitle:theme_presse_lite.post_presse_08
+msgid ""
+"Quinze sondes installées cet hiver livrent leurs premières séries de "
+"données."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_06
+msgid ""
+"Reste la question du local : le bail arrive à échéance dans deux ans et "
+"l'équipe cherche déjà une solution de repli."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_article
+msgid ""
+"Reste la question du local. Le bail arrive à échéance dans deux ans et l'équipe\n"
+"                    cherche déjà une solution de repli, faute de garantie sur le renouvellement."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_01
+msgid ""
+"Reste la question du suivi. L'édition précédente avait vu trois projets sur "
+"onze prendre plus d'un an de retard, sans que les habitants en soient "
+"informés. Un tableau de bord public est annoncé pour l'automne."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.blog,subtitle:theme_presse_lite.blog_culture
+msgid "Scènes, livres, expositions et ateliers, sans complaisance."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_01
+msgid ""
+"Sur les cent-six dossiers déposés au printemps, quarante-deux ont franchi "
+"l'étape de recevabilité et dix-neuf ont été soumis au vote. Quatorze "
+"quartiers ont finalement désigné un projet, souvent le même type : un "
+"aménagement de proximité, peu coûteux, visible en quelques mois."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.blog,name:theme_presse_lite.blog_territoires
+msgid "Territoires"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.post,subtitle:theme_presse_lite.post_presse_05
+msgid ""
+"Trente emplois annoncés d'ici l'automne dans un bâtiment vacant depuis huit "
+"ans."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.page_magazine
+msgid ""
+"Trente emplois annoncés d'ici l'automne, dans un bâtiment\n"
+"                                    laissé vacant depuis huit ans."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_grille
+msgid ""
+"Trente emplois annoncés d'ici l'automne, dans un bâtiment\n"
+"                            laissé vacant depuis huit ans."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.post,name:theme_presse_lite.post_presse_10
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.page_magazine
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_grille
+msgid "Trois librairies indépendantes ouvrent la même semaine"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.post,subtitle:theme_presse_lite.post_presse_03
+msgid "Trois secteurs redécoupés, deux cent quarante élèves concernés."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.post,name:theme_presse_lite.post_presse_08
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.page_magazine
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_une
+msgid "Un capteur pour surveiller la nappe phréatique"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.page_magazine
+msgid ""
+"Un mouvement inattendu dans une ville qui en comptait deux\n"
+"                                    il y a encore cinq ans."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_grille
+msgid ""
+"Un mouvement inattendu dans une ville qui en comptait deux\n"
+"                            il y a encore cinq ans."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.post,subtitle:theme_presse_lite.post_presse_10
+msgid ""
+"Un mouvement inattendu dans une ville qui en comptait deux il y a cinq ans."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.presse_snippets
+msgid "Une"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.post,name:theme_presse_lite.post_presse_11
+msgid "Une exposition consacrée aux affiches de quartier"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_09
+msgid ""
+"Une navette fluviale relie le centre-ville au site principal toutes les "
+"vingt minutes en soirée, expérimentation reconduite après un premier essai "
+"concluant."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_article
+msgid "Une économie de la réparation"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.presse_snippets
+msgid "a lire aussi, liens, connexes, rebond, suggestions"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.presse_snippets
+msgid "article, chapo, intertitre, citation, legende, lecture"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.presse_snippets
+msgid "grille, articles, liste, magazine, rubrique, cartes"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.presse_blog_post_reading_time
+msgid "min de lecture"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.presse_snippets
+msgid "une, manchette, editorial, headline, magazine, journal, actualite"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.s_presse_article
+msgid ""
+"« En un an, nous avons évité que trois tonnes de\n"
+"                    matériel partent en déchetterie. Ce n'est pas un slogan, c'est le poids qu'on pèse\n"
+"                    à l'entrée. »"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:blog.post,content:theme_presse_lite.post_presse_04
+msgid ""
+"« On ne soigne pas un rapace comme un chien : il ne coopère jamais, et le "
+"stress tue plus souvent que la blessure », résume-t-elle en préparant une "
+"contention."
+msgstr ""
+
+#. module: theme_presse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_presse_lite.presse_snippets
+msgid "À lire aussi"
+msgstr ""
+
+#. module: theme_presse_lite
+#: model:blog.blog,name:theme_presse_lite.blog_economie
+msgid "Économie"
+msgstr ""

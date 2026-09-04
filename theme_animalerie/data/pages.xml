@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Pages de démonstration. Dans un module theme_*, <template> devient
+     une theme.ir.ui.view et la page une theme.website.page : elles ne
+     sont créées dans le site qu'à l'application du thème. Le markup est
+     volontairement dupliqué depuis views/snippets/ pour que les sections
+     soient éditables dans l'oe_structure de la page. -->
+
+<template id="page_categorie" name="Catégorie enrichie">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="pt40 pb0 o_cc o_cc1">
+                <div class="container">
+                    <div class="o_anim_category_head">
+                        <span class="o_anim_eyebrow">Catégorie</span>
+                        <h1 class="mb-2">Tout pour les chiens</h1>
+                        <p class="mb-0">Trente-deux références sélectionnées, de la gamelle au harnais.
+                            Chaque produit est testé avant d'entrer au catalogue.</p>
+                        <div class="o_anim_category_facts">
+                            <span class="o_anim_pill">Livraison 48 h</span>
+                            <span class="o_anim_pill">Retour 30 jours</span>
+                            <span class="o_anim_pill">Conseil par téléphone</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="s_anim_selecteur pt48 pb48 o_cc o_cc1">
+                    <div class="container">
+                        <div class="mb-4">
+                            <span class="o_anim_eyebrow">Pour qui ?</span>
+                            <h2 class="mb-0">Commencez par choisir votre animal</h2>
+                        </div>
+                        <div class="o_anim_species_bar" role="tablist" aria-label="Choisir un animal">
+                            <button type="button" class="o_anim_species active" role="tab" aria-selected="true"
+                                    data-anim-species="chien">
+                                <img src="/theme_animalerie/static/src/img/anim_sp_chien.png" alt=""/>
+                                <span>Chien</span>
+                            </button>
+                            <button type="button" class="o_anim_species" role="tab" aria-selected="false"
+                                    data-anim-species="chat">
+                                <img src="/theme_animalerie/static/src/img/anim_sp_chat.png" alt=""/>
+                                <span>Chat</span>
+                            </button>
+                            <button type="button" class="o_anim_species" role="tab" aria-selected="false"
+                                    data-anim-species="rongeur">
+                                <img src="/theme_animalerie/static/src/img/anim_sp_rongeur.png" alt=""/>
+                                <span>Petits animaux</span>
+                            </button>
+                        </div>
+                        <div class="o_anim_species_pane" data-anim-species="chien">
+                            <div class="row g-4">
+                                <div class="col-md-4"><a href="/shop" class="o_anim_product_card text-decoration-none text-reset">
+                                    <img src="/theme_animalerie_lite/static/src/img/products/prod_04.png" alt=""/>
+                                    <div class="o_anim_product_body"><h3 class="h6 mb-1">Alimentation</h3>
+                                    <p class="small mb-0">Croquettes, pâtées et friandises.</p></div></a></div>
+                                <div class="col-md-4"><a href="/shop" class="o_anim_product_card text-decoration-none text-reset">
+                                    <img src="/theme_animalerie_lite/static/src/img/products/prod_02.png" alt=""/>
+                                    <div class="o_anim_product_body"><h3 class="h6 mb-1">Couchage</h3>
+                                    <p class="small mb-0">Paniers, coussins et housses lavables.</p></div></a></div>
+                                <div class="col-md-4"><a href="/shop" class="o_anim_product_card text-decoration-none text-reset">
+                                    <img src="/theme_animalerie_lite/static/src/img/products/prod_03.png" alt=""/>
+                                    <div class="o_anim_product_body"><h3 class="h6 mb-1">Promenade</h3>
+                                    <p class="small mb-0">Laisses, harnais et gamelles de voyage.</p></div></a></div>
+                            </div>
+                        </div>
+                        <div class="o_anim_species_pane" data-anim-species="chat" hidden="hidden">
+                            <div class="row g-4">
+                                <div class="col-md-4"><a href="/shop" class="o_anim_product_card text-decoration-none text-reset">
+                                    <img src="/theme_animalerie_lite/static/src/img/products/prod_08.png" alt=""/>
+                                    <div class="o_anim_product_body"><h3 class="h6 mb-1">Alimentation</h3>
+                                    <p class="small mb-0">Pâtées sans additifs et croquettes.</p></div></a></div>
+                                <div class="col-md-4"><a href="/shop" class="o_anim_product_card text-decoration-none text-reset">
+                                    <img src="/theme_animalerie_lite/static/src/img/products/prod_05.png" alt=""/>
+                                    <div class="o_anim_product_body"><h3 class="h6 mb-1">Griffoirs</h3>
+                                    <p class="small mb-0">Sisal, carton et arbres à chat.</p></div></a></div>
+                                <div class="col-md-4"><a href="/shop" class="o_anim_product_card text-decoration-none text-reset">
+                                    <img src="/theme_animalerie_lite/static/src/img/products/prod_06.png" alt=""/>
+                                    <div class="o_anim_product_body"><h3 class="h6 mb-1">Hydratation</h3>
+                                    <p class="small mb-0">Fontaines silencieuses et filtres.</p></div></a></div>
+                            </div>
+                        </div>
+                        <div class="o_anim_species_pane" data-anim-species="rongeur" hidden="hidden">
+                            <div class="row g-4">
+                                <div class="col-md-4"><a href="/shop" class="o_anim_product_card text-decoration-none text-reset">
+                                    <img src="/theme_animalerie_lite/static/src/img/products/prod_09.png" alt=""/>
+                                    <div class="o_anim_product_body"><h3 class="h6 mb-1">Habitats</h3>
+                                    <p class="small mb-0">Cages, enclos et accessoires de fixation.</p></div></a></div>
+                                <div class="col-md-4"><a href="/shop" class="o_anim_product_card text-decoration-none text-reset">
+                                    <img src="/theme_animalerie_lite/static/src/img/products/prod_10.png" alt=""/>
+                                    <div class="o_anim_product_body"><h3 class="h6 mb-1">Foin et litière</h3>
+                                    <p class="small mb-0">Première coupe, tamisée et compressée.</p></div></a></div>
+                                <div class="col-md-4"><a href="/shop" class="o_anim_product_card text-decoration-none text-reset">
+                                    <img src="/theme_animalerie_lite/static/src/img/products/prod_11.png" alt=""/>
+                                    <div class="o_anim_product_body"><h3 class="h6 mb-1">Activité</h3>
+                                    <p class="small mb-0">Roues silencieuses, tunnels et cachettes.</p></div></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <section class="s_anim_promotions pt40 pb48 o_cc o_cc1">
+                    <div class="container">
+                        <div class="o_anim_promo_box o_cc o_cc3">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-lg-6">
+                                    <span class="o_anim_promo_badge">-15 % jusqu'à dimanche</span>
+                                    <h2 class="mt-3 mb-2">Semaine du couchage</h2>
+                                    <p class="mb-4">Tous les paniers, coussins et housses de rechange, dans les
+                                        quatre tailles. Remise appliquée directement au panier.</p>
+                                    <a href="/shop" class="btn btn-primary btn-lg">Voir les couchages</a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row g-3">
+                                        <div class="col-6">
+                                            <article class="o_anim_product_card">
+                                                <img src="/theme_animalerie_lite/static/src/img/products/prod_02.png" alt=""/>
+                                                <div class="o_anim_product_body">
+                                                    <h3 class="h6 mb-1">Panier matelassé</h3>
+                                                    <p class="o_anim_product_price mb-0">
+                                                        <span class="o_anim_price_old">59,00 €</span>50,15 €</p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="col-6">
+                                            <article class="o_anim_product_card">
+                                                <img src="/theme_animalerie_lite/static/src/img/products/prod_07.png" alt=""/>
+                                                <div class="o_anim_product_body">
+                                                    <h3 class="h6 mb-1">Arbre à chat compact</h3>
+                                                    <p class="o_anim_product_price mb-0">
+                                                        <span class="o_anim_price_old">89,00 €</span>75,65 €</p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <section class="s_anim_comparateur pt48 pb48 o_cc o_cc2">
+                    <div class="container">
+                        <div class="mb-4">
+                            <span class="o_anim_eyebrow">Comparer</span>
+                            <h2 class="mb-0">Trois paniers, trois usages</h2>
+                        </div>
+                        <div class="o_anim_compare_pick">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="anim_cmp_a" data-anim-compare="a" checked="checked"/>
+                                <label class="form-check-label" for="anim_cmp_a">Panier matelassé</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="anim_cmp_b" data-anim-compare="b" checked="checked"/>
+                                <label class="form-check-label" for="anim_cmp_b">Corbeille en osier</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="anim_cmp_c" data-anim-compare="c" checked="checked"/>
+                                <label class="form-check-label" for="anim_cmp_c">Tapis rafraîchissant</label>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="o_anim_compare_table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Caractéristique</th>
+                                        <th scope="col" data-anim-column="a">Panier matelassé</th>
+                                        <th scope="col" data-anim-column="b">Corbeille en osier</th>
+                                        <th scope="col" data-anim-column="c">Tapis rafraîchissant</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Prix</th>
+                                        <td data-anim-column="a">59,00 €</td>
+                                        <td data-anim-column="b">44,00 €</td>
+                                        <td data-anim-column="c">29,90 €</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Lavage</th>
+                                        <td data-anim-column="a">Housse à 40°</td>
+                                        <td data-anim-column="b">Éponge humide</td>
+                                        <td data-anim-column="c">Éponge humide</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Tailles</th>
+                                        <td data-anim-column="a">S, M, L</td>
+                                        <td data-anim-column="b">M, L</td>
+                                        <td data-anim-column="c">M</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Saison</th>
+                                        <td data-anim-column="a">Toute l'année</td>
+                                        <td data-anim-column="b">Toute l'année</td>
+                                        <td data-anim-column="c">Été</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Résiste au grattage</th>
+                                        <td data-anim-column="a">Oui</td>
+                                        <td data-anim-column="b">Partiellement</td>
+                                        <td data-anim-column="c">Non</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="small mt-3 mb-0">Décochez un produit pour le retirer du tableau.</p>
+                    </div>
+                </section>
+            <section class="s_anim_tailles pt40 pb48 o_cc o_cc2">
+                    <div class="container">
+                        <div class="mb-4">
+                            <span class="o_anim_eyebrow">Guide de tailles</span>
+                            <h2 class="mb-0">Mesurer avant de commander</h2>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-lg-8">
+                                <div class="table-responsive">
+                                    <table class="o_anim_size_table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Taille</th>
+                                                <th scope="col">Longueur du couchage</th>
+                                                <th scope="col">Poids de l'animal</th>
+                                                <th scope="col">Exemples de gabarit</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr><td>S</td><td>50 cm</td><td>jusqu'à 8 kg</td><td>Chat adulte, petit chien</td></tr>
+                                            <tr><td>M</td><td>70 cm</td><td>8 à 20 kg</td><td>Chien de taille moyenne</td></tr>
+                                            <tr><td>L</td><td>90 cm</td><td>20 à 35 kg</td><td>Grand chien</td></tr>
+                                            <tr><td>XL</td><td>110 cm</td><td>plus de 35 kg</td><td>Très grand chien</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="o_anim_size_note">
+                                    <p class="mb-2"><strong>Comment mesurer</strong></p>
+                                    <p class="mb-2">Mesurez l'animal couché sur le flanc, du bout du museau à la base
+                                        de la queue, puis ajoutez dix centimètres.</p>
+                                    <p class="mb-0">En cas d'hésitation entre deux tailles, prenez la plus grande :
+                                        un couchage trop juste n'est jamais utilisé.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <section class="s_anim_avis pt48 pb48 o_cc o_cc1">
+                    <div class="container">
+                        <div class="row g-5">
+                            <div class="col-lg-4">
+                                <span class="o_anim_eyebrow">Avis</span>
+                                <h2 class="mb-3">Ce qu'en disent les clients</h2>
+                                <div class="o_anim_score mb-2">
+                                    <span class="o_anim_score_value">4,6</span>
+                                    <span class="o_anim_stars" aria-hidden="true">★★★★★</span>
+                                    <span class="visually-hidden">4,6 sur 5</span>
+                                </div>
+                                <p class="mb-4">Sur 218 avis vérifiés après achat.</p>
+                                <div class="o_anim_bar mb-2"><span>5★</span>
+                                    <span class="o_anim_bar_track"><span class="o_anim_bar_fill" style="width: 71%;"/></span>
+                                    <span>71 %</span></div>
+                                <div class="o_anim_bar mb-2"><span>4★</span>
+                                    <span class="o_anim_bar_track"><span class="o_anim_bar_fill" style="width: 19%;"/></span>
+                                    <span>19 %</span></div>
+                                <div class="o_anim_bar mb-2"><span>3★</span>
+                                    <span class="o_anim_bar_track"><span class="o_anim_bar_fill" style="width: 6%;"/></span>
+                                    <span>6 %</span></div>
+                                <div class="o_anim_bar mb-2"><span>2★</span>
+                                    <span class="o_anim_bar_track"><span class="o_anim_bar_fill" style="width: 3%;"/></span>
+                                    <span>3 %</span></div>
+                                <div class="o_anim_bar"><span>1★</span>
+                                    <span class="o_anim_bar_track"><span class="o_anim_bar_fill" style="width: 1%;"/></span>
+                                    <span>1 %</span></div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="o_anim_review">
+                                            <p class="o_anim_stars mb-2" aria-hidden="true">★★★★★</p>
+                                            <p class="mb-2">La housse passe vraiment en machine sans se déformer.
+                                                Troisième lavage, elle est comme au premier jour.</p>
+                                            <p class="small mb-0 opacity-75">Marion D. — Panier matelassé</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="o_anim_review">
+                                            <p class="o_anim_stars mb-2" aria-hidden="true">★★★★☆</p>
+                                            <p class="mb-2">Fontaine silencieuse comme promis. Le filtre est un peu
+                                                court à changer tous les mois, mais l'eau reste claire.</p>
+                                            <p class="small mb-0 opacity-75">Samuel R. — Fontaine à eau</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="o_anim_review">
+                                            <p class="o_anim_stars mb-2" aria-hidden="true">★★★★★</p>
+                                            <p class="mb-2">Le griffoir tient sans bouger, y compris avec un chat
+                                                de six kilos qui s'y jette dessus.</p>
+                                            <p class="small mb-0 opacity-75">Inès K. — Griffoir vertical</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="o_anim_review">
+                                            <p class="o_anim_stars mb-2" aria-hidden="true">★★★★☆</p>
+                                            <p class="mb-2">Foin très propre, aucune poussière. Le sac de 2 kg part
+                                                vite avec deux lapins.</p>
+                                            <p class="small mb-0 opacity-75">Théo L. — Foin de montagne</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <section class="s_anim_conseils pt48 pb48 o_cc o_cc2">
+                    <div class="container">
+                        <div class="d-flex flex-wrap align-items-end justify-content-between gap-3 mb-4">
+                            <div>
+                                <span class="o_anim_eyebrow">Conseils</span>
+                                <h2 class="mb-0">Trois choses qu'on nous demande souvent</h2>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary">Tous les conseils</a>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-lg-4">
+                                <article class="o_anim_advice">
+                                    <img src="/theme_animalerie/static/src/img/anim_conseil_1.png" alt=""/>
+                                    <div class="o_anim_advice_body">
+                                        <span class="o_anim_pill">Alimentation</span>
+                                        <h3 class="h5 mt-2 mb-2">Changer de croquettes sans troubles digestifs</h3>
+                                        <p class="mb-0">Comptez sept jours de transition, en augmentant la nouvelle
+                                            ration d'un septième par jour. Au-delà de dix jours, c'est inutile.</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-lg-4">
+                                <article class="o_anim_advice">
+                                    <img src="/theme_animalerie/static/src/img/anim_conseil_2.png" alt=""/>
+                                    <div class="o_anim_advice_body">
+                                        <span class="o_anim_pill">Habitat</span>
+                                        <h3 class="h5 mt-2 mb-2">Où installer un griffoir pour qu'il serve</h3>
+                                        <p class="mb-0">À l'endroit où le chat gratte déjà, pas dans un coin
+                                            inutilisé. Deux griffoirs valent mieux qu'un grand mal placé.</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-lg-4">
+                                <article class="o_anim_advice">
+                                    <img src="/theme_animalerie/static/src/img/anim_conseil_3.png" alt=""/>
+                                    <div class="o_anim_advice_body">
+                                        <span class="o_anim_pill">Entretien</span>
+                                        <h3 class="h5 mt-2 mb-2">Le bon rythme de nettoyage d'une cage</h3>
+                                        <p class="mb-0">Un retrait quotidien des zones souillées, un nettoyage
+                                            complet hebdomadaire. Un nettoyage complet trop fréquent stresse l'animal.</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <section class="s_anim_abonnement pt48 pb48 o_cc o_cc1">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <span class="o_anim_eyebrow">Abonnement</span>
+                            <h2 class="mb-2">La litière et les croquettes arrivent toutes seules</h2>
+                            <p class="mb-0">Modifiable ou suspendable à tout moment, sans durée d'engagement.</p>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-lg-4">
+                                <div class="o_anim_plan">
+                                    <h3 class="h5 mb-0">Tous les deux mois</h3>
+                                    <p class="o_anim_plan_price">-5 %</p>
+                                    <ul>
+                                        <li><span class="o_anim_check" aria-hidden="true">✓</span><span>Livraison offerte dès 39 €</span></li>
+                                        <li><span class="o_anim_check" aria-hidden="true">✓</span><span>Rappel cinq jours avant l'envoi</span></li>
+                                        <li><span class="o_anim_check" aria-hidden="true">✓</span><span>Modification en un clic</span></li>
+                                    </ul>
+                                    <a href="#" class="btn btn-outline-primary">Choisir</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="o_anim_plan o_anim_plan_featured">
+                                    <span class="o_anim_pill">Le plus choisi</span>
+                                    <h3 class="h5 mb-0 mt-2">Tous les mois</h3>
+                                    <p class="o_anim_plan_price">-10 %</p>
+                                    <ul>
+                                        <li><span class="o_anim_check" aria-hidden="true">✓</span><span>Livraison toujours offerte</span></li>
+                                        <li><span class="o_anim_check" aria-hidden="true">✓</span><span>Changement de recette libre</span></li>
+                                        <li><span class="o_anim_check" aria-hidden="true">✓</span><span>Suspension jusqu'à trois mois</span></li>
+                                    </ul>
+                                    <a href="#" class="btn btn-primary">Choisir</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="o_anim_plan">
+                                    <h3 class="h5 mb-0">Toutes les deux semaines</h3>
+                                    <p class="o_anim_plan_price">-12 %</p>
+                                    <ul>
+                                        <li><span class="o_anim_check" aria-hidden="true">✓</span><span>Pour les foyers à plusieurs animaux</span></li>
+                                        <li><span class="o_anim_check" aria-hidden="true">✓</span><span>Livraison offerte</span></li>
+                                        <li><span class="o_anim_check" aria-hidden="true">✓</span><span>Un interlocuteur dédié</span></li>
+                                    </ul>
+                                    <a href="#" class="btn btn-outline-primary">Choisir</a>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="small text-center mt-4 mb-0">Bloc de présentation : la récurrence réelle se gère
+                            avec le module Abonnements d'Odoo ou votre outil de facturation.</p>
+                    </div>
+                </section>
+        </div>
+    </t>
+</template>
+
+<record id="page_categorie_website_page" model="theme.website.page">
+    <field name="url">/categorie-chiens</field>
+    <field name="view_id" ref="page_categorie"/>
+    <field name="is_published" eval="True"/>
+</record>
+
+</odoo>

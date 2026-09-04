@@ -1,0 +1,249 @@
+// =============================================================================
+// Thème Presse — habillage éditorial (bundle web.assets_frontend)
+// =============================================================================
+
+// ---------------------------------------------------------------- fondamentaux
+$o-presse-rule: rgba(31, 41, 51, .16);
+$o-presse-rule-strong: rgba(31, 41, 51, .32);
+
+#wrapwrap {
+    // Chiffres alignés : indispensable pour les dates et les compteurs.
+    font-variant-numeric: tabular-nums lining-nums;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    letter-spacing: -.011em;
+    text-wrap: balance;
+}
+
+// ------------------------------------------------------------------ en-tête
+#wrapwrap header {
+    border-bottom: 1px solid $o-presse-rule;
+
+    .navbar-nav .nav-link {
+        text-transform: uppercase;
+        letter-spacing: .07em;
+        font-size: .78rem;
+        font-weight: 600;
+    }
+}
+
+// ------------------------------------------------------------------- pied
+#wrapwrap footer {
+    .o_presse_footer_title {
+        text-transform: uppercase;
+        letter-spacing: .12em;
+        font-size: .72rem;
+        font-weight: 700;
+        opacity: .72;
+    }
+}
+
+// ------------------------------------------------------- briques éditoriales
+.o_presse_kicker {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: .11em;
+    font-size: .72rem;
+    font-weight: 700;
+    color: o-color('o-color-1');
+    margin-bottom: .35rem;
+}
+
+.o_presse_rule {
+    border: 0;
+    border-top: 1px solid $o-presse-rule;
+    margin: 0 0 1.25rem;
+    opacity: 1;
+
+    &.o_presse_rule_strong {
+        border-top-width: 2px;
+        border-top-color: $o-presse-rule-strong;
+    }
+}
+
+.o_presse_meta {
+    font-size: .8125rem;
+    color: rgba(31, 41, 51, .72);
+
+    > * + *::before {
+        content: "·";
+        margin: 0 .45rem;
+        opacity: .6;
+    }
+}
+
+.o_presse_reading_time::after {
+    content: "";
+}
+
+.o_presse_section_title {
+    display: flex;
+    align-items: baseline;
+    gap: .75rem;
+    margin-bottom: 1.1rem;
+
+    &::after {
+        content: "";
+        flex: 1 1 auto;
+        border-top: 1px solid $o-presse-rule;
+        transform: translateY(-.25em);
+    }
+
+    > span:first-child {
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-size: .78rem;
+        font-weight: 700;
+    }
+}
+
+// ------------------------------------------------------------- bloc « une »
+.s_presse_une {
+    .o_presse_lead_title {
+        font-size: clamp(2rem, calc(1.1rem + 3.2vw), 3.6rem);
+        line-height: 1.06;
+    }
+
+    .o_presse_lead_media,
+    .o_presse_side_media {
+        display: block;
+        width: 100%;
+        border-radius: 2px;
+        object-fit: cover;
+    }
+
+    .o_presse_side_item + .o_presse_side_item {
+        border-top: 1px solid $o-presse-rule;
+        margin-top: 1.25rem;
+        padding-top: 1.25rem;
+    }
+}
+
+// ------------------------------------------------------ grille d'articles
+.s_presse_grille {
+    .o_presse_card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding-top: 1rem;
+        border-top: 2px solid $o-presse-rule-strong;
+    }
+
+    .o_presse_card_media {
+        width: 100%;
+        aspect-ratio: 3 / 2;
+        object-fit: cover;
+        border-radius: 2px;
+        margin-bottom: .85rem;
+    }
+
+    .o_presse_card_title {
+        font-size: 1.3rem;
+        line-height: 1.2;
+        margin-bottom: .4rem;
+    }
+}
+
+// --------------------------------------------------------- « à lire aussi »
+.s_presse_a_lire_aussi {
+    .o_presse_related {
+        border-left: 3px solid o-color('o-color-1');
+        padding-left: 1rem;
+    }
+
+    ol {
+        margin: 0;
+        padding-left: 1.1rem;
+
+        li + li {
+            margin-top: .6rem;
+        }
+    }
+}
+
+// ------------------------------------------------------- gabarit d'article
+// Largeur de lecture limitée à 68 caractères : la mesure qui rend un article
+// réellement lisible sur grand écran.
+.o_presse_article,
+.o_presse_measure,
+.o_wblog_post_content,
+.o_wblog_post_content_field {
+    max-width: 68ch;
+    margin-inline: auto;
+}
+
+.o_presse_article,
+.o_wblog_post_content,
+.o_wblog_post_content_field {
+    font-size: 1.0625rem;
+
+    .o_presse_chapo {
+        font-size: 1.28rem;
+        line-height: 1.5;
+        font-weight: 500;
+        color: rgba(31, 41, 51, .88);
+        margin-bottom: 1.6rem;
+    }
+
+    h2 {
+        margin-top: 2.4rem;
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        margin-top: 1.9rem;
+        font-size: 1.32rem;
+    }
+
+    blockquote,
+    .o_presse_quote {
+        margin: 2rem 0;
+        padding-left: 1.15rem;
+        border-left: 3px solid o-color('o-color-1');
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: 1.35rem;
+        line-height: 1.35;
+        font-style: italic;
+    }
+
+    figure {
+        margin: 2rem 0;
+    }
+
+    figcaption,
+    .o_presse_caption {
+        margin-top: .5rem;
+        font-size: .8125rem;
+        line-height: 1.45;
+        color: rgba(31, 41, 51, .7);
+        border-left: 2px solid $o-presse-rule;
+        padding-left: .6rem;
+    }
+
+    a:not(.btn) {
+        color: o-color('o-color-1');
+        text-underline-offset: .18em;
+    }
+}
+
+// ------------------------------------------- habillage des vues du blog Odoo
+// On style les vues existantes, on ne les remplace pas.
+.o_wblog_post_page_cover .o_record_cover_container,
+.o_wblog_list_container .o_record_cover_container {
+    border-radius: 2px;
+}
+
+.o_wblog_post_title {
+    text-wrap: balance;
+}
+
+.o_wblog_normal_bg_and_text,
+.o_wblog_blog_top {
+    background-color: o-color('o-color-3') !important;
+}
+
+.o_wblog_post_page_cover_footer {
+    border-bottom: 1px solid $o-presse-rule;
+}

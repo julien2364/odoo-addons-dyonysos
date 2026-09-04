@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- =====================================================================
+     Trois dispositions d'en-tête, proposées dans le panneau « En-tête » de
+     l'éditeur de site. Elles remplacent le <nav> de website.layout et
+     laissent l'en-tête mobile natif intact.
+     ===================================================================== -->
+
+<!-- Variante 1 — En-tête manchette -->
+<template id="template_header_presse_centered" inherit_id="website.layout"
+          name="Presse — En-tête manchette" active="False">
+    <xpath expr="//header//nav" position="replace">
+        <t t-call="website.navbar">
+            <t t-set="_navbar_classes" t-valuef="d-none d-lg-block o_presse_header_centered"/>
+
+            <div id="o_main_nav" t-attf-class="o_main_nav flex-column py-3 #{header_content_width}">
+                <div class="d-flex justify-content-center w-100 mb-2">
+                    <t t-call="website.placeholder_header_brand"/>
+                </div>
+                <div class="d-flex align-items-center justify-content-center w-100">
+                    <t t-call="website.navbar_nav">
+                        <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                            <t t-call="website.submenu"
+                               item_class.f="nav-item"
+                               link_class.f="nav-link"/>
+                        </t>
+                    </t>
+                    <ul class="navbar-nav align-items-center gap-2 flex-shrink-0 ms-4">
+                    <t t-call="website.placeholder_header_language_selector"
+                       _btn_class="_additional_btn_color or 'nav-link'"
+                       _dropdown_menu_class.f="dropdown-menu-end"/>
+                    <t t-call="website.placeholder_header_call_to_action"/>
+                    </ul>
+                </div>
+            </div>
+        </t>
+        <t t-call="website.template_header_mobile"/>
+    </xpath>
+</template>
+
+<!-- Variante 2 — En-tête avec bandeau du jour -->
+<template id="template_header_presse_topbar" inherit_id="website.layout"
+          name="Presse — En-tête avec bandeau du jour" active="False">
+    <xpath expr="//header//nav" position="replace">
+        <div class="o_presse_topbar o_cc o_cc5 d-none d-lg-block">
+            <div t-attf-class="#{header_content_width} d-flex align-items-center justify-content-between py-2">
+                <span class="o_presse_topbar_text">Édition du jour — mise à jour en continu.</span>
+                <span class="o_presse_topbar_links">
+                    <a href="/magazine">Le magazine</a>
+                    <a href="/blog">Toutes les rubriques</a>
+                </span>
+            </div>
+        </div>
+        <t t-call="website.navbar">
+            <t t-set="_navbar_classes" t-valuef="d-none d-lg-block o_presse_header_topbar"/>
+
+            <div id="o_main_nav" t-attf-class="o_main_nav #{header_content_width}">
+                <t t-call="website.placeholder_header_brand" _link_class.f="me-4"/>
+                <t t-call="website.navbar_nav" _nav_class.f="ms-auto">
+                    <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                        <t t-call="website.submenu"
+                           item_class.f="nav-item"
+                           link_class.f="nav-link"/>
+                    </t>
+                </t>
+                <ul class="navbar-nav align-items-center gap-2 flex-shrink-0 justify-content-end ps-3">
+                    <t t-call="website.placeholder_header_language_selector"
+                       _btn_class="_additional_btn_color or 'nav-link'"
+                       _dropdown_menu_class.f="dropdown-menu-end"/>
+                    <t t-call="website.placeholder_header_call_to_action"/>
+                </ul>
+            </div>
+        </t>
+        <t t-call="website.template_header_mobile"/>
+    </xpath>
+</template>
+
+<!-- Variante 3 — En-tête minimal -->
+<template id="template_header_presse_minimal" inherit_id="website.layout"
+          name="Presse — En-tête minimal" active="False">
+    <xpath expr="//header//nav" position="replace">
+        <t t-call="website.navbar">
+            <t t-set="_navbar_classes" t-valuef="d-none d-lg-block o_presse_header_minimal"/>
+
+            <div id="o_main_nav" t-attf-class="o_main_nav py-2 #{header_content_width}">
+                <t t-call="website.placeholder_header_brand" _link_class.f="me-4"/>
+                <t t-call="website.navbar_nav" _nav_class.f="ms-auto">
+                    <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                        <t t-call="website.submenu"
+                           item_class.f="nav-item"
+                           link_class.f="nav-link"/>
+                    </t>
+                </t>
+            </div>
+        </t>
+        <t t-call="website.template_header_mobile"/>
+    </xpath>
+</template>
+
+</odoo>

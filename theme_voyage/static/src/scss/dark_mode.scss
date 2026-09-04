@@ -1,0 +1,163 @@
+//==============================================================================
+// Thème Voyage pro — mode sombre optionnel
+//
+// Il s'active de deux façons :
+//   * manuellement, via un élément portant la classe `.o_voyage_dark_toggle`
+//     (le choix est mémorisé dans le navigateur du visiteur) ;
+//   * automatiquement, en ajoutant la classe `o_voyage_dark_auto` sur la balise
+//     <html> : le thème suit alors la préférence système du visiteur.
+//
+// Contrastes vérifiés (WCAG AA) : texte 15.59:1 sur le fond,
+// texte secondaire 8.72:1, accent 6.35:1.
+// (c) DYONYSOS — https://dyonysos.fr
+//==============================================================================
+
+$p: "voyage";
+
+@mixin o-voyage-dark-tokens {
+    --#{$p}-bg: #0E1922;
+    --#{$p}-surface: #14212E;
+    --#{$p}-surface-2: #1B2C3C;
+    --#{$p}-border: #2A3F54;
+    --#{$p}-text: #EAF1F6;
+    --#{$p}-muted: #A6B8C7;
+    --#{$p}-accent: #E08256;
+}
+
+@mixin o-voyage-dark-rules {
+    background-color: var(--#{$p}-bg);
+    color: var(--#{$p}-text);
+
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6 {
+        color: var(--#{$p}-text);
+    }
+
+    p, li, td, th, .lead, .small {
+        color: var(--#{$p}-muted);
+    }
+
+    // Les combinaisons de couleurs claires d'Odoo deviennent des surfaces sombres.
+    .o_cc1, .o_cc2, .o_cc3 {
+        background-color: var(--#{$p}-bg) !important;
+        color: var(--#{$p}-text);
+    }
+
+    .o_cc2 {
+        background-color: var(--#{$p}-surface) !important;
+    }
+
+    .o_cc3 {
+        background-color: var(--#{$p}-surface-2) !important;
+    }
+
+    a:not(.btn) {
+        color: var(--#{$p}-accent);
+    }
+
+    .btn-primary {
+        background-color: var(--#{$p}-accent);
+        border-color: var(--#{$p}-accent);
+        color: var(--#{$p}-bg);
+    }
+
+    .btn-outline-primary,
+    .btn-outline-light {
+        border-color: var(--#{$p}-accent);
+        color: var(--#{$p}-accent);
+    }
+
+    .form-control,
+    .form-select {
+        background-color: var(--#{$p}-surface);
+        border-color: var(--#{$p}-border);
+        color: var(--#{$p}-text);
+
+        &::placeholder {
+            color: var(--#{$p}-muted);
+        }
+    }
+
+    header, footer {
+        background-color: var(--#{$p}-surface) !important;
+        border-color: var(--#{$p}-border) !important;
+    }
+
+    .o_voyage_eyebrow,
+    .o_voyage_step_meta,
+    .o_voyage_log_day {
+        color: var(--#{$p}-accent);
+    }
+
+    .o_voyage_card,
+    .o_voyage_quote,
+    .o_voyage_fact,
+    .o_voyage_form_box,
+    .o_voyage_appel_box,
+    .o_voyage_table td {
+        background: var(--#{$p}-surface) !important;
+        color: var(--#{$p}-text);
+    }
+
+    .o_voyage_log_item,
+    .o_voyage_steps::before {
+        border-color: var(--#{$p}-border) !important;
+        background-color: var(--#{$p}-border);
+    }
+
+    .o_voyage_log_item {
+        background-color: transparent;
+    }
+
+    .o_voyage_pill {
+        background: rgba(224, 130, 86, .18);
+        color: var(--#{$p}-accent);
+    }
+
+    .o_voyage_level span {
+        background: var(--#{$p}-border);
+
+        &.is-on {
+            background: var(--#{$p}-accent);
+        }
+    }
+
+    // Les visuels de démonstration sont des dégradés : on les assombrit
+    // légèrement plutôt que de les remplacer.
+    img {
+        filter: brightness(.88) saturate(.92);
+    }
+}
+
+// Bouton de bascule, utilisable n'importe où dans la page.
+.o_voyage_dark_toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    border: 1px solid currentColor;
+    background: transparent;
+    color: inherit;
+    border-radius: 2rem;
+    padding: .3rem .85rem;
+    font-size: .8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+html.o_voyage_dark {
+    @include o-voyage-dark-tokens;
+
+    body, #wrapwrap {
+        @include o-voyage-dark-rules;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html.o_voyage_dark_auto:not(.o_voyage_light) {
+        @include o-voyage-dark-tokens;
+
+        body, #wrapwrap {
+            @include o-voyage-dark-rules;
+        }
+    }
+}

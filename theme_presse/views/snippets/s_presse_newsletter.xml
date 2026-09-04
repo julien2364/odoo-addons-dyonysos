@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_presse_newsletter" name="Bandeau newsletter">
+    <section class="s_presse_newsletter pt32 pb32 o_cc o_cc2">
+        <div class="container">
+            <div class="o_presse_newsletter_box">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-7">
+                        <span class="o_presse_kicker">La lettre du matin</span>
+                        <h3 class="mb-1">L'essentiel de la rédaction, chaque jour à 7 heures</h3>
+                        <p class="mb-0">Une sélection courte : trois articles, un chiffre, un rendez-vous.
+                            Désinscription en un clic.</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <form action="#" method="post" class="d-flex flex-column flex-sm-row gap-2">
+                            <label for="presse_newsletter_email" class="visually-hidden">Adresse e-mail</label>
+                            <input type="email" id="presse_newsletter_email" name="email"
+                                   class="form-control" placeholder="vous@exemple.fr" required="required"/>
+                            <button type="submit" class="btn btn-primary flex-shrink-0">S'abonner</button>
+                        </form>
+                        <p class="small mb-0 mt-2 opacity-75">Le bloc est un gabarit : reliez-le à votre
+                            outil d'envoi ou au module Newsletter d'Odoo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

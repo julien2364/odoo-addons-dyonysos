@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_presse_fil" name="Fil d'actualité">
+    <section class="s_presse_fil pt32 pb32 o_cc o_cc2">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <div class="o_presse_section_title"><span>Le fil</span></div>
+                    <ul class="o_presse_fil_list">
+                        <li class="o_presse_fil_item">
+                            <span class="o_presse_fil_hour">11 h 42</span>
+                            <a href="#">Le conseil communautaire vote le plan vélo à main levée</a>
+                        </li>
+                        <li class="o_presse_fil_item">
+                            <span class="o_presse_fil_hour">10 h 05</span>
+                            <a href="#">Coupure d'eau annoncée rue des Fontaines jusqu'à 18 heures</a>
+                        </li>
+                        <li class="o_presse_fil_item">
+                            <span class="o_presse_fil_hour">9 h 20</span>
+                            <a href="#">Le tribunal administratif rejette le recours sur la halle</a>
+                        </li>
+                        <li class="o_presse_fil_item">
+                            <span class="o_presse_fil_hour">8 h 15</span>
+                            <a href="#">Rentrée : deux classes supplémentaires ouvertes aux Forges</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-7">
+                    <div class="o_presse_section_title"><span>Le contexte</span></div>
+                    <p>Le fil regroupe les informations brèves de la journée. Chaque entrée peut
+                        renvoyer vers un article complet du blog ou rester autonome.</p>
+                    <p class="mb-0">Le bloc s'utilise en colonne latérale d'une page d'accueil ou en
+                        pleine largeur sur une page dédiée au direct.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

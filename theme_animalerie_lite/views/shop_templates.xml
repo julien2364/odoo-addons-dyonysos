@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Fiche produit retravaillée : le thème n'écrit pas sa propre vue produit,
+     il ajoute un encart de promesse sous le bloc de détails. Tout le reste de
+     l'habillage passe par la feuille de styles. -->
+<template id="anim_product_promise" inherit_id="website_sale.product" name="Animalerie — encart promesse">
+    <xpath expr="//div[@id='o_wsale_product_details_content']" position="inside">
+        <div class="o_anim_product_promise">
+            <ul>
+                <li><span class="o_anim_check" aria-hidden="true">✓</span>
+                    <span>Expédié sous 24 h ouvrées depuis notre entrepôt</span></li>
+                <li><span class="o_anim_check" aria-hidden="true">✓</span>
+                    <span>Retour accepté 30 jours, emballage ouvert compris</span></li>
+                <li><span class="o_anim_check" aria-hidden="true">✓</span>
+                    <span>Un conseil avant d'acheter ? Écrivez-nous, on répond</span></li>
+            </ul>
+        </div>
+    </xpath>
+</template>
+
+</odoo>

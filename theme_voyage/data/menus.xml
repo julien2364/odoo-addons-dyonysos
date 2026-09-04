@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="0">
+
+    <!-- Entrées de menu du thème. Comme les pages, ce sont des objets de
+         thème : elles ne sont créées dans le site qu'à l'application. -->
+
+    <record id="voyage_menu_destination" model="theme.website.menu">
+        <field name="name">Destinations</field>
+        <field name="url">/destination-vantour</field>
+        <field name="page_id" ref="page_destination_website_page"/>
+        <field name="sequence">22</field>
+        <field name="use_main_menu_as_parent" eval="True"/>
+    </record>
+
+    <record id="voyage_menu_itineraire" model="theme.website.menu">
+        <field name="name">Itinéraires</field>
+        <field name="url">/itineraire-cretes-de-vantour</field>
+        <field name="page_id" ref="page_itineraire_website_page"/>
+        <field name="sequence">24</field>
+        <field name="use_main_menu_as_parent" eval="True"/>
+    </record>
+
+</data>
+</odoo>

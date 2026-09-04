@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="animalerie_pro_snippets" inherit_id="website.snippets" name="Blocs Animalerie pro">
+    <xpath expr="//snippets[@id='snippet_structure']" position="inside">
+        <t t-snippet="theme_animalerie.s_anim_selecteur" string="Sélecteur par animal" group="animalerie"
+           t-thumbnail="/theme_animalerie/static/src/img/snippets_thumbs/s_anim_selecteur.png">
+            <keywords>selecteur, animal, chien, chat, rongeur, filtre, onglets</keywords>
+        </t>
+        <t t-snippet="theme_animalerie.s_anim_comparateur" string="Comparateur de produits" group="animalerie"
+           t-thumbnail="/theme_animalerie/static/src/img/snippets_thumbs/s_anim_comparateur.png">
+            <keywords>comparateur, tableau, caracteristiques, choisir, comparaison</keywords>
+        </t>
+        <t t-snippet="theme_animalerie.s_anim_avis" string="Avis clients" group="animalerie"
+           t-thumbnail="/theme_animalerie/static/src/img/snippets_thumbs/s_anim_avis.png">
+            <keywords>avis, notes, etoiles, temoignages, confiance</keywords>
+        </t>
+        <t t-snippet="theme_animalerie.s_anim_tailles" string="Guide de tailles" group="animalerie"
+           t-thumbnail="/theme_animalerie/static/src/img/snippets_thumbs/s_anim_tailles.png">
+            <keywords>tailles, guide, mesures, tableau, correspondance</keywords>
+        </t>
+        <t t-snippet="theme_animalerie.s_anim_abonnement" string="Abonnement" group="animalerie"
+           t-thumbnail="/theme_animalerie/static/src/img/snippets_thumbs/s_anim_abonnement.png">
+            <keywords>abonnement, livraison recurrente, formules, fidelite, remise</keywords>
+        </t>
+        <t t-snippet="theme_animalerie.s_anim_conseils" string="Blocs conseils" group="animalerie"
+           t-thumbnail="/theme_animalerie/static/src/img/snippets_thumbs/s_anim_conseils.png">
+            <keywords>conseils, guides, articles, aide, faq</keywords>
+        </t>
+        <t t-snippet="theme_animalerie.s_anim_promotions" string="Promotions" group="animalerie"
+           t-thumbnail="/theme_animalerie/static/src/img/snippets_thumbs/s_anim_promotions.png">
+            <keywords>promotions, remise, soldes, offre, prix barre</keywords>
+        </t>
+        <t t-snippet="theme_animalerie.s_anim_mode_sombre" string="Bascule mode sombre" group="animalerie"
+           t-thumbnail="/theme_animalerie/static/src/img/snippets_thumbs/s_anim_mode_sombre.png">
+            <keywords>mode sombre, dark mode, contraste, theme, bascule, nuit</keywords>
+        </t>
+    </xpath>
+</template>
+
+</odoo>

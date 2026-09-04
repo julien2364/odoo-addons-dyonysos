@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Le thème habille les vues du blog Odoo, il ne les remplace pas : une seule
+     information éditoriale est ajoutée (rubrique + temps de lecture estimé),
+     tout le reste passe par la feuille de styles.
+     Note : les classes du blog sont posées par t-attf-class, donc hasclass()
+     ne peut pas servir d'ancre — on vise le t-set qui précède le contenu. -->
+<template id="presse_blog_post_reading_time" inherit_id="website_blog.blog_post_content"
+          name="Presse — rubrique et temps de lecture">
+    <xpath expr="//t[@t-set='editor_message']" position="after">
+        <t t-set="presse_words" t-value="len((blog_post.content or '').split())"/>
+        <p class="o_presse_meta o_presse_measure mb-4">
+            <span t-out="blog_post.blog_id.name"/>
+            <span><t t-out="max(1, presse_words // 200)"/> min de lecture</span>
+        </p>
+    </xpath>
+</template>
+
+</odoo>

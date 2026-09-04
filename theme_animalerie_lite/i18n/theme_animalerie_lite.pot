@@ -1,0 +1,414 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* theme_animalerie_lite
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-04 08:39+0000\n"
+"PO-Revision-Date: 2026-09-04 08:39+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: theme_animalerie_lite
+#: model:product.template,description_sale:theme_animalerie_lite.anim_product_06
+msgid ""
+"2,2 litres, pompe à 22 dB, filtre charbon inclus. Réservoir transparent "
+"gradué."
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_produits
+msgid "80 × 45 × 50 cm, bac profond de 18 cm."
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.template,description_sale:theme_animalerie_lite.anim_product_09
+msgid ""
+"80 × 45 × 50 cm, deux étages amovibles, bac profond de 18 cm pour limiter "
+"les projections."
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.anim_product_promise
+msgid ""
+"<span class=\"o_anim_check\" aria-hidden=\"true\">✓</span>\n"
+"                    <span>Expédié sous 24 h ouvrées depuis notre entrepôt</span>"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.anim_product_promise
+msgid ""
+"<span class=\"o_anim_check\" aria-hidden=\"true\">✓</span>\n"
+"                    <span>Retour accepté 30 jours, emballage ouvert compris</span>"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.anim_product_promise
+msgid ""
+"<span class=\"o_anim_check\" aria-hidden=\"true\">✓</span>\n"
+"                    <span>Un conseil avant d'acheter ? Écrivez-nous, on répond</span>"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_produits
+msgid "<span class=\"o_anim_eyebrow\">Sélection</span>"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_accueil
+msgid "<span class=\"o_anim_eyebrow\">Trèfle &amp; Museau</span>"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_produits
+msgid "<span class=\"o_anim_pill o_anim_pill_promo\">-10 %</span>"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_produits
+msgid "<span class=\"o_anim_pill\">Chats</span>"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_produits
+msgid "<span class=\"o_anim_pill\">Chiens</span>"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_produits
+msgid "<span class=\"o_anim_pill\">Petits animaux</span>"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.animalerie_snippets
+msgid "Accueil boutique"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_accueil
+msgid "Alimentation, couchage, promenade."
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.animalerie_snippets
+msgid "Animalerie"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.template,name:theme_animalerie_lite.anim_product_07
+msgid "Arbre à chat compact"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.animalerie_snippets
+msgid "Bandeau de réassurance"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.template,name:theme_animalerie_lite.anim_product_12
+msgid "Brosse démêlante double face"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.template,name:theme_animalerie_lite.anim_product_09
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_produits
+msgid "Cage à barreaux pour rongeur"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_reassurance
+msgid "Carte, virement et paiement en trois fois."
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_produits
+msgid "Ce qui part le plus vite"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.public.category,name:theme_animalerie_lite.categ_chats
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_accueil
+msgid "Chats"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.public.category,name:theme_animalerie_lite.categ_chiens
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_accueil
+msgid "Chiens"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.template,description_sale:theme_animalerie_lite.anim_product_03
+msgid ""
+"Corde de 12 mm, mousqueton acier inoxydable, longueur 1,80 m. Deux points "
+"d'attache."
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.template,description_sale:theme_animalerie_lite.anim_product_02
+msgid ""
+"Coussin déhoussable en coton recyclé, lavable à 40°, fond antidérapant. "
+"Trois tailles."
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.template,name:theme_animalerie_lite.anim_product_04
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_produits
+msgid "Croquettes sans céréales, poulet"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_accueil
+msgid "De quoi bien nourrir, bien coucher et bien occuper vos animaux"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.template,description_sale:theme_animalerie_lite.anim_product_07
+msgid ""
+"Deux plateformes, un hamac et une niche, 118 cm de haut. Empreinte au sol de"
+" 50 × 50 cm."
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.template,description_sale:theme_animalerie_lite.anim_product_08
+msgid ""
+"Douze barquettes de 85 g, quatre recettes, sans colorant ni exhausteur de "
+"goût."
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_reassurance
+msgid "Du lundi au samedi, par téléphone ou par e-mail."
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_reassurance
+msgid "Emballage ouvert accepté, sauf alimentation entamée."
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.template,name:theme_animalerie_lite.anim_product_10
+msgid "Foin de montagne première coupe"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.template,name:theme_animalerie_lite.anim_product_06
+msgid "Fontaine à eau silencieuse"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.template,name:theme_animalerie_lite.anim_product_01
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_produits
+msgid "Gamelle inclinée en grès"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.template,name:theme_animalerie_lite.anim_product_05
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_produits
+msgid "Griffoir vertical en sisal"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_accueil
+msgid "Griffoirs, fontaines, pâtées sans additifs."
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.animalerie_snippets
+msgid "Grille de produits"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.template,description_sale:theme_animalerie_lite.anim_product_01
+msgid ""
+"Grès émaillé, 900 ml, inclinaison à 15° pour limiter les régurgitations. "
+"Passe au lave-vaisselle."
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_produits
+msgid "Grès émaillé, 900 ml, passe au lave-vaisselle."
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_accueil
+msgid "Habitats, foin, accessoires silencieux."
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.template,name:theme_animalerie_lite.anim_product_03
+msgid "Laisse en corde tressée"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_reassurance
+msgid "Livraison en 48 h"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_accueil
+msgid "Nos conseils"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_reassurance
+msgid "Offerte dès 49 € d'achat, suivi par SMS."
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_reassurance
+msgid "Paiement sécurisé"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.template,name:theme_animalerie_lite.anim_product_02
+msgid "Panier matelassé lavable"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.public.category,name:theme_animalerie_lite.categ_petits
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_accueil
+msgid "Petits animaux"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.template,description_sale:theme_animalerie_lite.anim_product_12
+msgid ""
+"Picots arrondis d'un côté, poils souples de l'autre. Manche caoutchouté "
+"antidérapant."
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.template,name:theme_animalerie_lite.anim_product_08
+msgid "Pâtée sans additifs, lot de 12"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_reassurance
+msgid "Retours sous 30 jours"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.template,name:theme_animalerie_lite.anim_product_11
+msgid "Roue silencieuse 30 cm"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.template,description_sale:theme_animalerie_lite.anim_product_10
+msgid ""
+"Sac compressé de 2 kg, récolte de l'année, tamisé pour retirer la poussière."
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.template,description_sale:theme_animalerie_lite.anim_product_04
+msgid ""
+"Sac de 8 kg, 68 % de viande fraîche, sans blé ni maïs. Adulte toutes "
+"tailles."
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_produits
+msgid "Sac de 8 kg, 68 % de viande fraîche."
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_produits
+msgid "Sisal naturel sur socle lesté, 62 cm."
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.template,description_sale:theme_animalerie_lite.anim_product_05
+msgid ""
+"Sisal naturel sur socle lesté, 62 cm. Se fixe aussi au mur avec les deux vis"
+" fournies."
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model:product.template,description_sale:theme_animalerie_lite.anim_product_11
+msgid ""
+"Surface pleine sans barreaux, roulement à billes, fixation sur barreaux ou "
+"sur pied."
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_produits
+msgid "Toute la boutique"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_reassurance
+msgid "Un conseil, une réponse"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+msgid ""
+"Une sélection courte et assumée : quatre-vingts références,\n"
+"                                        toutes testées, aucune n'est là pour remplir le rayon."
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_accueil
+msgid ""
+"Une sélection courte et assumée : quatre-vingts références,\n"
+"                            toutes testées, aucune n'est là pour remplir le rayon."
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.page_boutique
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.s_anim_accueil
+msgid "Voir la boutique"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.animalerie_snippets
+msgid "accueil, boutique, hero, categories, animalerie, vitrine"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.animalerie_snippets
+msgid "produits, grille, cartes, selection, prix, boutique"
+msgstr ""
+
+#. module: theme_animalerie_lite
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie_lite.animalerie_snippets
+msgid "reassurance, livraison, retours, paiement, confiance, garanties"
+msgstr ""

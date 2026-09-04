@@ -1,0 +1,387 @@
+// =============================================================================
+// Thème Animalerie pro — blocs supplémentaires, panier et tunnel
+// =============================================================================
+$o-anim-radius: 1.5rem;
+$o-anim-radius-sm: 1rem;
+$o-anim-shadow: 0 .6rem 1.6rem rgba(34, 48, 31, .10);
+
+// ------------------------------------------------- sélecteur par animal
+.s_anim_selecteur {
+    .o_anim_species_bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .o_anim_species {
+        display: flex;
+        align-items: center;
+        gap: .55rem;
+        border: 2px solid rgba(34, 48, 31, .12);
+        background: o-color('o-color-4');
+        border-radius: 2rem;
+        padding: .45rem 1.1rem .45rem .5rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        color: inherit;
+        cursor: pointer;
+
+        img {
+            width: 2.1rem;
+            height: 2.1rem;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        &.active {
+            border-color: o-color('o-color-1');
+            background: rgba(47, 107, 60, .10);
+        }
+    }
+
+    .o_anim_species_pane[hidden] {
+        display: none !important;
+    }
+}
+
+// ----------------------------------------------------------- comparateur
+.s_anim_comparateur {
+    .o_anim_compare_pick {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .o_anim_compare_table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        border-radius: $o-anim-radius;
+        overflow: hidden;
+        box-shadow: $o-anim-shadow;
+        background: o-color('o-color-4');
+
+        th, td {
+            padding: .85rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(34, 48, 31, .08);
+            vertical-align: top;
+        }
+
+        thead th {
+            background: o-color('o-color-3');
+            font-family: 'Poppins', sans-serif;
+        }
+
+        tbody th {
+            font-size: .8rem;
+            font-weight: 600;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            opacity: .72;
+            width: 12rem;
+        }
+
+        [hidden] {
+            display: none !important;
+        }
+    }
+}
+
+// ------------------------------------------------------ avis avec notes
+.s_anim_avis {
+    .o_anim_score {
+        display: flex;
+        align-items: baseline;
+        gap: .6rem;
+
+        .o_anim_score_value {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 2.6rem;
+            line-height: 1;
+        }
+    }
+
+    .o_anim_stars {
+        color: #C98A2E;
+        letter-spacing: .1em;
+    }
+
+    .o_anim_bar {
+        display: grid;
+        grid-template-columns: 2.5rem 1fr 2.5rem;
+        align-items: center;
+        gap: .6rem;
+        font-size: .85rem;
+
+        .o_anim_bar_track {
+            height: .5rem;
+            border-radius: 1rem;
+            background: rgba(34, 48, 31, .10);
+            overflow: hidden;
+        }
+
+        .o_anim_bar_fill {
+            height: 100%;
+            border-radius: 1rem;
+            background: o-color('o-color-1');
+        }
+    }
+
+    .o_anim_review {
+        border-radius: $o-anim-radius;
+        padding: 1.25rem;
+        background: o-color('o-color-4');
+        box-shadow: $o-anim-shadow;
+        height: 100%;
+    }
+}
+
+// --------------------------------------------------------- guide de tailles
+.s_anim_tailles {
+    .o_anim_size_table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        border-radius: $o-anim-radius;
+        overflow: hidden;
+        background: o-color('o-color-4');
+        box-shadow: $o-anim-shadow;
+
+        th, td {
+            padding: .8rem 1rem;
+            border-bottom: 1px solid rgba(34, 48, 31, .08);
+            text-align: left;
+        }
+
+        thead th {
+            background: o-color('o-color-3');
+            font-family: 'Poppins', sans-serif;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: 0;
+        }
+    }
+
+    .o_anim_size_note {
+        border-left: 4px solid o-color('o-color-1');
+        padding-left: 1rem;
+    }
+}
+
+// ------------------------------------------------------------- abonnement
+.s_anim_abonnement {
+    .o_anim_plan {
+        border-radius: $o-anim-radius;
+        padding: 1.6rem;
+        background: o-color('o-color-4');
+        box-shadow: $o-anim-shadow;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        &.o_anim_plan_featured {
+            outline: 3px solid o-color('o-color-1');
+        }
+
+        .o_anim_plan_price {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 1.1;
+            margin: .5rem 0 1rem;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0 0 1.25rem;
+            padding: 0;
+
+            li {
+                display: flex;
+                gap: .5rem;
+            }
+
+            li + li {
+                margin-top: .35rem;
+            }
+        }
+
+        .btn {
+            margin-top: auto;
+        }
+    }
+}
+
+// ---------------------------------------------------------------- conseils
+.s_anim_conseils {
+    .o_anim_advice {
+        border-radius: $o-anim-radius;
+        overflow: hidden;
+        background: o-color('o-color-4');
+        box-shadow: $o-anim-shadow;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 100%;
+            aspect-ratio: 3 / 2;
+            object-fit: cover;
+        }
+
+        .o_anim_advice_body {
+            padding: 1.1rem 1.25rem 1.35rem;
+        }
+    }
+}
+
+// ------------------------------------------------------------- promotions
+.s_anim_promotions {
+    .o_anim_promo_box {
+        border-radius: $o-anim-radius;
+        padding: clamp(1.5rem, calc(1rem + 1.6vw), 2.75rem);
+        box-shadow: $o-anim-shadow;
+    }
+
+    .o_anim_promo_badge {
+        display: inline-block;
+        border-radius: 2rem;
+        padding: .25rem .9rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: .82rem;
+        background: o-color('o-color-2');
+        color: #FFFFFF;
+    }
+
+    .o_anim_price_old {
+        text-decoration: line-through;
+        opacity: .6;
+        margin-right: .5rem;
+    }
+}
+
+// --------------------------------------------- panier et tunnel de commande
+#wrapwrap {
+    .o_wsale_cart,
+    #wrap .oe_website_sale {
+        .card,
+        .o_cart_product,
+        #o_cart_summary,
+        table.table {
+            border-radius: $o-anim-radius;
+        }
+
+        .btn,
+        .form-control,
+        .form-select {
+            border-radius: 2rem;
+        }
+
+        textarea.form-control {
+            border-radius: $o-anim-radius-sm;
+        }
+    }
+
+    .o_wizard,
+    .o_wsale_checkout_steps {
+        .o_wizard_step_active,
+        .o_wizard_step_complete {
+            color: o-color('o-color-1');
+        }
+    }
+
+    #o_cart_summary,
+    .o_total_card {
+        border-radius: $o-anim-radius;
+        background: o-color('o-color-3');
+        padding: 1.25rem;
+    }
+}
+
+// ----------------------------------------------- page catégorie enrichie
+.o_anim_category_head {
+    border-radius: $o-anim-radius;
+    padding: clamp(1.5rem, calc(1rem + 1.4vw), 2.5rem);
+    background: o-color('o-color-3');
+    margin-bottom: 1.75rem;
+
+    .o_anim_category_facts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .6rem;
+        margin-top: 1rem;
+    }
+}
+
+// ------------------------------------------------ variantes d'en-tête et de pied
+// Ces règles n'agissent que si la disposition correspondante est choisie dans
+// le panneau « En-tête » ou « Pied de page » de l'éditeur de site.
+.o_anim_topbar {
+    font-size: .82rem;
+
+    .o_anim_topbar_links a {
+        margin-left: 1.1rem;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .o_anim_topbar_links a:hover {
+        text-decoration: underline;
+    }
+}
+
+.o_anim_header_centered {
+    .navbar-brand {
+        margin-right: 0;
+    }
+
+    .nav-link {
+        padding-inline: .85rem;
+    }
+}
+
+.o_anim_header_minimal {
+    .nav-link {
+        font-size: .82rem;
+    }
+}
+
+.o_anim_footer_expanded {
+    h5, h6 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        letter-spacing: .04em;
+    }
+
+    ul li + li {
+        margin-top: .3rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.o_anim_footer_compact {
+    .list-inline-item + .list-inline-item {
+        margin-left: 1.1rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}

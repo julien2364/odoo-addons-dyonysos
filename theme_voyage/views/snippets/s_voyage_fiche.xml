@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_voyage_fiche" name="Fiche destination">
+    <section class="s_voyage_fiche pt40 pb40 o_cc o_cc1">
+        <div class="container">
+            <div class="mb-4">
+                <span class="o_voyage_eyebrow">En bref</span>
+                <h2 class="mb-0">Les crêtes de Vantour</h2>
+            </div>
+            <dl class="o_voyage_facts mb-4">
+                <div class="o_voyage_fact">
+                    <dt>Durée</dt>
+                    <dd>7 jours</dd>
+                </div>
+                <div class="o_voyage_fact">
+                    <dt>Budget indicatif</dt>
+                    <dd>890 € / personne</dd>
+                </div>
+                <div class="o_voyage_fact">
+                    <dt>Saison</dt>
+                    <dd>Mai à octobre</dd>
+                </div>
+                <div class="o_voyage_fact">
+                    <dt>Difficulté</dt>
+                    <dd>Soutenue</dd>
+                    <div class="o_voyage_level" role="img" aria-label="Difficulté : 3 sur 4">
+                        <span class="is-on"/><span class="is-on"/><span class="is-on"/><span/>
+                    </div>
+                </div>
+            </dl>
+            <p class="mb-0">Le budget comprend les six nuits en demi-pension, le portage des bagages
+                entre les étapes 2 et 6 et l'accompagnement. Il ne comprend pas le train jusqu'à la
+                gare de départ ni les repas de midi.</p>
+        </div>
+    </section>
+</template>
+
+</odoo>

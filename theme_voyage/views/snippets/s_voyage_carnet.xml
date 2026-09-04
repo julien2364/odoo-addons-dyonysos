@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_voyage_carnet" name="Carnet de bord">
+    <section class="s_voyage_carnet pt48 pb48 o_cc o_cc1">
+        <div class="container">
+            <div class="mb-4">
+                <span class="o_voyage_eyebrow">Carnet de bord</span>
+                <h2 class="mb-0">Ce qu'on a noté le soir</h2>
+            </div>
+            <ul class="o_voyage_log">
+                <li class="o_voyage_log_item">
+                    <span class="o_voyage_log_day">Jour 1</span>
+                    <div>
+                        <p class="mb-0">Départ à 9 h 10, pluie fine jusqu'au premier replat. Le sentier
+                            est mieux balisé que l'an dernier. Arrivée aux Granges à 15 h 40, séchage
+                            général autour du poêle.</p>
+                        <img src="/theme_voyage/static/src/img/voyage_log_1.png" alt=""
+                             class="o_voyage_log_media"/>
+                    </div>
+                </li>
+                <li class="o_voyage_log_item">
+                    <span class="o_voyage_log_day">Jour 2</span>
+                    <div>
+                        <p class="mb-0">Plateau intégralement dans le brouillard jusqu'à midi, puis
+                            dégagement net. Deux heures sans croiser personne. Le refuge a changé de
+                            gardiens : accueil impeccable.</p>
+                    </div>
+                </li>
+                <li class="o_voyage_log_item">
+                    <span class="o_voyage_log_day">Jour 3</span>
+                    <div>
+                        <p class="mb-0">Journée libre. Quatre d'entre nous montent au lac, les autres
+                            ne bougent pas. C'est exactement pour ça qu'elle existe.</p>
+                        <img src="/theme_voyage/static/src/img/voyage_log_2.png" alt=""
+                             class="o_voyage_log_media"/>
+                    </div>
+                </li>
+                <li class="o_voyage_log_item">
+                    <span class="o_voyage_log_day">Jour 4</span>
+                    <div>
+                        <p class="mb-0">Corniche prise tôt, vent nul. Passage délicat sur cinquante
+                            mètres, câble en bon état. Descente ensuite sans difficulté.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</template>
+
+</odoo>

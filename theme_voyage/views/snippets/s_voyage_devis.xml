@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_voyage_devis" name="Demande de devis">
+    <section class="s_voyage_devis pt40 pb48 o_cc o_cc2">
+        <div class="container">
+            <div class="o_voyage_form_box o_cc o_cc1">
+                <div class="row g-4">
+                    <div class="col-lg-5">
+                        <span class="o_voyage_eyebrow">Sur mesure</span>
+                        <h2 class="mb-3">Dites-nous ce que vous cherchez</h2>
+                        <p class="mb-0">Réponse sous deux jours ouvrés, avec une proposition chiffrée
+                            et deux variantes. Aucun acompte demandé à ce stade.</p>
+                    </div>
+                    <div class="col-lg-7">
+                        <form action="#" method="post" class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label" for="voyage_devis_nom">Nom</label>
+                                <input type="text" class="form-control" id="voyage_devis_nom" name="nom" required="required"/>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="voyage_devis_email">E-mail</label>
+                                <input type="email" class="form-control" id="voyage_devis_email" name="email" required="required"/>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="voyage_devis_periode">Période souhaitée</label>
+                                <input type="text" class="form-control" id="voyage_devis_periode" name="periode" placeholder="Fin mai, deux semaines"/>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="voyage_devis_personnes">Nombre de personnes</label>
+                                <input type="number" min="1" class="form-control" id="voyage_devis_personnes" name="personnes" value="2"/>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label" for="voyage_devis_projet">Votre projet en trois lignes</label>
+                                <textarea class="form-control" id="voyage_devis_projet" name="projet" rows="4"/>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary btn-lg">Envoyer la demande</button>
+                                <p class="small mb-0 mt-2 opacity-75">Gabarit de formulaire : reliez-le au
+                                    module Formulaires d'Odoo ou à votre outil de gestion des demandes.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

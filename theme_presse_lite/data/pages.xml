@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Page de démonstration. Dans un module theme_*, <template> devient une
+     theme.ir.ui.view et la page une theme.website.page : elles ne sont créées
+     dans le site qu'au moment de l'application du thème.
+     Le markup est volontairement dupliqué avec views/snippets/ : c'est la seule
+     façon d'avoir à la fois un bloc glissable et une section réellement
+     éditable dans l'oe_structure de la page. -->
+<template id="page_magazine" name="Magazine">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="s_presse_une pt40 pb40 o_cc o_cc1">
+                <div class="container">
+                    <div class="o_presse_section_title"><span>À la une</span></div>
+                    <div class="row g-4">
+                        <div class="col-lg-8">
+                            <article>
+                                <img src="/theme_presse_lite/static/src/img/presse_une.png" alt=""
+                                     class="o_presse_lead_media mb-3"/>
+                                <span class="o_presse_kicker">Économie</span>
+                                <h2 class="o_presse_lead_title">Les ateliers de la vallée misent sur la réparation</h2>
+                                <p class="lead mb-2">Quatre communes s'associent pour ouvrir un atelier
+                                    partagé où l'on répare électroménager, vélos et outillage plutôt que
+                                    de les remplacer.</p>
+                                <p class="o_presse_meta mb-0">
+                                    <span>Par Camille Ferrand</span><span>12 mars</span>
+                                    <span class="o_presse_reading_time">6 min de lecture</span>
+                                </p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="o_presse_side_item">
+                                <span class="o_presse_kicker">Culture</span>
+                                <h4 class="mb-1">Le festival des Rives ouvre sa billetterie</h4>
+                                <p class="o_presse_meta mb-0"><span>Noé Vasseur</span><span>4 min</span></p>
+                            </div>
+                            <div class="o_presse_side_item">
+                                <span class="o_presse_kicker">Territoires</span>
+                                <h4 class="mb-1">Ligne 7 : le tracé définitif enfin arrêté</h4>
+                                <p class="o_presse_meta mb-0"><span>Salomé Perrin</span><span>3 min</span></p>
+                            </div>
+                            <div class="o_presse_side_item">
+                                <span class="o_presse_kicker">Sciences</span>
+                                <h4 class="mb-1">Un capteur pour surveiller la nappe phréatique</h4>
+                                <p class="o_presse_meta mb-0"><span>Hugo Delattre</span><span>5 min</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="s_presse_grille pt40 pb40 o_cc o_cc2">
+                <div class="container">
+                    <div class="o_presse_section_title"><span>Derniers articles</span></div>
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6">
+                            <article class="o_presse_card">
+                                <img src="/theme_presse_lite/static/src/img/presse_card_1.png" alt=""
+                                     class="o_presse_card_media"/>
+                                <span class="o_presse_kicker">Économie</span>
+                                <h3 class="o_presse_card_title">La filière textile relocalise un atelier de tissage</h3>
+                                <p class="mb-2">Trente emplois annoncés d'ici l'automne, dans un bâtiment
+                                    laissé vacant depuis huit ans.</p>
+                                <p class="o_presse_meta mb-0 mt-auto"><span>Camille Ferrand</span><span>5 min</span></p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <article class="o_presse_card">
+                                <img src="/theme_presse_lite/static/src/img/presse_card_2.png" alt=""
+                                     class="o_presse_card_media"/>
+                                <span class="o_presse_kicker">Culture</span>
+                                <h3 class="o_presse_card_title">Trois librairies indépendantes ouvrent la même semaine</h3>
+                                <p class="mb-2">Un mouvement inattendu dans une ville qui en comptait deux
+                                    il y a encore cinq ans.</p>
+                                <p class="o_presse_meta mb-0 mt-auto"><span>Noé Vasseur</span><span>4 min</span></p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <article class="o_presse_card">
+                                <img src="/theme_presse_lite/static/src/img/presse_card_3.png" alt=""
+                                     class="o_presse_card_media"/>
+                                <span class="o_presse_kicker">Territoires</span>
+                                <h3 class="o_presse_card_title">Le budget participatif retenu par quatorze quartiers</h3>
+                                <p class="mb-2">Les projets lauréats seront mis en œuvre avant la fin
+                                    de l'année.</p>
+                                <p class="o_presse_meta mb-0 mt-auto"><span>Salomé Perrin</span><span>6 min</span></p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </t>
+</template>
+
+<record id="page_magazine_website_page" model="theme.website.page">
+    <field name="url">/magazine</field>
+    <field name="view_id" ref="page_magazine"/>
+    <field name="is_published" eval="True"/>
+    <field name="website_indexed" eval="True"/>
+</record>
+
+</odoo>

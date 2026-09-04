@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Sur les articles du blog, la version pro insère le point d'accroche du
+     sommaire automatique et le bouton de mode lecture. Le sommaire est
+     construit côté navigateur à partir des h2/h3 réellement présents : aucun
+     champ supplémentaire n'est demandé au rédacteur. -->
+<template id="presse_blog_post_tools" inherit_id="website_blog.blog_post_content"
+          name="Presse pro — sommaire et mode lecture">
+    <xpath expr="//t[@t-set='editor_message']" position="after">
+        <div class="o_presse_measure d-flex justify-content-end mb-2 o_presse_hide_in_reading">
+            <button type="button" class="o_presse_reader_toggle" data-presse-reader="1">Mode lecture</button>
+        </div>
+        <div class="o_presse_measure" data-presse-toc="1"/>
+    </xpath>
+</template>
+
+</odoo>

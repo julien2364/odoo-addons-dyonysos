@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Pages de démonstration. Dans un module theme_*, <template> devient
+     une theme.ir.ui.view et la page une theme.website.page : elles ne
+     sont créées dans le site qu'à l'application du thème. Le markup est
+     volontairement dupliqué depuis views/snippets/ pour que les sections
+     soient éditables dans l'oe_structure de la page. -->
+
+<template id="page_destination" name="Destination">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="s_voyage_fiche pt40 pb40 o_cc o_cc1">
+                    <div class="container">
+                        <div class="mb-4">
+                            <span class="o_voyage_eyebrow">En bref</span>
+                            <h2 class="mb-0">Les crêtes de Vantour</h2>
+                        </div>
+                        <dl class="o_voyage_facts mb-4">
+                            <div class="o_voyage_fact">
+                                <dt>Durée</dt>
+                                <dd>7 jours</dd>
+                            </div>
+                            <div class="o_voyage_fact">
+                                <dt>Budget indicatif</dt>
+                                <dd>890 € / personne</dd>
+                            </div>
+                            <div class="o_voyage_fact">
+                                <dt>Saison</dt>
+                                <dd>Mai à octobre</dd>
+                            </div>
+                            <div class="o_voyage_fact">
+                                <dt>Difficulté</dt>
+                                <dd>Soutenue</dd>
+                                <div class="o_voyage_level" role="img" aria-label="Difficulté : 3 sur 4">
+                                    <span class="is-on"/><span class="is-on"/><span class="is-on"/><span/>
+                                </div>
+                            </div>
+                        </dl>
+                        <p class="mb-0">Le budget comprend les six nuits en demi-pension, le portage des bagages
+                            entre les étapes 2 et 6 et l'accompagnement. Il ne comprend pas le train jusqu'à la
+                            gare de départ ni les repas de midi.</p>
+                    </div>
+                </section>
+            <section class="s_voyage_galerie pt48 pb48 o_cc o_cc2">
+                    <div class="container">
+                        <div class="mb-4">
+                            <span class="o_voyage_eyebrow">Galerie</span>
+                            <h2 class="mb-0">Sept jours en images</h2>
+                        </div>
+                        <div class="o_voyage_mosaic">
+                            <button type="button" class="o_voyage_tile o_voyage_tile_wide o_voyage_tile_tall"
+                                    aria-label="Agrandir la photo 1">
+                                <img src="/theme_voyage/static/src/img/voyage_gal_1.png" alt="Vue depuis la crête"/>
+                            </button>
+                            <button type="button" class="o_voyage_tile" aria-label="Agrandir la photo 2">
+                                <img src="/theme_voyage/static/src/img/voyage_gal_2.png" alt="Le refuge au petit matin"/>
+                            </button>
+                            <button type="button" class="o_voyage_tile" aria-label="Agrandir la photo 3">
+                                <img src="/theme_voyage/static/src/img/voyage_gal_3.png" alt="Sentier en sous-bois"/>
+                            </button>
+                            <button type="button" class="o_voyage_tile" aria-label="Agrandir la photo 4">
+                                <img src="/theme_voyage/static/src/img/voyage_gal_4.png" alt="Le lac du col"/>
+                            </button>
+                            <button type="button" class="o_voyage_tile o_voyage_tile_wide"
+                                    aria-label="Agrandir la photo 5">
+                                <img src="/theme_voyage/static/src/img/voyage_gal_5.png" alt="Descente vers la vallée"/>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            <section class="s_voyage_temoignages pt48 pb48 o_cc o_cc2">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <span class="o_voyage_eyebrow">Ils y sont allés</span>
+                            <h2 class="mb-0">Trois retours, sans retouche</h2>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-lg-4">
+                                <div class="o_voyage_quote">
+                                    <blockquote>« La journée sans marche au milieu du séjour, c'est ce qui a tout
+                                        changé. On est repartis le lendemain avec des jambes neuves. »</blockquote>
+                                    <div class="o_voyage_quote_author">
+                                        <img src="/theme_voyage/static/src/img/voyage_av_1.png" alt=""/>
+                                        <div><strong>Élise M.</strong><br/><span class="opacity-75">Crêtes de Vantour, juin</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="o_voyage_quote">
+                                    <blockquote>« Le niveau annoncé est le vrai niveau. C'est rare, et ça évite
+                                        de se retrouver à traîner un groupe. »</blockquote>
+                                    <div class="o_voyage_quote_author">
+                                        <img src="/theme_voyage/static/src/img/voyage_av_2.png" alt=""/>
+                                        <div><strong>Karim B.</strong><br/><span class="opacity-75">Hauts plateaux, août</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="o_voyage_quote">
+                                    <blockquote>« Nous étions six, dont deux qui n'avaient jamais dormi en refuge.
+                                        Personne n'a regretté. »</blockquote>
+                                    <div class="o_voyage_quote_author">
+                                        <img src="/theme_voyage/static/src/img/voyage_av_3.png" alt=""/>
+                                        <div><strong>Anne-Laure P.</strong><br/><span class="opacity-75">Boucle des marais, septembre</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <section class="s_voyage_devis pt40 pb48 o_cc o_cc2">
+                    <div class="container">
+                        <div class="o_voyage_form_box o_cc o_cc1">
+                            <div class="row g-4">
+                                <div class="col-lg-5">
+                                    <span class="o_voyage_eyebrow">Sur mesure</span>
+                                    <h2 class="mb-3">Dites-nous ce que vous cherchez</h2>
+                                    <p class="mb-0">Réponse sous deux jours ouvrés, avec une proposition chiffrée
+                                        et deux variantes. Aucun acompte demandé à ce stade.</p>
+                                </div>
+                                <div class="col-lg-7">
+                                    <form action="#" method="post" class="row g-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="voyage_devis_nom">Nom</label>
+                                            <input type="text" class="form-control" id="voyage_devis_nom" name="nom" required="required"/>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="voyage_devis_email">E-mail</label>
+                                            <input type="email" class="form-control" id="voyage_devis_email" name="email" required="required"/>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="voyage_devis_periode">Période souhaitée</label>
+                                            <input type="text" class="form-control" id="voyage_devis_periode" name="periode" placeholder="Fin mai, deux semaines"/>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="voyage_devis_personnes">Nombre de personnes</label>
+                                            <input type="number" min="1" class="form-control" id="voyage_devis_personnes" name="personnes" value="2"/>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label" for="voyage_devis_projet">Votre projet en trois lignes</label>
+                                            <textarea class="form-control" id="voyage_devis_projet" name="projet" rows="4"/>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-primary btn-lg">Envoyer la demande</button>
+                                            <p class="small mb-0 mt-2 opacity-75">Gabarit de formulaire : reliez-le au
+                                                module Formulaires d'Odoo ou à votre outil de gestion des demandes.</p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        </div>
+    </t>
+</template>
+
+<record id="page_destination_website_page" model="theme.website.page">
+    <field name="url">/destination-vantour</field>
+    <field name="view_id" ref="page_destination"/>
+    <field name="is_published" eval="True"/>
+</record>
+
+<template id="page_itineraire" name="Itinéraire">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="s_voyage_itineraire pt48 pb48 o_cc o_cc1">
+                    <div class="container">
+                        <div class="row g-5">
+                            <div class="col-lg-5">
+                                <span class="o_voyage_eyebrow">Itinéraire</span>
+                                <h2 class="mb-3">Les crêtes de Vantour, jour après jour</h2>
+                                <p>Sept étapes, 96 kilomètres et 3 400 mètres de dénivelé positif. Les transferts
+                                    de début et de fin se font en train depuis la gare de la vallée.</p>
+                                <img src="/theme_voyage/static/src/img/voyage_carte.png" alt=""
+                                     class="o_voyage_recit_media mt-3"/>
+                            </div>
+                            <div class="col-lg-7">
+                                <ol class="o_voyage_steps">
+                                    <li class="o_voyage_step">
+                                        <p class="o_voyage_step_meta mb-1">Jour 1 · 11 km · +540 m</p>
+                                        <h4 class="h5 mb-1">De la gare au hameau des Granges</h4>
+                                        <p class="mb-0">Montée douce en forêt, première nuit en gîte d'étape.
+                                            Repas partagé avec les gardiens.</p>
+                                    </li>
+                                    <li class="o_voyage_step">
+                                        <p class="o_voyage_step_meta mb-1">Jour 2 · 17 km · +820 m</p>
+                                        <h4 class="h5 mb-1">La traversée du plateau</h4>
+                                        <p class="mb-0">La plus longue étape, sans point d'eau entre midi et le
+                                            refuge. Départ tôt conseillé.</p>
+                                    </li>
+                                    <li class="o_voyage_step">
+                                        <p class="o_voyage_step_meta mb-1">Jour 3 · repos</p>
+                                        <h4 class="h5 mb-1">Journée libre au refuge du Col</h4>
+                                        <p class="mb-0">Aller-retour possible vers le lac, ou rien du tout.
+                                            La journée est volontairement vide.</p>
+                                    </li>
+                                    <li class="o_voyage_step">
+                                        <p class="o_voyage_step_meta mb-1">Jour 4 · 14 km · +610 m</p>
+                                        <h4 class="h5 mb-1">Les balcons de la vallée</h4>
+                                        <p class="mb-0">Sentier en corniche, exposé sur trois kilomètres.
+                                            Déconseillé par vent fort.</p>
+                                    </li>
+                                    <li class="o_voyage_step">
+                                        <p class="o_voyage_step_meta mb-1">Jour 5 · 19 km · +780 m</p>
+                                        <h4 class="h5 mb-1">Vers le versant nord</h4>
+                                        <p class="mb-0">Changement d'ambiance : hêtraie, sources et un col
+                                            à franchir avant la descente.</p>
+                                    </li>
+                                    <li class="o_voyage_step">
+                                        <p class="o_voyage_step_meta mb-1">Jour 6 · 21 km · +450 m</p>
+                                        <h4 class="h5 mb-1">La longue descente</h4>
+                                        <p class="mb-0">Dernier col au petit matin, puis quinze kilomètres
+                                            de descente jusqu'au village.</p>
+                                    </li>
+                                    <li class="o_voyage_step">
+                                        <p class="o_voyage_step_meta mb-1">Jour 7 · 14 km</p>
+                                        <h4 class="h5 mb-1">Retour à la gare</h4>
+                                        <p class="mb-0">Étape plate le long de la rivière, train de 16 h 40.</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <section class="s_voyage_departs pt40 pb48 o_cc o_cc1">
+                    <div class="container">
+                        <div class="mb-4">
+                            <span class="o_voyage_eyebrow">Départs</span>
+                            <h2 class="mb-0">Prochaines dates garanties</h2>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="o_voyage_table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Dates</th>
+                                        <th scope="col">Itinéraire</th>
+                                        <th scope="col">Places</th>
+                                        <th scope="col">Prix</th>
+                                        <th scope="col"><span class="visually-hidden">Réserver</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>18 – 24 mai</td>
+                                        <td>Les crêtes de Vantour</td>
+                                        <td><span class="o_voyage_status is-open">7 places</span></td>
+                                        <td>890 €</td>
+                                        <td><a href="#" class="btn btn-primary btn-sm">Réserver</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>8 – 12 juin</td>
+                                        <td>La boucle des marais</td>
+                                        <td><span class="o_voyage_status is-few">2 places</span></td>
+                                        <td>640 €</td>
+                                        <td><a href="#" class="btn btn-primary btn-sm">Réserver</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6 – 21 juillet</td>
+                                        <td>Traversée des hauts plateaux</td>
+                                        <td><span class="o_voyage_status is-full">Complet</span></td>
+                                        <td>1 480 €</td>
+                                        <td><a href="#" class="btn btn-outline-primary btn-sm">Liste d'attente</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>14 – 19 septembre</td>
+                                        <td>Vignes et villages hauts</td>
+                                        <td><span class="o_voyage_status is-open">9 places</span></td>
+                                        <td>760 €</td>
+                                        <td><a href="#" class="btn btn-primary btn-sm">Réserver</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            <section class="s_voyage_carnet pt48 pb48 o_cc o_cc1">
+                    <div class="container">
+                        <div class="mb-4">
+                            <span class="o_voyage_eyebrow">Carnet de bord</span>
+                            <h2 class="mb-0">Ce qu'on a noté le soir</h2>
+                        </div>
+                        <ul class="o_voyage_log">
+                            <li class="o_voyage_log_item">
+                                <span class="o_voyage_log_day">Jour 1</span>
+                                <div>
+                                    <p class="mb-0">Départ à 9 h 10, pluie fine jusqu'au premier replat. Le sentier
+                                        est mieux balisé que l'an dernier. Arrivée aux Granges à 15 h 40, séchage
+                                        général autour du poêle.</p>
+                                    <img src="/theme_voyage/static/src/img/voyage_log_1.png" alt=""
+                                         class="o_voyage_log_media"/>
+                                </div>
+                            </li>
+                            <li class="o_voyage_log_item">
+                                <span class="o_voyage_log_day">Jour 2</span>
+                                <div>
+                                    <p class="mb-0">Plateau intégralement dans le brouillard jusqu'à midi, puis
+                                        dégagement net. Deux heures sans croiser personne. Le refuge a changé de
+                                        gardiens : accueil impeccable.</p>
+                                </div>
+                            </li>
+                            <li class="o_voyage_log_item">
+                                <span class="o_voyage_log_day">Jour 3</span>
+                                <div>
+                                    <p class="mb-0">Journée libre. Quatre d'entre nous montent au lac, les autres
+                                        ne bougent pas. C'est exactement pour ça qu'elle existe.</p>
+                                    <img src="/theme_voyage/static/src/img/voyage_log_2.png" alt=""
+                                         class="o_voyage_log_media"/>
+                                </div>
+                            </li>
+                            <li class="o_voyage_log_item">
+                                <span class="o_voyage_log_day">Jour 4</span>
+                                <div>
+                                    <p class="mb-0">Corniche prise tôt, vent nul. Passage délicat sur cinquante
+                                        mètres, câble en bon état. Descente ensuite sans difficulté.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+        </div>
+    </t>
+</template>
+
+<record id="page_itineraire_website_page" model="theme.website.page">
+    <field name="url">/itineraire-cretes-de-vantour</field>
+    <field name="view_id" ref="page_itineraire"/>
+    <field name="is_published" eval="True"/>
+</record>
+
+</odoo>

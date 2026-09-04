@@ -1,0 +1,1017 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* theme_animalerie
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-04 08:39+0000\n"
+"PO-Revision-Date: 2026-09-04 08:39+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_tailles
+msgid "110 cm"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_tailles
+msgid "20 à 35 kg"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_tailles
+msgid "50 cm"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_tailles
+msgid "70 cm"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_tailles
+msgid "8 à 20 kg"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_tailles
+msgid "90 cm"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_abonnement
+msgid ""
+"<span class=\"o_anim_check\" aria-hidden=\"true\">✓</span><span>Changement "
+"de recette libre</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_abonnement
+msgid ""
+"<span class=\"o_anim_check\" aria-hidden=\"true\">✓</span><span>Livraison "
+"offerte dès 39 €</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_abonnement
+msgid ""
+"<span class=\"o_anim_check\" aria-hidden=\"true\">✓</span><span>Livraison "
+"offerte</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_abonnement
+msgid ""
+"<span class=\"o_anim_check\" aria-hidden=\"true\">✓</span><span>Livraison "
+"toujours offerte</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_abonnement
+msgid ""
+"<span class=\"o_anim_check\" aria-hidden=\"true\">✓</span><span>Modification"
+" en un clic</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_abonnement
+msgid ""
+"<span class=\"o_anim_check\" aria-hidden=\"true\">✓</span><span>Pour les "
+"foyers à plusieurs animaux</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_abonnement
+msgid ""
+"<span class=\"o_anim_check\" aria-hidden=\"true\">✓</span><span>Rappel cinq "
+"jours avant l'envoi</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_abonnement
+msgid ""
+"<span class=\"o_anim_check\" aria-hidden=\"true\">✓</span><span>Suspension "
+"jusqu'à trois mois</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_abonnement
+msgid ""
+"<span class=\"o_anim_check\" aria-hidden=\"true\">✓</span><span>Un "
+"interlocuteur dédié</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_abonnement
+msgid "<span class=\"o_anim_eyebrow\">Abonnement</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_avis
+msgid "<span class=\"o_anim_eyebrow\">Avis</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+msgid "<span class=\"o_anim_eyebrow\">Catégorie</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_comparateur
+msgid "<span class=\"o_anim_eyebrow\">Comparer</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_conseils
+msgid "<span class=\"o_anim_eyebrow\">Conseils</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_tailles
+msgid "<span class=\"o_anim_eyebrow\">Guide de tailles</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_selecteur
+msgid "<span class=\"o_anim_eyebrow\">Pour qui ?</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_conseils
+msgid "<span class=\"o_anim_pill\">Alimentation</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_conseils
+msgid "<span class=\"o_anim_pill\">Entretien</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_conseils
+msgid "<span class=\"o_anim_pill\">Habitat</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_abonnement
+msgid "<span class=\"o_anim_pill\">Le plus choisi</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+msgid ""
+"<span class=\"o_anim_pill\">Livraison 48 h</span>\n"
+"                            <span class=\"o_anim_pill\">Retour 30 jours</span>\n"
+"                            <span class=\"o_anim_pill\">Conseil par téléphone</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_promotions
+msgid "<span class=\"o_anim_price_old\">59,00 €</span>50,15 €"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_promotions
+msgid "<span class=\"o_anim_price_old\">89,00 €</span>75,65 €"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_promotions
+msgid "<span class=\"o_anim_promo_badge\">-15 % jusqu'à dimanche</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+msgid ""
+"<span class=\"o_anim_score_value\">4,6</span>\n"
+"                                    <span class=\"o_anim_stars\" aria-hidden=\"true\">★★★★★</span>\n"
+"                                    <span class=\"visually-hidden\">4,6 sur 5</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_avis
+msgid ""
+"<span class=\"o_anim_score_value\">4,6</span>\n"
+"                        <span class=\"o_anim_stars\" aria-hidden=\"true\">★★★★★</span>\n"
+"                        <span class=\"visually-hidden\">4,6 sur 5</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+msgid ""
+"<span>1★</span>\n"
+"                                    <span class=\"o_anim_bar_track\"><span class=\"o_anim_bar_fill\" style=\"width: 1%;\"/></span>\n"
+"                                    <span>1 %</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_avis
+msgid ""
+"<span>1★</span>\n"
+"                        <span class=\"o_anim_bar_track\"><span class=\"o_anim_bar_fill\" style=\"width: 1%;\"/></span>\n"
+"                        <span>1 %</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+msgid ""
+"<span>2★</span>\n"
+"                                    <span class=\"o_anim_bar_track\"><span class=\"o_anim_bar_fill\" style=\"width: 3%;\"/></span>\n"
+"                                    <span>3 %</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_avis
+msgid ""
+"<span>2★</span>\n"
+"                        <span class=\"o_anim_bar_track\"><span class=\"o_anim_bar_fill\" style=\"width: 3%;\"/></span>\n"
+"                        <span>3 %</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+msgid ""
+"<span>3★</span>\n"
+"                                    <span class=\"o_anim_bar_track\"><span class=\"o_anim_bar_fill\" style=\"width: 6%;\"/></span>\n"
+"                                    <span>6 %</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_avis
+msgid ""
+"<span>3★</span>\n"
+"                        <span class=\"o_anim_bar_track\"><span class=\"o_anim_bar_fill\" style=\"width: 6%;\"/></span>\n"
+"                        <span>6 %</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+msgid ""
+"<span>4★</span>\n"
+"                                    <span class=\"o_anim_bar_track\"><span class=\"o_anim_bar_fill\" style=\"width: 19%;\"/></span>\n"
+"                                    <span>19 %</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_avis
+msgid ""
+"<span>4★</span>\n"
+"                        <span class=\"o_anim_bar_track\"><span class=\"o_anim_bar_fill\" style=\"width: 19%;\"/></span>\n"
+"                        <span>19 %</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+msgid ""
+"<span>5★</span>\n"
+"                                    <span class=\"o_anim_bar_track\"><span class=\"o_anim_bar_fill\" style=\"width: 71%;\"/></span>\n"
+"                                    <span>71 %</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_avis
+msgid ""
+"<span>5★</span>\n"
+"                        <span class=\"o_anim_bar_track\"><span class=\"o_anim_bar_fill\" style=\"width: 71%;\"/></span>\n"
+"                        <span>71 %</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_selecteur
+msgid "<span>Chat</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_selecteur
+msgid "<span>Chien</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_selecteur
+msgid "<span>Petits animaux</span>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_tailles
+msgid "<strong>Comment mesurer</strong>"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.animalerie_pro_snippets
+msgid "Abonnement"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_selecteur
+msgid "Activité"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_selecteur
+msgid "Alimentation"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_promotions
+msgid "Arbre à chat compact"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.animalerie_pro_snippets
+msgid "Avis clients"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+msgid ""
+"Bloc de présentation : la récurrence réelle se gère\n"
+"                            avec le module Abonnements d'Odoo ou votre outil de facturation."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_abonnement
+msgid ""
+"Bloc de présentation : la récurrence réelle se gère\n"
+"                avec le module Abonnements d'Odoo ou votre outil de facturation."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.animalerie_pro_snippets
+msgid "Blocs conseils"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_selecteur
+msgid "Cages, enclos et accessoires de fixation."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_comparateur
+msgid "Caractéristique"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_avis
+msgid "Ce qu'en disent les clients"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_conseils
+msgid "Changer de croquettes sans troubles digestifs"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_tailles
+msgid "Chat adulte, petit chien"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_tailles
+msgid "Chien de taille moyenne"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_abonnement
+msgid "Choisir"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_selecteur
+msgid "Choisir un animal"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_selecteur
+msgid "Commencez par choisir votre animal"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.animalerie_pro_snippets
+msgid "Comparateur de produits"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+msgid ""
+"Comptez sept jours de transition, en augmentant la nouvelle\n"
+"                                            ration d'un septième par jour. Au-delà de dix jours, c'est inutile."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_conseils
+msgid ""
+"Comptez sept jours de transition, en augmentant la nouvelle\n"
+"                                ration d'un septième par jour. Au-delà de dix jours, c'est inutile."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_comparateur
+msgid "Corbeille en osier"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_selecteur
+msgid "Couchage"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_selecteur
+msgid "Croquettes, pâtées et friandises."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_comparateur
+msgid "Décochez un produit pour le retirer du tableau."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+msgid ""
+"En cas d'hésitation entre deux tailles, prenez la plus grande :\n"
+"                                        un couchage trop juste n'est jamais utilisé."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_tailles
+msgid ""
+"En cas d'hésitation entre deux tailles, prenez la plus grande :\n"
+"                            un couchage trop juste n'est jamais utilisé."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_tailles
+msgid "Exemples de gabarit"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_selecteur
+msgid "Foin et litière"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+msgid ""
+"Foin très propre, aucune poussière. Le sac de 2 kg part\n"
+"                                                vite avec deux lapins."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_avis
+msgid ""
+"Foin très propre, aucune poussière. Le sac de 2 kg part\n"
+"                                    vite avec deux lapins."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+msgid ""
+"Fontaine silencieuse comme promis. Le filtre est un peu\n"
+"                                                court à changer tous les mois, mais l'eau reste claire."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_avis
+msgid ""
+"Fontaine silencieuse comme promis. Le filtre est un peu\n"
+"                                    court à changer tous les mois, mais l'eau reste claire."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_selecteur
+msgid "Fontaines silencieuses et filtres."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_tailles
+msgid "Grand chien"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_selecteur
+msgid "Griffoirs"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.animalerie_pro_snippets
+msgid "Guide de tailles"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_selecteur
+msgid "Habitats"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_comparateur
+msgid "Housse à 40°"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_selecteur
+msgid "Hydratation"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_avis
+msgid "Inès K. — Griffoir vertical"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_tailles
+msgid "L"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+msgid ""
+"La housse passe vraiment en machine sans se déformer.\n"
+"                                                Troisième lavage, elle est comme au premier jour."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_avis
+msgid ""
+"La housse passe vraiment en machine sans se déformer.\n"
+"                                    Troisième lavage, elle est comme au premier jour."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_abonnement
+msgid "La litière et les croquettes arrivent toutes seules"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_selecteur
+msgid "Laisses, harnais et gamelles de voyage."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_comparateur
+msgid "Lavage"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_conseils
+msgid "Le bon rythme de nettoyage d'une cage"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+msgid ""
+"Le griffoir tient sans bouger, y compris avec un chat\n"
+"                                                de six kilos qui s'y jette dessus."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_avis
+msgid ""
+"Le griffoir tient sans bouger, y compris avec un chat\n"
+"                                    de six kilos qui s'y jette dessus."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_tailles
+msgid "Longueur du couchage"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_comparateur
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_tailles
+msgid "M"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_comparateur
+msgid "M, L"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_avis
+msgid "Marion D. — Panier matelassé"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_tailles
+msgid "Mesurer avant de commander"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+msgid ""
+"Mesurez l'animal couché sur le flanc, du bout du museau à la base\n"
+"                                        de la queue, puis ajoutez dix centimètres."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_tailles
+msgid ""
+"Mesurez l'animal couché sur le flanc, du bout du museau à la base\n"
+"                            de la queue, puis ajoutez dix centimètres."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_abonnement
+msgid "Modifiable ou suspendable à tout moment, sans durée d'engagement."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_comparateur
+msgid "Non"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_comparateur
+msgid "Oui"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_conseils
+msgid "Où installer un griffoir pour qu'il serve"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_comparateur
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_promotions
+msgid "Panier matelassé"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_selecteur
+msgid "Paniers, coussins et housses lavables."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_comparateur
+msgid "Partiellement"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_tailles
+msgid "Poids de l'animal"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_selecteur
+msgid "Première coupe, tamisée et compressée."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_comparateur
+msgid "Prix"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_selecteur
+msgid "Promenade"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.animalerie_pro_snippets
+msgid "Promotions"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_selecteur
+msgid "Pâtées sans additifs et croquettes."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_selecteur
+msgid "Roues silencieuses, tunnels et cachettes."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_comparateur
+msgid "Résiste au grattage"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_tailles
+msgid "S"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_comparateur
+msgid "S, M, L"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_comparateur
+msgid "Saison"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_avis
+msgid "Samuel R. — Fontaine à eau"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_promotions
+msgid "Semaine du couchage"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_selecteur
+msgid "Sisal, carton et arbres à chat."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_avis
+msgid "Sur 218 avis vérifiés après achat."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.animalerie_pro_snippets
+msgid "Sélecteur par animal"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_tailles
+msgid "Taille"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_comparateur
+msgid "Tailles"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_comparateur
+msgid "Tapis rafraîchissant"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_avis
+msgid "Théo L. — Foin de montagne"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_conseils
+msgid "Tous les conseils"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_abonnement
+msgid "Tous les deux mois"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_abonnement
+msgid "Tous les mois"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+msgid ""
+"Tous les paniers, coussins et housses de rechange, dans les\n"
+"                                        quatre tailles. Remise appliquée directement au panier."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_promotions
+msgid ""
+"Tous les paniers, coussins et housses de rechange, dans les\n"
+"                            quatre tailles. Remise appliquée directement au panier."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+msgid "Tout pour les chiens"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_comparateur
+msgid "Toute l'année"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_abonnement
+msgid "Toutes les deux semaines"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+msgid ""
+"Trente-deux références sélectionnées, de la gamelle au harnais.\n"
+"                            Chaque produit est testé avant d'entrer au catalogue."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_conseils
+msgid "Trois choses qu'on nous demande souvent"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_comparateur
+msgid "Trois paniers, trois usages"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_tailles
+msgid "Très grand chien"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+msgid ""
+"Un retrait quotidien des zones souillées, un nettoyage\n"
+"                                            complet hebdomadaire. Un nettoyage complet trop fréquent stresse l'animal."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_conseils
+msgid ""
+"Un retrait quotidien des zones souillées, un nettoyage\n"
+"                                complet hebdomadaire. Un nettoyage complet trop fréquent stresse l'animal."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_promotions
+msgid "Voir les couchages"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_tailles
+msgid "XL"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.animalerie_pro_snippets
+msgid "abonnement, livraison recurrente, formules, fidelite, remise"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.animalerie_pro_snippets
+msgid "avis, notes, etoiles, temoignages, confiance"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.animalerie_pro_snippets
+msgid "comparateur, tableau, caracteristiques, choisir, comparaison"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.animalerie_pro_snippets
+msgid "conseils, guides, articles, aide, faq"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_tailles
+msgid "jusqu'à 8 kg"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_tailles
+msgid "plus de 35 kg"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.animalerie_pro_snippets
+msgid "promotions, remise, soldes, offre, prix barre"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.animalerie_pro_snippets
+msgid "selecteur, animal, chien, chat, rongeur, filtre, onglets"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.animalerie_pro_snippets
+msgid "tailles, guide, mesures, tableau, correspondance"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+msgid ""
+"À l'endroit où le chat gratte déjà, pas dans un coin\n"
+"                                            inutilisé. Deux griffoirs valent mieux qu'un grand mal placé."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_conseils
+msgid ""
+"À l'endroit où le chat gratte déjà, pas dans un coin\n"
+"                                inutilisé. Deux griffoirs valent mieux qu'un grand mal placé."
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_comparateur
+msgid "Éponge humide"
+msgstr ""
+
+#. module: theme_animalerie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.page_categorie
+#: model_terms:theme.ir.ui.view,arch:theme_animalerie.s_anim_comparateur
+msgid "Été"
+msgstr ""

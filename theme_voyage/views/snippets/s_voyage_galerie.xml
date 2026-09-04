@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_voyage_galerie" name="Galerie mosaïque">
+    <section class="s_voyage_galerie pt48 pb48 o_cc o_cc2">
+        <div class="container">
+            <div class="mb-4">
+                <span class="o_voyage_eyebrow">Galerie</span>
+                <h2 class="mb-0">Sept jours en images</h2>
+            </div>
+            <div class="o_voyage_mosaic">
+                <button type="button" class="o_voyage_tile o_voyage_tile_wide o_voyage_tile_tall"
+                        aria-label="Agrandir la photo 1">
+                    <img src="/theme_voyage/static/src/img/voyage_gal_1.png" alt="Vue depuis la crête"/>
+                </button>
+                <button type="button" class="o_voyage_tile" aria-label="Agrandir la photo 2">
+                    <img src="/theme_voyage/static/src/img/voyage_gal_2.png" alt="Le refuge au petit matin"/>
+                </button>
+                <button type="button" class="o_voyage_tile" aria-label="Agrandir la photo 3">
+                    <img src="/theme_voyage/static/src/img/voyage_gal_3.png" alt="Sentier en sous-bois"/>
+                </button>
+                <button type="button" class="o_voyage_tile" aria-label="Agrandir la photo 4">
+                    <img src="/theme_voyage/static/src/img/voyage_gal_4.png" alt="Le lac du col"/>
+                </button>
+                <button type="button" class="o_voyage_tile o_voyage_tile_wide"
+                        aria-label="Agrandir la photo 5">
+                    <img src="/theme_voyage/static/src/img/voyage_gal_5.png" alt="Descente vers la vallée"/>
+                </button>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>
