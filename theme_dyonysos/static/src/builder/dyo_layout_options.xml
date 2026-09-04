@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates xml:space="preserve">
 
-    <!-- Ajoute les trois dispositions d'en-tête DYONYSOS à la liste native
+    <!-- Ajoute les trois dispositions d'en-tête du thème à la liste native
          du panneau « En-tête » de l'éditeur de site. -->
     <t t-name="theme_dyonysos.HeaderTemplateOption"
        t-inherit="website.HeaderTemplateOption" t-inherit-mode="extension">
         <xpath expr="//BuilderSelect" position="inside">
             <BuilderSelectItem
                 id="'dyo_header_centered_opt'"
-                title.translate="DYONYSOS — Centré"
+                title.translate="Agence B2B — Centré"
                 actionParam="[
                     {
                         action: 'websiteConfig',
@@ -24,7 +24,7 @@
             </BuilderSelectItem>
             <BuilderSelectItem
                 id="'dyo_header_topbar_opt'"
-                title.translate="DYONYSOS — Bandeau d'information"
+                title.translate="Agence B2B — Bandeau d'information"
                 actionParam="[
                     {
                         action: 'websiteConfig',
@@ -40,7 +40,7 @@
             </BuilderSelectItem>
             <BuilderSelectItem
                 id="'dyo_header_minimal_opt'"
-                title.translate="DYONYSOS — Minimal"
+                title.translate="Agence B2B — Minimal"
                 actionParam="[
                     {
                         action: 'websiteConfig',

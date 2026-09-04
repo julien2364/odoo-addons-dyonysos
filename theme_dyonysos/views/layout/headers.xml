@@ -5,7 +5,7 @@
      Variante 1 — En-tête centré : marque au-dessus, navigation centrée.
      ===================================================================== -->
 <template id="template_header_dyo_centered" inherit_id="website.layout"
-          name="DYONYSOS — En-tête centré" active="False">
+          name="Agence B2B — En-tête centré" active="False">
     <xpath expr="//header//nav" position="replace">
         <t t-call="website.navbar">
             <t t-set="_navbar_classes" t-valuef="d-none d-lg-block o_dyo_header_centered"/>
@@ -39,7 +39,7 @@
      Variante 2 — En-tête avec bandeau d'information au-dessus.
      ===================================================================== -->
 <template id="template_header_dyo_topbar" inherit_id="website.layout"
-          name="DYONYSOS — En-tête avec bandeau" active="False">
+          name="Agence B2B — En-tête avec bandeau" active="False">
     <xpath expr="//header//nav" position="replace">
         <div class="o_dyo_topbar o_cc o_cc5 d-none d-lg-block">
             <div t-attf-class="#{header_content_width} d-flex align-items-center justify-content-between py-2">
@@ -80,7 +80,7 @@
      Variante 3 — En-tête minimal : marque à gauche, navigation à droite.
      ===================================================================== -->
 <template id="template_header_dyo_minimal" inherit_id="website.layout"
-          name="DYONYSOS — En-tête minimal" active="False">
+          name="Agence B2B — En-tête minimal" active="False">
     <xpath expr="//header//nav" position="replace">
         <t t-call="website.navbar">
             <t t-set="_navbar_classes" t-valuef="d-none d-lg-block o_dyo_header_minimal"/>

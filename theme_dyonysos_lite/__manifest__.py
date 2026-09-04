@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 {
-    "name": "DYONYSOS Lite — Thème agence & services B2B",
+    "name": "Thème Agence B2B — services et conseil (gratuit)",
     "summary": "Thème Odoo 19 sobre et professionnel pour agences et sociétés de services : "
                "système de design complet, 4 palettes, 5 blocs originaux et 3 pages prêtes",
     "description": """
-DYONYSOS Lite
-=============
+Thème Agence B2B — édition gratuite
+==================================
 
 Un thème de site web **gratuit, complet et réellement utilisable** pour les
 agences, cabinets de conseil et sociétés de services B2B.
@@ -25,7 +25,7 @@ Ce qu'il apporte
 
 Aucune dépendance externe. Compatible Odoo 19 Community et Enterprise.
 
-La version **DYONYSOS Pro** ajoute 7 blocs supplémentaires (témoignages,
+La version **l'édition complète** ajoute 7 blocs supplémentaires (témoignages,
 tarifs, FAQ, chronologie, portfolio filtrable, équipe, logos partenaires),
 4 pages de plus, des variantes d'en-tête et de pied de page sélectionnables
 dans l'éditeur, ainsi qu'un mode sombre.

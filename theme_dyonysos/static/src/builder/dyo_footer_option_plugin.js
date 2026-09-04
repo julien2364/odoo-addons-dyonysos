@@ -1,5 +1,5 @@
 /**
- * DYONYSOS Pro — ajoute les deux dispositions de pied de page du thème à la
+ * Agence B2B — ajoute les deux dispositions de pied de page du thème à la
  * liste proposée par le panneau « Pied de page » de l'éditeur de site.
  * (c) DYONYSOS — https://dyonysos.fr
  */
@@ -11,13 +11,13 @@ import { FooterTemplateChoice } from "@website/builder/plugins/options/footer_te
 const DYO_FOOTERS = [
     {
         name: "dyo_expanded",
-        title: _t("DYONYSOS — Étendu"),
+        title: _t("Agence B2B — Étendu"),
         view: "theme_dyonysos.template_footer_dyo_expanded",
         img: "/theme_dyonysos/static/src/img/options/footer_dyo_expanded.png",
     },
     {
         name: "dyo_compact",
-        title: _t("DYONYSOS — Compact"),
+        title: _t("Agence B2B — Compact"),
         view: "theme_dyonysos.template_footer_dyo_compact",
         img: "/theme_dyonysos/static/src/img/options/footer_dyo_compact.png",
     },

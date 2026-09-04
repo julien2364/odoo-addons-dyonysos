@@ -1,5 +1,5 @@
 /**
- * DYONYSOS Pro — filtres du bloc « Portfolio ».
+ * Agence B2B — filtres du bloc « Portfolio ».
  *
  * Filtrage côté client, sans dépendance : un clic sur un bouton
  * `[data-dyo-filter]` masque les éléments `[data-dyo-category]` qui ne

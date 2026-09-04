@@ -1,5 +1,5 @@
 /**
- * DYONYSOS Pro — bascule du mode sombre.
+ * Agence B2B — bascule du mode sombre.
  *
  * Tout élément portant la classe `o_dyo_dark_toggle` bascule la classe
  * `o_dyo_dark` sur <html>. Le choix est conservé dans le stockage local du

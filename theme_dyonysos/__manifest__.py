@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 {
-    "name": "DYONYSOS Pro — Thème agence & services B2B (édition complète)",
-    "summary": "Extension professionnelle du thème DYONYSOS : 7 blocs de plus, 4 pages de plus, "
+    "name": "Thème Agence B2B — services et conseil (édition complète)",
+    "summary": "Extension professionnelle du thème Agence B2B : 7 blocs de plus, 4 pages de plus, "
                "variantes d'en-tête et de pied de page, mode sombre",
     "description": """
-DYONYSOS Pro
-============
+Thème Agence B2B — édition complète
+===================================
 
-L'édition complète du thème DYONYSOS pour les agences, cabinets de conseil et
-sociétés de services B2B. Elle s'installe **par-dessus DYONYSOS Lite** : vous
+L'édition complète du thème Agence B2B pour les agences, cabinets de conseil et
+sociétés de services B2B. Elle s'installe **par-dessus l'édition gratuite** : vous
 conservez le système de design, les palettes, les 5 blocs et les 3 pages de la
 version gratuite, et vous ajoutez tout ce qui suit.
 

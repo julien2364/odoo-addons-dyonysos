@@ -5,7 +5,7 @@
      Variante 1 — Pied de page étendu : quatre colonnes.
      ===================================================================== -->
 <template id="template_footer_dyo_expanded" inherit_id="website.layout"
-          name="DYONYSOS — Pied de page étendu" active="False">
+          name="Agence B2B — Pied de page étendu" active="False">
     <xpath expr="//div[@id='footer']" position="replace">
         <div id="footer" class="oe_structure oe_structure_solo text-break o_dyo_footer_expanded"
              t-ignore="true" t-if="not no_footer">
@@ -62,7 +62,7 @@
      Variante 2 — Pied de page compact : une seule ligne.
      ===================================================================== -->
 <template id="template_footer_dyo_compact" inherit_id="website.layout"
-          name="DYONYSOS — Pied de page compact" active="False">
+          name="Agence B2B — Pied de page compact" active="False">
     <xpath expr="//div[@id='footer']" position="replace">
         <div id="footer" class="oe_structure oe_structure_solo text-break o_dyo_footer_compact"
              t-ignore="true" t-if="not no_footer">

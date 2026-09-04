@@ -6,7 +6,7 @@
          Page d'accueil : le contenu est injecté dans la structure
          éditable de la page d'accueil livrée par le module website.
          ============================================================ -->
-    <template id="dyo_homepage" inherit_id="website.homepage" name="DYONYSOS — Accueil">
+    <template id="dyo_homepage" inherit_id="website.homepage" name="Agence B2B — Accueil">
         <xpath expr="//div[@id='wrap']" position="inside">
             <section class="s_dyo_hero o_cc o_cc2">
                     <div class="container">

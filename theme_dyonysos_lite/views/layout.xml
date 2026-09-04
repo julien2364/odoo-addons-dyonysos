@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-<!-- Marque le document comme utilisant le thème DYONYSOS : sert de racine
+<!-- Marque le document comme utilisant le thème Agence B2B : sert de racine
      de portée aux styles du thème et aux extensions de la version Pro. -->
-<template id="dyo_layout" inherit_id="website.layout" name="DYONYSOS — enveloppe du thème">
+<template id="dyo_layout" inherit_id="website.layout" name="Agence B2B — enveloppe du thème">
     <xpath expr="//div[@id='wrapwrap']" position="attributes">
         <attribute name="class" add="o_dyo_theme" separator=" "/>
     </xpath>

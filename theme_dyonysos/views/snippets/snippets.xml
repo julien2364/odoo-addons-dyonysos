@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-<template id="dyo_pro_snippets" inherit_id="website.snippets" name="DYONYSOS Pro — enregistrement des blocs">
+<template id="dyo_pro_snippets" inherit_id="website.snippets" name="Agence B2B — enregistrement des blocs">
     <xpath expr="//snippets[@id='snippet_structure']" position="inside">
         <t t-snippet="theme_dyonysos.s_dyo_testimonials" string="Témoignages" group="dyonysos"
            t-thumbnail="/theme_dyonysos/static/src/img/snippets_thumbs/s_dyo_testimonials.png">
