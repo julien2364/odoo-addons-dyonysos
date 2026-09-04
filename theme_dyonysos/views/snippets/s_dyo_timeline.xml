@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_dyo_timeline" name="DYO Chronologie de projet">
+    <section class="s_dyo_timeline o_cc o_cc1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 o_dyo_narrow mb-5">
+                    <span class="o_dyo_eyebrow">Déroulé</span>
+                    <h2 class="mb-3">Quatre étapes, du premier atelier à la reprise en main</h2>
+                    <p class="o_dyo_lead mb-0">
+                        Chaque étape se termine par un livrable que vous pouvez lire,
+                        essayer ou refuser.
+                    </p>
+                </div>
+            </div>
+            <ol class="o_dyo_timeline_list">
+                <li class="o_dyo_timeline_step">
+                    <span class="o_dyo_timeline_index" aria-hidden="true">01</span>
+                    <div class="o_dyo_timeline_body">
+                        <p class="o_dyo_timeline_when mb-1">Semaines 1 à 2</p>
+                        <h3 class="h5-fs mb-2">Cadrage</h3>
+                        <p class="mb-0">
+                            Trois ateliers, un inventaire des contraintes réelles et une
+                            architecture cible chiffrée. Livrable : le dossier de cadrage.
+                        </p>
+                    </div>
+                </li>
+                <li class="o_dyo_timeline_step">
+                    <span class="o_dyo_timeline_index" aria-hidden="true">02</span>
+                    <div class="o_dyo_timeline_body">
+                        <p class="o_dyo_timeline_when mb-1">Semaines 3 à 6</p>
+                        <h3 class="h5-fs mb-2">Socle technique</h3>
+                        <p class="mb-0">
+                            Environnements, chaîne de livraison et premier parcours
+                            utilisateur de bout en bout. Livrable : une recette ouverte.
+                        </p>
+                    </div>
+                </li>
+                <li class="o_dyo_timeline_step">
+                    <span class="o_dyo_timeline_index" aria-hidden="true">03</span>
+                    <div class="o_dyo_timeline_body">
+                        <p class="o_dyo_timeline_when mb-1">Semaines 7 à 20</p>
+                        <h3 class="h5-fs mb-2">Construction</h3>
+                        <p class="mb-0">
+                            Itérations de deux semaines, démonstration à chaque fin de
+                            cycle et arbitrage de périmètre à budget constant.
+                        </p>
+                    </div>
+                </li>
+                <li class="o_dyo_timeline_step">
+                    <span class="o_dyo_timeline_index" aria-hidden="true">04</span>
+                    <div class="o_dyo_timeline_body">
+                        <p class="o_dyo_timeline_when mb-1">Semaines 21 à 24</p>
+                        <h3 class="h5-fs mb-2">Mise en production et transfert</h3>
+                        <p class="mb-0">
+                            Bascule accompagnée, documentation d'exploitation et deux
+                            sessions de transfert avec votre équipe interne.
+                        </p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+</template>
+
+</odoo>

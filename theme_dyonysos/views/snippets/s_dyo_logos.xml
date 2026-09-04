@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_dyo_logos" name="DYO Logos partenaires">
+    <section class="s_dyo_logos o_cc o_cc2">
+        <div class="container">
+            <p class="o_dyo_logos_label text-center mb-4">
+                Ils travaillent avec nous depuis plus de trois ans
+            </p>
+            <div class="row g-4 align-items-center justify-content-center o_dyo_logos_row">
+                <div class="col-4 col-md-2">
+                    <img src="/theme_dyonysos/static/src/img/logo_1.png" class="o_dyo_logo" loading="lazy"
+                         alt="Logo fictif de la société Vantere"/>
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="/theme_dyonysos/static/src/img/logo_2.png" class="o_dyo_logo" loading="lazy"
+                         alt="Logo fictif de la société Solveris"/>
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="/theme_dyonysos/static/src/img/logo_3.png" class="o_dyo_logo" loading="lazy"
+                         alt="Logo fictif de la société Norlane"/>
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="/theme_dyonysos/static/src/img/logo_4.png" class="o_dyo_logo" loading="lazy"
+                         alt="Logo fictif de la société Kaptis"/>
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="/theme_dyonysos/static/src/img/logo_5.png" class="o_dyo_logo" loading="lazy"
+                         alt="Logo fictif de la société Ambelis"/>
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="/theme_dyonysos/static/src/img/logo_6.png" class="o_dyo_logo" loading="lazy"
+                         alt="Logo fictif de la société Trevio"/>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

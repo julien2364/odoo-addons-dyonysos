@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="0">
+
+    <!-- ============================================================
+         Page d'accueil : le contenu est injecté dans la structure
+         éditable de la page d'accueil livrée par le module website.
+         ============================================================ -->
+    <template id="dyo_homepage" inherit_id="website.homepage" name="DYONYSOS — Accueil">
+        <xpath expr="//div[@id='wrap']" position="inside">
+            <section class="s_dyo_hero o_cc o_cc2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <div class="o_dyo_hero_inner">
+                                    <span class="o_dyo_eyebrow">Conseil &amp; ingénierie</span>
+                                    <h1 class="mb-4">Des systèmes qui tiennent la charge, et des équipes qui tiennent les délais</h1>
+                                    <p class="o_dyo_lead mb-5">
+                                        Nous accompagnons les directions techniques dans la conception,
+                                        la refonte et l'exploitation de leurs plateformes métier.
+                                        Cadrage court, livraison continue, transfert de compétences.
+                                    </p>
+                                    <p class="o_dyo_hero_actions mb-0">
+                                        <a href="/contact" class="btn btn-primary btn-lg">Parler de votre projet</a>
+                                        <a href="/services" class="btn btn-outline-secondary btn-lg">Voir nos expertises</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <section class="s_dyo_services o_cc o_cc1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 o_dyo_narrow mb-5">
+                                <span class="o_dyo_eyebrow">Nos expertises</span>
+                                <h2 class="mb-3">Trois façons de travailler ensemble</h2>
+                                <p class="o_dyo_lead mb-0">
+                                    Un cadre clair pour chaque phase de votre projet, du premier atelier
+                                    jusqu'à la mise en production.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-lg-4">
+                                <div class="o_dyo_card">
+                                    <span class="o_dyo_icon"><i class="fa fa-compass" role="img" aria-label="Cadrage"/></span>
+                                    <h3 class="h4-fs mb-3">Cadrage et architecture</h3>
+                                    <p class="mb-0">
+                                        Deux semaines pour transformer une intention en trajectoire :
+                                        périmètre, contraintes, architecture cible et budget réaliste.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="o_dyo_card">
+                                    <span class="o_dyo_icon"><i class="fa fa-cubes" role="img" aria-label="Réalisation"/></span>
+                                    <h3 class="h4-fs mb-3">Réalisation au forfait</h3>
+                                    <p class="mb-0">
+                                        Une équipe dédiée, des itérations de deux semaines et une
+                                        démonstration à chaque fin de cycle. Le code vous appartient.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="o_dyo_card">
+                                    <span class="o_dyo_icon"><i class="fa fa-line-chart" role="img" aria-label="Exploitation"/></span>
+                                    <h3 class="h4-fs mb-3">Exploitation et évolution</h3>
+                                    <p class="mb-0">
+                                        Supervision, correctifs et petites évolutions sous engagement
+                                        de délai, avec un interlocuteur unique côté technique.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <section class="s_dyo_stats o_cc o_cc5">
+                    <div class="container">
+                        <div class="row g-4 text-center">
+                            <div class="col-6 col-lg-3">
+                                <p class="mb-0">
+                                    <span class="o_dyo_stat_value">120+</span>
+                                    <span class="o_dyo_stat_label">projets livrés</span>
+                                </p>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <p class="mb-0">
+                                    <span class="o_dyo_stat_value">14 ans</span>
+                                    <span class="o_dyo_stat_label">d'expérience cumulée</span>
+                                </p>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <p class="mb-0">
+                                    <span class="o_dyo_stat_value">98 %</span>
+                                    <span class="o_dyo_stat_label">de clients reconduits</span>
+                                </p>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <p class="mb-0">
+                                    <span class="o_dyo_stat_value">4 h</span>
+                                    <span class="o_dyo_stat_label">de délai de première réponse</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <section class="s_dyo_about o_cc o_cc1">
+                    <div class="container">
+                        <div class="row align-items-center g-5">
+                            <div class="col-lg-6">
+                                <img src="/theme_dyonysos_lite/static/src/img/about_abstract.png"
+                                     class="o_dyo_about_img" loading="lazy"
+                                     alt="Composition abstraite de blocs superposés évoquant l'assemblage d'un système"/>
+                            </div>
+                            <div class="col-lg-6">
+                                <span class="o_dyo_eyebrow">Notre approche</span>
+                                <h2 class="mb-4">Une équipe réduite, des décisions rapides</h2>
+                                <p class="mb-4">
+                                    Nous travaillons en petites équipes autonomes, au contact direct
+                                    des personnes qui utiliseront le produit. Pas de couche
+                                    intermédiaire, pas de rapport hebdomadaire de vingt pages :
+                                    un environnement de recette accessible en permanence et une
+                                    démonstration toutes les deux semaines.
+                                </p>
+                                <ul class="o_dyo_checklist mb-4">
+                                    <li>Un interlocuteur technique unique du cadrage à la mise en production</li>
+                                    <li>Documentation d'exploitation livrée avec le code</li>
+                                    <li>Transfert de compétences prévu au contrat, pas en option</li>
+                                </ul>
+                                <p class="mb-0">
+                                    <a href="/contact" class="btn btn-primary">Prendre rendez-vous</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <section class="s_dyo_cta o_cc o_cc1">
+                    <div class="container">
+                        <div class="o_dyo_cta_inner o_cc o_cc5">
+                            <div class="row align-items-center g-4">
+                                <div class="col-lg-8">
+                                    <h2 class="mb-3">Un projet à cadrer ce trimestre ?</h2>
+                                    <p class="mb-0 o_dyo_lead">
+                                        Décrivez-nous le contexte en quelques lignes : nous revenons
+                                        vers vous sous quatre heures ouvrées avec un premier avis.
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 text-lg-end">
+                                    <a href="/contact" class="btn btn-primary btn-lg">Nous écrire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        </xpath>
+    </template>
+
+    <!-- ============================================================
+         Page « Services »
+         ============================================================ -->
+    <template id="dyo_page_services" name="Services">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+                <section class="s_dyo_hero o_cc o_cc2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <span class="o_dyo_eyebrow">Services</span>
+                    <h1 class="mb-4">Ce que nous faisons, et comment nous le facturons</h1>
+                    <p class="o_dyo_lead mb-0">
+                        Trois formats d'intervention, un devis lisible et un
+                        engagement de délai écrit dans le contrat.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+                <section class="s_dyo_services o_cc o_cc1">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8 o_dyo_narrow mb-5">
+                                    <span class="o_dyo_eyebrow">Nos expertises</span>
+                                    <h2 class="mb-3">Trois façons de travailler ensemble</h2>
+                                    <p class="o_dyo_lead mb-0">
+                                        Un cadre clair pour chaque phase de votre projet, du premier atelier
+                                        jusqu'à la mise en production.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="o_dyo_card">
+                                        <span class="o_dyo_icon"><i class="fa fa-compass" role="img" aria-label="Cadrage"/></span>
+                                        <h3 class="h4-fs mb-3">Cadrage et architecture</h3>
+                                        <p class="mb-0">
+                                            Deux semaines pour transformer une intention en trajectoire :
+                                            périmètre, contraintes, architecture cible et budget réaliste.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="o_dyo_card">
+                                        <span class="o_dyo_icon"><i class="fa fa-cubes" role="img" aria-label="Réalisation"/></span>
+                                        <h3 class="h4-fs mb-3">Réalisation au forfait</h3>
+                                        <p class="mb-0">
+                                            Une équipe dédiée, des itérations de deux semaines et une
+                                            démonstration à chaque fin de cycle. Le code vous appartient.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="o_dyo_card">
+                                        <span class="o_dyo_icon"><i class="fa fa-line-chart" role="img" aria-label="Exploitation"/></span>
+                                        <h3 class="h4-fs mb-3">Exploitation et évolution</h3>
+                                        <p class="mb-0">
+                                            Supervision, correctifs et petites évolutions sous engagement
+                                            de délai, avec un interlocuteur unique côté technique.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                <section class="s_dyo_services o_cc o_cc2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 o_dyo_narrow mb-5">
+                    <span class="o_dyo_eyebrow">Modalités</span>
+                    <h2 class="mb-3">Des repères clairs avant de signer</h2>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table align-middle">
+                    <thead>
+                        <tr>
+                            <th scope="col">Format</th>
+                            <th scope="col">Durée type</th>
+                            <th scope="col">Livrable</th>
+                            <th scope="col">Engagement</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cadrage et architecture</td>
+                            <td>2 semaines</td>
+                            <td>Dossier d'architecture et trajectoire chiffrée</td>
+                            <td>Prix ferme</td>
+                        </tr>
+                        <tr>
+                            <td>Réalisation au forfait</td>
+                            <td>3 à 9 mois</td>
+                            <td>Application en production, code et documentation</td>
+                            <td>Prix et délai fermes</td>
+                        </tr>
+                        <tr>
+                            <td>Exploitation et évolution</td>
+                            <td>12 mois reconductibles</td>
+                            <td>Supervision, correctifs, petites évolutions</td>
+                            <td>Délai de réponse contractuel</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+                <section class="s_dyo_stats o_cc o_cc5">
+                        <div class="container">
+                            <div class="row g-4 text-center">
+                                <div class="col-6 col-lg-3">
+                                    <p class="mb-0">
+                                        <span class="o_dyo_stat_value">120+</span>
+                                        <span class="o_dyo_stat_label">projets livrés</span>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <p class="mb-0">
+                                        <span class="o_dyo_stat_value">14 ans</span>
+                                        <span class="o_dyo_stat_label">d'expérience cumulée</span>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <p class="mb-0">
+                                        <span class="o_dyo_stat_value">98 %</span>
+                                        <span class="o_dyo_stat_label">de clients reconduits</span>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <p class="mb-0">
+                                        <span class="o_dyo_stat_value">4 h</span>
+                                        <span class="o_dyo_stat_label">de délai de première réponse</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                <section class="s_dyo_cta o_cc o_cc1">
+                        <div class="container">
+                            <div class="o_dyo_cta_inner o_cc o_cc5">
+                                <div class="row align-items-center g-4">
+                                    <div class="col-lg-8">
+                                        <h2 class="mb-3">Un projet à cadrer ce trimestre ?</h2>
+                                        <p class="mb-0 o_dyo_lead">
+                                            Décrivez-nous le contexte en quelques lignes : nous revenons
+                                            vers vous sous quatre heures ouvrées avec un premier avis.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 text-lg-end">
+                                        <a href="/contact" class="btn btn-primary btn-lg">Nous écrire</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+            </div>
+        </t>
+    </template>
+
+    <record id="dyo_page_services_page" model="theme.website.page">
+        <field name="url">/services</field>
+        <field name="view_id" ref="dyo_page_services"/>
+        <field name="is_published" eval="True"/>
+        <field name="website_indexed" eval="True"/>
+    </record>
+
+    <!-- ============================================================
+         Page « Contact »
+         ============================================================ -->
+    <template id="dyo_page_contact" name="Contact">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+                <section class="s_dyo_hero o_cc o_cc2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <span class="o_dyo_eyebrow">Contact</span>
+                    <h1 class="mb-4">Écrivez-nous, nous répondons sous quatre heures ouvrées</h1>
+                    <p class="o_dyo_lead mb-0">
+                        Décrivez le contexte en quelques lignes. Si le sujet
+                        n'est pas pour nous, nous vous le disons tout de suite.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+                <section class="s_dyo_about o_cc o_cc1">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <h2 class="h3-fs mb-4">Formulaire de contact</h2>
+                    <div class="mb-3">
+                        <label class="form-label" for="dyo_contact_name">Nom et prénom</label>
+                        <input id="dyo_contact_name" type="text" class="form-control" name="name"
+                               placeholder="Camille Berthier"/>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="dyo_contact_email">Adresse électronique</label>
+                        <input id="dyo_contact_email" type="email" class="form-control" name="email"
+                               placeholder="camille@exemple.fr"/>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="dyo_contact_subject">Sujet</label>
+                        <input id="dyo_contact_subject" type="text" class="form-control" name="subject"
+                               placeholder="Refonte d'un portail interne"/>
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label" for="dyo_contact_message">Votre message</label>
+                        <textarea id="dyo_contact_message" class="form-control" name="message" rows="5"
+                                  placeholder="Contexte, échéance souhaitée, contraintes connues."/>
+                    </div>
+                    <p class="mb-0">
+                        <a href="/contact" class="btn btn-primary btn-lg">Envoyer le message</a>
+                    </p>
+                    <p class="mt-3 mb-0"><small class="text-muted">
+                        Bloc de démonstration. Remplacez-le par le bloc
+                        « Formulaire » d'Odoo pour recevoir réellement les messages.
+                    </small></p>
+                </div>
+                <div class="col-lg-5">
+                    <div class="o_dyo_card">
+                        <h3 class="h5-fs mb-3">Coordonnées</h3>
+                        <p class="mb-4">
+                            12 rue des Ateliers<br/>
+                            75011 Paris<br/>
+                            France
+                        </p>
+                        <h3 class="h5-fs mb-3">Horaires</h3>
+                        <p class="mb-4">
+                            Du lundi au vendredi, 9 h – 18 h<br/>
+                            Astreinte sur contrat d'exploitation
+                        </p>
+                        <h3 class="h5-fs mb-3">Accès</h3>
+                        <p class="mb-0">
+                            Métro ligne 9, station Voltaire.<br/>
+                            Parking visiteurs sur réservation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                <section class="s_dyo_cta o_cc o_cc1">
+                        <div class="container">
+                            <div class="o_dyo_cta_inner o_cc o_cc5">
+                                <div class="row align-items-center g-4">
+                                    <div class="col-lg-8">
+                                        <h2 class="mb-3">Un projet à cadrer ce trimestre ?</h2>
+                                        <p class="mb-0 o_dyo_lead">
+                                            Décrivez-nous le contexte en quelques lignes : nous revenons
+                                            vers vous sous quatre heures ouvrées avec un premier avis.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 text-lg-end">
+                                        <a href="/contact" class="btn btn-primary btn-lg">Nous écrire</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+            </div>
+        </t>
+    </template>
+
+    <record id="dyo_page_contact_page" model="theme.website.page">
+        <field name="url">/contact</field>
+        <field name="view_id" ref="dyo_page_contact"/>
+        <field name="is_published" eval="True"/>
+        <field name="website_indexed" eval="True"/>
+    </record>
+
+</data>
+</odoo>

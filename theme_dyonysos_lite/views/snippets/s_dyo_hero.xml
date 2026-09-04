@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_dyo_hero" name="DYO Bandeau d'accueil">
+    <section class="s_dyo_hero o_cc o_cc2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="o_dyo_hero_inner">
+                        <span class="o_dyo_eyebrow">Conseil &amp; ingénierie</span>
+                        <h1 class="mb-4">Des systèmes qui tiennent la charge, et des équipes qui tiennent les délais</h1>
+                        <p class="o_dyo_lead mb-5">
+                            Nous accompagnons les directions techniques dans la conception,
+                            la refonte et l'exploitation de leurs plateformes métier.
+                            Cadrage court, livraison continue, transfert de compétences.
+                        </p>
+                        <p class="o_dyo_hero_actions mb-0">
+                            <a href="/contact" class="btn btn-primary btn-lg">Parler de votre projet</a>
+                            <a href="/services" class="btn btn-outline-secondary btn-lg">Voir nos expertises</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

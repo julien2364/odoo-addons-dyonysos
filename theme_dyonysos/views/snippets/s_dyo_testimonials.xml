@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_dyo_testimonials" name="DYO Témoignages">
+    <section class="s_dyo_testimonials o_cc o_cc2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 o_dyo_narrow mb-5">
+                    <span class="o_dyo_eyebrow">Ils nous font confiance</span>
+                    <h2 class="mb-0">Ce que disent les équipes que nous accompagnons</h2>
+                </div>
+            </div>
+            <div id="dyo_testimonials_carousel" class="carousel slide o_dyo_testimonials_carousel"
+                 data-bs-ride="false" data-bs-interval="0">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <figure class="o_dyo_quote">
+                            <blockquote class="mb-4">
+                                « Le cadrage a duré deux semaines et nous a évité six mois
+                                de développement dans la mauvaise direction. C'est la
+                                première fois qu'un prestataire nous dit non aussi tôt. »
+                            </blockquote>
+                            <figcaption>
+                                <span class="o_dyo_quote_name">Camille Berthier</span>
+                                <span class="o_dyo_quote_role">Directrice des systèmes d'information, groupe industriel</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="carousel-item">
+                        <figure class="o_dyo_quote">
+                            <blockquote class="mb-4">
+                                « Une démonstration toutes les deux semaines, un
+                                environnement de recette ouvert en permanence : nos métiers
+                                ont enfin pu corriger le tir avant la mise en production. »
+                            </blockquote>
+                            <figcaption>
+                                <span class="o_dyo_quote_name">Adrien Marchal</span>
+                                <span class="o_dyo_quote_role">Responsable produit, éditeur de logiciels</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="carousel-item">
+                        <figure class="o_dyo_quote">
+                            <blockquote class="mb-4">
+                                « La documentation d'exploitation est arrivée avec le code,
+                                pas trois mois après. Notre équipe interne a repris la main
+                                sans période de flottement. »
+                            </blockquote>
+                            <figcaption>
+                                <span class="o_dyo_quote_name">Salomé Nguyen</span>
+                                <span class="o_dyo_quote_role">Responsable infrastructure, réseau de distribution</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button"
+                        data-bs-target="#dyo_testimonials_carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"/>
+                    <span class="visually-hidden">Témoignage précédent</span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                        data-bs-target="#dyo_testimonials_carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"/>
+                    <span class="visually-hidden">Témoignage suivant</span>
+                </button>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

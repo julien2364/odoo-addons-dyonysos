@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<odoo>
-    <menuitem id="menu_mcp_root" name="MCP Server" web_icon="odoo_mcp_server,static/description/icon.png"
-              sequence="95" groups="odoo_mcp_server.group_mcp_user"/>
-    <menuitem id="menu_mcp_config" name="Exposed models" parent="menu_mcp_root"
-              action="mcp_model_config_action" sequence="10" groups="odoo_mcp_server.group_mcp_manager"/>
-    <menuitem id="menu_mcp_log" name="Access log" parent="menu_mcp_root"
-              action="mcp_access_log_action" sequence="20"/>
-</odoo>

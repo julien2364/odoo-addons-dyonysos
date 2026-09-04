@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_dyo_services" name="DYO Grille de services">
+    <section class="s_dyo_services o_cc o_cc1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 o_dyo_narrow mb-5">
+                    <span class="o_dyo_eyebrow">Nos expertises</span>
+                    <h2 class="mb-3">Trois façons de travailler ensemble</h2>
+                    <p class="o_dyo_lead mb-0">
+                        Un cadre clair pour chaque phase de votre projet, du premier atelier
+                        jusqu'à la mise en production.
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="o_dyo_card">
+                        <span class="o_dyo_icon"><i class="fa fa-compass" role="img" aria-label="Cadrage"/></span>
+                        <h3 class="h4-fs mb-3">Cadrage et architecture</h3>
+                        <p class="mb-0">
+                            Deux semaines pour transformer une intention en trajectoire :
+                            périmètre, contraintes, architecture cible et budget réaliste.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="o_dyo_card">
+                        <span class="o_dyo_icon"><i class="fa fa-cubes" role="img" aria-label="Réalisation"/></span>
+                        <h3 class="h4-fs mb-3">Réalisation au forfait</h3>
+                        <p class="mb-0">
+                            Une équipe dédiée, des itérations de deux semaines et une
+                            démonstration à chaque fin de cycle. Le code vous appartient.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="o_dyo_card">
+                        <span class="o_dyo_icon"><i class="fa fa-line-chart" role="img" aria-label="Exploitation"/></span>
+                        <h3 class="h4-fs mb-3">Exploitation et évolution</h3>
+                        <p class="mb-0">
+                            Supervision, correctifs et petites évolutions sous engagement
+                            de délai, avec un interlocuteur unique côté technique.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

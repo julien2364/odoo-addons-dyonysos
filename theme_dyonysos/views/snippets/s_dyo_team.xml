@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_dyo_team" name="DYO Équipe">
+    <section class="s_dyo_team o_cc o_cc1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 o_dyo_narrow mb-5">
+                    <span class="o_dyo_eyebrow">L'équipe</span>
+                    <h2 class="mb-3">Les personnes qui travailleront réellement sur votre projet</h2>
+                    <p class="o_dyo_lead mb-0">
+                        Pas d'équipe commerciale devant, équipe technique derrière :
+                        vous rencontrez dès le premier rendez-vous celles et ceux qui
+                        écriront le code.
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-6 col-lg-3">
+                    <div class="o_dyo_member">
+                        <img src="/theme_dyonysos/static/src/img/member_1.png" loading="lazy"
+                             alt="Portrait stylisé aux initiales C. B."/>
+                        <h3 class="h5-fs mb-1">Camille Broussard</h3>
+                        <p class="o_dyo_member_role mb-3">Architecte logicielle</p>
+                        <p class="mb-0"><a href="/contact" class="btn btn-link p-0">Écrire à Camille</a></p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="o_dyo_member">
+                        <img src="/theme_dyonysos/static/src/img/member_2.png" loading="lazy"
+                             alt="Portrait stylisé aux initiales T. L."/>
+                        <h3 class="h5-fs mb-1">Théo Lamarque</h3>
+                        <p class="o_dyo_member_role mb-3">Ingénieur plateforme</p>
+                        <p class="mb-0"><a href="/contact" class="btn btn-link p-0">Écrire à Théo</a></p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="o_dyo_member">
+                        <img src="/theme_dyonysos/static/src/img/member_3.png" loading="lazy"
+                             alt="Portrait stylisé aux initiales N. F."/>
+                        <h3 class="h5-fs mb-1">Naïma Fauvel</h3>
+                        <p class="o_dyo_member_role mb-3">Ingénieure données</p>
+                        <p class="mb-0"><a href="/contact" class="btn btn-link p-0">Écrire à Naïma</a></p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="o_dyo_member">
+                        <img src="/theme_dyonysos/static/src/img/member_4.png" loading="lazy"
+                             alt="Portrait stylisé aux initiales V. D."/>
+                        <h3 class="h5-fs mb-1">Victor Delaunay</h3>
+                        <p class="o_dyo_member_role mb-3">Responsable de projet</p>
+                        <p class="mb-0"><a href="/contact" class="btn btn-link p-0">Écrire à Victor</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

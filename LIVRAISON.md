@@ -12,11 +12,11 @@ Auteur `DYONYSOS`, support `welcome@dyonysos.fr`, site `https://dyonysos.fr`.
 |---|---|---|---|---|
 | `ai_document_extract` | Lit les PDF/images de factures fournisseurs et de notes de frais avec un modèle de vision et remplit le brouillon Odoo | 7 | `account`, `hr_expense` | `requests` (+ `pypdf`, optionnel, utilisé pour extraire la couche texte d'un PDF quand le fournisseur est OpenAI-compatible) |
 | `dougs_bridge` | Constitue un lot des pièces validées (PDF + Factur-X + `journal.csv`) et le transmet au cabinet par API First, email, SFTP, dossier serveur ou ZIP | 10 | `account`, `hr_expense`, `account_edi_ubl_cii`, `mail` | `requests` (+ `paramiko` si transport SFTP) |
-| `odoo_mcp_server` | Sert un endpoint MCP `/mcp` (JSON-RPC 2.0, Streamable HTTP) authentifié par clé API Odoo de scope `odoo.mcp`, avec liste blanche de modèles et journal d'audit | 20 | `base`, `base_setup` | aucune |
+| `dyo_mcp_server` | Sert un endpoint MCP `/mcp` (JSON-RPC 2.0, Streamable HTTP) authentifié par clé API Odoo de scope `odoo.mcp`, avec liste blanche de modèles et journal d'audit | 20 | `base`, `base_setup` | aucune |
 | `amazon_connector_community` | Importe les commandes Amazon SP-API en commandes de vente (pagination `NextToken`), remonte le suivi, pousse stock et prix sur toutes les places de marché avec conversion de devise | 19 | `sale_management`, `stock`, `delivery` | `requests` |
-| `studio_lite` | Crée des champs `x_...` + la vue héritée qui les affiche, retouche les vues et crée des automatisations, le tout tracé et réversible | 20 | `base`, `web`, `mail`, `base_automation` | aucune |
+| `dyo_studio_lite` | Crée des champs `x_...` + la vue héritée qui les affiche, retouche les vues et crée des automatisations, le tout tracé et réversible | 20 | `base`, `web`, `mail`, `base_automation` | aucune |
 
-**Total : 76 tests.** `odoo_mcp_server` et `studio_lite` sont déclarés `application: True` (icône dans le menu principal) ; les trois autres sont des extensions.
+**Total : 76 tests.** `dyo_mcp_server` et `dyo_studio_lite` sont déclarés `application: True` (icône dans le menu principal) ; les trois autres sont des extensions.
 
 Chaîne CI (`.github/workflows/ci.yml`) : `lint` (manifestes, syntaxe Python, XML bien formé, présence de `static/description/icon.png` et `index.html`) → `tests` (clone de la pointe de `odoo/odoo` branche `19.0`, PostgreSQL 16, installation des 5 modules avec `--test-enable`) → `build` (`scripts/build.sh`, un zip par module + un bundle, artefacts 30 jours) → `release` sur tag `v*`. Déclencheurs : push et PR sur `19.0`, cron nocturne `17 3 * * *` UTC, et `workflow_dispatch`.
 
@@ -86,7 +86,7 @@ Envoi unitaire possible depuis une facture (`Send to accountant` dans le bandeau
 
 ---
 
-### 2.3 `odoo_mcp_server`
+### 2.3 `dyo_mcp_server`
 
 **Rien à obtenir de l'extérieur** : ni compte, ni clé tierce. La clé est une clé API Odoo native.
 
@@ -96,17 +96,17 @@ Réglages › Paramètres généraux › **Intégrations**, setting « MCP Serve
 
 | Champ | Clé `ir.config_parameter` | Défaut |
 |---|---|---|
-| Enable the MCP endpoint | `odoo_mcp_server.enabled` | `True` |
-| Allow write operations | `odoo_mcp_server.allow_writes` | **`False`** |
-| Log call arguments | `odoo_mcp_server.log_arguments` | `True` |
-| Log retention (days) | `odoo_mcp_server.log_retention_days` | `90` |
-| Max calls per minute and per key | `odoo_mcp_server.rate_limit` | `120` |
+| Enable the MCP endpoint | `dyo_mcp_server.enabled` | `True` |
+| Allow write operations | `dyo_mcp_server.allow_writes` | **`False`** |
+| Log call arguments | `dyo_mcp_server.log_arguments` | `True` |
+| Log retention (days) | `dyo_mcp_server.log_retention_days` | `90` |
+| Max calls per minute and per key | `dyo_mcp_server.rate_limit` | `120` |
 
 Endpoint désactivé ⇒ `/mcp` répond HTTP 503.
 
 **b. Créer l'utilisateur porteur de la clé**
 
-Créer un utilisateur dédié (ne pas utiliser un compte administrateur : la clé hérite exactement de ses droits) et lui donner le groupe **MCP User** (`odoo_mcp_server.group_mcp_user`) plus les groupes métier correspondant à ce que l'assistant doit voir. Le groupe **MCP Administrator** (`group_mcp_manager`) est réservé à qui configure la liste blanche et lit tout le journal.
+Créer un utilisateur dédié (ne pas utiliser un compte administrateur : la clé hérite exactement de ses droits) et lui donner le groupe **MCP User** (`dyo_mcp_server.group_mcp_user`) plus les groupes métier correspondant à ce que l'assistant doit voir. Le groupe **MCP Administrator** (`group_mcp_manager`) est réservé à qui configure la liste blanche et lit tout le journal.
 
 **c. Créer la clé de scope `odoo.mcp`**
 
@@ -193,9 +193,9 @@ Outils exposés : `odoo_list_models`, `odoo_model_fields`, `odoo_search`, `odoo_
 
 ---
 
-### 2.5 `studio_lite`
+### 2.5 `dyo_studio_lite`
 
-**Rien à obtenir de l'extérieur.** Le groupe **Designer** (`studio_lite.group_studio_designer`) implique `base.group_system` et est attribué à l'administrateur à l'installation.
+**Rien à obtenir de l'extérieur.** Le groupe **Designer** (`dyo_studio_lite.group_studio_designer`) implique `base.group_system` et est attribué à l'administrateur à l'installation.
 
 **Écrans** — menu racine **Studio Lite** :
 
@@ -223,9 +223,9 @@ Emplacement : Réglages › Technique › Automatisation › **Actions planifié
 | `amazon_connector_community` | `Amazon Connector : envoi du stock et des prix` | toutes les 15 min | **inactive** | Après un `Envoyer stock et prix` manuel accepté par Amazon sur au moins un SKU |
 | `amazon_connector_community` | `Amazon Connector : remontée du suivi` | toutes les 30 min | **inactive** | Après un `Envoyer le suivi` manuel réussi sur un bon de livraison réel |
 | `dougs_bridge` | `Dougs Bridge: export accounting documents` | 1 jour | **inactive** | Après un lot manuel `sent` sans erreur sur le transport retenu. Régler `Days before a document is exported` avant d'activer |
-| `odoo_mcp_server` | `MCP Server: purge old access logs` | 1 semaine | **active** | Déjà active. Elle purge le journal d'audit au-delà de `odoo_mcp_server.log_retention_days` (90 jours) — la désactiver si le journal doit être conservé plus longtemps |
+| `dyo_mcp_server` | `MCP Server: purge old access logs` | 1 semaine | **active** | Déjà active. Elle purge le journal d'audit au-delà de `dyo_mcp_server.log_retention_days` (90 jours) — la désactiver si le journal doit être conservé plus longtemps |
 
-`ai_document_extract` et `studio_lite` ne livrent aucune action planifiée.
+`ai_document_extract` et `dyo_studio_lite` ne livrent aucune action planifiée.
 
 Les crons Amazon tournent **sur tous les comptes** (`self.search([])`) : ne pas les activer tant qu'un compte de test incomplet existe encore dans la base. Le cron `dougs_bridge` boucle sur **toutes les sociétés** et supprime le lot s'il est vide.
 
@@ -245,7 +245,7 @@ Les crons Amazon tournent **sur tous les comptes** (`self.search([])`) : ne pas 
    - `icon.png` : icône affichée dans la liste des apps (présente pour les 5 modules) ;
    - `banner.png` : bandeau, déclaré via `images` dans chaque manifeste ;
    - `index.html` : la page de description longue rendue sur la fiche de l'app (présente pour les 5 modules) ;
-   - captures d'écran complémentaires livrées : `ai_document_extract/screen_bills.png`, `amazon_connector_community/screen_orders.png` et `screen_sync.png`, `dougs_bridge/screen_batch.png`, `odoo_mcp_server/screen_log.png`, `studio_lite/screen_customizations.png` et `screen_field_wizard.png`.
+   - captures d'écran complémentaires livrées : `ai_document_extract/screen_bills.png`, `amazon_connector_community/screen_orders.png` et `screen_sync.png`, `dougs_bridge/screen_batch.png`, `dyo_mcp_server/screen_log.png`, `dyo_studio_lite/screen_customizations.png` et `screen_field_wizard.png`.
 6. **Validation** : la mise en ligne n'est **pas automatique**. Odoo effectue une revue manuelle de chaque module (conformité du manifeste, qualité de la description, absence de code interdit, licence cohérente avec le prix). Compter plusieurs jours ouvrés, et prévoir des allers-retours. Tant que la revue n'est pas passée, le module apparaît en attente et n'est pas achetable.
 7. **Mises à jour** : incrémenter le dernier segment de `version` (`19.0.1.0.1`, …) et pousser sur `19.0`. Odoo repasse en revue les changements.
 
@@ -255,8 +255,8 @@ Les crons Amazon tournent **sur tous les comptes** (`self.search([])`) : ne pas 
 - [ ] Le job `tests` de la CI est vert (72 tests) — y compris le dernier run nocturne.
 - [ ] `README.md` corrigé : 72 tests, et la ventilation par module alignée sur la section 1 de ce document.
 - [ ] Les 5 `__manifest__.py` portent bien `version` en `19.0.x.y.z`, `license: OPL-1`, `price: 250.0`, `currency: EUR`, `author: DYONYSOS`, `support: welcome@dyonysos.fr`.
-- [ ] Aucun `__pycache__`, `.pyc`, `.ruff_cache` ni fichier de travail dans les zips de `dist/` (`scripts/build.sh` les purge — vérifier après coup : `unzip -l dist/dougs_bridge-19.0.1.0.0.zip | grep -i cache`). **Les répertoires `.ruff_cache/` présents dans `dougs_bridge/` et `odoo_mcp_server/` doivent être supprimés du dépôt et ajoutés au `.gitignore` avant publication.**
-- [ ] Chaque `index.html` relu : pas de promesse absente du code, mention explicite du périmètre non couvert (déjà présente pour `amazon_connector_community` et `studio_lite`).
+- [ ] Aucun `__pycache__`, `.pyc`, `.ruff_cache` ni fichier de travail dans les zips de `dist/` (`scripts/build.sh` les purge — vérifier après coup : `unzip -l dist/dougs_bridge-19.0.1.0.0.zip | grep -i cache`). **Les répertoires `.ruff_cache/` présents dans `dougs_bridge/` et `dyo_mcp_server/` doivent être supprimés du dépôt et ajoutés au `.gitignore` avant publication.**
+- [ ] Chaque `index.html` relu : pas de promesse absente du code, mention explicite du périmètre non couvert (déjà présente pour `amazon_connector_community` et `dyo_studio_lite`).
 - [ ] Les `banner.png` et `icon.png` s'affichent correctement (pas de transparence cassée, icône lisible en 128 px).
 - [ ] Les fichiers de traduction `i18n/*.pot` et `i18n/fr.po` sont régénérés si des chaînes ont changé depuis la dernière passe.
 - [ ] Clé de déploiement GitHub ajoutée **en lecture seule**.
@@ -301,7 +301,7 @@ docker compose run --rm --no-deps -T odoo odoo -d dyonysos -u <module> --stop-af
 docker compose restart odoo
 ```
 
-`--no-deps` empêche le démarrage d'un second conteneur `db` ; `--stop-after-init` fait sortir le processus après la mise à jour ; `--no-http` évite le conflit de port avec l'instance en service. Plusieurs modules à la fois : `-u ai_document_extract,dougs_bridge`. Mise à jour de tout le lot : `-u ai_document_extract,dougs_bridge,odoo_mcp_server,amazon_connector_community,studio_lite`.
+`--no-deps` empêche le démarrage d'un second conteneur `db` ; `--stop-after-init` fait sortir le processus après la mise à jour ; `--no-http` évite le conflit de port avec l'instance en service. Plusieurs modules à la fois : `-u ai_document_extract,dougs_bridge`. Mise à jour de tout le lot : `-u ai_document_extract,dougs_bridge,dyo_mcp_server,amazon_connector_community,dyo_studio_lite`.
 
 Première installation d'un module : remplacer `-u` par `-i`. Dépendances Python à ajouter dans l'image si besoin : `requests` (généralement déjà présent dans l'image officielle), `pypdf` (couche texte des PDF pour les fournisseurs OpenAI-compatibles), `paramiko` (transport SFTP de `dougs_bridge`).
 
@@ -345,7 +345,7 @@ Première installation d'un module : remplacer `-u` par `-i`. Dépendances Pytho
 - **Factur-X « best effort ».** L'échec de génération du XML Factur-X est capturé et journalisé, mais ne bloque pas l'envoi : le PDF part seul. Un correctif Community est livré (`account_edi_cii_fix.py`) parce que l'exportateur CII standard lit `deferred_start_date` / `deferred_end_date`, champs qui n'existent qu'avec la fonctionnalité de charges constatées d'avance d'Enterprise — sans ce correctif, l'export plante en Community.
 - **Transport `folder` non transactionnel.** Les fichiers sont écrits directement dans le répertoire cible ; si la synchronisation Drive/Nextcloud est en retard ou en conflit, Odoo considère le lot comme envoyé.
 
-### `odoo_mcp_server`
+### `dyo_mcp_server`
 
 - **Portée d'une clé MCP** : la clé hérite de tous les droits de son utilisateur. Créez un utilisateur dédié au strict nécessaire plutôt que de partager une clé d'administrateur.
 - **Limitation de débit locale au worker.** `_RATE_BUCKET` est un dictionnaire en mémoire de processus. Avec plusieurs workers Odoo, la limite effective est `rate_limit × nombre de workers`, pas `rate_limit`. Acceptable comme garde-fou, insuffisant comme quota strict.
@@ -362,7 +362,7 @@ Première installation d'un module : remplacer `-u` par `-i`. Dépendances Pytho
 - **Pas d'action planifiée de reprise.** Une extraction en erreur reste en erreur jusqu'à un clic manuel sur `AI Extract`.
 - **Modèles par défaut figés dans le code** (`claude-sonnet-4-5`, `gpt-4.1-mini`) : ils vieilliront, d'où le champ `AI Model` laissé libre.
 
-### `studio_lite`
+### `dyo_studio_lite`
 
 Le module l'annonce lui-même dans sa page de description : **ce n'est pas Odoo Studio.** Ne sont pas couverts —
 
@@ -376,7 +376,7 @@ Ce qui est couvert : la création de champs `x_...` (14 types) avec leur placeme
 
 ### Transverse
 
-- Les répertoires `.ruff_cache/` sont versionnés dans `dougs_bridge/` et `odoo_mcp_server/` : à supprimer et à ignorer.
+- Les répertoires `.ruff_cache/` sont versionnés dans `dougs_bridge/` et `dyo_mcp_server/` : à supprimer et à ignorer.
 - Aucun module n'a de script de migration : la première version publiée est `19.0.1.0.0`, donc rien à migrer aujourd'hui, mais toute évolution de schéma après mise en vente en exigera un.
 
 ---
@@ -387,13 +387,13 @@ Ce qui est couvert : la création de champs `x_...` (14 types) avec leur placeme
 |---|---|---|
 | `ai_document_extract` | Lecture du journal d'extraction : facturation (`account.group_account_invoice`) et approbateurs de notes de frais (`hr_expense.group_hr_expense_team_approver`). Écriture/suppression : `account.group_account_manager` seul. Le bouton `AI Extract` suit les droits standard sur la facture ou la note de frais. | Clé API dans `ir.config_parameter` (`ai_document_extract.api_key`), champ affiché en `password="True"`. Accessible à quiconque peut lire les paramètres système — c'est-à-dire aux administrateurs. |
 | `dougs_bridge` | Pas de groupe dédié : les droits sont ceux de la comptabilité. Deux règles d'enregistrement globales multi-société sur `dougs.export.batch` et `dougs.export.line`. | Clé API First, mot de passe SFTP : `ir.config_parameter` (`dougs_bridge.apifirst_api_key`, `dougs_bridge.sftp_password`), champs `password="True"`. |
-| `odoo_mcp_server` | Groupes **MCP User** (crée ses propres clés, lit son propre journal — règle `[('user_id','=',user.id)]`) et **MCP Administrator** (configure la liste blanche, lit tout le journal). Chaque appel MCP s'exécute avec l'environnement de l'utilisateur porteur de la clé : groupes, droits d'accès, règles d'enregistrement et multi-société d'Odoo s'appliquent intégralement, jamais de `sudo()`. | La clé API est un enregistrement `res.users.apikeys` (haché en base par Odoo, affiché une seule fois à la création, révocable, avec expiration facultative). Les arguments journalisés sont masqués sur tout mot-clé sensible. |
+| `dyo_mcp_server` | Groupes **MCP User** (crée ses propres clés, lit son propre journal — règle `[('user_id','=',user.id)]`) et **MCP Administrator** (configure la liste blanche, lit tout le journal). Chaque appel MCP s'exécute avec l'environnement de l'utilisateur porteur de la clé : groupes, droits d'accès, règles d'enregistrement et multi-société d'Odoo s'appliquent intégralement, jamais de `sudo()`. | La clé API est un enregistrement `res.users.apikeys` (haché en base par Odoo, affiché une seule fois à la création, révocable, avec expiration facultative). Les arguments journalisés sont masqués sur tout mot-clé sensible. |
 | `amazon_connector_community` | Groupes **Amazon : consultation** (implique `sales_team.group_sale_salesman`) et **Amazon : administration**. Règle globale multi-société sur `amazon.account.community`. | `lwa_client_id`, `lwa_client_secret`, `lwa_refresh_token` et `endpoint_url` portent `groups="base.group_system"` : ils ne sont ni lisibles ni modifiables hors administrateur système. `endpoint_url` est protégé délibérément — une URL détournée exfiltrerait le jeton d'accès Amazon. |
-| `studio_lite` | Groupe unique **Designer**, qui implique `base.group_system`. Le module écrit dans `ir.model.fields`, `ir.ui.view` et `base.automation` : c'est un pouvoir d'administrateur, correctement borné à ce groupe. Les garde-fous (`^x_[a-z0-9_]+$`, refus de supprimer un champ non manuel, vérification de l'ancrage avant écriture) limitent les dégâts accidentels, pas les malveillants. | Aucun secret. |
+| `dyo_studio_lite` | Groupe unique **Designer**, qui implique `base.group_system`. Le module écrit dans `ir.model.fields`, `ir.ui.view` et `base.automation` : c'est un pouvoir d'administrateur, correctement borné à ce groupe. Les garde-fous (`^x_[a-z0-9_]+$`, refus de supprimer un champ non manuel, vérification de l'ancrage avant écriture) limitent les dégâts accidentels, pas les malveillants. | Aucun secret. |
 
 ### Les deux réglages à décider consciemment
 
-**1. `odoo_mcp_server.allow_writes` — interrupteur global d'écriture MCP. Désactivé par défaut.**
+**1. `dyo_mcp_server.allow_writes` — interrupteur global d'écriture MCP. Désactivé par défaut.**
 
 Réglages › Paramètres généraux › Intégrations › « Allow write operations ». Tant qu'il est à `False`, les outils `odoo_create`, `odoo_write`, `odoo_unlink` et `odoo_call_method` ne sont **même pas listés** au client MCP, et sont refusés s'ils sont appelés — quelles que soient les cases `allow_create` / `allow_write` / `allow_unlink` cochées sur chaque modèle. C'est la seule barrière qui empêche un assistant de modifier la base sur une mauvaise interprétation d'une consigne. Recommandation : le laisser à `False`, et ne l'activer qu'après avoir (a) restreint la liste blanche aux seuls modèles concernés, (b) posé un `domain` de restriction sur chacun, (c) créé un utilisateur porteur de clé aux droits minimaux, et (d) vérifié le journal d'audit sur une semaine de lecture seule.
 

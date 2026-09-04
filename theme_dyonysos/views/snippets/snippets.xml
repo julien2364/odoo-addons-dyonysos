@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="dyo_pro_snippets" inherit_id="website.snippets" name="DYONYSOS Pro — enregistrement des blocs">
+    <xpath expr="//snippets[@id='snippet_structure']" position="inside">
+        <t t-snippet="theme_dyonysos.s_dyo_testimonials" string="Témoignages" group="dyonysos"
+           t-thumbnail="/theme_dyonysos/static/src/img/snippets_thumbs/s_dyo_testimonials.png">
+            <keywords>temoignages, avis, citations, clients, carrousel, testimonials, quotes</keywords>
+        </t>
+        <t t-snippet="theme_dyonysos.s_dyo_pricing" string="Grille tarifaire" group="dyonysos"
+           t-thumbnail="/theme_dyonysos/static/src/img/snippets_thumbs/s_dyo_pricing.png">
+            <keywords>tarifs, prix, pricing, offres, abonnement, comparatif, forfaits</keywords>
+        </t>
+        <t t-snippet="theme_dyonysos.s_dyo_faq" string="Questions fréquentes" group="dyonysos"
+           t-thumbnail="/theme_dyonysos/static/src/img/snippets_thumbs/s_dyo_faq.png">
+            <keywords>faq, questions, accordeon, aide, reponses, support</keywords>
+        </t>
+        <t t-snippet="theme_dyonysos.s_dyo_timeline" string="Chronologie de projet" group="dyonysos"
+           t-thumbnail="/theme_dyonysos/static/src/img/snippets_thumbs/s_dyo_timeline.png">
+            <keywords>chronologie, etapes, timeline, process, jalons, methode, deroule</keywords>
+        </t>
+        <t t-snippet="theme_dyonysos.s_dyo_portfolio" string="Portfolio filtrable" group="dyonysos"
+           t-thumbnail="/theme_dyonysos/static/src/img/snippets_thumbs/s_dyo_portfolio.png">
+            <keywords>portfolio, realisations, projets, galerie, filtres, references, gallery</keywords>
+        </t>
+        <t t-snippet="theme_dyonysos.s_dyo_team" string="Équipe" group="dyonysos"
+           t-thumbnail="/theme_dyonysos/static/src/img/snippets_thumbs/s_dyo_team.png">
+            <keywords>equipe, team, collaborateurs, portraits, personnes, about</keywords>
+        </t>
+        <t t-snippet="theme_dyonysos.s_dyo_logos" string="Logos partenaires" group="dyonysos"
+           t-thumbnail="/theme_dyonysos/static/src/img/snippets_thumbs/s_dyo_logos.png">
+            <keywords>logos, partenaires, references, clients, confiance, marques</keywords>
+        </t>
+    </xpath>
+</template>
+
+</odoo>

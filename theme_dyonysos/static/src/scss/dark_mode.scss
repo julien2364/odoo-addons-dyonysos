@@ -1,0 +1,130 @@
+//==============================================================================
+// DYONYSOS Pro — mode sombre optionnel
+//
+// Il s'active de deux façons :
+//   * manuellement, via un élément portant la classe `.o_dyo_dark_toggle`
+//     (le choix est mémorisé dans le navigateur du visiteur) ;
+//   * automatiquement, en ajoutant la classe `o_dyo_dark_auto` sur la balise
+//     <html> : le thème suit alors la préférence système du visiteur.
+//
+// Les règles ci-dessous ne s'appliquent qu'à l'intérieur du thème DYONYSOS.
+// (c) DYONYSOS — https://dyonysos.fr
+//==============================================================================
+
+@mixin o-dyo-dark-tokens {
+    --dyo-dark-bg: #0B1220;
+    --dyo-dark-surface: #131C2E;
+    --dyo-dark-surface-2: #1B2740;
+    --dyo-dark-border: #2A3651;
+    --dyo-dark-text: #E8EDF7;
+    --dyo-dark-muted: #9AA8C2;
+
+    --dyo-border: var(--dyo-dark-border);
+    --dyo-muted: var(--dyo-dark-muted);
+    --dyo-alt-bg: var(--dyo-dark-surface);
+    --dyo-shadow-1: 0 1px 2px rgba(0, 0, 0, .5), 0 2px 10px rgba(0, 0, 0, .35);
+    --dyo-shadow-2: 0 10px 24px rgba(0, 0, 0, .55), 0 20px 48px rgba(0, 0, 0, .4);
+}
+
+@mixin o-dyo-dark-rules {
+    background-color: var(--dyo-dark-bg);
+    color: var(--dyo-dark-text);
+
+    h1, h2, h3, h4, h5, h6,
+    .o_dyo_price_amount,
+    .accordion-button,
+    .o_dyo_quote blockquote {
+        color: var(--dyo-dark-text);
+    }
+
+    p, li, td, th, .o_dyo_lead, .o_dyo_price_period, .o_dyo_member_role,
+    .o_dyo_logos_label, .accordion-body {
+        color: var(--dyo-dark-muted);
+    }
+
+    // Les combinaisons de couleurs Odoo claires deviennent des surfaces sombres.
+    .o_cc1, .o_cc2 {
+        background-color: var(--dyo-dark-bg) !important;
+        color: var(--dyo-dark-text);
+    }
+
+    .o_cc2 {
+        background-color: var(--dyo-dark-surface) !important;
+    }
+
+    .o_dyo_card,
+    .o_dyo_price_card,
+    .o_dyo_quote,
+    .accordion-item,
+    .o_dyo_timeline_index {
+        background-color: var(--dyo-dark-surface);
+        border-color: var(--dyo-dark-border);
+        color: var(--dyo-dark-text);
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: var(--dyo-dark-surface-2);
+    }
+
+    .form-control, .form-select {
+        background-color: var(--dyo-dark-surface);
+        border-color: var(--dyo-dark-border);
+        color: var(--dyo-dark-text);
+    }
+
+    .table {
+        --bs-table-color: var(--dyo-dark-muted);
+        --bs-table-bg: transparent;
+        --bs-table-border-color: var(--dyo-dark-border);
+    }
+
+    .btn-outline-secondary {
+        color: var(--dyo-dark-text);
+        border-color: var(--dyo-dark-border);
+    }
+
+    .o_dyo_filter {
+        color: var(--dyo-dark-muted);
+        border-color: var(--dyo-dark-border);
+    }
+
+    .o_dyo_logo {
+        filter: grayscale(1) invert(1) brightness(1.6);
+    }
+
+    > header {
+        background-color: var(--dyo-dark-bg) !important;
+        border-bottom-color: var(--dyo-dark-border);
+
+        .navbar, .nav-link, .navbar-brand {
+            color: var(--dyo-dark-text) !important;
+        }
+    }
+
+    .o_dyo_testimonials .carousel-control-prev,
+    .o_dyo_testimonials .carousel-control-next {
+        filter: none;
+    }
+}
+
+// -- Activation manuelle -------------------------------------------------------
+html.o_dyo_dark {
+    color-scheme: dark;
+
+    .o_dyo_theme {
+        @include o-dyo-dark-tokens;
+        @include o-dyo-dark-rules;
+    }
+}
+
+// -- Activation automatique (préférence système) -------------------------------
+@media (prefers-color-scheme: dark) {
+    html.o_dyo_dark_auto:not(.o_dyo_light) {
+        color-scheme: dark;
+
+        .o_dyo_theme {
+            @include o-dyo-dark-tokens;
+            @include o-dyo-dark-rules;
+        }
+    }
+}

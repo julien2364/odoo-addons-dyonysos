@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_dyo_about" name="DYO À propos">
+    <section class="s_dyo_about o_cc o_cc1">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <img src="/theme_dyonysos_lite/static/src/img/about_abstract.png"
+                         class="o_dyo_about_img" loading="lazy"
+                         alt="Composition abstraite de blocs superposés évoquant l'assemblage d'un système"/>
+                </div>
+                <div class="col-lg-6">
+                    <span class="o_dyo_eyebrow">Notre approche</span>
+                    <h2 class="mb-4">Une équipe réduite, des décisions rapides</h2>
+                    <p class="mb-4">
+                        Nous travaillons en petites équipes autonomes, au contact direct
+                        des personnes qui utiliseront le produit. Pas de couche
+                        intermédiaire, pas de rapport hebdomadaire de vingt pages :
+                        un environnement de recette accessible en permanence et une
+                        démonstration toutes les deux semaines.
+                    </p>
+                    <ul class="o_dyo_checklist mb-4">
+                        <li>Un interlocuteur technique unique du cadrage à la mise en production</li>
+                        <li>Documentation d'exploitation livrée avec le code</li>
+                        <li>Transfert de compétences prévu au contrat, pas en option</li>
+                    </ul>
+                    <p class="mb-0">
+                        <a href="/contact" class="btn btn-primary">Prendre rendez-vous</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

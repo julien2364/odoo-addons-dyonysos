@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_users_form_mcp" model="ir.ui.view">
+        <field name="name">res.users.form.inherit.mcp</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='access_rights']" position="after">
+                <page string="MCP keys" name="mcp_keys" groups="dyo_mcp_server.group_mcp_user">
+                    <field name="mcp_key_count" invisible="1"/>
+                    <div class="alert alert-info" role="alert">
+                        An MCP client (Claude Desktop, Claude Code, Cursor, ChatGPT…) connects to
+                        <b>&lt;your Odoo URL&gt;/mcp</b> with the header
+                        <code>Authorization: Bearer &lt;key&gt;</code>. Generate a key with the scope
+                        <code>odoo.mcp</code> from the Account Security tab, then paste it in your client.
+                        The key inherits this user's permissions: create a dedicated user with the minimum
+                        rights rather than sharing an administrator key.
+                    </div>
+                    <p>
+                        This user currently owns <field name="mcp_key_count" readonly="1" class="oe_inline"/> MCP key(s).
+                    </p>
+                    <button name="action_mcp_new_key" type="object" string="New MCP API key"
+                            class="btn-primary" icon="fa-key"/>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

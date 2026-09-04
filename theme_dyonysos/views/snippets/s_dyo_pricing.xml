@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_dyo_pricing" name="DYO Grille tarifaire">
+    <section class="s_dyo_pricing o_cc o_cc1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 o_dyo_narrow mb-5">
+                    <span class="o_dyo_eyebrow">Tarifs</span>
+                    <h2 class="mb-3">Trois formats, des prix annoncés</h2>
+                    <p class="o_dyo_lead mb-0">
+                        Les montants ci-dessous sont des ordres de grandeur hors taxes,
+                        confirmés après le premier atelier de cadrage.
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4 align-items-stretch">
+                <div class="col-lg-4">
+                    <div class="o_dyo_price_card">
+                        <h3 class="h4-fs mb-2">Cadrage</h3>
+                        <p class="o_dyo_price_amount mb-1">7 500 €</p>
+                        <p class="o_dyo_price_period mb-4">forfait, deux semaines</p>
+                        <ul class="o_dyo_checklist mb-4">
+                            <li>Trois ateliers avec vos équipes</li>
+                            <li>Dossier d'architecture cible</li>
+                            <li>Trajectoire chiffrée sur douze mois</li>
+                            <li>Restitution en comité de direction</li>
+                        </ul>
+                        <a href="/contact" class="btn btn-outline-secondary w-100">Demander un devis</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="o_dyo_price_card o_dyo_price_featured">
+                        <span class="o_dyo_price_badge">Le plus demandé</span>
+                        <h3 class="h4-fs mb-2">Réalisation</h3>
+                        <p class="o_dyo_price_amount mb-1">48 000 €</p>
+                        <p class="o_dyo_price_period mb-4">à partir de, forfait, trois mois minimum</p>
+                        <ul class="o_dyo_checklist mb-4">
+                            <li>Équipe dédiée de deux à quatre personnes</li>
+                            <li>Itérations de deux semaines</li>
+                            <li>Environnement de recette permanent</li>
+                            <li>Code et documentation livrés</li>
+                            <li>Prix et délai fermes</li>
+                        </ul>
+                        <a href="/contact" class="btn btn-primary w-100">Parler de votre projet</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="o_dyo_price_card">
+                        <h3 class="h4-fs mb-2">Exploitation</h3>
+                        <p class="o_dyo_price_amount mb-1">1 900 €</p>
+                        <p class="o_dyo_price_period mb-4">par mois, douze mois</p>
+                        <ul class="o_dyo_checklist mb-4">
+                            <li>Supervision et alertes</li>
+                            <li>Correctifs sous quatre heures ouvrées</li>
+                            <li>Deux jours d'évolutions par mois</li>
+                            <li>Point mensuel de suivi</li>
+                        </ul>
+                        <a href="/contact" class="btn btn-outline-secondary w-100">Demander un devis</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

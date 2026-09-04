@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_dyo_cta" name="DYO Appel à l'action">
+    <section class="s_dyo_cta o_cc o_cc1">
+        <div class="container">
+            <div class="o_dyo_cta_inner o_cc o_cc5">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-8">
+                        <h2 class="mb-3">Un projet à cadrer ce trimestre ?</h2>
+                        <p class="mb-0 o_dyo_lead">
+                            Décrivez-nous le contexte en quelques lignes : nous revenons
+                            vers vous sous quatre heures ouvrées avec un premier avis.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a href="/contact" class="btn btn-primary btn-lg">Nous écrire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

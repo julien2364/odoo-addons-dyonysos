@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- =====================================================================
+     Variante 1 — En-tête centré : marque au-dessus, navigation centrée.
+     ===================================================================== -->
+<template id="template_header_dyo_centered" inherit_id="website.layout"
+          name="DYONYSOS — En-tête centré" active="False">
+    <xpath expr="//header//nav" position="replace">
+        <t t-call="website.navbar">
+            <t t-set="_navbar_classes" t-valuef="d-none d-lg-block o_dyo_header_centered"/>
+
+            <div id="o_main_nav" t-attf-class="o_main_nav flex-column py-3 #{header_content_width}">
+                <div class="d-flex justify-content-center w-100 mb-2">
+                    <t t-call="website.placeholder_header_brand"/>
+                </div>
+                <div class="d-flex align-items-center justify-content-center w-100">
+                    <t t-call="website.navbar_nav">
+                        <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                            <t t-call="website.submenu"
+                               item_class.f="nav-item"
+                               link_class.f="nav-link"/>
+                        </t>
+                    </t>
+                    <ul class="navbar-nav align-items-center gap-2 flex-shrink-0 ms-4">
+                        <t t-call="website.placeholder_header_language_selector"
+                           _btn_class="_additional_btn_color or 'nav-link'"
+                           _dropdown_menu_class.f="dropdown-menu-end"/>
+                        <t t-call="website.placeholder_header_call_to_action"/>
+                    </ul>
+                </div>
+            </div>
+        </t>
+        <t t-call="website.template_header_mobile"/>
+    </xpath>
+</template>
+
+<!-- =====================================================================
+     Variante 2 — En-tête avec bandeau d'information au-dessus.
+     ===================================================================== -->
+<template id="template_header_dyo_topbar" inherit_id="website.layout"
+          name="DYONYSOS — En-tête avec bandeau" active="False">
+    <xpath expr="//header//nav" position="replace">
+        <div class="o_dyo_topbar o_cc o_cc5 d-none d-lg-block">
+            <div t-attf-class="#{header_content_width} d-flex align-items-center justify-content-between py-2">
+                <span class="o_dyo_topbar_text">Réponse à toute demande sous quatre heures ouvrées.</span>
+                <span class="o_dyo_topbar_links">
+                    <a href="/contact">Nous écrire</a>
+                    <a href="/tarifs">Voir les tarifs</a>
+                </span>
+            </div>
+        </div>
+        <t t-call="website.navbar">
+            <t t-set="_navbar_classes" t-valuef="d-none d-lg-block o_dyo_header_topbar"/>
+
+            <div id="o_main_nav" t-attf-class="o_main_nav #{header_content_width}">
+                <t t-call="website.placeholder_header_brand" _link_class.f="me-4"/>
+                <t t-call="website.navbar_nav" _nav_class.f="ms-auto">
+                    <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                        <t t-call="website.submenu"
+                           item_class.f="nav-item"
+                           link_class.f="nav-link"/>
+                    </t>
+                </t>
+                <ul class="navbar-nav align-items-center gap-2 flex-shrink-0 justify-content-end ps-3">
+                    <t t-call="website.placeholder_header_search_box"
+                       _layout.f="modal"
+                       _input_classes.f="border border-end-0 p-3"
+                       _submit_classes.f="border border-start-0 px-4 bg-o-color-4"
+                       _button_classes.f="o_navlink_background text-reset"/>
+                    <t t-call="website.placeholder_header_call_to_action"/>
+                </ul>
+            </div>
+        </t>
+        <t t-call="website.template_header_mobile"/>
+    </xpath>
+</template>
+
+<!-- =====================================================================
+     Variante 3 — En-tête minimal : marque à gauche, navigation à droite.
+     ===================================================================== -->
+<template id="template_header_dyo_minimal" inherit_id="website.layout"
+          name="DYONYSOS — En-tête minimal" active="False">
+    <xpath expr="//header//nav" position="replace">
+        <t t-call="website.navbar">
+            <t t-set="_navbar_classes" t-valuef="d-none d-lg-block o_dyo_header_minimal"/>
+
+            <div id="o_main_nav" t-attf-class="o_main_nav py-2 #{header_content_width}">
+                <t t-call="website.placeholder_header_brand" _link_class.f="me-4"/>
+                <t t-call="website.navbar_nav" _nav_class.f="ms-auto">
+                    <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                        <t t-call="website.submenu"
+                           item_class.f="nav-item"
+                           link_class.f="nav-link"/>
+                    </t>
+                </t>
+            </div>
+        </t>
+        <t t-call="website.template_header_mobile"/>
+    </xpath>
+</template>
+
+</odoo>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_studio_lite_root" name="Studio Lite" web_icon="dyo_studio_lite,static/description/icon.png"
+              sequence="90" groups="dyo_studio_lite.group_studio_designer"/>
+
+    <menuitem id="menu_studio_lite_customization" name="Personnalisations"
+              parent="menu_studio_lite_root" action="studio_customization_action" sequence="10"/>
+
+    <menuitem id="menu_studio_lite_create" name="Créer" parent="menu_studio_lite_root" sequence="20"/>
+
+    <menuitem id="menu_studio_lite_field_wizard" name="Nouveau champ"
+              parent="menu_studio_lite_create" action="studio_field_wizard_action" sequence="10"/>
+
+    <menuitem id="menu_studio_lite_automation_wizard" name="Nouvelle automatisation"
+              parent="menu_studio_lite_create" action="studio_automation_wizard_action" sequence="20"/>
+
+    <menuitem id="menu_studio_lite_views" name="Vues personnalisées"
+              parent="menu_studio_lite_root" action="studio_view_customization_action" sequence="30"/>
+</odoo>

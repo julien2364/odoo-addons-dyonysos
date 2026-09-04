@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="dyo_snippets" inherit_id="website.snippets" name="DYONYSOS — enregistrement des blocs">
+
+    <!-- Catégorie dédiée dans le panneau de blocs -->
+    <xpath expr="//t[@id='installed_snippets_hook']" position="before">
+        <t snippet-group="dyonysos" t-snippet="website.s_snippet_group" string="DYONYSOS"
+           t-thumbnail="/theme_dyonysos_lite/static/src/img/snippets_thumbs/group_dyonysos.png"/>
+    </xpath>
+
+    <xpath expr="//snippets[@id='snippet_structure']" position="inside">
+        <t t-snippet="theme_dyonysos_lite.s_dyo_hero" string="Bandeau d'accueil" group="dyonysos"
+           t-thumbnail="/theme_dyonysos_lite/static/src/img/snippets_thumbs/s_dyo_hero.png">
+            <keywords>hero, banner, accueil, intro, bandeau, titre, boutons, landing</keywords>
+        </t>
+        <t t-snippet="theme_dyonysos_lite.s_dyo_services" string="Grille de services" group="dyonysos"
+           t-thumbnail="/theme_dyonysos_lite/static/src/img/snippets_thumbs/s_dyo_services.png">
+            <keywords>services, colonnes, cartes, prestations, features, icones, expertise</keywords>
+        </t>
+        <t t-snippet="theme_dyonysos_lite.s_dyo_stats" string="Chiffres clés" group="dyonysos"
+           t-thumbnail="/theme_dyonysos_lite/static/src/img/snippets_thumbs/s_dyo_stats.png">
+            <keywords>chiffres, statistiques, kpi, metrics, resultats, preuve</keywords>
+        </t>
+        <t t-snippet="theme_dyonysos_lite.s_dyo_about" string="À propos" group="dyonysos"
+           t-thumbnail="/theme_dyonysos_lite/static/src/img/snippets_thumbs/s_dyo_about.png">
+            <keywords>a propos, about, image, texte, deux colonnes, presentation, equipe</keywords>
+        </t>
+        <t t-snippet="theme_dyonysos_lite.s_dyo_cta" string="Appel à l'action" group="dyonysos"
+           t-thumbnail="/theme_dyonysos_lite/static/src/img/snippets_thumbs/s_dyo_cta.png">
+            <keywords>cta, appel a l action, bouton, conversion, contact, bandeau</keywords>
+        </t>
+    </xpath>
+
+</template>
+
+</odoo>

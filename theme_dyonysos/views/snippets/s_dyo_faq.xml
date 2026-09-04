@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_dyo_faq" name="DYO Questions fréquentes">
+    <section class="s_dyo_faq o_cc o_cc2">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <span class="o_dyo_eyebrow">Questions fréquentes</span>
+                    <h2 class="mb-3">Ce qu'on nous demande avant de signer</h2>
+                    <p class="o_dyo_lead mb-0">
+                        Une question qui ne figure pas ici ? Écrivez-nous, la réponse
+                        arrive le jour même.
+                    </p>
+                </div>
+                <div class="col-lg-8">
+                    <div class="accordion o_dyo_accordion" id="dyo_faq_accordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="dyo_faq_h1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#dyo_faq_c1" aria-expanded="true" aria-controls="dyo_faq_c1">
+                                    Travaillez-vous en régie ou au forfait ?
+                                </button>
+                            </h3>
+                            <div id="dyo_faq_c1" class="accordion-collapse collapse show"
+                                 aria-labelledby="dyo_faq_h1" data-bs-parent="#dyo_faq_accordion">
+                                <div class="accordion-body">
+                                    Au forfait dans la très grande majorité des cas. La régie
+                                    reste possible pour un renfort ponctuel sur une équipe
+                                    existante, avec un engagement de trois mois minimum.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="dyo_faq_h2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#dyo_faq_c2" aria-expanded="false" aria-controls="dyo_faq_c2">
+                                    À qui appartient le code produit ?
+                                </button>
+                            </h3>
+                            <div id="dyo_faq_c2" class="accordion-collapse collapse"
+                                 aria-labelledby="dyo_faq_h2" data-bs-parent="#dyo_faq_accordion">
+                                <div class="accordion-body">
+                                    À vous, intégralement, y compris les scripts
+                                    d'infrastructure et la documentation d'exploitation. Le
+                                    dépôt vous est transféré à chaque fin d'itération, pas à
+                                    la fin du projet.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="dyo_faq_h3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#dyo_faq_c3" aria-expanded="false" aria-controls="dyo_faq_c3">
+                                    Que se passe-t-il si le périmètre évolue ?
+                                </button>
+                            </h3>
+                            <div id="dyo_faq_c3" class="accordion-collapse collapse"
+                                 aria-labelledby="dyo_faq_h3" data-bs-parent="#dyo_faq_accordion">
+                                <div class="accordion-body">
+                                    Chaque itération commence par un arbitrage de périmètre à
+                                    budget constant. Un ajout se compense par un retrait, ou
+                                    fait l'objet d'un avenant chiffré avant d'être engagé.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="dyo_faq_h4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#dyo_faq_c4" aria-expanded="false" aria-controls="dyo_faq_c4">
+                                    Intervenez-vous hors de France ?
+                                </button>
+                            </h3>
+                            <div id="dyo_faq_c4" class="accordion-collapse collapse"
+                                 aria-labelledby="dyo_faq_h4" data-bs-parent="#dyo_faq_accordion">
+                                <div class="accordion-body">
+                                    Oui, en français et en anglais, sur les fuseaux horaires
+                                    européens. Les ateliers de cadrage se tiennent à distance
+                                    ou sur site selon votre préférence.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

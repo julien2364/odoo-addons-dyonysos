@@ -1,0 +1,13 @@
+//==============================================================================
+// DYONYSOS Pro — variables primaires
+// La palette, la typographie et les valeurs de site sont héritées de
+// theme_dyonysos_lite. On ajoute ici les seuls réglages propres à l'édition Pro.
+// (c) DYONYSOS — https://dyonysos.fr
+//==============================================================================
+
+// Rayons spécifiques aux blocs Pro (cartes tarifaires, vignettes de portfolio).
+$o-dyo-pro-radius-lg: 20px !default;
+$o-dyo-pro-radius-xl: 28px !default;
+
+// Durée d'ouverture des accordéons et de bascule du mode sombre.
+$o-dyo-pro-transition: 200ms !default;

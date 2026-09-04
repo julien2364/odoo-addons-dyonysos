@@ -1,0 +1,204 @@
+//==============================================================================
+// DYONYSOS Lite — variables primaires
+// Direction artistique « agence / services B2B » : sobre, aérée, contrastée.
+// (c) DYONYSOS — https://dyonysos.fr
+//==============================================================================
+
+//------------------------------------------------------------------------------
+// 1. Palettes de couleurs
+//    o-color-1 = primaire, o-color-2 = secondaire, o-color-3 = fond alterné,
+//    o-color-4 = fond, o-color-5 = texte foncé.
+//------------------------------------------------------------------------------
+
+$o-dyo-midnight: (
+    'o-color-1': #1E3A5F,
+    'o-color-2': #3B82F6,
+    'o-color-3': #F8FAFC,
+    'o-color-4': #FFFFFF,
+    'o-color-5': #0F172A,
+    'menu': 1,
+    'footer': 5,
+    'copyright': 5,
+    // Sur les fonds sombres (cc4 et cc5), le bouton principal passe en blanc :
+    // le bleu nuit sur presque-noir ne serait pas lisible.
+    'o-cc4-btn-primary': 'o-color-4',
+    'o-cc5-btn-primary': 'o-color-4',
+);
+$o-dyo-terracotta: (
+    'o-color-1': #8C3B1E,
+    'o-color-2': #C2673F,
+    'o-color-3': #FAF5F0,
+    'o-color-4': #FFFFFF,
+    'o-color-5': #2C1A12,
+    'menu': 1,
+    'footer': 5,
+    'copyright': 5,
+    // Sur les fonds sombres (cc4 et cc5), le bouton principal passe en blanc :
+    // le bleu nuit sur presque-noir ne serait pas lisible.
+    'o-cc4-btn-primary': 'o-color-4',
+    'o-cc5-btn-primary': 'o-color-4',
+);
+$o-dyo-forest: (
+    'o-color-1': #14532D,
+    'o-color-2': #2F855A,
+    'o-color-3': #F3F8F4,
+    'o-color-4': #FFFFFF,
+    'o-color-5': #10231A,
+    'menu': 1,
+    'footer': 5,
+    'copyright': 5,
+    // Sur les fonds sombres (cc4 et cc5), le bouton principal passe en blanc :
+    // le bleu nuit sur presque-noir ne serait pas lisible.
+    'o-cc4-btn-primary': 'o-color-4',
+    'o-cc5-btn-primary': 'o-color-4',
+);
+$o-dyo-graphite: (
+    'o-color-1': #1F2933,
+    'o-color-2': #52616B,
+    'o-color-3': #F4F5F7,
+    'o-color-4': #FFFFFF,
+    'o-color-5': #11161B,
+    'menu': 1,
+    'footer': 5,
+    'copyright': 5,
+    // Sur les fonds sombres (cc4 et cc5), le bouton principal passe en blanc :
+    // le bleu nuit sur presque-noir ne serait pas lisible.
+    'o-cc4-btn-primary': 'o-color-4',
+    'o-cc5-btn-primary': 'o-color-4',
+);
+
+$o-color-palettes: map-merge($o-color-palettes, (
+    'dyonysos-midnight': $o-dyo-midnight,
+    'dyonysos-terracotta': $o-dyo-terracotta,
+    'dyonysos-forest': $o-dyo-forest,
+    'dyonysos-graphite': $o-dyo-graphite,
+));
+$o-color-palette-name: 'dyonysos-midnight';
+
+// Couleur d'accent (violet de la charte) associée à chaque palette. Elle n'entre
+// pas dans les 5 couleurs Odoo : elle est exposée en variable CSS --dyo-accent.
+$o-dyo-accents: (
+    'dyonysos-midnight': #7C3AED,
+    'dyonysos-terracotta': #B4530C,
+    'dyonysos-forest': #0F766E,
+    'dyonysos-graphite': #4F46E5,
+);
+
+// Couleurs « thème » (accent violet + statuts) associées à chaque palette.
+$o-theme-color-palettes: map-merge($o-theme-color-palettes, (
+    'dyonysos-midnight': (
+        'success': #059669,
+        'info': #3B82F6,
+        'warning': #D97706,
+        'danger': #DC2626,
+    ),
+    'dyonysos-terracotta': (
+        'success': #4D7C0F,
+        'info': #B45309,
+        'warning': #D97706,
+        'danger': #B91C1C,
+    ),
+    'dyonysos-forest': (
+        'success': #047857,
+        'info': #0E7490,
+        'warning': #B45309,
+        'danger': #B91C1C,
+    ),
+    'dyonysos-graphite': (
+        'success': #047857,
+        'info': #475569,
+        'warning': #B45309,
+        'danger': #B91C1C,
+    ),
+));
+$o-theme-color-palette-name: 'dyonysos-midnight';
+
+// Nuances de gris alignées sur la charte (slate).
+$o-gray-color-palettes: map-merge($o-gray-color-palettes, (
+    'dyonysos-slate': (
+        'white': #FFFFFF,
+        '100': #F8FAFC,
+        '200': #E2E8F0,
+        '300': #CBD5E1,
+        '400': #94A3B8,
+        '500': #64748B,
+        '600': #475569,
+        '700': #334155,
+        '800': #1E293B,
+        '900': #0F172A,
+        'black': #000000,
+    ),
+));
+$o-gray-color-palette-name: 'dyonysos-slate';
+
+//------------------------------------------------------------------------------
+// 2. Typographie
+//------------------------------------------------------------------------------
+
+$o-theme-font-configs: map-merge($o-theme-font-configs, (
+    'Poppins': (
+        'family': ('Poppins', sans-serif),
+        'url': 'Poppins:300,300i,400,400i,500,500i,600,600i,700,700i',
+    ),
+    'Inter': (
+        'family': ('Inter', sans-serif),
+        'url': 'Inter:300,300i,400,400i,500,500i,600,600i,700,700i',
+    ),
+));
+
+// Échelle : 3rem / 2.25rem / 1.5rem / 1.125rem / 1rem (base = 1rem).
+$o-theme-h1-font-size-multiplier: 3;
+$o-theme-h2-font-size-multiplier: 2.25;
+$o-theme-h3-font-size-multiplier: 1.5;
+$o-theme-h4-font-size-multiplier: 1.25;
+$o-theme-h5-font-size-multiplier: 1.125;
+$o-theme-h6-font-size-multiplier: 1;
+
+//------------------------------------------------------------------------------
+// 3. Valeurs de site (typographie, boutons, champs, en-tête, pied de page)
+//------------------------------------------------------------------------------
+
+$o-dyo-radius: .75rem;   // 12 px — en rem : Bootstrap compare ce rayon à .25rem
+
+$o-website-values-palettes: (
+    (
+        'font': 'Inter',
+        'headings-font': 'Poppins',
+        'navbar-font': 'Poppins',
+        'buttons-font': 'Poppins',
+        'default-headings-font': 'Poppins',
+
+        'font-size-base': 1rem,
+        'body-line-height': 1.6,
+        'headings-line-height': 1.18,
+        'small-font-size': 0.875rem,
+        'paragraph-margin-bottom': 1.15rem,
+        'headings-margin-bottom': 1rem,
+
+        'btn-padding-y': .75rem,
+        'btn-padding-x': 1.5rem,
+        'btn-padding-y-lg': 1rem,
+        'btn-padding-x-lg': 2rem,
+        'btn-padding-y-sm': .5rem,
+        'btn-padding-x-sm': 1rem,
+        'btn-border-width': 1px,
+        'btn-border-radius': $o-dyo-radius,
+        'btn-border-radius-lg': $o-dyo-radius,
+        'btn-border-radius-sm': .5rem,
+        'btn-font-size': 1rem,
+
+        'input-padding-y': .75rem,
+        'input-padding-x': 1rem,
+        'input-border-width': 1px,
+        'input-border-radius': $o-dyo-radius,
+        'input-border-radius-lg': $o-dyo-radius,
+        'input-border-radius-sm': .5rem,
+
+        'link-underline': 'hover',
+        'layout': 'full',
+
+        'header-template': 'default',
+        'header-links-style': 'default',
+        'footer-template': 'default',
+    ),
+);

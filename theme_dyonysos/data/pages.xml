@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="0">
+
+    <!-- ============================================================ À propos -->
+    <template id="dyo_page_about" name="À propos">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+                <section class="s_dyo_hero o_cc o_cc2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <span class="o_dyo_eyebrow">À propos</span>
+                                <h1 class="mb-4">Une agence de quatorze personnes, sans strate intermédiaire</h1>
+                                <p class="o_dyo_lead mb-0">
+                                    Nous avons fondé cette agence après avoir passé trop de
+                                    temps du côté client à attendre des comptes rendus.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_dyo_about o_cc o_cc1">
+                    <div class="container">
+                        <div class="row align-items-center g-5">
+                            <div class="col-lg-6">
+                                <img src="/theme_dyonysos_lite/static/src/img/about_abstract.png"
+                                     class="o_dyo_about_img" loading="lazy"
+                                     alt="Composition abstraite de blocs superposés évoquant l'assemblage d'un système"/>
+                            </div>
+                            <div class="col-lg-6">
+                                <span class="o_dyo_eyebrow">Notre approche</span>
+                                <h2 class="mb-4">Une équipe réduite, des décisions rapides</h2>
+                                <p class="mb-4">
+                                    Nous travaillons en petites équipes autonomes, au contact direct
+                                    des personnes qui utiliseront le produit. Pas de couche
+                                    intermédiaire, pas de rapport hebdomadaire de vingt pages :
+                                    un environnement de recette accessible en permanence et une
+                                    démonstration toutes les deux semaines.
+                                </p>
+                                <ul class="o_dyo_checklist mb-4">
+                                    <li>Un interlocuteur technique unique du cadrage à la mise en production</li>
+                                    <li>Documentation d'exploitation livrée avec le code</li>
+                                    <li>Transfert de compétences prévu au contrat, pas en option</li>
+                                </ul>
+                                <p class="mb-0">
+                                    <a href="/contact" class="btn btn-primary">Prendre rendez-vous</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_dyo_timeline o_cc o_cc1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 o_dyo_narrow mb-5">
+                                <span class="o_dyo_eyebrow">Déroulé</span>
+                                <h2 class="mb-3">Quatre étapes, du premier atelier à la reprise en main</h2>
+                                <p class="o_dyo_lead mb-0">
+                                    Chaque étape se termine par un livrable que vous pouvez lire,
+                                    essayer ou refuser.
+                                </p>
+                            </div>
+                        </div>
+                        <ol class="o_dyo_timeline_list">
+                            <li class="o_dyo_timeline_step">
+                                <span class="o_dyo_timeline_index" aria-hidden="true">01</span>
+                                <div class="o_dyo_timeline_body">
+                                    <p class="o_dyo_timeline_when mb-1">Semaines 1 à 2</p>
+                                    <h3 class="h5-fs mb-2">Cadrage</h3>
+                                    <p class="mb-0">
+                                        Trois ateliers, un inventaire des contraintes réelles et une
+                                        architecture cible chiffrée. Livrable : le dossier de cadrage.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="o_dyo_timeline_step">
+                                <span class="o_dyo_timeline_index" aria-hidden="true">02</span>
+                                <div class="o_dyo_timeline_body">
+                                    <p class="o_dyo_timeline_when mb-1">Semaines 3 à 6</p>
+                                    <h3 class="h5-fs mb-2">Socle technique</h3>
+                                    <p class="mb-0">
+                                        Environnements, chaîne de livraison et premier parcours
+                                        utilisateur de bout en bout. Livrable : une recette ouverte.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="o_dyo_timeline_step">
+                                <span class="o_dyo_timeline_index" aria-hidden="true">03</span>
+                                <div class="o_dyo_timeline_body">
+                                    <p class="o_dyo_timeline_when mb-1">Semaines 7 à 20</p>
+                                    <h3 class="h5-fs mb-2">Construction</h3>
+                                    <p class="mb-0">
+                                        Itérations de deux semaines, démonstration à chaque fin de
+                                        cycle et arbitrage de périmètre à budget constant.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="o_dyo_timeline_step">
+                                <span class="o_dyo_timeline_index" aria-hidden="true">04</span>
+                                <div class="o_dyo_timeline_body">
+                                    <p class="o_dyo_timeline_when mb-1">Semaines 21 à 24</p>
+                                    <h3 class="h5-fs mb-2">Mise en production et transfert</h3>
+                                    <p class="mb-0">
+                                        Bascule accompagnée, documentation d'exploitation et deux
+                                        sessions de transfert avec votre équipe interne.
+                                    </p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                <section class="s_dyo_team o_cc o_cc1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 o_dyo_narrow mb-5">
+                                <span class="o_dyo_eyebrow">L'équipe</span>
+                                <h2 class="mb-3">Les personnes qui travailleront réellement sur votre projet</h2>
+                                <p class="o_dyo_lead mb-0">
+                                    Pas d'équipe commerciale devant, équipe technique derrière :
+                                    vous rencontrez dès le premier rendez-vous celles et ceux qui
+                                    écriront le code.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-6 col-lg-3">
+                                <div class="o_dyo_member">
+                                    <img src="/theme_dyonysos/static/src/img/member_1.png" loading="lazy"
+                                         alt="Portrait stylisé aux initiales C. B."/>
+                                    <h3 class="h5-fs mb-1">Camille Broussard</h3>
+                                    <p class="o_dyo_member_role mb-3">Architecte logicielle</p>
+                                    <p class="mb-0"><a href="/contact" class="btn btn-link p-0">Écrire à Camille</a></p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <div class="o_dyo_member">
+                                    <img src="/theme_dyonysos/static/src/img/member_2.png" loading="lazy"
+                                         alt="Portrait stylisé aux initiales T. L."/>
+                                    <h3 class="h5-fs mb-1">Théo Lamarque</h3>
+                                    <p class="o_dyo_member_role mb-3">Ingénieur plateforme</p>
+                                    <p class="mb-0"><a href="/contact" class="btn btn-link p-0">Écrire à Théo</a></p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <div class="o_dyo_member">
+                                    <img src="/theme_dyonysos/static/src/img/member_3.png" loading="lazy"
+                                         alt="Portrait stylisé aux initiales N. F."/>
+                                    <h3 class="h5-fs mb-1">Naïma Fauvel</h3>
+                                    <p class="o_dyo_member_role mb-3">Ingénieure données</p>
+                                    <p class="mb-0"><a href="/contact" class="btn btn-link p-0">Écrire à Naïma</a></p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <div class="o_dyo_member">
+                                    <img src="/theme_dyonysos/static/src/img/member_4.png" loading="lazy"
+                                         alt="Portrait stylisé aux initiales V. D."/>
+                                    <h3 class="h5-fs mb-1">Victor Delaunay</h3>
+                                    <p class="o_dyo_member_role mb-3">Responsable de projet</p>
+                                    <p class="mb-0"><a href="/contact" class="btn btn-link p-0">Écrire à Victor</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_dyo_logos o_cc o_cc2">
+                    <div class="container">
+                        <p class="o_dyo_logos_label text-center mb-4">
+                            Ils travaillent avec nous depuis plus de trois ans
+                        </p>
+                        <div class="row g-4 align-items-center justify-content-center o_dyo_logos_row">
+                            <div class="col-4 col-md-2">
+                                <img src="/theme_dyonysos/static/src/img/logo_1.png" class="o_dyo_logo" loading="lazy"
+                                     alt="Logo fictif de la société Vantere"/>
+                            </div>
+                            <div class="col-4 col-md-2">
+                                <img src="/theme_dyonysos/static/src/img/logo_2.png" class="o_dyo_logo" loading="lazy"
+                                     alt="Logo fictif de la société Solveris"/>
+                            </div>
+                            <div class="col-4 col-md-2">
+                                <img src="/theme_dyonysos/static/src/img/logo_3.png" class="o_dyo_logo" loading="lazy"
+                                     alt="Logo fictif de la société Norlane"/>
+                            </div>
+                            <div class="col-4 col-md-2">
+                                <img src="/theme_dyonysos/static/src/img/logo_4.png" class="o_dyo_logo" loading="lazy"
+                                     alt="Logo fictif de la société Kaptis"/>
+                            </div>
+                            <div class="col-4 col-md-2">
+                                <img src="/theme_dyonysos/static/src/img/logo_5.png" class="o_dyo_logo" loading="lazy"
+                                     alt="Logo fictif de la société Ambelis"/>
+                            </div>
+                            <div class="col-4 col-md-2">
+                                <img src="/theme_dyonysos/static/src/img/logo_6.png" class="o_dyo_logo" loading="lazy"
+                                     alt="Logo fictif de la société Trevio"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_dyo_cta o_cc o_cc1">
+                    <div class="container">
+                        <div class="o_dyo_cta_inner o_cc o_cc5">
+                            <div class="row align-items-center g-4">
+                                <div class="col-lg-8">
+                                    <h2 class="mb-3">Un projet à cadrer ce trimestre ?</h2>
+                                    <p class="mb-0 o_dyo_lead">
+                                        Décrivez-nous le contexte en quelques lignes : nous revenons
+                                        vers vous sous quatre heures ouvrées avec un premier avis.
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 text-lg-end">
+                                    <a href="/contact" class="btn btn-primary btn-lg">Nous écrire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <record id="dyo_page_about_page" model="theme.website.page">
+        <field name="url">/a-propos</field>
+        <field name="view_id" ref="dyo_page_about"/>
+        <field name="is_published" eval="True"/>
+        <field name="website_indexed" eval="True"/>
+    </record>
+
+    <!-- ============================================================== Tarifs -->
+    <template id="dyo_page_pricing" name="Tarifs">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+                <section class="s_dyo_hero o_cc o_cc2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <span class="o_dyo_eyebrow">Tarifs</span>
+                                <h1 class="mb-4">Des prix annoncés avant le premier rendez-vous</h1>
+                                <p class="o_dyo_lead mb-0">
+                                    Nous préférons perdre un appel que faire perdre une
+                                    matinée à quelqu'un dont le budget ne correspond pas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_dyo_pricing o_cc o_cc1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 o_dyo_narrow mb-5">
+                                <span class="o_dyo_eyebrow">Tarifs</span>
+                                <h2 class="mb-3">Trois formats, des prix annoncés</h2>
+                                <p class="o_dyo_lead mb-0">
+                                    Les montants ci-dessous sont des ordres de grandeur hors taxes,
+                                    confirmés après le premier atelier de cadrage.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row g-4 align-items-stretch">
+                            <div class="col-lg-4">
+                                <div class="o_dyo_price_card">
+                                    <h3 class="h4-fs mb-2">Cadrage</h3>
+                                    <p class="o_dyo_price_amount mb-1">7 500 €</p>
+                                    <p class="o_dyo_price_period mb-4">forfait, deux semaines</p>
+                                    <ul class="o_dyo_checklist mb-4">
+                                        <li>Trois ateliers avec vos équipes</li>
+                                        <li>Dossier d'architecture cible</li>
+                                        <li>Trajectoire chiffrée sur douze mois</li>
+                                        <li>Restitution en comité de direction</li>
+                                    </ul>
+                                    <a href="/contact" class="btn btn-outline-secondary w-100">Demander un devis</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="o_dyo_price_card o_dyo_price_featured">
+                                    <span class="o_dyo_price_badge">Le plus demandé</span>
+                                    <h3 class="h4-fs mb-2">Réalisation</h3>
+                                    <p class="o_dyo_price_amount mb-1">48 000 €</p>
+                                    <p class="o_dyo_price_period mb-4">à partir de, forfait, trois mois minimum</p>
+                                    <ul class="o_dyo_checklist mb-4">
+                                        <li>Équipe dédiée de deux à quatre personnes</li>
+                                        <li>Itérations de deux semaines</li>
+                                        <li>Environnement de recette permanent</li>
+                                        <li>Code et documentation livrés</li>
+                                        <li>Prix et délai fermes</li>
+                                    </ul>
+                                    <a href="/contact" class="btn btn-primary w-100">Parler de votre projet</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="o_dyo_price_card">
+                                    <h3 class="h4-fs mb-2">Exploitation</h3>
+                                    <p class="o_dyo_price_amount mb-1">1 900 €</p>
+                                    <p class="o_dyo_price_period mb-4">par mois, douze mois</p>
+                                    <ul class="o_dyo_checklist mb-4">
+                                        <li>Supervision et alertes</li>
+                                        <li>Correctifs sous quatre heures ouvrées</li>
+                                        <li>Deux jours d'évolutions par mois</li>
+                                        <li>Point mensuel de suivi</li>
+                                    </ul>
+                                    <a href="/contact" class="btn btn-outline-secondary w-100">Demander un devis</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_dyo_faq o_cc o_cc2">
+                    <div class="container">
+                        <div class="row g-5">
+                            <div class="col-lg-4">
+                                <span class="o_dyo_eyebrow">Questions fréquentes</span>
+                                <h2 class="mb-3">Ce qu'on nous demande avant de signer</h2>
+                                <p class="o_dyo_lead mb-0">
+                                    Une question qui ne figure pas ici ? Écrivez-nous, la réponse
+                                    arrive le jour même.
+                                </p>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="accordion o_dyo_accordion" id="dyo_faq_accordion">
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="dyo_faq_h1">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#dyo_faq_c1" aria-expanded="true" aria-controls="dyo_faq_c1">
+                                                Travaillez-vous en régie ou au forfait ?
+                                            </button>
+                                        </h3>
+                                        <div id="dyo_faq_c1" class="accordion-collapse collapse show"
+                                             aria-labelledby="dyo_faq_h1" data-bs-parent="#dyo_faq_accordion">
+                                            <div class="accordion-body">
+                                                Au forfait dans la très grande majorité des cas. La régie
+                                                reste possible pour un renfort ponctuel sur une équipe
+                                                existante, avec un engagement de trois mois minimum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="dyo_faq_h2">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#dyo_faq_c2" aria-expanded="false" aria-controls="dyo_faq_c2">
+                                                À qui appartient le code produit ?
+                                            </button>
+                                        </h3>
+                                        <div id="dyo_faq_c2" class="accordion-collapse collapse"
+                                             aria-labelledby="dyo_faq_h2" data-bs-parent="#dyo_faq_accordion">
+                                            <div class="accordion-body">
+                                                À vous, intégralement, y compris les scripts
+                                                d'infrastructure et la documentation d'exploitation. Le
+                                                dépôt vous est transféré à chaque fin d'itération, pas à
+                                                la fin du projet.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="dyo_faq_h3">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#dyo_faq_c3" aria-expanded="false" aria-controls="dyo_faq_c3">
+                                                Que se passe-t-il si le périmètre évolue ?
+                                            </button>
+                                        </h3>
+                                        <div id="dyo_faq_c3" class="accordion-collapse collapse"
+                                             aria-labelledby="dyo_faq_h3" data-bs-parent="#dyo_faq_accordion">
+                                            <div class="accordion-body">
+                                                Chaque itération commence par un arbitrage de périmètre à
+                                                budget constant. Un ajout se compense par un retrait, ou
+                                                fait l'objet d'un avenant chiffré avant d'être engagé.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="dyo_faq_h4">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#dyo_faq_c4" aria-expanded="false" aria-controls="dyo_faq_c4">
+                                                Intervenez-vous hors de France ?
+                                            </button>
+                                        </h3>
+                                        <div id="dyo_faq_c4" class="accordion-collapse collapse"
+                                             aria-labelledby="dyo_faq_h4" data-bs-parent="#dyo_faq_accordion">
+                                            <div class="accordion-body">
+                                                Oui, en français et en anglais, sur les fuseaux horaires
+                                                européens. Les ateliers de cadrage se tiennent à distance
+                                                ou sur site selon votre préférence.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_dyo_testimonials o_cc o_cc2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 o_dyo_narrow mb-5">
+                                <span class="o_dyo_eyebrow">Ils nous font confiance</span>
+                                <h2 class="mb-0">Ce que disent les équipes que nous accompagnons</h2>
+                            </div>
+                        </div>
+                        <div id="dyo_testimonials_carousel" class="carousel slide o_dyo_testimonials_carousel"
+                             data-bs-ride="false" data-bs-interval="0">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <figure class="o_dyo_quote">
+                                        <blockquote class="mb-4">
+                                            « Le cadrage a duré deux semaines et nous a évité six mois
+                                            de développement dans la mauvaise direction. C'est la
+                                            première fois qu'un prestataire nous dit non aussi tôt. »
+                                        </blockquote>
+                                        <figcaption>
+                                            <span class="o_dyo_quote_name">Camille Berthier</span>
+                                            <span class="o_dyo_quote_role">Directrice des systèmes d'information, groupe industriel</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="carousel-item">
+                                    <figure class="o_dyo_quote">
+                                        <blockquote class="mb-4">
+                                            « Une démonstration toutes les deux semaines, un
+                                            environnement de recette ouvert en permanence : nos métiers
+                                            ont enfin pu corriger le tir avant la mise en production. »
+                                        </blockquote>
+                                        <figcaption>
+                                            <span class="o_dyo_quote_name">Adrien Marchal</span>
+                                            <span class="o_dyo_quote_role">Responsable produit, éditeur de logiciels</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="carousel-item">
+                                    <figure class="o_dyo_quote">
+                                        <blockquote class="mb-4">
+                                            « La documentation d'exploitation est arrivée avec le code,
+                                            pas trois mois après. Notre équipe interne a repris la main
+                                            sans période de flottement. »
+                                        </blockquote>
+                                        <figcaption>
+                                            <span class="o_dyo_quote_name">Salomé Nguyen</span>
+                                            <span class="o_dyo_quote_role">Responsable infrastructure, réseau de distribution</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#dyo_testimonials_carousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"/>
+                                <span class="visually-hidden">Témoignage précédent</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                    data-bs-target="#dyo_testimonials_carousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"/>
+                                <span class="visually-hidden">Témoignage suivant</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_dyo_cta o_cc o_cc1">
+                    <div class="container">
+                        <div class="o_dyo_cta_inner o_cc o_cc5">
+                            <div class="row align-items-center g-4">
+                                <div class="col-lg-8">
+                                    <h2 class="mb-3">Un projet à cadrer ce trimestre ?</h2>
+                                    <p class="mb-0 o_dyo_lead">
+                                        Décrivez-nous le contexte en quelques lignes : nous revenons
+                                        vers vous sous quatre heures ouvrées avec un premier avis.
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 text-lg-end">
+                                    <a href="/contact" class="btn btn-primary btn-lg">Nous écrire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <record id="dyo_page_pricing_page" model="theme.website.page">
+        <field name="url">/tarifs</field>
+        <field name="view_id" ref="dyo_page_pricing"/>
+        <field name="is_published" eval="True"/>
+        <field name="website_indexed" eval="True"/>
+    </record>
+
+    <!-- =========================================================== Portfolio -->
+    <template id="dyo_page_portfolio" name="Réalisations">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+                <section class="s_dyo_hero o_cc o_cc2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <span class="o_dyo_eyebrow">Réalisations</span>
+                                <h1 class="mb-4">Des projets qui tournent en production</h1>
+                                <p class="o_dyo_lead mb-0">
+                                    Six exemples représentatifs de ce que nous construisons,
+                                    filtrables par nature de projet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_dyo_portfolio o_cc o_cc2">
+                    <div class="container">
+                        <div class="row align-items-end mb-5 g-4">
+                            <div class="col-lg-6">
+                                <span class="o_dyo_eyebrow">Réalisations</span>
+                                <h2 class="mb-0">Une sélection de projets récents</h2>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="o_dyo_filters" role="group" aria-label="Filtrer les réalisations">
+                                    <button type="button" class="o_dyo_filter is-active" data-dyo-filter="*">Tout</button>
+                                    <button type="button" class="o_dyo_filter" data-dyo-filter="plateforme">Plateformes</button>
+                                    <button type="button" class="o_dyo_filter" data-dyo-filter="donnees">Données</button>
+                                    <button type="button" class="o_dyo_filter" data-dyo-filter="mobile">Mobile</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4 o_dyo_portfolio_grid">
+                            <div class="col-md-6 col-lg-4 o_dyo_portfolio_item" data-dyo-category="plateforme">
+                                <a href="#" class="o_dyo_project">
+                                    <img src="/theme_dyonysos/static/src/img/project_1.png" loading="lazy"
+                                         alt="Composition abstraite bleue évoquant un portail de gestion documentaire"/>
+                                    <span class="o_dyo_project_tag">Plateforme</span>
+                                    <span class="o_dyo_project_title">Portail documentaire d'un groupe industriel</span>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4 o_dyo_portfolio_item" data-dyo-category="donnees">
+                                <a href="#" class="o_dyo_project">
+                                    <img src="/theme_dyonysos/static/src/img/project_2.png" loading="lazy"
+                                         alt="Composition abstraite violette évoquant un entrepôt de données"/>
+                                    <span class="o_dyo_project_tag">Données</span>
+                                    <span class="o_dyo_project_title">Entrepôt de données pour un réseau de distribution</span>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4 o_dyo_portfolio_item" data-dyo-category="mobile">
+                                <a href="#" class="o_dyo_project">
+                                    <img src="/theme_dyonysos/static/src/img/project_3.png" loading="lazy"
+                                         alt="Composition abstraite verte évoquant une application de terrain"/>
+                                    <span class="o_dyo_project_tag">Mobile</span>
+                                    <span class="o_dyo_project_title">Application de relevés pour équipes de terrain</span>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4 o_dyo_portfolio_item" data-dyo-category="plateforme">
+                                <a href="#" class="o_dyo_project">
+                                    <img src="/theme_dyonysos/static/src/img/project_4.png" loading="lazy"
+                                         alt="Composition abstraite bleu nuit évoquant un espace client"/>
+                                    <span class="o_dyo_project_tag">Plateforme</span>
+                                    <span class="o_dyo_project_title">Espace client d'un cabinet de conseil</span>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4 o_dyo_portfolio_item" data-dyo-category="donnees">
+                                <a href="#" class="o_dyo_project">
+                                    <img src="/theme_dyonysos/static/src/img/project_5.png" loading="lazy"
+                                         alt="Composition abstraite indigo évoquant un tableau de bord de pilotage"/>
+                                    <span class="o_dyo_project_tag">Données</span>
+                                    <span class="o_dyo_project_title">Tableau de bord de pilotage industriel</span>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4 o_dyo_portfolio_item" data-dyo-category="mobile">
+                                <a href="#" class="o_dyo_project">
+                                    <img src="/theme_dyonysos/static/src/img/project_6.png" loading="lazy"
+                                         alt="Composition abstraite turquoise évoquant un parcours de prise de rendez-vous"/>
+                                    <span class="o_dyo_project_tag">Mobile</span>
+                                    <span class="o_dyo_project_title">Prise de rendez-vous pour un réseau de services</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_dyo_stats o_cc o_cc5">
+                    <div class="container">
+                        <div class="row g-4 text-center">
+                            <div class="col-6 col-lg-3">
+                                <p class="mb-0">
+                                    <span class="o_dyo_stat_value">120+</span>
+                                    <span class="o_dyo_stat_label">projets livrés</span>
+                                </p>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <p class="mb-0">
+                                    <span class="o_dyo_stat_value">14 ans</span>
+                                    <span class="o_dyo_stat_label">d'expérience cumulée</span>
+                                </p>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <p class="mb-0">
+                                    <span class="o_dyo_stat_value">98 %</span>
+                                    <span class="o_dyo_stat_label">de clients reconduits</span>
+                                </p>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <p class="mb-0">
+                                    <span class="o_dyo_stat_value">4 h</span>
+                                    <span class="o_dyo_stat_label">de délai de première réponse</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_dyo_logos o_cc o_cc2">
+                    <div class="container">
+                        <p class="o_dyo_logos_label text-center mb-4">
+                            Ils travaillent avec nous depuis plus de trois ans
+                        </p>
+                        <div class="row g-4 align-items-center justify-content-center o_dyo_logos_row">
+                            <div class="col-4 col-md-2">
+                                <img src="/theme_dyonysos/static/src/img/logo_1.png" class="o_dyo_logo" loading="lazy"
+                                     alt="Logo fictif de la société Vantere"/>
+                            </div>
+                            <div class="col-4 col-md-2">
+                                <img src="/theme_dyonysos/static/src/img/logo_2.png" class="o_dyo_logo" loading="lazy"
+                                     alt="Logo fictif de la société Solveris"/>
+                            </div>
+                            <div class="col-4 col-md-2">
+                                <img src="/theme_dyonysos/static/src/img/logo_3.png" class="o_dyo_logo" loading="lazy"
+                                     alt="Logo fictif de la société Norlane"/>
+                            </div>
+                            <div class="col-4 col-md-2">
+                                <img src="/theme_dyonysos/static/src/img/logo_4.png" class="o_dyo_logo" loading="lazy"
+                                     alt="Logo fictif de la société Kaptis"/>
+                            </div>
+                            <div class="col-4 col-md-2">
+                                <img src="/theme_dyonysos/static/src/img/logo_5.png" class="o_dyo_logo" loading="lazy"
+                                     alt="Logo fictif de la société Ambelis"/>
+                            </div>
+                            <div class="col-4 col-md-2">
+                                <img src="/theme_dyonysos/static/src/img/logo_6.png" class="o_dyo_logo" loading="lazy"
+                                     alt="Logo fictif de la société Trevio"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_dyo_cta o_cc o_cc1">
+                    <div class="container">
+                        <div class="o_dyo_cta_inner o_cc o_cc5">
+                            <div class="row align-items-center g-4">
+                                <div class="col-lg-8">
+                                    <h2 class="mb-3">Un projet à cadrer ce trimestre ?</h2>
+                                    <p class="mb-0 o_dyo_lead">
+                                        Décrivez-nous le contexte en quelques lignes : nous revenons
+                                        vers vous sous quatre heures ouvrées avec un premier avis.
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 text-lg-end">
+                                    <a href="/contact" class="btn btn-primary btn-lg">Nous écrire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <record id="dyo_page_portfolio_page" model="theme.website.page">
+        <field name="url">/portfolio</field>
+        <field name="view_id" ref="dyo_page_portfolio"/>
+        <field name="is_published" eval="True"/>
+        <field name="website_indexed" eval="True"/>
+    </record>
+
+    <!-- ================================================================ Blog -->
+    <template id="dyo_page_journal" name="Journal">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+                <section class="s_dyo_hero o_cc o_cc2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <span class="o_dyo_eyebrow">Journal</span>
+                                <h1 class="mb-4">Ce que nous apprenons en chemin</h1>
+                                <p class="o_dyo_lead mb-0">
+                                    Des notes courtes, écrites par les personnes qui ont
+                                    fait le travail. Mise en page prête pour le module
+                                    Blog d'Odoo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_dyo_journal o_cc o_cc1">
+                    <div class="container">
+                        <article class="o_dyo_post o_dyo_post_lead mb-5">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-lg-6">
+                                    <img src="/theme_dyonysos/static/src/img/post_1.png" loading="lazy"
+                                         class="o_dyo_post_cover"
+                                         alt="Composition abstraite illustrant l'article sur les budgets de refonte"/>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="o_dyo_post_meta mb-2">Méthode · 12 mars · 6 min de lecture</p>
+                                    <h2 class="h3-fs mb-3">
+                                        <a href="#">Pourquoi nous chiffrons une refonte en deux semaines, pas en deux mois</a>
+                                    </h2>
+                                    <p class="mb-3">
+                                        Un chiffrage long donne l'illusion de la précision.
+                                        Nous préférons une fourchette assumée, révisée à
+                                        chaque itération, et un premier périmètre livrable
+                                        en trois mois.
+                                    </p>
+                                    <p class="mb-0"><a href="#" class="btn btn-link p-0">Lire l'article</a></p>
+                                </div>
+                            </div>
+                        </article>
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-4">
+                                <article class="o_dyo_post">
+                                    <img src="/theme_dyonysos/static/src/img/post_2.png" loading="lazy"
+                                         class="o_dyo_post_cover mb-3"
+                                         alt="Composition abstraite illustrant l'article sur la dette technique"/>
+                                    <p class="o_dyo_post_meta mb-2">Technique · 28 février</p>
+                                    <h3 class="h5-fs mb-2"><a href="#">La dette technique n'est pas une métaphore comptable</a></h3>
+                                    <p class="mb-0">
+                                        Trois indicateurs simples pour décider quand
+                                        réécrire et quand laisser vivre.
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <article class="o_dyo_post">
+                                    <img src="/theme_dyonysos/static/src/img/post_3.png" loading="lazy"
+                                         class="o_dyo_post_cover mb-3"
+                                         alt="Composition abstraite illustrant l'article sur la recette continue"/>
+                                    <p class="o_dyo_post_meta mb-2">Méthode · 9 février</p>
+                                    <h3 class="h5-fs mb-2"><a href="#">Ouvrir la recette dès la deuxième semaine</a></h3>
+                                    <p class="mb-0">
+                                        Ce que change un environnement de test accessible
+                                        en permanence aux équipes métier.
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <article class="o_dyo_post">
+                                    <img src="/theme_dyonysos/static/src/img/post_4.png" loading="lazy"
+                                         class="o_dyo_post_cover mb-3"
+                                         alt="Composition abstraite illustrant l'article sur le transfert de compétences"/>
+                                    <p class="o_dyo_post_meta mb-2">Équipe · 21 janvier</p>
+                                    <h3 class="h5-fs mb-2"><a href="#">Un transfert de compétences se prépare dès le premier jour</a></h3>
+                                    <p class="mb-0">
+                                        Comment nous organisons la reprise en main par les
+                                        équipes internes de nos clients.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_dyo_cta o_cc o_cc1">
+                    <div class="container">
+                        <div class="o_dyo_cta_inner o_cc o_cc5">
+                            <div class="row align-items-center g-4">
+                                <div class="col-lg-8">
+                                    <h2 class="mb-3">Un projet à cadrer ce trimestre ?</h2>
+                                    <p class="mb-0 o_dyo_lead">
+                                        Décrivez-nous le contexte en quelques lignes : nous revenons
+                                        vers vous sous quatre heures ouvrées avec un premier avis.
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 text-lg-end">
+                                    <a href="/contact" class="btn btn-primary btn-lg">Nous écrire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <record id="dyo_page_journal_page" model="theme.website.page">
+        <field name="url">/journal</field>
+        <field name="view_id" ref="dyo_page_journal"/>
+        <field name="is_published" eval="True"/>
+        <field name="website_indexed" eval="True"/>
+    </record>
+
+</data>
+</odoo>

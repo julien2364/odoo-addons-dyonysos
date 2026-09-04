@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="0">
+
+    <record id="dyo_menu_about" model="theme.website.menu">
+        <field name="name">À propos</field>
+        <field name="url">/a-propos</field>
+        <field name="page_id" ref="dyo_page_about_page"/>
+        <field name="sequence">22</field>
+        <field name="use_main_menu_as_parent" eval="True"/>
+    </record>
+
+    <record id="dyo_menu_pricing" model="theme.website.menu">
+        <field name="name">Tarifs</field>
+        <field name="url">/tarifs</field>
+        <field name="page_id" ref="dyo_page_pricing_page"/>
+        <field name="sequence">24</field>
+        <field name="use_main_menu_as_parent" eval="True"/>
+    </record>
+
+    <record id="dyo_menu_portfolio" model="theme.website.menu">
+        <field name="name">Réalisations</field>
+        <field name="url">/portfolio</field>
+        <field name="page_id" ref="dyo_page_portfolio_page"/>
+        <field name="sequence">26</field>
+        <field name="use_main_menu_as_parent" eval="True"/>
+    </record>
+
+    <record id="dyo_menu_journal" model="theme.website.menu">
+        <field name="name">Journal</field>
+        <field name="url">/journal</field>
+        <field name="page_id" ref="dyo_page_journal_page"/>
+        <field name="sequence">28</field>
+        <field name="use_main_menu_as_parent" eval="True"/>
+    </record>
+
+</data>
+</odoo>
