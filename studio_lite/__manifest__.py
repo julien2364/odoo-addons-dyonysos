@@ -48,7 +48,7 @@ demandes de personnalisation quotidiennes.
         "wizards/studio_automation_wizard_views.xml",
         "views/studio_lite_menus.xml",
     ],
-    "images": ["static/description/banner.png"],
+    "images": ["images/main_screenshot.png"],
     "installable": True,
     "application": True,
     "auto_install": False,

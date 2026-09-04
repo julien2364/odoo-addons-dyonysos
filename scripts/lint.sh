@@ -33,9 +33,16 @@ for rel in manifest.get("data", []):
 for rel in manifest.get("images", []):
     if not os.path.exists(os.path.join(mod, rel)):
         problems.append("image listed but missing: %s" % rel)
-for expected in ("static/description/icon.png", "static/description/index.html"):
+for expected in ("static/description/icon.png", "static/description/index.html",
+                 "images/main_screenshot.png", "LICENSE", "COPYRIGHT"):
     if not os.path.exists(os.path.join(mod, expected)):
         problems.append("Apps Store asset missing: %s" % expected)
+# The Apps Store only accepts png, gif and jpeg in a module description.
+desc = os.path.join(mod, "static/description")
+if os.path.isdir(desc):
+    for name in os.listdir(desc):
+        if not name.lower().endswith((".png", ".gif", ".jpg", ".jpeg", ".html", ".css")):
+            problems.append("unexpected file in static/description: %s" % name)
 for problem in problems:
     print("  FAIL " + problem)
 sys.exit(1 if problems else 0)

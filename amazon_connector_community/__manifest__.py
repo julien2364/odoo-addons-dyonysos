@@ -49,7 +49,7 @@ chaque opération.
         "views/sale_order_views.xml",
         "views/amazon_menus.xml",
     ],
-    "images": ["static/description/banner.png"],
+    "images": ["images/main_screenshot.png"],
     "installable": True,
     "application": False,
 }

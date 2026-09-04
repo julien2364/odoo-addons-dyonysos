@@ -53,7 +53,7 @@ supplémentaire.
         "views/res_config_settings_views.xml",
         "views/mcp_menus.xml",
     ],
-    "images": ["static/description/banner.png"],
+    "images": ["images/main_screenshot.png"],
     "installable": True,
     "application": True,
 }

@@ -44,7 +44,7 @@ accepte des pièces par email, SFTP ou dossier partagé — pas seulement Dougs.
         "views/hr_expense_views.xml",
         "views/res_config_settings_views.xml",
     ],
-    "images": ["static/description/banner.png"],
+    "images": ["images/main_screenshot.png"],
     "installable": True,
     "application": False,
 }

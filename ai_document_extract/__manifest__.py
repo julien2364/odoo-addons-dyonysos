@@ -38,7 +38,7 @@ Fournisseurs IA pris en charge : Anthropic (PDF natif), OpenAI, Mistral, xAI Gro
         "views/account_move_views.xml",
         "views/hr_expense_views.xml",
     ],
-    "images": ["static/description/banner.png"],
+    "images": ["images/main_screenshot.png"],
     "installable": True,
     "application": False,
     "auto_install": False,
