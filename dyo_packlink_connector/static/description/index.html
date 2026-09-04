@@ -1,0 +1,96 @@
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span12">
+      <h2 class="oe_slogan" style="color:#7c3aed;">Packlink Connector for Odoo Community</h2>
+      <h3 class="oe_slogan">Tarifs comparés, étiquette achetée, suivi remonté — sans quitter Odoo</h3>
+    </div>
+    <div class="oe_span12">
+      <img class="oe_picture oe_screenshot" src="banner.png" alt="Packlink Connector for Odoo Community"/>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container oe_dark">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span6">
+      <img class="oe_picture oe_screenshot" src="screen_rates.png" alt="Tarifs Packlink comparés sur le devis"/>
+    </div>
+    <div class="oe_span6">
+      <h3>Packlink PRO devient un mode de livraison Odoo</h3>
+      <p>Vous créez un mode de livraison de type <b>Packlink PRO</b>, vous y rattachez votre clé API, et c'est fini : sur chaque devis, le bouton « Obtenir le tarif » interroge Packlink avec le poids et les dimensions réels du colis, compare les transporteurs disponibles et retient celui que vous avez choisi de privilégier.</p>
+      <p>Le tarif renvoyé passe par la <b>marge</b> et la <b>marge fixe</b> du mode de livraison Odoo : vous facturez le port à votre prix, pas à celui du transporteur.</p>
+      <p>Compatible Odoo 19 Community et Enterprise.</p>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span4">
+      <h4>Le bon service, automatiquement</h4>
+      <p>Au choix : le service <b>le moins cher</b>, le <b>plus rapide</b>, ou un service Packlink imposé par son identifiant lorsque vous avez négocié un contrat précis. Le poids vient des articles de l'envoi, les dimensions du mode de livraison, avec des valeurs de repli pour que la demande de tarif n'échoue jamais faute de données.</p>
+    </div>
+    <div class="oe_span4">
+      <h4>Étiquette à la validation</h4>
+      <p>À la validation du bon de livraison, l'expédition est créée chez Packlink, l'<b>étiquette PDF</b> est téléchargée et jointe au transfert, le <b>numéro de suivi</b> est renseigné sur le transfert et remonte sur la commande. Si l'étiquette n'est pas encore prête chez le transporteur, l'expédition reste valide et un bouton la récupère plus tard.</p>
+    </div>
+    <div class="oe_span4">
+      <h4>Suivi et annulation</h4>
+      <p>Une tâche planifiée rafraîchit toutes les six heures les expéditions en cours : l'état Packlink est mis à jour et chaque étape est notée dans le fil de discussion du transfert. Un bouton annule l'expédition côté Packlink tant qu'elle n'a pas été collectée, et libère le numéro de suivi.</p>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container oe_dark">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span6">
+      <h3>Vendez sur Amazon ? Les deux modules se parlent</h3>
+      <p>Avec notre module <b>Amazon Connector for Odoo Community</b>, la confirmation d'expédition envoyée à Amazon reprend le <b>nom réel du transporteur</b> retenu par Packlink — Chronopost, Colissimo, DHL, DPD, GLS, UPS, Mondial Relay, SEUR, BRT, Evri… — et non un « Other » générique qui dégrade votre note vendeur.</p>
+      <p>Aucune dépendance entre les deux modules : chacun s'installe seul, et le pont s'active tout seul quand les deux sont présents.</p>
+      <p>Le journal des appels trace chaque opération : tarif, expédition, étiquette, suivi, annulation, avec la durée, le statut et le message d'erreur éventuel. Il se purge tout seul au bout de quatre-vingt-dix jours.</p>
+    </div>
+    <div class="oe_span6">
+      <img class="oe_picture oe_screenshot" src="screen_shipments.png" alt="Expéditions Packlink et suivi"/>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span4">
+      <h4>Robuste par construction</h4>
+      <p>Un seul point d'entrée réseau dans tout le module : délai d'attente, nouvelles tentatives avec temporisation croissante sur les erreurs 429 et 5xx, taille de réponse plafonnée, messages d'erreur lisibles. Une expédition en échec n'interrompt jamais le traitement des suivantes.</p>
+    </div>
+    <div class="oe_span4">
+      <h4>Paramétrable sans mise à jour</h4>
+      <p>L'URL de l'API, l'en-tête d'authentification et son préfixe éventuel sont des champs du compte, réservés aux administrateurs techniques. Si Packlink fait évoluer son API, vous ajustez le paramétrage sans attendre une nouvelle version du module.</p>
+    </div>
+    <div class="oe_span4">
+      <h4>Multi-sociétés</h4>
+      <p>Autant de comptes Packlink que de sociétés, chacun avec son adresse de collecte et sa stratégie de sélection. Les règles d'enregistrement multi-sociétés d'Odoo s'appliquent aux comptes comme au journal. La clé API n'est visible que des administrateurs techniques.</p>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container oe_dark">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span12">
+      <h3>Ce dont vous avez besoin</h3>
+      <p>Un compte <b>Packlink PRO</b> et sa <b>clé API</b> (Paramètres → Intégrations dans votre espace Packlink). La bibliothèque Python <code>requests</code> doit être installée sur le serveur — c'est le cas d'une installation Odoo standard.</p>
+      <p>Le module couvre les envois sortants : tarif, création d'expédition, étiquette, suivi et annulation. Il ne gère pas les retours clients ni les points relais choisis par l'acheteur sur le site web, et n'ajoute pas de sélecteur de point relais dans le tunnel de commande. Les tarifs affichés sont ceux que Packlink renvoie pour votre compte, marge Odoo comprise.</p>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span12" style="text-align:center;">
+      <h3 style="color:#7c3aed;">DYONYSOS</h3>
+      <p>Édition et intégration de modules Odoo.</p>
+      <p>Une question, un besoin d'adaptation, un transporteur supplémentaire ?<br/>
+         <b><a href="mailto:welcome@dyonysos.fr">welcome@dyonysos.fr</a></b><br/>
+         <a href="https://dyonysos.fr">https://dyonysos.fr</a></p>
+      <p>Support inclus : installation, paramétrage de la clé Packlink, correction des anomalies.</p>
+    </div>
+  </div>
+</section>
