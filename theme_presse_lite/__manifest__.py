@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Thème Presse — Magazine et presse en ligne (gratuit)',
-    'summary': "Thème éditorial pour sites de presse : gabarit d'article soigné, "
-               "grille d'articles, bloc « une », intégration du blog Odoo.",
+    'summary': "Votre site Odoo publie beaucoup. Il ne se lit pas. Le système de design éditorial qui rend un long article réellement lisible.",
     'description': """
 Thème Presse — version gratuite
 ===============================

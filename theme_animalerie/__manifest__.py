@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Thème Animalerie — Boutique en ligne (pro)',
-    'summary': "Sélecteur par animal, comparateur, avis notés, guide de tailles, "
-               "abonnement, blocs conseils, promotions, panier et tunnel stylés, mode sombre, trois dispositions d'en-tête et deux de pied de page.",
+    'summary': "Le client hésite entre trois paniers. Aidez-le à trancher. Sélecteur par animal, comparateur de produits, avis notés, guide de tailles, abonnement.",
     'description': """
 Thème Animalerie — version pro
 ==============================

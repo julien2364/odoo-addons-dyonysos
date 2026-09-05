@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Thème Voyage — Carnet de voyage et tourisme (pro)',
-    'summary': "Carte d'itinéraire par étapes, galerie mosaïque avec lightbox, fiche "
-               "destination, témoignages, calendrier de départs, demande de devis, carnet de bord, mode sombre, trois dispositions d'en-tête et deux de pied de page.",
+    'summary': "Décrire un séjour ne le vend pas. Le détailler, si. Itinéraire étape par étape, fiche destination chiffrée, calendrier de départs avec places restantes, demande de devis.",
     'description': """
 Thème Voyage — version pro
 ==========================

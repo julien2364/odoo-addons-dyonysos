@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Thème Presse — Magazine et presse en ligne (pro)',
-    'summary': "Blocs éditoriaux avancés pour un vrai média : une multi-niveaux, "
-               "fil d'actualité, grille par rubrique avec filtres, dossier, "
-               "encadré auteur, chronologie, newsletter, sommaire, mode lecture, mode sombre, trois dispositions d'en-tête et deux de pied de page.",
+    'summary': "Une page d'accueil de média, pas une page d'accueil d'entreprise. Une multi-niveaux, fil d'actualité, grille filtrable par rubrique, dossier, chronologie.",
     'description': """
 Thème Presse — version pro
 ==========================

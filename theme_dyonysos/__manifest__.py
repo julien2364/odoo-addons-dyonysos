@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     "name": "Thème Agence B2B — services et conseil (édition complète)",
-    "summary": "Extension professionnelle du thème Agence B2B : 7 blocs de plus, 4 pages de plus, "
-               "variantes d'en-tête et de pied de page, mode sombre",
+    'summary': "Un prospect qui ne voit ni vos tarifs ni vos références ne vous écrit pas. Grille tarifaire, portfolio filtrable, témoignages, équipe, FAQ, chronologie et logos partenaires.",
     "description": """
 Thème Agence B2B — édition complète
 ===================================

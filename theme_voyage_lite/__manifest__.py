@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Thème Voyage — Carnet de voyage et tourisme (gratuit)',
-    'summary': "Thème chaleureux et aéré pour agences, carnets de voyage et offices "
-               "de tourisme : bandeau d'accueil, grille de destinations, récit en deux colonnes.",
+    'summary': "Vos itinéraires méritent mieux qu'un thème d'entreprise recoloré. Sable, terracotta et bleu profond, grandes images, cartes arrondies et ombres douces.",
     'description': """
 Thème Voyage — version gratuite
 ===============================

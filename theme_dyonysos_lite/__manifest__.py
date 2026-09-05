@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     "name": "Thème Agence B2B — services et conseil (gratuit)",
-    "summary": "Thème Odoo 19 sobre et professionnel pour agences et sociétés de services : "
-               "système de design complet, 4 palettes, 5 blocs originaux et 3 pages prêtes",
+    'summary': "Votre site d'agence ressemble à celui de votre concurrent. Un système de design complet plutôt qu'un habillage.",
     "description": """
 Thème Agence B2B — édition gratuite
 ==================================

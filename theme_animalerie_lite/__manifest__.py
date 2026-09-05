@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Thème Animalerie — Boutique en ligne (gratuit)',
-    'summary': "Thème e-commerce rassurant pour animalerie : page d'accueil boutique, "
-               "grille de produits, fiche produit retravaillée, bandeau de réassurance.",
+    'summary': "Une boutique d'animalerie rassure ou ne vend pas. Vert naturel, terracotta, coins très arrondis, typographie ronde.",
     'description': """
 Thème Animalerie — version gratuite
 ===================================
