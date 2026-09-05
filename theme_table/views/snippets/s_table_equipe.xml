@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_table_equipe" name="Portraits de l'équipe">
+    <section class="o_table_team pt64 pb64 o_cc o_cc1">
+            <div class="container">
+                <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                    <span class="o_table_eyebrow">La brigade</span>
+                    <h2 class="mb-3">Cinq personnes en cuisine, trois en salle</h2>
+                
+                </div>
+                <div class="row g-4"><div class="col-lg-3 col-6">
+                        <div class="o_table_member text-center">
+                            <img src="/theme_table/static/src/img/table_eq_1.png" alt="" class="o_table_member_photo"/>
+                            <h3 class="h5 mt-3 mb-1">Élise Lavaur</h3>
+                            <p class="o_table_meta mb-0">Cheffe et co-gérante</p>
+                        </div>
+                    </div><div class="col-lg-3 col-6">
+                        <div class="o_table_member text-center">
+                            <img src="/theme_table/static/src/img/table_eq_2.png" alt="" class="o_table_member_photo"/>
+                            <h3 class="h5 mt-3 mb-1">Marc Thouvenin</h3>
+                            <p class="o_table_meta mb-0">Second de cuisine</p>
+                        </div>
+                    </div><div class="col-lg-3 col-6">
+                        <div class="o_table_member text-center">
+                            <img src="/theme_table/static/src/img/table_eq_3.png" alt="" class="o_table_member_photo"/>
+                            <h3 class="h5 mt-3 mb-1">Nadia Ferrand</h3>
+                            <p class="o_table_meta mb-0">Cheffe de salle</p>
+                        </div>
+                    </div><div class="col-lg-3 col-6">
+                        <div class="o_table_member text-center">
+                            <img src="/theme_table/static/src/img/table_eq_4.png" alt="" class="o_table_member_photo"/>
+                            <h3 class="h5 mt-3 mb-1">Yann Kerbrat</h3>
+                            <p class="o_table_meta mb-0">Pâtissier</p>
+                        </div>
+                    </div></div>
+            </div>
+        </section>
+</template>
+
+</odoo>

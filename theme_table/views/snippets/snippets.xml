@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="o_table_snippets_table" inherit_id="website.snippets" name="Blocs Restaurant">
+    <xpath expr="//snippets[@id='snippet_structure']" position="inside">
+        <t t-snippet="theme_table.s_table_carte" string="Carte tarifée deux colonnes" group="table"
+           t-thumbnail="/theme_table/static/src/img/snippets_thumbs/s_table_carte.png">
+            <keywords>carte, menu, tarifs, prix, prestations, liste</keywords>
+        </t>
+        <t t-snippet="theme_table.s_table_galerie" string="Mosaïque d'images" group="table"
+           t-thumbnail="/theme_table/static/src/img/snippets_thumbs/s_table_galerie.png">
+            <keywords>galerie, mosaique, photos, images, ambiance</keywords>
+        </t>
+        <t t-snippet="theme_table.s_table_avis" string="Trois avis clients" group="table"
+           t-thumbnail="/theme_table/static/src/img/snippets_thumbs/s_table_avis.png">
+            <keywords>avis, temoignages, clients, citations, confiance</keywords>
+        </t>
+        <t t-snippet="theme_table.s_table_equipe" string="Portraits de l'équipe" group="table"
+           t-thumbnail="/theme_table/static/src/img/snippets_thumbs/s_table_equipe.png">
+            <keywords>equipe, portraits, brigade, personnes, presentation</keywords>
+        </t>
+        <t t-snippet="theme_table.s_table_horaires" string="Coordonnées et horaires" group="table"
+           t-thumbnail="/theme_table/static/src/img/snippets_thumbs/s_table_horaires.png">
+            <keywords>contact, horaires, adresse, acces, coordonnees</keywords>
+        </t>
+        <t t-snippet="theme_table.s_table_citation" string="Bandeau citation" group="table"
+           t-thumbnail="/theme_table/static/src/img/snippets_thumbs/s_table_citation.png">
+            <keywords>citation, bandeau, phrase, manifeste, editorial</keywords>
+        </t>
+        <t t-snippet="theme_table.s_table_etapes" string="Parcours de réservation" group="table"
+           t-thumbnail="/theme_table/static/src/img/snippets_thumbs/s_table_etapes.png">
+            <keywords>etapes, parcours, methode, comment, deroule</keywords>
+        </t>
+    </xpath>
+</template>
+
+</odoo>

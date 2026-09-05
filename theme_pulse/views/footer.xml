@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="o_pulse_footer" inherit_id="website.layout" name="Sport — pied de page" active="True">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure oe_structure_solo o_pulse_footer text-break" t-ignore="true" t-if="not no_footer">
+            <section class="s_text_block pt48 pb24 o_cc o_cc5" data-snippet="s_text_block" data-name="Container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 pt24 pb24">
+                            <p class="o_pulse_foot_brand mb-2">Fonderie 12</p>
+                            <p class="mb-0">Studio de force et de conditionnement. Groupes de huit, sans engagement.</p>
+                        </div>
+                            <div class="col-lg-3 col-md-6 pt24 pb24">
+                                <h5 class="o_pulse_foot_title">Le studio</h5>
+                                <ul class="list-unstyled mb-0"><li><a href="/cours">Les cours</a></li><li><a href="/tarifs">Tarifs</a></li><li><a href="/le-studio">Le studio</a></li><li><a href="/contactus">Nous écrire</a></li></ul>
+                                
+                            </div>
+                            <div class="col-lg-3 col-md-6 pt24 pb24">
+                                <h5 class="o_pulse_foot_title">Accès</h5>
+                                
+                                <p class="mb-1">12 rue de la Fonderie</p><p class="mb-1">33520 Bassens-Rive</p><p class="mb-1">05 56 00 00 00</p><p class="mb-1">plateau@fonderie12.example</p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 pt24 pb24">
+                                <h5 class="o_pulse_foot_title">Plateau</h5>
+                                
+                                <p class="mb-1">Lundi au vendredi — 6h/22h</p><p class="mb-1">Samedi — 8h/19h</p><p class="mb-1">Dimanche — 9h/13h</p><p class="mb-1">Réservation des cours en ligne</p>
+                            </div>
+                    </div>
+                </div>
+            </section>
+            <div class="o_pulse_foot_legal o_cc o_cc5">
+                <div class="container d-flex flex-wrap justify-content-between gap-2 py-3">
+                    <span>© 2026 Fonderie 12 — studio fictif de démonstration</span>
+                    <span>Thème Pulse par DYONYSOS</span>
+                </div>
+            </div>
+        </div>
+    </xpath>
+</template>
+
+</odoo>

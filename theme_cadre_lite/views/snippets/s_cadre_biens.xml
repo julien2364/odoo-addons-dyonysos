@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_cadre_biens" name="Grille de biens">
+    <section class="o_cadre_cards pt64 pb64 o_cc o_cc1">
+            <div class="container">
+                <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                    <span class="o_cadre_eyebrow">Sélection</span>
+                    <h2 class="mb-3">Trois biens rentrés cette semaine</h2>
+                    <p class="lead mb-0">Prix net vendeur, honoraires affichés séparément, diagnostics disponibles au premier contact.</p>
+                </div>
+                <div class="row g-4"><div class="col-lg-4 col-md-6">
+                        <article class="o_cadre_card h-100">
+                            <div class="o_cadre_card_media">
+                                <img src="/theme_cadre_lite/static/src/img/cadre_bien_1.png" alt=""/>
+                                <span class="o_cadre_pill">Vendu sous 30 j</span>
+                            </div>
+                            <div class="o_cadre_card_body">
+                                <h3 class="h4 mb-2">Maison de ville, 132 m², cœur historique</h3>
+                                <p class="mb-3">Quatre chambres, cave voûtée, cour exposée sud. Toiture refaite en 2021, menuiseries double vitrage sur l'ensemble.</p>
+                                <p class="o_cadre_meta mb-0">Val-d'Ancre · 268 000 € net vendeur</p>
+                            </div>
+                        </article>
+                    </div><div class="col-lg-4 col-md-6">
+                        <article class="o_cadre_card h-100">
+                            <div class="o_cadre_card_media">
+                                <img src="/theme_cadre_lite/static/src/img/cadre_bien_2.png" alt=""/>
+                                <span class="o_cadre_pill">Nouveau</span>
+                            </div>
+                            <div class="o_cadre_card_body">
+                                <h3 class="h4 mb-2">Appartement traversant, 74 m², dernier étage</h3>
+                                <p class="mb-3">Deux chambres, balcon filant, ascenseur. Charges de copropriété détaillées et procès-verbaux des trois dernières assemblées fournis.</p>
+                                <p class="o_cadre_meta mb-0">Quartier des Halles · 189 000 € net vendeur</p>
+                            </div>
+                        </article>
+                    </div><div class="col-lg-4 col-md-6">
+                        <article class="o_cadre_card h-100">
+                            <div class="o_cadre_card_media">
+                                <img src="/theme_cadre_lite/static/src/img/cadre_bien_3.png" alt=""/>
+                                <span class="o_cadre_pill">Sous compromis</span>
+                            </div>
+                            <div class="o_cadre_card_body">
+                                <h3 class="h4 mb-2">Longère rénovée, 168 m², terrain de 2 400 m²</h3>
+                                <p class="mb-3">Isolation reprise en 2023, pompe à chaleur, dépendance aménageable. Assainissement conforme, contrôle de moins d'un an.</p>
+                                <p class="o_cadre_meta mb-0">Saint-Aubin-le-Haut · 342 000 € net vendeur</p>
+                            </div>
+                        </article>
+                    </div></div>
+            </div>
+        </section>
+</template>
+
+</odoo>

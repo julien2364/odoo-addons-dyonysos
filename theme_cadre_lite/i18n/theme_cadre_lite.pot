@@ -1,0 +1,336 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* theme_cadre_lite
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-05 11:21+0000\n"
+"PO-Revision-Date: 2026-09-05 11:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_hero
+msgid "<i class=\"fa fa-check-circle me-2\"/>Estimation écrite sous 72 heures"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_hero
+msgid ""
+"<i class=\"fa fa-check-circle me-2\"/>Honoraires connus avant la première "
+"visite"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_hero
+msgid ""
+"<i class=\"fa fa-check-circle me-2\"/>Mandat simple, sans clause de "
+"reconduction"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_hero
+msgid ""
+"<i class=\"fa fa-check-circle me-2\"/>Un seul interlocuteur du mandat à "
+"l'acte"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_appel
+msgid "<span class=\"o_cadre_eyebrow\">Estimation</span>"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_methode
+msgid "<span class=\"o_cadre_eyebrow\">Notre méthode</span>"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_biens
+msgid "<span class=\"o_cadre_eyebrow\">Sélection</span>"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_hero
+msgid ""
+"<span class=\"o_cadre_eyebrow\">Transaction et gestion — Rive &amp; "
+"Bastide</span>"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_biens
+msgid "<span class=\"o_cadre_pill\">Nouveau</span>"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_biens
+msgid "<span class=\"o_cadre_pill\">Sous compromis</span>"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_biens
+msgid "<span class=\"o_cadre_pill\">Vendu sous 30 j</span>"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_hero
+msgid "<strong>41 j</strong><span>délai médian de vente en 2025</span>"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_biens
+msgid "Appartement traversant, 74 m², dernier étage"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.o_cadre_snippets_lite
+msgid "Appel à estimation"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.o_cadre_snippets_lite
+msgid "Bandeau agence deux colonnes"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_methode
+msgid ""
+"Cinq ventes réelles du même secteur, moins de douze mois, transmises avec le"
+" rapport."
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_appel
+msgid "Demander une estimation"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_biens
+msgid ""
+"Deux chambres, balcon filant, ascenseur. Charges de copropriété détaillées "
+"et procès-verbaux des trois dernières assemblées fournis."
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_methode
+msgid "Estimation au comparable"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_hero
+msgid "Estimer mon bien"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.o_cadre_snippets_lite
+msgid "Grille de biens"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_methode
+msgid "Honoraires fixes"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.o_cadre_snippets_lite
+msgid "Immobilier"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_biens
+msgid ""
+"Isolation reprise en 2023, pompe à chaleur, dépendance aménageable. "
+"Assainissement conforme, contrôle de moins d'un an."
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_methode
+msgid ""
+"La personne qui estime est celle qui visite, négocie et vous accompagne chez"
+" le notaire."
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_hero
+msgid "Le prix affiché est celui que nous défendons"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_biens
+msgid "Longère rénovée, 168 m², terrain de 2 400 m²"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_biens
+msgid "Maison de ville, 132 m², cœur historique"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_methode
+msgid "Mandat sans reconduction"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_hero
+msgid ""
+"Nous estimons au comparable réel, nous publions le prix net vendeur et nous "
+"ne le baissons pas trois semaines plus tard pour sauver un mandat."
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_appel
+msgid ""
+"Nous nous déplaçons, nous mesurons, nous comparons, et nous vous remettons "
+"un document daté et signé. Gratuit et sans engagement de mandat."
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_methode
+msgid ""
+"Pas de promesse commerciale : ces quatre points figurent noir sur blanc dans"
+" le document que vous signez."
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_biens
+msgid ""
+"Prix net vendeur, honoraires affichés séparément, diagnostics disponibles au"
+" premier contact."
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_biens
+msgid "Quartier des Halles · 189 000 € net vendeur"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_biens
+msgid ""
+"Quatre chambres, cave voûtée, cour exposée sud. Toiture refaite en 2021, "
+"menuiseries double vitrage sur l'ensemble."
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.o_cadre_snippets_lite
+msgid "Quatre engagements"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_methode
+msgid "Quatre engagements écrits dans le mandat"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_biens
+msgid "Saint-Aubin-le-Haut · 342 000 € net vendeur"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_biens
+msgid "Trois biens rentrés cette semaine"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_methode
+msgid ""
+"Trois mois, résiliable à tout moment après le premier mois, sans indemnité."
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_methode
+msgid ""
+"Un barème public, identique pour tous, sans commission variable à la tête du"
+" dossier."
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_methode
+msgid "Un seul interlocuteur"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_appel
+msgid "Une estimation écrite, pas une fourchette au téléphone"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_biens
+msgid "Val-d'Ancre · 268 000 € net vendeur"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_hero
+msgid "Voir les biens"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.cadre_home
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.s_cadre_appel
+msgid "Voir nos honoraires"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.o_cadre_snippets_lite
+msgid "appel, action, cta, estimation, contact, conversion"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.o_cadre_snippets_lite
+msgid "bandeau, hero, accueil, agence, immobilier, recherche"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.o_cadre_snippets_lite
+msgid "biens, annonces, cartes, grille, catalogue, immobilier"
+msgstr ""
+
+#. module: theme_cadre_lite
+#: model_terms:theme.ir.ui.view,arch:theme_cadre_lite.o_cadre_snippets_lite
+msgid "engagements, points forts, methode, garanties, services"
+msgstr ""

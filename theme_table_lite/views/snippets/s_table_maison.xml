@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_table_maison" name="La maison en deux colonnes">
+    <section class="o_table_split pt64 pb64 o_cc o_cc1">
+            <div class="container">
+                <div class="row align-items-center g-5"><div class="col-lg-6 order-lg-2">
+                        <span class="o_table_eyebrow">La maison</span>
+                        <h2 class="mb-3">Vingt-quatre couverts, une seule salle, aucun deuxième service</h2>
+                        <p>Nous avons choisi de ne pas remplir deux fois la salle. Vous gardez votre table toute la soirée, la cuisine garde son rythme, et personne ne vous demande de partir.</p>
+                        <ul class="o_table_points list-unstyled mt-4 mb-0"><li><i class="fa fa-angle-right me-2"/>Une seule salle, sans étage ni annexe</li><li><i class="fa fa-angle-right me-2"/>Pas de deuxième service le soir</li><li><i class="fa fa-angle-right me-2"/>Cuisine ouverte à vue sur la salle</li><li><i class="fa fa-angle-right me-2"/>Menu enfant préparé à la commande</li></ul>
+                        <div class="d-flex flex-wrap gap-3 mt-4"><a href="/le-lieu" class="btn btn-primary btn-lg">Découvrir le lieu</a></div>
+                    </div><div class="col-lg-6 order-lg-1">
+                        <div class="o_table_split_media"><img src="/theme_table_lite/static/src/img/table_salle.png" alt="" class="img-fluid"/></div>
+                    </div></div>
+            </div>
+        </section>
+</template>
+
+</odoo>

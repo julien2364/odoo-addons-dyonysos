@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_cadre_hero" name="Bandeau agence deux colonnes">
+    <section class="o_cadre_hero o_cadre_hero_split o_cc o_cc1 pt64 pb64">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <span class="o_cadre_eyebrow">Transaction et gestion — Rive &amp; Bastide</span>
+                        <h1 class="mb-3">Le prix affiché est celui que nous défendons</h1>
+                        <p class="lead">Nous estimons au comparable réel, nous publions le prix net vendeur et nous ne le baissons pas trois semaines plus tard pour sauver un mandat.</p>
+                        <ul class="o_cadre_marks list-unstyled mt-4 mb-0"><li><i class="fa fa-check-circle me-2"/>Estimation écrite sous 72 heures</li><li><i class="fa fa-check-circle me-2"/>Mandat simple, sans clause de reconduction</li><li><i class="fa fa-check-circle me-2"/>Honoraires connus avant la première visite</li><li><i class="fa fa-check-circle me-2"/>Un seul interlocuteur du mandat à l'acte</li></ul>
+                        <div class="d-flex flex-wrap gap-3 mt-4"><a href="/honoraires" class="btn btn-primary btn-lg">Estimer mon bien</a><a href="/nos-biens" class="btn btn-outline-primary btn-lg">Voir les biens</a></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="o_cadre_hero_media">
+                            <img src="/theme_cadre_lite/static/src/img/cadre_hero.png" alt="" class="img-fluid"/>
+                            <div class="o_cadre_hero_badge"><strong>41 j</strong><span>délai médian de vente en 2025</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</template>
+
+</odoo>

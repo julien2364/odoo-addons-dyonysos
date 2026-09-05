@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_pulse_chiffres" name="Bandeau de chiffres">
+    <section class="o_pulse_stats pt48 pb48 o_cc o_cc2">
+            <div class="container">
+                <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                    <span class="o_pulse_eyebrow">Le studio en bref</span>
+                    <h2 class="mb-3">Ce que nous mesurons</h2>
+                
+                </div>
+                <div class="row g-4 text-center"><div class="col-lg-3 col-6">
+                        <div class="o_pulse_stat">
+                            <span class="o_pulse_stat_num">8</span>
+                            <span class="o_pulse_stat_label">adhérents maximum par cours</span>
+                        </div>
+                    </div><div class="col-lg-3 col-6">
+                        <div class="o_pulse_stat">
+                            <span class="o_pulse_stat_num">420 m²</span>
+                            <span class="o_pulse_stat_label">de plateau sur un seul niveau</span>
+                        </div>
+                    </div><div class="col-lg-3 col-6">
+                        <div class="o_pulse_stat">
+                            <span class="o_pulse_stat_num">12</span>
+                            <span class="o_pulse_stat_label">coachs diplômés</span>
+                        </div>
+                    </div><div class="col-lg-3 col-6">
+                        <div class="o_pulse_stat">
+                            <span class="o_pulse_stat_num">6 sem.</span>
+                            <span class="o_pulse_stat_label">entre deux réécritures de programme</span>
+                        </div>
+                    </div></div>
+            </div>
+        </section>
+</template>
+
+</odoo>

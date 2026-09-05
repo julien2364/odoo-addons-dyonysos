@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_cadre_methode" name="Quatre engagements">
+    <section class="o_cadre_features pt64 pb64 o_cc o_cc2">
+            <div class="container">
+                <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                    <span class="o_cadre_eyebrow">Notre méthode</span>
+                    <h2 class="mb-3">Quatre engagements écrits dans le mandat</h2>
+                    <p class="lead mb-0">Pas de promesse commerciale : ces quatre points figurent noir sur blanc dans le document que vous signez.</p>
+                </div>
+                <div class="row g-4"><div class="col-lg-3 col-md-6">
+                        <div class="o_cadre_feature h-100">
+                            <span class="o_cadre_feature_icon"><i class="fa fa-calculator"/></span>
+                            <h3 class="h5 mt-3 mb-2">Estimation au comparable</h3>
+                            <p class="mb-0">Cinq ventes réelles du même secteur, moins de douze mois, transmises avec le rapport.</p>
+                        </div>
+                    </div><div class="col-lg-3 col-md-6">
+                        <div class="o_cadre_feature h-100">
+                            <span class="o_cadre_feature_icon"><i class="fa fa-file-text-o"/></span>
+                            <h3 class="h5 mt-3 mb-2">Mandat sans reconduction</h3>
+                            <p class="mb-0">Trois mois, résiliable à tout moment après le premier mois, sans indemnité.</p>
+                        </div>
+                    </div><div class="col-lg-3 col-md-6">
+                        <div class="o_cadre_feature h-100">
+                            <span class="o_cadre_feature_icon"><i class="fa fa-eur"/></span>
+                            <h3 class="h5 mt-3 mb-2">Honoraires fixes</h3>
+                            <p class="mb-0">Un barème public, identique pour tous, sans commission variable à la tête du dossier.</p>
+                        </div>
+                    </div><div class="col-lg-3 col-md-6">
+                        <div class="o_cadre_feature h-100">
+                            <span class="o_cadre_feature_icon"><i class="fa fa-user"/></span>
+                            <h3 class="h5 mt-3 mb-2">Un seul interlocuteur</h3>
+                            <p class="mb-0">La personne qui estime est celle qui visite, négocie et vous accompagne chez le notaire.</p>
+                        </div>
+                    </div></div>
+            </div>
+        </section>
+</template>
+
+</odoo>

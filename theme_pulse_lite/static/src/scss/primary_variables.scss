@@ -1,0 +1,84 @@
+// =============================================================================
+// Thème Pulse — palette et typographie
+// Généré par l'usine à thèmes DYONYSOS. Aucune ressource externe n'est copiée :
+// les polices sont chargées par Odoo depuis Google Fonts via $o-theme-font-configs.
+// =============================================================================
+
+// -- Polices ------------------------------------------------------------------
+$o-theme-font-configs: map-merge($o-theme-font-configs, (
+    'Barlow Condensed': (
+        'family': ('Barlow Condensed', 'Trebuchet MS', sans-serif),
+        'url': 'Barlow+Condensed:400,500,600,700',
+    ),
+    'Inter': (
+        'family': ('Inter', 'Trebuchet MS', sans-serif),
+        'url': 'Inter:300,400,500,600,700',
+    ),
+));
+
+// -- Palettes -----------------------------------------------------------------
+// Thème sombre. Contrastes vérifiés (WCAG AA) :
+//   #B8F04A sur #14171C → 14,82:1  |  #FFFFFF sur #14171C → 15,31:1
+//   texte du bouton primaire : #08090B sur #B8F04A → 15,04:1
+$o-color-palettes: map-merge($o-color-palettes, (
+    'pulse-charbon': (
+        'o-color-1': #B8F04A,
+        'o-color-2': #FFFFFF,
+        'o-color-3': #191C22,
+        'o-color-4': #14171C,
+        'o-color-5': #08090B,
+
+        'menu': 5,
+        'footer': 5,
+        'copyright': 5,
+    ),
+    'pulse-ambre': (
+        'o-color-1': #FF8A3D,
+        'o-color-2': #FFFFFF,
+        'o-color-3': #1C1A18,
+        'o-color-4': #161412,
+        'o-color-5': #0A0908,
+
+        'menu': 5,
+        'footer': 5,
+        'copyright': 5,
+    ),
+));
+$o-selected-color-palettes-names: join(
+    ('pulse-charbon', 'pulse-ambre'), $o-selected-color-palettes-names, comma);
+
+// -- Valeurs du site ----------------------------------------------------------
+$o-website-values-palettes: (
+    (
+        'color-palettes-name': 'pulse-charbon',
+
+        'font': 'Inter',
+        'headings-font': 'Barlow Condensed',
+        'navbar-font': 'Barlow Condensed',
+        'buttons-font': 'Barlow Condensed',
+
+        'body-line-height': 1.7,
+        'headings-line-height': 1.02,
+        'paragraph-margin-bottom': 16px,
+
+        'btn-border-radius': 2rem,
+        'btn-border-radius-sm': 2rem,
+        'btn-border-radius-lg': 2rem,
+        'btn-padding-y': 0.85rem,
+        'btn-padding-x': 2.1rem,
+
+        'input-border-radius': 1.5rem,
+
+        'link-underline': 'hover',
+        'header-template': 'default',
+        'header-links-style': 'default',
+        'footer-template': 'default',
+        'layout': 'full',
+    ),
+);
+$o-website-values-palette-number: 1;
+
+$o-theme-h1-font-size-multiplier: 4.0;
+$o-theme-h2-font-size-multiplier: 2.8;
+$o-theme-h3-font-size-multiplier: 1.8;
+$o-theme-h4-font-size-multiplier: 1.35;

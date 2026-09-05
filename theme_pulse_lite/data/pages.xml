@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="0">
+
+<!-- Pages de démonstration du thème. Dans un module theme_*, un <template>
+     devient une theme.ir.ui.view et la page une theme.website.page : rien
+     n'est créé dans le site avant l'application du thème. Le balisage est
+     dupliqué depuis views/snippets/ pour que chaque section soit éditable
+     dans l'oe_structure de la page. -->
+
+    <template id="pulse_home" inherit_id="website.homepage" name="Accueil — Fonderie 12">
+        <xpath expr="//div[@id='wrap']" position="inside">
+        <section class="o_pulse_hero o_pulse_hero_cover o_cc o_cc5"
+                     style="background-image:url('/theme_pulse_lite/static/src/img/pulse_hero.png');">
+                <div class="container">
+                    <div class="o_pulse_hero_inner">
+                        <span class="o_pulse_eyebrow">Studio de 420 m² — 12 coachs</span>
+                        <h1 class="mb-3">Trois séances par semaine, pas trente machines</h1>
+                        <p class="lead mb-0">Fonderie 12 encadre des groupes de huit. Programme écrit, charges suivies, progression mesurée toutes les six semaines. Pas d'abonnement piège.</p>
+                        <div class="d-flex flex-wrap gap-3 mt-4"><a href="/tarifs" class="btn btn-primary btn-lg">Réserver un essai</a><a href="/cours" class="btn btn-outline-light btn-lg">Voir les cours</a></div>
+                    </div>
+                </div>
+            </section>
+        <section class="o_pulse_features pt64 pb64 o_cc o_cc1">
+                <div class="container">
+                    <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                        <span class="o_pulse_eyebrow">Notre méthode</span>
+                        <h2 class="mb-3">Ce qui change d'une salle classique</h2>
+                
+                    </div>
+                    <div class="row g-4"><div class="col-lg-3 col-md-6">
+                            <div class="o_pulse_feature h-100">
+                                <span class="o_pulse_feature_icon"><i class="fa fa-users"/></span>
+                                <h3 class="h5 mt-3 mb-2">Groupes de huit</h3>
+                                <p class="mb-0">Au-delà de huit, un coach ne corrige plus personne. Nous n'ouvrons pas de neuvième place.</p>
+                            </div>
+                        </div><div class="col-lg-3 col-md-6">
+                            <div class="o_pulse_feature h-100">
+                                <span class="o_pulse_feature_icon"><i class="fa fa-line-chart"/></span>
+                                <h3 class="h5 mt-3 mb-2">Charges suivies</h3>
+                                <p class="mb-0">Chaque série est enregistrée. Vous voyez la courbe, pas une impression.</p>
+                            </div>
+                        </div><div class="col-lg-3 col-md-6">
+                            <div class="o_pulse_feature h-100">
+                                <span class="o_pulse_feature_icon"><i class="fa fa-calendar-check-o"/></span>
+                                <h3 class="h5 mt-3 mb-2">Cycles de six semaines</h3>
+                                <p class="mb-0">Programme réécrit tous les quarante-deux jours, à partir de vos chiffres réels.</p>
+                            </div>
+                        </div><div class="col-lg-3 col-md-6">
+                            <div class="o_pulse_feature h-100">
+                                <span class="o_pulse_feature_icon"><i class="fa fa-unlock"/></span>
+                                <h3 class="h5 mt-3 mb-2">Sans engagement</h3>
+                                <p class="mb-0">Résiliation au mois, en deux clics, sans lettre recommandée ni justificatif.</p>
+                            </div>
+                        </div></div>
+                </div>
+            </section>
+        <section class="o_pulse_offers pt64 pb64 o_cc o_cc1">
+                <div class="container">
+                    <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                        <span class="o_pulse_eyebrow">Abonnements</span>
+                        <h2 class="mb-3">Trois formules, sans engagement de douze mois</h2>
+                        <p class="lead mb-0">Résiliables au mois. Aucun frais de dossier, aucune reconduction automatique.</p>
+                    </div>
+                    <div class="row g-4 justify-content-center"><div class="col-lg-4 col-md-6">
+                            <div class="o_pulse_offer h-100 ">
+                        
+                                <h3 class="h4 mb-1">Libre</h3>
+                                <p class="o_pulse_meta mb-3">Accès plateau et vestiaires</p>
+                                <p class="o_pulse_offer_price mb-4">39 €<small>/ mois</small></p>
+                                <ul class="list-unstyled o_pulse_offer_feats mb-4"><li><i class="fa fa-check me-2"/>Accès de 6h à 22h, sept jours sur sept</li><li><i class="fa fa-check me-2"/>Bilan d'entrée avec un coach</li><li><i class="fa fa-check me-2"/>Application de suivi des charges</li><li><i class="fa fa-check me-2"/>Vestiaires et douches</li><li><i class="fa fa-check me-2"/>Résiliable au mois</li></ul>
+                                <a href="#" class="btn btn-outline-primary w-100">Commencer</a>
+                            </div>
+                        </div><div class="col-lg-4 col-md-6">
+                            <div class="o_pulse_offer h-100 is-featured">
+                                <span class="o_pulse_offer_tag">Le plus pris</span>
+                                <h3 class="h4 mb-1">Encadré</h3>
+                                <p class="o_pulse_meta mb-3">La formule de 6 adhérents sur 10</p>
+                                <p class="o_pulse_offer_price mb-4">69 €<small>/ mois</small></p>
+                                <ul class="list-unstyled o_pulse_offer_feats mb-4"><li><i class="fa fa-check me-2"/>Tout la formule Libre</li><li><i class="fa fa-check me-2"/>Trois cours collectifs par semaine</li><li><i class="fa fa-check me-2"/>Groupes de huit maximum</li><li><i class="fa fa-check me-2"/>Programme écrit renouvelé toutes les six semaines</li><li><i class="fa fa-check me-2"/>Point de progression mensuel</li></ul>
+                                <a href="#" class="btn btn-primary w-100">Réserver un essai</a>
+                            </div>
+                        </div><div class="col-lg-4 col-md-6">
+                            <div class="o_pulse_offer h-100 ">
+                        
+                                <h3 class="h4 mb-1">Individuel</h3>
+                                <p class="o_pulse_meta mb-3">Coaching en tête-à-tête</p>
+                                <p class="o_pulse_offer_price mb-4">129 €<small>/ mois</small></p>
+                                <ul class="list-unstyled o_pulse_offer_feats mb-4"><li><i class="fa fa-check me-2"/>Tout la formule Encadré</li><li><i class="fa fa-check me-2"/>Quatre séances individuelles par mois</li><li><i class="fa fa-check me-2"/>Programme construit sur vos contraintes</li><li><i class="fa fa-check me-2"/>Suivi nutritionnel de base</li><li><i class="fa fa-check me-2"/>Créneaux réservés à l'avance</li></ul>
+                                <a href="#" class="btn btn-outline-primary w-100">Prendre rendez-vous</a>
+                            </div>
+                        </div></div>
+                </div>
+            </section>
+        <section class="o_pulse_cta pt64 pb64 o_cc o_cc5" style="background-image:url('/theme_pulse_lite/static/src/img/pulse_offre.png');">
+                <div class="container">
+                    <div class="o_pulse_cta_inner text-center mx-auto" style="max-width:46rem">
+                        <span class="o_pulse_eyebrow">Séance d'essai</span>
+                        <h2 class="mb-3">La première séance ne coûte rien et ne vous engage à rien</h2>
+                        <p class="lead mb-0">Bilan de mobilité, test de charges, une séance complète en groupe. Vous repartez avec votre programme écrit, même si vous ne revenez pas.</p>
+                        <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
+                            <a href="/contactus" class="btn btn-primary btn-lg">Réserver mon essai</a><a href="/tarifs" class="btn btn-outline-light btn-lg">Voir les tarifs</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </xpath>
+    </template>
+
+</data>
+</odoo>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_table_citation" name="Bandeau citation">
+    <section class="o_table_banner pt64 pb64 o_cc o_cc4">
+            <div class="container text-center">
+                <span class="o_table_eyebrow">Notre parti pris</span>
+                <p class="o_table_banner_text mb-0">« Une carte courte n'est pas une carte pauvre. C'est une carte dont on assume chaque ligne. »</p>
+                <p class="o_table_meta mt-3 mb-0">Élise Lavaur, cheffe</p>
+            </div>
+        </section>
+</template>
+
+</odoo>

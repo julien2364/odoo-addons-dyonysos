@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="o_table_snippets_lite" inherit_id="website.snippets" name="Blocs Restaurant">
+    <xpath expr="//t[@id='installed_snippets_hook']" position="before">
+        <t snippet-group="table" t-snippet="website.s_snippet_group" string="Restaurant"
+           t-thumbnail="/theme_table_lite/static/src/img/snippets_thumbs/group.png"/>
+    </xpath>
+    <xpath expr="//snippets[@id='snippet_structure']" position="inside">
+        <t t-snippet="theme_table_lite.s_table_hero" string="Bandeau de salle" group="table"
+           t-thumbnail="/theme_table_lite/static/src/img/snippets_thumbs/s_table_hero.png">
+            <keywords>bandeau, hero, accueil, restaurant, couverture</keywords>
+        </t>
+        <t t-snippet="theme_table_lite.s_table_plats" string="Trois assiettes en vitrine" group="table"
+           t-thumbnail="/theme_table_lite/static/src/img/snippets_thumbs/s_table_plats.png">
+            <keywords>plats, cartes, grille, menu, suggestions, vitrine</keywords>
+        </t>
+        <t t-snippet="theme_table_lite.s_table_maison" string="La maison en deux colonnes" group="table"
+           t-thumbnail="/theme_table_lite/static/src/img/snippets_thumbs/s_table_maison.png">
+            <keywords>histoire, maison, texte image, presentation, deux colonnes</keywords>
+        </t>
+        <t t-snippet="theme_table_lite.s_table_reserver" string="Appel à réservation" group="table"
+           t-thumbnail="/theme_table_lite/static/src/img/snippets_thumbs/s_table_reserver.png">
+            <keywords>appel, action, cta, reservation, contact, conversion</keywords>
+        </t>
+    </xpath>
+</template>
+
+</odoo>

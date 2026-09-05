@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_cadre_avis" name="Trois avis de vendeurs">
+    <section class="o_cadre_testimonials pt64 pb64 o_cc o_cc2">
+            <div class="container">
+                <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                    <span class="o_cadre_eyebrow">Retours</span>
+                    <h2 class="mb-3">Trois vendeurs, trois dossiers bouclés en 2025</h2>
+                
+                </div>
+                <div class="row g-4"><div class="col-lg-4 col-md-6">
+                        <figure class="o_cadre_quote h-100">
+                            <blockquote class="mb-4">L'estimation était 18 000 € sous celle d'une autre agence. Nous avons vendu au prix, en cinq semaines. La fourchette haute n'était pas un service.</blockquote>
+                            <figcaption class="d-flex align-items-center gap-3">
+                                <img src="/theme_cadre/static/src/img/cadre_av_1.png" alt="" class="o_cadre_avatar"/>
+                                <span><strong>Martine Delcroix</strong><br/>
+                                    <span class="o_cadre_meta">Maison de ville, Val-d'Ancre</span></span>
+                            </figcaption>
+                        </figure>
+                    </div><div class="col-lg-4 col-md-6">
+                        <figure class="o_cadre_quote h-100">
+                            <blockquote class="mb-4">Toutes les offres m'ont été transmises, y compris les basses. J'ai pu arbitrer moi-même au lieu d'apprendre après coup ce qu'on avait écarté.</blockquote>
+                            <figcaption class="d-flex align-items-center gap-3">
+                                <img src="/theme_cadre/static/src/img/cadre_av_2.png" alt="" class="o_cadre_avatar"/>
+                                <span><strong>Olivier Sanchez</strong><br/>
+                                    <span class="o_cadre_meta">Appartement, quartier des Halles</span></span>
+                            </figcaption>
+                        </figure>
+                    </div><div class="col-lg-4 col-md-6">
+                        <figure class="o_cadre_quote h-100">
+                            <blockquote class="mb-4">Même personne du premier rendez-vous jusqu'au notaire. Je n'ai jamais eu à réexpliquer mon dossier.</blockquote>
+                            <figcaption class="d-flex align-items-center gap-3">
+                                <img src="/theme_cadre/static/src/img/cadre_av_3.png" alt="" class="o_cadre_avatar"/>
+                                <span><strong>Fatou Ndiaye</strong><br/>
+                                    <span class="o_cadre_meta">Longère, Saint-Aubin-le-Haut</span></span>
+                            </figcaption>
+                        </figure>
+                    </div></div>
+            </div>
+        </section>
+</template>
+
+</odoo>

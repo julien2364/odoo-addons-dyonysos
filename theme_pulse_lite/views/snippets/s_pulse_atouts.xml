@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_pulse_atouts" name="Quatre points de méthode">
+    <section class="o_pulse_features pt64 pb64 o_cc o_cc1">
+            <div class="container">
+                <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                    <span class="o_pulse_eyebrow">Notre méthode</span>
+                    <h2 class="mb-3">Ce qui change d'une salle classique</h2>
+                
+                </div>
+                <div class="row g-4"><div class="col-lg-3 col-md-6">
+                        <div class="o_pulse_feature h-100">
+                            <span class="o_pulse_feature_icon"><i class="fa fa-users"/></span>
+                            <h3 class="h5 mt-3 mb-2">Groupes de huit</h3>
+                            <p class="mb-0">Au-delà de huit, un coach ne corrige plus personne. Nous n'ouvrons pas de neuvième place.</p>
+                        </div>
+                    </div><div class="col-lg-3 col-md-6">
+                        <div class="o_pulse_feature h-100">
+                            <span class="o_pulse_feature_icon"><i class="fa fa-line-chart"/></span>
+                            <h3 class="h5 mt-3 mb-2">Charges suivies</h3>
+                            <p class="mb-0">Chaque série est enregistrée. Vous voyez la courbe, pas une impression.</p>
+                        </div>
+                    </div><div class="col-lg-3 col-md-6">
+                        <div class="o_pulse_feature h-100">
+                            <span class="o_pulse_feature_icon"><i class="fa fa-calendar-check-o"/></span>
+                            <h3 class="h5 mt-3 mb-2">Cycles de six semaines</h3>
+                            <p class="mb-0">Programme réécrit tous les quarante-deux jours, à partir de vos chiffres réels.</p>
+                        </div>
+                    </div><div class="col-lg-3 col-md-6">
+                        <div class="o_pulse_feature h-100">
+                            <span class="o_pulse_feature_icon"><i class="fa fa-unlock"/></span>
+                            <h3 class="h5 mt-3 mb-2">Sans engagement</h3>
+                            <p class="mb-0">Résiliation au mois, en deux clics, sans lettre recommandée ni justificatif.</p>
+                        </div>
+                    </div></div>
+            </div>
+        </section>
+</template>
+
+</odoo>

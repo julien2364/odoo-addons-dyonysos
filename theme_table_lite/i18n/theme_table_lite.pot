@@ -1,0 +1,275 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* theme_table_lite
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-05 11:21+0000\n"
+"PO-Revision-Date: 2026-09-05 11:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_maison
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid "<i class=\"fa fa-angle-right me-2\"/>Cuisine ouverte à vue sur la salle"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_maison
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid "<i class=\"fa fa-angle-right me-2\"/>Menu enfant préparé à la commande"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_maison
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid "<i class=\"fa fa-angle-right me-2\"/>Pas de deuxième service le soir"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_maison
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid "<i class=\"fa fa-angle-right me-2\"/>Une seule salle, sans étage ni annexe"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_plats
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid "<span class=\"o_table_eyebrow\">Cette semaine</span>"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_hero
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid ""
+"<span class=\"o_table_eyebrow\">Cuisine de marché — Table de 24 "
+"couverts</span>"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_maison
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid "<span class=\"o_table_eyebrow\">La maison</span>"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_reserver
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid "<span class=\"o_table_eyebrow\">Réservation</span>"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_plats
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid "<span class=\"o_table_pill\">Dessert</span>"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_plats
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid "<span class=\"o_table_pill\">Entrée</span>"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_plats
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid "<span class=\"o_table_pill\">Plat</span>"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.o_table_snippets_lite
+msgid "Appel à réservation"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.o_table_snippets_lite
+msgid "Bandeau de salle"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_plats
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid "Ce qui sort de la cuisine en ce moment"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_plats
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid "Courge rôtie, noisette, sarriette"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_maison
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid "Découvrir le lieu"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.o_table_snippets_lite
+msgid "La maison en deux colonnes"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_reserver
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid "Le service du soir part vite en fin de semaine"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_hero
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid ""
+"Maison Lavaur cuisine ce que les producteurs de la vallée livrent le matin "
+"même. Six entrées, six plats, quatre desserts. Rien de plus, rien de figé."
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_maison
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid ""
+"Nous avons choisi de ne pas remplir deux fois la salle. Vous gardez votre "
+"table toute la soirée, la cuisine garde son rythme, et personne ne vous "
+"demande de partir."
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_reserver
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid ""
+"Nous ouvrons les réservations quinze jours à l'avance. Au-delà de six "
+"personnes, écrivez-nous : nous adaptons la carte et le rythme du service."
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_reserver
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid "Nous écrire"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_plats
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid "Pour deux · 11 €"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_plats
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid ""
+"Pâte feuilletée maison tournée la veille, pommes du verger haut, caramel au "
+"beurre demi-sel."
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.o_table_snippets_lite
+msgid "Restaurant"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_reserver
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid "Réserver en ligne"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_hero
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid "Réserver une table"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_plats
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid ""
+"Sept heures à basse température, jus court monté au thym. Les cocos viennent"
+" de la ferme du Mailhac."
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_plats
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid "Servi à partager · 26 €"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_plats
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid "Tarte fine aux pommes de garde"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.o_table_snippets_lite
+msgid "Trois assiettes en vitrine"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_plats
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid ""
+"Trois assiettes reconduites tant que le produit tient. Le reste tourne."
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_hero
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid "Une carte courte, réécrite tous les jeudis"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_plats
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid ""
+"Une courge de plein champ passée deux heures au four doux, noisettes "
+"torréfiées le matin, crème de sarriette."
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_maison
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid "Vingt-quatre couverts, une seule salle, aucun deuxième service"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_hero
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid "Voir la carte"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_plats
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid "Végétarien · 12 €"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.o_table_snippets_lite
+msgid "appel, action, cta, reservation, contact, conversion"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.o_table_snippets_lite
+msgid "bandeau, hero, accueil, restaurant, couverture"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.o_table_snippets_lite
+msgid "histoire, maison, texte image, presentation, deux colonnes"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.o_table_snippets_lite
+msgid "plats, cartes, grille, menu, suggestions, vitrine"
+msgstr ""
+
+#. module: theme_table_lite
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.s_table_plats
+#: model_terms:theme.ir.ui.view,arch:theme_table_lite.table_home
+msgid "Épaule d'agneau confite, haricots coco"
+msgstr ""

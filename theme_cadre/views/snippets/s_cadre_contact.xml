@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_cadre_contact" name="Coordonnées et horaires">
+    <section class="o_cadre_contact pt64 pb64 o_cc o_cc2">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5">
+                        <span class="o_cadre_eyebrow">L'agence</span>
+                        <h2 class="mb-3">Sur la place, en face du kiosque</h2>
+                        <p>Nous recevons sans rendez-vous aux heures d'ouverture, et sur rendez-vous en soirée le mardi et le jeudi.</p>
+                        <ul class="list-unstyled o_cadre_infos mt-4 mb-0"><li><i class="fa fa-map-marker me-2"/>8 place du Marché, 61300 Val-d'Ancre</li><li><i class="fa fa-phone me-2"/>02 33 00 00 00</li><li><i class="fa fa-envelope me-2"/>contact@rive-bastide.example</li><li><i class="fa fa-id-card-o me-2"/>Carte professionnelle T et G — CCI de l'Orne</li></ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="o_cadre_hours">
+                            <h3 class="h5 mb-3">Ouverture</h3>
+                            <ul class="list-unstyled mb-0"><li><span>Lundi</span><span>14h — 18h30</span></li><li><span>Mardi au vendredi</span><span>9h30 — 12h30 · 14h — 18h30</span></li><li><span>Samedi</span><span>9h30 — 13h</span></li><li><span>Dimanche</span><span>Fermé</span></li></ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="o_cadre_contact_media">
+                            <img src="/theme_cadre/static/src/img/cadre_contact.png" alt="" class="img-fluid"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</template>
+
+</odoo>

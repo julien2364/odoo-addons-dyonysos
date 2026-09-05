@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_pulse_galerie" name="Mosaïque du plateau">
+    <section class="o_pulse_gallery pt64 pb64 o_cc o_cc1">
+            <div class="container">
+                <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                    <span class="o_pulse_eyebrow">Le plateau</span>
+                    <h2 class="mb-3">420 m², deux racks, aucune machine guidée</h2>
+                
+                </div>
+                <div class="o_pulse_gal_grid"><div class="o_pulse_gal_cell is-wide"><img src="/theme_pulse/static/src/img/pulse_gal_1.png" alt=""/></div><div class="o_pulse_gal_cell "><img src="/theme_pulse/static/src/img/pulse_gal_2.png" alt=""/></div><div class="o_pulse_gal_cell "><img src="/theme_pulse/static/src/img/pulse_gal_3.png" alt=""/></div><div class="o_pulse_gal_cell "><img src="/theme_pulse/static/src/img/pulse_gal_4.png" alt=""/></div><div class="o_pulse_gal_cell "><img src="/theme_pulse/static/src/img/pulse_gal_5.png" alt=""/></div><div class="o_pulse_gal_cell "><img src="/theme_pulse/static/src/img/pulse_gal_6.png" alt=""/></div></div>
+            </div>
+        </section>
+</template>
+
+</odoo>

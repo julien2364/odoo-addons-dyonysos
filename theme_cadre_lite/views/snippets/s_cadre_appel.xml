@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_cadre_appel" name="Appel à estimation">
+    <section class="o_cadre_cta pt64 pb64 o_cc o_cc5" style="background-image:url('/theme_cadre_lite/static/src/img/cadre_cta.png');">
+            <div class="container">
+                <div class="o_cadre_cta_inner text-center mx-auto" style="max-width:46rem">
+                    <span class="o_cadre_eyebrow">Estimation</span>
+                    <h2 class="mb-3">Une estimation écrite, pas une fourchette au téléphone</h2>
+                    <p class="lead mb-0">Nous nous déplaçons, nous mesurons, nous comparons, et nous vous remettons un document daté et signé. Gratuit et sans engagement de mandat.</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
+                        <a href="/contactus" class="btn btn-primary btn-lg">Demander une estimation</a><a href="/honoraires" class="btn btn-outline-light btn-lg">Voir nos honoraires</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+</template>
+
+</odoo>

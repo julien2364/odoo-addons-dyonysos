@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="o_pulse_snippets_lite" inherit_id="website.snippets" name="Blocs Sport">
+    <xpath expr="//t[@id='installed_snippets_hook']" position="before">
+        <t snippet-group="pulse" t-snippet="website.s_snippet_group" string="Sport"
+           t-thumbnail="/theme_pulse_lite/static/src/img/snippets_thumbs/group.png"/>
+    </xpath>
+    <xpath expr="//snippets[@id='snippet_structure']" position="inside">
+        <t t-snippet="theme_pulse_lite.s_pulse_hero" string="Bandeau plateau plein écran" group="pulse"
+           t-thumbnail="/theme_pulse_lite/static/src/img/snippets_thumbs/s_pulse_hero.png">
+            <keywords>bandeau, hero, accueil, salle, sport, couverture</keywords>
+        </t>
+        <t t-snippet="theme_pulse_lite.s_pulse_formules" string="Trois formules d'abonnement" group="pulse"
+           t-thumbnail="/theme_pulse_lite/static/src/img/snippets_thumbs/s_pulse_formules.png">
+            <keywords>formules, abonnements, tarifs, prix, offres, adhesion</keywords>
+        </t>
+        <t t-snippet="theme_pulse_lite.s_pulse_atouts" string="Quatre points de méthode" group="pulse"
+           t-thumbnail="/theme_pulse_lite/static/src/img/snippets_thumbs/s_pulse_atouts.png">
+            <keywords>methode, points forts, atouts, principes, services</keywords>
+        </t>
+        <t t-snippet="theme_pulse_lite.s_pulse_essai" string="Appel à séance d'essai" group="pulse"
+           t-thumbnail="/theme_pulse_lite/static/src/img/snippets_thumbs/s_pulse_essai.png">
+            <keywords>appel, action, cta, essai, inscription, conversion</keywords>
+        </t>
+    </xpath>
+</template>
+
+</odoo>

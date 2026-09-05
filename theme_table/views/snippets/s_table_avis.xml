@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_table_avis" name="Trois avis clients">
+    <section class="o_table_testimonials pt64 pb64 o_cc o_cc3">
+            <div class="container">
+                <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                    <span class="o_table_eyebrow">Ce qu'on nous dit</span>
+                    <h2 class="mb-3">Trois retours de salle, recueillis en janvier</h2>
+                
+                </div>
+                <div class="row g-4"><div class="col-lg-4 col-md-6">
+                        <figure class="o_table_quote h-100">
+                            <blockquote class="mb-4">On nous a laissé la table jusqu'à minuit sans jamais nous presser. C'est devenu tellement rare que ça mérite d'être écrit.</blockquote>
+                            <figcaption class="d-flex align-items-center gap-3">
+                                <img src="/theme_table/static/src/img/table_av_1.png" alt="" class="o_table_avatar"/>
+                                <span><strong>Camille Vasseur</strong><br/>
+                                    <span class="o_table_meta">Cliente depuis 2023</span></span>
+                            </figcaption>
+                        </figure>
+                    </div><div class="col-lg-4 col-md-6">
+                        <figure class="o_table_quote h-100">
+                            <blockquote class="mb-4">J'ai demandé d'où venait l'agneau. On m'a donné le nom de l'éleveur et le village. Ça répond à la question.</blockquote>
+                            <figcaption class="d-flex align-items-center gap-3">
+                                <img src="/theme_table/static/src/img/table_av_2.png" alt="" class="o_table_avatar"/>
+                                <span><strong>Hakim Belkacem</strong><br/>
+                                    <span class="o_table_meta">Habitué du déjeuner</span></span>
+                            </figcaption>
+                        </figure>
+                    </div><div class="col-lg-4 col-md-6">
+                        <figure class="o_table_quote h-100">
+                            <blockquote class="mb-4">Menu enfant préparé à la commande, sans surcoût, sans nuggets. Mes deux garçons ont tout mangé.</blockquote>
+                            <figcaption class="d-flex align-items-center gap-3">
+                                <img src="/theme_table/static/src/img/table_av_3.png" alt="" class="o_table_avatar"/>
+                                <span><strong>Sophie Renaudin</strong><br/>
+                                    <span class="o_table_meta">Table du dimanche</span></span>
+                            </figcaption>
+                        </figure>
+                    </div></div>
+            </div>
+        </section>
+</template>
+
+</odoo>

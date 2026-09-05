@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_cadre_faq" name="Questions fréquentes">
+    <section class="o_cadre_faq pt64 pb64 o_cc o_cc1">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                    <span class="o_cadre_eyebrow">Questions fréquentes</span>
+                    <h2 class="mb-3">Ce qu'on nous demande avant de signer</h2>
+                
+                </div>
+                        <div class="accordion o_cadre_acc" id="o_cadre_faq_acc"><div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button " type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#o_cadre_faq_acc_0">L'estimation est-elle vraiment gratuite ?</button>
+                            </h3>
+                            <div id="o_cadre_faq_acc_0" class="accordion-collapse collapse show"
+                                 data-bs-parent="#o_cadre_faq_acc">
+                                <div class="accordion-body">Oui, et sans contrepartie. Vous repartez avec le rapport écrit même si vous ne signez pas de mandat, et même si vous confiez ensuite le bien à une autre agence.</div>
+                            </div>
+                        </div><div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#o_cadre_faq_acc_1">Puis-je résilier le mandat ?</button>
+                            </h3>
+                            <div id="o_cadre_faq_acc_1" class="accordion-collapse collapse "
+                                 data-bs-parent="#o_cadre_faq_acc">
+                                <div class="accordion-body">Après le premier mois, à tout moment, par lettre recommandée, sans indemnité ni clause de reconduction tacite. C'est écrit à l'article 4 du mandat.</div>
+                            </div>
+                        </div><div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#o_cadre_faq_acc_2">Qui paie les honoraires ?</button>
+                            </h3>
+                            <div id="o_cadre_faq_acc_2" class="accordion-collapse collapse "
+                                 data-bs-parent="#o_cadre_faq_acc">
+                                <div class="accordion-body">Par défaut le vendeur, ce qui est mentionné dans chaque annonce. Une prise en charge par l'acquéreur est possible et doit alors figurer dès la publication.</div>
+                            </div>
+                        </div><div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#o_cadre_faq_acc_3">Que se passe-t-il si le bien ne se vend pas ?</button>
+                            </h3>
+                            <div id="o_cadre_faq_acc_3" class="accordion-collapse collapse "
+                                 data-bs-parent="#o_cadre_faq_acc">
+                                <div class="accordion-body">Nous vous remettons à trois mois une note écrite : nombre de contacts, de visites, retours des acquéreurs et recommandation chiffrée. Vous décidez de la suite.</div>
+                            </div>
+                        </div><div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#o_cadre_faq_acc_4">Faites-vous de la gestion locative ?</button>
+                            </h3>
+                            <div id="o_cadre_faq_acc_4" class="accordion-collapse collapse "
+                                 data-bs-parent="#o_cadre_faq_acc">
+                                <div class="accordion-body">Oui, sur le même principe de barème public. La gestion est assurée en interne, sans sous-traitance à un cabinet extérieur.</div>
+                            </div>
+                        </div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</template>
+
+</odoo>

@@ -1,0 +1,84 @@
+// =============================================================================
+// Thème Cadre — palette et typographie
+// Généré par l'usine à thèmes DYONYSOS. Aucune ressource externe n'est copiée :
+// les polices sont chargées par Odoo depuis Google Fonts via $o-theme-font-configs.
+// =============================================================================
+
+// -- Polices ------------------------------------------------------------------
+$o-theme-font-configs: map-merge($o-theme-font-configs, (
+    'Archivo': (
+        'family': ('Archivo', 'Trebuchet MS', sans-serif),
+        'url': 'Archivo:400,500,600,700',
+    ),
+    'Manrope': (
+        'family': ('Manrope', 'Trebuchet MS', sans-serif),
+        'url': 'Manrope:400,500,600,700,800',
+    ),
+));
+
+// -- Palettes -----------------------------------------------------------------
+// Contrastes vérifiés (WCAG AA) :
+//   #16283F sur #FFFFFF → 13,84:1  |  #FFFFFF sur #16283F → 13,84:1
+//   #B5854A est réservé aux aplats et aux grands textes (3,32:1)
+$o-color-palettes: map-merge($o-color-palettes, (
+    'cadre-nuit': (
+        'o-color-1': #B5854A,
+        'o-color-2': #16283F,
+        'o-color-3': #F1EEE8,
+        'o-color-4': #FFFFFF,
+        'o-color-5': #0C1A2A,
+
+        'menu': 1,
+        'footer': 5,
+        'copyright': 5,
+    ),
+    'cadre-ardoise': (
+        'o-color-1': #3E7CA6,
+        'o-color-2': #233038,
+        'o-color-3': #EEF1F3,
+        'o-color-4': #FFFFFF,
+        'o-color-5': #151D22,
+
+        'menu': 1,
+        'footer': 5,
+        'copyright': 5,
+    ),
+));
+$o-selected-color-palettes-names: join(
+    ('cadre-nuit', 'cadre-ardoise'), $o-selected-color-palettes-names, comma);
+
+// -- Valeurs du site ----------------------------------------------------------
+$o-website-values-palettes: (
+    (
+        'color-palettes-name': 'cadre-nuit',
+
+        'font': 'Manrope',
+        'headings-font': 'Archivo',
+        'navbar-font': 'Archivo',
+        'buttons-font': 'Archivo',
+
+        'body-line-height': 1.68,
+        'headings-line-height': 1.14,
+        'paragraph-margin-bottom': 16px,
+
+        'btn-border-radius': 0.125rem,
+        'btn-border-radius-sm': 0.125rem,
+        'btn-border-radius-lg': 0.125rem,
+        'btn-padding-y': 0.8rem,
+        'btn-padding-x': 1.8rem,
+
+        'input-border-radius': 0.125rem,
+
+        'link-underline': 'hover',
+        'header-template': 'default',
+        'header-links-style': 'default',
+        'footer-template': 'default',
+        'layout': 'full',
+    ),
+);
+$o-website-values-palette-number: 1;
+
+$o-theme-h1-font-size-multiplier: 3.1;
+$o-theme-h2-font-size-multiplier: 2.15;
+$o-theme-h3-font-size-multiplier: 1.55;
+$o-theme-h4-font-size-multiplier: 1.25;

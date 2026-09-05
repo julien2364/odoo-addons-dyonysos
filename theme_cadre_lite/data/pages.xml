@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="0">
+
+<!-- Pages de démonstration du thème. Dans un module theme_*, un <template>
+     devient une theme.ir.ui.view et la page une theme.website.page : rien
+     n'est créé dans le site avant l'application du thème. Le balisage est
+     dupliqué depuis views/snippets/ pour que chaque section soit éditable
+     dans l'oe_structure de la page. -->
+
+    <template id="cadre_home" inherit_id="website.homepage" name="Accueil — Rive &amp; Bastide">
+        <xpath expr="//div[@id='wrap']" position="inside">
+        <section class="o_cadre_hero o_cadre_hero_split o_cc o_cc1 pt64 pb64">
+                <div class="container">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6">
+                            <span class="o_cadre_eyebrow">Transaction et gestion — Rive &amp; Bastide</span>
+                            <h1 class="mb-3">Le prix affiché est celui que nous défendons</h1>
+                            <p class="lead">Nous estimons au comparable réel, nous publions le prix net vendeur et nous ne le baissons pas trois semaines plus tard pour sauver un mandat.</p>
+                            <ul class="o_cadre_marks list-unstyled mt-4 mb-0"><li><i class="fa fa-check-circle me-2"/>Estimation écrite sous 72 heures</li><li><i class="fa fa-check-circle me-2"/>Mandat simple, sans clause de reconduction</li><li><i class="fa fa-check-circle me-2"/>Honoraires connus avant la première visite</li><li><i class="fa fa-check-circle me-2"/>Un seul interlocuteur du mandat à l'acte</li></ul>
+                            <div class="d-flex flex-wrap gap-3 mt-4"><a href="/honoraires" class="btn btn-primary btn-lg">Estimer mon bien</a><a href="/nos-biens" class="btn btn-outline-primary btn-lg">Voir les biens</a></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="o_cadre_hero_media">
+                                <img src="/theme_cadre_lite/static/src/img/cadre_hero.png" alt="" class="img-fluid"/>
+                                <div class="o_cadre_hero_badge"><strong>41 j</strong><span>délai médian de vente en 2025</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <section class="o_cadre_cards pt64 pb64 o_cc o_cc1">
+                <div class="container">
+                    <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                        <span class="o_cadre_eyebrow">Sélection</span>
+                        <h2 class="mb-3">Trois biens rentrés cette semaine</h2>
+                        <p class="lead mb-0">Prix net vendeur, honoraires affichés séparément, diagnostics disponibles au premier contact.</p>
+                    </div>
+                    <div class="row g-4"><div class="col-lg-4 col-md-6">
+                            <article class="o_cadre_card h-100">
+                                <div class="o_cadre_card_media">
+                                    <img src="/theme_cadre_lite/static/src/img/cadre_bien_1.png" alt=""/>
+                                    <span class="o_cadre_pill">Vendu sous 30 j</span>
+                                </div>
+                                <div class="o_cadre_card_body">
+                                    <h3 class="h4 mb-2">Maison de ville, 132 m², cœur historique</h3>
+                                    <p class="mb-3">Quatre chambres, cave voûtée, cour exposée sud. Toiture refaite en 2021, menuiseries double vitrage sur l'ensemble.</p>
+                                    <p class="o_cadre_meta mb-0">Val-d'Ancre · 268 000 € net vendeur</p>
+                                </div>
+                            </article>
+                        </div><div class="col-lg-4 col-md-6">
+                            <article class="o_cadre_card h-100">
+                                <div class="o_cadre_card_media">
+                                    <img src="/theme_cadre_lite/static/src/img/cadre_bien_2.png" alt=""/>
+                                    <span class="o_cadre_pill">Nouveau</span>
+                                </div>
+                                <div class="o_cadre_card_body">
+                                    <h3 class="h4 mb-2">Appartement traversant, 74 m², dernier étage</h3>
+                                    <p class="mb-3">Deux chambres, balcon filant, ascenseur. Charges de copropriété détaillées et procès-verbaux des trois dernières assemblées fournis.</p>
+                                    <p class="o_cadre_meta mb-0">Quartier des Halles · 189 000 € net vendeur</p>
+                                </div>
+                            </article>
+                        </div><div class="col-lg-4 col-md-6">
+                            <article class="o_cadre_card h-100">
+                                <div class="o_cadre_card_media">
+                                    <img src="/theme_cadre_lite/static/src/img/cadre_bien_3.png" alt=""/>
+                                    <span class="o_cadre_pill">Sous compromis</span>
+                                </div>
+                                <div class="o_cadre_card_body">
+                                    <h3 class="h4 mb-2">Longère rénovée, 168 m², terrain de 2 400 m²</h3>
+                                    <p class="mb-3">Isolation reprise en 2023, pompe à chaleur, dépendance aménageable. Assainissement conforme, contrôle de moins d'un an.</p>
+                                    <p class="o_cadre_meta mb-0">Saint-Aubin-le-Haut · 342 000 € net vendeur</p>
+                                </div>
+                            </article>
+                        </div></div>
+                </div>
+            </section>
+        <section class="o_cadre_features pt64 pb64 o_cc o_cc2">
+                <div class="container">
+                    <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                        <span class="o_cadre_eyebrow">Notre méthode</span>
+                        <h2 class="mb-3">Quatre engagements écrits dans le mandat</h2>
+                        <p class="lead mb-0">Pas de promesse commerciale : ces quatre points figurent noir sur blanc dans le document que vous signez.</p>
+                    </div>
+                    <div class="row g-4"><div class="col-lg-3 col-md-6">
+                            <div class="o_cadre_feature h-100">
+                                <span class="o_cadre_feature_icon"><i class="fa fa-calculator"/></span>
+                                <h3 class="h5 mt-3 mb-2">Estimation au comparable</h3>
+                                <p class="mb-0">Cinq ventes réelles du même secteur, moins de douze mois, transmises avec le rapport.</p>
+                            </div>
+                        </div><div class="col-lg-3 col-md-6">
+                            <div class="o_cadre_feature h-100">
+                                <span class="o_cadre_feature_icon"><i class="fa fa-file-text-o"/></span>
+                                <h3 class="h5 mt-3 mb-2">Mandat sans reconduction</h3>
+                                <p class="mb-0">Trois mois, résiliable à tout moment après le premier mois, sans indemnité.</p>
+                            </div>
+                        </div><div class="col-lg-3 col-md-6">
+                            <div class="o_cadre_feature h-100">
+                                <span class="o_cadre_feature_icon"><i class="fa fa-eur"/></span>
+                                <h3 class="h5 mt-3 mb-2">Honoraires fixes</h3>
+                                <p class="mb-0">Un barème public, identique pour tous, sans commission variable à la tête du dossier.</p>
+                            </div>
+                        </div><div class="col-lg-3 col-md-6">
+                            <div class="o_cadre_feature h-100">
+                                <span class="o_cadre_feature_icon"><i class="fa fa-user"/></span>
+                                <h3 class="h5 mt-3 mb-2">Un seul interlocuteur</h3>
+                                <p class="mb-0">La personne qui estime est celle qui visite, négocie et vous accompagne chez le notaire.</p>
+                            </div>
+                        </div></div>
+                </div>
+            </section>
+        <section class="o_cadre_cta pt64 pb64 o_cc o_cc5" style="background-image:url('/theme_cadre_lite/static/src/img/cadre_cta.png');">
+                <div class="container">
+                    <div class="o_cadre_cta_inner text-center mx-auto" style="max-width:46rem">
+                        <span class="o_cadre_eyebrow">Estimation</span>
+                        <h2 class="mb-3">Une estimation écrite, pas une fourchette au téléphone</h2>
+                        <p class="lead mb-0">Nous nous déplaçons, nous mesurons, nous comparons, et nous vous remettons un document daté et signé. Gratuit et sans engagement de mandat.</p>
+                        <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
+                            <a href="/contactus" class="btn btn-primary btn-lg">Demander une estimation</a><a href="/honoraires" class="btn btn-outline-light btn-lg">Voir nos honoraires</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </xpath>
+    </template>
+
+</data>
+</odoo>

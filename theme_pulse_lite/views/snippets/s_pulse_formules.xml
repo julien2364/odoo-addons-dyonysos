@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_pulse_formules" name="Trois formules d'abonnement">
+    <section class="o_pulse_offers pt64 pb64 o_cc o_cc1">
+            <div class="container">
+                <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                    <span class="o_pulse_eyebrow">Abonnements</span>
+                    <h2 class="mb-3">Trois formules, sans engagement de douze mois</h2>
+                    <p class="lead mb-0">Résiliables au mois. Aucun frais de dossier, aucune reconduction automatique.</p>
+                </div>
+                <div class="row g-4 justify-content-center"><div class="col-lg-4 col-md-6">
+                        <div class="o_pulse_offer h-100 ">
+                        
+                            <h3 class="h4 mb-1">Libre</h3>
+                            <p class="o_pulse_meta mb-3">Accès plateau et vestiaires</p>
+                            <p class="o_pulse_offer_price mb-4">39 €<small>/ mois</small></p>
+                            <ul class="list-unstyled o_pulse_offer_feats mb-4"><li><i class="fa fa-check me-2"/>Accès de 6h à 22h, sept jours sur sept</li><li><i class="fa fa-check me-2"/>Bilan d'entrée avec un coach</li><li><i class="fa fa-check me-2"/>Application de suivi des charges</li><li><i class="fa fa-check me-2"/>Vestiaires et douches</li><li><i class="fa fa-check me-2"/>Résiliable au mois</li></ul>
+                            <a href="#" class="btn btn-outline-primary w-100">Commencer</a>
+                        </div>
+                    </div><div class="col-lg-4 col-md-6">
+                        <div class="o_pulse_offer h-100 is-featured">
+                            <span class="o_pulse_offer_tag">Le plus pris</span>
+                            <h3 class="h4 mb-1">Encadré</h3>
+                            <p class="o_pulse_meta mb-3">La formule de 6 adhérents sur 10</p>
+                            <p class="o_pulse_offer_price mb-4">69 €<small>/ mois</small></p>
+                            <ul class="list-unstyled o_pulse_offer_feats mb-4"><li><i class="fa fa-check me-2"/>Tout la formule Libre</li><li><i class="fa fa-check me-2"/>Trois cours collectifs par semaine</li><li><i class="fa fa-check me-2"/>Groupes de huit maximum</li><li><i class="fa fa-check me-2"/>Programme écrit renouvelé toutes les six semaines</li><li><i class="fa fa-check me-2"/>Point de progression mensuel</li></ul>
+                            <a href="#" class="btn btn-primary w-100">Réserver un essai</a>
+                        </div>
+                    </div><div class="col-lg-4 col-md-6">
+                        <div class="o_pulse_offer h-100 ">
+                        
+                            <h3 class="h4 mb-1">Individuel</h3>
+                            <p class="o_pulse_meta mb-3">Coaching en tête-à-tête</p>
+                            <p class="o_pulse_offer_price mb-4">129 €<small>/ mois</small></p>
+                            <ul class="list-unstyled o_pulse_offer_feats mb-4"><li><i class="fa fa-check me-2"/>Tout la formule Encadré</li><li><i class="fa fa-check me-2"/>Quatre séances individuelles par mois</li><li><i class="fa fa-check me-2"/>Programme construit sur vos contraintes</li><li><i class="fa fa-check me-2"/>Suivi nutritionnel de base</li><li><i class="fa fa-check me-2"/>Créneaux réservés à l'avance</li></ul>
+                            <a href="#" class="btn btn-outline-primary w-100">Prendre rendez-vous</a>
+                        </div>
+                    </div></div>
+            </div>
+        </section>
+</template>
+
+</odoo>

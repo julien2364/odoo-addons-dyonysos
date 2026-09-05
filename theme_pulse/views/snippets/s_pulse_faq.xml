@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_pulse_faq" name="Questions fréquentes">
+    <section class="o_pulse_faq pt64 pb64 o_cc o_cc1">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                    <span class="o_pulse_eyebrow">Questions fréquentes</span>
+                    <h2 class="mb-3">Ce qu'on nous demande avant de s'inscrire</h2>
+                
+                </div>
+                        <div class="accordion o_pulse_acc" id="o_pulse_faq_acc"><div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button " type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#o_pulse_faq_acc_0">Faut-il un niveau minimum ?</button>
+                            </h3>
+                            <div id="o_pulse_faq_acc_0" class="accordion-collapse collapse show"
+                                 data-bs-parent="#o_pulse_faq_acc">
+                                <div class="accordion-body">Non. La formule Reprise progressive existe précisément pour un retour après un arrêt long. Le bilan d'entrée détermine le point de départ, pas un test d'admission.</div>
+                            </div>
+                        </div><div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#o_pulse_faq_acc_1">Puis-je résilier quand je veux ?</button>
+                            </h3>
+                            <div id="o_pulse_faq_acc_1" class="accordion-collapse collapse "
+                                 data-bs-parent="#o_pulse_faq_acc">
+                                <div class="accordion-body">Oui, depuis votre espace adhérent, avec effet à la fin du mois en cours. Aucun frais, aucun justificatif, aucune lettre recommandée.</div>
+                            </div>
+                        </div><div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#o_pulse_faq_acc_2">Les cours sont-ils vraiment limités à huit ?</button>
+                            </h3>
+                            <div id="o_pulse_faq_acc_2" class="accordion-collapse collapse "
+                                 data-bs-parent="#o_pulse_faq_acc">
+                                <div class="accordion-body">Oui. La réservation se ferme automatiquement à huit places. Aucune place supplémentaire n'est ouverte, même pour un adhérent en formule Individuel.</div>
+                            </div>
+                        </div><div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#o_pulse_faq_acc_3">Y a-t-il des vestiaires et des douches ?</button>
+                            </h3>
+                            <div id="o_pulse_faq_acc_3" class="accordion-collapse collapse "
+                                 data-bs-parent="#o_pulse_faq_acc">
+                                <div class="accordion-body">Deux vestiaires avec casiers à code et six douches individuelles. Serviette non fournie.</div>
+                            </div>
+                        </div><div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#o_pulse_faq_acc_4">Vendez-vous des compléments alimentaires ?</button>
+                            </h3>
+                            <div id="o_pulse_faq_acc_4" class="accordion-collapse collapse "
+                                 data-bs-parent="#o_pulse_faq_acc">
+                                <div class="accordion-body">Non. Nous ne vendons aucun produit. Le suivi nutritionnel de la formule Individuel reste de l'accompagnement, pas de la prescription.</div>
+                            </div>
+                        </div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</template>
+
+</odoo>

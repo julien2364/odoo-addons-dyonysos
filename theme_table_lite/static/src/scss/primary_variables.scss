@@ -1,0 +1,84 @@
+// =============================================================================
+// Thème La Table — palette et typographie
+// Généré par l'usine à thèmes DYONYSOS. Aucune ressource externe n'est copiée :
+// les polices sont chargées par Odoo depuis Google Fonts via $o-theme-font-configs.
+// =============================================================================
+
+// -- Polices ------------------------------------------------------------------
+$o-theme-font-configs: map-merge($o-theme-font-configs, (
+    'Fraunces': (
+        'family': ('Fraunces', 'Times New Roman', serif),
+        'url': 'Fraunces:400,500,600,700',
+    ),
+    'Work Sans': (
+        'family': ('Work Sans', 'Trebuchet MS', sans-serif),
+        'url': 'Work+Sans:400,500,600,700',
+    ),
+));
+
+// -- Palettes -----------------------------------------------------------------
+// Contrastes vérifiés (WCAG AA) :
+//   #B4472F sur #FDF8F0 → 5,21:1   |  #3A2E26 sur #FDF8F0 → 12,84:1
+//   #C9A24B sur #241C17 → 7,02:1
+$o-color-palettes: map-merge($o-color-palettes, (
+    'table-terre': (
+        'o-color-1': #B4472F,
+        'o-color-2': #3A2E26,
+        'o-color-3': #F3E7D6,
+        'o-color-4': #FDF8F0,
+        'o-color-5': #241C17,
+
+        'menu': 4,
+        'footer': 5,
+        'copyright': 5,
+    ),
+    'table-olive': (
+        'o-color-1': #5E7A3D,
+        'o-color-2': #2F3A2A,
+        'o-color-3': #EEF0E4,
+        'o-color-4': #FCFDF8,
+        'o-color-5': #1E271B,
+
+        'menu': 4,
+        'footer': 5,
+        'copyright': 5,
+    ),
+));
+$o-selected-color-palettes-names: join(
+    ('table-terre', 'table-olive'), $o-selected-color-palettes-names, comma);
+
+// -- Valeurs du site ----------------------------------------------------------
+$o-website-values-palettes: (
+    (
+        'color-palettes-name': 'table-terre',
+
+        'font': 'Work Sans',
+        'headings-font': 'Fraunces',
+        'navbar-font': 'Fraunces',
+        'buttons-font': 'Fraunces',
+
+        'body-line-height': 1.72,
+        'headings-line-height': 1.12,
+        'paragraph-margin-bottom': 18px,
+
+        'btn-border-radius': 0.25rem,
+        'btn-border-radius-sm': 0.25rem,
+        'btn-border-radius-lg': 0.25rem,
+        'btn-padding-y': 0.8rem,
+        'btn-padding-x': 1.9rem,
+
+        'input-border-radius': 0.25rem,
+
+        'link-underline': 'hover',
+        'header-template': 'default',
+        'header-links-style': 'default',
+        'footer-template': 'default',
+        'layout': 'full',
+    ),
+);
+$o-website-values-palette-number: 1;
+
+$o-theme-h1-font-size-multiplier: 3.3;
+$o-theme-h2-font-size-multiplier: 2.35;
+$o-theme-h3-font-size-multiplier: 1.65;
+$o-theme-h4-font-size-multiplier: 1.3;

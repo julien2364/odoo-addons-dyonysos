@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_pulse_avis" name="Trois retours d'adhérents">
+    <section class="o_pulse_testimonials pt64 pb64 o_cc o_cc2">
+            <div class="container">
+                <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                    <span class="o_pulse_eyebrow">Retours</span>
+                    <h2 class="mb-3">Trois adhérents, trois points de départ différents</h2>
+                
+                </div>
+                <div class="row g-4"><div class="col-lg-4 col-md-6">
+                        <figure class="o_pulse_quote h-100">
+                            <blockquote class="mb-4">Je n'avais jamais soulevé une barre. Six semaines plus tard j'avais un programme à mon nom et des chiffres qui montaient. Personne ne m'a vendu de complément alimentaire.</blockquote>
+                            <figcaption class="d-flex align-items-center gap-3">
+                                <img src="/theme_pulse/static/src/img/pulse_av_1.png" alt="" class="o_pulse_avatar"/>
+                                <span><strong>Léa Marchandeau</strong><br/>
+                                    <span class="o_pulse_meta">Adhérente depuis 14 mois</span></span>
+                            </figcaption>
+                        </figure>
+                    </div><div class="col-lg-4 col-md-6">
+                        <figure class="o_pulse_quote h-100">
+                            <blockquote class="mb-4">Groupes de huit, c'est la vraie différence. Le coach voit quand mon dos part, il le dit tout de suite. Dans mon ancienne salle on était trente.</blockquote>
+                            <figcaption class="d-flex align-items-center gap-3">
+                                <img src="/theme_pulse/static/src/img/pulse_av_2.png" alt="" class="o_pulse_avatar"/>
+                                <span><strong>Ibrahim Traoré</strong><br/>
+                                    <span class="o_pulse_meta">Formule Encadré</span></span>
+                            </figcaption>
+                        </figure>
+                    </div><div class="col-lg-4 col-md-6">
+                        <figure class="o_pulse_quote h-100">
+                            <blockquote class="mb-4">Résiliation en deux clics quand j'ai déménagé trois mois. Reprise sans frais de dossier au retour. C'est rare pour être signalé.</blockquote>
+                            <figcaption class="d-flex align-items-center gap-3">
+                                <img src="/theme_pulse/static/src/img/pulse_av_3.png" alt="" class="o_pulse_avatar"/>
+                                <span><strong>Cécile Aubertin</strong><br/>
+                                    <span class="o_pulse_meta">Adhérente depuis 3 ans</span></span>
+                            </figcaption>
+                        </figure>
+                    </div></div>
+            </div>
+        </section>
+</template>
+
+</odoo>

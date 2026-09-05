@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_pulse_contact" name="Coordonnées et horaires">
+    <section class="o_pulse_contact pt64 pb64 o_cc o_cc2">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5">
+                        <span class="o_pulse_eyebrow">Nous trouver</span>
+                        <h2 class="mb-3">Zone de la Fonderie, bâtiment 12</h2>
+                        <p>Parking gratuit devant le bâtiment, arceaux à vélo couverts. Arrêt de bus « Fonderie » à cent mètres, lignes 4 et 11.</p>
+                        <ul class="list-unstyled o_pulse_infos mt-4 mb-0"><li><i class="fa fa-map-marker me-2"/>12 rue de la Fonderie, 33520 Bassens-Rive</li><li><i class="fa fa-phone me-2"/>05 56 00 00 00</li><li><i class="fa fa-envelope me-2"/>plateau@fonderie12.example</li><li><i class="fa fa-bicycle me-2"/>Arceaux couverts et douches à disposition</li></ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="o_pulse_hours">
+                            <h3 class="h5 mb-3">Ouverture du plateau</h3>
+                            <ul class="list-unstyled mb-0"><li><span>Lundi au vendredi</span><span>6h — 22h</span></li><li><span>Samedi</span><span>8h — 19h</span></li><li><span>Dimanche</span><span>9h — 13h</span></li><li><span>Jours fériés</span><span>9h — 13h</span></li></ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="o_pulse_contact_media">
+                            <img src="/theme_pulse/static/src/img/pulse_contact.png" alt="" class="img-fluid"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</template>
+
+</odoo>

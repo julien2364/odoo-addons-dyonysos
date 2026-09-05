@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="0">
+
+<!-- Pages de démonstration du thème. Dans un module theme_*, un <template>
+     devient une theme.ir.ui.view et la page une theme.website.page : rien
+     n'est créé dans le site avant l'application du thème. Le balisage est
+     dupliqué depuis views/snippets/ pour que chaque section soit éditable
+     dans l'oe_structure de la page. -->
+
+    <template id="table_carte" name="La carte">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+            <section class="o_table_pricelist pt64 pb64 o_cc o_cc1">
+                    <div class="container">
+                        <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                            <span class="o_table_eyebrow">La carte</span>
+                            <h2 class="mb-3">Ce qui est servi cette quinzaine</h2>
+                            <p class="lead mb-0">La carte est réécrite tous les jeudis. Les prix sont nets, service compris.</p>
+                        </div>
+                        <div class="row g-5"><div class="col-lg-6">
+                                <div class="o_table_pl_group">
+                                    <h3 class="h4 mb-1">Entrées</h3>
+                                    <p class="o_table_meta mb-4">Toutes servies avec le pain de la Ferme haute</p>
+                                    <ul class="list-unstyled mb-0"><li class="o_table_pl_row">
+                                        <span class="o_table_pl_name">Courge rôtie, noisette, sarriette
+                                            <em>Végétarien</em></span>
+                                        <span class="o_table_pl_dots"/>
+                                        <span class="o_table_pl_price">12 €</span>
+                                    </li><li class="o_table_pl_row">
+                                        <span class="o_table_pl_name">Terrine de campagne, cornichons maison
+                                            </span>
+                                        <span class="o_table_pl_dots"/>
+                                        <span class="o_table_pl_price">11 €</span>
+                                    </li><li class="o_table_pl_row">
+                                        <span class="o_table_pl_name">Poireaux vinaigrette, œuf mollet
+                                            </span>
+                                        <span class="o_table_pl_dots"/>
+                                        <span class="o_table_pl_price">10 €</span>
+                                    </li><li class="o_table_pl_row">
+                                        <span class="o_table_pl_name">Velouté du jour
+                                            <em>Selon arrivage</em></span>
+                                        <span class="o_table_pl_dots"/>
+                                        <span class="o_table_pl_price">9 €</span>
+                                    </li><li class="o_table_pl_row">
+                                        <span class="o_table_pl_name">Maquereau mariné, crème d'aneth
+                                            </span>
+                                        <span class="o_table_pl_dots"/>
+                                        <span class="o_table_pl_price">13 €</span>
+                                    </li></ul>
+                                </div>
+                            </div><div class="col-lg-6">
+                                <div class="o_table_pl_group">
+                                    <h3 class="h4 mb-1">Plats</h3>
+                                    <p class="o_table_meta mb-4">Un plat végétarien est toujours à la carte</p>
+                                    <ul class="list-unstyled mb-0"><li class="o_table_pl_row">
+                                        <span class="o_table_pl_name">Épaule d'agneau confite, haricots coco
+                                            <em>À partager</em></span>
+                                        <span class="o_table_pl_dots"/>
+                                        <span class="o_table_pl_price">26 €</span>
+                                    </li><li class="o_table_pl_row">
+                                        <span class="o_table_pl_name">Filet de lieu jaune, beurre blanc
+                                            </span>
+                                        <span class="o_table_pl_dots"/>
+                                        <span class="o_table_pl_price">24 €</span>
+                                    </li><li class="o_table_pl_row">
+                                        <span class="o_table_pl_name">Risotto d'orge, champignons de saison
+                                            <em>Végétarien</em></span>
+                                        <span class="o_table_pl_dots"/>
+                                        <span class="o_table_pl_price">21 €</span>
+                                    </li><li class="o_table_pl_row">
+                                        <span class="o_table_pl_name">Onglet de bœuf, échalotes confites
+                                            </span>
+                                        <span class="o_table_pl_dots"/>
+                                        <span class="o_table_pl_price">25 €</span>
+                                    </li><li class="o_table_pl_row">
+                                        <span class="o_table_pl_name">Volaille fermière, jus au vin jaune
+                                            </span>
+                                        <span class="o_table_pl_dots"/>
+                                        <span class="o_table_pl_price">23 €</span>
+                                    </li></ul>
+                                </div>
+                            </div><div class="col-lg-6">
+                                <div class="o_table_pl_group">
+                                    <h3 class="h4 mb-1">Desserts</h3>
+                                    <p class="o_table_meta mb-4">Tous préparés le matin</p>
+                                    <ul class="list-unstyled mb-0"><li class="o_table_pl_row">
+                                        <span class="o_table_pl_name">Tarte fine aux pommes de garde
+                                            <em>Pour deux</em></span>
+                                        <span class="o_table_pl_dots"/>
+                                        <span class="o_table_pl_price">11 €</span>
+                                    </li><li class="o_table_pl_row">
+                                        <span class="o_table_pl_name">Riz au lait, caramel demi-sel
+                                            </span>
+                                        <span class="o_table_pl_dots"/>
+                                        <span class="o_table_pl_price">8 €</span>
+                                    </li><li class="o_table_pl_row">
+                                        <span class="o_table_pl_name">Poire pochée, sorbet cassis
+                                            </span>
+                                        <span class="o_table_pl_dots"/>
+                                        <span class="o_table_pl_price">9 €</span>
+                                    </li><li class="o_table_pl_row">
+                                        <span class="o_table_pl_name">Assiette de fromages affinés
+                                            </span>
+                                        <span class="o_table_pl_dots"/>
+                                        <span class="o_table_pl_price">12 €</span>
+                                    </li></ul>
+                                </div>
+                            </div><div class="col-lg-6">
+                                <div class="o_table_pl_group">
+                                    <h3 class="h4 mb-1">Menus</h3>
+                                    <p class="o_table_meta mb-4">Servis midi et soir, hors samedi soir</p>
+                                    <ul class="list-unstyled mb-0"><li class="o_table_pl_row">
+                                        <span class="o_table_pl_name">Déjeuner — entrée, plat ou plat, dessert
+                                            </span>
+                                        <span class="o_table_pl_dots"/>
+                                        <span class="o_table_pl_price">27 €</span>
+                                    </li><li class="o_table_pl_row">
+                                        <span class="o_table_pl_name">Déjeuner complet — trois services
+                                            </span>
+                                        <span class="o_table_pl_dots"/>
+                                        <span class="o_table_pl_price">33 €</span>
+                                    </li><li class="o_table_pl_row">
+                                        <span class="o_table_pl_name">Menu du soir — quatre services
+                                            </span>
+                                        <span class="o_table_pl_dots"/>
+                                        <span class="o_table_pl_price">46 €</span>
+                                    </li><li class="o_table_pl_row">
+                                        <span class="o_table_pl_name">Accord mets et vins, quatre verres
+                                            </span>
+                                        <span class="o_table_pl_dots"/>
+                                        <span class="o_table_pl_price">28 €</span>
+                                    </li></ul>
+                                </div>
+                            </div></div>
+                    </div>
+                </section>
+            <section class="o_table_banner pt64 pb64 o_cc o_cc4">
+                    <div class="container text-center">
+                        <span class="o_table_eyebrow">Notre parti pris</span>
+                        <p class="o_table_banner_text mb-0">« Une carte courte n'est pas une carte pauvre. C'est une carte dont on assume chaque ligne. »</p>
+                        <p class="o_table_meta mt-3 mb-0">Élise Lavaur, cheffe</p>
+                    </div>
+                </section>
+            <section class="o_table_gallery pt64 pb64 o_cc o_cc1">
+                    <div class="container">
+                        <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                            <span class="o_table_eyebrow">En salle et en cuisine</span>
+                            <h2 class="mb-3">Ce que vous ne voyez pas depuis la rue</h2>
+                
+                        </div>
+                        <div class="o_table_gal_grid"><div class="o_table_gal_cell "><img src="/theme_table/static/src/img/table_gal_1.png" alt=""/></div><div class="o_table_gal_cell is-wide"><img src="/theme_table/static/src/img/table_gal_2.png" alt=""/></div><div class="o_table_gal_cell "><img src="/theme_table/static/src/img/table_gal_3.png" alt=""/></div><div class="o_table_gal_cell "><img src="/theme_table/static/src/img/table_gal_4.png" alt=""/></div><div class="o_table_gal_cell "><img src="/theme_table/static/src/img/table_gal_5.png" alt=""/></div><div class="o_table_gal_cell "><img src="/theme_table/static/src/img/table_gal_6.png" alt=""/></div></div>
+                    </div>
+                </section>
+            <section class="o_table_cta pt64 pb64 o_cc o_cc5" style="background-image:url('/theme_table_lite/static/src/img/table_cta.png');">
+                    <div class="container">
+                        <div class="o_table_cta_inner text-center mx-auto" style="max-width:46rem">
+                            <span class="o_table_eyebrow">Réservation</span>
+                            <h2 class="mb-3">Le service du soir part vite en fin de semaine</h2>
+                            <p class="lead mb-0">Nous ouvrons les réservations quinze jours à l'avance. Au-delà de six personnes, écrivez-nous : nous adaptons la carte et le rythme du service.</p>
+                            <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
+                                <a href="/reserver" class="btn btn-primary btn-lg">Réserver en ligne</a><a href="/contactus" class="btn btn-outline-light btn-lg">Nous écrire</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <record id="table_carte_page" model="theme.website.page">
+        <field name="url">/la-carte</field>
+        <field name="view_id" ref="table_carte"/>
+        <field name="is_published" eval="True"/>
+    </record>
+    <template id="table_lieu" name="Le lieu">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+            <section class="o_table_split pt64 pb64 o_cc o_cc1">
+                    <div class="container">
+                        <div class="row align-items-center g-5"><div class="col-lg-6 order-lg-2">
+                                <span class="o_table_eyebrow">La maison</span>
+                                <h2 class="mb-3">Vingt-quatre couverts, une seule salle, aucun deuxième service</h2>
+                                <p>Nous avons choisi de ne pas remplir deux fois la salle. Vous gardez votre table toute la soirée, la cuisine garde son rythme, et personne ne vous demande de partir.</p>
+                                <ul class="o_table_points list-unstyled mt-4 mb-0"><li><i class="fa fa-angle-right me-2"/>Une seule salle, sans étage ni annexe</li><li><i class="fa fa-angle-right me-2"/>Pas de deuxième service le soir</li><li><i class="fa fa-angle-right me-2"/>Cuisine ouverte à vue sur la salle</li><li><i class="fa fa-angle-right me-2"/>Menu enfant préparé à la commande</li></ul>
+                                <div class="d-flex flex-wrap gap-3 mt-4"><a href="/le-lieu" class="btn btn-primary btn-lg">Découvrir le lieu</a></div>
+                            </div><div class="col-lg-6 order-lg-1">
+                                <div class="o_table_split_media"><img src="/theme_table_lite/static/src/img/table_salle.png" alt="" class="img-fluid"/></div>
+                            </div></div>
+                    </div>
+                </section>
+            <section class="o_table_team pt64 pb64 o_cc o_cc1">
+                    <div class="container">
+                        <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                            <span class="o_table_eyebrow">La brigade</span>
+                            <h2 class="mb-3">Cinq personnes en cuisine, trois en salle</h2>
+                
+                        </div>
+                        <div class="row g-4"><div class="col-lg-3 col-6">
+                                <div class="o_table_member text-center">
+                                    <img src="/theme_table/static/src/img/table_eq_1.png" alt="" class="o_table_member_photo"/>
+                                    <h3 class="h5 mt-3 mb-1">Élise Lavaur</h3>
+                                    <p class="o_table_meta mb-0">Cheffe et co-gérante</p>
+                                </div>
+                            </div><div class="col-lg-3 col-6">
+                                <div class="o_table_member text-center">
+                                    <img src="/theme_table/static/src/img/table_eq_2.png" alt="" class="o_table_member_photo"/>
+                                    <h3 class="h5 mt-3 mb-1">Marc Thouvenin</h3>
+                                    <p class="o_table_meta mb-0">Second de cuisine</p>
+                                </div>
+                            </div><div class="col-lg-3 col-6">
+                                <div class="o_table_member text-center">
+                                    <img src="/theme_table/static/src/img/table_eq_3.png" alt="" class="o_table_member_photo"/>
+                                    <h3 class="h5 mt-3 mb-1">Nadia Ferrand</h3>
+                                    <p class="o_table_meta mb-0">Cheffe de salle</p>
+                                </div>
+                            </div><div class="col-lg-3 col-6">
+                                <div class="o_table_member text-center">
+                                    <img src="/theme_table/static/src/img/table_eq_4.png" alt="" class="o_table_member_photo"/>
+                                    <h3 class="h5 mt-3 mb-1">Yann Kerbrat</h3>
+                                    <p class="o_table_meta mb-0">Pâtissier</p>
+                                </div>
+                            </div></div>
+                    </div>
+                </section>
+            <section class="o_table_testimonials pt64 pb64 o_cc o_cc3">
+                    <div class="container">
+                        <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                            <span class="o_table_eyebrow">Ce qu'on nous dit</span>
+                            <h2 class="mb-3">Trois retours de salle, recueillis en janvier</h2>
+                
+                        </div>
+                        <div class="row g-4"><div class="col-lg-4 col-md-6">
+                                <figure class="o_table_quote h-100">
+                                    <blockquote class="mb-4">On nous a laissé la table jusqu'à minuit sans jamais nous presser. C'est devenu tellement rare que ça mérite d'être écrit.</blockquote>
+                                    <figcaption class="d-flex align-items-center gap-3">
+                                        <img src="/theme_table/static/src/img/table_av_1.png" alt="" class="o_table_avatar"/>
+                                        <span><strong>Camille Vasseur</strong><br/>
+                                            <span class="o_table_meta">Cliente depuis 2023</span></span>
+                                    </figcaption>
+                                </figure>
+                            </div><div class="col-lg-4 col-md-6">
+                                <figure class="o_table_quote h-100">
+                                    <blockquote class="mb-4">J'ai demandé d'où venait l'agneau. On m'a donné le nom de l'éleveur et le village. Ça répond à la question.</blockquote>
+                                    <figcaption class="d-flex align-items-center gap-3">
+                                        <img src="/theme_table/static/src/img/table_av_2.png" alt="" class="o_table_avatar"/>
+                                        <span><strong>Hakim Belkacem</strong><br/>
+                                            <span class="o_table_meta">Habitué du déjeuner</span></span>
+                                    </figcaption>
+                                </figure>
+                            </div><div class="col-lg-4 col-md-6">
+                                <figure class="o_table_quote h-100">
+                                    <blockquote class="mb-4">Menu enfant préparé à la commande, sans surcoût, sans nuggets. Mes deux garçons ont tout mangé.</blockquote>
+                                    <figcaption class="d-flex align-items-center gap-3">
+                                        <img src="/theme_table/static/src/img/table_av_3.png" alt="" class="o_table_avatar"/>
+                                        <span><strong>Sophie Renaudin</strong><br/>
+                                            <span class="o_table_meta">Table du dimanche</span></span>
+                                    </figcaption>
+                                </figure>
+                            </div></div>
+                    </div>
+                </section>
+            <section class="o_table_contact pt64 pb64 o_cc o_cc2">
+                    <div class="container">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-5">
+                                <span class="o_table_eyebrow">Nous trouver</span>
+                                <h2 class="mb-3">Au bout de la rue basse, la porte verte</h2>
+                                <p>Le restaurant est à sept minutes à pied de la gare routière. Deux places de stationnement réservées à l'arrière, sur demande à la réservation.</p>
+                                <ul class="list-unstyled o_table_infos mt-4 mb-0"><li><i class="fa fa-map-marker me-2"/>14 rue Basse, 47120 Sainte-Marthe-du-Val</li><li><i class="fa fa-phone me-2"/>05 53 00 00 00</li><li><i class="fa fa-envelope me-2"/>salle@maison-lavaur.example</li><li><i class="fa fa-wheelchair me-2"/>Salle de plain-pied, toilettes accessibles</li></ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="o_table_hours">
+                                    <h3 class="h5 mb-3">Service</h3>
+                                    <ul class="list-unstyled mb-0"><li><span>Mardi au jeudi</span><span>12h — 14h · 19h30 — 22h</span></li><li><span>Vendredi et samedi</span><span>12h — 14h · 19h30 — 23h</span></li><li><span>Dimanche</span><span>12h — 15h</span></li><li><span>Lundi</span><span>Fermé</span></li></ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="o_table_contact_media">
+                                    <img src="/theme_table/static/src/img/table_contact.png" alt="" class="img-fluid"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <record id="table_lieu_page" model="theme.website.page">
+        <field name="url">/le-lieu</field>
+        <field name="view_id" ref="table_lieu"/>
+        <field name="is_published" eval="True"/>
+    </record>
+    <template id="table_reserver" name="Réserver">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+            <section class="o_table_steps pt64 pb64 o_cc o_cc1">
+                    <div class="container">
+                        <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                            <span class="o_table_eyebrow">Comment ça se passe</span>
+                            <h2 class="mb-3">De la réservation à l'addition</h2>
+                
+                        </div>
+                        <div class="row g-4 o_table_steps_row"><div class="col-lg-3 col-md-6">
+                                <div class="o_table_step h-100">
+                                    <span class="o_table_step_num">01</span>
+                                    <h3 class="h5 mb-2">Vous réservez</h3>
+                                    <p class="mb-0">En ligne jusqu'à 18h le jour même, par téléphone au-delà.</p>
+                                </div>
+                            </div><div class="col-lg-3 col-md-6">
+                                <div class="o_table_step h-100">
+                                    <span class="o_table_step_num">02</span>
+                                    <h3 class="h5 mb-2">On vous confirme</h3>
+                                    <p class="mb-0">Un message la veille, avec le plan d'accès et les places de stationnement.</p>
+                                </div>
+                            </div><div class="col-lg-3 col-md-6">
+                                <div class="o_table_step h-100">
+                                    <span class="o_table_step_num">03</span>
+                                    <h3 class="h5 mb-2">Vous gardez la table</h3>
+                                    <p class="mb-0">Aucun deuxième service : la salle est à vous jusqu'à la fermeture.</p>
+                                </div>
+                            </div><div class="col-lg-3 col-md-6">
+                                <div class="o_table_step h-100">
+                                    <span class="o_table_step_num">04</span>
+                                    <h3 class="h5 mb-2">On garde la trace</h3>
+                                    <p class="mb-0">Vos allergies et préférences sont notées pour la fois suivante.</p>
+                                </div>
+                            </div></div>
+                    </div>
+                </section>
+            <section class="o_table_contact pt64 pb64 o_cc o_cc2">
+                    <div class="container">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-5">
+                                <span class="o_table_eyebrow">Nous trouver</span>
+                                <h2 class="mb-3">Au bout de la rue basse, la porte verte</h2>
+                                <p>Le restaurant est à sept minutes à pied de la gare routière. Deux places de stationnement réservées à l'arrière, sur demande à la réservation.</p>
+                                <ul class="list-unstyled o_table_infos mt-4 mb-0"><li><i class="fa fa-map-marker me-2"/>14 rue Basse, 47120 Sainte-Marthe-du-Val</li><li><i class="fa fa-phone me-2"/>05 53 00 00 00</li><li><i class="fa fa-envelope me-2"/>salle@maison-lavaur.example</li><li><i class="fa fa-wheelchair me-2"/>Salle de plain-pied, toilettes accessibles</li></ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="o_table_hours">
+                                    <h3 class="h5 mb-3">Service</h3>
+                                    <ul class="list-unstyled mb-0"><li><span>Mardi au jeudi</span><span>12h — 14h · 19h30 — 22h</span></li><li><span>Vendredi et samedi</span><span>12h — 14h · 19h30 — 23h</span></li><li><span>Dimanche</span><span>12h — 15h</span></li><li><span>Lundi</span><span>Fermé</span></li></ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="o_table_contact_media">
+                                    <img src="/theme_table/static/src/img/table_contact.png" alt="" class="img-fluid"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <section class="o_table_cta pt64 pb64 o_cc o_cc5" style="background-image:url('/theme_table_lite/static/src/img/table_cta.png');">
+                    <div class="container">
+                        <div class="o_table_cta_inner text-center mx-auto" style="max-width:46rem">
+                            <span class="o_table_eyebrow">Réservation</span>
+                            <h2 class="mb-3">Le service du soir part vite en fin de semaine</h2>
+                            <p class="lead mb-0">Nous ouvrons les réservations quinze jours à l'avance. Au-delà de six personnes, écrivez-nous : nous adaptons la carte et le rythme du service.</p>
+                            <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
+                                <a href="/reserver" class="btn btn-primary btn-lg">Réserver en ligne</a><a href="/contactus" class="btn btn-outline-light btn-lg">Nous écrire</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <record id="table_reserver_page" model="theme.website.page">
+        <field name="url">/reserver</field>
+        <field name="view_id" ref="table_reserver"/>
+        <field name="is_published" eval="True"/>
+    </record>
+
+</data>
+</odoo>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_pulse_etapes" name="Parcours d'un nouvel adhérent">
+    <section class="o_pulse_steps pt64 pb64 o_cc o_cc1">
+            <div class="container">
+                <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                    <span class="o_pulse_eyebrow">Vos six premières semaines</span>
+                    <h2 class="mb-3">Comment démarre un cycle</h2>
+                
+                </div>
+                <div class="row g-4 o_pulse_steps_row"><div class="col-lg-3 col-md-6">
+                        <div class="o_pulse_step h-100">
+                            <span class="o_pulse_step_num">01</span>
+                            <h3 class="h5 mb-2">Bilan</h3>
+                            <p class="mb-0">Mobilité, antécédents, contraintes horaires. Quarante minutes, gratuit.</p>
+                        </div>
+                    </div><div class="col-lg-3 col-md-6">
+                        <div class="o_pulse_step h-100">
+                            <span class="o_pulse_step_num">02</span>
+                            <h3 class="h5 mb-2">Test de charges</h3>
+                            <p class="mb-0">Estimation de vos maxima sans jamais aller à l'échec.</p>
+                        </div>
+                    </div><div class="col-lg-3 col-md-6">
+                        <div class="o_pulse_step h-100">
+                            <span class="o_pulse_step_num">03</span>
+                            <h3 class="h5 mb-2">Programme écrit</h3>
+                            <p class="mb-0">Remis sous 48 heures, chiffré, séance par séance.</p>
+                        </div>
+                    </div><div class="col-lg-3 col-md-6">
+                        <div class="o_pulse_step h-100">
+                            <span class="o_pulse_step_num">04</span>
+                            <h3 class="h5 mb-2">Point à six semaines</h3>
+                            <p class="mb-0">Relecture des courbes, ajustement, nouveau cycle.</p>
+                        </div>
+                    </div></div>
+            </div>
+        </section>
+</template>
+
+</odoo>

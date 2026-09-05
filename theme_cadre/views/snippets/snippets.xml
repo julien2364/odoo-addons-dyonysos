@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="o_cadre_snippets_cadre" inherit_id="website.snippets" name="Blocs Immobilier">
+    <xpath expr="//snippets[@id='snippet_structure']" position="inside">
+        <t t-snippet="theme_cadre.s_cadre_biens_plus" string="Grille de biens complémentaire" group="cadre"
+           t-thumbnail="/theme_cadre/static/src/img/snippets_thumbs/s_cadre_biens_plus.png">
+            <keywords>biens, annonces, cartes, grille, catalogue, complement</keywords>
+        </t>
+        <t t-snippet="theme_cadre.s_cadre_honoraires" string="Trois barèmes d'honoraires" group="cadre"
+           t-thumbnail="/theme_cadre/static/src/img/snippets_thumbs/s_cadre_honoraires.png">
+            <keywords>honoraires, tarifs, baremes, formules, prix, offres</keywords>
+        </t>
+        <t t-snippet="theme_cadre.s_cadre_chiffres" string="Bandeau de chiffres" group="cadre"
+           t-thumbnail="/theme_cadre/static/src/img/snippets_thumbs/s_cadre_chiffres.png">
+            <keywords>chiffres, statistiques, resultats, preuves, indicateurs</keywords>
+        </t>
+        <t t-snippet="theme_cadre.s_cadre_parcours" string="Parcours de vente" group="cadre"
+           t-thumbnail="/theme_cadre/static/src/img/snippets_thumbs/s_cadre_parcours.png">
+            <keywords>parcours, etapes, methode, deroule, vente</keywords>
+        </t>
+        <t t-snippet="theme_cadre.s_cadre_avis" string="Trois avis de vendeurs" group="cadre"
+           t-thumbnail="/theme_cadre/static/src/img/snippets_thumbs/s_cadre_avis.png">
+            <keywords>avis, temoignages, clients, vendeurs, confiance</keywords>
+        </t>
+        <t t-snippet="theme_cadre.s_cadre_equipe" string="Portraits de l'équipe" group="cadre"
+           t-thumbnail="/theme_cadre/static/src/img/snippets_thumbs/s_cadre_equipe.png">
+            <keywords>equipe, portraits, collaborateurs, agence, personnes</keywords>
+        </t>
+        <t t-snippet="theme_cadre.s_cadre_faq" string="Questions fréquentes" group="cadre"
+           t-thumbnail="/theme_cadre/static/src/img/snippets_thumbs/s_cadre_faq.png">
+            <keywords>faq, questions, reponses, accordeon, aide</keywords>
+        </t>
+        <t t-snippet="theme_cadre.s_cadre_partenaires" string="Bandeau de partenaires" group="cadre"
+           t-thumbnail="/theme_cadre/static/src/img/snippets_thumbs/s_cadre_partenaires.png">
+            <keywords>partenaires, confiance, logos, reseaux, references</keywords>
+        </t>
+        <t t-snippet="theme_cadre.s_cadre_contact" string="Coordonnées et horaires" group="cadre"
+           t-thumbnail="/theme_cadre/static/src/img/snippets_thumbs/s_cadre_contact.png">
+            <keywords>contact, horaires, adresse, agence, coordonnees</keywords>
+        </t>
+        <t t-snippet="theme_cadre.s_cadre_agence" string="Présentation en deux colonnes" group="cadre"
+           t-thumbnail="/theme_cadre/static/src/img/snippets_thumbs/s_cadre_agence.png">
+            <keywords>agence, presentation, texte image, histoire, deux colonnes</keywords>
+        </t>
+    </xpath>
+</template>
+
+</odoo>

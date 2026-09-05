@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_table_hero" name="Bandeau de salle">
+    <section class="o_table_hero o_table_hero_cover o_cc o_cc5"
+                 style="background-image:url('/theme_table_lite/static/src/img/table_hero.png');">
+            <div class="container">
+                <div class="o_table_hero_inner">
+                    <span class="o_table_eyebrow">Cuisine de marché — Table de 24 couverts</span>
+                    <h1 class="mb-3">Une carte courte, réécrite tous les jeudis</h1>
+                    <p class="lead mb-0">Maison Lavaur cuisine ce que les producteurs de la vallée livrent le matin même. Six entrées, six plats, quatre desserts. Rien de plus, rien de figé.</p>
+                    <div class="d-flex flex-wrap gap-3 mt-4"><a href="/reserver" class="btn btn-primary btn-lg">Réserver une table</a><a href="/la-carte" class="btn btn-outline-light btn-lg">Voir la carte</a></div>
+                </div>
+            </div>
+        </section>
+</template>
+
+</odoo>

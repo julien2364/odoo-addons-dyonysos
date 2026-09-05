@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="o_table_footer" inherit_id="website.layout" name="Restaurant — pied de page" active="True">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure oe_structure_solo o_table_footer text-break" t-ignore="true" t-if="not no_footer">
+            <section class="s_text_block pt48 pb24 o_cc o_cc5" data-snippet="s_text_block" data-name="Container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 pt24 pb24">
+                            <p class="o_table_foot_brand mb-2">Maison Lavaur</p>
+                            <p class="mb-0">Cuisine de marché, vingt-quatre couverts, une seule salle.</p>
+                        </div>
+                            <div class="col-lg-3 col-md-6 pt24 pb24">
+                                <h5 class="o_table_foot_title">La maison</h5>
+                                <ul class="list-unstyled mb-0"><li><a href="/la-carte">La carte</a></li><li><a href="/le-lieu">Le lieu</a></li><li><a href="/reserver">Réserver</a></li><li><a href="/contactus">Nous écrire</a></li></ul>
+                                
+                            </div>
+                            <div class="col-lg-3 col-md-6 pt24 pb24">
+                                <h5 class="o_table_foot_title">Nous trouver</h5>
+                                
+                                <p class="mb-1">14 rue Basse</p><p class="mb-1">47120 Sainte-Marthe-du-Val</p><p class="mb-1">05 53 00 00 00</p><p class="mb-1">salle@maison-lavaur.example</p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 pt24 pb24">
+                                <h5 class="o_table_foot_title">Service</h5>
+                                
+                                <p class="mb-1">Mardi au jeudi — 12h/14h · 19h30/22h</p><p class="mb-1">Vendredi et samedi — 12h/14h · 19h30/23h</p><p class="mb-1">Dimanche — 12h/15h</p><p class="mb-1">Lundi — fermé</p>
+                            </div>
+                    </div>
+                </div>
+            </section>
+            <div class="o_table_foot_legal o_cc o_cc5">
+                <div class="container d-flex flex-wrap justify-content-between gap-2 py-3">
+                    <span>© 2026 Maison Lavaur — établissement fictif de démonstration</span>
+                    <span>Thème La Table par DYONYSOS</span>
+                </div>
+            </div>
+        </div>
+    </xpath>
+</template>
+
+</odoo>

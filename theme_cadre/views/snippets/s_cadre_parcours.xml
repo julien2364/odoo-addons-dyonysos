@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_cadre_parcours" name="Parcours de vente">
+    <section class="o_cadre_steps pt64 pb64 o_cc o_cc1">
+            <div class="container">
+                <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                    <span class="o_cadre_eyebrow">Comment ça se passe</span>
+                    <h2 class="mb-3">Du premier appel à la remise des clés</h2>
+                
+                </div>
+                <div class="row g-4 o_cadre_steps_row"><div class="col-lg-3 col-md-6">
+                        <div class="o_cadre_step h-100">
+                            <span class="o_cadre_step_num">01</span>
+                            <h3 class="h5 mb-2">Estimation</h3>
+                            <p class="mb-0">Visite sur place, mesures, comparables réels. Rapport écrit sous 72 heures.</p>
+                        </div>
+                    </div><div class="col-lg-3 col-md-6">
+                        <div class="o_cadre_step h-100">
+                            <span class="o_cadre_step_num">02</span>
+                            <h3 class="h5 mb-2">Mise en marché</h3>
+                            <p class="mb-0">Photos, plan coté, diagnostics. Diffusion dès la signature du mandat.</p>
+                        </div>
+                    </div><div class="col-lg-3 col-md-6">
+                        <div class="o_cadre_step h-100">
+                            <span class="o_cadre_step_num">03</span>
+                            <h3 class="h5 mb-2">Négociation</h3>
+                            <p class="mb-0">Offres écrites transmises intégralement. Nous négocions, vous décidez.</p>
+                        </div>
+                    </div><div class="col-lg-3 col-md-6">
+                        <div class="o_cadre_step h-100">
+                            <span class="o_cadre_step_num">04</span>
+                            <h3 class="h5 mb-2">Acte</h3>
+                            <p class="mb-0">Constitution du dossier notaire, suivi du prêt acquéreur, remise des clés.</p>
+                        </div>
+                    </div></div>
+            </div>
+        </section>
+</template>
+
+</odoo>

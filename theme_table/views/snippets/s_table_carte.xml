@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_table_carte" name="Carte tarifée deux colonnes">
+    <section class="o_table_pricelist pt64 pb64 o_cc o_cc1">
+            <div class="container">
+                <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                    <span class="o_table_eyebrow">La carte</span>
+                    <h2 class="mb-3">Ce qui est servi cette quinzaine</h2>
+                    <p class="lead mb-0">La carte est réécrite tous les jeudis. Les prix sont nets, service compris.</p>
+                </div>
+                <div class="row g-5"><div class="col-lg-6">
+                        <div class="o_table_pl_group">
+                            <h3 class="h4 mb-1">Entrées</h3>
+                            <p class="o_table_meta mb-4">Toutes servies avec le pain de la Ferme haute</p>
+                            <ul class="list-unstyled mb-0"><li class="o_table_pl_row">
+                                <span class="o_table_pl_name">Courge rôtie, noisette, sarriette
+                                    <em>Végétarien</em></span>
+                                <span class="o_table_pl_dots"/>
+                                <span class="o_table_pl_price">12 €</span>
+                            </li><li class="o_table_pl_row">
+                                <span class="o_table_pl_name">Terrine de campagne, cornichons maison
+                                    </span>
+                                <span class="o_table_pl_dots"/>
+                                <span class="o_table_pl_price">11 €</span>
+                            </li><li class="o_table_pl_row">
+                                <span class="o_table_pl_name">Poireaux vinaigrette, œuf mollet
+                                    </span>
+                                <span class="o_table_pl_dots"/>
+                                <span class="o_table_pl_price">10 €</span>
+                            </li><li class="o_table_pl_row">
+                                <span class="o_table_pl_name">Velouté du jour
+                                    <em>Selon arrivage</em></span>
+                                <span class="o_table_pl_dots"/>
+                                <span class="o_table_pl_price">9 €</span>
+                            </li><li class="o_table_pl_row">
+                                <span class="o_table_pl_name">Maquereau mariné, crème d'aneth
+                                    </span>
+                                <span class="o_table_pl_dots"/>
+                                <span class="o_table_pl_price">13 €</span>
+                            </li></ul>
+                        </div>
+                    </div><div class="col-lg-6">
+                        <div class="o_table_pl_group">
+                            <h3 class="h4 mb-1">Plats</h3>
+                            <p class="o_table_meta mb-4">Un plat végétarien est toujours à la carte</p>
+                            <ul class="list-unstyled mb-0"><li class="o_table_pl_row">
+                                <span class="o_table_pl_name">Épaule d'agneau confite, haricots coco
+                                    <em>À partager</em></span>
+                                <span class="o_table_pl_dots"/>
+                                <span class="o_table_pl_price">26 €</span>
+                            </li><li class="o_table_pl_row">
+                                <span class="o_table_pl_name">Filet de lieu jaune, beurre blanc
+                                    </span>
+                                <span class="o_table_pl_dots"/>
+                                <span class="o_table_pl_price">24 €</span>
+                            </li><li class="o_table_pl_row">
+                                <span class="o_table_pl_name">Risotto d'orge, champignons de saison
+                                    <em>Végétarien</em></span>
+                                <span class="o_table_pl_dots"/>
+                                <span class="o_table_pl_price">21 €</span>
+                            </li><li class="o_table_pl_row">
+                                <span class="o_table_pl_name">Onglet de bœuf, échalotes confites
+                                    </span>
+                                <span class="o_table_pl_dots"/>
+                                <span class="o_table_pl_price">25 €</span>
+                            </li><li class="o_table_pl_row">
+                                <span class="o_table_pl_name">Volaille fermière, jus au vin jaune
+                                    </span>
+                                <span class="o_table_pl_dots"/>
+                                <span class="o_table_pl_price">23 €</span>
+                            </li></ul>
+                        </div>
+                    </div><div class="col-lg-6">
+                        <div class="o_table_pl_group">
+                            <h3 class="h4 mb-1">Desserts</h3>
+                            <p class="o_table_meta mb-4">Tous préparés le matin</p>
+                            <ul class="list-unstyled mb-0"><li class="o_table_pl_row">
+                                <span class="o_table_pl_name">Tarte fine aux pommes de garde
+                                    <em>Pour deux</em></span>
+                                <span class="o_table_pl_dots"/>
+                                <span class="o_table_pl_price">11 €</span>
+                            </li><li class="o_table_pl_row">
+                                <span class="o_table_pl_name">Riz au lait, caramel demi-sel
+                                    </span>
+                                <span class="o_table_pl_dots"/>
+                                <span class="o_table_pl_price">8 €</span>
+                            </li><li class="o_table_pl_row">
+                                <span class="o_table_pl_name">Poire pochée, sorbet cassis
+                                    </span>
+                                <span class="o_table_pl_dots"/>
+                                <span class="o_table_pl_price">9 €</span>
+                            </li><li class="o_table_pl_row">
+                                <span class="o_table_pl_name">Assiette de fromages affinés
+                                    </span>
+                                <span class="o_table_pl_dots"/>
+                                <span class="o_table_pl_price">12 €</span>
+                            </li></ul>
+                        </div>
+                    </div><div class="col-lg-6">
+                        <div class="o_table_pl_group">
+                            <h3 class="h4 mb-1">Menus</h3>
+                            <p class="o_table_meta mb-4">Servis midi et soir, hors samedi soir</p>
+                            <ul class="list-unstyled mb-0"><li class="o_table_pl_row">
+                                <span class="o_table_pl_name">Déjeuner — entrée, plat ou plat, dessert
+                                    </span>
+                                <span class="o_table_pl_dots"/>
+                                <span class="o_table_pl_price">27 €</span>
+                            </li><li class="o_table_pl_row">
+                                <span class="o_table_pl_name">Déjeuner complet — trois services
+                                    </span>
+                                <span class="o_table_pl_dots"/>
+                                <span class="o_table_pl_price">33 €</span>
+                            </li><li class="o_table_pl_row">
+                                <span class="o_table_pl_name">Menu du soir — quatre services
+                                    </span>
+                                <span class="o_table_pl_dots"/>
+                                <span class="o_table_pl_price">46 €</span>
+                            </li><li class="o_table_pl_row">
+                                <span class="o_table_pl_name">Accord mets et vins, quatre verres
+                                    </span>
+                                <span class="o_table_pl_dots"/>
+                                <span class="o_table_pl_price">28 €</span>
+                            </li></ul>
+                        </div>
+                    </div></div>
+            </div>
+        </section>
+</template>
+
+</odoo>

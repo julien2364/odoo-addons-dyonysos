@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_pulse_studio" name="Le studio en deux colonnes">
+    <section class="o_pulse_split pt64 pb64 o_cc o_cc1">
+            <div class="container">
+                <div class="row align-items-center g-5"><div class="col-lg-6 order-lg-2">
+                        <span class="o_pulse_eyebrow">Le lieu</span>
+                        <h2 class="mb-3">Une ancienne fonderie, deux racks et beaucoup de sol libre</h2>
+                        <p>Nous avons fait le choix inverse de la plupart des salles : peu de machines, beaucoup d'espace au sol, et un plafond assez haut pour travailler debout, barre au-dessus de la tête.</p>
+                        <ul class="o_pulse_points list-unstyled mt-4 mb-0"><li><i class="fa fa-angle-right me-2"/>420 m² sur un seul niveau</li><li><i class="fa fa-angle-right me-2"/>Deux racks, quatre plateformes, aucune machine guidée</li><li><i class="fa fa-angle-right me-2"/>Sol amortissant sur toute la surface de travail</li><li><i class="fa fa-angle-right me-2"/>Ventilation renouvelée toutes les huit minutes</li></ul>
+                        <div class="d-flex flex-wrap gap-3 mt-4"><a href="/contactus" class="btn btn-primary btn-lg">Venir voir</a></div>
+                    </div><div class="col-lg-6 order-lg-1">
+                        <div class="o_pulse_split_media"><img src="/theme_pulse/static/src/img/pulse_studio.png" alt="" class="img-fluid"/></div>
+                    </div></div>
+            </div>
+        </section>
+</template>
+
+</odoo>

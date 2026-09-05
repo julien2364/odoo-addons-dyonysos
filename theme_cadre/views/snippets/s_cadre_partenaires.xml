@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_cadre_partenaires" name="Bandeau de partenaires">
+    <section class="o_cadre_logos pt40 pb40 o_cc o_cc2">
+            <div class="container">
+                <p class="text-center o_cadre_meta mb-4">Nos partenaires notaires, diagnostiqueurs et courtiers (marques fictives)</p>
+                <div class="o_cadre_logo_row"><div class="o_cadre_logo"><img src="/theme_cadre/static/src/img/cadre_pt_1.png" alt=""/></div><div class="o_cadre_logo"><img src="/theme_cadre/static/src/img/cadre_pt_2.png" alt=""/></div><div class="o_cadre_logo"><img src="/theme_cadre/static/src/img/cadre_pt_3.png" alt=""/></div><div class="o_cadre_logo"><img src="/theme_cadre/static/src/img/cadre_pt_4.png" alt=""/></div><div class="o_cadre_logo"><img src="/theme_cadre/static/src/img/cadre_pt_5.png" alt=""/></div></div>
+            </div>
+        </section>
+</template>
+
+</odoo>

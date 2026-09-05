@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Marque le document comme utilisant ce thème : sert de racine de portée
+     aux styles et aux extensions du module payant.
+
+     PIÈGE ODOO 19 — #wrapwrap porte un t-attf-class dynamique (web/views/
+     webclient_templates.xml). Ajouter la classe sur l'attribut « class »
+     est sans effet : l'attribut dynamique est évalué au rendu et écrase le
+     statique. C'est donc t-attf-class qu'il faut étendre. -->
+<template id="o_pulse_layout" inherit_id="website.layout" name="Thème Pulse — enveloppe">
+    <xpath expr="//div[@id='wrapwrap']" position="attributes">
+        <attribute name="t-attf-class" add="o_pulse_theme" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>

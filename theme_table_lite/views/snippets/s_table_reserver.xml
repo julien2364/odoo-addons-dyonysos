@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_table_reserver" name="Appel à réservation">
+    <section class="o_table_cta pt64 pb64 o_cc o_cc5" style="background-image:url('/theme_table_lite/static/src/img/table_cta.png');">
+            <div class="container">
+                <div class="o_table_cta_inner text-center mx-auto" style="max-width:46rem">
+                    <span class="o_table_eyebrow">Réservation</span>
+                    <h2 class="mb-3">Le service du soir part vite en fin de semaine</h2>
+                    <p class="lead mb-0">Nous ouvrons les réservations quinze jours à l'avance. Au-delà de six personnes, écrivez-nous : nous adaptons la carte et le rythme du service.</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
+                        <a href="/reserver" class="btn btn-primary btn-lg">Réserver en ligne</a><a href="/contactus" class="btn btn-outline-light btn-lg">Nous écrire</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+</template>
+
+</odoo>

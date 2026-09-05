@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_cadre_honoraires" name="Trois barèmes d'honoraires">
+    <section class="o_cadre_offers pt64 pb64 o_cc o_cc1">
+            <div class="container">
+                <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                    <span class="o_cadre_eyebrow">Honoraires</span>
+                    <h2 class="mb-3">Trois barèmes, publics et identiques pour tous</h2>
+                    <p class="lead mb-0">Aucune commission variable, aucun forfait négocié au cas par cas. Le barème appliqué est celui affiché ici.</p>
+                </div>
+                <div class="row g-4 justify-content-center"><div class="col-lg-4 col-md-6">
+                        <div class="o_cadre_offer h-100 ">
+                        
+                            <h3 class="h4 mb-1">Diffusion</h3>
+                            <p class="o_cadre_meta mb-3">Vous gérez les visites</p>
+                            <p class="o_cadre_offer_price mb-4">2,9 %<small>du prix net vendeur</small></p>
+                            <ul class="list-unstyled o_cadre_offer_feats mb-4"><li><i class="fa fa-check me-2"/>Estimation écrite au comparable</li><li><i class="fa fa-check me-2"/>Reportage photo et plan coté</li><li><i class="fa fa-check me-2"/>Diffusion sur nos supports et portails</li><li><i class="fa fa-check me-2"/>Filtrage des acquéreurs</li><li><i class="fa fa-check me-2"/>Rédaction du compromis</li></ul>
+                            <a href="#" class="btn btn-outline-primary w-100">Comparer les barèmes</a>
+                        </div>
+                    </div><div class="col-lg-4 col-md-6">
+                        <div class="o_cadre_offer h-100 is-featured">
+                            <span class="o_cadre_offer_tag">Le plus courant</span>
+                            <h3 class="h4 mb-1">Accompagné</h3>
+                            <p class="o_cadre_meta mb-3">Le barème choisi par 7 vendeurs sur 10</p>
+                            <p class="o_cadre_offer_price mb-4">4,4 %<small>du prix net vendeur</small></p>
+                            <ul class="list-unstyled o_cadre_offer_feats mb-4"><li><i class="fa fa-check me-2"/>Tout le barème Diffusion</li><li><i class="fa fa-check me-2"/>Visites assurées par votre interlocuteur</li><li><i class="fa fa-check me-2"/>Négociation menée pour vous</li><li><i class="fa fa-check me-2"/>Constitution du dossier acquéreur</li><li><i class="fa fa-check me-2"/>Accompagnement jusqu'à l'acte</li></ul>
+                            <a href="#" class="btn btn-primary w-100">Prendre rendez-vous</a>
+                        </div>
+                    </div><div class="col-lg-4 col-md-6">
+                        <div class="o_cadre_offer h-100 ">
+                        
+                            <h3 class="h4 mb-1">Exclusivité</h3>
+                            <p class="o_cadre_meta mb-3">Mandat exclusif de trois mois</p>
+                            <p class="o_cadre_offer_price mb-4">3,8 %<small>du prix net vendeur</small></p>
+                            <ul class="list-unstyled o_cadre_offer_feats mb-4"><li><i class="fa fa-check me-2"/>Tout le barème Accompagné</li><li><i class="fa fa-check me-2"/>Mise en avant prioritaire</li><li><i class="fa fa-check me-2"/>Point d'avancement hebdomadaire écrit</li><li><i class="fa fa-check me-2"/>Home staging léger inclus</li><li><i class="fa fa-check me-2"/>Barème réduit en contrepartie</li></ul>
+                            <a href="#" class="btn btn-outline-primary w-100">Étudier l'exclusivité</a>
+                        </div>
+                    </div></div>
+            </div>
+        </section>
+</template>
+
+</odoo>

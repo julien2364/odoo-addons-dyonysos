@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_table_horaires" name="Coordonnées et horaires">
+    <section class="o_table_contact pt64 pb64 o_cc o_cc2">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5">
+                        <span class="o_table_eyebrow">Nous trouver</span>
+                        <h2 class="mb-3">Au bout de la rue basse, la porte verte</h2>
+                        <p>Le restaurant est à sept minutes à pied de la gare routière. Deux places de stationnement réservées à l'arrière, sur demande à la réservation.</p>
+                        <ul class="list-unstyled o_table_infos mt-4 mb-0"><li><i class="fa fa-map-marker me-2"/>14 rue Basse, 47120 Sainte-Marthe-du-Val</li><li><i class="fa fa-phone me-2"/>05 53 00 00 00</li><li><i class="fa fa-envelope me-2"/>salle@maison-lavaur.example</li><li><i class="fa fa-wheelchair me-2"/>Salle de plain-pied, toilettes accessibles</li></ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="o_table_hours">
+                            <h3 class="h5 mb-3">Service</h3>
+                            <ul class="list-unstyled mb-0"><li><span>Mardi au jeudi</span><span>12h — 14h · 19h30 — 22h</span></li><li><span>Vendredi et samedi</span><span>12h — 14h · 19h30 — 23h</span></li><li><span>Dimanche</span><span>12h — 15h</span></li><li><span>Lundi</span><span>Fermé</span></li></ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="o_table_contact_media">
+                            <img src="/theme_table/static/src/img/table_contact.png" alt="" class="img-fluid"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</template>
+
+</odoo>

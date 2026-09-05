@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="o_cadre_footer" inherit_id="website.layout" name="Immobilier — pied de page" active="True">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure oe_structure_solo o_cadre_footer text-break" t-ignore="true" t-if="not no_footer">
+            <section class="s_text_block pt48 pb24 o_cc o_cc5" data-snippet="s_text_block" data-name="Container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 pt24 pb24">
+                            <p class="o_cadre_foot_brand mb-2">Rive &amp; Bastide</p>
+                            <p class="mb-0">Transaction et gestion locative, agence indépendante depuis 2011.</p>
+                        </div>
+                            <div class="col-lg-3 col-md-6 pt24 pb24">
+                                <h5 class="o_cadre_foot_title">Services</h5>
+                                <ul class="list-unstyled mb-0"><li><a href="/nos-biens">Nos biens</a></li><li><a href="/honoraires">Honoraires</a></li><li><a href="/agence">L'agence</a></li><li><a href="/contactus">Nous écrire</a></li></ul>
+                                
+                            </div>
+                            <div class="col-lg-3 col-md-6 pt24 pb24">
+                                <h5 class="o_cadre_foot_title">Agence</h5>
+                                
+                                <p class="mb-1">8 place du Marché</p><p class="mb-1">61300 Val-d'Ancre</p><p class="mb-1">02 33 00 00 00</p><p class="mb-1">contact@rive-bastide.example</p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 pt24 pb24">
+                                <h5 class="o_cadre_foot_title">Mentions</h5>
+                                
+                                <p class="mb-1">Carte professionnelle T et G</p><p class="mb-1">Garantie financière : 120 000 €</p><p class="mb-1">Médiateur de la consommation désigné</p><p class="mb-1">Barème d'honoraires affiché en agence</p>
+                            </div>
+                    </div>
+                </div>
+            </section>
+            <div class="o_cadre_foot_legal o_cc o_cc5">
+                <div class="container d-flex flex-wrap justify-content-between gap-2 py-3">
+                    <span>© 2026 Rive &amp; Bastide — agence fictive de démonstration</span>
+                    <span>Thème Cadre par DYONYSOS</span>
+                </div>
+            </div>
+        </div>
+    </xpath>
+</template>
+
+</odoo>

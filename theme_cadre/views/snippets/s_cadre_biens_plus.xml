@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_cadre_biens_plus" name="Grille de biens complémentaire">
+    <section class="o_cadre_cards pt64 pb64 o_cc o_cc1">
+            <div class="container">
+                <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                    <span class="o_cadre_eyebrow">Également disponibles</span>
+                    <h2 class="mb-3">Trois autres biens au mandat</h2>
+                
+                </div>
+                <div class="row g-4"><div class="col-lg-4 col-md-6">
+                        <article class="o_cadre_card h-100">
+                            <div class="o_cadre_card_media">
+                                <img src="/theme_cadre/static/src/img/cadre_bien_4.png" alt=""/>
+                                <span class="o_cadre_pill">Exclusivité</span>
+                            </div>
+                            <div class="o_cadre_card_body">
+                                <h3 class="h4 mb-2">Loft d'angle, 96 m², ancien atelier</h3>
+                                <p class="mb-3">Volume unique sous charpente métallique, verrière plein sud, stationnement privatif. Copropriété de six lots.</p>
+                                <p class="o_cadre_meta mb-0">Faubourg Nord · 245 000 € net vendeur</p>
+                            </div>
+                        </article>
+                    </div><div class="col-lg-4 col-md-6">
+                        <article class="o_cadre_card h-100">
+                            <div class="o_cadre_card_media">
+                                <img src="/theme_cadre/static/src/img/cadre_bien_5.png" alt=""/>
+                                <span class="o_cadre_pill">Investisseur</span>
+                            </div>
+                            <div class="o_cadre_card_body">
+                                <h3 class="h4 mb-2">Immeuble de rapport, trois lots loués</h3>
+                                <p class="mb-3">Rendement brut constaté 6,4 %. Baux en cours transmis, aucun impayé sur les trente-six derniers mois.</p>
+                                <p class="o_cadre_meta mb-0">Rue de la Fonderie · 398 000 € net vendeur</p>
+                            </div>
+                        </article>
+                    </div><div class="col-lg-4 col-md-6">
+                        <article class="o_cadre_card h-100">
+                            <div class="o_cadre_card_media">
+                                <img src="/theme_cadre/static/src/img/cadre_bien_6.png" alt=""/>
+                                <span class="o_cadre_pill">Premier achat</span>
+                            </div>
+                            <div class="o_cadre_card_body">
+                                <h3 class="h4 mb-2">Studio meublé, 28 m², proche gare</h3>
+                                <p class="mb-3">Refait entièrement en 2024, charges faibles, éligible au dispositif de prêt à taux zéro sous conditions.</p>
+                                <p class="o_cadre_meta mb-0">Quartier Gare · 96 000 € net vendeur</p>
+                            </div>
+                        </article>
+                    </div></div>
+            </div>
+        </section>
+</template>
+
+</odoo>

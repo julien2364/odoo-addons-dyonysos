@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_cadre_equipe" name="Portraits de l'équipe">
+    <section class="o_cadre_team pt64 pb64 o_cc o_cc1">
+            <div class="container">
+                <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                    <span class="o_cadre_eyebrow">L'agence</span>
+                    <h2 class="mb-3">Quatre personnes, aucun apporteur d'affaires</h2>
+                
+                </div>
+                <div class="row g-4"><div class="col-lg-3 col-6">
+                        <div class="o_cadre_member text-center">
+                            <img src="/theme_cadre/static/src/img/cadre_eq_1.png" alt="" class="o_cadre_member_photo"/>
+                            <h3 class="h5 mt-3 mb-1">Claire Bastide</h3>
+                            <p class="o_cadre_meta mb-0">Gérante, transaction</p>
+                        </div>
+                    </div><div class="col-lg-3 col-6">
+                        <div class="o_cadre_member text-center">
+                            <img src="/theme_cadre/static/src/img/cadre_eq_2.png" alt="" class="o_cadre_member_photo"/>
+                            <h3 class="h5 mt-3 mb-1">Thomas Rive</h3>
+                            <p class="o_cadre_meta mb-0">Gérant, gestion locative</p>
+                        </div>
+                    </div><div class="col-lg-3 col-6">
+                        <div class="o_cadre_member text-center">
+                            <img src="/theme_cadre/static/src/img/cadre_eq_3.png" alt="" class="o_cadre_member_photo"/>
+                            <h3 class="h5 mt-3 mb-1">Amélie Coulon</h3>
+                            <p class="o_cadre_meta mb-0">Négociatrice</p>
+                        </div>
+                    </div><div class="col-lg-3 col-6">
+                        <div class="o_cadre_member text-center">
+                            <img src="/theme_cadre/static/src/img/cadre_eq_4.png" alt="" class="o_cadre_member_photo"/>
+                            <h3 class="h5 mt-3 mb-1">Bruno Lestrade</h3>
+                            <p class="o_cadre_meta mb-0">Chargé de dossiers</p>
+                        </div>
+                    </div></div>
+            </div>
+        </section>
+</template>
+
+</odoo>

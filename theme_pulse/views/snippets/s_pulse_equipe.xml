@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_pulse_equipe" name="Portraits des coachs">
+    <section class="o_pulse_team pt64 pb64 o_cc o_cc1">
+            <div class="container">
+                <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                    <span class="o_pulse_eyebrow">L'encadrement</span>
+                    <h2 class="mb-3">Quatre coachs sur le plateau aux heures pleines</h2>
+                
+                </div>
+                <div class="row g-4"><div class="col-lg-3 col-6">
+                        <div class="o_pulse_member text-center">
+                            <img src="/theme_pulse/static/src/img/pulse_eq_1.png" alt="" class="o_pulse_member_photo"/>
+                            <h3 class="h5 mt-3 mb-1">Nordine Farah</h3>
+                            <p class="o_pulse_meta mb-0">Responsable du plateau</p>
+                        </div>
+                    </div><div class="col-lg-3 col-6">
+                        <div class="o_pulse_member text-center">
+                            <img src="/theme_pulse/static/src/img/pulse_eq_2.png" alt="" class="o_pulse_member_photo"/>
+                            <h3 class="h5 mt-3 mb-1">Marion Delaunay</h3>
+                            <p class="o_pulse_meta mb-0">Force et haltérophilie</p>
+                        </div>
+                    </div><div class="col-lg-3 col-6">
+                        <div class="o_pulse_member text-center">
+                            <img src="/theme_pulse/static/src/img/pulse_eq_3.png" alt="" class="o_pulse_member_photo"/>
+                            <h3 class="h5 mt-3 mb-1">Samuel Ozanne</h3>
+                            <p class="o_pulse_meta mb-0">Conditionnement</p>
+                        </div>
+                    </div><div class="col-lg-3 col-6">
+                        <div class="o_pulse_member text-center">
+                            <img src="/theme_pulse/static/src/img/pulse_eq_4.png" alt="" class="o_pulse_member_photo"/>
+                            <h3 class="h5 mt-3 mb-1">Inès Bouchard</h3>
+                            <p class="o_pulse_meta mb-0">Mobilité et reprise</p>
+                        </div>
+                    </div></div>
+            </div>
+        </section>
+</template>
+
+</odoo>

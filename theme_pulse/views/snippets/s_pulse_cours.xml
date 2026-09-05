@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_pulse_cours" name="Grille de cours collectifs">
+    <section class="o_pulse_cards pt64 pb64 o_cc o_cc1">
+            <div class="container">
+                <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                    <span class="o_pulse_eyebrow">Au planning</span>
+                    <h2 class="mb-3">Six cours, tous en groupe de huit</h2>
+                    <p class="lead mb-0">Chaque cours dure cinquante minutes, échauffement et retour au calme compris.</p>
+                </div>
+                <div class="row g-4"><div class="col-lg-4 col-md-6">
+                        <article class="o_pulse_card h-100">
+                            <div class="o_pulse_card_media">
+                                <img src="/theme_pulse/static/src/img/pulse_cours_1.png" alt=""/>
+                                <span class="o_pulse_pill">50 min</span>
+                            </div>
+                            <div class="o_pulse_card_body">
+                                <h3 class="h4 mb-2">Force — bas du corps</h3>
+                                <p class="mb-3">Squat, soulevé de terre, fentes chargées. Progression en charge sur cycle de six semaines.</p>
+                                <p class="o_pulse_meta mb-0">Lundi et jeudi · 7h, 12h15, 18h30</p>
+                            </div>
+                        </article>
+                    </div><div class="col-lg-4 col-md-6">
+                        <article class="o_pulse_card h-100">
+                            <div class="o_pulse_card_media">
+                                <img src="/theme_pulse/static/src/img/pulse_cours_2.png" alt=""/>
+                                <span class="o_pulse_pill">50 min</span>
+                            </div>
+                            <div class="o_pulse_card_body">
+                                <h3 class="h4 mb-2">Force — haut du corps</h3>
+                                <p class="mb-3">Développé, tractions assistées, rowing. Travail de gainage intégré à chaque série.</p>
+                                <p class="o_pulse_meta mb-0">Mardi et vendredi · 7h, 12h15, 19h</p>
+                            </div>
+                        </article>
+                    </div><div class="col-lg-4 col-md-6">
+                        <article class="o_pulse_card h-100">
+                            <div class="o_pulse_card_media">
+                                <img src="/theme_pulse/static/src/img/pulse_cours_3.png" alt=""/>
+                                <span class="o_pulse_pill">45 min</span>
+                            </div>
+                            <div class="o_pulse_card_body">
+                                <h3 class="h4 mb-2">Conditionnement</h3>
+                                <p class="mb-3">Circuit à intensité contrôlée, fréquence cardiaque suivie. Aucun exercice technique sous fatigue.</p>
+                                <p class="o_pulse_meta mb-0">Mercredi et samedi · 9h, 18h30</p>
+                            </div>
+                        </article>
+                    </div><div class="col-lg-4 col-md-6">
+                        <article class="o_pulse_card h-100">
+                            <div class="o_pulse_card_media">
+                                <img src="/theme_pulse/static/src/img/pulse_cours_4.png" alt=""/>
+                                <span class="o_pulse_pill">50 min</span>
+                            </div>
+                            <div class="o_pulse_card_body">
+                                <h3 class="h4 mb-2">Mobilité et posture</h3>
+                                <p class="mb-3">Hanches, épaules, chaîne postérieure. Recommandé en début de cycle et après une reprise.</p>
+                                <p class="o_pulse_meta mb-0">Mardi et jeudi · 12h15</p>
+                            </div>
+                        </article>
+                    </div><div class="col-lg-4 col-md-6">
+                        <article class="o_pulse_card h-100">
+                            <div class="o_pulse_card_media">
+                                <img src="/theme_pulse/static/src/img/pulse_cours_5.png" alt=""/>
+                                <span class="o_pulse_pill">60 min</span>
+                            </div>
+                            <div class="o_pulse_card_body">
+                                <h3 class="h4 mb-2">Reprise progressive</h3>
+                                <p class="mb-3">Pour un retour après arrêt long. Charges légères, volume faible, quatre semaines avant d'intégrer un autre cours.</p>
+                                <p class="o_pulse_meta mb-0">Lundi et mercredi · 14h</p>
+                            </div>
+                        </article>
+                    </div><div class="col-lg-4 col-md-6">
+                        <article class="o_pulse_card h-100">
+                            <div class="o_pulse_card_media">
+                                <img src="/theme_pulse/static/src/img/pulse_cours_6.png" alt=""/>
+                                <span class="o_pulse_pill">50 min</span>
+                            </div>
+                            <div class="o_pulse_card_body">
+                                <h3 class="h4 mb-2">Préparation spécifique</h3>
+                                <p class="mb-3">Cycle orienté course, trail ou sport collectif, construit avec vous à partir de votre calendrier.</p>
+                                <p class="o_pulse_meta mb-0">Samedi · 10h30</p>
+                            </div>
+                        </article>
+                    </div></div>
+            </div>
+        </section>
+</template>
+
+</odoo>

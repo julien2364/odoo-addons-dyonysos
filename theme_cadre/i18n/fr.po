@@ -1,0 +1,1183 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* theme_cadre
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-05 11:21+0000\n"
+"PO-Revision-Date: 2026-09-05 11:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "2,9 %<small>du prix net vendeur</small>"
+msgstr "2,9 %<small>du prix net vendeur</small>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "3,8 %<small>du prix net vendeur</small>"
+msgstr "3,8 %<small>du prix net vendeur</small>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "4,4 %<small>du prix net vendeur</small>"
+msgstr "4,4 %<small>du prix net vendeur</small>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_footer
+msgid "61300 Val-d'Ancre"
+msgstr "61300 Val-d'Ancre"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_footer
+msgid "8 place du Marché"
+msgstr "8 place du Marché"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_agence
+msgid "<i class=\"fa fa-angle-right me-2\"/>Aucun apporteur d'affaires rémunéré"
+msgstr "<i class=\"fa fa-angle-right me-2\"/>Aucun apporteur d'affaires rémunéré"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_agence
+msgid "<i class=\"fa fa-angle-right me-2\"/>Aucune redevance de franchise"
+msgstr "<i class=\"fa fa-angle-right me-2\"/>Aucune redevance de franchise"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_agence
+msgid "<i class=\"fa fa-angle-right me-2\"/>Barème public depuis l'ouverture"
+msgstr "<i class=\"fa fa-angle-right me-2\"/>Barème public depuis l'ouverture"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_agence
+msgid ""
+"<i class=\"fa fa-angle-right me-2\"/>Comptabilité et gestion locative "
+"internes"
+msgstr ""
+"<i class=\"fa fa-angle-right me-2\"/>Comptabilité et gestion locative "
+"internes"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "<i class=\"fa fa-check me-2\"/>Accompagnement jusqu'à l'acte"
+msgstr "<i class=\"fa fa-check me-2\"/>Accompagnement jusqu'à l'acte"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "<i class=\"fa fa-check me-2\"/>Barème réduit en contrepartie"
+msgstr "<i class=\"fa fa-check me-2\"/>Barème réduit en contrepartie"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "<i class=\"fa fa-check me-2\"/>Constitution du dossier acquéreur"
+msgstr "<i class=\"fa fa-check me-2\"/>Constitution du dossier acquéreur"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "<i class=\"fa fa-check me-2\"/>Diffusion sur nos supports et portails"
+msgstr "<i class=\"fa fa-check me-2\"/>Diffusion sur nos supports et portails"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "<i class=\"fa fa-check me-2\"/>Estimation écrite au comparable"
+msgstr "<i class=\"fa fa-check me-2\"/>Estimation écrite au comparable"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "<i class=\"fa fa-check me-2\"/>Filtrage des acquéreurs"
+msgstr "<i class=\"fa fa-check me-2\"/>Filtrage des acquéreurs"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "<i class=\"fa fa-check me-2\"/>Home staging léger inclus"
+msgstr "<i class=\"fa fa-check me-2\"/>Home staging léger inclus"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "<i class=\"fa fa-check me-2\"/>Mise en avant prioritaire"
+msgstr "<i class=\"fa fa-check me-2\"/>Mise en avant prioritaire"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "<i class=\"fa fa-check me-2\"/>Négociation menée pour vous"
+msgstr "<i class=\"fa fa-check me-2\"/>Négociation menée pour vous"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "<i class=\"fa fa-check me-2\"/>Point d'avancement hebdomadaire écrit"
+msgstr "<i class=\"fa fa-check me-2\"/>Point d'avancement hebdomadaire écrit"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "<i class=\"fa fa-check me-2\"/>Reportage photo et plan coté"
+msgstr "<i class=\"fa fa-check me-2\"/>Reportage photo et plan coté"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "<i class=\"fa fa-check me-2\"/>Rédaction du compromis"
+msgstr "<i class=\"fa fa-check me-2\"/>Rédaction du compromis"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "<i class=\"fa fa-check me-2\"/>Tout le barème Accompagné"
+msgstr "<i class=\"fa fa-check me-2\"/>Tout le barème Accompagné"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "<i class=\"fa fa-check me-2\"/>Tout le barème Diffusion"
+msgstr "<i class=\"fa fa-check me-2\"/>Tout le barème Diffusion"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "<i class=\"fa fa-check me-2\"/>Visites assurées par votre interlocuteur"
+msgstr "<i class=\"fa fa-check me-2\"/>Visites assurées par votre interlocuteur"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_contact
+msgid "<i class=\"fa fa-envelope me-2\"/>contact@rive-bastide.example"
+msgstr "<i class=\"fa fa-envelope me-2\"/>contact@rive-bastide.example"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_contact
+msgid ""
+"<i class=\"fa fa-id-card-o me-2\"/>Carte professionnelle T et G — CCI de "
+"l'Orne"
+msgstr ""
+"<i class=\"fa fa-id-card-o me-2\"/>Carte professionnelle T et G — CCI de "
+"l'Orne"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_contact
+msgid "<i class=\"fa fa-map-marker me-2\"/>8 place du Marché, 61300 Val-d'Ancre"
+msgstr "<i class=\"fa fa-map-marker me-2\"/>8 place du Marché, 61300 Val-d'Ancre"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_contact
+msgid "<i class=\"fa fa-phone me-2\"/>02 33 00 00 00"
+msgstr "<i class=\"fa fa-phone me-2\"/>02 33 00 00 00"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_chiffres
+msgid "<span class=\"o_cadre_eyebrow\">Année 2025</span>"
+msgstr "<span class=\"o_cadre_eyebrow\">Année 2025</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_parcours
+msgid "<span class=\"o_cadre_eyebrow\">Comment ça se passe</span>"
+msgstr "<span class=\"o_cadre_eyebrow\">Comment ça se passe</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_agence
+msgid "<span class=\"o_cadre_eyebrow\">Depuis 2011</span>"
+msgstr "<span class=\"o_cadre_eyebrow\">Depuis 2011</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+msgid "<span class=\"o_cadre_eyebrow\">Estimation</span>"
+msgstr "<span class=\"o_cadre_eyebrow\">Estimation</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "<span class=\"o_cadre_eyebrow\">Honoraires</span>"
+msgstr "<span class=\"o_cadre_eyebrow\">Honoraires</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_contact
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_equipe
+msgid "<span class=\"o_cadre_eyebrow\">L'agence</span>"
+msgstr "<span class=\"o_cadre_eyebrow\">L'agence</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_faq
+msgid "<span class=\"o_cadre_eyebrow\">Questions fréquentes</span>"
+msgstr "<span class=\"o_cadre_eyebrow\">Questions fréquentes</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_avis
+msgid "<span class=\"o_cadre_eyebrow\">Retours</span>"
+msgstr "<span class=\"o_cadre_eyebrow\">Retours</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+msgid "<span class=\"o_cadre_eyebrow\">Sélection</span>"
+msgstr "<span class=\"o_cadre_eyebrow\">Sélection</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_biens_plus
+msgid "<span class=\"o_cadre_eyebrow\">Également disponibles</span>"
+msgstr "<span class=\"o_cadre_eyebrow\">Également disponibles</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "<span class=\"o_cadre_offer_tag\">Le plus courant</span>"
+msgstr "<span class=\"o_cadre_offer_tag\">Le plus courant</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_biens_plus
+msgid "<span class=\"o_cadre_pill\">Exclusivité</span>"
+msgstr "<span class=\"o_cadre_pill\">Exclusivité</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_biens_plus
+msgid "<span class=\"o_cadre_pill\">Investisseur</span>"
+msgstr "<span class=\"o_cadre_pill\">Investisseur</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+msgid "<span class=\"o_cadre_pill\">Nouveau</span>"
+msgstr "<span class=\"o_cadre_pill\">Nouveau</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_biens_plus
+msgid "<span class=\"o_cadre_pill\">Premier achat</span>"
+msgstr "<span class=\"o_cadre_pill\">Premier achat</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+msgid "<span class=\"o_cadre_pill\">Sous compromis</span>"
+msgstr "<span class=\"o_cadre_pill\">Sous compromis</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+msgid "<span class=\"o_cadre_pill\">Vendu sous 30 j</span>"
+msgstr "<span class=\"o_cadre_pill\">Vendu sous 30 j</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+msgid ""
+"<span class=\"o_cadre_stat_num\">112</span>\n"
+"                                    <span class=\"o_cadre_stat_label\">transactions accompagnées jusqu'à l'acte</span>"
+msgstr ""
+"<span class=\"o_cadre_stat_num\">112</span>\n"
+"                                    <span class=\"o_cadre_stat_label\">transactions accompagnées jusqu'à l'acte</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_chiffres
+msgid ""
+"<span class=\"o_cadre_stat_num\">112</span>\n"
+"                            <span class=\"o_cadre_stat_label\">transactions accompagnées jusqu'à l'acte</span>"
+msgstr ""
+"<span class=\"o_cadre_stat_num\">112</span>\n"
+"                            <span class=\"o_cadre_stat_label\">transactions accompagnées jusqu'à l'acte</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+msgid ""
+"<span class=\"o_cadre_stat_num\">4,4 %</span>\n"
+"                                    <span class=\"o_cadre_stat_label\">honoraires médians constatés</span>"
+msgstr ""
+"<span class=\"o_cadre_stat_num\">4,4 %</span>\n"
+"                                    <span class=\"o_cadre_stat_label\">honoraires médians constatés</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_chiffres
+msgid ""
+"<span class=\"o_cadre_stat_num\">4,4 %</span>\n"
+"                            <span class=\"o_cadre_stat_label\">honoraires médians constatés</span>"
+msgstr ""
+"<span class=\"o_cadre_stat_num\">4,4 %</span>\n"
+"                            <span class=\"o_cadre_stat_label\">honoraires médians constatés</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+msgid ""
+"<span class=\"o_cadre_stat_num\">41 j</span>\n"
+"                                    <span class=\"o_cadre_stat_label\">délai médian entre mandat et compromis</span>"
+msgstr ""
+"<span class=\"o_cadre_stat_num\">41 j</span>\n"
+"                                    <span class=\"o_cadre_stat_label\">délai médian entre mandat et compromis</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_chiffres
+msgid ""
+"<span class=\"o_cadre_stat_num\">41 j</span>\n"
+"                            <span class=\"o_cadre_stat_label\">délai médian entre mandat et compromis</span>"
+msgstr ""
+"<span class=\"o_cadre_stat_num\">41 j</span>\n"
+"                            <span class=\"o_cadre_stat_label\">délai médian entre mandat et compromis</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+msgid ""
+"<span class=\"o_cadre_stat_num\">96 %</span>\n"
+"                                    <span class=\"o_cadre_stat_label\">des biens vendus au prix affiché ou à moins de 3 %</span>"
+msgstr ""
+"<span class=\"o_cadre_stat_num\">96 %</span>\n"
+"                                    <span class=\"o_cadre_stat_label\">des biens vendus au prix affiché ou à moins de 3 %</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_chiffres
+msgid ""
+"<span class=\"o_cadre_stat_num\">96 %</span>\n"
+"                            <span class=\"o_cadre_stat_label\">des biens vendus au prix affiché ou à moins de 3 %</span>"
+msgstr ""
+"<span class=\"o_cadre_stat_num\">96 %</span>\n"
+"                            <span class=\"o_cadre_stat_label\">des biens vendus au prix affiché ou à moins de 3 %</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_parcours
+msgid "<span class=\"o_cadre_step_num\">01</span>"
+msgstr "<span class=\"o_cadre_step_num\">01</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_parcours
+msgid "<span class=\"o_cadre_step_num\">02</span>"
+msgstr "<span class=\"o_cadre_step_num\">02</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_parcours
+msgid "<span class=\"o_cadre_step_num\">03</span>"
+msgstr "<span class=\"o_cadre_step_num\">03</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_parcours
+msgid "<span class=\"o_cadre_step_num\">04</span>"
+msgstr "<span class=\"o_cadre_step_num\">04</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+msgid ""
+"<span><strong>Fatou Ndiaye</strong><br/>\n"
+"                                            <span class=\"o_cadre_meta\">Longère, Saint-Aubin-le-Haut</span></span>"
+msgstr ""
+"<span><strong>Fatou Ndiaye</strong><br/>\n"
+"                                            <span class=\"o_cadre_meta\">Longère, Saint-Aubin-le-Haut</span></span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_avis
+msgid ""
+"<span><strong>Fatou Ndiaye</strong><br/>\n"
+"                                    <span class=\"o_cadre_meta\">Longère, Saint-Aubin-le-Haut</span></span>"
+msgstr ""
+"<span><strong>Fatou Ndiaye</strong><br/>\n"
+"                                    <span class=\"o_cadre_meta\">Longère, Saint-Aubin-le-Haut</span></span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+msgid ""
+"<span><strong>Martine Delcroix</strong><br/>\n"
+"                                            <span class=\"o_cadre_meta\">Maison de ville, Val-d'Ancre</span></span>"
+msgstr ""
+"<span><strong>Martine Delcroix</strong><br/>\n"
+"                                            <span class=\"o_cadre_meta\">Maison de ville, Val-d'Ancre</span></span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_avis
+msgid ""
+"<span><strong>Martine Delcroix</strong><br/>\n"
+"                                    <span class=\"o_cadre_meta\">Maison de ville, Val-d'Ancre</span></span>"
+msgstr ""
+"<span><strong>Martine Delcroix</strong><br/>\n"
+"                                    <span class=\"o_cadre_meta\">Maison de ville, Val-d'Ancre</span></span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+msgid ""
+"<span><strong>Olivier Sanchez</strong><br/>\n"
+"                                            <span class=\"o_cadre_meta\">Appartement, quartier des Halles</span></span>"
+msgstr ""
+"<span><strong>Olivier Sanchez</strong><br/>\n"
+"                                            <span class=\"o_cadre_meta\">Appartement, quartier des Halles</span></span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_avis
+msgid ""
+"<span><strong>Olivier Sanchez</strong><br/>\n"
+"                                    <span class=\"o_cadre_meta\">Appartement, quartier des Halles</span></span>"
+msgstr ""
+"<span><strong>Olivier Sanchez</strong><br/>\n"
+"                                    <span class=\"o_cadre_meta\">Appartement, quartier des Halles</span></span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_contact
+msgid "<span>Dimanche</span><span>Fermé</span>"
+msgstr "<span>Dimanche</span><span>Fermé</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_contact
+msgid "<span>Lundi</span><span>14h — 18h30</span>"
+msgstr "<span>Lundi</span><span>14h — 18h30</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_contact
+msgid "<span>Mardi au vendredi</span><span>9h30 — 12h30 · 14h — 18h30</span>"
+msgstr "<span>Mardi au vendredi</span><span>9h30 — 12h30 · 14h — 18h30</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_contact
+msgid "<span>Samedi</span><span>9h30 — 13h</span>"
+msgstr "<span>Samedi</span><span>9h30 — 13h</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_footer
+msgid ""
+"<span>© 2026 Rive &amp; Bastide — agence fictive de démonstration</span>\n"
+"                    <span>Thème Cadre par DYONYSOS</span>"
+msgstr ""
+"<span>© 2026 Rive &amp; Bastide — agence fictive de démonstration</span>\n"
+"                    <span>Thème Cadre par DYONYSOS</span>"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "Accompagné"
+msgstr "Accompagné"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_parcours
+msgid "Acte"
+msgstr "Acte"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_footer
+msgid "Agence"
+msgstr "Agence"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_equipe
+msgid "Amélie Coulon"
+msgstr "Amélie Coulon"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+msgid "Appartement traversant, 74 m², dernier étage"
+msgstr "Appartement traversant, 74 m², dernier étage"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_faq
+msgid ""
+"Après le premier mois, à tout moment, par lettre recommandée, sans indemnité"
+" ni clause de reconduction tacite. C'est écrit à l'article 4 du mandat."
+msgstr ""
+"Après le premier mois, à tout moment, par lettre recommandée, sans indemnité"
+" ni clause de reconduction tacite. C'est écrit à l'article 4 du mandat."
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid ""
+"Aucune commission variable, aucun forfait négocié au cas par cas. Le barème "
+"appliqué est celui affiché ici."
+msgstr ""
+"Aucune commission variable, aucun forfait négocié au cas par cas. Le barème "
+"appliqué est celui affiché ici."
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_snippets_cadre
+msgid "Bandeau de chiffres"
+msgstr "Bandeau de chiffres"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_snippets_cadre
+msgid "Bandeau de partenaires"
+msgstr "Bandeau de partenaires"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_footer
+msgid "Barème d'honoraires affiché en agence"
+msgstr "Barème d'honoraires affiché en agence"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_equipe
+msgid "Bruno Lestrade"
+msgstr "Bruno Lestrade"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_footer
+msgid "Carte professionnelle T et G"
+msgstr "Carte professionnelle T et G"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_faq
+msgid "Ce qu'on nous demande avant de signer"
+msgstr "Ce qu'on nous demande avant de signer"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_chiffres
+msgid "Ce que nos chiffres disent"
+msgstr "Ce que nos chiffres disent"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_equipe
+msgid "Chargé de dossiers"
+msgstr "Chargé de dossiers"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_equipe
+msgid "Claire Bastide"
+msgstr "Claire Bastide"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "Comparer les barèmes"
+msgstr "Comparer les barèmes"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_parcours
+msgid ""
+"Constitution du dossier notaire, suivi du prêt acquéreur, remise des clés."
+msgstr ""
+"Constitution du dossier notaire, suivi du prêt acquéreur, remise des clés."
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_snippets_cadre
+msgid "Coordonnées et horaires"
+msgstr "Coordonnées et horaires"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+msgid "Demander une estimation"
+msgstr "Demander une estimation"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+msgid ""
+"Deux chambres, balcon filant, ascenseur. Charges de copropriété détaillées "
+"et procès-verbaux des trois dernières assemblées fournis."
+msgstr ""
+"Deux chambres, balcon filant, ascenseur. Charges de copropriété détaillées "
+"et procès-verbaux des trois dernières assemblées fournis."
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "Diffusion"
+msgstr "Diffusion"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_parcours
+msgid "Du premier appel à la remise des clés"
+msgstr "Du premier appel à la remise des clés"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_parcours
+msgid "Estimation"
+msgstr "Estimation"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "Exclusivité"
+msgstr "Exclusivité"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_faq
+msgid "Faites-vous de la gestion locative ?"
+msgstr "Faites-vous de la gestion locative ?"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_biens_plus
+msgid "Faubourg Nord · 245 000 € net vendeur"
+msgstr "Faubourg Nord · 245 000 € net vendeur"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_footer
+msgid "Garantie financière : 120 000 €"
+msgstr "Garantie financière : 120 000 €"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_snippets_cadre
+msgid "Grille de biens complémentaire"
+msgstr "Grille de biens complémentaire"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_equipe
+msgid "Gérant, gestion locative"
+msgstr "Gérant, gestion locative"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_equipe
+msgid "Gérante, transaction"
+msgstr "Gérante, transaction"
+
+#. module: theme_cadre
+#: model:theme.website.menu,name:theme_cadre.cadre_honoraires_menu
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_footer
+msgid "Honoraires"
+msgstr "Honoraires"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_biens_plus
+msgid "Immeuble de rapport, trois lots loués"
+msgstr "Immeuble de rapport, trois lots loués"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+msgid ""
+"Isolation reprise en 2023, pompe à chaleur, dépendance aménageable. "
+"Assainissement conforme, contrôle de moins d'un an."
+msgstr ""
+"Isolation reprise en 2023, pompe à chaleur, dépendance aménageable. "
+"Assainissement conforme, contrôle de moins d'un an."
+
+#. module: theme_cadre
+#: model:theme.website.menu,name:theme_cadre.cadre_agence_p_menu
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_footer
+msgid "L'agence"
+msgstr "L'agence"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_faq
+msgid "L'estimation est-elle vraiment gratuite ?"
+msgstr "L'estimation est-elle vraiment gratuite ?"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_avis
+msgid ""
+"L'estimation était 18 000 € sous celle d'une autre agence. Nous avons vendu "
+"au prix, en cinq semaines. La fourchette haute n'était pas un service."
+msgstr ""
+"L'estimation était 18 000 € sous celle d'une autre agence. Nous avons vendu "
+"au prix, en cinq semaines. La fourchette haute n'était pas un service."
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "Le barème choisi par 7 vendeurs sur 10"
+msgstr "Le barème choisi par 7 vendeurs sur 10"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_biens_plus
+msgid "Loft d'angle, 96 m², ancien atelier"
+msgstr "Loft d'angle, 96 m², ancien atelier"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+msgid "Longère rénovée, 168 m², terrain de 2 400 m²"
+msgstr "Longère rénovée, 168 m², terrain de 2 400 m²"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+msgid "Maison de ville, 132 m², cœur historique"
+msgstr "Maison de ville, 132 m², cœur historique"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "Mandat exclusif de trois mois"
+msgstr "Mandat exclusif de trois mois"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_footer
+msgid "Mentions"
+msgstr "Mentions"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_parcours
+msgid "Mise en marché"
+msgstr "Mise en marché"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_footer
+msgid "Médiateur de la consommation désigné"
+msgstr "Médiateur de la consommation désigné"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_avis
+msgid ""
+"Même personne du premier rendez-vous jusqu'au notaire. Je n'ai jamais eu à "
+"réexpliquer mon dossier."
+msgstr ""
+"Même personne du premier rendez-vous jusqu'au notaire. Je n'ai jamais eu à "
+"réexpliquer mon dossier."
+
+#. module: theme_cadre
+#: model:theme.website.menu,name:theme_cadre.cadre_biens_menu
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_footer
+msgid "Nos biens"
+msgstr "Nos biens"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_partenaires
+msgid ""
+"Nos partenaires notaires, diagnostiqueurs et courtiers (marques fictives)"
+msgstr ""
+"Nos partenaires notaires, diagnostiqueurs et courtiers (marques fictives)"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_agence
+msgid ""
+"Nous ne reversons pas 6 % de nos honoraires à une tête de réseau, ce qui "
+"nous permet d'afficher un barème plus bas que la moyenne du secteur sans "
+"réduire le service."
+msgstr ""
+"Nous ne reversons pas 6 % de nos honoraires à une tête de réseau, ce qui "
+"nous permet d'afficher un barème plus bas que la moyenne du secteur sans "
+"réduire le service."
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+msgid ""
+"Nous nous déplaçons, nous mesurons, nous comparons, et nous vous remettons "
+"un document daté et signé. Gratuit et sans engagement de mandat."
+msgstr ""
+"Nous nous déplaçons, nous mesurons, nous comparons, et nous vous remettons "
+"un document daté et signé. Gratuit et sans engagement de mandat."
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_contact
+msgid ""
+"Nous recevons sans rendez-vous aux heures d'ouverture, et sur rendez-vous en"
+" soirée le mardi et le jeudi."
+msgstr ""
+"Nous recevons sans rendez-vous aux heures d'ouverture, et sur rendez-vous en"
+" soirée le mardi et le jeudi."
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_faq
+msgid ""
+"Nous vous remettons à trois mois une note écrite : nombre de contacts, de "
+"visites, retours des acquéreurs et recommandation chiffrée. Vous décidez de "
+"la suite."
+msgstr ""
+"Nous vous remettons à trois mois une note écrite : nombre de contacts, de "
+"visites, retours des acquéreurs et recommandation chiffrée. Vous décidez de "
+"la suite."
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_footer
+msgid "Nous écrire"
+msgstr "Nous écrire"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_parcours
+msgid "Négociation"
+msgstr "Négociation"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_equipe
+msgid "Négociatrice"
+msgstr "Négociatrice"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_parcours
+msgid "Offres écrites transmises intégralement. Nous négocions, vous décidez."
+msgstr "Offres écrites transmises intégralement. Nous négocions, vous décidez."
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_faq
+msgid ""
+"Oui, et sans contrepartie. Vous repartez avec le rapport écrit même si vous "
+"ne signez pas de mandat, et même si vous confiez ensuite le bien à une autre"
+" agence."
+msgstr ""
+"Oui, et sans contrepartie. Vous repartez avec le rapport écrit même si vous "
+"ne signez pas de mandat, et même si vous confiez ensuite le bien à une autre"
+" agence."
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_faq
+msgid ""
+"Oui, sur le même principe de barème public. La gestion est assurée en "
+"interne, sans sous-traitance à un cabinet extérieur."
+msgstr ""
+"Oui, sur le même principe de barème public. La gestion est assurée en "
+"interne, sans sous-traitance à un cabinet extérieur."
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_contact
+msgid "Ouverture"
+msgstr "Ouverture"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_faq
+msgid ""
+"Par défaut le vendeur, ce qui est mentionné dans chaque annonce. Une prise "
+"en charge par l'acquéreur est possible et doit alors figurer dès la "
+"publication."
+msgstr ""
+"Par défaut le vendeur, ce qui est mentionné dans chaque annonce. Une prise "
+"en charge par l'acquéreur est possible et doit alors figurer dès la "
+"publication."
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_snippets_cadre
+msgid "Parcours de vente"
+msgstr "Parcours de vente"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_parcours
+msgid "Photos, plan coté, diagnostics. Diffusion dès la signature du mandat."
+msgstr "Photos, plan coté, diagnostics. Diffusion dès la signature du mandat."
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_snippets_cadre
+msgid "Portraits de l'équipe"
+msgstr "Portraits de l'équipe"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "Prendre rendez-vous"
+msgstr "Prendre rendez-vous"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+msgid ""
+"Prix net vendeur, honoraires affichés séparément, diagnostics disponibles au"
+" premier contact."
+msgstr ""
+"Prix net vendeur, honoraires affichés séparément, diagnostics disponibles au"
+" premier contact."
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_snippets_cadre
+msgid "Présentation en deux colonnes"
+msgstr "Présentation en deux colonnes"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_faq
+msgid "Puis-je résilier le mandat ?"
+msgstr "Puis-je résilier le mandat ?"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_biens_plus
+msgid "Quartier Gare · 96 000 € net vendeur"
+msgstr "Quartier Gare · 96 000 € net vendeur"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+msgid "Quartier des Halles · 189 000 € net vendeur"
+msgstr "Quartier des Halles · 189 000 € net vendeur"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+msgid ""
+"Quatre chambres, cave voûtée, cour exposée sud. Toiture refaite en 2021, "
+"menuiseries double vitrage sur l'ensemble."
+msgstr ""
+"Quatre chambres, cave voûtée, cour exposée sud. Toiture refaite en 2021, "
+"menuiseries double vitrage sur l'ensemble."
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_equipe
+msgid "Quatre personnes, aucun apporteur d'affaires"
+msgstr "Quatre personnes, aucun apporteur d'affaires"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_faq
+msgid "Que se passe-t-il si le bien ne se vend pas ?"
+msgstr "Que se passe-t-il si le bien ne se vend pas ?"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_snippets_cadre
+msgid "Questions fréquentes"
+msgstr "Questions fréquentes"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_faq
+msgid "Qui paie les honoraires ?"
+msgstr "Qui paie les honoraires ?"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_biens_plus
+msgid ""
+"Refait entièrement en 2024, charges faibles, éligible au dispositif de prêt "
+"à taux zéro sous conditions."
+msgstr ""
+"Refait entièrement en 2024, charges faibles, éligible au dispositif de prêt "
+"à taux zéro sous conditions."
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_biens_plus
+msgid ""
+"Rendement brut constaté 6,4 %. Baux en cours transmis, aucun impayé sur les "
+"trente-six derniers mois."
+msgstr ""
+"Rendement brut constaté 6,4 %. Baux en cours transmis, aucun impayé sur les "
+"trente-six derniers mois."
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_footer
+msgid "Rive &amp; Bastide"
+msgstr "Rive &amp; Bastide"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_biens_plus
+msgid "Rue de la Fonderie · 398 000 € net vendeur"
+msgstr "Rue de la Fonderie · 398 000 € net vendeur"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+msgid "Saint-Aubin-le-Haut · 342 000 € net vendeur"
+msgstr "Saint-Aubin-le-Haut · 342 000 € net vendeur"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_footer
+msgid "Services"
+msgstr "Services"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_biens_plus
+msgid "Studio meublé, 28 m², proche gare"
+msgstr "Studio meublé, 28 m², proche gare"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_contact
+msgid "Sur la place, en face du kiosque"
+msgstr "Sur la place, en face du kiosque"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_equipe
+msgid "Thomas Rive"
+msgstr "Thomas Rive"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_avis
+msgid ""
+"Toutes les offres m'ont été transmises, y compris les basses. J'ai pu "
+"arbitrer moi-même au lieu d'apprendre après coup ce qu'on avait écarté."
+msgstr ""
+"Toutes les offres m'ont été transmises, y compris les basses. J'ai pu "
+"arbitrer moi-même au lieu d'apprendre après coup ce qu'on avait écarté."
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_footer
+msgid "Transaction et gestion locative, agence indépendante depuis 2011."
+msgstr "Transaction et gestion locative, agence indépendante depuis 2011."
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_biens_plus
+msgid "Trois autres biens au mandat"
+msgstr "Trois autres biens au mandat"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_snippets_cadre
+msgid "Trois avis de vendeurs"
+msgstr "Trois avis de vendeurs"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_snippets_cadre
+msgid "Trois barèmes d'honoraires"
+msgstr "Trois barèmes d'honoraires"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "Trois barèmes, publics et identiques pour tous"
+msgstr "Trois barèmes, publics et identiques pour tous"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+msgid "Trois biens rentrés cette semaine"
+msgstr "Trois biens rentrés cette semaine"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_avis
+msgid "Trois vendeurs, trois dossiers bouclés en 2025"
+msgstr "Trois vendeurs, trois dossiers bouclés en 2025"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_agence
+msgid "Une agence indépendante, sans réseau ni redevance de franchise"
+msgstr "Une agence indépendante, sans réseau ni redevance de franchise"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+msgid "Une estimation écrite, pas une fourchette au téléphone"
+msgstr "Une estimation écrite, pas une fourchette au téléphone"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+msgid "Val-d'Ancre · 268 000 € net vendeur"
+msgstr "Val-d'Ancre · 268 000 € net vendeur"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_parcours
+msgid ""
+"Visite sur place, mesures, comparables réels. Rapport écrit sous 72 heures."
+msgstr ""
+"Visite sur place, mesures, comparables réels. Rapport écrit sous 72 heures."
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_agence_p
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_agence
+msgid "Voir nos honoraires"
+msgstr "Voir nos honoraires"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_biens
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_biens_plus
+msgid ""
+"Volume unique sous charpente métallique, verrière plein sud, stationnement "
+"privatif. Copropriété de six lots."
+msgstr ""
+"Volume unique sous charpente métallique, verrière plein sud, stationnement "
+"privatif. Copropriété de six lots."
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "Vous gérez les visites"
+msgstr "Vous gérez les visites"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_snippets_cadre
+msgid "agence, presentation, texte image, histoire, deux colonnes"
+msgstr "agence, presentation, texte image, histoire, deux colonnes"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_snippets_cadre
+msgid "avis, temoignages, clients, vendeurs, confiance"
+msgstr "avis, temoignages, clients, vendeurs, confiance"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_snippets_cadre
+msgid "biens, annonces, cartes, grille, catalogue, complement"
+msgstr "biens, annonces, cartes, grille, catalogue, complement"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_snippets_cadre
+msgid "chiffres, statistiques, resultats, preuves, indicateurs"
+msgstr "chiffres, statistiques, resultats, preuves, indicateurs"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_snippets_cadre
+msgid "contact, horaires, adresse, agence, coordonnees"
+msgstr "contact, horaires, adresse, agence, coordonnees"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_footer
+msgid "contact@rive-bastide.example"
+msgstr "contact@rive-bastide.example"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_snippets_cadre
+msgid "equipe, portraits, collaborateurs, agence, personnes"
+msgstr "equipe, portraits, collaborateurs, agence, personnes"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_snippets_cadre
+msgid "faq, questions, reponses, accordeon, aide"
+msgstr "faq, questions, reponses, accordeon, aide"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_snippets_cadre
+msgid "honoraires, tarifs, baremes, formules, prix, offres"
+msgstr "honoraires, tarifs, baremes, formules, prix, offres"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_snippets_cadre
+msgid "parcours, etapes, methode, deroule, vente"
+msgstr "parcours, etapes, methode, deroule, vente"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.o_cadre_snippets_cadre
+msgid "partenaires, confiance, logos, reseaux, references"
+msgstr "partenaires, confiance, logos, reseaux, references"
+
+#. module: theme_cadre
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.cadre_honoraires
+#: model_terms:theme.ir.ui.view,arch:theme_cadre.s_cadre_honoraires
+msgid "Étudier l'exclusivité"
+msgstr "Étudier l'exclusivité"

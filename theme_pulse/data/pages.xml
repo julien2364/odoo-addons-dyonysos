@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="0">
+
+<!-- Pages de démonstration du thème. Dans un module theme_*, un <template>
+     devient une theme.ir.ui.view et la page une theme.website.page : rien
+     n'est créé dans le site avant l'application du thème. Le balisage est
+     dupliqué depuis views/snippets/ pour que chaque section soit éditable
+     dans l'oe_structure de la page. -->
+
+    <template id="pulse_cours_p" name="Les cours">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+            <section class="o_pulse_cards pt64 pb64 o_cc o_cc1">
+                    <div class="container">
+                        <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                            <span class="o_pulse_eyebrow">Au planning</span>
+                            <h2 class="mb-3">Six cours, tous en groupe de huit</h2>
+                            <p class="lead mb-0">Chaque cours dure cinquante minutes, échauffement et retour au calme compris.</p>
+                        </div>
+                        <div class="row g-4"><div class="col-lg-4 col-md-6">
+                                <article class="o_pulse_card h-100">
+                                    <div class="o_pulse_card_media">
+                                        <img src="/theme_pulse/static/src/img/pulse_cours_1.png" alt=""/>
+                                        <span class="o_pulse_pill">50 min</span>
+                                    </div>
+                                    <div class="o_pulse_card_body">
+                                        <h3 class="h4 mb-2">Force — bas du corps</h3>
+                                        <p class="mb-3">Squat, soulevé de terre, fentes chargées. Progression en charge sur cycle de six semaines.</p>
+                                        <p class="o_pulse_meta mb-0">Lundi et jeudi · 7h, 12h15, 18h30</p>
+                                    </div>
+                                </article>
+                            </div><div class="col-lg-4 col-md-6">
+                                <article class="o_pulse_card h-100">
+                                    <div class="o_pulse_card_media">
+                                        <img src="/theme_pulse/static/src/img/pulse_cours_2.png" alt=""/>
+                                        <span class="o_pulse_pill">50 min</span>
+                                    </div>
+                                    <div class="o_pulse_card_body">
+                                        <h3 class="h4 mb-2">Force — haut du corps</h3>
+                                        <p class="mb-3">Développé, tractions assistées, rowing. Travail de gainage intégré à chaque série.</p>
+                                        <p class="o_pulse_meta mb-0">Mardi et vendredi · 7h, 12h15, 19h</p>
+                                    </div>
+                                </article>
+                            </div><div class="col-lg-4 col-md-6">
+                                <article class="o_pulse_card h-100">
+                                    <div class="o_pulse_card_media">
+                                        <img src="/theme_pulse/static/src/img/pulse_cours_3.png" alt=""/>
+                                        <span class="o_pulse_pill">45 min</span>
+                                    </div>
+                                    <div class="o_pulse_card_body">
+                                        <h3 class="h4 mb-2">Conditionnement</h3>
+                                        <p class="mb-3">Circuit à intensité contrôlée, fréquence cardiaque suivie. Aucun exercice technique sous fatigue.</p>
+                                        <p class="o_pulse_meta mb-0">Mercredi et samedi · 9h, 18h30</p>
+                                    </div>
+                                </article>
+                            </div><div class="col-lg-4 col-md-6">
+                                <article class="o_pulse_card h-100">
+                                    <div class="o_pulse_card_media">
+                                        <img src="/theme_pulse/static/src/img/pulse_cours_4.png" alt=""/>
+                                        <span class="o_pulse_pill">50 min</span>
+                                    </div>
+                                    <div class="o_pulse_card_body">
+                                        <h3 class="h4 mb-2">Mobilité et posture</h3>
+                                        <p class="mb-3">Hanches, épaules, chaîne postérieure. Recommandé en début de cycle et après une reprise.</p>
+                                        <p class="o_pulse_meta mb-0">Mardi et jeudi · 12h15</p>
+                                    </div>
+                                </article>
+                            </div><div class="col-lg-4 col-md-6">
+                                <article class="o_pulse_card h-100">
+                                    <div class="o_pulse_card_media">
+                                        <img src="/theme_pulse/static/src/img/pulse_cours_5.png" alt=""/>
+                                        <span class="o_pulse_pill">60 min</span>
+                                    </div>
+                                    <div class="o_pulse_card_body">
+                                        <h3 class="h4 mb-2">Reprise progressive</h3>
+                                        <p class="mb-3">Pour un retour après arrêt long. Charges légères, volume faible, quatre semaines avant d'intégrer un autre cours.</p>
+                                        <p class="o_pulse_meta mb-0">Lundi et mercredi · 14h</p>
+                                    </div>
+                                </article>
+                            </div><div class="col-lg-4 col-md-6">
+                                <article class="o_pulse_card h-100">
+                                    <div class="o_pulse_card_media">
+                                        <img src="/theme_pulse/static/src/img/pulse_cours_6.png" alt=""/>
+                                        <span class="o_pulse_pill">50 min</span>
+                                    </div>
+                                    <div class="o_pulse_card_body">
+                                        <h3 class="h4 mb-2">Préparation spécifique</h3>
+                                        <p class="mb-3">Cycle orienté course, trail ou sport collectif, construit avec vous à partir de votre calendrier.</p>
+                                        <p class="o_pulse_meta mb-0">Samedi · 10h30</p>
+                                    </div>
+                                </article>
+                            </div></div>
+                    </div>
+                </section>
+            <section class="o_pulse_steps pt64 pb64 o_cc o_cc1">
+                    <div class="container">
+                        <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                            <span class="o_pulse_eyebrow">Vos six premières semaines</span>
+                            <h2 class="mb-3">Comment démarre un cycle</h2>
+                
+                        </div>
+                        <div class="row g-4 o_pulse_steps_row"><div class="col-lg-3 col-md-6">
+                                <div class="o_pulse_step h-100">
+                                    <span class="o_pulse_step_num">01</span>
+                                    <h3 class="h5 mb-2">Bilan</h3>
+                                    <p class="mb-0">Mobilité, antécédents, contraintes horaires. Quarante minutes, gratuit.</p>
+                                </div>
+                            </div><div class="col-lg-3 col-md-6">
+                                <div class="o_pulse_step h-100">
+                                    <span class="o_pulse_step_num">02</span>
+                                    <h3 class="h5 mb-2">Test de charges</h3>
+                                    <p class="mb-0">Estimation de vos maxima sans jamais aller à l'échec.</p>
+                                </div>
+                            </div><div class="col-lg-3 col-md-6">
+                                <div class="o_pulse_step h-100">
+                                    <span class="o_pulse_step_num">03</span>
+                                    <h3 class="h5 mb-2">Programme écrit</h3>
+                                    <p class="mb-0">Remis sous 48 heures, chiffré, séance par séance.</p>
+                                </div>
+                            </div><div class="col-lg-3 col-md-6">
+                                <div class="o_pulse_step h-100">
+                                    <span class="o_pulse_step_num">04</span>
+                                    <h3 class="h5 mb-2">Point à six semaines</h3>
+                                    <p class="mb-0">Relecture des courbes, ajustement, nouveau cycle.</p>
+                                </div>
+                            </div></div>
+                    </div>
+                </section>
+            <section class="o_pulse_banner pt64 pb64 o_cc o_cc5">
+                    <div class="container text-center">
+                        <span class="o_pulse_eyebrow">Notre position</span>
+                        <p class="o_pulse_banner_text mb-0">« Une salle qui vend trente machines vend du matériel. Nous vendons de l'encadrement. »</p>
+                        <p class="o_pulse_meta mt-3 mb-0">Nordine Farah, responsable du plateau</p>
+                    </div>
+                </section>
+            <section class="o_pulse_cta pt64 pb64 o_cc o_cc5" style="background-image:url('/theme_pulse_lite/static/src/img/pulse_offre.png');">
+                    <div class="container">
+                        <div class="o_pulse_cta_inner text-center mx-auto" style="max-width:46rem">
+                            <span class="o_pulse_eyebrow">Séance d'essai</span>
+                            <h2 class="mb-3">La première séance ne coûte rien et ne vous engage à rien</h2>
+                            <p class="lead mb-0">Bilan de mobilité, test de charges, une séance complète en groupe. Vous repartez avec votre programme écrit, même si vous ne revenez pas.</p>
+                            <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
+                                <a href="/contactus" class="btn btn-primary btn-lg">Réserver mon essai</a><a href="/tarifs" class="btn btn-outline-light btn-lg">Voir les tarifs</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <record id="pulse_cours_p_page" model="theme.website.page">
+        <field name="url">/cours</field>
+        <field name="view_id" ref="pulse_cours_p"/>
+        <field name="is_published" eval="True"/>
+    </record>
+    <template id="pulse_tarifs" name="Tarifs">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+            <section class="o_pulse_offers pt64 pb64 o_cc o_cc1">
+                    <div class="container">
+                        <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                            <span class="o_pulse_eyebrow">Abonnements</span>
+                            <h2 class="mb-3">Trois formules, sans engagement de douze mois</h2>
+                            <p class="lead mb-0">Résiliables au mois. Aucun frais de dossier, aucune reconduction automatique.</p>
+                        </div>
+                        <div class="row g-4 justify-content-center"><div class="col-lg-4 col-md-6">
+                                <div class="o_pulse_offer h-100 ">
+                        
+                                    <h3 class="h4 mb-1">Libre</h3>
+                                    <p class="o_pulse_meta mb-3">Accès plateau et vestiaires</p>
+                                    <p class="o_pulse_offer_price mb-4">39 €<small>/ mois</small></p>
+                                    <ul class="list-unstyled o_pulse_offer_feats mb-4"><li><i class="fa fa-check me-2"/>Accès de 6h à 22h, sept jours sur sept</li><li><i class="fa fa-check me-2"/>Bilan d'entrée avec un coach</li><li><i class="fa fa-check me-2"/>Application de suivi des charges</li><li><i class="fa fa-check me-2"/>Vestiaires et douches</li><li><i class="fa fa-check me-2"/>Résiliable au mois</li></ul>
+                                    <a href="#" class="btn btn-outline-primary w-100">Commencer</a>
+                                </div>
+                            </div><div class="col-lg-4 col-md-6">
+                                <div class="o_pulse_offer h-100 is-featured">
+                                    <span class="o_pulse_offer_tag">Le plus pris</span>
+                                    <h3 class="h4 mb-1">Encadré</h3>
+                                    <p class="o_pulse_meta mb-3">La formule de 6 adhérents sur 10</p>
+                                    <p class="o_pulse_offer_price mb-4">69 €<small>/ mois</small></p>
+                                    <ul class="list-unstyled o_pulse_offer_feats mb-4"><li><i class="fa fa-check me-2"/>Tout la formule Libre</li><li><i class="fa fa-check me-2"/>Trois cours collectifs par semaine</li><li><i class="fa fa-check me-2"/>Groupes de huit maximum</li><li><i class="fa fa-check me-2"/>Programme écrit renouvelé toutes les six semaines</li><li><i class="fa fa-check me-2"/>Point de progression mensuel</li></ul>
+                                    <a href="#" class="btn btn-primary w-100">Réserver un essai</a>
+                                </div>
+                            </div><div class="col-lg-4 col-md-6">
+                                <div class="o_pulse_offer h-100 ">
+                        
+                                    <h3 class="h4 mb-1">Individuel</h3>
+                                    <p class="o_pulse_meta mb-3">Coaching en tête-à-tête</p>
+                                    <p class="o_pulse_offer_price mb-4">129 €<small>/ mois</small></p>
+                                    <ul class="list-unstyled o_pulse_offer_feats mb-4"><li><i class="fa fa-check me-2"/>Tout la formule Encadré</li><li><i class="fa fa-check me-2"/>Quatre séances individuelles par mois</li><li><i class="fa fa-check me-2"/>Programme construit sur vos contraintes</li><li><i class="fa fa-check me-2"/>Suivi nutritionnel de base</li><li><i class="fa fa-check me-2"/>Créneaux réservés à l'avance</li></ul>
+                                    <a href="#" class="btn btn-outline-primary w-100">Prendre rendez-vous</a>
+                                </div>
+                            </div></div>
+                    </div>
+                </section>
+            <section class="o_pulse_stats pt48 pb48 o_cc o_cc2">
+                    <div class="container">
+                        <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                            <span class="o_pulse_eyebrow">Le studio en bref</span>
+                            <h2 class="mb-3">Ce que nous mesurons</h2>
+                
+                        </div>
+                        <div class="row g-4 text-center"><div class="col-lg-3 col-6">
+                                <div class="o_pulse_stat">
+                                    <span class="o_pulse_stat_num">8</span>
+                                    <span class="o_pulse_stat_label">adhérents maximum par cours</span>
+                                </div>
+                            </div><div class="col-lg-3 col-6">
+                                <div class="o_pulse_stat">
+                                    <span class="o_pulse_stat_num">420 m²</span>
+                                    <span class="o_pulse_stat_label">de plateau sur un seul niveau</span>
+                                </div>
+                            </div><div class="col-lg-3 col-6">
+                                <div class="o_pulse_stat">
+                                    <span class="o_pulse_stat_num">12</span>
+                                    <span class="o_pulse_stat_label">coachs diplômés</span>
+                                </div>
+                            </div><div class="col-lg-3 col-6">
+                                <div class="o_pulse_stat">
+                                    <span class="o_pulse_stat_num">6 sem.</span>
+                                    <span class="o_pulse_stat_label">entre deux réécritures de programme</span>
+                                </div>
+                            </div></div>
+                    </div>
+                </section>
+            <section class="o_pulse_faq pt64 pb64 o_cc o_cc1">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                            <span class="o_pulse_eyebrow">Questions fréquentes</span>
+                            <h2 class="mb-3">Ce qu'on nous demande avant de s'inscrire</h2>
+                
+                        </div>
+                                <div class="accordion o_pulse_acc" id="o_pulse_faq_acc"><div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button " type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#o_pulse_faq_acc_0">Faut-il un niveau minimum ?</button>
+                                    </h3>
+                                    <div id="o_pulse_faq_acc_0" class="accordion-collapse collapse show"
+                                         data-bs-parent="#o_pulse_faq_acc">
+                                        <div class="accordion-body">Non. La formule Reprise progressive existe précisément pour un retour après un arrêt long. Le bilan d'entrée détermine le point de départ, pas un test d'admission.</div>
+                                    </div>
+                                </div><div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#o_pulse_faq_acc_1">Puis-je résilier quand je veux ?</button>
+                                    </h3>
+                                    <div id="o_pulse_faq_acc_1" class="accordion-collapse collapse "
+                                         data-bs-parent="#o_pulse_faq_acc">
+                                        <div class="accordion-body">Oui, depuis votre espace adhérent, avec effet à la fin du mois en cours. Aucun frais, aucun justificatif, aucune lettre recommandée.</div>
+                                    </div>
+                                </div><div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#o_pulse_faq_acc_2">Les cours sont-ils vraiment limités à huit ?</button>
+                                    </h3>
+                                    <div id="o_pulse_faq_acc_2" class="accordion-collapse collapse "
+                                         data-bs-parent="#o_pulse_faq_acc">
+                                        <div class="accordion-body">Oui. La réservation se ferme automatiquement à huit places. Aucune place supplémentaire n'est ouverte, même pour un adhérent en formule Individuel.</div>
+                                    </div>
+                                </div><div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#o_pulse_faq_acc_3">Y a-t-il des vestiaires et des douches ?</button>
+                                    </h3>
+                                    <div id="o_pulse_faq_acc_3" class="accordion-collapse collapse "
+                                         data-bs-parent="#o_pulse_faq_acc">
+                                        <div class="accordion-body">Deux vestiaires avec casiers à code et six douches individuelles. Serviette non fournie.</div>
+                                    </div>
+                                </div><div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#o_pulse_faq_acc_4">Vendez-vous des compléments alimentaires ?</button>
+                                    </h3>
+                                    <div id="o_pulse_faq_acc_4" class="accordion-collapse collapse "
+                                         data-bs-parent="#o_pulse_faq_acc">
+                                        <div class="accordion-body">Non. Nous ne vendons aucun produit. Le suivi nutritionnel de la formule Individuel reste de l'accompagnement, pas de la prescription.</div>
+                                    </div>
+                                </div></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <section class="o_pulse_cta pt64 pb64 o_cc o_cc5" style="background-image:url('/theme_pulse_lite/static/src/img/pulse_offre.png');">
+                    <div class="container">
+                        <div class="o_pulse_cta_inner text-center mx-auto" style="max-width:46rem">
+                            <span class="o_pulse_eyebrow">Séance d'essai</span>
+                            <h2 class="mb-3">La première séance ne coûte rien et ne vous engage à rien</h2>
+                            <p class="lead mb-0">Bilan de mobilité, test de charges, une séance complète en groupe. Vous repartez avec votre programme écrit, même si vous ne revenez pas.</p>
+                            <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
+                                <a href="/contactus" class="btn btn-primary btn-lg">Réserver mon essai</a><a href="/tarifs" class="btn btn-outline-light btn-lg">Voir les tarifs</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <record id="pulse_tarifs_page" model="theme.website.page">
+        <field name="url">/tarifs</field>
+        <field name="view_id" ref="pulse_tarifs"/>
+        <field name="is_published" eval="True"/>
+    </record>
+    <template id="pulse_studio_p" name="Le studio">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+            <section class="o_pulse_split pt64 pb64 o_cc o_cc1">
+                    <div class="container">
+                        <div class="row align-items-center g-5"><div class="col-lg-6 order-lg-2">
+                                <span class="o_pulse_eyebrow">Le lieu</span>
+                                <h2 class="mb-3">Une ancienne fonderie, deux racks et beaucoup de sol libre</h2>
+                                <p>Nous avons fait le choix inverse de la plupart des salles : peu de machines, beaucoup d'espace au sol, et un plafond assez haut pour travailler debout, barre au-dessus de la tête.</p>
+                                <ul class="o_pulse_points list-unstyled mt-4 mb-0"><li><i class="fa fa-angle-right me-2"/>420 m² sur un seul niveau</li><li><i class="fa fa-angle-right me-2"/>Deux racks, quatre plateformes, aucune machine guidée</li><li><i class="fa fa-angle-right me-2"/>Sol amortissant sur toute la surface de travail</li><li><i class="fa fa-angle-right me-2"/>Ventilation renouvelée toutes les huit minutes</li></ul>
+                                <div class="d-flex flex-wrap gap-3 mt-4"><a href="/contactus" class="btn btn-primary btn-lg">Venir voir</a></div>
+                            </div><div class="col-lg-6 order-lg-1">
+                                <div class="o_pulse_split_media"><img src="/theme_pulse/static/src/img/pulse_studio.png" alt="" class="img-fluid"/></div>
+                            </div></div>
+                    </div>
+                </section>
+            <section class="o_pulse_gallery pt64 pb64 o_cc o_cc1">
+                    <div class="container">
+                        <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                            <span class="o_pulse_eyebrow">Le plateau</span>
+                            <h2 class="mb-3">420 m², deux racks, aucune machine guidée</h2>
+                
+                        </div>
+                        <div class="o_pulse_gal_grid"><div class="o_pulse_gal_cell is-wide"><img src="/theme_pulse/static/src/img/pulse_gal_1.png" alt=""/></div><div class="o_pulse_gal_cell "><img src="/theme_pulse/static/src/img/pulse_gal_2.png" alt=""/></div><div class="o_pulse_gal_cell "><img src="/theme_pulse/static/src/img/pulse_gal_3.png" alt=""/></div><div class="o_pulse_gal_cell "><img src="/theme_pulse/static/src/img/pulse_gal_4.png" alt=""/></div><div class="o_pulse_gal_cell "><img src="/theme_pulse/static/src/img/pulse_gal_5.png" alt=""/></div><div class="o_pulse_gal_cell "><img src="/theme_pulse/static/src/img/pulse_gal_6.png" alt=""/></div></div>
+                    </div>
+                </section>
+            <section class="o_pulse_team pt64 pb64 o_cc o_cc1">
+                    <div class="container">
+                        <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                            <span class="o_pulse_eyebrow">L'encadrement</span>
+                            <h2 class="mb-3">Quatre coachs sur le plateau aux heures pleines</h2>
+                
+                        </div>
+                        <div class="row g-4"><div class="col-lg-3 col-6">
+                                <div class="o_pulse_member text-center">
+                                    <img src="/theme_pulse/static/src/img/pulse_eq_1.png" alt="" class="o_pulse_member_photo"/>
+                                    <h3 class="h5 mt-3 mb-1">Nordine Farah</h3>
+                                    <p class="o_pulse_meta mb-0">Responsable du plateau</p>
+                                </div>
+                            </div><div class="col-lg-3 col-6">
+                                <div class="o_pulse_member text-center">
+                                    <img src="/theme_pulse/static/src/img/pulse_eq_2.png" alt="" class="o_pulse_member_photo"/>
+                                    <h3 class="h5 mt-3 mb-1">Marion Delaunay</h3>
+                                    <p class="o_pulse_meta mb-0">Force et haltérophilie</p>
+                                </div>
+                            </div><div class="col-lg-3 col-6">
+                                <div class="o_pulse_member text-center">
+                                    <img src="/theme_pulse/static/src/img/pulse_eq_3.png" alt="" class="o_pulse_member_photo"/>
+                                    <h3 class="h5 mt-3 mb-1">Samuel Ozanne</h3>
+                                    <p class="o_pulse_meta mb-0">Conditionnement</p>
+                                </div>
+                            </div><div class="col-lg-3 col-6">
+                                <div class="o_pulse_member text-center">
+                                    <img src="/theme_pulse/static/src/img/pulse_eq_4.png" alt="" class="o_pulse_member_photo"/>
+                                    <h3 class="h5 mt-3 mb-1">Inès Bouchard</h3>
+                                    <p class="o_pulse_meta mb-0">Mobilité et reprise</p>
+                                </div>
+                            </div></div>
+                    </div>
+                </section>
+            <section class="o_pulse_testimonials pt64 pb64 o_cc o_cc2">
+                    <div class="container">
+                        <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                            <span class="o_pulse_eyebrow">Retours</span>
+                            <h2 class="mb-3">Trois adhérents, trois points de départ différents</h2>
+                
+                        </div>
+                        <div class="row g-4"><div class="col-lg-4 col-md-6">
+                                <figure class="o_pulse_quote h-100">
+                                    <blockquote class="mb-4">Je n'avais jamais soulevé une barre. Six semaines plus tard j'avais un programme à mon nom et des chiffres qui montaient. Personne ne m'a vendu de complément alimentaire.</blockquote>
+                                    <figcaption class="d-flex align-items-center gap-3">
+                                        <img src="/theme_pulse/static/src/img/pulse_av_1.png" alt="" class="o_pulse_avatar"/>
+                                        <span><strong>Léa Marchandeau</strong><br/>
+                                            <span class="o_pulse_meta">Adhérente depuis 14 mois</span></span>
+                                    </figcaption>
+                                </figure>
+                            </div><div class="col-lg-4 col-md-6">
+                                <figure class="o_pulse_quote h-100">
+                                    <blockquote class="mb-4">Groupes de huit, c'est la vraie différence. Le coach voit quand mon dos part, il le dit tout de suite. Dans mon ancienne salle on était trente.</blockquote>
+                                    <figcaption class="d-flex align-items-center gap-3">
+                                        <img src="/theme_pulse/static/src/img/pulse_av_2.png" alt="" class="o_pulse_avatar"/>
+                                        <span><strong>Ibrahim Traoré</strong><br/>
+                                            <span class="o_pulse_meta">Formule Encadré</span></span>
+                                    </figcaption>
+                                </figure>
+                            </div><div class="col-lg-4 col-md-6">
+                                <figure class="o_pulse_quote h-100">
+                                    <blockquote class="mb-4">Résiliation en deux clics quand j'ai déménagé trois mois. Reprise sans frais de dossier au retour. C'est rare pour être signalé.</blockquote>
+                                    <figcaption class="d-flex align-items-center gap-3">
+                                        <img src="/theme_pulse/static/src/img/pulse_av_3.png" alt="" class="o_pulse_avatar"/>
+                                        <span><strong>Cécile Aubertin</strong><br/>
+                                            <span class="o_pulse_meta">Adhérente depuis 3 ans</span></span>
+                                    </figcaption>
+                                </figure>
+                            </div></div>
+                    </div>
+                </section>
+            <section class="o_pulse_contact pt64 pb64 o_cc o_cc2">
+                    <div class="container">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-5">
+                                <span class="o_pulse_eyebrow">Nous trouver</span>
+                                <h2 class="mb-3">Zone de la Fonderie, bâtiment 12</h2>
+                                <p>Parking gratuit devant le bâtiment, arceaux à vélo couverts. Arrêt de bus « Fonderie » à cent mètres, lignes 4 et 11.</p>
+                                <ul class="list-unstyled o_pulse_infos mt-4 mb-0"><li><i class="fa fa-map-marker me-2"/>12 rue de la Fonderie, 33520 Bassens-Rive</li><li><i class="fa fa-phone me-2"/>05 56 00 00 00</li><li><i class="fa fa-envelope me-2"/>plateau@fonderie12.example</li><li><i class="fa fa-bicycle me-2"/>Arceaux couverts et douches à disposition</li></ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="o_pulse_hours">
+                                    <h3 class="h5 mb-3">Ouverture du plateau</h3>
+                                    <ul class="list-unstyled mb-0"><li><span>Lundi au vendredi</span><span>6h — 22h</span></li><li><span>Samedi</span><span>8h — 19h</span></li><li><span>Dimanche</span><span>9h — 13h</span></li><li><span>Jours fériés</span><span>9h — 13h</span></li></ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="o_pulse_contact_media">
+                                    <img src="/theme_pulse/static/src/img/pulse_contact.png" alt="" class="img-fluid"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <record id="pulse_studio_p_page" model="theme.website.page">
+        <field name="url">/le-studio</field>
+        <field name="view_id" ref="pulse_studio_p"/>
+        <field name="is_published" eval="True"/>
+    </record>
+
+</data>
+</odoo>

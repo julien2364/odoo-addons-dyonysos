@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="o_cadre_snippets_lite" inherit_id="website.snippets" name="Blocs Immobilier">
+    <xpath expr="//t[@id='installed_snippets_hook']" position="before">
+        <t snippet-group="cadre" t-snippet="website.s_snippet_group" string="Immobilier"
+           t-thumbnail="/theme_cadre_lite/static/src/img/snippets_thumbs/group.png"/>
+    </xpath>
+    <xpath expr="//snippets[@id='snippet_structure']" position="inside">
+        <t t-snippet="theme_cadre_lite.s_cadre_hero" string="Bandeau agence deux colonnes" group="cadre"
+           t-thumbnail="/theme_cadre_lite/static/src/img/snippets_thumbs/s_cadre_hero.png">
+            <keywords>bandeau, hero, accueil, agence, immobilier, recherche</keywords>
+        </t>
+        <t t-snippet="theme_cadre_lite.s_cadre_biens" string="Grille de biens" group="cadre"
+           t-thumbnail="/theme_cadre_lite/static/src/img/snippets_thumbs/s_cadre_biens.png">
+            <keywords>biens, annonces, cartes, grille, catalogue, immobilier</keywords>
+        </t>
+        <t t-snippet="theme_cadre_lite.s_cadre_methode" string="Quatre engagements" group="cadre"
+           t-thumbnail="/theme_cadre_lite/static/src/img/snippets_thumbs/s_cadre_methode.png">
+            <keywords>engagements, points forts, methode, garanties, services</keywords>
+        </t>
+        <t t-snippet="theme_cadre_lite.s_cadre_appel" string="Appel à estimation" group="cadre"
+           t-thumbnail="/theme_cadre_lite/static/src/img/snippets_thumbs/s_cadre_appel.png">
+            <keywords>appel, action, cta, estimation, contact, conversion</keywords>
+        </t>
+    </xpath>
+</template>
+
+</odoo>

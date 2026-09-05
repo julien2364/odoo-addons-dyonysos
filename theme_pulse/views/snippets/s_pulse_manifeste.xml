@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_pulse_manifeste" name="Bandeau manifeste">
+    <section class="o_pulse_banner pt64 pb64 o_cc o_cc5">
+            <div class="container text-center">
+                <span class="o_pulse_eyebrow">Notre position</span>
+                <p class="o_pulse_banner_text mb-0">« Une salle qui vend trente machines vend du matériel. Nous vendons de l'encadrement. »</p>
+                <p class="o_pulse_meta mt-3 mb-0">Nordine Farah, responsable du plateau</p>
+            </div>
+        </section>
+</template>
+
+</odoo>

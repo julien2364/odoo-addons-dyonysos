@@ -1,0 +1,376 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* theme_pulse_lite
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-05 11:21+0000\n"
+"PO-Revision-Date: 2026-09-05 11:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "129 €<small>/ mois</small>"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "39 €<small>/ mois</small>"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "69 €<small>/ mois</small>"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "<i class=\"fa fa-check me-2\"/>Accès de 6h à 22h, sept jours sur sept"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "<i class=\"fa fa-check me-2\"/>Application de suivi des charges"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "<i class=\"fa fa-check me-2\"/>Bilan d'entrée avec un coach"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "<i class=\"fa fa-check me-2\"/>Créneaux réservés à l'avance"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "<i class=\"fa fa-check me-2\"/>Groupes de huit maximum"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "<i class=\"fa fa-check me-2\"/>Point de progression mensuel"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "<i class=\"fa fa-check me-2\"/>Programme construit sur vos contraintes"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid ""
+"<i class=\"fa fa-check me-2\"/>Programme écrit renouvelé toutes les six "
+"semaines"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "<i class=\"fa fa-check me-2\"/>Quatre séances individuelles par mois"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "<i class=\"fa fa-check me-2\"/>Résiliable au mois"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "<i class=\"fa fa-check me-2\"/>Suivi nutritionnel de base"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "<i class=\"fa fa-check me-2\"/>Tout la formule Encadré"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "<i class=\"fa fa-check me-2\"/>Tout la formule Libre"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "<i class=\"fa fa-check me-2\"/>Trois cours collectifs par semaine"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "<i class=\"fa fa-check me-2\"/>Vestiaires et douches"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "<span class=\"o_pulse_eyebrow\">Abonnements</span>"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_atouts
+msgid "<span class=\"o_pulse_eyebrow\">Notre méthode</span>"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_hero
+msgid "<span class=\"o_pulse_eyebrow\">Studio de 420 m² — 12 coachs</span>"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_essai
+msgid "<span class=\"o_pulse_eyebrow\">Séance d'essai</span>"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "<span class=\"o_pulse_offer_tag\">Le plus pris</span>"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "Accès plateau et vestiaires"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.o_pulse_snippets_lite
+msgid "Appel à séance d'essai"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_atouts
+msgid ""
+"Au-delà de huit, un coach ne corrige plus personne. Nous n'ouvrons pas de "
+"neuvième place."
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.o_pulse_snippets_lite
+msgid "Bandeau plateau plein écran"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_essai
+msgid ""
+"Bilan de mobilité, test de charges, une séance complète en groupe. Vous "
+"repartez avec votre programme écrit, même si vous ne revenez pas."
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_atouts
+msgid "Ce qui change d'une salle classique"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_atouts
+msgid ""
+"Chaque série est enregistrée. Vous voyez la courbe, pas une impression."
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_atouts
+msgid "Charges suivies"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "Coaching en tête-à-tête"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "Commencer"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_atouts
+msgid "Cycles de six semaines"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "Encadré"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_hero
+msgid ""
+"Fonderie 12 encadre des groupes de huit. Programme écrit, charges suivies, "
+"progression mesurée toutes les six semaines. Pas d'abonnement piège."
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_atouts
+msgid "Groupes de huit"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "Individuel"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "La formule de 6 adhérents sur 10"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_essai
+msgid "La première séance ne coûte rien et ne vous engage à rien"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "Libre"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "Prendre rendez-vous"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_atouts
+msgid ""
+"Programme réécrit tous les quarante-deux jours, à partir de vos chiffres "
+"réels."
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.o_pulse_snippets_lite
+msgid "Quatre points de méthode"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_essai
+msgid "Réserver mon essai"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_hero
+msgid "Réserver un essai"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid ""
+"Résiliables au mois. Aucun frais de dossier, aucune reconduction "
+"automatique."
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_atouts
+msgid ""
+"Résiliation au mois, en deux clics, sans lettre recommandée ni justificatif."
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_atouts
+msgid "Sans engagement"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.o_pulse_snippets_lite
+msgid "Sport"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.o_pulse_snippets_lite
+msgid "Trois formules d'abonnement"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_formules
+msgid "Trois formules, sans engagement de douze mois"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_hero
+msgid "Trois séances par semaine, pas trente machines"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_hero
+msgid "Voir les cours"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.pulse_home
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.s_pulse_essai
+msgid "Voir les tarifs"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.o_pulse_snippets_lite
+msgid "appel, action, cta, essai, inscription, conversion"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.o_pulse_snippets_lite
+msgid "bandeau, hero, accueil, salle, sport, couverture"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.o_pulse_snippets_lite
+msgid "formules, abonnements, tarifs, prix, offres, adhesion"
+msgstr ""
+
+#. module: theme_pulse_lite
+#: model_terms:theme.ir.ui.view,arch:theme_pulse_lite.o_pulse_snippets_lite
+msgid "methode, points forts, atouts, principes, services"
+msgstr ""

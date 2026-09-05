@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_cadre_agence" name="Présentation en deux colonnes">
+    <section class="o_cadre_split pt64 pb64 o_cc o_cc1">
+            <div class="container">
+                <div class="row align-items-center g-5"><div class="col-lg-6 order-lg-2">
+                        <span class="o_cadre_eyebrow">Depuis 2011</span>
+                        <h2 class="mb-3">Une agence indépendante, sans réseau ni redevance de franchise</h2>
+                        <p>Nous ne reversons pas 6 % de nos honoraires à une tête de réseau, ce qui nous permet d'afficher un barème plus bas que la moyenne du secteur sans réduire le service.</p>
+                        <ul class="o_cadre_points list-unstyled mt-4 mb-0"><li><i class="fa fa-angle-right me-2"/>Aucune redevance de franchise</li><li><i class="fa fa-angle-right me-2"/>Aucun apporteur d'affaires rémunéré</li><li><i class="fa fa-angle-right me-2"/>Comptabilité et gestion locative internes</li><li><i class="fa fa-angle-right me-2"/>Barème public depuis l'ouverture</li></ul>
+                        <div class="d-flex flex-wrap gap-3 mt-4"><a href="/honoraires" class="btn btn-primary btn-lg">Voir nos honoraires</a></div>
+                    </div><div class="col-lg-6 order-lg-1">
+                        <div class="o_cadre_split_media"><img src="/theme_cadre/static/src/img/cadre_agence.png" alt="" class="img-fluid"/></div>
+                    </div></div>
+            </div>
+        </section>
+</template>
+
+</odoo>

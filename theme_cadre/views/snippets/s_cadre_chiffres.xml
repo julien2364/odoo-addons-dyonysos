@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_cadre_chiffres" name="Bandeau de chiffres">
+    <section class="o_cadre_stats pt48 pb48 o_cc o_cc3">
+            <div class="container">
+                <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                    <span class="o_cadre_eyebrow">Année 2025</span>
+                    <h2 class="mb-3">Ce que nos chiffres disent</h2>
+                
+                </div>
+                <div class="row g-4 text-center"><div class="col-lg-3 col-6">
+                        <div class="o_cadre_stat">
+                            <span class="o_cadre_stat_num">41 j</span>
+                            <span class="o_cadre_stat_label">délai médian entre mandat et compromis</span>
+                        </div>
+                    </div><div class="col-lg-3 col-6">
+                        <div class="o_cadre_stat">
+                            <span class="o_cadre_stat_num">96 %</span>
+                            <span class="o_cadre_stat_label">des biens vendus au prix affiché ou à moins de 3 %</span>
+                        </div>
+                    </div><div class="col-lg-3 col-6">
+                        <div class="o_cadre_stat">
+                            <span class="o_cadre_stat_num">112</span>
+                            <span class="o_cadre_stat_label">transactions accompagnées jusqu'à l'acte</span>
+                        </div>
+                    </div><div class="col-lg-3 col-6">
+                        <div class="o_cadre_stat">
+                            <span class="o_cadre_stat_num">4,4 %</span>
+                            <span class="o_cadre_stat_label">honoraires médians constatés</span>
+                        </div>
+                    </div></div>
+            </div>
+        </section>
+</template>
+
+</odoo>

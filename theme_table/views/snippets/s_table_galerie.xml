@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_table_galerie" name="Mosaïque d'images">
+    <section class="o_table_gallery pt64 pb64 o_cc o_cc1">
+            <div class="container">
+                <div class="text-center mx-auto mb-5" style="max-width:44rem">
+                    <span class="o_table_eyebrow">En salle et en cuisine</span>
+                    <h2 class="mb-3">Ce que vous ne voyez pas depuis la rue</h2>
+                
+                </div>
+                <div class="o_table_gal_grid"><div class="o_table_gal_cell "><img src="/theme_table/static/src/img/table_gal_1.png" alt=""/></div><div class="o_table_gal_cell is-wide"><img src="/theme_table/static/src/img/table_gal_2.png" alt=""/></div><div class="o_table_gal_cell "><img src="/theme_table/static/src/img/table_gal_3.png" alt=""/></div><div class="o_table_gal_cell "><img src="/theme_table/static/src/img/table_gal_4.png" alt=""/></div><div class="o_table_gal_cell "><img src="/theme_table/static/src/img/table_gal_5.png" alt=""/></div><div class="o_table_gal_cell "><img src="/theme_table/static/src/img/table_gal_6.png" alt=""/></div></div>
+            </div>
+        </section>
+</template>
+
+</odoo>

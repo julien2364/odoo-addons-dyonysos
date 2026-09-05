@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_pulse_hero" name="Bandeau plateau plein écran">
+    <section class="o_pulse_hero o_pulse_hero_cover o_cc o_cc5"
+                 style="background-image:url('/theme_pulse_lite/static/src/img/pulse_hero.png');">
+            <div class="container">
+                <div class="o_pulse_hero_inner">
+                    <span class="o_pulse_eyebrow">Studio de 420 m² — 12 coachs</span>
+                    <h1 class="mb-3">Trois séances par semaine, pas trente machines</h1>
+                    <p class="lead mb-0">Fonderie 12 encadre des groupes de huit. Programme écrit, charges suivies, progression mesurée toutes les six semaines. Pas d'abonnement piège.</p>
+                    <div class="d-flex flex-wrap gap-3 mt-4"><a href="/tarifs" class="btn btn-primary btn-lg">Réserver un essai</a><a href="/cours" class="btn btn-outline-light btn-lg">Voir les cours</a></div>
+                </div>
+            </div>
+        </section>
+</template>
+
+</odoo>

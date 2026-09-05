@@ -1,0 +1,1173 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* theme_pulse
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-05 11:21+0000\n"
+"PO-Revision-Date: 2026-09-05 11:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_footer
+msgid "12 rue de la Fonderie"
+msgstr "12 rue de la Fonderie"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "129 €<small>/ mois</small>"
+msgstr "129 €<small>/ mois</small>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_footer
+msgid "33520 Bassens-Rive"
+msgstr "33520 Bassens-Rive"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "39 €<small>/ mois</small>"
+msgstr "39 €<small>/ mois</small>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_galerie
+msgid "420 m², deux racks, aucune machine guidée"
+msgstr "420 m², deux racks, aucune machine guidée"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "69 €<small>/ mois</small>"
+msgstr "69 €<small>/ mois</small>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_studio
+msgid "<i class=\"fa fa-angle-right me-2\"/>420 m² sur un seul niveau"
+msgstr "<i class=\"fa fa-angle-right me-2\"/>420 m² sur un seul niveau"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_studio
+msgid ""
+"<i class=\"fa fa-angle-right me-2\"/>Deux racks, quatre plateformes, aucune "
+"machine guidée"
+msgstr ""
+"<i class=\"fa fa-angle-right me-2\"/>Deux racks, quatre plateformes, aucune "
+"machine guidée"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_studio
+msgid ""
+"<i class=\"fa fa-angle-right me-2\"/>Sol amortissant sur toute la surface de"
+" travail"
+msgstr ""
+"<i class=\"fa fa-angle-right me-2\"/>Sol amortissant sur toute la surface de"
+" travail"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_studio
+msgid ""
+"<i class=\"fa fa-angle-right me-2\"/>Ventilation renouvelée toutes les huit "
+"minutes"
+msgstr ""
+"<i class=\"fa fa-angle-right me-2\"/>Ventilation renouvelée toutes les huit "
+"minutes"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_contact
+msgid "<i class=\"fa fa-bicycle me-2\"/>Arceaux couverts et douches à disposition"
+msgstr "<i class=\"fa fa-bicycle me-2\"/>Arceaux couverts et douches à disposition"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "<i class=\"fa fa-check me-2\"/>Accès de 6h à 22h, sept jours sur sept"
+msgstr "<i class=\"fa fa-check me-2\"/>Accès de 6h à 22h, sept jours sur sept"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "<i class=\"fa fa-check me-2\"/>Application de suivi des charges"
+msgstr "<i class=\"fa fa-check me-2\"/>Application de suivi des charges"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "<i class=\"fa fa-check me-2\"/>Bilan d'entrée avec un coach"
+msgstr "<i class=\"fa fa-check me-2\"/>Bilan d'entrée avec un coach"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "<i class=\"fa fa-check me-2\"/>Créneaux réservés à l'avance"
+msgstr "<i class=\"fa fa-check me-2\"/>Créneaux réservés à l'avance"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "<i class=\"fa fa-check me-2\"/>Groupes de huit maximum"
+msgstr "<i class=\"fa fa-check me-2\"/>Groupes de huit maximum"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "<i class=\"fa fa-check me-2\"/>Point de progression mensuel"
+msgstr "<i class=\"fa fa-check me-2\"/>Point de progression mensuel"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "<i class=\"fa fa-check me-2\"/>Programme construit sur vos contraintes"
+msgstr "<i class=\"fa fa-check me-2\"/>Programme construit sur vos contraintes"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid ""
+"<i class=\"fa fa-check me-2\"/>Programme écrit renouvelé toutes les six "
+"semaines"
+msgstr ""
+"<i class=\"fa fa-check me-2\"/>Programme écrit renouvelé toutes les six "
+"semaines"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "<i class=\"fa fa-check me-2\"/>Quatre séances individuelles par mois"
+msgstr "<i class=\"fa fa-check me-2\"/>Quatre séances individuelles par mois"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "<i class=\"fa fa-check me-2\"/>Résiliable au mois"
+msgstr "<i class=\"fa fa-check me-2\"/>Résiliable au mois"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "<i class=\"fa fa-check me-2\"/>Suivi nutritionnel de base"
+msgstr "<i class=\"fa fa-check me-2\"/>Suivi nutritionnel de base"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "<i class=\"fa fa-check me-2\"/>Tout la formule Encadré"
+msgstr "<i class=\"fa fa-check me-2\"/>Tout la formule Encadré"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "<i class=\"fa fa-check me-2\"/>Tout la formule Libre"
+msgstr "<i class=\"fa fa-check me-2\"/>Tout la formule Libre"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "<i class=\"fa fa-check me-2\"/>Trois cours collectifs par semaine"
+msgstr "<i class=\"fa fa-check me-2\"/>Trois cours collectifs par semaine"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "<i class=\"fa fa-check me-2\"/>Vestiaires et douches"
+msgstr "<i class=\"fa fa-check me-2\"/>Vestiaires et douches"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_contact
+msgid "<i class=\"fa fa-envelope me-2\"/>plateau@fonderie12.example"
+msgstr "<i class=\"fa fa-envelope me-2\"/>plateau@fonderie12.example"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_contact
+msgid ""
+"<i class=\"fa fa-map-marker me-2\"/>12 rue de la Fonderie, 33520 Bassens-"
+"Rive"
+msgstr ""
+"<i class=\"fa fa-map-marker me-2\"/>12 rue de la Fonderie, 33520 Bassens-"
+"Rive"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_contact
+msgid "<i class=\"fa fa-phone me-2\"/>05 56 00 00 00"
+msgstr "<i class=\"fa fa-phone me-2\"/>05 56 00 00 00"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "<span class=\"o_pulse_eyebrow\">Abonnements</span>"
+msgstr "<span class=\"o_pulse_eyebrow\">Abonnements</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_cours
+msgid "<span class=\"o_pulse_eyebrow\">Au planning</span>"
+msgstr "<span class=\"o_pulse_eyebrow\">Au planning</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_equipe
+msgid "<span class=\"o_pulse_eyebrow\">L'encadrement</span>"
+msgstr "<span class=\"o_pulse_eyebrow\">L'encadrement</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_studio
+msgid "<span class=\"o_pulse_eyebrow\">Le lieu</span>"
+msgstr "<span class=\"o_pulse_eyebrow\">Le lieu</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_galerie
+msgid "<span class=\"o_pulse_eyebrow\">Le plateau</span>"
+msgstr "<span class=\"o_pulse_eyebrow\">Le plateau</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_chiffres
+msgid "<span class=\"o_pulse_eyebrow\">Le studio en bref</span>"
+msgstr "<span class=\"o_pulse_eyebrow\">Le studio en bref</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_manifeste
+msgid "<span class=\"o_pulse_eyebrow\">Notre position</span>"
+msgstr "<span class=\"o_pulse_eyebrow\">Notre position</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_contact
+msgid "<span class=\"o_pulse_eyebrow\">Nous trouver</span>"
+msgstr "<span class=\"o_pulse_eyebrow\">Nous trouver</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_faq
+msgid "<span class=\"o_pulse_eyebrow\">Questions fréquentes</span>"
+msgstr "<span class=\"o_pulse_eyebrow\">Questions fréquentes</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_avis
+msgid "<span class=\"o_pulse_eyebrow\">Retours</span>"
+msgstr "<span class=\"o_pulse_eyebrow\">Retours</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "<span class=\"o_pulse_eyebrow\">Séance d'essai</span>"
+msgstr "<span class=\"o_pulse_eyebrow\">Séance d'essai</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_etapes
+msgid "<span class=\"o_pulse_eyebrow\">Vos six premières semaines</span>"
+msgstr "<span class=\"o_pulse_eyebrow\">Vos six premières semaines</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "<span class=\"o_pulse_offer_tag\">Le plus pris</span>"
+msgstr "<span class=\"o_pulse_offer_tag\">Le plus pris</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_cours
+msgid "<span class=\"o_pulse_pill\">45 min</span>"
+msgstr "<span class=\"o_pulse_pill\">45 min</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_cours
+msgid "<span class=\"o_pulse_pill\">50 min</span>"
+msgstr "<span class=\"o_pulse_pill\">50 min</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_cours
+msgid "<span class=\"o_pulse_pill\">60 min</span>"
+msgstr "<span class=\"o_pulse_pill\">60 min</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid ""
+"<span class=\"o_pulse_stat_num\">12</span>\n"
+"                                    <span class=\"o_pulse_stat_label\">coachs diplômés</span>"
+msgstr ""
+"<span class=\"o_pulse_stat_num\">12</span>\n"
+"                                    <span class=\"o_pulse_stat_label\">coachs diplômés</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_chiffres
+msgid ""
+"<span class=\"o_pulse_stat_num\">12</span>\n"
+"                            <span class=\"o_pulse_stat_label\">coachs diplômés</span>"
+msgstr ""
+"<span class=\"o_pulse_stat_num\">12</span>\n"
+"                            <span class=\"o_pulse_stat_label\">coachs diplômés</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid ""
+"<span class=\"o_pulse_stat_num\">420 m²</span>\n"
+"                                    <span class=\"o_pulse_stat_label\">de plateau sur un seul niveau</span>"
+msgstr ""
+"<span class=\"o_pulse_stat_num\">420 m²</span>\n"
+"                                    <span class=\"o_pulse_stat_label\">de plateau sur un seul niveau</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_chiffres
+msgid ""
+"<span class=\"o_pulse_stat_num\">420 m²</span>\n"
+"                            <span class=\"o_pulse_stat_label\">de plateau sur un seul niveau</span>"
+msgstr ""
+"<span class=\"o_pulse_stat_num\">420 m²</span>\n"
+"                            <span class=\"o_pulse_stat_label\">de plateau sur un seul niveau</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid ""
+"<span class=\"o_pulse_stat_num\">6 sem.</span>\n"
+"                                    <span class=\"o_pulse_stat_label\">entre deux réécritures de programme</span>"
+msgstr ""
+"<span class=\"o_pulse_stat_num\">6 sem.</span>\n"
+"                                    <span class=\"o_pulse_stat_label\">entre deux réécritures de programme</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_chiffres
+msgid ""
+"<span class=\"o_pulse_stat_num\">6 sem.</span>\n"
+"                            <span class=\"o_pulse_stat_label\">entre deux réécritures de programme</span>"
+msgstr ""
+"<span class=\"o_pulse_stat_num\">6 sem.</span>\n"
+"                            <span class=\"o_pulse_stat_label\">entre deux réécritures de programme</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid ""
+"<span class=\"o_pulse_stat_num\">8</span>\n"
+"                                    <span class=\"o_pulse_stat_label\">adhérents maximum par cours</span>"
+msgstr ""
+"<span class=\"o_pulse_stat_num\">8</span>\n"
+"                                    <span class=\"o_pulse_stat_label\">adhérents maximum par cours</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_chiffres
+msgid ""
+"<span class=\"o_pulse_stat_num\">8</span>\n"
+"                            <span class=\"o_pulse_stat_label\">adhérents maximum par cours</span>"
+msgstr ""
+"<span class=\"o_pulse_stat_num\">8</span>\n"
+"                            <span class=\"o_pulse_stat_label\">adhérents maximum par cours</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_etapes
+msgid "<span class=\"o_pulse_step_num\">01</span>"
+msgstr "<span class=\"o_pulse_step_num\">01</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_etapes
+msgid "<span class=\"o_pulse_step_num\">02</span>"
+msgstr "<span class=\"o_pulse_step_num\">02</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_etapes
+msgid "<span class=\"o_pulse_step_num\">03</span>"
+msgstr "<span class=\"o_pulse_step_num\">03</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_etapes
+msgid "<span class=\"o_pulse_step_num\">04</span>"
+msgstr "<span class=\"o_pulse_step_num\">04</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+msgid ""
+"<span><strong>Cécile Aubertin</strong><br/>\n"
+"                                            <span class=\"o_pulse_meta\">Adhérente depuis 3 ans</span></span>"
+msgstr ""
+"<span><strong>Cécile Aubertin</strong><br/>\n"
+"                                            <span class=\"o_pulse_meta\">Adhérente depuis 3 ans</span></span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_avis
+msgid ""
+"<span><strong>Cécile Aubertin</strong><br/>\n"
+"                                    <span class=\"o_pulse_meta\">Adhérente depuis 3 ans</span></span>"
+msgstr ""
+"<span><strong>Cécile Aubertin</strong><br/>\n"
+"                                    <span class=\"o_pulse_meta\">Adhérente depuis 3 ans</span></span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+msgid ""
+"<span><strong>Ibrahim Traoré</strong><br/>\n"
+"                                            <span class=\"o_pulse_meta\">Formule Encadré</span></span>"
+msgstr ""
+"<span><strong>Ibrahim Traoré</strong><br/>\n"
+"                                            <span class=\"o_pulse_meta\">Formule Encadré</span></span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_avis
+msgid ""
+"<span><strong>Ibrahim Traoré</strong><br/>\n"
+"                                    <span class=\"o_pulse_meta\">Formule Encadré</span></span>"
+msgstr ""
+"<span><strong>Ibrahim Traoré</strong><br/>\n"
+"                                    <span class=\"o_pulse_meta\">Formule Encadré</span></span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+msgid ""
+"<span><strong>Léa Marchandeau</strong><br/>\n"
+"                                            <span class=\"o_pulse_meta\">Adhérente depuis 14 mois</span></span>"
+msgstr ""
+"<span><strong>Léa Marchandeau</strong><br/>\n"
+"                                            <span class=\"o_pulse_meta\">Adhérente depuis 14 mois</span></span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_avis
+msgid ""
+"<span><strong>Léa Marchandeau</strong><br/>\n"
+"                                    <span class=\"o_pulse_meta\">Adhérente depuis 14 mois</span></span>"
+msgstr ""
+"<span><strong>Léa Marchandeau</strong><br/>\n"
+"                                    <span class=\"o_pulse_meta\">Adhérente depuis 14 mois</span></span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_contact
+msgid "<span>Dimanche</span><span>9h — 13h</span>"
+msgstr "<span>Dimanche</span><span>9h — 13h</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_contact
+msgid "<span>Jours fériés</span><span>9h — 13h</span>"
+msgstr "<span>Jours fériés</span><span>9h — 13h</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_contact
+msgid "<span>Lundi au vendredi</span><span>6h — 22h</span>"
+msgstr "<span>Lundi au vendredi</span><span>6h — 22h</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_contact
+msgid "<span>Samedi</span><span>8h — 19h</span>"
+msgstr "<span>Samedi</span><span>8h — 19h</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_footer
+msgid ""
+"<span>© 2026 Fonderie 12 — studio fictif de démonstration</span>\n"
+"                    <span>Thème Pulse par DYONYSOS</span>"
+msgstr ""
+"<span>© 2026 Fonderie 12 — studio fictif de démonstration</span>\n"
+"                    <span>Thème Pulse par DYONYSOS</span>"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_footer
+msgid "Accès"
+msgstr "Accès"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "Accès plateau et vestiaires"
+msgstr "Accès plateau et vestiaires"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_snippets_pulse
+msgid "Bandeau de chiffres"
+msgstr "Bandeau de chiffres"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_snippets_pulse
+msgid "Bandeau manifeste"
+msgstr "Bandeau manifeste"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_etapes
+msgid "Bilan"
+msgstr "Bilan"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid ""
+"Bilan de mobilité, test de charges, une séance complète en groupe. Vous "
+"repartez avec votre programme écrit, même si vous ne revenez pas."
+msgstr ""
+"Bilan de mobilité, test de charges, une séance complète en groupe. Vous "
+"repartez avec votre programme écrit, même si vous ne revenez pas."
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_faq
+msgid "Ce qu'on nous demande avant de s'inscrire"
+msgstr "Ce qu'on nous demande avant de s'inscrire"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_chiffres
+msgid "Ce que nous mesurons"
+msgstr "Ce que nous mesurons"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_cours
+msgid ""
+"Chaque cours dure cinquante minutes, échauffement et retour au calme "
+"compris."
+msgstr ""
+"Chaque cours dure cinquante minutes, échauffement et retour au calme "
+"compris."
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_cours
+msgid ""
+"Circuit à intensité contrôlée, fréquence cardiaque suivie. Aucun exercice "
+"technique sous fatigue."
+msgstr ""
+"Circuit à intensité contrôlée, fréquence cardiaque suivie. Aucun exercice "
+"technique sous fatigue."
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "Coaching en tête-à-tête"
+msgstr "Coaching en tête-à-tête"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "Commencer"
+msgstr "Commencer"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_etapes
+msgid "Comment démarre un cycle"
+msgstr "Comment démarre un cycle"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_cours
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_equipe
+msgid "Conditionnement"
+msgstr "Conditionnement"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_snippets_pulse
+msgid "Coordonnées et horaires"
+msgstr "Coordonnées et horaires"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_cours
+msgid ""
+"Cycle orienté course, trail ou sport collectif, construit avec vous à partir"
+" de votre calendrier."
+msgstr ""
+"Cycle orienté course, trail ou sport collectif, construit avec vous à partir"
+" de votre calendrier."
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_faq
+msgid ""
+"Deux vestiaires avec casiers à code et six douches individuelles. Serviette "
+"non fournie."
+msgstr ""
+"Deux vestiaires avec casiers à code et six douches individuelles. Serviette "
+"non fournie."
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_footer
+msgid "Dimanche — 9h/13h"
+msgstr "Dimanche — 9h/13h"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_cours
+msgid ""
+"Développé, tractions assistées, rowing. Travail de gainage intégré à chaque "
+"série."
+msgstr ""
+"Développé, tractions assistées, rowing. Travail de gainage intégré à chaque "
+"série."
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "Encadré"
+msgstr "Encadré"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_etapes
+msgid "Estimation de vos maxima sans jamais aller à l'échec."
+msgstr "Estimation de vos maxima sans jamais aller à l'échec."
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_faq
+msgid "Faut-il un niveau minimum ?"
+msgstr "Faut-il un niveau minimum ?"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_footer
+msgid "Fonderie 12"
+msgstr "Fonderie 12"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_equipe
+msgid "Force et haltérophilie"
+msgstr "Force et haltérophilie"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_cours
+msgid "Force — bas du corps"
+msgstr "Force — bas du corps"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_cours
+msgid "Force — haut du corps"
+msgstr "Force — haut du corps"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_snippets_pulse
+msgid "Grille de cours collectifs"
+msgstr "Grille de cours collectifs"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_avis
+msgid ""
+"Groupes de huit, c'est la vraie différence. Le coach voit quand mon dos "
+"part, il le dit tout de suite. Dans mon ancienne salle on était trente."
+msgstr ""
+"Groupes de huit, c'est la vraie différence. Le coach voit quand mon dos "
+"part, il le dit tout de suite. Dans mon ancienne salle on était trente."
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_cours
+msgid ""
+"Hanches, épaules, chaîne postérieure. Recommandé en début de cycle et après "
+"une reprise."
+msgstr ""
+"Hanches, épaules, chaîne postérieure. Recommandé en début de cycle et après "
+"une reprise."
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "Individuel"
+msgstr "Individuel"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_equipe
+msgid "Inès Bouchard"
+msgstr "Inès Bouchard"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_avis
+msgid ""
+"Je n'avais jamais soulevé une barre. Six semaines plus tard j'avais un "
+"programme à mon nom et des chiffres qui montaient. Personne ne m'a vendu de "
+"complément alimentaire."
+msgstr ""
+"Je n'avais jamais soulevé une barre. Six semaines plus tard j'avais un "
+"programme à mon nom et des chiffres qui montaient. Personne ne m'a vendu de "
+"complément alimentaire."
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "La formule de 6 adhérents sur 10"
+msgstr "La formule de 6 adhérents sur 10"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "La première séance ne coûte rien et ne vous engage à rien"
+msgstr "La première séance ne coûte rien et ne vous engage à rien"
+
+#. module: theme_pulse
+#: model:theme.website.menu,name:theme_pulse.pulse_studio_p_menu
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_footer
+msgid "Le studio"
+msgstr "Le studio"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_snippets_pulse
+msgid "Le studio en deux colonnes"
+msgstr "Le studio en deux colonnes"
+
+#. module: theme_pulse
+#: model:theme.website.menu,name:theme_pulse.pulse_cours_p_menu
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_footer
+msgid "Les cours"
+msgstr "Les cours"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_faq
+msgid "Les cours sont-ils vraiment limités à huit ?"
+msgstr "Les cours sont-ils vraiment limités à huit ?"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "Libre"
+msgstr "Libre"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_footer
+msgid "Lundi au vendredi — 6h/22h"
+msgstr "Lundi au vendredi — 6h/22h"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_cours
+msgid "Lundi et jeudi · 7h, 12h15, 18h30"
+msgstr "Lundi et jeudi · 7h, 12h15, 18h30"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_cours
+msgid "Lundi et mercredi · 14h"
+msgstr "Lundi et mercredi · 14h"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_cours
+msgid "Mardi et jeudi · 12h15"
+msgstr "Mardi et jeudi · 12h15"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_cours
+msgid "Mardi et vendredi · 7h, 12h15, 19h"
+msgstr "Mardi et vendredi · 7h, 12h15, 19h"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_equipe
+msgid "Marion Delaunay"
+msgstr "Marion Delaunay"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_cours
+msgid "Mercredi et samedi · 9h, 18h30"
+msgstr "Mercredi et samedi · 9h, 18h30"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_cours
+msgid "Mobilité et posture"
+msgstr "Mobilité et posture"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_equipe
+msgid "Mobilité et reprise"
+msgstr "Mobilité et reprise"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_etapes
+msgid ""
+"Mobilité, antécédents, contraintes horaires. Quarante minutes, gratuit."
+msgstr ""
+"Mobilité, antécédents, contraintes horaires. Quarante minutes, gratuit."
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_snippets_pulse
+msgid "Mosaïque du plateau"
+msgstr "Mosaïque du plateau"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_faq
+msgid ""
+"Non. La formule Reprise progressive existe précisément pour un retour après "
+"un arrêt long. Le bilan d'entrée détermine le point de départ, pas un test "
+"d'admission."
+msgstr ""
+"Non. La formule Reprise progressive existe précisément pour un retour après "
+"un arrêt long. Le bilan d'entrée détermine le point de départ, pas un test "
+"d'admission."
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_faq
+msgid ""
+"Non. Nous ne vendons aucun produit. Le suivi nutritionnel de la formule "
+"Individuel reste de l'accompagnement, pas de la prescription."
+msgstr ""
+"Non. Nous ne vendons aucun produit. Le suivi nutritionnel de la formule "
+"Individuel reste de l'accompagnement, pas de la prescription."
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_equipe
+msgid "Nordine Farah"
+msgstr "Nordine Farah"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_manifeste
+msgid "Nordine Farah, responsable du plateau"
+msgstr "Nordine Farah, responsable du plateau"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_studio
+msgid ""
+"Nous avons fait le choix inverse de la plupart des salles : peu de machines,"
+" beaucoup d'espace au sol, et un plafond assez haut pour travailler debout, "
+"barre au-dessus de la tête."
+msgstr ""
+"Nous avons fait le choix inverse de la plupart des salles : peu de machines,"
+" beaucoup d'espace au sol, et un plafond assez haut pour travailler debout, "
+"barre au-dessus de la tête."
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_footer
+msgid "Nous écrire"
+msgstr "Nous écrire"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_faq
+msgid ""
+"Oui, depuis votre espace adhérent, avec effet à la fin du mois en cours. "
+"Aucun frais, aucun justificatif, aucune lettre recommandée."
+msgstr ""
+"Oui, depuis votre espace adhérent, avec effet à la fin du mois en cours. "
+"Aucun frais, aucun justificatif, aucune lettre recommandée."
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_faq
+msgid ""
+"Oui. La réservation se ferme automatiquement à huit places. Aucune place "
+"supplémentaire n'est ouverte, même pour un adhérent en formule Individuel."
+msgstr ""
+"Oui. La réservation se ferme automatiquement à huit places. Aucune place "
+"supplémentaire n'est ouverte, même pour un adhérent en formule Individuel."
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_contact
+msgid "Ouverture du plateau"
+msgstr "Ouverture du plateau"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_snippets_pulse
+msgid "Parcours d'un nouvel adhérent"
+msgstr "Parcours d'un nouvel adhérent"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_contact
+msgid ""
+"Parking gratuit devant le bâtiment, arceaux à vélo couverts. Arrêt de bus « "
+"Fonderie » à cent mètres, lignes 4 et 11."
+msgstr ""
+"Parking gratuit devant le bâtiment, arceaux à vélo couverts. Arrêt de bus « "
+"Fonderie » à cent mètres, lignes 4 et 11."
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_footer
+msgid "Plateau"
+msgstr "Plateau"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_etapes
+msgid "Point à six semaines"
+msgstr "Point à six semaines"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_snippets_pulse
+msgid "Portraits des coachs"
+msgstr "Portraits des coachs"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_cours
+msgid ""
+"Pour un retour après arrêt long. Charges légères, volume faible, quatre "
+"semaines avant d'intégrer un autre cours."
+msgstr ""
+"Pour un retour après arrêt long. Charges légères, volume faible, quatre "
+"semaines avant d'intégrer un autre cours."
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "Prendre rendez-vous"
+msgstr "Prendre rendez-vous"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_etapes
+msgid "Programme écrit"
+msgstr "Programme écrit"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_cours
+msgid "Préparation spécifique"
+msgstr "Préparation spécifique"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_faq
+msgid "Puis-je résilier quand je veux ?"
+msgstr "Puis-je résilier quand je veux ?"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_equipe
+msgid "Quatre coachs sur le plateau aux heures pleines"
+msgstr "Quatre coachs sur le plateau aux heures pleines"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_snippets_pulse
+msgid "Questions fréquentes"
+msgstr "Questions fréquentes"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_etapes
+msgid "Relecture des courbes, ajustement, nouveau cycle."
+msgstr "Relecture des courbes, ajustement, nouveau cycle."
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_etapes
+msgid "Remis sous 48 heures, chiffré, séance par séance."
+msgstr "Remis sous 48 heures, chiffré, séance par séance."
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_cours
+msgid "Reprise progressive"
+msgstr "Reprise progressive"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_equipe
+msgid "Responsable du plateau"
+msgstr "Responsable du plateau"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_footer
+msgid "Réservation des cours en ligne"
+msgstr "Réservation des cours en ligne"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "Réserver mon essai"
+msgstr "Réserver mon essai"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "Réserver un essai"
+msgstr "Réserver un essai"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid ""
+"Résiliables au mois. Aucun frais de dossier, aucune reconduction "
+"automatique."
+msgstr ""
+"Résiliables au mois. Aucun frais de dossier, aucune reconduction "
+"automatique."
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_avis
+msgid ""
+"Résiliation en deux clics quand j'ai déménagé trois mois. Reprise sans frais"
+" de dossier au retour. C'est rare pour être signalé."
+msgstr ""
+"Résiliation en deux clics quand j'ai déménagé trois mois. Reprise sans frais"
+" de dossier au retour. C'est rare pour être signalé."
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_cours
+msgid "Samedi · 10h30"
+msgstr "Samedi · 10h30"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_footer
+msgid "Samedi — 8h/19h"
+msgstr "Samedi — 8h/19h"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_equipe
+msgid "Samuel Ozanne"
+msgstr "Samuel Ozanne"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_cours
+msgid "Six cours, tous en groupe de huit"
+msgstr "Six cours, tous en groupe de huit"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_cours
+msgid ""
+"Squat, soulevé de terre, fentes chargées. Progression en charge sur cycle de"
+" six semaines."
+msgstr ""
+"Squat, soulevé de terre, fentes chargées. Progression en charge sur cycle de"
+" six semaines."
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_footer
+msgid ""
+"Studio de force et de conditionnement. Groupes de huit, sans engagement."
+msgstr ""
+"Studio de force et de conditionnement. Groupes de huit, sans engagement."
+
+#. module: theme_pulse
+#: model:theme.website.menu,name:theme_pulse.pulse_tarifs_menu
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_footer
+msgid "Tarifs"
+msgstr "Tarifs"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_etapes
+msgid "Test de charges"
+msgstr "Test de charges"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_avis
+msgid "Trois adhérents, trois points de départ différents"
+msgstr "Trois adhérents, trois points de départ différents"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "Trois formules, sans engagement de douze mois"
+msgstr "Trois formules, sans engagement de douze mois"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_snippets_pulse
+msgid "Trois retours d'adhérents"
+msgstr "Trois retours d'adhérents"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_studio
+msgid "Une ancienne fonderie, deux racks et beaucoup de sol libre"
+msgstr "Une ancienne fonderie, deux racks et beaucoup de sol libre"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_faq
+msgid "Vendez-vous des compléments alimentaires ?"
+msgstr "Vendez-vous des compléments alimentaires ?"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_studio
+msgid "Venir voir"
+msgstr "Venir voir"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+msgid "Voir les tarifs"
+msgstr "Voir les tarifs"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_tarifs
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_faq
+msgid "Y a-t-il des vestiaires et des douches ?"
+msgstr "Y a-t-il des vestiaires et des douches ?"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_studio_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_contact
+msgid "Zone de la Fonderie, bâtiment 12"
+msgstr "Zone de la Fonderie, bâtiment 12"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_snippets_pulse
+msgid "avis, temoignages, adherents, retours, confiance"
+msgstr "avis, temoignages, adherents, retours, confiance"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_snippets_pulse
+msgid "chiffres, statistiques, resultats, preuves, indicateurs"
+msgstr "chiffres, statistiques, resultats, preuves, indicateurs"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_snippets_pulse
+msgid "contact, horaires, adresse, acces, coordonnees"
+msgstr "contact, horaires, adresse, acces, coordonnees"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_snippets_pulse
+msgid "cours, planning, collectifs, grille, cartes, seances"
+msgstr "cours, planning, collectifs, grille, cartes, seances"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_snippets_pulse
+msgid "equipe, coachs, portraits, encadrement, personnes"
+msgstr "equipe, coachs, portraits, encadrement, personnes"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_snippets_pulse
+msgid "etapes, parcours, demarrage, onboarding, methode"
+msgstr "etapes, parcours, demarrage, onboarding, methode"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_snippets_pulse
+msgid "faq, questions, reponses, accordeon, aide"
+msgstr "faq, questions, reponses, accordeon, aide"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_snippets_pulse
+msgid "galerie, mosaique, photos, plateau, ambiance"
+msgstr "galerie, mosaique, photos, plateau, ambiance"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_snippets_pulse
+msgid "manifeste, citation, bandeau, phrase, editorial"
+msgstr "manifeste, citation, bandeau, phrase, editorial"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_footer
+msgid "plateau@fonderie12.example"
+msgstr "plateau@fonderie12.example"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.o_pulse_snippets_pulse
+msgid "studio, presentation, texte image, lieu, deux colonnes"
+msgstr "studio, presentation, texte image, lieu, deux colonnes"
+
+#. module: theme_pulse
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.pulse_cours_p
+#: model_terms:theme.ir.ui.view,arch:theme_pulse.s_pulse_manifeste
+msgid ""
+"« Une salle qui vend trente machines vend du matériel. Nous vendons de "
+"l'encadrement. »"
+msgstr ""
+"« Une salle qui vend trente machines vend du matériel. Nous vendons de "
+"l'encadrement. »"

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="o_pulse_snippets_pulse" inherit_id="website.snippets" name="Blocs Sport">
+    <xpath expr="//snippets[@id='snippet_structure']" position="inside">
+        <t t-snippet="theme_pulse.s_pulse_cours" string="Grille de cours collectifs" group="pulse"
+           t-thumbnail="/theme_pulse/static/src/img/snippets_thumbs/s_pulse_cours.png">
+            <keywords>cours, planning, collectifs, grille, cartes, seances</keywords>
+        </t>
+        <t t-snippet="theme_pulse.s_pulse_chiffres" string="Bandeau de chiffres" group="pulse"
+           t-thumbnail="/theme_pulse/static/src/img/snippets_thumbs/s_pulse_chiffres.png">
+            <keywords>chiffres, statistiques, resultats, preuves, indicateurs</keywords>
+        </t>
+        <t t-snippet="theme_pulse.s_pulse_etapes" string="Parcours d'un nouvel adhérent" group="pulse"
+           t-thumbnail="/theme_pulse/static/src/img/snippets_thumbs/s_pulse_etapes.png">
+            <keywords>etapes, parcours, demarrage, onboarding, methode</keywords>
+        </t>
+        <t t-snippet="theme_pulse.s_pulse_avis" string="Trois retours d'adhérents" group="pulse"
+           t-thumbnail="/theme_pulse/static/src/img/snippets_thumbs/s_pulse_avis.png">
+            <keywords>avis, temoignages, adherents, retours, confiance</keywords>
+        </t>
+        <t t-snippet="theme_pulse.s_pulse_equipe" string="Portraits des coachs" group="pulse"
+           t-thumbnail="/theme_pulse/static/src/img/snippets_thumbs/s_pulse_equipe.png">
+            <keywords>equipe, coachs, portraits, encadrement, personnes</keywords>
+        </t>
+        <t t-snippet="theme_pulse.s_pulse_galerie" string="Mosaïque du plateau" group="pulse"
+           t-thumbnail="/theme_pulse/static/src/img/snippets_thumbs/s_pulse_galerie.png">
+            <keywords>galerie, mosaique, photos, plateau, ambiance</keywords>
+        </t>
+        <t t-snippet="theme_pulse.s_pulse_faq" string="Questions fréquentes" group="pulse"
+           t-thumbnail="/theme_pulse/static/src/img/snippets_thumbs/s_pulse_faq.png">
+            <keywords>faq, questions, reponses, accordeon, aide</keywords>
+        </t>
+        <t t-snippet="theme_pulse.s_pulse_studio" string="Le studio en deux colonnes" group="pulse"
+           t-thumbnail="/theme_pulse/static/src/img/snippets_thumbs/s_pulse_studio.png">
+            <keywords>studio, presentation, texte image, lieu, deux colonnes</keywords>
+        </t>
+        <t t-snippet="theme_pulse.s_pulse_contact" string="Coordonnées et horaires" group="pulse"
+           t-thumbnail="/theme_pulse/static/src/img/snippets_thumbs/s_pulse_contact.png">
+            <keywords>contact, horaires, adresse, acces, coordonnees</keywords>
+        </t>
+        <t t-snippet="theme_pulse.s_pulse_manifeste" string="Bandeau manifeste" group="pulse"
+           t-thumbnail="/theme_pulse/static/src/img/snippets_thumbs/s_pulse_manifeste.png">
+            <keywords>manifeste, citation, bandeau, phrase, editorial</keywords>
+        </t>
+    </xpath>
+</template>
+
+</odoo>

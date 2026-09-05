@@ -1,0 +1,1157 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* theme_table
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-05 11:21+0000\n"
+"PO-Revision-Date: 2026-09-05 11:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_footer
+msgid "14 rue Basse"
+msgstr "14 rue Basse"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_footer
+msgid "47120 Sainte-Marthe-du-Val"
+msgstr "47120 Sainte-Marthe-du-Val"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid "<i class=\"fa fa-angle-right me-2\"/>Cuisine ouverte à vue sur la salle"
+msgstr "<i class=\"fa fa-angle-right me-2\"/>Cuisine ouverte à vue sur la salle"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid "<i class=\"fa fa-angle-right me-2\"/>Menu enfant préparé à la commande"
+msgstr "<i class=\"fa fa-angle-right me-2\"/>Menu enfant préparé à la commande"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid "<i class=\"fa fa-angle-right me-2\"/>Pas de deuxième service le soir"
+msgstr "<i class=\"fa fa-angle-right me-2\"/>Pas de deuxième service le soir"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid "<i class=\"fa fa-angle-right me-2\"/>Une seule salle, sans étage ni annexe"
+msgstr "<i class=\"fa fa-angle-right me-2\"/>Une seule salle, sans étage ni annexe"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_horaires
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "<i class=\"fa fa-envelope me-2\"/>salle@maison-lavaur.example"
+msgstr "<i class=\"fa fa-envelope me-2\"/>salle@maison-lavaur.example"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_horaires
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid ""
+"<i class=\"fa fa-map-marker me-2\"/>14 rue Basse, 47120 Sainte-Marthe-du-Val"
+msgstr ""
+"<i class=\"fa fa-map-marker me-2\"/>14 rue Basse, 47120 Sainte-Marthe-du-Val"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_horaires
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "<i class=\"fa fa-phone me-2\"/>05 53 00 00 00"
+msgstr "<i class=\"fa fa-phone me-2\"/>05 53 00 00 00"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_horaires
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid ""
+"<i class=\"fa fa-wheelchair me-2\"/>Salle de plain-pied, toilettes "
+"accessibles"
+msgstr ""
+"<i class=\"fa fa-wheelchair me-2\"/>Salle de plain-pied, toilettes "
+"accessibles"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_avis
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid "<span class=\"o_table_eyebrow\">Ce qu'on nous dit</span>"
+msgstr "<span class=\"o_table_eyebrow\">Ce qu'on nous dit</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_etapes
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "<span class=\"o_table_eyebrow\">Comment ça se passe</span>"
+msgstr "<span class=\"o_table_eyebrow\">Comment ça se passe</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_galerie
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid "<span class=\"o_table_eyebrow\">En salle et en cuisine</span>"
+msgstr "<span class=\"o_table_eyebrow\">En salle et en cuisine</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_equipe
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid "<span class=\"o_table_eyebrow\">La brigade</span>"
+msgstr "<span class=\"o_table_eyebrow\">La brigade</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid "<span class=\"o_table_eyebrow\">La carte</span>"
+msgstr "<span class=\"o_table_eyebrow\">La carte</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid "<span class=\"o_table_eyebrow\">La maison</span>"
+msgstr "<span class=\"o_table_eyebrow\">La maison</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_citation
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid "<span class=\"o_table_eyebrow\">Notre parti pris</span>"
+msgstr "<span class=\"o_table_eyebrow\">Notre parti pris</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_horaires
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "<span class=\"o_table_eyebrow\">Nous trouver</span>"
+msgstr "<span class=\"o_table_eyebrow\">Nous trouver</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "<span class=\"o_table_eyebrow\">Réservation</span>"
+msgstr "<span class=\"o_table_eyebrow\">Réservation</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Accord mets et vins, quatre verres\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">28 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Accord mets et vins, quatre verres\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">28 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Accord mets et vins, quatre verres\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">28 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Accord mets et vins, quatre verres\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">28 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Assiette de fromages affinés\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">12 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Assiette de fromages affinés\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">12 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Assiette de fromages affinés\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">12 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Assiette de fromages affinés\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">12 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Courge rôtie, noisette, sarriette\n"
+"                                            <em>Végétarien</em></span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">12 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Courge rôtie, noisette, sarriette\n"
+"                                            <em>Végétarien</em></span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">12 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Courge rôtie, noisette, sarriette\n"
+"                                    <em>Végétarien</em></span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">12 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Courge rôtie, noisette, sarriette\n"
+"                                    <em>Végétarien</em></span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">12 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Déjeuner complet — trois services\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">33 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Déjeuner complet — trois services\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">33 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Déjeuner complet — trois services\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">33 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Déjeuner complet — trois services\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">33 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Déjeuner — entrée, plat ou plat, dessert\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">27 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Déjeuner — entrée, plat ou plat, dessert\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">27 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Déjeuner — entrée, plat ou plat, dessert\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">27 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Déjeuner — entrée, plat ou plat, dessert\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">27 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Filet de lieu jaune, beurre blanc\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">24 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Filet de lieu jaune, beurre blanc\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">24 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Filet de lieu jaune, beurre blanc\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">24 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Filet de lieu jaune, beurre blanc\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">24 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Maquereau mariné, crème d'aneth\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">13 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Maquereau mariné, crème d'aneth\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">13 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Maquereau mariné, crème d'aneth\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">13 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Maquereau mariné, crème d'aneth\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">13 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Menu du soir — quatre services\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">46 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Menu du soir — quatre services\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">46 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Menu du soir — quatre services\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">46 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Menu du soir — quatre services\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">46 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Onglet de bœuf, échalotes confites\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">25 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Onglet de bœuf, échalotes confites\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">25 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Onglet de bœuf, échalotes confites\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">25 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Onglet de bœuf, échalotes confites\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">25 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Poire pochée, sorbet cassis\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">9 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Poire pochée, sorbet cassis\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">9 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Poire pochée, sorbet cassis\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">9 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Poire pochée, sorbet cassis\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">9 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Poireaux vinaigrette, œuf mollet\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">10 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Poireaux vinaigrette, œuf mollet\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">10 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Poireaux vinaigrette, œuf mollet\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">10 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Poireaux vinaigrette, œuf mollet\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">10 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Risotto d'orge, champignons de saison\n"
+"                                            <em>Végétarien</em></span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">21 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Risotto d'orge, champignons de saison\n"
+"                                            <em>Végétarien</em></span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">21 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Risotto d'orge, champignons de saison\n"
+"                                    <em>Végétarien</em></span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">21 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Risotto d'orge, champignons de saison\n"
+"                                    <em>Végétarien</em></span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">21 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Riz au lait, caramel demi-sel\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">8 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Riz au lait, caramel demi-sel\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">8 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Riz au lait, caramel demi-sel\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">8 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Riz au lait, caramel demi-sel\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">8 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Tarte fine aux pommes de garde\n"
+"                                            <em>Pour deux</em></span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">11 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Tarte fine aux pommes de garde\n"
+"                                            <em>Pour deux</em></span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">11 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Tarte fine aux pommes de garde\n"
+"                                    <em>Pour deux</em></span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">11 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Tarte fine aux pommes de garde\n"
+"                                    <em>Pour deux</em></span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">11 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Terrine de campagne, cornichons maison\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">11 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Terrine de campagne, cornichons maison\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">11 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Terrine de campagne, cornichons maison\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">11 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Terrine de campagne, cornichons maison\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">11 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Velouté du jour\n"
+"                                            <em>Selon arrivage</em></span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">9 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Velouté du jour\n"
+"                                            <em>Selon arrivage</em></span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">9 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Velouté du jour\n"
+"                                    <em>Selon arrivage</em></span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">9 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Velouté du jour\n"
+"                                    <em>Selon arrivage</em></span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">9 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Volaille fermière, jus au vin jaune\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">23 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Volaille fermière, jus au vin jaune\n"
+"                                            </span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">23 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Volaille fermière, jus au vin jaune\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">23 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Volaille fermière, jus au vin jaune\n"
+"                                    </span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">23 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Épaule d'agneau confite, haricots coco\n"
+"                                            <em>À partager</em></span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">26 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Épaule d'agneau confite, haricots coco\n"
+"                                            <em>À partager</em></span>\n"
+"                                        <span class=\"o_table_pl_dots\"/>\n"
+"                                        <span class=\"o_table_pl_price\">26 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+msgid ""
+"<span class=\"o_table_pl_name\">Épaule d'agneau confite, haricots coco\n"
+"                                    <em>À partager</em></span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">26 €</span>"
+msgstr ""
+"<span class=\"o_table_pl_name\">Épaule d'agneau confite, haricots coco\n"
+"                                    <em>À partager</em></span>\n"
+"                                <span class=\"o_table_pl_dots\"/>\n"
+"                                <span class=\"o_table_pl_price\">26 €</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_etapes
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "<span class=\"o_table_step_num\">01</span>"
+msgstr "<span class=\"o_table_step_num\">01</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_etapes
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "<span class=\"o_table_step_num\">02</span>"
+msgstr "<span class=\"o_table_step_num\">02</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_etapes
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "<span class=\"o_table_step_num\">03</span>"
+msgstr "<span class=\"o_table_step_num\">03</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_etapes
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "<span class=\"o_table_step_num\">04</span>"
+msgstr "<span class=\"o_table_step_num\">04</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid ""
+"<span><strong>Camille Vasseur</strong><br/>\n"
+"                                            <span class=\"o_table_meta\">Cliente depuis 2023</span></span>"
+msgstr ""
+"<span><strong>Camille Vasseur</strong><br/>\n"
+"                                            <span class=\"o_table_meta\">Cliente depuis 2023</span></span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_avis
+msgid ""
+"<span><strong>Camille Vasseur</strong><br/>\n"
+"                                    <span class=\"o_table_meta\">Cliente depuis 2023</span></span>"
+msgstr ""
+"<span><strong>Camille Vasseur</strong><br/>\n"
+"                                    <span class=\"o_table_meta\">Cliente depuis 2023</span></span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid ""
+"<span><strong>Hakim Belkacem</strong><br/>\n"
+"                                            <span class=\"o_table_meta\">Habitué du déjeuner</span></span>"
+msgstr ""
+"<span><strong>Hakim Belkacem</strong><br/>\n"
+"                                            <span class=\"o_table_meta\">Habitué du déjeuner</span></span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_avis
+msgid ""
+"<span><strong>Hakim Belkacem</strong><br/>\n"
+"                                    <span class=\"o_table_meta\">Habitué du déjeuner</span></span>"
+msgstr ""
+"<span><strong>Hakim Belkacem</strong><br/>\n"
+"                                    <span class=\"o_table_meta\">Habitué du déjeuner</span></span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid ""
+"<span><strong>Sophie Renaudin</strong><br/>\n"
+"                                            <span class=\"o_table_meta\">Table du dimanche</span></span>"
+msgstr ""
+"<span><strong>Sophie Renaudin</strong><br/>\n"
+"                                            <span class=\"o_table_meta\">Table du dimanche</span></span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_avis
+msgid ""
+"<span><strong>Sophie Renaudin</strong><br/>\n"
+"                                    <span class=\"o_table_meta\">Table du dimanche</span></span>"
+msgstr ""
+"<span><strong>Sophie Renaudin</strong><br/>\n"
+"                                    <span class=\"o_table_meta\">Table du dimanche</span></span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_horaires
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "<span>Dimanche</span><span>12h — 15h</span>"
+msgstr "<span>Dimanche</span><span>12h — 15h</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_horaires
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "<span>Lundi</span><span>Fermé</span>"
+msgstr "<span>Lundi</span><span>Fermé</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_horaires
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "<span>Mardi au jeudi</span><span>12h — 14h · 19h30 — 22h</span>"
+msgstr "<span>Mardi au jeudi</span><span>12h — 14h · 19h30 — 22h</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_horaires
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "<span>Vendredi et samedi</span><span>12h — 14h · 19h30 — 23h</span>"
+msgstr "<span>Vendredi et samedi</span><span>12h — 14h · 19h30 — 23h</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_footer
+msgid ""
+"<span>© 2026 Maison Lavaur — établissement fictif de démonstration</span>\n"
+"                    <span>Thème La Table par DYONYSOS</span>"
+msgstr ""
+"<span>© 2026 Maison Lavaur — établissement fictif de démonstration</span>\n"
+"                    <span>Thème La Table par DYONYSOS</span>"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_horaires
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "Au bout de la rue basse, la porte verte"
+msgstr "Au bout de la rue basse, la porte verte"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_etapes
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "Aucun deuxième service : la salle est à vous jusqu'à la fermeture."
+msgstr "Aucun deuxième service : la salle est à vous jusqu'à la fermeture."
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_snippets_table
+msgid "Bandeau citation"
+msgstr "Bandeau citation"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_snippets_table
+msgid "Carte tarifée deux colonnes"
+msgstr "Carte tarifée deux colonnes"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_galerie
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid "Ce que vous ne voyez pas depuis la rue"
+msgstr "Ce que vous ne voyez pas depuis la rue"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid "Ce qui est servi cette quinzaine"
+msgstr "Ce qui est servi cette quinzaine"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_equipe
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid "Cheffe de salle"
+msgstr "Cheffe de salle"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_equipe
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid "Cheffe et co-gérante"
+msgstr "Cheffe et co-gérante"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_equipe
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid "Cinq personnes en cuisine, trois en salle"
+msgstr "Cinq personnes en cuisine, trois en salle"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_snippets_table
+msgid "Coordonnées et horaires"
+msgstr "Coordonnées et horaires"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_footer
+msgid "Cuisine de marché, vingt-quatre couverts, une seule salle."
+msgstr "Cuisine de marché, vingt-quatre couverts, une seule salle."
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_etapes
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "De la réservation à l'addition"
+msgstr "De la réservation à l'addition"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid "Desserts"
+msgstr "Desserts"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_footer
+msgid "Dimanche — 12h/15h"
+msgstr "Dimanche — 12h/15h"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid "Découvrir le lieu"
+msgstr "Découvrir le lieu"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_etapes
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "En ligne jusqu'à 18h le jour même, par téléphone au-delà."
+msgstr "En ligne jusqu'à 18h le jour même, par téléphone au-delà."
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid "Entrées"
+msgstr "Entrées"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_avis
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid ""
+"J'ai demandé d'où venait l'agneau. On m'a donné le nom de l'éleveur et le "
+"village. Ça répond à la question."
+msgstr ""
+"J'ai demandé d'où venait l'agneau. On m'a donné le nom de l'éleveur et le "
+"village. Ça répond à la question."
+
+#. module: theme_table
+#: model:theme.website.menu,name:theme_table.table_carte_menu
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_footer
+msgid "La carte"
+msgstr "La carte"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid ""
+"La carte est réécrite tous les jeudis. Les prix sont nets, service compris."
+msgstr ""
+"La carte est réécrite tous les jeudis. Les prix sont nets, service compris."
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_footer
+msgid "La maison"
+msgstr "La maison"
+
+#. module: theme_table
+#: model:theme.website.menu,name:theme_table.table_lieu_menu
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_footer
+msgid "Le lieu"
+msgstr "Le lieu"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_horaires
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid ""
+"Le restaurant est à sept minutes à pied de la gare routière. Deux places de "
+"stationnement réservées à l'arrière, sur demande à la réservation."
+msgstr ""
+"Le restaurant est à sept minutes à pied de la gare routière. Deux places de "
+"stationnement réservées à l'arrière, sur demande à la réservation."
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "Le service du soir part vite en fin de semaine"
+msgstr "Le service du soir part vite en fin de semaine"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_footer
+msgid "Lundi — fermé"
+msgstr "Lundi — fermé"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_footer
+msgid "Maison Lavaur"
+msgstr "Maison Lavaur"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_equipe
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid "Marc Thouvenin"
+msgstr "Marc Thouvenin"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_footer
+msgid "Mardi au jeudi — 12h/14h · 19h30/22h"
+msgstr "Mardi au jeudi — 12h/14h · 19h30/22h"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_avis
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid ""
+"Menu enfant préparé à la commande, sans surcoût, sans nuggets. Mes deux "
+"garçons ont tout mangé."
+msgstr ""
+"Menu enfant préparé à la commande, sans surcoût, sans nuggets. Mes deux "
+"garçons ont tout mangé."
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid "Menus"
+msgstr "Menus"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_snippets_table
+msgid "Mosaïque d'images"
+msgstr "Mosaïque d'images"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_equipe
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid "Nadia Ferrand"
+msgstr "Nadia Ferrand"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid ""
+"Nous avons choisi de ne pas remplir deux fois la salle. Vous gardez votre "
+"table toute la soirée, la cuisine garde son rythme, et personne ne vous "
+"demande de partir."
+msgstr ""
+"Nous avons choisi de ne pas remplir deux fois la salle. Vous gardez votre "
+"table toute la soirée, la cuisine garde son rythme, et personne ne vous "
+"demande de partir."
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid ""
+"Nous ouvrons les réservations quinze jours à l'avance. Au-delà de six "
+"personnes, écrivez-nous : nous adaptons la carte et le rythme du service."
+msgstr ""
+"Nous ouvrons les réservations quinze jours à l'avance. Au-delà de six "
+"personnes, écrivez-nous : nous adaptons la carte et le rythme du service."
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_footer
+msgid "Nous trouver"
+msgstr "Nous trouver"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_footer
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "Nous écrire"
+msgstr "Nous écrire"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_etapes
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "On garde la trace"
+msgstr "On garde la trace"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_avis
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid ""
+"On nous a laissé la table jusqu'à minuit sans jamais nous presser. C'est "
+"devenu tellement rare que ça mérite d'être écrit."
+msgstr ""
+"On nous a laissé la table jusqu'à minuit sans jamais nous presser. C'est "
+"devenu tellement rare que ça mérite d'être écrit."
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_etapes
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "On vous confirme"
+msgstr "On vous confirme"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_snippets_table
+msgid "Parcours de réservation"
+msgstr "Parcours de réservation"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid "Plats"
+msgstr "Plats"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_snippets_table
+msgid "Portraits de l'équipe"
+msgstr "Portraits de l'équipe"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_equipe
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid "Pâtissier"
+msgstr "Pâtissier"
+
+#. module: theme_table
+#: model:theme.website.menu,name:theme_table.table_reserver_menu
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_footer
+msgid "Réserver"
+msgstr "Réserver"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "Réserver en ligne"
+msgstr "Réserver en ligne"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_equipe
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid "Second de cuisine"
+msgstr "Second de cuisine"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_footer
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_horaires
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "Service"
+msgstr "Service"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid "Servis midi et soir, hors samedi soir"
+msgstr "Servis midi et soir, hors samedi soir"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid "Tous préparés le matin"
+msgstr "Tous préparés le matin"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid "Toutes servies avec le pain de la Ferme haute"
+msgstr "Toutes servies avec le pain de la Ferme haute"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_snippets_table
+msgid "Trois avis clients"
+msgstr "Trois avis clients"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_avis
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid "Trois retours de salle, recueillis en janvier"
+msgstr "Trois retours de salle, recueillis en janvier"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_etapes
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid ""
+"Un message la veille, avec le plan d'accès et les places de stationnement."
+msgstr ""
+"Un message la veille, avec le plan d'accès et les places de stationnement."
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_carte
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid "Un plat végétarien est toujours à la carte"
+msgstr "Un plat végétarien est toujours à la carte"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_footer
+msgid "Vendredi et samedi — 12h/14h · 19h30/23h"
+msgstr "Vendredi et samedi — 12h/14h · 19h30/23h"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid "Vingt-quatre couverts, une seule salle, aucun deuxième service"
+msgstr "Vingt-quatre couverts, une seule salle, aucun deuxième service"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_etapes
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "Vos allergies et préférences sont notées pour la fois suivante."
+msgstr "Vos allergies et préférences sont notées pour la fois suivante."
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_etapes
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "Vous gardez la table"
+msgstr "Vous gardez la table"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_etapes
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_reserver
+msgid "Vous réservez"
+msgstr "Vous réservez"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_equipe
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid "Yann Kerbrat"
+msgstr "Yann Kerbrat"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_snippets_table
+msgid "avis, temoignages, clients, citations, confiance"
+msgstr "avis, temoignages, clients, citations, confiance"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_snippets_table
+msgid "carte, menu, tarifs, prix, prestations, liste"
+msgstr "carte, menu, tarifs, prix, prestations, liste"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_snippets_table
+msgid "citation, bandeau, phrase, manifeste, editorial"
+msgstr "citation, bandeau, phrase, manifeste, editorial"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_snippets_table
+msgid "contact, horaires, adresse, acces, coordonnees"
+msgstr "contact, horaires, adresse, acces, coordonnees"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_snippets_table
+msgid "equipe, portraits, brigade, personnes, presentation"
+msgstr "equipe, portraits, brigade, personnes, presentation"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_snippets_table
+msgid "etapes, parcours, methode, comment, deroule"
+msgstr "etapes, parcours, methode, comment, deroule"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_snippets_table
+msgid "galerie, mosaique, photos, images, ambiance"
+msgstr "galerie, mosaique, photos, images, ambiance"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.o_table_footer
+msgid "salle@maison-lavaur.example"
+msgstr "salle@maison-lavaur.example"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_citation
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid ""
+"« Une carte courte n'est pas une carte pauvre. C'est une carte dont on "
+"assume chaque ligne. »"
+msgstr ""
+"« Une carte courte n'est pas une carte pauvre. C'est une carte dont on "
+"assume chaque ligne. »"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_equipe
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_lieu
+msgid "Élise Lavaur"
+msgstr "Élise Lavaur"
+
+#. module: theme_table
+#: model_terms:theme.ir.ui.view,arch:theme_table.s_table_citation
+#: model_terms:theme.ir.ui.view,arch:theme_table.table_carte
+msgid "Élise Lavaur, cheffe"
+msgstr "Élise Lavaur, cheffe"

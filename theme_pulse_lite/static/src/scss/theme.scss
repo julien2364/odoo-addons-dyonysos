@@ -1,0 +1,470 @@
+// =============================================================================
+// Thème Pulse — habillage des blocs
+// =============================================================================
+
+// ------------------------------------------------------------------ communs
+.o_pulse_eyebrow {
+    display: inline-block;
+    padding: .3rem .9rem;
+    border-radius: 2rem;
+    background: rgba(o-color('o-color-1'), .12);
+    color: o-color('o-color-1');
+    font-weight: 600;
+    letter-spacing: .02em;
+}
+
+.o_pulse_meta {
+    font-size: .875rem;
+    opacity: .72;
+}
+
+.o_pulse_marks, .o_pulse_points {
+    li {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: .6rem;
+        i { color: o-color('o-color-1'); margin-top: .25rem; }
+    }
+}
+
+// ----------------------------------------------------------------- bandeaux
+.o_pulse_hero_cover {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: clamp(34rem, calc(18rem + 32vw), 52rem);
+    padding: 6rem 0;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(105deg, rgba(8,9,11,.94) 0%, rgba(8,9,11,.78) 42%, rgba(8,9,11,.42) 100%);
+    }
+
+    .container { position: relative; z-index: 1; }
+
+    h1 {
+        max-width: 20ch;
+        text-shadow: 0 2px 24px rgba(0, 0, 0, .35);
+    }
+    p.lead { max-width: 46ch; }
+}
+
+.o_pulse_hero_split {
+    .o_pulse_hero_media {
+        position: relative;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 18px 44px rgba(0, 0, 0, .45);
+        img { width: 100%; display: block; }
+    }
+    .o_pulse_hero_badge {
+        position: absolute;
+        left: 1.25rem;
+        bottom: 1.25rem;
+        padding: .85rem 1.15rem;
+        border-radius: 0.65rem;
+        background: o-color('o-color-4');
+        box-shadow: 0 10px 30px rgba(15, 23, 42, .18);
+        strong { display: block; font-size: 1.5rem; line-height: 1.1; color: o-color('o-color-1'); }
+        span { font-size: .8rem; opacity: .75; }
+    }
+}
+
+// ------------------------------------------------------------------- cartes
+.o_pulse_card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all .25s ease;
+    border-radius: 1rem;
+    background: o-color('o-color-4');
+    &:hover { transform: translateY(-4px); }
+
+    .o_pulse_card_media {
+        position: relative;
+        aspect-ratio: 4 / 3;
+        overflow: hidden;
+        img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s ease; }
+    }
+    &:hover .o_pulse_card_media img { transform: scale(1.05); }
+
+    .o_pulse_card_body { padding: 1.5rem; flex: 1 1 auto; }
+}
+
+.o_pulse_pill {
+    position: absolute;
+    top: .85rem;
+    left: .85rem;
+    padding: .3rem .75rem;
+    border-radius: 2rem;
+    background: o-color('o-color-1');
+    color: #08090B;
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .02em;
+}
+
+// ------------------------------------------------------------- points forts
+.o_pulse_feature {
+    padding: 1.75rem;
+    border-radius: 1rem;
+    background: rgba(o-color('o-color-1'), .06);
+    transition: background .25s ease;
+    &:hover { background: rgba(o-color('o-color-1'), .12); }
+
+    .o_pulse_feature_icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 0.65rem;
+        background: o-color('o-color-1');
+        color: #08090B;
+        font-size: 1.25rem;
+    }
+}
+
+// -------------------------------------------------------------- texte/image
+.o_pulse_split_media {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 18px 44px rgba(0, 0, 0, .45);
+    img { width: 100%; display: block; }
+}
+
+// ------------------------------------------------------------------ chiffres
+.o_pulse_stat {
+    .o_pulse_stat_num {
+        display: block;
+        font-family: var(--headings-font, inherit);
+        font-size: clamp(2.2rem, calc(1.2rem + 2.4vw), 3.4rem);
+        font-weight: 700;
+        line-height: 1;
+        color: o-color('o-color-1');
+    }
+    .o_pulse_stat_label {
+        display: block;
+        margin-top: .5rem;
+        font-size: .9rem;
+        opacity: .78;
+    }
+}
+
+// ------------------------------------------------------------------- étapes
+.o_pulse_steps_row { position: relative; }
+.o_pulse_step {
+    position: relative;
+    padding: 1.75rem 1.5rem 1.5rem;
+    border-radius: 1rem;
+    background: o-color('o-color-4');
+    border: 1px solid rgba(o-color('o-color-5'), .10);
+
+    .o_pulse_step_num {
+        display: inline-block;
+        margin-bottom: .75rem;
+        font-family: var(--headings-font, inherit);
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1;
+        color: rgba(o-color('o-color-1'), .35);
+    }
+}
+
+// ----------------------------------------------------------- liste tarifée
+.o_pulse_pl_group {
+    .o_pulse_pl_row {
+        display: flex;
+        align-items: baseline;
+        gap: .6rem;
+        padding: .7rem 0;
+        border-bottom: 1px dashed rgba(o-color('o-color-5'), .18);
+        &:last-child { border-bottom: 0; }
+    }
+    .o_pulse_pl_name {
+        font-weight: 600;
+        em { display: block; font-weight: 400; font-size: .85rem; opacity: .7; font-style: normal; }
+    }
+    .o_pulse_pl_dots { flex: 1 1 auto; }
+    .o_pulse_pl_price {
+        font-weight: 700;
+        color: o-color('o-color-1');
+        white-space: nowrap;
+    }
+}
+
+// ------------------------------------------------------------------ offres
+.o_pulse_offer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.75rem;
+    border-radius: 1rem;
+    background: o-color('o-color-4');
+    border: 1px solid rgba(o-color('o-color-5'), .12);
+    transition: all .25s ease;
+
+    &.is-featured {
+        border-color: o-color('o-color-1');
+        box-shadow: 0 18px 44px rgba(0, 0, 0, .45);
+    }
+    &:hover { transform: translateY(-6px); }
+
+    .o_pulse_offer_tag {
+        position: absolute;
+        top: -.8rem;
+        left: 1.75rem;
+        padding: .25rem .8rem;
+        border-radius: 2rem;
+        background: o-color('o-color-1');
+        color: #08090B;
+        font-size: .72rem;
+        font-weight: 700;
+        letter-spacing: .06em;
+        text-transform: uppercase;
+    }
+    .o_pulse_offer_price {
+        font-family: var(--headings-font, inherit);
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 1;
+        color: o-color('o-color-2');
+        small { font-size: .9rem; font-weight: 400; opacity: .6; margin-left: .25rem; }
+    }
+    .o_pulse_offer_feats li {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: .55rem;
+        i { color: o-color('o-color-1'); margin-top: .25rem; }
+    }
+    .btn { margin-top: auto; }
+}
+
+// ------------------------------------------------------------- témoignages
+.o_pulse_quote {
+    padding: 1.9rem;
+    border-radius: 1rem;
+    background: o-color('o-color-4');
+    box-shadow: 0 18px 44px rgba(0, 0, 0, .45);
+
+    blockquote {
+        margin: 0;
+        font-size: 1.05rem;
+        line-height: 1.65;
+        &::before {
+            content: '\201C';
+            display: block;
+            font-family: var(--headings-font, inherit);
+            font-size: 3rem;
+            line-height: .6;
+            color: rgba(o-color('o-color-1'), .35);
+            margin-bottom: .5rem;
+        }
+    }
+}
+.o_pulse_avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+    flex: 0 0 auto;
+}
+
+// ------------------------------------------------------------------- équipe
+.o_pulse_member_photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+// ------------------------------------------------------------------ galerie
+.o_pulse_gal_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 11rem;
+    gap: 1rem;
+
+    .o_pulse_gal_cell {
+        overflow: hidden;
+        border-radius: 0.65rem;
+        img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .6s ease; }
+        &:hover img { transform: scale(1.06); }
+        &.is-wide { grid-column: span 2; grid-row: span 2; }
+    }
+
+    @media (max-width: 767.98px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 8rem;
+    }
+}
+
+// ---------------------------------------------------------------------- FAQ
+.o_pulse_acc {
+    .accordion-item {
+        border: 0;
+        border-bottom: 1px solid rgba(o-color('o-color-5'), .14);
+        background: transparent;
+    }
+    .accordion-button {
+        padding: 1.15rem 0;
+        background: transparent;
+        font-weight: 600;
+        box-shadow: none;
+        &:not(.collapsed) { color: o-color('o-color-1'); }
+    }
+    .accordion-body { padding: 0 0 1.25rem; opacity: .85; }
+}
+
+// ----------------------------------------------------------------- confiance
+.o_pulse_logo_row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+
+    .o_pulse_logo img {
+        height: 2.6rem;
+        width: auto;
+        opacity: .55;
+        filter: grayscale(1);
+        transition: all .25s ease;
+    }
+    .o_pulse_logo:hover img { opacity: 1; filter: none; }
+}
+
+// ---------------------------------------------------------------------- CTA
+.o_pulse_cta {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+
+    &[style*='background-image']::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(120deg, rgba(8,9,11,.94) 0%, rgba(8,9,11,.74) 100%);
+    }
+    .container { position: relative; z-index: 1; }
+}
+
+// ------------------------- lisibilité sur les fonds à recouvrement sombre
+// Les combinaisons de couleurs d'Odoo peuvent imposer une couleur de titre
+// sombre ; sur un bandeau recouvert d'un voile noir, on la force en clair.
+.o_pulse_hero_cover, .o_pulse_cta {
+    h1, h2, h3, h4, h5, h6, p, li, blockquote { color: #fff; }
+    .o_pulse_eyebrow { color: #fff; }
+}
+.o_pulse_hero_cover .o_pulse_eyebrow::before,
+.o_pulse_cta .o_pulse_eyebrow::before { background: #fff; }
+
+// ------------------------------------------------------------------ contact
+.o_pulse_infos li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: .7rem;
+    i { color: o-color('o-color-1'); margin-top: .3rem; }
+}
+.o_pulse_hours {
+    padding: 1.75rem;
+    border-radius: 1rem;
+    background: rgba(o-color('o-color-1'), .08);
+    li {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: .45rem 0;
+        border-bottom: 1px dashed rgba(o-color('o-color-5'), .16);
+        &:last-child { border-bottom: 0; }
+        span:last-child { font-weight: 600; }
+    }
+}
+.o_pulse_contact_media {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 18px 44px rgba(0, 0, 0, .45);
+}
+
+// ------------------------------------------------------------------ bandeau
+.o_pulse_banner_text {
+    font-family: var(--headings-font, inherit);
+    font-size: clamp(1.35rem, calc(1rem + 1.5vw), 2.1rem);
+    line-height: 1.35;
+    max-width: 52rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// ------------------------------------------------------------------- footer
+.o_pulse_footer {
+    .o_pulse_foot_brand {
+        color: inherit;
+        font-family: var(--headings-font, inherit);
+        font-size: 1.35rem;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+    .o_pulse_foot_title {
+        color: inherit;
+        font-size: .82rem;
+        font-weight: 700;
+        letter-spacing: .14em;
+        text-transform: uppercase;
+        opacity: .75;
+        margin-bottom: 1rem;
+    }
+    li { margin-bottom: .4rem; }
+    a { text-decoration: none; opacity: .85; }
+    a:hover { opacity: 1; }
+    p { opacity: .85; margin-bottom: .35rem; }
+}
+.o_pulse_foot_legal {
+    border-top: 1px solid rgba(255, 255, 255, .14);
+    font-size: .82rem;
+    opacity: .70;
+}
+
+// ------------------------------------------------------- thème sombre
+.o_pulse_theme {
+    // o_cc3 est blanc et o_cc4 porte la couleur d'accent : on ne les touche pas.
+    .o_cc1, .o_cc2, .o_cc5 {
+        color: rgba(255, 255, 255, .84);
+
+        h1, h2, h3, h4, h5, h6,
+        .h1, .h2, .h3, .h4, .h5, .h6 { color: #FFFFFF; }
+    }
+
+    .o_pulse_meta, .o_pulse_offer_feats li, .o_pulse_infos li,
+    .o_pulse_stat_label, .o_pulse_pl_name em { color: rgba(255, 255, 255, .84); }
+}
+
+
+// Titrage condensé : capitales larges, interlettrage négatif
+h1, h2, h3, .o_pulse_stat_num, .o_pulse_offer_price {
+    text-transform: uppercase;
+    letter-spacing: -.01em;
+}
+h1 { letter-spacing: 0; }
+
+// Cartes plates sur charbon : liseré interne plutôt qu'ombre
+.o_pulse_card, .o_pulse_offer, .o_pulse_quote, .o_pulse_step {
+    background: o-color('o-color-3');
+    border: 1px solid rgba(255, 255, 255, .07);
+}
+.o_pulse_card:hover { border-color: rgba(o-color('o-color-1'), .55); }
+
+// Pastille de sur-titre plus contrastée sur fond sombre
+.o_pulse_eyebrow { background: rgba(o-color('o-color-1'), .16); }
+
+// Chiffres géants
+.o_pulse_stats .o_pulse_stat_num { font-size: clamp(2.8rem, calc(1.4rem + 3.4vw), 5rem); }
+
+// Bouton primaire : texte sombre sur lime
+.btn-primary { color: #08090B; font-weight: 600; }
+
